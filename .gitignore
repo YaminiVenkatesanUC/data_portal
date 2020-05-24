@@ -4,5 +4,4 @@
 .Ruserdata
 data/*
 rsconnect/*
-config.yaml
 *.RDS

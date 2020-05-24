@@ -1,0 +1,1934 @@
+[
+  {
+    "class": "Economic",
+    "indicator_name": "Monthly filled jobs",
+    "type": "Employment",
+    "source": "Stats NZ",
+    "plot_function": "get_time_series_plot",
+    "include_date_slider": true,
+    "default_lower_range": "2017-02-01",
+    "international": false,
+    "source_url":"https://www.stats.govt.nz/methods/about-new-employment-indicator-series",
+    "download": true,
+    "groups": [
+        {
+            "name": "All industries (actual)",
+            "units": "Number",
+            "title": "Monthly employment indicator - filled jobs (actual)"
+        },
+        {
+            "name": "Primary industries (actual)",
+            "units": "Number",
+            "title": "Monthly employment indicator - filled jobs (actual)"
+        },
+        {
+            "name": "Goods-producing industries (actual)",
+            "units": "Number",
+            "title": "Monthly employment indicator - filled jobs (actual)"
+        },
+        {
+            "name": "Service industries (actual)",
+            "units": "Number",
+            "title": "Monthly employment indicator - filled jobs (actual)"
+        },
+        {
+            "name": "All industries (seasonally adjusted)",
+            "units": "Number",
+            "title": "Monthly employment indicator - filled jobs (seasonally adjusted)"
+        },
+        {
+            "name": "Primary industries (seasonally adjusted)",
+            "units": "Number",
+            "title": "Monthly employment indicator - filled jobs (seasonally adjusted)"
+        },
+        {
+            "name": "Goods-producing industries (seasonally adjusted)",
+            "units": "Number",
+            "title": "Monthly employment indicator - filled jobs (seasonally adjusted)"
+        },
+        {
+            "name": "Service industries (seasonally adjusted)",
+            "units": "Number",
+            "title": "Monthly employment indicator - filled jobs (seasonally adjusted)"
+        },
+        {
+            "name": "All industries (trend)",
+            "units": "Number",
+            "title": "Monthly employment indicator - filled jobs (trend)"
+        },
+        {
+            "name": "Primary industries (trend)",
+            "units": "Number",
+            "title": "Monthly employment indicator - filled jobs (trend)"
+        },
+        {
+            "name": "Goods-producing industries (trend)",
+            "units": "Number",
+            "title": "Monthly employment indicator - filled jobs (trend)"
+        },
+        {
+            "name": "Service industries (trend)",
+            "units": "Number",
+            "title": "Monthly employment indicator - filled jobs (trend)"
+        }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "Consumer confidence",
+    "type": "Confidence",
+    "title": ["ANZ-Roy Morgan consumer confidence", "ANZ consumer confidence \"Good time to purchase a major household item\""],
+    "source": "ANZ-Roy Morgan",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "disabled": false,
+    "include_date_slider": true,
+    "default_lower_range": "2019-01-01",
+    "source_url":"https://www.anz.co.nz/about-us/economic-markets-research/consumer-confidence/",
+    "download": false,
+    "groups": [
+        {
+            "name": "Consumer confidence index",
+            "units": "Index",
+            "title": "ANZ-Roy Morgan consumer confidence"
+        },
+        {
+            "name": "Household purchase index",
+            "units": "Index",
+            "title": "ANZ consumer confidence \"Good time to purchase a major household item\""
+        }
+    ]
+  },
+  {
+    "class": "Economic",
+    "title": "Z Energy weekly fuel supply volumes",
+    "indicator_name": "Fuel supply volumes",
+    "type": "Activity",
+    "source": "Z Energy",
+    "plot_function": "get_stacked_bar_chart",
+    "international": false,
+    "download": true,
+    "source_url":"https://www.nzx.com/companies/ZEL/announcements",
+    "groups": [
+        {
+            "name": "Retail",
+            "units": "Litres",
+            "title": "Z Energy weekly fuel supply volumes - retail",
+            "caveats": "<p>(1) Truckstops include Z and Caltex branded Truckstops, private Truckstops and Mini-Tankers.</p><p>(2) Other includes General Aviation and Lubricants.</p><p>(3) The values for the 22nd of March are the average weekly volumes for the preceeding four weeks (24/02/20-22/03/20).  The subsequent values are weekly totals.</p><p>(4) Week ended data includes all fuel volumes for the prior week up to 11.59pm on Sunday.</p>"
+        },
+        {
+            "name": "Other",
+            "units": "Litres",
+            "title": "Z Energy weekly fuel supply volumes - other",
+            "caveats": "<p>(1) Z volumes will be retail fuel sales volumes including the Foodstuffs network.</p><p>(2) Domestic retail supply volume is the total bulk fuel delivered to distributor customers.</p><p>(3) The values for the 22nd of March are the average weekly volumes for the preceeding four weeks (24/02/20-22/03/20). The subsequent values are weekly totals.</p><p>(4) Week ended data includes all fuel volumes for the prior week up to 11.59pm on Sunday.</p>"
+        }
+    ]
+  },
+  {
+    "class": "Health",
+    "indicator_name": "Source of cases",
+    "type": "COVID-19",
+    "source": "Ministry of Health",
+    "plot_function": "get_vertical_bar",
+    "international": false,
+    "source_url":"https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation/covid-19-current-cases",
+    "download": true,
+    "groups": [
+        {
+            "name": "Source",
+            "units": "Number",
+            "title": "Source of cases by DHB"
+        }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "Broadband usage",
+    "type": "Activity",
+    "source": "Chorus",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "disabled": false,
+    "include_date_slider": true,
+    "show_zero": true,
+    "download": true,
+    "groups": [
+        {
+            "name": "Broadband usage",
+            "units": "Gigabyte",
+            "title": "Daily Chorus broadband usage"
+        }
+    ]
+  },
+  {
+    "class": "Health",
+    "indicator_name": "Status of cases",
+    "type": "COVID-19",
+    "source": "Ministry of Health",
+    "plot_function": "get_vertical_bar",
+    "international": false,
+    "disabled": false,
+    "include_date_slider": false,
+    "source_url":"https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation/covid-19-current-cases",
+    "download": true,
+    "groups": [
+        {
+            "name": "Status of cases",
+            "title": "Case status by DHB",
+            "units": ["Number"]
+        }
+    ]
+  },
+
+  {
+    "class": "Health",
+    "indicator_name": "Case demographics",
+    "type": "COVID-19",
+    "source": "Ministry of Health",
+    "plot_function": "get_horizontal_bar",
+    "international": false,
+    "include_date_slider": false,
+    "source_url": "https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation/covid-19-current-cases",
+    "download": true,
+    "groups": [
+      {
+        "name": "Cases by gender",
+        "title": "Cases by gender",
+        "units": "Number"
+      },
+      {
+        "name": "Cases by ethnicity",
+        "title": "Cases by ethnicity",
+        "units": "Number"
+      },
+      {
+        "name": "Cases by age",
+        "title": "Cases by ages",
+        "units": "Number"
+      }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "Activity outlook",
+    "type": "Confidence",
+    "source": "ANZ",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    "default_lower_range": "2019-01-01",
+    "source_url": "https://www.anz.co.nz/about-us/economic-markets-research/business-outlook/",
+    "download": false,
+    "groups": [
+      {
+        "name": "Activity outlook - all sectors",
+        "title": "ANZ activity outlook - all sectors",
+        "units": "Index"
+      }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "Manufacturing index",
+    "type": "Confidence",
+    "source": "BNZ-BusinessNZ",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    "default_lower_range": "2017-03-01",
+    "source_url": "https://www.businessnz.org.nz/resources/surveys-and-statistics/pmi",
+    "download": true,
+    "groups": [
+      {
+        "name": "Performance of manufacturing (overall index)",
+        "title": "BNZ-BusinessNZ performance of manufacturing index - seasonally adjusted",
+        "units": "Index"
+      },
+      {
+        "name": "Production",
+        "title": "BNZ-BusinessNZ performance of manufacturing index - seasonally adjusted",
+        "units": "Index"
+      },
+      {
+        "name": "Employment",
+        "title": "BNZ-BusinessNZ performance of manufacturing index - seasonally adjusted",
+        "units": "Index"
+      },
+      {
+        "name": "New orders",
+        "title": "BNZ-BusinessNZ performance of manufacturing index - seasonally adjusted",
+        "units": "Index"
+      },
+      {
+        "name": "Finished stocks",
+        "title": "BNZ-BusinessNZ performance of manufacturing index - seasonally adjusted",
+        "units": "Index"
+      },
+      {
+        "name": "Deliveries",
+        "title": "BNZ-BusinessNZ performance of manufacturing index - seasonally adjusted",
+        "units": "Index"
+      }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "Business confidence",
+    "type": "Confidence",
+    "source": "ANZ",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    "default_lower_range": "2019-01-01",
+    "source_url": "https://www.anz.co.nz/about-us/economic-markets-research/business-outlook/",
+    "download": false,
+    "caveats": "Note the month of May 2020 is a provisional read.",
+    "groups": [
+      {
+        "name": "Business confidence",
+        "title": "ANZ business confidence",
+        "units": "Index"
+      }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "Monthly earnings",
+    "type": "Employment",
+    "source": "Stats NZ",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    "default_lower_range": "2017-02-01",
+    "source_url": "https://www.stats.govt.nz/methods/about-new-employment-indicator-series",
+    "download": true,
+    "groups": [
+      {
+        "name": "All industries (actual)",
+        "title": "Monthly employment indicators - total earnings (actual)",
+        "units": "$"
+      },
+      {
+        "name": "Primary industries (actual)",
+        "title": "Monthly employment indicators - total earnings (actual)",
+        "units": "$"
+      },
+      {
+        "name": "Goods-producing industries (actual)",
+        "title": "Monthly employment indicators - total earnings (actual)",
+        "units": "$"
+      },
+      {
+        "name": "Service industries (actual)",
+        "title": "Monthly employment indicators - total earnings (actual)",
+        "units": "$"
+      },
+      {
+        "name": "All industries (trend)",
+        "title": "Monthly employment indicators - total earnings (trend)",
+        "units": "$"
+      },
+      {
+        "name": "Primary industries (trend)",
+        "title": "Monthly employment indicators - total earnings (trend)",
+        "units": "$"
+      },
+      {
+        "name": "Goods-producing industries (trend)",
+        "title": "Monthly employment indicators - total earnings (trend)",
+        "units": "$"
+      },
+      {
+        "name": "Service industries (trend)",
+        "title": "Monthly employment indicators - total earnings (trend)",
+        "units": "$"
+      }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "Jobs online measure",
+    "type": "Employment",
+    "source": "Ministry of Business, Innovation and Employment",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    "default_lower_range": "2017-02-01",
+    "source_url": "https://mbienz.shinyapps.io/labour-market-dashboard_prod/",
+    "download": true,
+    "groups": [
+      {
+        "name": "Index",
+        "title": "Online job advertisements index",
+        "units": "Index"
+      }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "Economic sentiment",
+    "type": "Confidence",
+    "source": "gdeltproject & C. Ball",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    "default_lower_range": "2019-07-01",
+    "source_url": "https://www.gdeltproject.org/",
+    "download": true,
+    "groups": [
+      {
+        "name": "Weekly economic sentiment",
+        "title": "Weekly economic sentiment",
+        "units": "Index"
+      }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "Milk production",
+    "type": "Activity",
+    "source": "Dairy Companies Association of New Zealand",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    "default_lower_range": "2017-01-01",
+    "source_url": "https://www.dcanz.com/about-the-nz-dairy-industry/",
+    "download": true,
+    "groups": [
+      {
+        "name": "Milksolids",
+        "title": "Monthly milk production - milksolids",
+        "units": "Kg"
+      }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "Card transaction total spend",
+    "type": "Activity",
+    "source": "Stats NZ",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    "default_lower_range": "2017-01-01",
+    "source_url": "https://www.stats.govt.nz/information-releases/electronic-card-transactions-march-2020",
+    "download": true,
+    "groups": [
+      {
+        "name": "Spend (actual)",
+        "title": "Monthly electronic card transaction activity",
+        "units": "$"
+      },
+      {
+        "name": "Spend (seasonally adjusted)",
+        "title": "Monthly electronic card transaction activity",
+        "units": "$"
+      },
+      {
+        "name": "Transactions (count)",
+        "title": "Monthly electronic card transaction activity",
+        "units": "Number"
+      }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "Daily border crossings - departures",
+    "type": "Travel",
+    "source": "New Zealand Customs Service",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    "download": true,
+    "caveats": "Daily arrivals and departures data are based solely on border-crossings into and out of New Zealand, and do not incorporate arrival card information. These data are provisional and subject to revision during the full process of producing international travel statistics.",
+    "groups": [
+      {
+        "name": "New Zealand passport",
+        "title": "Customs daily border crossings - departures",
+        "units": "Number"
+      },
+      {
+        "name": "Other passports",
+        "title": "Customs daily border crossings - departures",
+        "units": "Number"
+      }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "Daily border crossings - arrivals",
+    "type": "Travel",
+    "source": "New Zealand Customs Service",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    "download": true,
+    "caveats": "Daily arrivals and departures data are based solely on border-crossings into and out of New Zealand, and do not incorporate arrival card information. These data are provisional and subject to revision during the full process of producing international travel statistics.",
+    "groups": [
+      {
+        "name": "New Zealand passport",
+        "title": "Customs daily border crossings - arrivals",
+        "units": "Number"
+      },
+      {
+        "name": "Other passports",
+        "title": "Customs daily border crossings - arrivals",
+        "units": "Number"
+      }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "Card transaction spend by industry",
+    "type": "Activity",
+    "source": "Stats NZ",
+    "plot_function": "get_time_series_plot",
+    "default_lower_range": "2017-01-01",
+    "international": false,
+    "include_date_slider": true,
+    "source_url": "https://www.stats.govt.nz/information-releases/electronic-card-transactions-march-2020",
+    "download": true,
+    "groups": [
+      {
+        "name": "Retail (actual)",
+        "title": "Monthly card transaction spend by industry",
+        "units": "$"
+      },
+      {
+        "name": "Services (actual)",
+        "title": "Monthly card transaction spend by industry",
+        "units": "$"
+      },
+      {
+        "name": "Non-retail (actual)",
+        "title": "Monthly card transaction spend by industry",
+        "units": "$"
+      },
+      {
+        "name": "Retail (seasonally adjusted)",
+        "title": "Monthly card transaction spend by industry",
+        "units": "$"
+      },
+      {
+        "name": "Services (seasonally adjusted)",
+        "title": "Monthly card transaction spend by industry",
+        "units": "$"
+      },
+      {
+        "name": "Non-retail (seasonally adjusted)",
+        "title": "Monthly card transaction spend by industry",
+        "units": "$"
+      }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "Commodity price index",
+    "type": "Trade",
+    "source": "ASB",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    "default_lower_range": "2017-01-01",
+    "source_url": "https://www.asb.co.nz/documents/economic-research/commodities-weekly.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "ASB New Zealand commodity prices indices (USD)",
+        "units": "Index"
+      }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "Trade weighted index",
+    "type": "Financial",
+    "source": "Reserve Bank of New Zealand",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    "source_url": "https://www.rbnz.govt.nz/statistics/b1",
+    "download": true,
+    "groups": [
+      {
+        "name": "New Zealand trade weighted index ",
+        "title": "New Zealand trade weighted index",
+        "units": "Index"
+      }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "New Zealand stock exchange",
+    "type": "Financial",
+    "source": "Standard & Poor's",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    "source_url": "https://www.nzx.com/markets/indices",
+    "download": false,
+    "groups": [
+      {
+        "name": "NZX - all index",
+        "title": "New Zealand stock exchange - all index",
+        "units": "Index"
+      }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "Bank bill yields",
+    "type": "Financial",
+    "source": "Reserve Bank of New Zealand",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    "source_url": "https://www.rbnz.govt.nz/statistics/b2",
+    "download": true,
+    "groups": [
+      {
+        "name": "New Zealand bank bill yields - 90-days",
+        "title": "New Zealand bank bill yields - 90-days",
+        "units": "% per annum"
+      }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "Foreign exchange",
+    "type": "Financial",
+    "source": "Reserve Bank of New Zealand",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    "source_url": "https://www.rbnz.govt.nz/statistics/b1",
+    "download": true,
+    "groups": [
+      {
+        "name": "NZD/USD",
+        "title": "New Zealand dollar (NZD/USD)",
+        "units": "$"
+      }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "Electricity grid demand",
+    "type": "Activity",
+    "source": "Electricity Authority (New Zealand)",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    "default_lower_range": "2020-01-01",
+    "source_url": "https://www.emi.ea.govt.nz/",
+    "download": true,
+    "groups": [
+      {
+        "name": "New Zealand",
+        "title": "Daily electricity grid demand - Total",
+        "units": "Gigawatt hours"
+      },
+      {
+        "name": "North Island",
+        "title": "Daily electricity grid demand - North Island",
+        "units": "Gigawatt hours"
+      },
+      {
+        "name": "Upper North Island",
+        "title": "Daily electricity grid demand - Upper North Island",
+        "units": "Gigawatt hours"
+      },
+      {
+        "name": "Central North Island",
+        "title": "Daily electricity grid demand - Central North Island",
+        "units": "Gigawatt hours"
+      },
+      {
+        "name": "Lower North Island",
+        "title": "Daily electricity grid demand - Lower North Island",
+        "units": "Gigawatt hours"
+      },
+      {
+        "name": "South Island",
+        "title": "Daily electricity grid demand - South Island",
+        "units": "Gigawatt hours"
+      },
+      {
+        "name": "Upper South Island",
+        "title": "Daily electricity grid demand - Upper South Island",
+        "units": "Gigawatt hours"
+      },
+      {
+        "name": "Lower South Island",
+        "title": "Daily electricity grid demand - Lower South Island",
+        "units": "Gigawatt hours"
+      }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "China purchasing managers index",
+    "type": "Confidence",
+    "source": "Haver Analytics",
+    "plot_function": "get_time_series_plot",
+    "international": true,
+    "download": false,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "China purchasing managers index",
+        "units": "Index"
+      }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "United States jobless claims",
+    "type": "Employment",
+    "source": "US Department of Labor",
+    "plot_function": "get_time_series_plot",
+    "international": true,
+    "include_date_slider": true,
+    "source_url": "https://www.dol.gov/",
+    "download": true,
+    "groups": [
+      {
+        "name": "US jobless claims (initial)",
+        "title": "United States unemployment insurance weekly claims - seasonally adjusted",
+        "units": "Number"
+      }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "United States economic index",
+    "type": "Confidence",
+    "source": "Federal Reserve Bank of New York",
+    "plot_function": "get_time_series_plot",
+    "international": true,
+    "default_lower_range": "2018-07-12",
+    "include_date_slider": true,
+    "source_url": "https://www.newyorkfed.org/research/policy/weekly-economic-index",
+    "download": false,
+    "groups": [
+      {
+        "name": "US weekly economic index",
+        "title": "United States weekly economic index",
+        "units": "Index"
+      }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "Investor sentiment",
+    "type": "Financial",
+    "source": "Haver Analytics",
+    "plot_function": "get_time_series_plot",
+    "international": true,
+    "download": false,
+    "groups": [
+      {
+        "name": "Sentiment index",
+        "title": "Global investor sentiment index",
+        "units": "Index"
+      }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "Commodity prices",
+    "type": "Financial",
+    "source": "Haver Analytics",
+    "plot_function": "get_time_series_plot",
+    "international": true,
+    "include_date_slider": true,
+    "download": false,
+    "groups": [
+      {
+        "name": "Crude oil",
+        "title": "Price per barrel of crude oil (USD)",
+        "units": "$"
+      },
+      {
+        "name": "Coal",
+        "title": "Price per metric ton of coal (USD)",
+        "units": "$"
+      },
+      {
+        "name": "Copper",
+        "title": "Price per metric tonne of copper (USD)",
+        "units": "$"
+      }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "Global stock markets",
+    "type": "Financial",
+    "source": "Standard & Poor's",
+    "plot_function": "get_time_series_plot",
+    "international": true,
+    "include_date_slider": true,
+    "download": false,
+    "groups": [
+      {
+        "name": "Australia All Ordinaries",
+        "title": "Global stock markets",
+        "units": "Index"
+      },
+      {
+        "name": "China Securities Index 300",
+        "title": "Global stock markets",
+        "units": "Index"
+      },
+      {
+        "name": "S&P Global 1200 Index",
+        "title": "Global stock markets",
+        "units": "Index"
+      }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "Market volatility index",
+    "type": "Financial",
+    "source": "Haver Analytics",
+    "plot_function": "get_time_series_plot",
+    "international": true,
+    "include_date_slider": true,
+    "download": false,
+    "groups": [
+      {
+        "name": "Market volatility index",
+        "title": "Market volatility index",
+        "units": "Index"
+      }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "Baltic dry index",
+    "type": "Financial",
+    "source": "Haver Analytics",
+    "plot_function": "get_time_series_plot",
+    "international": true,
+    "include_date_slider": true,
+    "download": false,
+    "groups": [
+      {
+        "name": "Baltic dry index",
+        "title": "Baltic dry index",
+        "units": "Index"
+      }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "Global dairy trade",
+    "type": "Trade",
+    "source": "Global Dairy Trade",
+    "plot_function": "get_time_series_plot",
+    "international": true,
+    "download": false,
+    "groups": [
+      {
+        "name": "Global dairy trade price index",
+        "title": "Global dairy trade price index",
+        "units": "Index"
+      }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "Coal consumption - China",
+    "type": "Trade",
+    "source": "UBS",
+    "plot_function": "get_time_series_plot",
+    "international": true,
+    "download": false,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "China daily coal consumption of six power plants",
+        "units": "Ton"
+      }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "Property sales - China",
+    "type": "Financial",
+    "source": "UBS",
+    "plot_function": "get_time_series_plot",
+    "international": true,
+    "download": false,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Daily property sales for 30 major Chinese cities",
+        "units": "Tenth of a square metre"
+      }
+    ]
+  },
+  {
+    "class": "Social",
+    "indicator_name": "Jobseeker support",
+    "type": "Benefits",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Number on jobseeker support benefit",
+        "units": "Number"
+      }
+    ]
+  },
+  {
+    "class": "Social",
+    "indicator_name": "Accomodation supplement",
+    "type": "Supplementary support",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "Accomodation supplement",
+        "title": "Accomodation supplement",
+        "units": "Number"
+      }
+    ]
+  },
+  {
+    "class": "Social",
+    "indicator_name": "Special needs grants for food",
+    "type": "Hardship assistance",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "Special needs grants for food",
+        "title": "Special needs grants for food",
+        "units": "Number"
+      }
+    ]
+  },
+  {
+    "class": "Social",
+    "indicator_name": "Temporary additional support and special benefit",
+    "type": "Supplementary support",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "Temporary additional support and special benefit",
+        "title": "Temporary additional support and special benefit",
+        "units": "Number"
+      }
+    ]
+  },
+  {
+    "class": "Social",
+    "indicator_name": "All special needs grants",
+    "type": "Hardship assistance",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "All special needs grants",
+        "title": "All special needs grants",
+        "units": "Number"
+      }
+    ]
+  },
+  {
+    "class": "Social",
+    "indicator_name": "Jobseeker support by MSD defined region",
+    "type": "Benefits",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "Auckland metro",
+        "title": "Number on jobseeker support benefit - Auckland metro",
+        "units": "Number"
+      },
+      {
+        "name": "Bay of Plenty",
+        "title": "Number on jobseeker support benefit - Bay of Plenty",
+        "units": "Number"
+      },
+      {
+        "name": "Canterbury",
+        "title": "Number on jobseeker support benefit - Canterbury",
+        "units": "Number"
+      },
+      {
+        "name": "Central",
+        "title": "Number on jobseeker support benefit - Central",
+        "units": "Number"
+      },
+      {
+        "name": "East Coast",
+        "title": "Number on jobseeker support benefit - East Coast",
+        "units": "Number"
+      },
+      {
+        "name": "Nelson",
+        "title": "Number on jobseeker support benefit - Nelson",
+        "units": "Number"
+      },
+      {
+        "name": "Northland",
+        "title": "Number on jobseeker support benefit - Northland",
+        "units": "Number"
+      },
+      {
+        "name": "Southern",
+        "title": "Number on jobseeker support benefit - Southern",
+        "units": "Number"
+      },
+      {
+        "name": "Taranaki",
+        "title": "Number on jobseeker support benefit - Taranaki",
+        "units": "Number"
+      },
+      {
+        "name": "Waikato",
+        "title": "Number on jobseeker support benefit - Waikato",
+        "units": "Number"
+      },
+      {
+        "name": "Wellington",
+        "title": "Number on jobseeker support benefit - Wellington",
+        "units": "Number"
+      },
+      {
+        "name": "Other region",
+        "title": "Number on jobseeker support benefit - Other region",
+        "units": "Number"
+      },
+      {
+        "name": "Total",
+        "title": "Number on jobseeker support benefit - Total",
+        "units": "Number"
+      }
+    ]
+  },
+  {
+    "class": "Social",
+    "indicator_name": "Percentage of population",
+    "type": "Benefits",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "Percentage of the working-age population",
+        "title": "Percentage of the working-age population receiving jobseeker support",
+        "units": "%"
+      }
+    ]
+  },
+  {
+    "class": "Social",
+    "indicator_name": "Number of applications",
+    "type": "Wage subsidy assistance",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Number of wage subsidy applications (cumulative)",
+        "units": "Number"
+      }
+    ]
+  },
+  {
+    "class": "Social",
+    "indicator_name": "Number of paid applications",
+    "type": "Wage subsidy assistance",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Number of people associated with paid out wage subsidy applications (cumulative)",
+        "units": "Number"
+      }
+    ]
+  },
+  {
+    "class": "Social",
+    "indicator_name": "Amount of wage subsidy paid out",
+    "type": "Wage subsidy assistance",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "Amount paid out",
+        "title": "Amount of wage subsidy paid out (cumulative)",
+        "units": "$"
+      }
+    ]
+  },
+  {
+    "class": "Health",
+    "indicator_name": "Number of cases",
+    "type": "COVID-19",
+    "source": "Ministry of Health",
+    "plot_function": "get_stacked_bar_chart",
+    "international": false,
+    "download": true,
+    "groups": [
+      {
+        "name": "New Zealand",
+        "title": "COVID-19 cases in New Zealand (cumulative)",
+        "units": "Number",
+        "source_url": "https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation/covid-19-current-cases"
+      },
+      {
+        "name": "Australia",
+        "title": "COVID-19 cases in Australia (cumulative)",
+        "units": "Number",
+        "source": "Center for System Science and Engineering, Johns Hopkins University",
+        "source_url": "https://coronavirus.jhu.edu/"
+      },
+      {
+        "name": "Canada",
+        "title": "COVID-19 cases in Canada (cumulative)",
+        "units": "Number",
+        "source": "Center for System Science and Engineering, Johns Hopkins University",
+        "source_url": "https://coronavirus.jhu.edu/"
+      },
+      {
+        "name": "Singapore",
+        "title": "COVID-19 cases in Singapore (cumulative)",
+        "units": "Number",
+        "source": "Center for System Science and Engineering, Johns Hopkins University",
+        "source_url": "https://coronavirus.jhu.edu/"
+      },
+      {
+        "name": "Italy",
+        "title": "COVID-19 cases in Italy (cumulative)",
+        "units": "Number",
+        "source": "Center for System Science and Engineering, Johns Hopkins University",
+        "source_url": "https://coronavirus.jhu.edu/"
+      },
+      {
+        "name": "Spain",
+        "title": "COVID-19 cases in Spain (cumulative)",
+        "units": "Number",
+        "source": "Center for System Science and Engineering, Johns Hopkins University",
+        "source_url": "https://coronavirus.jhu.edu/"
+      },
+      {
+        "name": "United Kingdom",
+        "title": "COVID-19 cases in United Kingdom (cumulative)",
+        "units": "Number",
+        "source": "Center for System Science and Engineering, Johns Hopkins University",
+        "source_url": "https://coronavirus.jhu.edu/"
+      },
+      {
+        "name": "United States",
+        "title": "COVID-19 cases in United States (cumulative)",
+        "units": "Number",
+        "source": "Center for System Science and Engineering, Johns Hopkins University",
+        "source_url": "https://coronavirus.jhu.edu/"
+      },
+      {
+        "name": "Rest of world",
+        "title": "COVID-19 cases in rest of world (cumulative)",
+        "units": "Number",
+        "source": "Center for System Science and Engineering, Johns Hopkins University",
+        "source_url": "https://coronavirus.jhu.edu/"
+      }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "Traffic volumes index",
+    "type": "Transport",
+    "source": "ANZ",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.anz.co.nz/about-us/economic-markets-research/truckometer/",
+    "download": false,
+    "groups": [
+      {
+        "name": "Heavy traffic index",
+        "title": "ANZ New Zealand Truckometer - seasonally adjusted",
+        "units": "Index"
+      },
+      {
+        "name": "Light traffic index",
+        "title": "ANZ New Zealand Truckometer - seasonally adjusted",
+        "units": "Index"
+      }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "Weekly traffic count",
+    "type": "Transport",
+    "source": "NZ Transport Agency",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    "source_url": "https://www.nzta.govt.nz/about-us/coronavirus-disease-covid-19-services-update/weekly-traffic-count-information/",
+    "download": true,
+    "groups": [
+      {
+        "name": "Auckland - Heavy vehicles",
+        "title": "Auckland weekly traffic - selected site 5 day average (excluding weekends)",
+        "units": "Traffic count"
+      },
+      {
+        "name": "Auckland - Light vehicles",
+        "title": "Auckland weekly traffic - selected site 5 day average (excluding weekends)",
+        "units": "Traffic count"
+      },
+      {
+        "name": "Christchurch - Heavy vehicles",
+        "title": "Christchurch weekly traffic - selected site 5 day average (excluding weekends)",
+        "units": "Traffic count"
+      },
+      {
+        "name": "Christchurch - Light vehicles",
+        "title": "Christchurch weekly traffic - selected site 5 day average (excluding weekends)",
+        "units": "Traffic count"
+      },
+      {
+        "name": "Dunedin - Heavy vehicles",
+        "title": "Dunedin weekly traffic - selected site 5 day average (excluding weekends)",
+        "units": "Traffic count"
+      },
+      {
+        "name": "Dunedin - Light vehicles",
+        "title": "Dunedin weekly traffic - selected site 5 day average (excluding weekends)",
+        "units": "Traffic count"
+      },
+      {
+        "name": "Hamilton - Heavy vehicles",
+        "title": "Hamilton weekly traffic - selected site 5 day average (excluding weekends)",
+        "units": "Traffic count"
+      },
+      {
+        "name": "Hamilton - Light vehicles",
+        "title": "Hamilton weekly traffic - selected site 5 day average (excluding weekends)",
+        "units": "Traffic count"
+      },
+      {
+        "name": "Wellington - Heavy vehicles",
+        "title": "Wellington weekly traffic - selected site 5 day average (excluding weekends)",
+        "units": "Traffic count"
+      },
+      {
+        "name": "Wellington - Light vehicles",
+        "title": "Wellington weekly traffic - selected site 5 day average (excluding weekends)",
+        "units": "Traffic count"
+      }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "Aircraft takeoff weights",
+    "type": "Transport",
+    "source": "Auckland Airport",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    "source_url": "https://corporate.aucklandairport.co.nz/news/publications/monthly-traffic-updates",
+    "download": true,
+    "groups": [
+      {
+        "name": "International MCTOW",
+        "title": "International maximum certified takeoff weight (MCTOW) -  Auckland Airport",
+        "units": "Tonnes"
+      },
+      {
+        "name": "Domestic MCTOW",
+        "title": "Domestic maximum certified takeoff weight (MCTOW) -  Auckland Airport",
+        "units": "Tonnes"
+      }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "Aircraft cargo",
+    "type": "Transport",
+    "source": "Stats NZ",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    "download": true,
+    "groups": [
+      {
+        "name": "Export FOB - Auckland",
+        "title": "Aircraft cargo export free on board (FOB) - Auckland Airport ",
+        "units": "$"
+      },
+      {
+        "name": "Import CIF - Auckland",
+        "title": "Aircraft cargo import cost, insurance and freight (CIF) - Auckland Airport",
+        "units": "$"
+      },
+      {
+        "name": "Export FOB - Christchurch",
+        "title": "Aircraft cargo export free on board (FOB) - Christchurch Airport ",
+        "units": "$"
+      },
+      {
+        "name": "Import CIF - Christchurch",
+        "title": "Aircraft cargo import cost, insurance and freight (CIF) - Christchurch Airport",
+        "units": "$"
+      },
+      {
+        "name": "Export gross weight - Auckland",
+        "title": "Aircraft cargo export gross weight - Auckland Airport ",
+        "units": "Tonnes"
+      },
+      {
+        "name": "Import gross weight - Auckland",
+        "title": "Aircraft cargo import gross weight - Auckland Airport",
+        "units": "Tonnes"
+      },
+      {
+        "name": "Export gross weight - Christchurch",
+        "title": "Aircraft cargo export gross weight - Christchurch Airport ",
+        "units": "Tonnes"
+      },
+      {
+        "name": "Import gross weight - Christchurch",
+        "title": "Aircraft cargo import gross weight - Christchurch Airport",
+        "units": "Tonnes"
+      }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "Transport congestion - China",
+    "type": "Transport",
+    "source": "UBS",
+    "plot_function": "get_time_series_plot",
+    "international": true,
+    "download": false,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "China 100-city average transport congestion index",
+        "units": "Index"
+      }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "Global flight movements",
+    "type": "Transport",
+    "source": "Flightradar 24",
+    "plot_function": "get_time_series_plot",
+    "international": true,
+    "include_date_slider": false,
+    "source_url": "https://www.flightradar24.com/data/statistics",
+    "download": false,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Global daily commercial flights ",
+        "units": "Number"
+      }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "Aircraft movements",
+    "type": "Transport",
+    "source": "Queenstown Airport",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    "source_url": "https://www.queenstownairport.co.nz/corporate/airport-statistics)",
+    "download": true,
+    "groups": [
+        {
+            "name": "Domestic aircraft - Auckland",
+            "title": "Domestic aircraft movements -  Auckland Airport",
+            "units": "Number"
+        },
+        {
+            "name": "International aircraft - Auckland",
+            "title": "International aircraft movements -  Auckland Airport",
+            "units": "Number"
+        },
+        {
+            "name": "Domestic aircraft - Queenstown",
+            "title": "Domestic aircraft movements - Queenstown Airport",
+            "units": "Number"
+        },
+        {
+            "name": "International aircraft - Queenstown",
+            "title": "International aircraft movements - Queenstown Airport",
+            "units": "Number"
+        }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "Jobs online measure by industry",
+    "type": "Employment",
+    "source": "Ministry of Business, Innovation and Employment",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    "default_lower_range": "2017-02-01",
+    "source_url": "https://mbienz.shinyapps.io/labour-market-dashboard_prod/",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Online job advertisements by industry",
+        "units": "Index"
+      }
+    ]
+  },
+  {
+    "class": "Social",
+    "indicator_name": "Jobseeker support by regional council",
+    "type": "Benefits",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+        {
+            "name": "Total",
+            "title": "Number on jobseeker support benefit - Total",
+            "units": "Number"
+        },
+        {
+            "name": "Auckland",
+            "title": "Number on jobseeker support benefit - Auckland Council",
+            "units": "Number",
+            "data_service": "load_from_web_service",
+            "data_service_url": "https://uat.data.govt.nz/api/3/action/datastore_search?resource_id=0125f497-6177-470b-8cf5-f58cff31abdd",
+            "load_function": "default_web_service_load_function"
+        },
+        {
+            "name": "Bay of Plenty",
+            "title": "Number on jobseeker support benefit - Bay of Plenty Council",
+            "units": "Number"
+        },
+        {
+            "name": "Canterbury",
+            "title": "Number on jobseeker support benefit - Canterbury Council",
+            "units": "Number"
+        },
+        {
+            "name": "Gisborne",
+            "title": "Number on jobseeker support benefit - Gisborne Council",
+            "units": "Number"
+        },
+        {
+            "name": "Hawke's Bay",
+            "title": "Number on jobseeker support benefit - Hawke's Bay Council",
+            "units": "Number"
+        },
+        {
+            "name": "Manawatu-Whanganui",
+            "title": "Number on jobseeker support benefit - Manawatu-Whanganui Council",
+            "units": "Number"
+        },
+        {
+            "name": "Marlborough",
+            "title": "Number on jobseeker support benefit - Marlborough Council",
+            "units": "Number"
+        },
+        {
+            "name": "Nelson",
+            "title": "Number on jobseeker support benefit - Nelson Council",
+            "units": "Number"
+        },
+        {
+            "name": "Northland",
+            "title": "Number on jobseeker support benefit - Northland Council",
+            "units": "Number"
+        },
+        {
+            "name": "Otago",
+            "title": "Number on jobseeker support benefit - Otago Council",
+            "units": "Number"
+        },
+        {
+            "name": "Southland",
+            "title": "Number on jobseeker support benefit - Southland Council",
+            "units": "Number"
+        },
+        {
+            "name": "Taranaki",
+            "title": "Number on jobseeker support benefit - Taranaki Council",
+            "units": "Number"
+        },
+        {
+            "name": "Tasman",
+            "title": "Number on jobseeker support benefit - Tasman Council",
+            "units": "Number"
+        },
+        {
+            "name": "Waikato",
+            "title": "Number on jobseeker support benefit - Waikato Council",
+            "units": "Number"
+        },
+        {
+            "name": "Wellington",
+            "title": "Number on jobseeker support benefit - Wellington Council",
+            "units": "Number"
+        },
+        {
+            "name": "West Coast",
+            "title": "Number on jobseeker support benefit - West Coast Council",
+            "units": "Number"
+        },
+        {
+            "name": "Other",
+            "title": "Number on jobseeker support benefit - Other Council",
+            "units": "Number"
+        }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "Business lending",
+    "type": "Financial",
+    "source": "New Zealand Bankers Association",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.nzba.org.nz/consumer-information/covid-19/",
+    "download": false,
+    "groups": [
+      {
+        "name": "New lending - number of customers",
+        "title": "New business lending - (cumulative since 26 March 2020)",
+        "units": "Number"
+      },
+      {
+        "name": "New lending - amount",
+        "title": "New business lending - (cumulative since 26 March 2020)",
+        "units": "$"
+      },
+      {
+        "name": "Reduced loan repayments - number of customers",
+        "title": "Reduced loan repayments - (cumulative since 26 March 2020)",
+        "units": "Number"
+      },
+      {
+        "name": "Reduced loan repayments - amount of customers",
+        "title": "Reduced loan repayments - (cumulative since 26 March 2020)",
+        "units": "$"
+      },
+      {
+        "name": "All deferred loan repayments - number of customers",
+        "title": "All deferred loan repayments - (cumulative since 26 March 2020)",
+        "units": "Number"
+      },
+      {
+        "name": "All deferred loan repayments - amount",
+        "title": "All deferred loan repayments - (cumulative since 26 March 2020)",
+        "units": "$"
+      },
+      {
+        "name": "Restructured loans - number of customers",
+        "title": "Restructured loans - (cumulative since 26 March 2020)",
+        "units": "Number"
+      },
+      {
+        "name": "Restructured loans - amount",
+        "title": "Restructured loans - (cumulative since 26 March 2020)",
+        "units": "$"
+      }
+    ],
+    "caveats":"<p>1. Business lending includes temporary or term business lending, stock or equipment finance, and arranged overdrafts.</p><p>2. Amounts for new lending represents limits or limit increases.</p><p>3. Amounts for loans represents outstanding balance at date of conversion/reduction/deferral.</p><p>4. Reduced loan repayments represents interest-only, or reduced principal and/or interest repayments.</p>"
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "Consumer lending",
+    "type": "Financial",
+    "source": "New Zealand Bankers Association",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.nzba.org.nz/consumer-information/covid-19/",
+    "download": false,
+    "groups": [
+      {
+        "name": "New lending - number of customers",
+        "title": "New consumer lending - (cumulative since 26 March 2020)",
+        "units": "Number"
+      },
+      {
+        "name": "New lending - amount",
+        "title": "New consumer lending - (cumulative since 26 March 2020)",
+        "units": "$"
+      },
+      {
+        "name": "Reduced loan repayments - number of customers",
+        "title": "Reduced loan repayments from consumer - (cumulative since 26 March 2020)",
+        "units": "Number"
+      },
+      {
+        "name": "Reduced loan repayments - amount",
+        "title": "Reduced loan repayments from consumers - (cumulative since 26 March 2020)",
+        "units": "$"
+      },
+      {
+        "name": "All deferred loan repayments - number of customers",
+        "title": "All deferred loan repayments - (cumulative since 26 March 2020)",
+        "units": "Number"
+      },
+      {
+        "name": "All deferred loan repayments - amount",
+        "title": "All deferred loan repayments - (cumulative since 26 March 2020)",
+        "units": "$"
+      }
+    ],
+    "caveats":"<p>1. Consumer lending includes home loans, personal lending, credit cards and arranged overdrafts.</p><p>2. Amounts represents outstanding balance at date of lending/ conversion/ reduction/ deferral.</p><p>3. Reduced loan repayments represents interest-only, or reduced principal and/or interest repayments.</p>"
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "Retail sales index",
+    "type": "Activity",
+    "source": "Retail NZ",
+    "plot_function": "get_stacked_bar_chart",
+    "international": false,
+    "source_url": "https://www.retail.kiwi/advice/benchmarking-data",
+    "download": true,
+    "groups": [
+      {
+        "name": "Retail sales index",
+        "title": "Retail NZ monthly spend compared to previous year",
+        "units": "%"
+      }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "Exports by country (values)",
+    "type": "Trade",
+    "source": "Stats NZ",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "download": true,
+    "source_url": "https://www.stats.govt.nz/news/new-zealand-trade-after-the-covid-19-outbreak-29-april-update",
+    "groups": [
+        {
+            "name": "All",
+            "units": "$",
+            "title": "Value of total goods exports to all countries (cumulative) - provisional",
+            "visible": ["2020", "2019", "2018"]
+        },
+        {
+            "name": "Australia",
+            "units": "$",
+            "title": "Value of goods exports to Australia (cumulative) - provisional",
+            "visible": ["2020", "2019", "2018"]
+        },
+        {
+            "name": "China",
+            "units": "$",
+            "title": "Value of goods exports to China (cumulative) - provisional",
+            "visible": ["2020", "2019", "2018"]
+        },
+        {
+            "name": "United States",
+            "units": "$",
+            "title": "Value goods exports to United States (cumulative) - provisional",
+            "visible": ["2020", "2019", "2018"]
+        },
+        {
+            "name": "Japan",
+            "units": "$",
+            "title": "Value of goods exports to Japan (cumulative) - provisional",
+            "visible": ["2020", "2019", "2018"]
+        },
+        {
+            "name": "European Union (28)",
+            "units": "$",
+            "title": "Value of goods exports to European Union (28) (cumulative) - provisional",
+            "visible": ["2020", "2019", "2018"]
+        },
+        {
+            "name": "East Asia (excluding China)",
+            "units": "$",
+            "title": "Value of goods exports to East Asia (cumulative) - provisional",
+            "visible": ["2020", "2019", "2018"]
+        },
+        {
+            "name": "Total (excluding China)",
+            "units": "$",
+            "title": "Value of goods exports - total excluding China (cumulative) - provisional",
+            "visible": ["2020", "2019", "2018"]
+        }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "Imports by country (values)",
+    "type": "Trade",
+    "source": "Stats NZ",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "download": true,
+    "source_url": "https://www.stats.govt.nz/news/new-zealand-trade-after-the-covid-19-outbreak-29-april-update",
+    "groups": [
+        {
+            "name": "All",
+            "units": "$",
+            "title": "Value of total goods imports to all countries (cumulative) - provisional",
+            "visible": ["2020", "2019", "2018"]
+        },
+        {
+            "name": "Australia",
+            "units": "$",
+            "title": "Value of goods imports to Australia (cumulative) - provisional",
+            "visible": ["2020", "2019", "2018"]
+        },
+        {
+            "name": "China",
+            "units": "$",
+            "title": "Value of goods imports to China (cumulative) - provisional",
+            "visible": ["2020", "2019", "2018"]
+        }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "Exports by commodity (values)",
+    "type": "Trade",
+    "source": "Stats NZ",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "download": true,
+    "source_url": "https://www.stats.govt.nz/news/new-zealand-trade-after-the-covid-19-outbreak-29-april-update",
+    "groups": [
+        {
+            "name": "All",
+            "units": "$",
+            "title": "Value of total goods exports to all countries (cumulative) - provisional",
+            "visible": ["2020", "2019", "2018"]
+        },
+        {
+            "name": "Dairy",
+            "units": "$",
+            "title": "Value of dairy exports (cumulative) - provisional",
+            "visible": ["2020", "2019", "2018"]
+        },
+        {
+            "name": "Meat",
+            "units": "$",
+            "title": "Value of meat exports (cumulative) - provisional",
+            "visible": ["2020", "2019", "2018"]
+        },
+        {
+            "name": "Seafood",
+            "units": "$",
+            "title": "Value of seafood exports (cumulative) - provisional",
+            "visible": ["2020", "2019", "2018"]
+        },
+        {
+            "name": "Forestry",
+            "units": "$",
+            "title": "Value of forestry exports (cumulative) - provisional",
+            "visible": ["2020", "2019", "2018"]
+        },
+        {
+            "name": "Fruit",
+            "units": "$",
+            "title": "Value of fruit exports (cumulative) - provisional",
+            "visible": ["2020", "2019", "2018"]
+        }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "Imports by commodity (values)",
+    "type": "Trade",
+    "source": "Stats NZ",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "download": true,
+    "source_url": "https://www.stats.govt.nz/news/new-zealand-trade-after-the-covid-19-outbreak-29-april-update",
+    "groups": [
+        {
+            "name": "All",
+            "units": "$",
+            "title": "Value of total goods imports to all countries (cumulative) - provisional",
+            "visible": ["2020", "2019", "2018"]
+        },
+        {
+            "name": "Non-food manufactured goods",
+            "units": "$",
+            "title": "Value of non-food manufactured goods imports (cumulative) - provisional",
+            "visible": ["2020", "2019", "2018"]
+        },
+        {
+            "name": "Machinery and electronics",
+            "units": "$",
+            "title": "Value of machinary and electronics imports (cumulative) - provisional",
+            "visible": ["2020", "2019", "2018"]
+        }
+    ]
+  },
+  {
+    "class": "Health",
+    "indicator_name": "By region",
+    "type": "Weekly deaths",
+    "source": "Department of Internal Affairs",
+    "plot_function": "get_stacked_bar_chart",
+    "international": false,
+    "include_date_slider": true,
+    "default_lower_range": "2020-02-01",
+    "download": true,
+    "caveats": "<p>(1) Weekly deaths data are based on Date of Death and differ from other deaths statistics based on date of registration. These data are provisional and subject to revision during the full process of producing death statistics.</p><p>(2) Totals are by Date of Death. Week beginning Monday.</p><p>(3) Weekly totals will differ from those in the death registrations time series as deaths are registered at the time of burial or cremation of the body. </p><p>(4) An average of 5% of Deaths are registered 2 weeks or more after Date of Death therefore weekly totals are expected to increase over time as Death Registrations are submitted and processed.</p><p>(5) Overseas addresses or where location could not be determined and records where the persons sex is missing or not in Male or Female have been excluded as these numbers are too low to publish a weekly total. </p><p>(6) The accuracy of any administrative data, which includes but is not limited to address information is subject to human error.</p><p>(7) The data provided has been collated to the best of our ability and may have a small variance to any alternative publications.</p>",
+    "groups": [
+        {
+            "name": "Auckland",
+            "title": "Weekly deaths by region of residence - Auckland",
+            "units": "Number"
+          },
+      {
+        "name": "Wellington",
+        "title": "Weekly deaths by region of residence - Wellington",
+        "units": "Number"
+      },
+      {
+        "name": "Canterbury",
+        "title": "Weekly deaths by region of residence - Canterbury",
+        "units": "Number"
+      },
+      {
+        "name": "Other North Island regions",
+        "title": "Weekly deaths by region of residence - Other North Island regions",
+        "units": "Number"
+      },
+      {
+        "name": "Other South Island regions",
+        "title": "Weekly deaths by region of residence - Other South Island regions",
+        "units": "Number"
+      }
+    ]
+  },
+  {
+    "class": "Health",
+    "indicator_name": "By age and sex",
+    "type": "Weekly deaths",
+    "source": "Department of Internal Affairs",
+    "plot_function": "get_stacked_bar_chart",
+    "international": false,
+    "include_date_slider": true,
+    "default_lower_range": "2020-02-01",
+    "download": true,
+    "caveats": "<p>(1) Weekly deaths data are based on Date of Death and differ from other deaths statistics based on date of registration. These data are provisional and subject to revision during the full process of producing death statistics.</p><p>(2) Totals are by Date of Death. Week beginning Monday.</p><p>(3) Weekly totals will differ from those in the death registrations time series as deaths are registered at the time of burial or cremation of the body. </p><p>(4) An average of 5% of Deaths are registered 2 weeks or more after Date of Death therefore weekly totals are expected to increase over time as Death Registrations are submitted and processed.</p><p>(5) Overseas addresses or where location could not be determined and records where the persons sex is missing or not in Male or Female have been excluded as these numbers are too low to publish a weekly total. </p><p>(6) The accuracy of any administrative data, which includes but is not limited to address information is subject to human error.</p><p>(7) The data provided has been collated to the best of our ability and may have a small variance to any alternative publications.</p>",
+    "groups": [
+      {
+        "name": "Total",
+        "title": "Weekly deaths by age and sex - Total",
+        "units": "Number"
+      },
+      {
+        "name": "Total 65 and over",
+        "title": "Weekly deaths by age and sex - Total 65 and over",
+        "units": "Number"
+      },
+      {
+        "name": "Total under 65",
+        "title": "Weekly deaths by age and sex - Total under 65",
+        "units": "Number"
+      },
+      {
+        "name": "Female 65 and over",
+        "title": "Weekly deaths by age and sex - Female 65 and over",
+        "units": "Number"
+      },
+      {
+        "name": "Female under 65",
+        "title": "Weekly deaths by age and sex - Female under 65",
+        "units": "Number"
+      },
+      {
+        "name": "Male 65 and over",
+        "title": "Weekly deaths by age and sex - Male 65 and over",
+        "units": "Number"
+      },
+      {
+        "name": "Male under 65",
+        "title": "Weekly deaths by age and sex - Male under 65",
+        "units": "Number"
+      }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "Flight departures by main airports",
+    "type": "Transport",
+    "source": "Flightradar24",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.flightradar24.com/data/statistics",
+    "download": false,
+    "groups": [
+      {
+        "name": "Auckland Airport",
+        "title": "Daily departures - Auckland Airport",
+        "units": "Number"
+      },
+      {
+        "name": "Wellington Airport",
+        "title": "Daily departures - Wellington Airport",
+        "units": "Number"
+      },
+      {
+        "name": "Christchurch Airport",
+        "title": "Daily departures - Christchurch Airport",
+        "units": "Number"
+      },
+      {
+        "name": "Queenstown Airport",
+        "title": "Daily departures - Queenstown Airport",
+        "units": "Number"
+      },
+      {
+        "name": "Dunedin Airport",
+        "title": "Daily departures - Dunedin Airport",
+        "units": "Number"
+      }
+    ]
+  }
+]

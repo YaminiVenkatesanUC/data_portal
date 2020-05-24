@@ -9,6 +9,7 @@ library(lubridate)
 library(tidyr)
 library(stringr)
 library(jsonlite)
+library(foreach)
 
 source("R/data_types.R")
 source("R/type_checks.R")

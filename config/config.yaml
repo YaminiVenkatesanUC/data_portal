@@ -1,0 +1,12 @@
+title: "Test"
+production: true
+data_directory: data/
+indicator_definitions: "config/covid_19_indicators.json"
+default_parameters:
+  data_type: "TimeSeries"
+  plot_function: "get_time_series_plot"
+  data_service: "load_from_store"
+primary_color: "#EC6607"
+data_store_filename: "data_store.RDS"
+about_model_html: "www/about_covid_19.html"
+download_modal_html: "www/download_modal_covid_19.html"
