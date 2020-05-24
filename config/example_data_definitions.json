@@ -1,0 +1,16 @@
+[
+    {
+      "class": "Example class",
+      "type": "Example type",
+      "indicator_name": "Indicator name",
+      "parameter_col": 1,
+      "value_col": [2, 3, 4],
+      "value_names": ["Linear", "Sine", "Cosine"],
+      "group_names": ["Linear", "Trigonmetric", "Trigonmetric"],
+      "sheet_number": 1,
+      "filename": "example_data.xlsx",
+      "parameter_transform": "function (x) ymd(x)",
+      "load_function": "read_from_excel",
+      "data_type": "TimeSeries"
+    }
+]

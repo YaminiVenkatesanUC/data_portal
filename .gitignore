@@ -5,3 +5,4 @@
 data/*
 rsconnect/*
 *.RDS
+config/config.yaml

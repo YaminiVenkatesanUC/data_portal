@@ -39,7 +39,7 @@ add_to_data_store <- function(data_definition, data_store, config) {
 
 load_to_data_store <- function(config) {
   data_store <- list()
-  data_definitions <- read_json(DATA_DEFINITION_FILENAME)
+  data_definitions <- read_json(config$data_definitions)
 
   for (data_definition in data_definitions) {
     data_store <- add_to_data_store(data_definition, data_store, config)
