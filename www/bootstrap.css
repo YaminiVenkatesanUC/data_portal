@@ -1,0 +1,196 @@
+.navbar-default {
+    background-color: #ffffff;
+    border-color: #4d5b61;
+    border-width: 0 0 0 0;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.navbar-default .navbar-nav .active a {
+  color: black;
+  background-color: #ffffff;
+  border-bottom: 4px solid var(--custom-color);
+  bottom:-12px;
+  padding-bottom:14px;
+}
+
+.navbar-default .navbar-nav li a {
+  color: black;
+  display: block;
+  height: 50px;
+  margin-left: 0px;
+  line-height: 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 20px;
+  background-color: #ffffff;
+  border-bottom: 3px solid #dbdbdb;
+  padding-bottom:14px;
+  bottom:-12px;
+  width:100%;
+  position:relative;
+  color:#0b0c0c;
+  padding-left:25px;
+  padding-right:25px;
+
+}
+
+.table.shiny-table > tbody > tr > td {
+  padding-right: 1px;
+}
+
+body {
+  font-family: 'Source Sans Pro';
+}
+
+.highcharts-title {
+  font-family: 'Source Sans Pro';
+}
+
+.highcharts-legend-item {
+  font-family: 'Source Sans Pro';
+}
+
+.highcharts-label {
+  font-family: 'Source Sans Pro';
+}
+
+.highcharts-tooltip {
+  font-family: 'Source Sans Pro';
+}
+
+.highcharts-axis-labels {
+  font-family: 'Source Sans Pro';
+}
+
+.highcharts-axis {
+  font-family: 'Source Sans Pro';
+}
+
+.leaflet-control-container .info {
+  font-family: 'Source Sans Pro';
+  font-size: 18px;
+}
+
+.btn-default {
+  white-space: normal;
+  word-wrap: break-word;
+  margin-top: 10px;
+}
+
+.btn-modal {
+  color: white;
+  white-space: normal;
+  word-wrap: break-word;
+  background-color: var(--custom-color);
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 15px;
+  border-color: #B8B8B8;
+}
+
+.modal-backdrop.in
+{
+    opacity:0.0;
+}
+
+.btn-details {
+  color: black;
+  white-space: normal;
+  word-wrap: break-word;
+  background-color: transparent;
+  font-weight: bold;
+  margin-right: 10px;
+  font-family: sans-serif;
+  font-size: 15px;
+  border-color: #B8B8B8;
+}
+
+.btn-tab {
+  white-space: normal;
+  word-wrap: break-word;
+  height: 80px;
+  width: 250px;
+  background-color: #F1F1F1;
+  line-height: 20px;
+  display: inline-flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.empty-indicator {
+  padding-top: 3%;
+  font-family: sans-serif;
+  font-size: 15px;
+  border-color: black;
+}
+
+.container-fluid{
+  margin-left:0;
+  margin-right:0;
+}
+
+#download_data-show, #about_dialog-show{
+  padding: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    line-height: 1.2rem;
+    text-transform: uppercase;
+    border-radius:0;
+    margin-bottom:5px;
+    
+}
+
+#download_data-show:hover{
+  color:#fff;
+  background-color: var(--custom-color);
+}
+
+.navbar-header{
+  display:none;
+}
+
+
+.navbar-default{
+  border-bottom:3px solid #dbdbdb;
+}
+
+.navbar1 > nav > .container-fluid {
+  padding-left:0;
+  padding-right:0;
+  
+}
+
+.navbar-nav{
+  width:100%;
+}
+
+.tab-pane{
+  margin-top:15px
+}
+
+.modal-dialog {
+  width: 100%;
+}
+
+.caveat-box {
+  background: rgba(204, 204, 204, 0.5);
+  border: 1px solid var(--custom-color);
+  padding: 10px; 
+  width: 100%;
+  overflow-y: scroll;
+  max-height: 150px;
+  border-radius: 5px;
+  text-align: left;
+}
+
+.description-box {
+  background: 'none';
+  border: 0px solid var(--custom-color);
+  padding: 10px; 
+  width: 100%;
+  overflow-y: auto;
+  max-height: 150px;
+  border-radius: 5px;
+  text-align: left;
+}
