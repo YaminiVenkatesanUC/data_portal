@@ -1,3 +1,42 @@
+read_from_csv <- function(config, directory) {
+  parameter_transform <- eval(parse(text = config$parameter_transform))
+  skip <- 0
+  if (!is.null(config$skip)) {
+    skip <- config$skip
+  }
+  cols_to_read <- c(config$parameter_col, unlist(config$value_col))
+  data <- as.data.frame(read.csv(
+    paste0(directory, config$filename)
+  ))
+  names(data) <- paste0("col_", 1:ncol(data))
+  
+  data <- data %>%
+    dplyr::rename(
+      Parameter = paste0("col_", config$parameter_col)
+    ) %>%
+    mutate(Parameter = parameter_transform(Parameter)) %>%
+    select(c("Parameter", paste0("col_", config$value_col)))
+  
+  if (!is.null(config$input_units)) {
+    data[,2:ncol(data)] <- mapply("*", data[,2:ncol(data)], config$input_units)
+  }
+
+  if (!is.null(config$date_filter)) {
+    date_filter <- eval(parse(text = config$date_filter))
+    data <- data %>% filter(date_filter(Parameter))
+  }
+
+  if (is.null(config$drop_na) || config$drop_na) {
+    data <- drop_na(data)
+  }
+
+  return (data_frame_to_data_object_helper(
+    directory,
+    config,
+    data %>% arrange(Parameter)
+  ))
+}
+
 read_from_excel <- function(config, directory) {
   parameter_transform <- eval(parse(text = config$parameter_transform))
   skip <- 0
@@ -249,11 +288,25 @@ chorus_load_function <- function(config, directory) {
   ))
 }
 
-read_time_series_from_api <- function() {
-  
+example_web_service_load_function <- function(data, indicator, group_name) {
+  data_type <- get_indicator_parameter("data_type", indicator, group_name)
+
+  data_object <- DATA_TYPES[[data_type]]$new(
+    data %>%
+      filter(series_name == group_name) %>%
+      select(date, value) %>%
+      mutate(date = as.Date(date)) %>%
+      arrange(date) %>%
+      rename(Parameter = date),
+    group_name,
+    as.Date(now())
+  )
+
+  return (data_object)
 }
 
 load_functions <- list(
+  read_from_csv = read_from_csv,
   read_from_excel = read_from_excel,
   read_border_crossing_data = read_border_crossing_data,
   read_border_crossing_data_daily = read_border_crossing_data_daily,
@@ -263,5 +316,5 @@ load_functions <- list(
   read_trade_data = read_trade_data,
   read_traffic_data = read_traffic_data,
   chorus_load_function = chorus_load_function,
-  read_time_series_from_api = read_time_series_from_api
+  example_web_service_load_function = example_web_service_load_function
 )

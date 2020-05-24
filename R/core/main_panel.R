@@ -43,7 +43,7 @@ main_plot_ui <- function(id, label) {
   )
 }
 
-top_panel_ui <- function(id, years, indicator_class) {
+top_panel_ui <- function(id, indicator_class) {
   ns <- NS(id)
   fluidRow(
     column(
@@ -219,7 +219,7 @@ main_plot_server <- function(input, output, session, indicator_class) {
 
   get_data_object <- reactive({
     indicator_definition <- get_indicator_definition()
-    data_object <- make_data_request(indicator_definition, input$line_selector)
+    data_object <- fetch_data(indicator_definition, input$line_selector)
 
     if ("TimeSeries" %in% class(data_object)) {
       dates <- data_object$dates

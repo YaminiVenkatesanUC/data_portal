@@ -1,3 +1,3 @@
-source("R/load_to_data_store.R")
+source("R/core/load_to_data_store.R")
 CONFIG <- read_config_file()
 load_to_data_store(CONFIG)

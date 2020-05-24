@@ -18,7 +18,7 @@ get_tab_panel <- function(indicator_classes, index) {
     return (
       tabPanel(class_name,
                fluidRow(
-                 column(12, top_panel_ui(paste0("main_plot_", gsub(" ", "_", class_name)), c(1,2), class_name)),
+                 column(12, top_panel_ui(paste0("main_plot_", gsub(" ", "_", class_name)), class_name)),
                  column(
                    10,
                    fluidRow(

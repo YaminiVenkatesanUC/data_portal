@@ -39,7 +39,6 @@ get_time_series_plot <- function(data_object, input, indicator_definition, type 
     categories <- format(dates, "%d-%b")
   }
 
-
   norm_factor_and_unit <- get_normalisation_factor(data_object$values)
 
   if (!is.null(group_definition$visible)) {
@@ -66,8 +65,6 @@ get_time_series_plot <- function(data_object, input, indicator_definition, type 
       )
 
      y_label <- group_definition$units
-
-
 
     plot <- hc_xAxis(
       plot,
@@ -175,8 +172,7 @@ get_bar_chart <- function(data_object, input, indicator_definition, type, rotati
       labels = list(style = list(fontSize = "14px", color = "black", fontFamily = "Source Sans Pro"), step = 1, rotation = rotation)
     )
   }
-  
-  
+
   plot <- plot %>%
     hc_yAxis(
       title = list(text = paste(y_label, norm_factor_and_unit$unit),

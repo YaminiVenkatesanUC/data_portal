@@ -12,9 +12,9 @@ library(jsonlite)
 library(foreach)
 
 source("R/data_types.R")
-source("R/type_checks.R")
-source("R/utils.R")
-source("R/consts.R")
+source("R/core/type_checks.R")
+source("R/core/utils.R")
+source("R/core/consts.R")
 source("R/load_functions.R")
 
 add_to_data_store <- function(data_definition, data_store, config) {
