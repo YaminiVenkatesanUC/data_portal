@@ -1869,11 +1869,15 @@
         6,
         7,
         8,
-        9
+        9,
+        10,
+        11
         ],
         "value_names": [
         "New lending - number of customers",
         "New lending - amount",
+        "Business Finance Guarantee Scheme (BFGS) loans - number of customers",
+        "Business Finance Guarantee Scheme (BFGS) loans - amount",
         "Reduced loan repayments - number of customers",
         "Reduced loan repayments - amount",
         "All deferred loan repayments - number of customers",
@@ -1888,6 +1892,8 @@
         "group_names": [
         "New lending - number of customers",
         "New lending - amount",
+        "Business finance guarantee scheme (BFGS) loans - number of customers",
+        "Business finance guarantee scheme (BFGS) loans - amount",
         "Reduced loan repayments - number of customers",
         "Reduced loan repayments - amount",
         "All deferred loan repayments - number of customers",

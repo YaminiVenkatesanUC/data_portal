@@ -1541,6 +1541,15 @@
         "name": "New lending - amount",
         "title": "New business lending - (cumulative since 26 March 2020)",
         "units": "$"
+      },{
+        "name": "Business finance guarantee scheme (BFGS) loans - number of customers",
+        "title": "Business finance guarantee scheme (BFGS) loans - (cumulative since 26 March 2020)",
+        "units": "Number"
+      },
+      {
+        "name": "Business finance guarantee scheme (BFGS) loans - amount",
+        "title": "Business finance guarantee scheme (BFGS) loans - (cumulative since 26 March 2020)",
+        "units": "$"
       },
       {
         "name": "Reduced loan repayments - number of customers",
