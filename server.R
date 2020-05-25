@@ -1,4 +1,8 @@
-server <- function(input, output) {
+server <- function(input, output, session) {
+  observe({
+    data <- parseQueryString(session$clientData$url_search)
+    session$sendCustomMessage(type='updateSelections', data)
+  })
   lapply(1:length(INDICATOR_CLASSES), function(i) {
     class_name <- gsub(" ", "_", INDICATOR_CLASSES[[i]])
     callModule(main_plot_server, paste0("main_plot_", class_name), INDICATOR_CLASSES[[i]])

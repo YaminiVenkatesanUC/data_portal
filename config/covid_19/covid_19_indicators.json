@@ -1643,7 +1643,7 @@
     "plot_function": "get_time_series_plot",
     "international": false,
     "download": true,
-    "source_url": "https://www.stats.govt.nz/news/new-zealand-trade-after-the-covid-19-outbreak-29-april-update",
+    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-1-february-13-may-2020-provisional",
     "groups": [
         {
             "name": "All",
@@ -1688,7 +1688,7 @@
             "visible": ["2020", "2019", "2018"]
         },
         {
-            "name": "Total (excluding China)",
+            "name": "All (excluding China)",
             "units": "$",
             "title": "Value of goods exports - total excluding China (cumulative) - provisional",
             "visible": ["2020", "2019", "2018"]
@@ -1703,7 +1703,7 @@
     "plot_function": "get_time_series_plot",
     "international": false,
     "download": true,
-    "source_url": "https://www.stats.govt.nz/news/new-zealand-trade-after-the-covid-19-outbreak-29-april-update",
+    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-1-february-13-may-2020-provisional",
     "groups": [
         {
             "name": "All",
@@ -1733,14 +1733,8 @@
     "plot_function": "get_time_series_plot",
     "international": false,
     "download": true,
-    "source_url": "https://www.stats.govt.nz/news/new-zealand-trade-after-the-covid-19-outbreak-29-april-update",
+    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-1-february-13-may-2020-provisional",
     "groups": [
-        {
-            "name": "All",
-            "units": "$",
-            "title": "Value of total goods exports to all countries (cumulative) - provisional",
-            "visible": ["2020", "2019", "2018"]
-        },
         {
             "name": "Dairy",
             "units": "$",
@@ -1781,14 +1775,8 @@
     "plot_function": "get_time_series_plot",
     "international": false,
     "download": true,
-    "source_url": "https://www.stats.govt.nz/news/new-zealand-trade-after-the-covid-19-outbreak-29-april-update",
+    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-1-february-13-may-2020-provisional",
     "groups": [
-        {
-            "name": "All",
-            "units": "$",
-            "title": "Value of total goods imports to all countries (cumulative) - provisional",
-            "visible": ["2020", "2019", "2018"]
-        },
         {
             "name": "Non-food manufactured goods",
             "units": "$",

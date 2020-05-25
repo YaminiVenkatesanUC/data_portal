@@ -11,6 +11,14 @@ ui <- fluidPage(
    tags$head(HTML(
      tag_manager_html
    )),
+  tags$head(tags$script("
+        Shiny.addCustomMessageHandler('updateSelections',
+            function(data) {
+                var tab_ref = ' a:contains(\"' + data.tab + '\")';
+                $(tab_ref).tab('show');
+            }
+        )
+    ")),
   useShinyjs(),
   tags$head(tags$style(".modal-dialog{ width:100%}")),
   tags$head(

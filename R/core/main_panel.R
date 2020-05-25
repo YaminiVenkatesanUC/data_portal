@@ -162,6 +162,10 @@ main_plot_server <- function(input, output, session, indicator_class) {
       choices = get_type_options(),
       selected = NULL
     )
+    query <- parseQueryString(session$clientData$url_search)
+    if (!is.null(query[['category']]) && query[['category']] %in% get_type_options()) {
+      updateSelectInput(session, "type_selector", selected = query[['category']])
+    }
   })
 
   observe({
@@ -171,6 +175,10 @@ main_plot_server <- function(input, output, session, indicator_class) {
       choices = get_indicator_options(),
       selected = NULL
     )
+    query <- parseQueryString(session$clientData$url_search)
+    if (!is.null(query[['indicator']]) && query[['indicator']] %in% unlist(get_indicator_options())) {
+      updateSelectInput(session, "indicator_selector", selected = query[['indicator']])
+    }
   })
 
   observe({
@@ -180,6 +188,10 @@ main_plot_server <- function(input, output, session, indicator_class) {
       choices = get_line_options(),
       selected = NULL
     )
+    query <- parseQueryString(session$clientData$url_search)
+    if (!is.null(query[['series']]) && query[['series']] %in% get_line_options()) {
+      updateSelectInput(session, "line_selector", selected = query[['series']])
+    }
   })
 
   observe({
