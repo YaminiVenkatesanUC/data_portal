@@ -1284,7 +1284,7 @@
   },
   {
     "class": "Economic",
-    "indicator_name": "Aircraft cargo",
+    "indicator_name": "Air cargo",
     "type": "Transport",
     "source": "Stats NZ",
     "plot_function": "get_time_series_plot",
@@ -1294,42 +1294,42 @@
     "groups": [
       {
         "name": "Export FOB - Auckland",
-        "title": "Aircraft cargo export free on board (FOB) - Auckland Airport ",
+        "title": "Air cargo export free on board (FOB) - Auckland Airport ",
         "units": "$"
       },
       {
         "name": "Import CIF - Auckland",
-        "title": "Aircraft cargo import cost, insurance and freight (CIF) - Auckland Airport",
+        "title": "Air cargo import cost, insurance and freight (CIF) - Auckland Airport",
         "units": "$"
       },
       {
         "name": "Export FOB - Christchurch",
-        "title": "Aircraft cargo export free on board (FOB) - Christchurch Airport ",
+        "title": "Air cargo export free on board (FOB) - Christchurch Airport ",
         "units": "$"
       },
       {
         "name": "Import CIF - Christchurch",
-        "title": "Aircraft cargo import cost, insurance and freight (CIF) - Christchurch Airport",
+        "title": "Air cargo import cost, insurance and freight (CIF) - Christchurch Airport",
         "units": "$"
       },
       {
         "name": "Export gross weight - Auckland",
-        "title": "Aircraft cargo export gross weight - Auckland Airport ",
+        "title": "Air cargo export gross weight - Auckland Airport ",
         "units": "Tonnes"
       },
       {
         "name": "Import gross weight - Auckland",
-        "title": "Aircraft cargo import gross weight - Auckland Airport",
+        "title": "Air cargo import gross weight - Auckland Airport",
         "units": "Tonnes"
       },
       {
         "name": "Export gross weight - Christchurch",
-        "title": "Aircraft cargo export gross weight - Christchurch Airport ",
+        "title": "Air cargo export gross weight - Christchurch Airport ",
         "units": "Tonnes"
       },
       {
         "name": "Import gross weight - Christchurch",
-        "title": "Aircraft cargo import gross weight - Christchurch Airport",
+        "title": "Air cargo import gross weight - Christchurch Airport",
         "units": "Tonnes"
       }
     ]
@@ -2051,11 +2051,6 @@
         "units":"Tonnes"
       },
        {
-        "name": "Export gross weight - Port Chalmers",
-        "title":"Sea cargo export gross weight - Port Chalmers",
-        "units":"Tonnes"
-      },
-       {
         "name": "Import gross weight - Tauranga",
         "title":"Sea cargo import gross weight - Tauranga port",
         "units":"Tonnes"
@@ -2076,7 +2071,7 @@
     "international": false,
     "include_date_slider": true,
     "default_lower_range": "2019-01-30",
-    "source_url": "https:www.seek.co.nz",
+    "source_url": "https://www.seek.co.nz",
     "download": false,
     "groups": [
       {
@@ -2085,7 +2080,7 @@
         "units": "Index"
       }, {
         "name": "Trend",
-        "title": "SEEK new job advertisement trend (seasonally adjusted)",
+        "title": "SEEK new job advertisement index (trend)",
         "units": "Index"
       }
     ]

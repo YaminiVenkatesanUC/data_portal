@@ -1563,7 +1563,7 @@
     },
     {
         "class": "Economic",
-        "indicator_name": "Aircraft cargo",
+        "indicator_name": "Air cargo",
         "type": "Transport",
         "parameter_col": 1,
         "parameter_transform": [
@@ -1589,7 +1589,7 @@
     },
     {
         "class": "Economic",
-        "indicator_name": "Aircraft cargo",
+        "indicator_name": "Air cargo",
         "type": "Transport",
         "parameter_col": 1,
         "parameter_transform": [
@@ -1615,7 +1615,7 @@
     },
     {
         "class": "Economic",
-        "indicator_name": "Aircraft cargo",
+        "indicator_name": "Air cargo",
         "type": "Transport",
         "parameter_col": 1,
         "parameter_transform": [
@@ -1642,7 +1642,7 @@
     },
     {
         "class": "Economic",
-        "indicator_name": "Aircraft cargo",
+        "indicator_name": "Air cargo",
         "type": "Transport",
         "parameter_col": 1,
         "parameter_transform": [
