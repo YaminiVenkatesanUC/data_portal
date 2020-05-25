@@ -1,8 +1,8 @@
 title: "COVID-19"
 production: true
-data_directory: data/
-indicator_definitions: "config/covid_19_indicators.json"
-data_definitions: "config/covid_19_data_definitions.json"
+data_directory:  "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/"
+indicator_definitions: "config/covid_19/covid_19_indicators.json"
+data_definitions: "config/covid_19/covid_19_data_definitions.json"
 default_parameters:
   data_type: "TimeSeries"
   plot_function: "get_time_series_plot"
