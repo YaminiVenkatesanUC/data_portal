@@ -1557,7 +1557,7 @@
         "units": "Number"
       },
       {
-        "name": "Reduced loan repayments - amount of customers",
+        "name": "Reduced loan repayments - amount",
         "title": "Reduced loan repayments - (cumulative since 26 March 2020)",
         "units": "$"
       },
@@ -2008,31 +2008,24 @@
         "title":"Sea cargo import gross weight - Auckland port",
         "units":"Tonnes"
       },
-     
+      {
+        "name": "Export gross weight - Napier",
+        "title":"Sea cargo export gross weight - Napier port",
+        "units":"Tonnes"
+      },
       {
         "name": "Import gross weight - Napier",
         "title":"Sea cargo import gross weight - Napier port",
         "units":"Tonnes"
       },
-       {
-        "name": "Export gross weight - Napier",
-        "title":"Sea cargo export gross weight - Napier port",
-        "units":"Tonnes"
-      },
-     
       {
-        "name": "Import gross weight - Lyttelton",
-        "title":"Sea cargo import gross weight - Lyttelton port",
-        "units":"Tonnes"
-      },
-       {
         "name": "Export gross weight - Lyttelton",
         "title":"Sea cargo export gross weight - Lyttelton port",
         "units":"Tonnes"
       },
-       {
-        "name": "Import gross weight - Port Chalmers",
-        "title":"Sea cargo import gross weight - Port Chalmers",
+      {
+        "name": "Import gross weight - Lyttelton",
+        "title":"Sea cargo import gross weight - Lyttelton port",
         "units":"Tonnes"
       },
        {
@@ -2041,8 +2034,8 @@
         "units":"Tonnes"
       },
        {
-        "name": "Import gross weight - Wellington",
-        "title":"Sea cargo import gross weight - Wellington port",
+        "name": "Import gross weight - Port Chalmers",
+        "title":"Sea cargo import gross weight - Port Chalmers",
         "units":"Tonnes"
       },
        {
@@ -2051,13 +2044,18 @@
         "units":"Tonnes"
       },
        {
-        "name": "Import gross weight - Tauranga",
-        "title":"Sea cargo import gross weight - Tauranga port",
+        "name": "Import gross weight - Wellington",
+        "title":"Sea cargo import gross weight - Wellington port",
         "units":"Tonnes"
       },
        {
         "name": "Export gross weight - Tauranga",
         "title":"Sea cargo export gross weight - Tauranga port",
+        "units":"Tonnes"
+      },
+       {
+        "name": "Import gross weight - Tauranga",
+        "title":"Sea cargo import gross weight - Tauranga port",
         "units":"Tonnes"
       }
     ]
