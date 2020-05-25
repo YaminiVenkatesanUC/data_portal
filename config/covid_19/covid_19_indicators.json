@@ -1438,10 +1438,7 @@
         {
             "name": "Auckland",
             "title": "Number on jobseeker support benefit - Auckland Council",
-            "units": "Number",
-            "data_service": "load_from_web_service",
-            "data_service_url": "https://uat.data.govt.nz/api/3/action/datastore_search?resource_id=0125f497-6177-470b-8cf5-f58cff31abdd",
-            "load_function": "default_web_service_load_function"
+            "units": "Number"
         },
         {
             "name": "Bay of Plenty",
