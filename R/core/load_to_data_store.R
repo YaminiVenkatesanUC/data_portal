@@ -44,6 +44,6 @@ load_to_data_store <- function(config) {
   for (data_definition in data_definitions) {
     data_store <- add_to_data_store(data_definition, data_store, config)
   }
-  saveRDS(data_store, DATA_STORE_FILENAME)
+  saveRDS(data_store, config$data_store_filename)
   return (data_store)
 }

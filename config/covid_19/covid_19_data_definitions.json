@@ -107,7 +107,7 @@
         "value_names": ["Broadband usage"],
         "group_names": ["Broadband usage"],
         "sheet_number": 1,
-        "filename": "5 Minute Usage Data 20200201-20200522.xlsx",
+        "filename": "/Chorus data/",
         "parameter_transform": ["function (x) ymd(x)"],
         "load_function": "chorus_load_function"
       },

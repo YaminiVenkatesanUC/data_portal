@@ -266,7 +266,8 @@ read_trade_data <- function(config, directory) {
 }
 
 chorus_load_function <- function(config, directory) {
-  input_files <- config$filename
+  input_files <- list.files(paste0(directory, config$filename))
+  print(input_files)
   data <- foreach(i = 1:length(input_files), .combine=rbind) %do% {
     as.data.frame(read_excel(
       paste0(directory, input_files[[i]]),
