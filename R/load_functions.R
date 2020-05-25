@@ -270,7 +270,7 @@ chorus_load_function <- function(config, directory) {
   print(input_files)
   data <- foreach(i = 1:length(input_files), .combine=rbind) %do% {
     as.data.frame(read_excel(
-      paste0(directory, input_files[[i]]),
+      paste0(directory, config$filename, "/", input_files[[i]]),
       sheet = 1,
       skip = 6,
       col_names = c("date", "time", "egress", "ingress", "total")
