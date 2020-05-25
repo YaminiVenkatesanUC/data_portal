@@ -1527,7 +1527,7 @@
     "indicator_name": "Business lending",
     "type": "Financial",
     "source": "New Zealand Bankers Association",
-    "plot_function": "get_time_series_plot",
+    "plot_function": "get_stacked_bar_chart",
     "international": false,
     "source_url": "https://www.nzba.org.nz/consumer-information/covid-19/",
     "download": false,
@@ -1580,7 +1580,7 @@
     "indicator_name": "Consumer lending",
     "type": "Financial",
     "source": "New Zealand Bankers Association",
-    "plot_function": "get_time_series_plot",
+    "plot_function": "get_stacked_bar_chart",
     "international": false,
     "source_url": "https://www.nzba.org.nz/consumer-information/covid-19/",
     "download": false,
@@ -1925,6 +1925,171 @@
         "name": "Dunedin Airport",
         "title": "Daily departures - Dunedin Airport",
         "units": "Number"
+      }
+    ]
+  },
+   {
+    "class": "Economic",
+    "indicator_name": "Sea cargo",
+    "type": "Transport",
+    "source": "Stats NZ",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    "download": true,
+    "groups": [
+      {
+        "name": "Export FOB (Auckland)",
+        "title":"Sea cargo export free on board (FOB) - Auckland port",
+        "units":"$"
+      },
+      {
+        "name": "Import CIF (Auckland)",
+        "title":"Sea cargo import cost, insurance and freight (CIF) - Auckland port",
+        "units":"$"
+      },
+      {
+        "name": "Export FOB (Napier)",
+        "title":"Sea cargo export free on board (FOB) - Napier port",
+        "units":"$"
+      },
+       {
+        "name": "Import CIF (Napier)",
+        "title":"Sea cargo import cost, insurance and freight (CIF) - Napier port",
+        "units":"$"
+      },
+      {
+        "name": "Export FOB (Lyttelton)",
+        "title":"Sea cargo export free on board (FOB) - Lyttelton port",
+        "units":"$"
+      },
+       {
+        "name": "Import CIF (Lyttelton)",
+        "title":"Sea cargo import cost, insurance and freight (CIF) - Lyttelton port",
+        "units":"$"
+      },
+      
+      {
+        "name": "Export FOB (Port Chalmers)",
+        "title":"Sea cargo export free on board (FOB) - Port Chalmers",
+        "units":"$"
+      },
+       {
+        "name": "Import CIF (Port Chalmers)",
+        "title":"Sea cargo import cost, insurance and freight (CIF) - Port Chalmers",
+        "units":"$"
+      },
+      
+      {
+        "name": "Export FOB (Wellington)",
+        "title":"Sea cargo export free on board (FOB) - Wellington port",
+        "units":"$"
+      },
+       {
+        "name": "Import CIF (Wellington)",
+        "title":"Sea cargo import cost, insurance and freight (CIF) - Wellington port",
+        "units":"$"
+      },
+      
+      {
+        "name": "Export FOB (Tauranga)",
+        "title":"Sea cargo export free on board (FOB) - Tauranga port",
+        "units":"$"
+      },
+       {
+        "name": "Import CIF (Tauranga)",
+        "title":"Sea cargo import cost, insurance and freight (CIF) - Tauranga port",
+        "units":"$"
+      },
+      {
+        "name": "Export gross weight - Auckland",
+        "title":"Sea cargo export gross weight - Auckland port",
+        "units":"Tonnes"
+      },
+      {
+        "name": "Import gross weight - Auckland",
+        "title":"Sea cargo import gross weight - Auckland port",
+        "units":"Tonnes"
+      },
+     
+      {
+        "name": "Import gross weight - Napier",
+        "title":"Sea cargo import gross weight - Napier port",
+        "units":"Tonnes"
+      },
+       {
+        "name": "Export gross weight - Napier",
+        "title":"Sea cargo export gross weight - Napier port",
+        "units":"Tonnes"
+      },
+     
+      {
+        "name": "Import gross weight - Lyttelton",
+        "title":"Sea cargo import gross weight - Lyttelton port",
+        "units":"Tonnes"
+      },
+       {
+        "name": "Export gross weight - Lyttelton",
+        "title":"Sea cargo export gross weight - Lyttelton port",
+        "units":"Tonnes"
+      },
+       {
+        "name": "Import gross weight - Port Chalmers",
+        "title":"Sea cargo import gross weight - Port Chalmers",
+        "units":"Tonnes"
+      },
+       {
+        "name": "Export gross weight - Port Chalmers",
+        "title":"Sea cargo export gross weight - Port Chalmers",
+        "units":"Tonnes"
+      },
+       {
+        "name": "Import gross weight - Wellington",
+        "title":"Sea cargo import gross weight - Wellington port",
+        "units":"Tonnes"
+      },
+       {
+        "name": "Export gross weight - Wellington",
+        "title":"Sea cargo export gross weight - Wellington port",
+        "units":"Tonnes"
+      },
+       {
+        "name": "Export gross weight - Port Chalmers",
+        "title":"Sea cargo export gross weight - Port Chalmers",
+        "units":"Tonnes"
+      },
+       {
+        "name": "Import gross weight - Tauranga",
+        "title":"Sea cargo import gross weight - Tauranga port",
+        "units":"Tonnes"
+      },
+       {
+        "name": "Export gross weight - Tauranga",
+        "title":"Sea cargo export gross weight - Tauranga port",
+        "units":"Tonnes"
+      }
+    ]
+   },
+   {
+    "class": "Economic",
+    "indicator_name": "New job advertisements posted online",
+    "type": "Employment",
+    "source": "SEEK",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    "default_lower_range": "2019-01-30",
+    "source_url": "https:www.seek.co.nz",
+    "download": false,
+    "groups": [
+      {
+        "name": "Index",
+        "title": "SEEK new job advertisement index (seasonally adjusted)",
+        "units": "Index"
+      }, {
+        "name": "Trend",
+        "title": "SEEK new job advertisement trend (seasonally adjusted)",
+        "units": "Index"
       }
     ]
   }

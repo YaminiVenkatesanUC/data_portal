@@ -2128,5 +2128,308 @@
           "Queenstown Airport",
           "Dunedin Airport"
         ]
-      }
+      },
+    {
+        "class": "Economic",
+        "indicator_name": "Sea cargo",
+        "type": "Transport",
+        "parameter_col": 1,
+        "parameter_transform": "function(x) ymd(x)",
+        "sheet_number": 1,
+        "value_col": [
+        3,
+        5
+        ],
+        "value_names": [
+        "Export FOB (Auckland)",
+        "Import CIF (Auckland)"
+        ],
+        "filename": "COVID 19 - Sea cargo Auckland.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "input_units": [1000,1000 ],
+        "group_names": [
+            "Export FOB (Auckland)",
+            "Import CIF (Auckland)"
+        ]
+    },
+     {
+        "class": "Economic",
+        "indicator_name": "Sea cargo",
+        "type": "Transport",
+        "parameter_col": 1,
+        "parameter_transform": "function(x) ymd(x)",
+        "sheet_number": 1,
+        "value_col": [
+        2,
+        4
+        ],
+        "value_names": [
+       "Export gross weight - Auckland",
+       "Import gross weight - Auckland"
+        ],
+        "filename": "COVID 19 - Sea cargo Auckland.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "group_names": [
+        "Export gross weight - Auckland",
+        "Import gross weight - Auckland"
+        ]
+    },
+    {
+        "class": "Economic",
+        "indicator_name": "Sea cargo",
+        "type": "Transport",
+        "parameter_col": 1,
+        "parameter_transform": "function(x) ymd(x)",
+        "sheet_number": 1,
+        "value_col": [
+        3,
+        5
+        ],
+        "value_names": [
+        "Export FOB (Napier)",
+        "Import CIF (Napier)"
+        ],
+        "filename": "COVID 19 - Sea cargo Napier.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "input_units": [1000,1000 ],
+        "group_names": [
+         "Export FOB (Napier)",
+          "Import CIF (Napier)"
+        ]
+    },
+    {
+        "class": "Economic",
+        "indicator_name": "Sea cargo",
+        "type": "Transport",
+        "parameter_col": 1,
+        "parameter_transform": [
+        "function (x) ",
+        "as.Date(x, format = \"%d/%m/%Y\")"
+        ],
+        "sheet_number": 1,
+        "value_col": [
+        2,
+        4
+        ],
+        "value_names": [
+       "Export gross weight - Napier",
+       "Import gross weight - Napier"
+        ],
+        "filename": "COVID 19 - Sea cargo Napier.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "group_names": [
+        "Export gross weight - Napier",
+        "Import gross weight - Napier"
+        ]
+    }
+    ,
+    {
+        "class": "Economic",
+        "indicator_name": "Sea cargo",
+        "type": "Transport",
+        "parameter_col": 1,
+        "parameter_transform": "function(x) ymd(x)",
+        "sheet_number": 1,
+        "value_col": [
+        3,
+        5
+        ],
+        "value_names": [
+        "Export FOB (Lyttelton)",
+        "Import CIF (Lyttelton)"
+        ],
+        "filename": "COVID 19 - Sea cargo Lyttelton.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "input_units": [1000,1000 ],
+        "group_names": [
+         "Export FOB (Lyttelton)",
+          "Import CIF (Lyttelton)"
+        ]
+    },
+    {
+        "class": "Economic",
+        "indicator_name": "Sea cargo",
+        "type": "Transport",
+        "parameter_col": 1,
+        "parameter_transform": "function(x) ymd(x)",
+        "sheet_number": 1,
+        "value_col": [
+        2,
+        4
+        ],
+        "value_names": [
+       "Export gross weight - Lyttelton",
+       "Import gross weight - Lyttelton"
+        ],
+        "filename": "COVID 19 - Sea cargo Lyttelton.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "group_names": [
+        "Export gross weight - Lyttelton",
+        "Import gross weight - Lyttelton"
+        ]
+    },
+    {
+        "class": "Economic",
+        "indicator_name": "Sea cargo",
+        "type": "Transport",
+        "parameter_col": 1,
+        "parameter_transform": "function(x) ymd(x)",
+        "sheet_number": 1,
+        "value_col": [
+        3,
+        5
+        ],
+        "value_names": [
+        "Export FOB (Port Chalmers)",
+        "Import CIF (Port Chalmers)"
+        ],
+        "filename": "COVID 19 - Sea cargo Port Chalmers.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "input_units": [1000,1000 ],
+        "group_names": [
+         "Export FOB (Port Chalmers)",
+          "Import CIF (Port Chalmers)"
+        ]
+    },
+    {
+        "class": "Economic",
+        "indicator_name": "Sea cargo",
+        "type": "Transport",
+        "parameter_col": 1,
+       "parameter_transform": "function(x) ymd(x)",
+        "sheet_number": 1,
+        "value_col": [
+        2,
+        4
+        ],
+        "value_names": [
+       "Export gross weight - Port Chalmers",
+       "Import gross weight - Port Chalmers"
+        ],
+        "filename": "COVID 19 - Sea cargo Port Chalmers.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "group_names": [
+        "Export gross weight - Port Chalmers",
+        "Import gross weight - Port Chalmers"
+        ]
+    },
+    {
+        "class": "Economic",
+        "indicator_name": "Sea cargo",
+        "type": "Transport",
+        "parameter_col": 1,
+        "parameter_transform": "function(x) ymd(x)",
+        "sheet_number": 1,
+        "value_col": [
+        3,
+        5
+        ],
+        "value_names": [
+        "Export FOB (Wellington)",
+        "Import CIF (Wellington)"
+        ],
+        "filename": "COVID 19 - Sea cargo Wellington.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "input_units": [1000,1000 ],
+        "group_names": [
+         "Export FOB (Wellington)",
+          "Import CIF (Wellington)"
+        ]
+    },
+    {
+        "class": "Economic",
+        "indicator_name": "Sea cargo",
+        "type": "Transport",
+        "parameter_col": 1,
+       "parameter_transform": "function(x) ymd(x)",
+        "sheet_number": 1,
+        "value_col": [
+        2,
+        4
+        ],
+        "value_names": [
+       "Export gross weight - Wellington",
+       "Import gross weight - Wellington"
+        ],
+        "filename": "COVID 19 - Sea cargo Wellington.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "group_names": [
+        "Export gross weight - Wellington",
+        "Import gross weight - Wellington"
+        ]
+    },
+    {
+        "class": "Economic",
+        "indicator_name": "Sea cargo",
+        "type": "Transport",
+        "parameter_col": 1,
+       "parameter_transform": "function(x) ymd(x)",
+        "sheet_number": 1,
+        "value_col": [
+        3,
+        5
+        ],
+        "value_names": [
+        "Export FOB (Tauranga)",
+        "Import CIF (Tauranga)"
+        ],
+        "filename": "COVID 19 - Sea cargo Tauranga.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "input_units": [1000,1000 ],
+        "group_names": [
+         "Export FOB (Tauranga)",
+          "Import CIF (Tauranga)"
+        ]
+    },
+    {
+        "class": "Economic",
+        "indicator_name": "Sea cargo",
+        "type": "Transport",
+        "parameter_col": 1,
+        "parameter_transform": "function(x) ymd(x)",
+        "sheet_number": 1,
+        "value_col": [
+        2,
+        4
+        ],
+        "value_names": [
+       "Export gross weight - Tauranga",
+       "Import gross weight - Tauranga"
+        ],
+        "filename": "COVID 19 - Sea cargo Tauranga.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "group_names": [
+        "Export gross weight - Tauranga",
+        "Import gross weight - Tauranga"
+        ]
+    },
+    {
+        "class": "Economic",
+        "indicator_name": "New job advertisements posted online",
+        "type": "Employment",
+        "parameter_col": 1,
+        "parameter_transform": "function(x) ymd(x)",
+        "sheet_number": 1,
+        "value_col": [2, 3],
+        "value_names": ["Index", "Trend"],
+        "filename": "COVID 19 - SEEK NZ job ads online index.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "group_names": [
+          "Index",
+          "Trend"
+          ]
+    }
 ]
