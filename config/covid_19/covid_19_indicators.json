@@ -958,7 +958,7 @@
   },
   {
     "class": "Social",
-    "indicator_name": "Jobseeker support by MSD defined region",
+    "indicator_name": "Jobseeker support by MSD region",
     "type": "Benefits",
     "source": "Ministry of Social Development",
     "plot_function": "get_time_series_plot",
@@ -2081,5 +2081,341 @@
         "units": "Index"
       }
     ]
+  },
+  {
+  "class": "Social",
+    "indicator_name": "Jobseeker support by MSD region - Other ethnicities",
+    "type": "Benefits",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups":[
+       {
+        "name": "Auckland Metro",
+        "title": "Jobseeker support by region - Other ethnicities",
+        "units": "Number"
+      },
+      {
+        "name": "Bay of Plenty",
+        "title": "Jobseeker support by region - Other ethnicities",
+        "units": "Number"
+      },
+      {
+        "name": "Canterbury",
+        "title": "Jobseeker support by region - Other ethnicities",
+        "units": "Number"
+      },
+      {
+        "name": "Central",
+        "title": "Jobseeker support by region - Other ethnicities",
+        "units": "Number"
+      },
+      {
+        "name": "East Coast",
+        "title": "Jobseeker support by region - Other ethnicities",
+        "units": "Number"
+      },
+      {
+        "name": "Nelson",
+        "title": "Jobseeker support by region - Other ethnicities",
+        "units": "Number"
+      },
+      {
+        "name": "Northland",
+        "title": "Jobseeker support by region - Other ethnicities",
+        "units": "Number"
+      },
+      {
+        "name": "Southern",
+        "title": "Jobseeker support by region - Other ethnicities",
+        "units": "Number"
+      },
+      {
+        "name": "Taranaki",
+        "title": "Jobseeker support by region - Other ethnicities",
+        "units": "Number"
+      },
+      {
+        "name": "Waikato",
+        "title": "Jobseeker support by region - Other ethnicities",
+        "units": "Number"
+      },
+      {
+        "name": "Wellington",
+        "title": "Jobseeker support by region - Other ethnicities",
+        "units": "Number"
+      },
+      {
+        "name": "Other region",
+        "title": "Jobseeker support by region - Other ethnicities",
+        "units": "Number"
+      }
+      
+    ]
+    
+  },
+  {
+  "class": "Social",
+    "indicator_name": "Jobseeker support by MSD region - Pacific peoples",
+    "type": "Benefits",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups":[
+       {
+        "name": "Auckland Metro",
+        "title": "Jobseeker support by region - Pacific peoples",
+        "units": "Number"
+      },
+      {
+        "name": "Bay of Plenty",
+        "title": "Jobseeker support by region - Pacific peoples",
+        "units": "Number"
+      },
+      {
+        "name": "Canterbury",
+        "title": "Jobseeker support by region - Pacific peoples",
+        "units": "Number"
+      },
+      {
+        "name": "Central",
+        "title": "Jobseeker support by region - Pacific peoples",
+        "units": "Number"
+      },
+      {
+        "name": "East Coast",
+        "title": "Jobseeker support by region - Pacific peoples",
+        "units": "Number"
+      },
+      {
+        "name": "Nelson",
+        "title": "Jobseeker support by region - Pacific peoples",
+        "units": "Number"
+      },
+      {
+        "name": "Northland",
+        "title": "Jobseeker support by region - Pacific peoples",
+        "units": "Number"
+      },
+      {
+        "name": "Southern",
+        "title": "Jobseeker support by region - Pacific peoples",
+        "units": "Number"
+      },
+      {
+        "name": "Taranaki",
+        "title": "Jobseeker support by region - Pacific peoples",
+        "units": "Number"
+      },
+      {
+        "name": "Waikato",
+        "title": "Jobseeker support by region - Pacific peoples",
+        "units": "Number"
+      },
+      {
+        "name": "Wellington",
+        "title": "Jobseeker support by region - Pacific peoples",
+        "units": "Number"
+      },
+      {
+        "name": "Other region",
+        "title": "Jobseeker support by region - Pacific peoples",
+        "units": "Number"
+      }
+  
+  ]
+  },
+  {
+  "class": "Social",
+    "indicator_name": "Jobseeker support by MSD region - Māori",
+    "type": "Benefits",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups":[
+       {
+        "name": "Auckland Metro",
+        "title": "Jobseeker support by region - Māori",
+        "units": "Number"
+      },
+      {
+        "name": "Bay of Plenty",
+        "title": "Jobseeker support by region - Māori",
+        "units": "Number"
+      },
+      {
+        "name": "Canterbury",
+        "title": "Jobseeker support by region - Māori",
+        "units": "Number"
+      },
+      {
+        "name": "Central",
+        "title": "Jobseeker support by region - Māori",
+        "units": "Number"
+      },
+      {
+        "name": "East Coast",
+        "title": "Jobseeker support by region - Māori",
+        "units": "Number"
+      },
+      {
+        "name": "Nelson",
+        "title": "Jobseeker support by region - Māori",
+        "units": "Number"
+      },
+      {
+        "name": "Northland",
+        "title": "Jobseeker support by region - Māori",
+        "units": "Number"
+      },
+      {
+        "name": "Southern",
+        "title": "Jobseeker support by region - Māori",
+        "units": "Number"
+      },
+      {
+        "name": "Taranaki",
+        "title": "Jobseeker support by region - Māori",
+        "units": "Number"
+      },
+      {
+        "name": "Waikato",
+        "title": "Jobseeker support by region - Māori",
+        "units": "Number"
+      },
+      {
+        "name": "Wellington",
+        "title": "Jobseeker support by region - Māori",
+        "units": "Number"
+      },
+      {
+        "name": "Other region",
+        "title": "Jobseeker support by region - Māori",
+        "units": "Number"
+      }
+      
+    ]
+    
+  },
+  {
+  "class": "Social",
+    "indicator_name": "Jobseeker support by ethnicity - work ready",
+    "type": "Benefits",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups":[
+      {
+        "name": "Total - work ready",
+        "title": "Number on jobseeker support - work ready (total)",
+        "units": "Number"
+      },
+       {
+        "name": "Māori",
+        "title": "Number on jobseeker support for Māori - work ready",
+        "units": "Number"
+      },
+      {
+        "name": "NZ European",
+        "title": "Number on jobseeker support for NZ European - work ready",
+        "units": "Number"
+      },
+      {
+        "name": "Pacific peoples",
+        "title": "Number on jobseeker support for Pacific peoples - work ready",
+        "units": "Number"
+      },
+      {
+        "name": "All other ethnicities",
+        "title": "Number on jobseeker support for all other ethnicities - work ready",
+        "units": "Number"
+      }
+      
+      
+      ]
+  },
+  {
+  "class": "Social",
+    "indicator_name": "Accommodation supplement by MSD region",
+    "type": "Supplementary support",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups":[
+       {
+        "name": "Auckland Metro",
+        "title": "Number on accommodation supplement - Auckland Metro",
+        "units": "Number"
+      },
+      {
+        "name": "Bay of Plenty",
+        "title": "Number on accommodation supplement - Bay of Plenty",
+        "units": "Number"
+      },
+      {
+        "name": "Canterbury",
+        "title": "Number on accommodation supplement - Canterbury",
+        "units": "Number"
+      },
+      {
+        "name": "Central",
+        "title": "Number on accommodation supplement - Central",
+        "units": "Number"
+      },
+      {
+        "name": "East Coast",
+        "title": "Number on accommodation supplement - East Coast",
+        "units": "Number"
+      },
+      {
+        "name": "Nelson",
+        "title": "Number on accommodation supplement - Nelson",
+        "units": "Number"
+      },
+      {
+        "name": "Northland",
+        "title": "Number on accommodation supplement - Canterbury",
+        "units": "Number"
+      },
+      {
+        "name": "Southern",
+        "title": "Number on accommodation supplement - Southern",
+        "units": "Number"
+      },
+      {
+        "name": "Taranaki",
+        "title": "Number on accommodation supplement - Taranaki",
+        "units": "Number"
+      },
+      {
+        "name": "Waikato",
+        "title": "Number on accommodation supplement - Waikato",
+        "units": "Number"
+      },
+      {
+        "name": "Wellington",
+        "title": "Number on accommodation supplement - Wellington",
+        "units": "Number"
+      },
+      {
+        "name": "Other region",
+        "title": "Number on accommodation supplement - Other region",
+        "units": "Number"
+      }
+      
+    ]
+    
   }
+  
+  
 ]
