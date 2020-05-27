@@ -1123,6 +1123,13 @@
         "source": "Center for System Science and Engineering, Johns Hopkins University",
         "source_url": "https://coronavirus.jhu.edu/"
       },
+        {
+        "name": "China",
+        "title": "COVID-19 cases in China (cumulative)",
+        "units": "Number",
+        "source": "Center for System Science and Engineering, Johns Hopkins University",
+        "source_url": "https://coronavirus.jhu.edu/"
+      },
       {
         "name": "Canada",
         "title": "COVID-19 cases in Canada (cumulative)",

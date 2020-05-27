@@ -1138,14 +1138,14 @@
         ],
         "sheet_number": 1,
         "value_col": [
-        5,
         3,
+        5,
         4
         ],
         "value_names": [
-        "Deceased",
-        "Active",
-        "Recovered"
+          "Active",
+        "Recovered",
+         "Deceased"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
         "load_function": "read_global_cases_file",
@@ -1169,9 +1169,9 @@
         4
         ],
         "value_names": [
-        "Deceased",
         "Active",
-        "Recovered"
+        "Recovered",
+         "Deceased"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
         "load_function": "read_global_cases_file",
@@ -1195,9 +1195,9 @@
         4
         ],
         "value_names": [
-        "Deceased",
-        "Active",
-        "Recovered"
+       "Active",
+        "Recovered",
+         "Deceased"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
         "load_function": "read_global_cases_file",
@@ -1221,9 +1221,9 @@
         4
         ],
         "value_names": [
-        "Deceased",
-        "Active",
-        "Recovered"
+         "Active",
+        "Recovered",
+         "Deceased"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
         "load_function": "read_global_cases_file",
@@ -1247,9 +1247,9 @@
         4
         ],
         "value_names": [
-        "Deceased",
         "Active",
-        "Recovered"
+        "Recovered",
+         "Deceased"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
         "load_function": "read_global_cases_file",
@@ -1273,9 +1273,9 @@
         4
         ],
         "value_names": [
-        "Deceased",
-        "Active",
-        "Recovered"
+         "Active",
+        "Recovered",
+         "Deceased"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
         "load_function": "read_global_cases_file",
@@ -1299,9 +1299,9 @@
         4
         ],
         "value_names": [
-        "Deceased",
         "Active",
-        "Recovered"
+        "Recovered",
+         "Deceased"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
         "load_function": "read_global_cases_file",
@@ -1325,9 +1325,9 @@
         4
         ],
         "value_names": [
-        "Deceased",
         "Active",
-        "Recovered"
+        "Recovered",
+         "Deceased"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
         "load_function": "read_global_cases_file",
@@ -1351,9 +1351,9 @@
         4
         ],
         "value_names": [
-        "Deceased",
         "Active",
-        "Recovered"
+        "Recovered",
+         "Deceased"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
         "load_function": "read_global_cases_file",
