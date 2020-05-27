@@ -178,7 +178,7 @@ body {
   border: 1px solid var(--custom-color);
   padding: 10px; 
   width: 100%;
-  overflow-y: scroll;
+  overflow-y: auto;
   max-height: 150px;
   border-radius: 5px;
   text-align: left;

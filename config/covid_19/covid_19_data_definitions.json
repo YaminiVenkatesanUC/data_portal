@@ -2019,15 +2019,15 @@
         "type": "Trade",
         "parameter_col": 1,
         "parameter_transform": "",
-        "value_names": ["All", "Dairy", "Meat", "Seafood", "Forestry", "Fruit"],
+        "value_names": ["All", "Dairy", "Meat", "Seafood", "Forestry", "Fruit", "Non-food manufactured goods"],
         "filename": "effects-of-covid-19-on-trade-1-february-13-may-2020-provisional.csv",
         "load_function": "read_trade_data",
         "data_type": "TimeSeriesTradeData",
-        "group_names": ["All", "Dairy", "Meat", "Seafood", "Forestry", "Fruit"],
+        "group_names": ["All", "Dairy", "Meat", "Seafood", "Forestry", "Fruit", "Non-food manufactured goods"],
         "load_parameters": {
             "country": ["All"],
             "transport_mode": "All",
-            "commodity": ["All", "Dairy", "Meat", "Seafood", "Forestry", "Fruit"],
+            "commodity": ["All", "Dairy", "Meat", "Seafood", "Forestry", "Fruit", "Non-food manufactured goods"],
             "measure": "$",
             "direction": "Exports",
             "group_col": "Commodity"
