@@ -74,6 +74,7 @@ for (i in 2:(length(INDICATOR_CLASSES) + 2)) {
 if (!is.null(CONFIG$tag_manager_html)) {
   tag_manager_html <- includeHTML("www/tag_manager.html")
 } else {
+  warning("No tag manager set.")
   tag_manager_html <- "<div></div>"
 }
 
