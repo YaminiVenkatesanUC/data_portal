@@ -203,7 +203,7 @@
       },
       {
         "name": "Cases by age",
-        "title": "Cases by ages",
+        "title": "Cases by age",
         "units": "Number"
       }
     ]
@@ -1119,6 +1119,13 @@
       {
         "name": "Australia",
         "title": "COVID-19 cases in Australia (cumulative)",
+        "units": "Number",
+        "source": "Center for System Science and Engineering, Johns Hopkins University",
+        "source_url": "https://coronavirus.jhu.edu/"
+      },
+        {
+        "name": "China",
+        "title": "COVID-19 cases in China (cumulative)",
         "units": "Number",
         "source": "Center for System Science and Engineering, Johns Hopkins University",
         "source_url": "https://coronavirus.jhu.edu/"
@@ -2415,6 +2422,23 @@
       
     ]
     
+  },
+    {
+    "class": "Health",
+    "indicator_name": "Tests per day",
+    "type": "COVID-19",
+    "source": "Ministry of Health",
+    "plot_function": "get_stacked_bar_chart",
+    "international": false,
+    "source_url":"https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation/covid-19-current-cases",
+    "download": true,
+    "groups": [
+        {
+            "name": "Test by day",
+            "units": "Number",
+            "title": "Daily tests"
+        }
+    ]
   }
   
   

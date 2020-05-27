@@ -1138,14 +1138,14 @@
         ],
         "sheet_number": 1,
         "value_col": [
-        5,
         3,
+        5,
         4
         ],
         "value_names": [
-        "Deceased",
-        "Active",
-        "Recovered"
+          "Active",
+        "Recovered",
+         "Deceased"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
         "load_function": "read_global_cases_file",
@@ -1169,9 +1169,9 @@
         4
         ],
         "value_names": [
-        "Deceased",
         "Active",
-        "Recovered"
+        "Recovered",
+         "Deceased"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
         "load_function": "read_global_cases_file",
@@ -1195,9 +1195,9 @@
         4
         ],
         "value_names": [
-        "Deceased",
-        "Active",
-        "Recovered"
+       "Active",
+        "Recovered",
+         "Deceased"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
         "load_function": "read_global_cases_file",
@@ -1221,9 +1221,9 @@
         4
         ],
         "value_names": [
-        "Deceased",
-        "Active",
-        "Recovered"
+         "Active",
+        "Recovered",
+         "Deceased"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
         "load_function": "read_global_cases_file",
@@ -1247,9 +1247,9 @@
         4
         ],
         "value_names": [
-        "Deceased",
         "Active",
-        "Recovered"
+        "Recovered",
+         "Deceased"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
         "load_function": "read_global_cases_file",
@@ -1273,9 +1273,9 @@
         4
         ],
         "value_names": [
-        "Deceased",
-        "Active",
-        "Recovered"
+         "Active",
+        "Recovered",
+         "Deceased"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
         "load_function": "read_global_cases_file",
@@ -1299,9 +1299,9 @@
         4
         ],
         "value_names": [
-        "Deceased",
         "Active",
-        "Recovered"
+        "Recovered",
+         "Deceased"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
         "load_function": "read_global_cases_file",
@@ -1325,9 +1325,9 @@
         4
         ],
         "value_names": [
-        "Deceased",
         "Active",
-        "Recovered"
+        "Recovered",
+         "Deceased"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
         "load_function": "read_global_cases_file",
@@ -1351,9 +1351,9 @@
         4
         ],
         "value_names": [
-        "Deceased",
         "Active",
-        "Recovered"
+        "Recovered",
+         "Deceased"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
         "load_function": "read_global_cases_file",
@@ -2549,5 +2549,23 @@
         "data_type": "TimeSeries",
         "group_names": ["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"]
         
-    }
+    },
+    {
+        "class": "Health",
+        "indicator_name": "Tests per day",
+        "type": "COVID-19",
+        "parameter_col": 1,
+        "value_col": [2, 3],
+        "value_names": ["Tests by day", "Total tests (cumulative)"],
+        "group_names": ["Test by day"],
+        "sheet_number": 5,
+        "filename": "COVID 19 - MoH COVID-19 cases.xlsx",
+        "parameter_transform": [
+        "function (x) ",
+        "as.Date(x, format = \"%d/%m/%Y\")"
+        ],
+        "load_function": "read_from_excel",
+        "drop_na": false,
+        "data_type": "TimeSeries"
+      }
 ]
