@@ -246,7 +246,7 @@ read_trade_data <- function(config, directory) {
   names(data)[[3]] <- "group_col"
   
   output_group <- list()
-  update_date <- as.Date(file.info(paste0(directory, config$filename))$mtime)
+  update_date <- as.Date(file.info(paste0(directory, config$filename))$mtime, tz = "NZ")
   
   for (group_name in unique(config$group_names)) {
     data_group <- data %>% filter(group_col == group_name) %>% select(-c("group_col"))
