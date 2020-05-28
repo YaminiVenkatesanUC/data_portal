@@ -2513,6 +2513,81 @@
     ]
     
   },
+  
+  {
+  "class": "Social",
+    "indicator_name": "Jobseeker support by MSD region - NZ European",
+    "type": "Benefits",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups":[
+       {
+        "name": "Auckland Metro",
+        "title": "Jobseeker support by region - NZ European",
+        "units": "Number"
+      },
+      {
+        "name": "Bay of Plenty",
+        "title": "Jobseeker support by region - NZ European",
+        "units": "Number"
+      },
+      {
+        "name": "Canterbury",
+        "title": "Jobseeker support by region - NZ European",
+        "units": "Number"
+      },
+      {
+        "name": "Central",
+        "title": "Jobseeker support by region - NZ European",
+        "units": "Number"
+      },
+      {
+        "name": "East Coast",
+        "title": "Jobseeker support by region - NZ European",
+        "units": "Number"
+      },
+      {
+        "name": "Nelson",
+        "title": "Jobseeker support by region - NZ European",
+        "units": "Number"
+      },
+      {
+        "name": "Northland",
+        "title": "Jobseeker support by region - NZ European",
+        "units": "Number"
+      },
+      {
+        "name": "Southern",
+        "title": "Jobseeker support by region - NZ European",
+        "units": "Number"
+      },
+      {
+        "name": "Taranaki",
+        "title": "Jobseeker support by region - NZ European",
+        "units": "Number"
+      },
+      {
+        "name": "Waikato",
+        "title": "Jobseeker support by region - NZ European",
+        "units": "Number"
+      },
+      {
+        "name": "Wellington",
+        "title": "Jobseeker support by region - NZ European",
+        "units": "Number"
+      },
+      {
+        "name": "Other region",
+        "title": "Jobseeker support by region - NZ European",
+        "units": "Number"
+      }
+      
+    ]
+    
+  },
   {
   "class": "Social",
     "indicator_name": "Jobseeker support by ethnicity - work ready",
