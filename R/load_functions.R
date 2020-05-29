@@ -246,7 +246,7 @@ read_trade_data <- function(config, directory) {
   names(data)[[3]] <- "group_col"
   
   output_group <- list()
-  update_date <- as.Date(file.info(paste0(directory, config$filename))$mtime)
+  update_date <- as.Date(file.info(paste0(directory, config$filename))$mtime, tz = "NZ")
   
   for (group_name in unique(config$group_names)) {
     data_group <- data %>% filter(group_col == group_name) %>% select(-c("group_col"))
@@ -321,6 +321,76 @@ example_web_service_load_function <- function(data, indicator, group_name) {
   return (data_object)
 }
 
+read_employment_data <- function(config, directory) {
+  load_parameters <- config$load_parameters
+  data <- read.csv(
+    paste0(directory, config$filename),
+    stringsAsFactors = FALSE
+  ) %>%
+    filter(
+      # Subject %in% load_parameters$Subject &
+      #   Group %in% load_parameters$Group &
+        Series_title_1 %in% load_parameters$Series_title_1 &
+          substr(Series_reference, 4, 4) == "M"
+        # Series_title_2 %in% load_parameters$Series_title_2 &
+        # Series_title_3 %in% load_parameters$Series_title_3
+    ) %>%
+    mutate(
+      Parameter = ymd(paste0(str_pad(as.character(Period), 7, side = "right", pad = "0"), ".01")),
+      Data_value = Data_value * (10 ** Magnitude)
+    ) %>%
+    select("Parameter", "Series_title_2", "Series_title_3", "Data_value")
+
+  output_group <- list()
+  update_date <- as.Date(file.info(paste0(directory, config$filename))$mtime, tz = "NZ")
+
+  for (series_title_2 in unique(data$Series_title_2)) {
+    for (series_title_3 in unique(data$Series_title_3)) {
+      data_group <- data %>%
+        filter(
+            Series_title_2 == series_title_2 &
+            Series_title_3 == series_title_3
+        ) %>%
+        select(c("Parameter", "Data_value")) %>%
+        arrange(Parameter)
+      
+      group_name <- paste0(series_title_2, " (", tolower(series_title_3), ")")
+      output_group[[group_name]] <- TimeSeries$new(data_group, group_name, update_date)
+    }
+  }
+
+  return (output_group)
+}
+
+
+read_filled_jobs_by_industry_or_region <- function(config, directory) {
+  load_parameters <- config$load_parameters
+  data <- read.csv(
+    paste0(directory, config$filename),
+    stringsAsFactors = FALSE
+  ) %>%
+    mutate(
+      Parameter = ymd(paste0(str_pad(as.character(Period), 7, side = "right", pad = "0"), ".01")),
+      Value = Value * (10 ** Magnitude)
+    ) %>%
+    select("Parameter", load_parameters$group_type, "Value")
+  names(data)[[2]] <- "group_column"
+  output_group <- list()
+  update_date <- as.Date(file.info(paste0(directory, config$filename))$mtime, tz = "NZ")
+  
+  for (industry_group in unique(data$group_column)) {
+    data_group <- data %>%
+      filter(
+        group_column == industry_group
+      ) %>%
+      select(c("Parameter", "Value"))
+    group_name <- industry_group
+    output_group[[group_name]] <- TimeSeries$new(data_group, group_name, update_date)
+  }
+
+  return (output_group)
+}
+
 load_functions <- list(
   read_from_csv = read_from_csv,
   read_from_excel = read_from_excel,
@@ -332,5 +402,7 @@ load_functions <- list(
   read_trade_data = read_trade_data,
   read_traffic_data = read_traffic_data,
   chorus_load_function = chorus_load_function,
-  example_web_service_load_function = example_web_service_load_function
+  example_web_service_load_function = example_web_service_load_function,
+  read_employment_data = read_employment_data,
+  read_filled_jobs_by_industry_or_region = read_filled_jobs_by_industry_or_region
 )

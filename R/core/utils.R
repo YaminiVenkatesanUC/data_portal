@@ -28,7 +28,7 @@ get_indicator_parameter <- function(parameter, indicator, group_name = NULL) {
 }
 
 data_frame_to_data_object_helper <- function(directory, config, data) {
-  update_date <- as.Date(file.info(paste0(directory, config$filename))$mtime)
+  update_date <- as.Date(file.info(paste0(directory, config$filename))$mtime, tz = "NZ")
   data_object_list <- list()
   for (group_name in unique(config$group_names)) {
     indexes <- which(config$group_names == group_name)
