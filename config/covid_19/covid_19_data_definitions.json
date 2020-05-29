@@ -882,7 +882,7 @@
         "function (x) ",
         "as.Date(x, format = \"%d/%m/%y\")"
         ],
-        "sheet_number": 2,
+        "sheet_number": 3,
         "value_col": 2,
         "value_names": "Accomodation supplement",
         "filename": "COVID 19 - MSD Jobseeker by region and Hardship grants.xlsx",
@@ -899,7 +899,7 @@
         "function (x) ",
         "as.Date(x, format = \"%d/%m/%y\")"
         ],
-        "sheet_number": 2,
+        "sheet_number": 3,
         "value_col": [
         5
         ],
@@ -922,7 +922,7 @@
         "function (x) ",
         "as.Date(x, format = \"%d/%m/%y\")"
         ],
-        "sheet_number": 2,
+        "sheet_number": 3,
         "value_col": [
         3
         ],
@@ -941,7 +941,7 @@
         "function (x) ",
         "as.Date(x, format = \"%d/%m/%y\")"
         ],
-        "sheet_number": 2,
+        "sheet_number": 3,
         "value_col": [
         4
         ],
@@ -2103,6 +2103,39 @@
         "load_function": "read_from_excel",
         "data_type": "TimeSeries"
       },
+      
+      {
+        "class": "Health",
+        "indicator_name": "By age",
+        "type": "Weekly deaths",
+        "parameter_col": 1,
+        "parameter_transform": "function(x) ymd(x)",
+        "sheet_number": 3,
+        "value_col": [
+          6,
+          2,
+          3,
+          4,
+          5
+        ],
+        "value_names": [
+          "Total",
+          "Under 30",
+          "30 to 59",
+          "60 to 79",
+          "80 and over"
+        ],
+        "group_names": [
+           "Total",
+          "Under 30",
+          "30 to 59",
+          "60 to 79",
+          "80 and over"
+          ],
+        "filename": "COVID 19 - DIA Preliminary Death Data.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries"
+      },
       {
         "class": "Economic",
         "indicator_name": "Flight departures by main airports",
@@ -2451,7 +2484,7 @@
         "sheet_number": 9,
         "value_col": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
         "value_names":["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"],
-        "filename": "COVID 19 - MSD Jobseeker by region and Hardship grants2.xlsx",
+        "filename": "COVID 19 - MSD Jobseeker by region and Hardship grants.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": ["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"]
@@ -2470,7 +2503,7 @@
         "sheet_number": 8,
         "value_col": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
         "value_names":["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"],
-        "filename": "COVID 19 - MSD Jobseeker by region and Hardship grants2.xlsx",
+        "filename": "COVID 19 - MSD Jobseeker by region and Hardship grants.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": ["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"]
@@ -2489,7 +2522,7 @@
         "sheet_number": 7,
         "value_col": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
         "value_names":["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"],
-        "filename": "COVID 19 - MSD Jobseeker by region and Hardship grants2.xlsx",
+        "filename": "COVID 19 - MSD Jobseeker by region and Hardship grants.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": ["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"]
@@ -2508,7 +2541,7 @@
         "sheet_number": 6,
         "value_col": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
         "value_names":["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"],
-        "filename": "COVID 19 - MSD Jobseeker by region and Hardship grants2.xlsx",
+        "filename": "COVID 19 - MSD Jobseeker by region and Hardship grants.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": ["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"]
@@ -2526,7 +2559,7 @@
         "sheet_number": 2,
         "value_col": [6, 2, 3, 4, 5],
         "value_names":["Total - work ready","Māori", "NZ European", "Pacific peoples", "All other ethnicities"],
-        "filename": "COVID 19 - MSD Jobseeker by region and Hardship grants2.xlsx",
+        "filename": "COVID 19 - MSD Jobseeker by region and Hardship grants.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": ["Total - work ready","Māori", "NZ European", "Pacific peoples", "All other ethnicities"]
@@ -2544,7 +2577,7 @@
         "sheet_number": 4,
         "value_col": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
         "value_names":["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"],
-        "filename": "COVID 19 - MSD Jobseeker by region and Hardship grants2.xlsx",
+        "filename": "COVID 19 - MSD Jobseeker by region and Hardship grants.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": ["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"]

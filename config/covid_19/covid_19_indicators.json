@@ -1893,6 +1893,46 @@
       }
     ]
   },
+  
+  {
+    "class": "Health",
+    "indicator_name": "By age",
+    "type": "Weekly deaths",
+    "source": "Department of Internal Affairs",
+    "plot_function": "get_stacked_bar_chart",
+    "international": false,
+    "include_date_slider": true,
+    "default_lower_range": "2020-02-01",
+    "download": true,
+    "caveats": "<p>(1) Weekly deaths data are based on Date of Death and differ from other deaths statistics based on date of registration. These data are provisional and subject to revision during the full process of producing death statistics.</p><p>(2) Totals are by Date of Death. Week beginning Monday.</p><p>(3) Weekly totals will differ from those in the death registrations time series as deaths are registered at the time of burial or cremation of the body. </p><p>(4) An average of 5% of Deaths are registered 2 weeks or more after Date of Death therefore weekly totals are expected to increase over time as Death Registrations are submitted and processed.</p><p>(5) Overseas addresses or where location could not be determined and records where the persons sex is missing or not in Male or Female have been excluded as these numbers are too low to publish a weekly total. </p><p>(6) The accuracy of any administrative data, which includes but is not limited to address information is subject to human error.</p><p>(7) The data provided has been collated to the best of our ability and may have a small variance to any alternative publications.</p>",
+    "groups": [
+      {
+        "name": "Total",
+        "title": "Weekly deaths by age - Total",
+        "units": "Number"
+      },
+      {
+        "name": "Under 30",
+        "title": "Weekly deaths by age - Under 30",
+        "units": "Number"
+      },
+      {
+        "name": "30 to 59",
+        "title": "Weekly deaths by age - 30 to 59",
+        "units": "Number"
+      },
+      {
+        "name": "60 to 79",
+        "title": "Weekly deaths by age - 60 to 79",
+        "units": "Number"
+      },
+      {
+        "name": "80 and over",
+        "title": "Weekly deaths by age - 80 and over",
+        "units": "Number"
+      }
+    ]
+  },
   {
     "class": "Economic",
     "indicator_name": "Flight departures by main airports",
