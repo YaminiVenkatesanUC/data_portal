@@ -2,46 +2,55 @@
     {
       "class": "Economic",
       "type": "Employment",
-      "indicator_name": "Monthly filled jobs",
-      "parameter_col": 1,
-      "value_col": [13, 4, 7, 10],
-      "value_names": ["All industries (trend)","Primary industries (trend)", "Goods-producing industries (trend)","Service industries (trend)"],
-      "group_names": ["All industries (trend)","Primary industries (trend)", "Goods-producing industries (trend)","Service industries (trend)"],
-      "sheet_number": 1,
-      "filename": "COVID 19 - Monthly filled jobs.xlsx",
-      "parameter_transform": "function (x) ymd(x)",
-      "load_function": "read_from_excel",
-      "data_type": "TimeSeries"
+      "group_names": null,
+      "value_names": null,
+      "indicator_name": "Monthly filled jobs (by industry)",
+      "filename": "employment-indicators-april-2020-filled-jobs.csv",
+      "load_function": "read_filled_jobs_by_industry_or_region",
+      "data_type": "TimeSeries",
+      "load_parameters": {
+        "group_type": "Industry.Group"
+      }
     },
     {
-        "class": "Economic",
-        "type": "Employment",
-        "indicator_name": "Monthly filled jobs",
-        "parameter_col": 1,
-        "value_col": [11, 2, 5, 8],
-        "value_names": ["All industries (actual)","Primary industries (actual)", "Goods-producing industries (actual)","Service industries (actual)"],
-        "group_names": ["All industries (actual)","Primary industries (actual)", "Goods-producing industries (actual)","Service industries (actual)"],
-        "sheet_number": 1,
-        "filename": "COVID 19 - Monthly filled jobs.xlsx",
-        "parameter_transform": "function (x) ymd(x)",
-        "load_function": "read_from_excel",
-        "data_type": "TimeSeries"
-      },
-      {
-        "class": "Economic",
-        "type": "Employment",
-        "indicator_name": "Monthly filled jobs",
-        "parameter_col": 1,
-        "value_col": [12, 3, 6, 9],
-        "value_names": ["All industries (seasonally adjusted)","Primary industries (seasonally adjusted)", "Goods-producing industries (seasonally adjusted)","Service industries (seasonally adjusted)"],
-        "group_names": ["All industries (seasonally adjusted)","Primary industries (seasonally adjusted)", "Goods-producing industries (seasonally adjusted)","Service industries (seasonally adjusted)"],
-        "sheet_number": 1,
-        "filename": "COVID 19 - Monthly filled jobs.xlsx",
-        "parameter_transform": "function (x) ymd(x)",
-        "load_function": "read_from_excel",
-        "data_type": "TimeSeries"
-      },
-
+      "class": "Economic",
+      "type": "Employment",
+      "group_names": null,
+      "value_names": null,
+      "indicator_name": "Monthly filled jobs (by region)",
+      "filename": "employment-indicators-april-2020-regional-filled-jobs.csv",
+      "load_function": "read_filled_jobs_by_industry_or_region",
+      "data_type": "TimeSeries",
+      "load_parameters": {
+        "group_type": "Region"
+      }
+    },
+    {
+      "class": "Economic",
+      "type": "Employment",
+      "group_names": null,
+      "value_names": null,
+      "indicator_name": "Monthly filled jobs",
+      "filename": "employment-indicators-april-2020-csv-table.csv",
+      "load_function": "read_employment_data",
+      "data_type": "TimeSeries",
+      "load_parameters": {
+        "Series_title_1": "Filled jobs"
+      }
+    },
+        {
+      "class": "Economic",
+      "type": "Employment",
+      "group_names": null,
+      "value_names": null,
+      "indicator_name": "Monthly earnings",
+      "filename": "employment-indicators-april-2020-csv-table.csv",
+      "load_function": "read_employment_data",
+      "data_type": "TimeSeries",
+      "load_parameters": {
+        "Series_title_1": "Total earnings"
+      }
+    },
     {
         "class": "Economic",
         "indicator_name": "Consumer confidence",
@@ -255,66 +264,6 @@
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": "Business confidence"
-    },
-    {
-        "class": "Economic",
-        "indicator_name": "Monthly earnings",
-        "type": "Employment",
-        "parameter_col": 1,
-        "parameter_transform": "function (x) ymd(x)",
-        "sheet_number": 1,
-        "input_units": [1000000, 1000000, 1000000, 1000000 ],
-        "value_col": [
-        13,
-        4,
-        7,
-        10
-        ],
-        "value_names": [
-        "All industries (trend)",
-        "Primary industries (trend)",
-        "Goods-producing industries (trend)",
-        "Service industries (trend)"
-        ],
-        "filename": "COVID 19 - Monthly Employment earnings.xlsx",
-        "load_function": "read_from_excel",
-        "data_type": "TimeSeries",
-        "group_names": [
-        "All industries (trend)",
-        "Primary industries (trend)",
-        "Goods-producing industries (trend)",
-        "Service industries (trend)"
-        ]
-    },
-    {
-        "class": "Economic",
-        "indicator_name": "Monthly earnings",
-        "type": "Employment",
-        "parameter_col": 1,
-        "parameter_transform": "function (x) ymd(x)",
-        "sheet_number": 1,
-        "input_units": [1000000, 1000000, 1000000, 1000000 ],
-        "value_col": [
-        11,
-        2,
-        5,
-        8
-        ],
-        "value_names": [
-        "All industries (actual)",
-        "Primary industries (actual)",
-        "Goods-producing industries (actual)",
-        "Service industries (actual)"
-        ],
-        "filename": "COVID 19 - Monthly Employment earnings.xlsx",
-        "load_function": "read_from_excel",
-        "data_type": "TimeSeries",
-        "group_names": [
-        "All industries (actual)",
-        "Primary industries (actual)",
-        "Goods-producing industries (actual)",
-        "Service industries (actual)"
-        ]
     },
     {
         "class": "Economic",
@@ -882,7 +831,7 @@
         "function (x) ",
         "as.Date(x, format = \"%d/%m/%y\")"
         ],
-        "sheet_number": 2,
+        "sheet_number": 3,
         "value_col": 2,
         "value_names": "Accomodation supplement",
         "filename": "COVID 19 - MSD Jobseeker by region and Hardship grants.xlsx",
@@ -899,7 +848,7 @@
         "function (x) ",
         "as.Date(x, format = \"%d/%m/%y\")"
         ],
-        "sheet_number": 2,
+        "sheet_number": 3,
         "value_col": [
         5
         ],
@@ -922,7 +871,7 @@
         "function (x) ",
         "as.Date(x, format = \"%d/%m/%y\")"
         ],
-        "sheet_number": 2,
+        "sheet_number": 3,
         "value_col": [
         3
         ],
@@ -941,7 +890,7 @@
         "function (x) ",
         "as.Date(x, format = \"%d/%m/%y\")"
         ],
-        "sheet_number": 2,
+        "sheet_number": 3,
         "value_col": [
         4
         ],
@@ -953,7 +902,7 @@
     },
     {
         "class": "Social",
-        "indicator_name": "Jobseeker support by MSD defined region",
+        "indicator_name": "Jobseeker support by MSD region",
         "type": "Benefits",
         "parameter_col": 1,
         "parameter_transform": [
@@ -1138,14 +1087,14 @@
         ],
         "sheet_number": 1,
         "value_col": [
-        5,
         3,
+        5,
         4
         ],
         "value_names": [
-        "Deceased",
-        "Active",
-        "Recovered"
+          "Active",
+        "Recovered",
+         "Deceased"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
         "load_function": "read_global_cases_file",
@@ -1169,9 +1118,9 @@
         4
         ],
         "value_names": [
-        "Deceased",
         "Active",
-        "Recovered"
+        "Recovered",
+         "Deceased"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
         "load_function": "read_global_cases_file",
@@ -1195,9 +1144,9 @@
         4
         ],
         "value_names": [
-        "Deceased",
-        "Active",
-        "Recovered"
+       "Active",
+        "Recovered",
+         "Deceased"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
         "load_function": "read_global_cases_file",
@@ -1221,9 +1170,9 @@
         4
         ],
         "value_names": [
-        "Deceased",
-        "Active",
-        "Recovered"
+         "Active",
+        "Recovered",
+         "Deceased"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
         "load_function": "read_global_cases_file",
@@ -1247,9 +1196,9 @@
         4
         ],
         "value_names": [
-        "Deceased",
         "Active",
-        "Recovered"
+        "Recovered",
+         "Deceased"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
         "load_function": "read_global_cases_file",
@@ -1273,9 +1222,9 @@
         4
         ],
         "value_names": [
-        "Deceased",
-        "Active",
-        "Recovered"
+         "Active",
+        "Recovered",
+         "Deceased"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
         "load_function": "read_global_cases_file",
@@ -1299,9 +1248,9 @@
         4
         ],
         "value_names": [
-        "Deceased",
         "Active",
-        "Recovered"
+        "Recovered",
+         "Deceased"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
         "load_function": "read_global_cases_file",
@@ -1325,9 +1274,9 @@
         4
         ],
         "value_names": [
-        "Deceased",
         "Active",
-        "Recovered"
+        "Recovered",
+         "Deceased"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
         "load_function": "read_global_cases_file",
@@ -1351,9 +1300,9 @@
         4
         ],
         "value_names": [
-        "Deceased",
         "Active",
-        "Recovered"
+        "Recovered",
+         "Deceased"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
         "load_function": "read_global_cases_file",
@@ -1563,7 +1512,7 @@
     },
     {
         "class": "Economic",
-        "indicator_name": "Aircraft cargo",
+        "indicator_name": "Air cargo",
         "type": "Transport",
         "parameter_col": 1,
         "parameter_transform": [
@@ -1589,7 +1538,7 @@
     },
     {
         "class": "Economic",
-        "indicator_name": "Aircraft cargo",
+        "indicator_name": "Air cargo",
         "type": "Transport",
         "parameter_col": 1,
         "parameter_transform": [
@@ -1615,7 +1564,7 @@
     },
     {
         "class": "Economic",
-        "indicator_name": "Aircraft cargo",
+        "indicator_name": "Air cargo",
         "type": "Transport",
         "parameter_col": 1,
         "parameter_transform": [
@@ -1642,7 +1591,7 @@
     },
     {
         "class": "Economic",
-        "indicator_name": "Aircraft cargo",
+        "indicator_name": "Air cargo",
         "type": "Transport",
         "parameter_col": 1,
         "parameter_transform": [
@@ -1869,11 +1818,15 @@
         6,
         7,
         8,
-        9
+        9,
+        10,
+        11
         ],
         "value_names": [
         "New lending - number of customers",
         "New lending - amount",
+        "Business Finance Guarantee Scheme (BFGS) loans - number of customers",
+        "Business Finance Guarantee Scheme (BFGS) loans - amount",
         "Reduced loan repayments - number of customers",
         "Reduced loan repayments - amount",
         "All deferred loan repayments - number of customers",
@@ -1888,6 +1841,8 @@
         "group_names": [
         "New lending - number of customers",
         "New lending - amount",
+        "Business finance guarantee scheme (BFGS) loans - number of customers",
+        "Business finance guarantee scheme (BFGS) loans - amount",
         "Reduced loan repayments - number of customers",
         "Reduced loan repayments - amount",
         "All deferred loan repayments - number of customers",
@@ -1954,7 +1909,7 @@
         "parameter_col": 1,
         "parameter_transform": "",
         "value_names": ["All" ,"China", "Australia", "United States", "Japan", "European Union (28)", "East Asia (excluding China)", "Total (excluding China)"],
-        "filename": "effects-of-covid-19-on-trade-1-february-13-may-2020-provisional.csv",
+        "filename": "new_Goods_Trade_27_May.csv",
         "load_function": "read_trade_data",
         "data_type": "TimeSeriesTradeData",
         "group_names": ["All" ,"China", "Australia", "United States", "Japan", "European Union (28)", "East Asia (excluding China)", "Total (excluding China)"],
@@ -1974,7 +1929,7 @@
         "parameter_col": 1,
         "parameter_transform": "",
         "value_names": ["All" ,"China", "Australia", "United States", "Japan", "European Union (28)", "East Asia (excluding China)", "Total (excluding China)"],
-        "filename": "effects-of-covid-19-on-trade-1-february-13-may-2020-provisional.csv",
+        "filename": "new_Goods_Trade_27_May.csv",
         "load_function": "read_trade_data",
         "data_type": "TimeSeriesTradeData",
         "group_names": ["All" ,"China", "Australia", "United States", "Japan", "European Union (28)", "East Asia (excluding China)", "Total (excluding China)"],
@@ -1994,7 +1949,7 @@
         "parameter_col": 1,
         "parameter_transform": "",
         "value_names": ["All", "Non-food manufactured goods", "Machinery and electronics"],
-        "filename": "effects-of-covid-19-on-trade-1-february-13-may-2020-provisional.csv",
+        "filename": "new_Goods_Trade_27_May.csv",
         "load_function": "read_trade_data",
         "data_type": "TimeSeriesTradeData",
         "group_names": ["All", "Non-food manufactured goods", "Machinery and electronics"],
@@ -2013,15 +1968,15 @@
         "type": "Trade",
         "parameter_col": 1,
         "parameter_transform": "",
-        "value_names": ["All", "Dairy", "Meat", "Seafood", "Forestry", "Fruit"],
-        "filename": "effects-of-covid-19-on-trade-1-february-13-may-2020-provisional.csv",
+        "value_names": ["All", "Dairy", "Meat", "Seafood", "Forestry", "Fruit", "Non-food manufactured goods"],
+        "filename": "new_Goods_Trade_27_May.csv",
         "load_function": "read_trade_data",
         "data_type": "TimeSeriesTradeData",
-        "group_names": ["All", "Dairy", "Meat", "Seafood", "Forestry", "Fruit"],
+        "group_names": ["All", "Dairy", "Meat", "Seafood", "Forestry", "Fruit", "Non-food manufactured goods"],
         "load_parameters": {
             "country": ["All"],
             "transport_mode": "All",
-            "commodity": ["All", "Dairy", "Meat", "Seafood", "Forestry", "Fruit"],
+            "commodity": ["All", "Dairy", "Meat", "Seafood", "Forestry", "Fruit", "Non-food manufactured goods"],
             "measure": "$",
             "direction": "Exports",
             "group_col": "Commodity"
@@ -2097,6 +2052,39 @@
         "load_function": "read_from_excel",
         "data_type": "TimeSeries"
       },
+      
+      {
+        "class": "Health",
+        "indicator_name": "By age",
+        "type": "Weekly deaths",
+        "parameter_col": 1,
+        "parameter_transform": "function(x) ymd(x)",
+        "sheet_number": 3,
+        "value_col": [
+          6,
+          2,
+          3,
+          4,
+          5
+        ],
+        "value_names": [
+          "Total",
+          "Under 30",
+          "30 to 59",
+          "60 to 79",
+          "80 and over"
+        ],
+        "group_names": [
+           "Total",
+          "Under 30",
+          "30 to 59",
+          "60 to 79",
+          "80 and over"
+          ],
+        "filename": "COVID 19 - DIA Preliminary Death Data.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries"
+      },
       {
         "class": "Economic",
         "indicator_name": "Flight departures by main airports",
@@ -2128,5 +2116,438 @@
           "Queenstown Airport",
           "Dunedin Airport"
         ]
+      },
+    {
+        "class": "Economic",
+        "indicator_name": "Sea cargo",
+        "type": "Transport",
+        "parameter_col": 1,
+        "parameter_transform": "function(x) ymd(x)",
+        "sheet_number": 1,
+        "value_col": [
+        3,
+        5
+        ],
+        "value_names": [
+        "Export FOB (Auckland)",
+        "Import CIF (Auckland)"
+        ],
+        "filename": "COVID 19 - Sea cargo Auckland.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "input_units": [1000,1000 ],
+        "group_names": [
+            "Export FOB (Auckland)",
+            "Import CIF (Auckland)"
+        ]
+    },
+     {
+        "class": "Economic",
+        "indicator_name": "Sea cargo",
+        "type": "Transport",
+        "parameter_col": 1,
+        "parameter_transform": "function(x) ymd(x)",
+        "sheet_number": 1,
+        "value_col": [
+        2,
+        4
+        ],
+        "value_names": [
+       "Export gross weight - Auckland",
+       "Import gross weight - Auckland"
+        ],
+        "filename": "COVID 19 - Sea cargo Auckland.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "group_names": [
+        "Export gross weight - Auckland",
+        "Import gross weight - Auckland"
+        ]
+    },
+    {
+        "class": "Economic",
+        "indicator_name": "Sea cargo",
+        "type": "Transport",
+        "parameter_col": 1,
+        "parameter_transform": "function(x) ymd(x)",
+        "sheet_number": 1,
+        "value_col": [
+        3,
+        5
+        ],
+        "value_names": [
+        "Export FOB (Napier)",
+        "Import CIF (Napier)"
+        ],
+        "filename": "COVID 19 - Sea cargo Napier.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "input_units": [1000,1000 ],
+        "group_names": [
+         "Export FOB (Napier)",
+          "Import CIF (Napier)"
+        ]
+    },
+    {
+        "class": "Economic",
+        "indicator_name": "Sea cargo",
+        "type": "Transport",
+        "parameter_col": 1,
+        "parameter_transform": [
+        "function (x) ",
+        "as.Date(x, format = \"%d/%m/%Y\")"
+        ],
+        "sheet_number": 1,
+        "value_col": [
+        2,
+        4
+        ],
+        "value_names": [
+       "Export gross weight - Napier",
+       "Import gross weight - Napier"
+        ],
+        "filename": "COVID 19 - Sea cargo Napier.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "group_names": [
+        "Export gross weight - Napier",
+        "Import gross weight - Napier"
+        ]
+    }
+    ,
+    {
+        "class": "Economic",
+        "indicator_name": "Sea cargo",
+        "type": "Transport",
+        "parameter_col": 1,
+        "parameter_transform": "function(x) ymd(x)",
+        "sheet_number": 1,
+        "value_col": [
+        3,
+        5
+        ],
+        "value_names": [
+        "Export FOB (Lyttelton)",
+        "Import CIF (Lyttelton)"
+        ],
+        "filename": "COVID 19 - Sea cargo Lyttelton.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "input_units": [1000,1000 ],
+        "group_names": [
+         "Export FOB (Lyttelton)",
+          "Import CIF (Lyttelton)"
+        ]
+    },
+    {
+        "class": "Economic",
+        "indicator_name": "Sea cargo",
+        "type": "Transport",
+        "parameter_col": 1,
+        "parameter_transform": "function(x) ymd(x)",
+        "sheet_number": 1,
+        "value_col": [
+        2,
+        4
+        ],
+        "value_names": [
+       "Export gross weight - Lyttelton",
+       "Import gross weight - Lyttelton"
+        ],
+        "filename": "COVID 19 - Sea cargo Lyttelton.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "group_names": [
+        "Export gross weight - Lyttelton",
+        "Import gross weight - Lyttelton"
+        ]
+    },
+    {
+        "class": "Economic",
+        "indicator_name": "Sea cargo",
+        "type": "Transport",
+        "parameter_col": 1,
+        "parameter_transform": "function(x) ymd(x)",
+        "sheet_number": 1,
+        "value_col": [
+        3,
+        5
+        ],
+        "value_names": [
+        "Export FOB (Port Chalmers)",
+        "Import CIF (Port Chalmers)"
+        ],
+        "filename": "COVID 19 - Sea cargo Port Chalmers.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "input_units": [1000,1000 ],
+        "group_names": [
+         "Export FOB (Port Chalmers)",
+          "Import CIF (Port Chalmers)"
+        ]
+    },
+    {
+        "class": "Economic",
+        "indicator_name": "Sea cargo",
+        "type": "Transport",
+        "parameter_col": 1,
+       "parameter_transform": "function(x) ymd(x)",
+        "sheet_number": 1,
+        "value_col": [
+        2,
+        4
+        ],
+        "value_names": [
+       "Export gross weight - Port Chalmers",
+       "Import gross weight - Port Chalmers"
+        ],
+        "filename": "COVID 19 - Sea cargo Port Chalmers.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "group_names": [
+        "Export gross weight - Port Chalmers",
+        "Import gross weight - Port Chalmers"
+        ]
+    },
+    {
+        "class": "Economic",
+        "indicator_name": "Sea cargo",
+        "type": "Transport",
+        "parameter_col": 1,
+        "parameter_transform": "function(x) ymd(x)",
+        "sheet_number": 1,
+        "value_col": [
+        3,
+        5
+        ],
+        "value_names": [
+        "Export FOB (Wellington)",
+        "Import CIF (Wellington)"
+        ],
+        "filename": "COVID 19 - Sea cargo Wellington.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "input_units": [1000,1000 ],
+        "group_names": [
+         "Export FOB (Wellington)",
+          "Import CIF (Wellington)"
+        ]
+    },
+    {
+        "class": "Economic",
+        "indicator_name": "Sea cargo",
+        "type": "Transport",
+        "parameter_col": 1,
+       "parameter_transform": "function(x) ymd(x)",
+        "sheet_number": 1,
+        "value_col": [
+        2,
+        4
+        ],
+        "value_names": [
+       "Export gross weight - Wellington",
+       "Import gross weight - Wellington"
+        ],
+        "filename": "COVID 19 - Sea cargo Wellington.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "group_names": [
+        "Export gross weight - Wellington",
+        "Import gross weight - Wellington"
+        ]
+    },
+    {
+        "class": "Economic",
+        "indicator_name": "Sea cargo",
+        "type": "Transport",
+        "parameter_col": 1,
+       "parameter_transform": "function(x) ymd(x)",
+        "sheet_number": 1,
+        "value_col": [
+        3,
+        5
+        ],
+        "value_names": [
+        "Export FOB (Tauranga)",
+        "Import CIF (Tauranga)"
+        ],
+        "filename": "COVID 19 - Sea cargo Tauranga.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "input_units": [1000,1000 ],
+        "group_names": [
+         "Export FOB (Tauranga)",
+          "Import CIF (Tauranga)"
+        ]
+    },
+    {
+        "class": "Economic",
+        "indicator_name": "Sea cargo",
+        "type": "Transport",
+        "parameter_col": 1,
+        "parameter_transform": "function(x) ymd(x)",
+        "sheet_number": 1,
+        "value_col": [
+        2,
+        4
+        ],
+        "value_names": [
+       "Export gross weight - Tauranga",
+       "Import gross weight - Tauranga"
+        ],
+        "filename": "COVID 19 - Sea cargo Tauranga.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "group_names": [
+        "Export gross weight - Tauranga",
+        "Import gross weight - Tauranga"
+        ]
+    },
+    {
+        "class": "Economic",
+        "indicator_name": "New job advertisements posted online",
+        "type": "Employment",
+        "parameter_col": 1,
+        "parameter_transform": "function(x) ymd(x)",
+        "sheet_number": 1,
+        "value_col": [2, 3],
+        "value_names": ["Index", "Trend"],
+        "filename": "COVID 19 - SEEK NZ job ads online index.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "group_names": [
+          "Index",
+          "Trend"
+          ]
+    },
+    {
+        "class": "Social",
+        "indicator_name": "Jobseeker support by MSD region - Other ethnicities",
+        "type": "Benefits",
+        "parameter_col": 1,
+        "skip":1,
+        "parameter_transform": [
+        "function (x) ",
+        "as.Date(x, format = \"%d/%m/%Y\")"
+        ],
+        "sheet_number": 9,
+        "value_col": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+        "value_names":["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"],
+        "filename": "COVID 19 - MSD Jobseeker by region and Hardship grants.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "group_names": ["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"]
+        
+    },
+    {
+        "class": "Social",
+        "indicator_name": "Jobseeker support by MSD region - Pacific peoples",
+        "type": "Benefits",
+        "parameter_col": 1,
+        "skip":1,
+        "parameter_transform": [
+        "function (x) ",
+        "as.Date(x, format = \"%d/%m/%Y\")"
+        ],
+        "sheet_number": 8,
+        "value_col": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+        "value_names":["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"],
+        "filename": "COVID 19 - MSD Jobseeker by region and Hardship grants.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "group_names": ["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"]
+        
+    },
+    {
+        "class": "Social",
+        "indicator_name": "Jobseeker support by MSD region - NZ European",
+        "type": "Benefits",
+        "parameter_col": 1,
+        "skip":1,
+        "parameter_transform": [
+        "function (x) ",
+        "as.Date(x, format = \"%d/%m/%Y\")"
+        ],
+        "sheet_number": 7,
+        "value_col": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+        "value_names":["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"],
+        "filename": "COVID 19 - MSD Jobseeker by region and Hardship grants.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "group_names": ["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"]
+        
+    },
+    {
+        "class": "Social",
+        "indicator_name": "Jobseeker support by MSD region - Māori",
+        "type": "Benefits",
+        "parameter_col": 1,
+        "skip":1,
+        "parameter_transform": [
+        "function (x) ",
+        "as.Date(x, format = \"%d/%m/%Y\")"
+        ],
+        "sheet_number": 6,
+        "value_col": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+        "value_names":["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"],
+        "filename": "COVID 19 - MSD Jobseeker by region and Hardship grants.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "group_names": ["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"]
+        
+    },
+    {
+        "class": "Social",
+        "indicator_name": "Jobseeker support by ethnicity - work ready",
+        "type": "Benefits",
+        "parameter_col": 1,
+        "parameter_transform": [
+        "function (x) ",
+        "as.Date(x, format = \"%d/%m/%Y\")"
+        ],
+        "sheet_number": 2,
+        "value_col": [6, 2, 3, 4, 5],
+        "value_names":["Total - work ready","Māori", "NZ European", "Pacific peoples", "All other ethnicities"],
+        "filename": "COVID 19 - MSD Jobseeker by region and Hardship grants.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "group_names": ["Total - work ready","Māori", "NZ European", "Pacific peoples", "All other ethnicities"]
+        
+    },
+    {
+        "class": "Social",
+        "indicator_name": "Accommodation supplement by MSD region",
+        "type": "Supplementary support",
+        "parameter_col": 1,
+        "parameter_transform": [
+        "function (x) ",
+        "as.Date(x, format = \"%d/%m/%Y\")"
+        ],
+        "sheet_number": 4,
+        "value_col": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
+        "value_names":["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"],
+        "filename": "COVID 19 - MSD Jobseeker by region and Hardship grants.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "group_names": ["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"]
+        
+    },
+    {
+        "class": "Health",
+        "indicator_name": "Tests per day",
+        "type": "COVID-19",
+        "parameter_col": 1,
+        "value_col": [2, 3],
+        "value_names": ["Tests by day", "Total tests (cumulative)"],
+        "group_names": ["Test by day"],
+        "sheet_number": 5,
+        "filename": "COVID 19 - MoH COVID-19 cases.xlsx",
+        "parameter_transform": [
+        "function (x) ",
+        "as.Date(x, format = \"%d/%m/%Y\")"
+        ],
+        "load_function": "read_from_excel",
+        "drop_na": false,
+        "data_type": "TimeSeries"
       }
 ]

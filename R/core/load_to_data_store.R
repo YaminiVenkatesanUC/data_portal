@@ -23,7 +23,8 @@ add_to_data_store <- function(data_definition, data_store, config) {
   data <- load_functions[[data_definition$load_function]](data_definition, config$data_directory)
   update_date <- as.Date(file.info(paste0(config$data_directory, data_definition$filename))$mtime)
 
-  for (group_name in unique(data_definition$group_names)) {
+  #for (group_name in unique(data_definition$group_names)) {
+  for (group_name in names(data)) {
     print(paste(data_definition$class, data_definition$indicator_name, group_name))
 
     key <- paste(data_definition$class, data_definition$type, data_definition$indicator_name, group_name, sep = "_")

@@ -1,5 +1,8 @@
 get_time_series_plot <- function(data_object, input, indicator_definition, type = "line") {
   group_index <- which(sapply(indicator_definition$groups, function(x) x$name) == input$line_selector)
+  if (length(group_index) == 0) {
+    return (NULL)
+  }
   group_definition <- indicator_definition$groups[[group_index]]
 
   data <- cbind(data_object$dates, data_object$values)
