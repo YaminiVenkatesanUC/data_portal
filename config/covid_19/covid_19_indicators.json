@@ -2756,6 +2756,358 @@
             "title": "Daily tests"
         }
     ]
+  },
+  {
+  "class": "Social",
+    "indicator_name": "Jobseeker support by territorial authority",
+    "type": "Benefits",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups":[
+       {
+        "name": "Ashburton District",
+        "title": "Jobseeker support by territorial authority - Ashburton District",
+        "units": "Number"
+      },
+     {
+        "name": "Auckland Super City",
+        "title": "Jobseeker support by territorial authority - Auckland Super City",
+        "units": "Number"
+      },
+      {
+        "name": "Buller District",
+        "title":  "Jobseeker support by territorial authority - Buller District",
+        "units": "Number"
+      },
+      {
+        "name": "Carterton District",
+        "title": "Jobseeker support by territorial authority - Carterton District",
+        "units": "Number"
+      },
+      {
+         "name": "Central Hawke's Bay District",
+        "title": "Jobseeker support by territorial authority - Central Hawke's Bay District",
+        "units": "Number"
+      },
+      {
+        "name": "Central Otago District",
+        "title": "Jobseeker support by territorial authority - Central Otago District",
+        "units": "Number"
+      },
+      {
+        "name": "Christchurch City",
+        "title": "Jobseeker support by territorial authority - Christchurch City",
+        "units": "Number"
+      },
+      {
+       "name": "Clutha District",
+        "title": "Jobseeker support by territorial authority - Clutha District",
+        "units": "Number"
+      },
+      {
+       "name": "Dunedin City",
+        "title": "Jobseeker support by territorial authority - Dunedin City",
+        "units": "Number"
+      },
+      {
+       "name": "Far North District",
+        "title": "Jobseeker support by territorial authority - Far North District",
+        "units": "Number"
+      },
+      {
+       "name": "Gisborne District",
+        "title": "Jobseeker support by territorial authority - Gisborne District",
+        "units": "Number"
+      },
+      {
+        "name": "Gore District",
+        "title": "Jobseeker support by territorial authority - Gore District",
+        "units": "Number"
+      },
+      {
+        "name": "Grey District",
+        "title": "Jobseeker support by territorial authority - Grey District",
+        "units": "Number"
+      },
+      {
+        "name": "Hamilton City",
+        "title": "Jobseeker support by territorial authority - Hamilton City",
+        "units": "Number"
+      },
+      {
+        "name": "Hastings District",
+        "title": "Jobseeker support by territorial authority - Hastings District",
+        "units": "Number"
+      },
+      {
+        "name": "Hauraki District",
+        "title": "Jobseeker support by territorial authority - Hauraki District",
+        "units": "Number"
+      },
+      {
+        "name": "Horowhenua District",
+        "title": "Jobseeker support by territorial authority - Horowhenua District",
+        "units": "Number"
+      },
+      {
+        "name": "Hurunui District",
+        "title": "Jobseeker support by territorial authority - Hurunui District",
+        "units": "Number"
+      },
+      {
+        "name": "Invercargill City",
+        "title": "Jobseeker support by territorial authority - Invercargill City",
+        "units": "Number"
+      },
+      {
+        "name": "Kaikoura District",
+        "title": "Jobseeker support by territorial authority - Kaikoura District",
+        "units": "Number"
+      },
+      {
+        "name": "Kaipara District",
+        "title": "Jobseeker support by territorial authority - Kaipara District",
+        "units": "Number"
+      },
+      {
+        "name": "Kapiti Coast District",
+        "title": "Jobseeker support by territorial authority - Kapiti Coast District",
+        "units": "Number"
+      },
+      {
+        "name": "Kawerau District",
+        "title": "Jobseeker support by territorial authority - Kawerau District",
+        "units": "Number"
+      },
+      {
+        "name": "Lower Hutt City",
+        "title": "Jobseeker support by territorial authority - Lower Hutt City",
+        "units": "Number"
+      },
+      {
+        "name": "Mackenzie District",
+        "title": "Jobseeker support by territorial authority - Mackenzie District",
+        "units": "Number"
+      },
+      {
+        "name": "Manawatu District",
+        "title": "Jobseeker support by territorial authority - Manawatu District",
+        "units": "Number"
+      },
+      {
+        "name": "Marlborough District",
+        "title": "Jobseeker support by territorial authority - Marlborough District",
+        "units": "Number"
+      },
+      {
+        "name": "Masterton District",
+        "title": "Jobseeker support by territorial authority - Masterton District",
+        "units": "Number"
+      },
+      {
+        "name": "Matamata-Piako District",
+        "title": "Jobseeker support by territorial authority - Matamata-Piako District",
+        "units": "Number"
+      },
+      {
+        "name": "Napier City",
+        "title": "Jobseeker support by territorial authority - Napier City",
+        "units": "Number"
+      },
+      {
+        "name": "Nelson City",
+        "title": "Jobseeker support by territorial authority - Nelson City",
+        "units": "Number"
+      },
+      {
+        "name": "New Plymouth District",
+        "title": "Jobseeker support by territorial authority - New Plymouth District",
+        "units": "Number"
+      },
+      {
+        "name": "Opotiki District",
+        "title": "Jobseeker support by territorial authority - Opotiki District",
+        "units": "Number"
+      },
+      {
+        "name": "Otorohanga District",
+        "title": "Jobseeker support by territorial authority - Otorohanga District",
+        "units": "Number"
+      },
+      {
+        "name": "Palmerston North City",
+        "title": "Jobseeker support by territorial authority - Palmerston North City",
+        "units": "Number"
+      },
+      {
+        "name": "Porirua City",
+        "title": "Jobseeker support by territorial authority - Porirua City",
+        "units": "Number"
+      },
+      {
+        "name": "Queenstown-Lakes District",
+        "title": "Jobseeker support by territorial authority - Queenstown-Lakes District",
+        "units": "Number"
+      },
+      {
+        "name": "Rangitikei District",
+        "title": "Jobseeker support by territorial authority - Rangitikei District",
+        "units": "Number"
+      },
+      {
+        "name": "Rotorua District",
+        "title": "Jobseeker support by territorial authority - Rotorua District",
+        "units": "Number"
+      },
+      {
+        "name": "Ruapehu District",
+        "title": "Jobseeker support by territorial authority - Ruapehu District",
+        "units": "Number"
+      },
+      {
+        "name": "Selwyn District",
+        "title": "Jobseeker support by territorial authority - Selwyn District",
+        "units": "Number"
+      },
+      {
+        "name": "South Taranaki District",
+        "title": "Jobseeker support by territorial authority - South Taranaki District",
+        "units": "Number"
+      },
+      {
+        "name": "South Waikato District",
+        "title": "Jobseeker support by territorial authority - South Waikato District",
+        "units": "Number"
+      },
+      {
+        "name": "South Wairarapa District",
+        "title": "Jobseeker support by territorial authority - South Wairarapa District",
+        "units": "Number"
+      },
+      {
+        "name": "Southland District",
+        "title": "Jobseeker support by territorial authority - Southland District",
+        "units": "Number"
+      }
+      ,
+      {
+        "name": "Stratford District",
+        "title": "Jobseeker support by territorial authority - Stratford District",
+        "units": "Number"
+      },
+      {
+        "name": "Tararua District",
+        "title": "Jobseeker support by territorial authority - Tararua District",
+        "units": "Number"
+      },
+  
+      {
+        "name": "Tasman District",
+        "title": "Jobseeker support by territorial authority - Tasman District",
+        "units": "Number"
+      },
+      {
+        "name": "Taupo District",
+        "title": "Jobseeker support by territorial authority - Taupo District",
+        "units": "Number"
+      },
+      {
+        "name": "Tauranga City",
+        "title": "Jobseeker support by territorial authority - Tauranga City",
+        "units": "Number"
+      },
+      {
+        "name": "Thames-Coromandel District",
+        "title": "Jobseeker support by territorial authority - Thames-Coromandel District",
+        "units": "Number"
+      },
+      {
+        "name": "Timaru District",
+        "title": "Jobseeker support by territorial authority - Timaru District",
+        "units": "Number"
+      },
+      {
+        "name": "Upper Hutt City",
+        "title": "Jobseeker support by territorial authority - Upper Hutt City",
+        "units": "Number"
+      },
+      {
+        "name": "Waikato District",
+        "title": "Jobseeker support by territorial authority - Waikato District",
+        "units": "Number"
+      },
+      {
+        "name": "Waimakariri District",
+        "title": "Jobseeker support by territorial authority - Waimakariri District",
+        "units": "Number"
+      },
+      {
+        "name": "Waimate District",
+        "title": "Jobseeker support by territorial authority - Waimate District",
+        "units": "Number"
+      },
+      {
+        "name": "Waipa District",
+        "title": "Jobseeker support by territorial authority - Waipa District",
+        "units": "Number"
+      },
+      {
+        "name": "Wairoa District",
+        "title": "Jobseeker support by territorial authority - Wairoa District",
+        "units": "Number"
+      },
+      {
+        "name": "Waitaki District",
+        "title": "Jobseeker support by territorial authority - Waitaki District",
+        "units": "Number"
+      },
+      {
+        "name": "Waitomo District",
+        "title": "Jobseeker support by territorial authority - Waitomo District",
+        "units": "Number"
+      },
+      {
+        "name": "Wellington City",
+        "title": "Jobseeker support by territorial authority - Wellington City",
+        "units": "Number"
+      },
+      {
+        "name": "Western Bay Of Plenty District",
+        "title": "Jobseeker support by territorial authority - Western Bay Of Plenty District",
+        "units": "Number"
+      },
+      {
+        "name": "Westland District",
+        "title": "Jobseeker support by territorial authority - Westland District",
+        "units": "Number"
+      },
+      {
+        "name": "Whakatane District",
+        "title": "Jobseeker support by territorial authority - Whakatane District",
+        "units": "Number"
+      },
+      {
+        "name": "Whanganui District",
+        "title": "Jobseeker support by territorial authority - Whanganui District",
+        "units": "Number"
+      },
+      {
+        "name": "Whangarei District",
+        "title": "Jobseeker support by territorial authority - Whangarei District",
+        "units": "Number"
+      },
+      {
+        "name": "Unknown/Other*",
+        "title": "Jobseeker support by territorial authority - Unknown/Other*",
+        "units": "Number"
+      }
+      
+      
+    ]
+    
   }
   
   
