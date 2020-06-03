@@ -3108,7 +3108,41 @@
       
     ]
     
-  }
+  },
+{
+  "class": "Economic",
+  "indicator_name": "Small business cashflow (loan) scheme",
+  "type": "Financial",
+  "source": "Inland Revenue",
+  "plot_function": "get_time_series_plot",
+  "international": false,
+  
+  "download": false,
+  "groups":[
+     {
+      "name": "Total loan amount disbursed",
+      "title": "Total loan amount disbursed (cumulative)",
+      "units": "$"
+    },
+
+    {
+      "name": "Total loan applications received",
+      "title": "Total loan applications received (cumulative)",
+      "units": "Number"
+    },
+    {
+      "name": "Loan applications received (eServices)",
+      "title": "Loan applications received (eServices - cumulative)",
+      "units": "Number"
+    },
+    {
+      "name": "Loan applications received (Manual)",
+      "title": "Loan applications received (Manual - cumulative)",
+      "units": "Number"
+    }
+    
+    ]
+}
   
   
 ]
