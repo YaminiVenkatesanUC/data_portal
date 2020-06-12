@@ -3142,7 +3142,251 @@
     }
     
     ]
+},
+{
+    "class": "Economic",
+    "indicator_name": "New residential mortgage lending by borrower type",
+    "type": "Financial",
+    "source": "Reserve Bank of New Zealand",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    "caveats":"<p>1) Individual figures may not sum to the totals due to rounding.</p><p>2) Percentage changes are calculated on unrounded numbers.</p>",
+    "source_url": "https://www.rbnz.govt.nz/statistics",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "New residential mortgage lending by borrower type",
+        "units": "$"
+      }
+    ]
+  },
+{
+    "class": "Economic",
+    "indicator_name": "New residential mortgage lending (greater than 80% LVR)",
+    "type": "Financial",
+    "source": "Reserve Bank of New Zealand",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    "caveats":"<p>1) Individual figures may not sum to the totals due to rounding.</p><p>2) Percentage changes are calculated on unrounded numbers.</p>",
+    "source_url": "https://www.rbnz.govt.nz/statistics",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "New residential mortgage lending - greater than 80% LVR",
+        "units": "$"
+      }
+    ]
+  },
+{
+    "class": "Economic",
+    "indicator_name": "New residential mortgage lending (less than or equal to 80% LVR)",
+    "type": "Financial",
+    "source": "Reserve Bank of New Zealand",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    "caveats":"<p>1) Individual figures may not sum to the totals due to rounding.</p><p>2) Percentage changes are calculated on unrounded numbers.</p>",
+    "source_url": "https://www.rbnz.govt.nz/statistics",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "New residential mortgage lending - less than or equal to 80% LVR",
+        "units": "$"
+      }
+    ]
+  },
+{
+    "class": "Economic",
+    "indicator_name": "New residential mortgage lending to investors",
+    "type": "Financial",
+    "source": "Reserve Bank of New Zealand",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    "caveats":"<p>1) Individual figures may not sum to the totals due to rounding.</p><p>2) Percentage changes are calculated on unrounded numbers.</p>",
+    "source_url": "https://www.rbnz.govt.nz/statistics",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "New residential mortgage lending to investors",
+        "units": "$"
+      }
+    ]
+  },
+{
+    "class": "Economic",
+    "indicator_name": "Number of new residential mortgage lending",
+    "type": "Financial",
+    "source": "Reserve Bank of New Zealand",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    "source_url": "https://www.rbnz.govt.nz/statistics",
+    "download": true,
+    "caveats":"<p>1) Individual figures may not sum to the totals due to rounding</p><p>2) Percentage changes are calculated on unrounded numbers.</p>",
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Number of new residential mortgage lending by borrower type",
+        "units": "Number"
+      }
+    ]
+},
+{
+    "class": "Economic",
+    "indicator_name": "Number of new residential mortgage (greater than 80% LVR)",
+    "type": "Financial",
+    "source": "Reserve Bank of New Zealand",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    
+    "source_url": "https://www.rbnz.govt.nz/statistics",
+    "download": true,
+    "caveats":"<p>1) Individual figures may not sum to the totals due to rounding.</p><p>2) Percentage changes are calculated on unrounded numbers.</p>",
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Number of new residential mortgage borrowers - greater than 80% LVR",
+        "units": "Number"
+      }
+    ]
+},
+{
+    "class": "Economic",
+    "indicator_name": "Number of new residential mortgage (less than or equal to 80% LVR)",
+    "type": "Financial",
+    "source": "Reserve Bank of New Zealand",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    
+    "source_url": "https://www.rbnz.govt.nz/statistics",
+    "download": true,
+    "caveats":"<p>1) Individual figures may not sum to the totals due to rounding.</p><p>2) Percentage changes are calculated on unrounded numbers.</p><p>",
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Number of new residential mortgage borrowers - less than 80% LVR",
+        "units": "Number"
+      }
+    ]
+},
+{
+    "class": "Economic",
+    "indicator_name": "Number of new residential mortgage lending to investors",
+    "type": "Financial",
+    "source": "Reserve Bank of New Zealand",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    "caveats":"<p>1) Individual figures may not sum to the totals due to rounding.</p><p>2) Percentage changes are calculated on unrounded numbers.</p>",
+    "source_url": "https://www.rbnz.govt.nz/statistics",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Number of new residential mortgage lending to investors",
+        "units": "Number"
+      }
+    ]
+},
+{
+    "class": "Economic",
+    "indicator_name": "Gas consumption by selected major users",
+    "type": "Activity",
+    "source": "First Gas",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    "default_lower_range":"2019-09-01",
+    
+    "source_url": "https://www.firstgas.co.nz",
+    "download": false,
+     "caveats":"<p>1) Please note that these charts are Stats NZ's interpretation of publicly available data specific to several large gas users as sourced from First Gas.</p><p>2) It is not designed to be a comprehensive representative of all gas use in New Zealand, nor is all data publicly available due to some gas being transported through private pipelines.</p><p>3) Gas consumption patterns are inclusive of planned and unplanned production outages.</p>",
+    "groups": [
+      {
+        "name": "Methanex Motunui",
+        "title": "Daily gas consumption - Methanex Motunui",
+        "units": "Gigajoules"
+      },
+      {
+        "name": "Methanex Waitara Valley",
+        "title": "Daily gas consumption - Methanex Waitara Valley",
+        "units": "Gigajoules"
+      },
+       {
+        "name": "Huntly power station",
+        "title": "Daily gas consumption - Huntly power station",
+        "units": "Gigajoules"
+      },
+       {
+        "name": "Stratford peaker power station",
+        "title": "Daily gas consumption - Stratford peaker power station",
+        "units": "Gigajoules"
+      },
+       {
+        "name": "Taranaki combined cycle power station",
+        "title": "Daily gas consumption - Taranaki combined cycle power station",
+        "units": "Gigajoules"
+      },
+       {
+        "name": "Te Rapa cogeneration plant",
+        "title": "Daily gas consumption - Te Rapa cogeneration plant",
+        "units": "Gigajoules"
+      }
+       
+    ]
+},
+{
+    "class": "Economic",
+    "indicator_name": "Gas consumption by largest users",
+    "type": "Activity",
+    "source": "First Gas",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    "default_lower_range":"2019-09-01",
+    
+    "source_url": "https://www.firstgas.co.nz",
+    "download": false,
+    "caveats":"<p>1) Please note that these charts are Stats NZ's interpretation of publicly available data specific to several large gas users as sourced from First Gas.</p><p>2) It is not designed to be a comprehensive representative of all gas use in New Zealand, nor is all data publicly available due to some gas being transported through private pipelines.</p><p>3) Gas consumption patterns are inclusive of planned and unplanned production outages.</p>",
+    "groups": [
+      
+       {
+        "name": "Fonterra - (selected sites)",
+        "title": "Daily gas consumption by largest users - Fonterra (selected sites)",
+        "units": "Gigajoules"
+      },
+      {
+        "name": "Ballance Agri-Nutrients",
+        "title": "Daily gas consumption by largest users - Ballance Agri-Nutrients",
+        "units": "Gigajoules"
+      },
+      {
+        "name": "Glenbrook steel mill",
+        "title": "Daily gas consumption by largest users - Glenbrook steel mill",
+        "units": "Gigajoules"
+      },
+      {
+        "name": "Kinleith pulp and paper mill",
+        "title": "Daily gas consumption by largest users - Kinleith pulp and paper mill",
+        "units": "Gigajoules"
+      },
+      {
+        "name": "Marsden Point oil refinery",
+        "title": "Daily gas consumption by largest users - Marsden Point oil refinery",
+        "units": "Gigajoules"
+      }
+       
+       
+    ]
 }
-  
   
 ]
