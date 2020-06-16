@@ -2863,15 +2863,16 @@
         "sheet_number": 2,
         
         "value_col": [
-        2,  
-        3,
+        3,  
+        2,
         4,
         5,
         6
         ],
         "value_names": [
-        "Fonterra - (selected sites)",
+        
         "Ballance Agri-Nutrients",
+        "Fonterra - (selected sites)",
         "Glenbrook steel mill",
         "Kinleith pulp and paper mill",
         "Marsden Point oil refinery"
@@ -2882,8 +2883,9 @@
         "data_type": "TimeSeries",
         "group_names": 
         [ 
-        "Fonterra - (selected sites)",
+        
         "Ballance Agri-Nutrients",
+        "Fonterra - (selected sites)",
         "Glenbrook steel mill",
         "Kinleith pulp and paper mill",
         "Marsden Point oil refinery"
