@@ -2586,5 +2586,307 @@
   "data_type": "TimeSeries",
   "group_names": ["Loan applications received (eServices)", "Loan applications received (Manual)","Total loan applications received", "Total loan amount disbursed"]
   
-}
+},
+{
+        "class": "Economic",
+        "indicator_name": "New residential mortgage lending by borrower type",
+        "type": "Financial",
+        "parameter_col": 1,
+                "parameter_transform": [
+        "function (x) ",
+        "as.Date(x, format = \"%d/%m/%y\")"
+        ],
+        "sheet_number": 1,
+        "input_units":1000000,
+        
+        "skip":3,
+        "value_col": [
+        3,  
+        4,
+        5,
+        6
+        ],
+        "value_names": [
+        "First home buyer",
+        "Other owner occupied",
+         "Investor",
+         "Business purpose"
+        ],
+        "filename": "COVID 19 - RBNZ lending data.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "group_names": "undefined_name"
+    },
+{
+        "class": "Economic",
+        "indicator_name": "New residential mortgage lending (greater than 80% LVR)",
+        "type": "Financial",
+        "parameter_col": 1,
+                "parameter_transform": [
+        "function (x) ",
+        "as.Date(x, format = \"%d/%m/%y\")"
+        ],
+        "sheet_number": 1,
+        "input_units":1000000,
+        "skip":3,
+        "value_col": [
+        8,  
+        9,
+        10,
+        11
+        ],
+        "value_names": [
+        "First home buyer",
+        "Other owner occupied",
+         "Investor",
+         "Business purpose"
+        ],
+        "filename": "COVID 19 - RBNZ lending data.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "group_names": "undefined_name"
+    },
+{
+        "class": "Economic",
+        "indicator_name": "New residential mortgage lending (less than or equal to 80% LVR)",
+        "type": "Financial",
+        "parameter_col": 1,
+                "parameter_transform": [
+        "function (x) ",
+        "as.Date(x, format = \"%d/%m/%y\")"
+        ],
+        "sheet_number": 1,
+         "input_units":1000000,
+        "skip":3,
+        "value_col": [
+        13,  
+        14,
+        15,
+        16
+        ],
+        "value_names": [
+        "First home buyer",
+        "Other owner occupied",
+         "Investor",
+         "Business purpose"
+        ],
+        "filename": "COVID 19 - RBNZ lending data.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "group_names": "undefined_name"
+    },
+{
+        "class": "Economic",
+        "indicator_name": "New residential mortgage lending to investors",
+        "type": "Financial",
+        "parameter_col": 1,
+                "parameter_transform": [
+        "function (x) ",
+        "as.Date(x, format = \"%d/%m/%y\")"
+        ],
+        "sheet_number": 1,
+         "input_units":1000000,
+        "skip":3,
+        "value_col": [
+        18,  
+        19
+        ],
+        "value_names": [
+        "Higher than 70% LVR lending",
+        "Less than or equal to 70% LVR lending"
+        ],
+        "filename": "COVID 19 - RBNZ lending data.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "group_names": "undefined_name"
+    },
+{
+        "class": "Economic",
+        "indicator_name": "Number of new residential mortgage lending",
+        "type": "Financial",
+        "parameter_col": 1,
+                "parameter_transform": [
+        "function (x) ",
+        "as.Date(x, format = \"%d/%m/%y\")"
+        ],
+        "sheet_number": 1,
+        "skip":3,
+        "value_col": [
+        21,  
+        22,
+        23,
+        24
+        ],
+        "value_names": [
+        "First home buyer",
+        "Other owner occupier",
+        "Investor",
+        "Business purposes"
+        ],
+        "filename": "COVID 19 - RBNZ lending data.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "group_names": "undefined_name"
+    },
+{
+        "class": "Economic",
+        "indicator_name": "Number of new residential mortgage (greater than 80% LVR)",
+        "type": "Financial",
+        "parameter_col": 1,
+                "parameter_transform": [
+        "function (x) ",
+        "as.Date(x, format = \"%d/%m/%y\")"
+        ],
+        "sheet_number": 1,
+        "skip":3,
+        "value_col": [
+        26,  
+        27,
+        28,
+        29
+        ],
+        "value_names": [
+        "First home buyer",
+        "Other owner occupier",
+        "Investor",
+        "Business purposes"
+        ],
+        "filename": "COVID 19 - RBNZ lending data.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "group_names": "undefined_name"
+    },
+{
+        "class": "Economic",
+        "indicator_name": "Number of new residential mortgage (less than or equal to 80% LVR)",
+        "type": "Financial",
+        "parameter_col": 1,
+                "parameter_transform": [
+        "function (x) ",
+        "as.Date(x, format = \"%d/%m/%y\")"
+        ],
+        "sheet_number": 1,
+        "skip":3,
+        "value_col": [
+        31,  
+        32,
+        33,
+        34
+        ],
+        "value_names": [
+        "First home buyer",
+        "Other owner occupier",
+        "Investor",
+        "Business purposes"
+        ],
+        "filename": "COVID 19 - RBNZ lending data.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "group_names": "undefined_name"
+    },
+{
+        "class": "Economic",
+        "indicator_name": "Number of new residential mortgage lending to investors",
+        "type": "Financial",
+        "parameter_col": 1,
+                "parameter_transform": [
+        "function (x) ",
+        "as.Date(x, format = \"%d/%m/%y\")"
+        ],
+        "sheet_number": 1,
+        "skip":3,
+        "value_col": [
+        36,  
+        37
+        ],
+        "value_names": [
+        " Higher than 70% LVR borrowers",
+        "Less than or equal to 70% LVR borrowers"
+        ],
+        "filename": "COVID 19 - RBNZ lending data.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "group_names": "undefined_name"
+    },
+{
+        "class": "Economic",
+        "indicator_name": "Gas consumption by selected major users",
+        "type": "Activity",
+        "parameter_col": 1,
+                "parameter_transform": [
+        "function (x) ",
+        "as.Date(x, format = \"%d/%m/%y\")"
+        ],
+        "sheet_number": 1,
+        
+        "value_col": [
+        7,
+        2,
+        3,
+        4,
+        5,
+        6
+        ],
+        "value_names": [
+         "Methanex Motunui",
+        "Methanex Waitara Valley",
+        "Huntly power station",
+        "Stratford peaker power station",
+        "Taranaki combined cycle power station",
+        "Te Rapa cogeneration plant"
+        
+        
+        ],
+        "filename": "COVID 19 - Industrial Gas use aggregated.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "group_names": 
+        [ 
+          "Methanex Motunui",
+        "Methanex Waitara Valley",
+        "Huntly power station",
+        "Stratford peaker power station",
+        "Taranaki combined cycle power station",
+        "Te Rapa cogeneration plant"
+        
+        ]
+    },
+{
+        "class": "Economic",
+        "indicator_name": "Gas consumption by largest users",
+        "type": "Activity",
+        "parameter_col": 1,
+                "parameter_transform": [
+        "function (x) ",
+        "as.Date(x, format = \"%d/%m/%y\")"
+        ],
+        "sheet_number": 2,
+        
+        "value_col": [
+        2,  
+        3,
+        4,
+        5,
+        6
+        ],
+        "value_names": [
+        "Fonterra - (selected sites)",
+        "Ballance Agri-Nutrients",
+        "Glenbrook steel mill",
+        "Kinleith pulp and paper mill",
+        "Marsden Point oil refinery"
+        
+        ],
+        "filename": "COVID 19 - Industrial Gas use aggregated.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "group_names": 
+        [ 
+        "Fonterra - (selected sites)",
+        "Ballance Agri-Nutrients",
+        "Glenbrook steel mill",
+        "Kinleith pulp and paper mill",
+        "Marsden Point oil refinery"
+        ]
+    }
 ]
