@@ -1581,32 +1581,38 @@
     "class": "Economic",
     "indicator_name": "Aircraft movements",
     "type": "Transport",
-    "source": "Queenstown Airport",
     "plot_function": "get_time_series_plot",
     "international": false,
     "include_date_slider": true,
-    "source_url": "https://www.queenstownairport.co.nz/corporate/airport-statistics)",
     "download": true,
     "groups": [
         {
             "name": "Domestic aircraft - Auckland",
             "title": "Domestic aircraft movements -  Auckland Airport",
-            "units": "Number"
+            "units": "Number",
+            "source_url": "https://corporate.aucklandairport.co.nz/news/publications/monthly-traffic-updates",
+            "source": "Auckland Airport"
         },
         {
             "name": "International aircraft - Auckland",
             "title": "International aircraft movements -  Auckland Airport",
-            "units": "Number"
+            "units": "Number",
+            "source_url": "https://corporate.aucklandairport.co.nz/news/publications/monthly-traffic-updates",
+            "source": "Auckland Airport"
         },
         {
             "name": "Domestic aircraft - Queenstown",
             "title": "Domestic aircraft movements - Queenstown Airport",
-            "units": "Number"
+            "units": "Number",
+            "source_url": "https://www.queenstownairport.co.nz/corporate/airport-statistics",
+            "source": "Queenstown Airport"
         },
         {
             "name": "International aircraft - Queenstown",
             "title": "International aircraft movements - Queenstown Airport",
-            "units": "Number"
+            "units": "Number",
+            "source_url": "https://www.queenstownairport.co.nz/corporate/airport-statistics",
+            "source": "Queenstown Airport"
         }
     ]
   },

@@ -11,7 +11,6 @@ INDICATOR_DEFINITION_FIELDS <- c(
   "class",
   "type",
   "indicator_name",
-  "source",
   "download",
   "plot_function",
   "international"
