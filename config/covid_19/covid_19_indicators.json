@@ -3359,14 +3359,15 @@
     "caveats":"<p>1) Please note that these charts are Stats NZ's interpretation of publicly available data specific to several large gas users as sourced from First Gas.</p><p>2) It is not designed to be a comprehensive representation of all gas use in New Zealand, nor is all data publicly available due to some gas being transported through private pipelines.</p><p>3) Gas consumption patterns are inclusive of planned and unplanned production outages.</p>",
     "groups": [
       
-       {
-        "name": "Fonterra - (selected sites)",
-        "title": "Daily gas consumption by largest users - Fonterra (selected sites)",
-        "units": "Gigajoules"
-      },
+     
       {
         "name": "Ballance Agri-Nutrients",
         "title": "Daily gas consumption by largest users - Ballance Agri-Nutrients",
+        "units": "Gigajoules"
+      },
+        {
+        "name": "Fonterra - (selected sites)",
+        "title": "Daily gas consumption by largest users - Fonterra (selected sites)",
         "units": "Gigajoules"
       },
       {
