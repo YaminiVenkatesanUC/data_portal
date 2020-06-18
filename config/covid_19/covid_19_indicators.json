@@ -1581,32 +1581,38 @@
     "class": "Economic",
     "indicator_name": "Aircraft movements",
     "type": "Transport",
-    "source": "Queenstown Airport",
     "plot_function": "get_time_series_plot",
     "international": false,
     "include_date_slider": true,
-    "source_url": "https://www.queenstownairport.co.nz/corporate/airport-statistics)",
     "download": true,
     "groups": [
         {
             "name": "Domestic aircraft - Auckland",
             "title": "Domestic aircraft movements -  Auckland Airport",
-            "units": "Number"
+            "units": "Number",
+            "source_url": "https://corporate.aucklandairport.co.nz/news/publications/monthly-traffic-updates",
+            "source": "Auckland Airport"
         },
         {
             "name": "International aircraft - Auckland",
             "title": "International aircraft movements -  Auckland Airport",
-            "units": "Number"
+            "units": "Number",
+            "source_url": "https://corporate.aucklandairport.co.nz/news/publications/monthly-traffic-updates",
+            "source": "Auckland Airport"
         },
         {
             "name": "Domestic aircraft - Queenstown",
             "title": "Domestic aircraft movements - Queenstown Airport",
-            "units": "Number"
+            "units": "Number",
+            "source_url": "https://www.queenstownairport.co.nz/corporate/airport-statistics",
+            "source": "Queenstown Airport"
         },
         {
             "name": "International aircraft - Queenstown",
             "title": "International aircraft movements - Queenstown Airport",
-            "units": "Number"
+            "units": "Number",
+            "source_url": "https://www.queenstownairport.co.nz/corporate/airport-statistics",
+            "source": "Queenstown Airport"
         }
     ]
   },
@@ -1862,7 +1868,7 @@
     "international": false,
     "download": true,
     "description": "For metadata and details on methodology used to produce these statistics see <a href=\"http://datainfoplus.stats.govt.nz/Item/nz.govt.stats/6ed114da-3571-40d4-a89f-932068a4c753?_ga=2.27617916.1122878806.1587330040-1991109144.1583875067#/nz.govt.stats/6c3485b0-4330-4bd7-b10f-7e9f4580797c/7\" target=\"_blank\">DataInfo+</a>.",
-    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-1-february-27-may-2020-provisional",
+    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-1-february-10-june-2020-provisional",
     "groups": [
         {
             "name": "All",
@@ -1910,7 +1916,7 @@
     "plot_function": "get_time_series_plot",
     "international": false,
     "download": true,
-    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-1-february-27-may-2020-provisional",
+    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-1-february-10-june-2020-provisional",
     "description": "For metadata and details on methodology used to produce these statistics see <a href=\"http://datainfoplus.stats.govt.nz/Item/nz.govt.stats/6ed114da-3571-40d4-a89f-932068a4c753?_ga=2.27617916.1122878806.1587330040-1991109144.1583875067#/nz.govt.stats/6c3485b0-4330-4bd7-b10f-7e9f4580797c/7\" target=\"_blank\">DataInfo+</a>.",
     "groups": [
         {
@@ -1941,7 +1947,7 @@
     "plot_function": "get_time_series_plot",
     "international": false,
     "download": true,
-    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-1-february-27-may-2020-provisional",
+    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-1-february-10-june-2020-provisional",
     "description": "For metadata and details on methodology used to produce these statistics see <a href=\"http://datainfoplus.stats.govt.nz/Item/nz.govt.stats/6ed114da-3571-40d4-a89f-932068a4c753?_ga=2.27617916.1122878806.1587330040-1991109144.1583875067#/nz.govt.stats/6c3485b0-4330-4bd7-b10f-7e9f4580797c/7\" target=\"_blank\">DataInfo+</a>.",
     "groups": [
         {
@@ -1992,7 +1998,7 @@
     "international": false,
     "download": true,
     "description": "For metadata and details on methodology used to produce these statistics see <a href=\"http://datainfoplus.stats.govt.nz/Item/nz.govt.stats/6ed114da-3571-40d4-a89f-932068a4c753?_ga=2.27617916.1122878806.1587330040-1991109144.1583875067#/nz.govt.stats/6c3485b0-4330-4bd7-b10f-7e9f4580797c/7\" target=\"_blank\">DataInfo+</a>.",
-    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-1-february-27-may-2020-provisional",
+    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-1-february-10-june-2020-provisional",
     "groups": [
         {
             "name": "Non-food manufactured goods",
