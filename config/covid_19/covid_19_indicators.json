@@ -539,6 +539,7 @@
     "default_lower_range": "2019-01-01",
     "source_url": "https://www.anz.co.nz/about-us/economic-markets-research/business-outlook/",
     "download": false,
+    "caveats": "Note June 2020 is a preliminary read.",
     "groups": [
       {
         "name": "Business confidence",
