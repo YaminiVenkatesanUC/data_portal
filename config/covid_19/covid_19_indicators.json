@@ -3395,6 +3395,426 @@
        
        
     ]
+},
+{
+    "class": "Economic",
+    "indicator_name": "Rental bonds by region - active",
+    "type": "Activity",
+    "source": "Ministry of Business, Innovation and Employment",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    "default_lower_range":"2018-01-01",
+    
+    "source_url": "https://www.mbie.govt.nz/building-and-energy/tenancy-and-housing/rental-bond-data/",
+    "download": true,
+    "groups": [
+      
+     
+      {
+        "name": "National",
+        "title": "Active bonds - National",
+        "units": "$"
+      },
+       {
+        "name": "Auckland",
+        "title": "Active bonds by region - Auckland",
+        "units": "$"
+      },
+       {
+        "name": "Bay of Plenty",
+        "title": "Active bonds by region - Bay of Plenty",
+        "units": "$"
+      }
+      ,
+       {
+        "name": "Canterbury",
+        "title": "Active bonds by region - Canterbury",
+        "units": "$"
+      }
+      ,
+       {
+        "name": "Gisborne",
+        "title": "Active bonds by region - Gisborne",
+        "units": "$"
+      } ,
+       {
+        "name": "Hawke's Bay",
+        "title": "Active bonds by region - Hawke's Bay",
+        "units": "$"
+      } ,
+       {
+        "name": "Manawatu-Whanganui",
+        "title": "Active bonds by region - Manawatu-Whanganui",
+        "units": "$"
+      } ,
+       {
+        "name": "Marlborough",
+        "title": "Active bonds by region - Marlborough",
+        "units": "$"
+      } ,
+       {
+        "name": "Nelson",
+        "title": "Active bonds by region - Nelson",
+        "units": "$"
+      } ,
+       {
+        "name": "Northland",
+        "title": "Active bonds by region - Northland",
+        "units": "$"
+      } ,
+       {
+        "name": "Otago",
+        "title": "Active bonds by region - Otago",
+        "units": "$"
+      } ,
+       {
+        "name": "Southland",
+        "title": "Active bonds by region - Southland",
+        "units": "$"
+      } ,
+       {
+        "name": "Taranaki",
+        "title": "Active bonds by region - Taranaki",
+        "units": "$"
+      } ,
+       {
+        "name": "Tasman",
+        "title": "Active bonds by region - Tasman",
+        "units": "$"
+      } ,
+       {
+        "name": "Waikato",
+        "title": "Active bonds by region - Waikato",
+        "units": "$"
+      } ,
+       {
+        "name": "Wellington",
+        "title": "Active bonds by region - Wellington",
+        "units": "$"
+      } ,
+       {
+        "name": "West Coast",
+        "title": "Active bonds by region - West Coast",
+        "units": "$"
+      }
+       
+    ]
+},
+{
+    "class": "Economic",
+    "indicator_name": "Rental bonds by region - closed",
+    "type": "Activity",
+    "source": "Ministry of Business, Innovation and Employment",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    "default_lower_range":"2018-01-01",
+    
+    "source_url": "https://www.mbie.govt.nz/building-and-energy/tenancy-and-housing/rental-bond-data/",
+    "download": true,
+    "groups": [
+      
+     
+      {
+        "name": "National",
+        "title": "Closed bonds - National",
+        "units": "$"
+      },
+       {
+        "name": "Auckland",
+        "title": "Closed bonds by region - Auckland",
+        "units": "$"
+      },
+       {
+        "name": "Bay of Plenty",
+        "title": "Closed bonds by region - Bay of Plenty",
+        "units": "$"
+      }
+      ,
+       {
+        "name": "Canterbury",
+        "title": "Closed bonds by region - Canterbury",
+        "units": "$"
+      }
+      ,
+       {
+        "name": "Gisborne",
+        "title": "Closed bonds by region - Gisborne",
+        "units": "$"
+      } ,
+       {
+        "name": "Hawke's Bay",
+        "title": "Closed bonds by region - Hawke's Bay",
+        "units": "$"
+      } ,
+       {
+        "name": "Manawatu-Whanganui",
+        "title": "Closed bonds by region - Manawatu-Whanganui",
+        "units": "$"
+      } ,
+       {
+        "name": "Marlborough",
+        "title": "Closed bonds by region - Marlborough",
+        "units": "$"
+      } ,
+       {
+        "name": "Nelson",
+        "title": "Closed bonds by region - Nelson",
+        "units": "$"
+      } ,
+       {
+        "name": "Northland",
+        "title": "Closed bonds by region - Northland",
+        "units": "$"
+      } ,
+       {
+        "name": "Otago",
+        "title": "Closed bonds by region - Otago",
+        "units": "$"
+      } ,
+       {
+        "name": "Southland",
+        "title": "Closed bonds by region - Southland",
+        "units": "$"
+      } ,
+       {
+        "name": "Taranaki",
+        "title": "Closed bonds by region - Taranaki",
+        "units": "$"
+      } ,
+       {
+        "name": "Tasman",
+        "title": "Closed bonds by region - Tasman",
+        "units": "$"
+      } ,
+       {
+        "name": "Waikato",
+        "title": "Closed bonds by region - Waikato",
+        "units": "$"
+      } ,
+       {
+        "name": "Wellington",
+        "title": "Closed bonds by region - Wellington",
+        "units": "$"
+      } ,
+       {
+        "name": "West Coast",
+        "title": "Closed bonds by region - West Coast",
+        "units": "$"
+      }
+       
+    ]
+},
+{
+    "class": "Economic",
+    "indicator_name": "Rental bonds by region - lodged",
+    "type": "Activity",
+    "source": "Ministry of Business, Innovation and Employment",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    "default_lower_range":"2018-01-01",
+    
+    "source_url": "https://www.mbie.govt.nz/building-and-energy/tenancy-and-housing/rental-bond-data/",
+    "download": true,
+    "groups": [
+      
+     
+      {
+        "name": "National",
+        "title": "Lodged bonds - National",
+        "units": "$"
+      },
+       {
+        "name": "Auckland",
+        "title": "Lodged bonds by region - Auckland",
+        "units": "$"
+      },
+       {
+        "name": "Bay of Plenty",
+        "title": "Lodged bonds by region - Bay of Plenty",
+        "units": "$"
+      }
+      ,
+       {
+        "name": "Canterbury",
+        "title": "Lodged bonds by region - Canterbury",
+        "units": "$"
+      }
+      ,
+       {
+        "name": "Gisborne",
+        "title": "Lodged bonds by region - Gisborne",
+        "units": "$"
+      } ,
+       {
+        "name": "Hawke's Bay",
+        "title": "Lodged bonds by region - Hawke's Bay",
+        "units": "$"
+      } ,
+       {
+        "name": "Manawatu-Whanganui",
+        "title": "Lodged bonds by region - Manawatu-Whanganui",
+        "units": "$"
+      } ,
+       {
+        "name": "Marlborough",
+        "title": "Lodged bonds by region - Marlborough",
+        "units": "$"
+      } ,
+       {
+        "name": "Nelson",
+        "title": "Lodged bonds by region - Nelson",
+        "units": "$"
+      } ,
+       {
+        "name": "Northland",
+        "title": "Lodged bonds by region - Northland",
+        "units": "$"
+      } ,
+       {
+        "name": "Otago",
+        "title": "Lodged bonds by region - Otago",
+        "units": "$"
+      } ,
+       {
+        "name": "Southland",
+        "title": "Lodged bonds by region - Southland",
+        "units": "$"
+      } ,
+       {
+        "name": "Taranaki",
+        "title": "Lodged bonds by region - Taranaki",
+        "units": "$"
+      } ,
+       {
+        "name": "Tasman",
+        "title": "Lodged bonds by region - Tasman",
+        "units": "$"
+      } ,
+       {
+        "name": "Waikato",
+        "title": "Lodged bonds by region - Waikato",
+        "units": "$"
+      } ,
+       {
+        "name": "Wellington",
+        "title": "Lodged bonds by region - Wellington",
+        "units": "$"
+      } ,
+       {
+        "name": "West Coast",
+        "title": "Lodged bonds by region - West Coast",
+        "units": "$"
+      }
+       
+    ]
+},
+{
+    "class": "Economic",
+    "indicator_name": "Weekly mean rent by region",
+    "type": "Activity",
+    "source": "Ministry of Business, Innovation and Employment",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    "default_lower_range":"2018-01-01",
+    
+    "source_url": "https://www.mbie.govt.nz/building-and-energy/tenancy-and-housing/rental-bond-data/",
+    "download": true,
+    "groups": [
+      
+     
+      {
+        "name": "National",
+        "title": "Weekly mean rent - National",
+        "units": "$"
+      },
+       {
+        "name": "Auckland",
+        "title": "Weekly mean rent - Auckland",
+        "units": "$"
+      },
+       {
+        "name": "Bay of Plenty",
+        "title": "Weekly mean rent - Bay of Plenty",
+        "units": "$"
+      }
+      ,
+       {
+        "name": "Canterbury",
+        "title": "Weekly mean rent - Canterbury",
+        "units": "$"
+      }
+      ,
+       {
+        "name": "Gisborne",
+        "title": "Weekly mean rent - Gisborne",
+        "units": "$"
+      } ,
+       {
+        "name": "Hawke's Bay",
+        "title": "Weekly mean rent - Hawke's Bay",
+        "units": "$"
+      } ,
+       {
+        "name": "Manawatu-Whanganui",
+        "title": "Weekly mean rent - Manawatu-Whanganui",
+        "units": "$"
+      } ,
+       {
+        "name": "Marlborough",
+        "title": "Weekly mean rent - Marlborough",
+        "units": "$"
+      } ,
+       {
+        "name": "Nelson",
+        "title": "Weekly mean rent - Nelson",
+        "units": "$"
+      } ,
+       {
+        "name": "Northland",
+        "title": "Weekly mean rent - Northland",
+        "units": "$"
+      } ,
+       {
+        "name": "Otago",
+        "title": "Weekly mean rent - Otago",
+        "units": "$"
+      } ,
+       {
+        "name": "Southland",
+        "title": "Weekly mean rent - Southland",
+        "units": "$"
+      } ,
+       {
+        "name": "Taranaki",
+        "title": "Weekly mean rent - Taranaki",
+        "units": "$"
+      } ,
+       {
+        "name": "Tasman",
+        "title": "Weekly mean rent - Tasman",
+        "units": "$"
+      } ,
+       {
+        "name": "Waikato",
+        "title": "Weekly mean rent - Waikato",
+        "units": "$"
+      } ,
+       {
+        "name": "Wellington",
+        "title": "Weekly mean rent - Wellington",
+        "units": "$"
+      } ,
+       {
+        "name": "West Coast",
+        "title": "Weekly mean rent - West Coast",
+        "units": "$"
+      }
+       
+    ]
 }
   
 ]
