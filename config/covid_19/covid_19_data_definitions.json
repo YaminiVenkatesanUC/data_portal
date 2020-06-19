@@ -2893,7 +2893,7 @@
     },
 {
         "class": "Economic",
-        "indicator_name": "Active bonds by region",
+        "indicator_name": "Rental bonds by region - active",
         "type": "Activity",
         "parameter_col": 1,
         "input_units": 1000,
@@ -2964,7 +2964,7 @@
     },
 {
         "class": "Economic",
-        "indicator_name": "Closed bonds by region",
+        "indicator_name": "Rental bonds by region - closed",
         "type": "Activity",
         "parameter_col": 1,
         "input_units": 1000,
@@ -3035,7 +3035,7 @@
     },
 {
         "class": "Economic",
-        "indicator_name": "Lodged bonds by region",
+        "indicator_name": "Rental bonds by region - lodged",
         "type": "Activity",
         "parameter_col": 1,
        "parameter_transform": ["function (x) ymd(x)"],

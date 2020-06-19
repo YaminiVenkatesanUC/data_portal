@@ -3397,7 +3397,7 @@
 },
 {
     "class": "Economic",
-    "indicator_name": "Active bonds by region",
+    "indicator_name": "Rental bonds by region - active",
     "type": "Activity",
     "source": "Ministry of Business, Innovation and Employment",
     "plot_function": "get_time_series_plot",
@@ -3502,7 +3502,7 @@
 },
 {
     "class": "Economic",
-    "indicator_name": "Closed bonds by region",
+    "indicator_name": "Rental bonds by region - closed",
     "type": "Activity",
     "source": "Ministry of Business, Innovation and Employment",
     "plot_function": "get_time_series_plot",
@@ -3607,7 +3607,7 @@
 },
 {
     "class": "Economic",
-    "indicator_name": "Lodged bonds by region",
+    "indicator_name": "Rental bonds by region - lodged",
     "type": "Activity",
     "source": "Ministry of Business, Innovation and Employment",
     "plot_function": "get_time_series_plot",
