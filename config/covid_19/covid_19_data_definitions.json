@@ -3196,7 +3196,7 @@
         "Goods Producing",
         "Services"
         ],
-        "filename": "employment-indicators-paid-jobs-week-ended-17-may-2020.csv",
+        "filename": "employment-indicators-paid-jobs.csv",
         "load_function": "read_employment_paid_jobs_data",
         "data_type": "TimeSeries",
         "group_names": 
