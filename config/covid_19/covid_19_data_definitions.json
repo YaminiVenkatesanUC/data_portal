@@ -3172,5 +3172,40 @@
        	"Wellington",
        	"West Coast"
         ]
+    },
+{
+        "class": "Economic",
+        "indicator_name": "Number of filled jobs by timeliness measure",
+        "type": "Employment",
+        "filter_paid_jobs":"Number of Paid Jobs - 27 days",
+        "parameter_col": 1,
+                "parameter_transform": [
+        "function (x) ",
+        "as.Date(x, format = \"%d/%m/%y\")"
+        ],
+        
+        "value_col": [
+        2,
+        3,
+        4,
+        5
+        ],
+        "value_names": [
+         "Total",
+        "Primary",
+        "Goods Producing",
+        "Services"
+        ],
+        "filename": "employment-indicators-paid-jobs-week-ended-17-may-2020.csv",
+        "load_function": "read_employment_paid_jobs_data",
+        "data_type": "TimeSeries",
+        "group_names": 
+        [ 
+        "Total",
+        "Primary",
+        "Goods Producing",
+        "Services"
+        
+        ]
     }
 ]

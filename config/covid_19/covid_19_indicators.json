@@ -3814,6 +3814,39 @@
       }
        
     ]
+},
+{
+    "class": "Economic",
+    "indicator_name": "Number of filled jobs by timeliness measure",
+    "type": "Employment",
+    "source": "Stats NZ",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-paid-jobs-week-ended-17-may-2020",
+    "download": true,
+   
+    "groups": [
+      {
+        "name": "Total",
+        "title": "Total number of paid jobs by timeliness measure - 27 days",
+        "units": "Number"
+      },
+        {
+        "name": "Primary",
+        "title": "Number of paid jobs for Primary industries by timeliness measure - 27 days",
+        "units": "Number"
+      },  {
+        "name": "Goods Producing",
+        "title": "Number of paid jobs for Goods Producing industries by timeliness measure - 27 days",
+        "units": "Number"
+      },  {
+        "name": "Services",
+        "title": "Number of paid jobs for Services industries by timeliness measure - 27 days",
+        "units": "Number"
+      }
+       
+    ]
 }
   
 ]
