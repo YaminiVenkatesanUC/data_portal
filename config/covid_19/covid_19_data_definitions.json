@@ -3175,7 +3175,7 @@
     },
 {
         "class": "Economic",
-        "indicator_name": "Number of filled jobs by timeliness measure",
+        "indicator_name": "Weekly filled jobs (27 days measure)",
         "type": "Employment",
         "filter_paid_jobs":"Number of Paid Jobs - 27 days",
         "parameter_col": 1,
