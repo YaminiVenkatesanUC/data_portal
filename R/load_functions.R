@@ -391,6 +391,33 @@ read_filled_jobs_by_industry_or_region <- function(config, directory) {
   return (output_group)
 }
 
+read_employment_paid_jobs_data <- function(config, directory) {
+  cols_to_read <- 1:4
+  data <- as.data.frame(read.csv(
+    paste0(directory, config$filename),
+    stringsAsFactors = FALSE
+  ))
+  col_names = paste0("col_", min(cols_to_read):max(cols_to_read))
+  colnames(data)<-col_names
+  if(!is.null(config$filter_paid_jobs)){
+    data <- data %>% filter(col_2 == config$filter_paid_jobs) %>%
+      select(Parameter = col_1, everything()) %>%
+      mutate(Parameter = as.Date(dmy(Parameter))) %>%
+      spread(col_3, col_4)%>%
+      select(Parameter, Total, everything(), -col_2)
+    
+    colnames(data)<-c("Parameter", paste0("col_", 2:ncol(data)))
+    
+  }else{
+    stop("Please specify an indicator for employment paid jobs data")
+  }
+  return (data_frame_to_data_object_helper(
+    directory,
+    config,
+    data
+  ))
+}
+
 load_functions <- list(
   read_from_csv = read_from_csv,
   read_from_excel = read_from_excel,
@@ -404,5 +431,6 @@ load_functions <- list(
   chorus_load_function = chorus_load_function,
   example_web_service_load_function = example_web_service_load_function,
   read_employment_data = read_employment_data,
-  read_filled_jobs_by_industry_or_region = read_filled_jobs_by_industry_or_region
+  read_filled_jobs_by_industry_or_region = read_filled_jobs_by_industry_or_region,
+  read_employment_paid_jobs_data=read_employment_paid_jobs_data
 )
