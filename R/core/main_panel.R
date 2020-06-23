@@ -1,4 +1,3 @@
-main_plot_ui <- function(id, label) {
   ns <- NS(id)
   fluidRow(
     column(
