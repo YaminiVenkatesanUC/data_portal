@@ -3847,6 +3847,44 @@
       }
        
     ]
-}
+},
+  {
+    "class": "Health",
+    "indicator_name": "Quarantine exemptions",
+    "type": "COVID-19",
+    "source": "Ministry of Health",
+    "plot_function": "get_horizontal_bar",
+    "international": false,
+    "disabled": false,
+    "include_date_slider": false,
+    "source_url":"https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation/covid-19-border-controls/covid-19-quarantine-and-managed-isolation-numbers",
+    "download": true,
+    "groups": [
+        {
+            "name": "Border exemptions",
+            "title": "Number of people with exemptions by category",
+            "units": ["Number"]
+        }
+    ]
+  },
+  {
+    "class": "Health",
+    "indicator_name": "Quarantine and managed isolation figures",
+    "type": "COVID-19",
+    "source": "Ministry of Health",
+    "plot_function": "get_horizontal_bar",
+    "international": false,
+    "disabled": false,
+    "include_date_slider": false,
+    "source_url":"https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation/covid-19-border-controls/covid-19-quarantine-and-managed-isolation-numbers",
+    "download": true,
+    "groups": [
+        {
+            "name": "Border quarantine",
+            "title": "Number of people in quarantine and managed isolation by location",
+            "units": ["Number"]
+        }
+    ]
+  }
   
 ]
