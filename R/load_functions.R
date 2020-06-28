@@ -362,6 +362,69 @@ read_employment_data <- function(config, directory) {
   return (output_group)
 }
 
+read_filled_jobs_by_gender <- function(config, directory) {
+  print(paste0(directory, config$filename))
+  load_parameters <- config$load_parameters
+  data <- read.csv(
+    paste0(directory, config$filename),
+    stringsAsFactors = FALSE
+  ) %>%
+    mutate(
+      Parameter = ymd(paste0(str_pad(as.character(Period), 7, side = "right", pad = "0"), ".01")),
+      Value = as.numeric(Value)
+    ) %>%
+    select("Parameter", load_parameters$group_type, "Value", "Sex")
+  names(data)[[2]] <- "group_column"
+  output_group <- list()
+  update_date <- as.Date(file.info(paste0(directory, config$filename))$mtime, tz = "NZ")
+
+  for (industry_group in unique(data$group_column)) {
+    data_group <- data %>%
+      filter(
+        group_column == industry_group
+      ) %>%
+      select(c("Parameter", "Value", "Sex")) %>%
+      pivot_wider(names_from = Sex, values_from = c("Value"))
+
+    group_name <- industry_group
+    output_group[[group_name]] <- TimeSeries$new(data_group, names(data_group)[2:3], update_date)
+  }
+
+  return (output_group)
+}
+
+
+read_filled_jobs_by_age <- function(config, directory) {
+  print(paste0(directory, config$filename))
+  load_parameters <- config$load_parameters
+  data <- read.csv(
+    paste0(directory, config$filename),
+    stringsAsFactors = FALSE
+  ) %>%
+    mutate(
+      Parameter = ymd(paste0(str_pad(as.character(Period), 7, side = "right", pad = "0"), ".01")),
+      Value = as.numeric(Value)
+    ) %>%
+    select("Parameter", load_parameters$group_type, "Value", "Age_group")
+  names(data)[[2]] <- "group_column"
+  output_group <- list()
+  update_date <- as.Date(file.info(paste0(directory, config$filename))$mtime, tz = "NZ")
+  
+  for (industry_group in unique(data$group_column)) {
+    data_group <- data %>%
+      filter(
+        group_column == industry_group
+      ) %>%
+      select(c("Parameter", "Value", "Age_group")) %>%
+      pivot_wider(names_from = Age_group, values_from = c("Value"))
+    
+    group_name <- industry_group
+    output_group[[group_name]] <- TimeSeries$new(data_group, names(data_group)[2:ncol(data_group)], update_date)
+  }
+  
+  return (output_group)
+}
+
 
 read_filled_jobs_by_industry_or_region <- function(config, directory) {
   load_parameters <- config$load_parameters
@@ -432,5 +495,7 @@ load_functions <- list(
   example_web_service_load_function = example_web_service_load_function,
   read_employment_data = read_employment_data,
   read_filled_jobs_by_industry_or_region = read_filled_jobs_by_industry_or_region,
-  read_employment_paid_jobs_data=read_employment_paid_jobs_data
+  read_employment_paid_jobs_data = read_employment_paid_jobs_data,
+  read_filled_jobs_by_gender = read_filled_jobs_by_gender,
+  read_filled_jobs_by_age = read_filled_jobs_by_age
 )

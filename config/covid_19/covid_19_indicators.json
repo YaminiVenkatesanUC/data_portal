@@ -1,6 +1,205 @@
 [
   {
     "class": "Economic",
+    "indicator_name": "Monthly filled jobs (by age)",
+    "type": "Employment",
+    "source": "Stats NZ",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    "default_lower_range": "2017-02-01",
+    "source_url": "https://www.stats.govt.nz/methods/about-new-employment-indicator-series",
+    "download": true,
+    "visible": ["15 - 19", "20 - 24", "25 - 29", "30 - 34", "35 - 39", "40 - 44", "45 - 49", "50 - 54", "55 - 59", "60 - 64"],
+    "groups": [
+     {
+        "name": "Total NZ",
+        "units": "Number",
+        "title": "Monthly employment indicator - filled jobs (actual)"
+      },
+      {
+        "name": "Northland Region",
+        "units": "Number",
+        "title": "Monthly employment indicator - filled jobs (actual)"
+      },
+      {
+        "name": "Auckland Region",
+        "units": "Number",
+        "title": "Monthly employment indicator - filled jobs (actual)"
+      },
+      {
+        "name": "Waikato Region",
+        "units": "Number",
+        "title": "Monthly employment indicator - filled jobs (actual)"
+      },
+      {
+        "name": "Bay of Plenty Region",
+        "units": "Number",
+        "title": "Monthly employment indicator - filled jobs (actual)"
+      },
+      {
+        "name": "Gisborne Region",
+        "units": "Number",
+        "title": "Monthly employment indicator - filled jobs (actual)"
+      },
+      {
+        "name": "Hawke's Bay Region",
+        "units": "Number",
+        "title": "Monthly employment indicator - filled jobs (actual)"
+      },
+      {
+        "name": "Taranaki Region",
+        "units": "Number",
+        "title": "Monthly employment indicator - filled jobs (actual)"
+      },
+      {
+        "name": "Manawatu-Whanganui Region",
+        "units": "Number",
+        "title": "Monthly employment indicator - filled jobs (actual)"
+      },
+      {
+        "name": "Wellington Region",
+        "units": "Number",
+        "title": "Monthly employment indicator - filled jobs (actual)"
+      },
+      {
+        "name": "West Coast Region",
+        "units": "Number",
+        "title": "Monthly employment indicator - filled jobs (actual)"
+      },
+      {
+        "name": "Canterbury Region",
+        "units": "Number",
+        "title": "Monthly employment indicator - filled jobs (actual)"
+      },
+      {
+        "name": "Otago Region",
+        "units": "Number",
+        "title": "Monthly employment indicator - filled jobs (actual)"
+      },
+      {
+        "name": "Southland Region",
+        "units": "Number",
+        "title": "Monthly employment indicator - filled jobs (actual)"
+      },
+      {
+        "name": "Tasman Region",
+        "units": "Number",
+        "title": "Monthly employment indicator - filled jobs (actual)"
+      },
+      {
+        "name": "Nelson Region",
+        "units": "Number",
+        "title": "Monthly employment indicator - filled jobs (actual)"
+      },
+      {
+        "name": "Marlborough Region",
+        "units": "Number",
+        "title": "Monthly employment indicator - filled jobs (actual)"
+      }
+    ]
+  },
+    {
+    "class": "Economic",
+    "indicator_name": "Monthly filled jobs (by gender)",
+    "type": "Employment",
+    "source": "Stats NZ",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    "default_lower_range": "2017-02-01",
+    "source_url": "https://www.stats.govt.nz/methods/about-new-employment-indicator-series",
+    "download": true,
+    "groups": [
+     {
+        "name": "Total NZ",
+        "units": "Number",
+        "title": "Monthly employment indicator - filled jobs (actual)"
+      },
+      {
+        "name": "Northland Region",
+        "units": "Number",
+        "title": "Monthly employment indicator - filled jobs (actual)"
+      },
+      {
+        "name": "Auckland Region",
+        "units": "Number",
+        "title": "Monthly employment indicator - filled jobs (actual)"
+      },
+      {
+        "name": "Waikato Region",
+        "units": "Number",
+        "title": "Monthly employment indicator - filled jobs (actual)"
+      },
+      {
+        "name": "Bay of Plenty Region",
+        "units": "Number",
+        "title": "Monthly employment indicator - filled jobs (actual)"
+      },
+      {
+        "name": "Gisborne Region",
+        "units": "Number",
+        "title": "Monthly employment indicator - filled jobs (actual)"
+      },
+      {
+        "name": "Hawke's Bay Region",
+        "units": "Number",
+        "title": "Monthly employment indicator - filled jobs (actual)"
+      },
+      {
+        "name": "Taranaki Region",
+        "units": "Number",
+        "title": "Monthly employment indicator - filled jobs (actual)"
+      },
+      {
+        "name": "Manawatu-Whanganui Region",
+        "units": "Number",
+        "title": "Monthly employment indicator - filled jobs (actual)"
+      },
+      {
+        "name": "Wellington Region",
+        "units": "Number",
+        "title": "Monthly employment indicator - filled jobs (actual)"
+      },
+      {
+        "name": "West Coast Region",
+        "units": "Number",
+        "title": "Monthly employment indicator - filled jobs (actual)"
+      },
+      {
+        "name": "Canterbury Region",
+        "units": "Number",
+        "title": "Monthly employment indicator - filled jobs (actual)"
+      },
+      {
+        "name": "Otago Region",
+        "units": "Number",
+        "title": "Monthly employment indicator - filled jobs (actual)"
+      },
+      {
+        "name": "Southland Region",
+        "units": "Number",
+        "title": "Monthly employment indicator - filled jobs (actual)"
+      },
+      {
+        "name": "Tasman Region",
+        "units": "Number",
+        "title": "Monthly employment indicator - filled jobs (actual)"
+      },
+      {
+        "name": "Nelson Region",
+        "units": "Number",
+        "title": "Monthly employment indicator - filled jobs (actual)"
+      },
+      {
+        "name": "Marlborough Region",
+        "units": "Number",
+        "title": "Monthly employment indicator - filled jobs (actual)"
+      }
+    ]
+  },
+  {
+    "class": "Economic",
     "indicator_name": "Monthly filled jobs (by region)",
     "type": "Employment",
     "source": "Stats NZ",

@@ -43,9 +43,11 @@ get_time_series_plot <- function(data_object, input, indicator_definition, type 
   }
 
   norm_factor_and_unit <- get_normalisation_factor(data_object$values)
+  
+  visible_lines <- get_indicator_parameter("visible", indicator_definition, input$line_selector)
 
-  if (!is.null(group_definition$visible)) {
-      visible <- data_object$value_names %in% group_definition$visible
+  if (!is.null(visible_lines)) {
+      visible <- data_object$value_names %in% visible_lines
   } else {
       visible = rep(TRUE, length(data_object$value_names))
   }
@@ -135,13 +137,14 @@ get_bar_chart <- function(data_object, input, indicator_definition, type, rotati
   label_suffix <- ""
 
   norm_factor_and_unit <- get_normalisation_factor(data_object$values)
-
-  if (!is.null(group_definition$visible)) {
-      visible <- data_object$value_names %in% group_definition$visible
+  
+  visible_lines <- get_indicator_parameter("visible", indicator_definition, input$line_selector)
+  
+  if (!is.null(visible_lines)) {
+    visible <- data_object$value_names %in% visible_lines
   } else {
-      visible = rep(TRUE, length(data_object$value_names))
+    visible = rep(TRUE, length(data_object$value_names))
   }
- 
     for (i in 1:length(data_object$value_names)) {
       time_series_data <- data_object$values[,i]
       plot <- plot %>% hc_add_series(
