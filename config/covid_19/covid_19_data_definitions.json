@@ -3237,5 +3237,46 @@
         "group_names": "Border quarantine",
         "drop_na": false,
         "data_type": "BarChart"
+      },
+      {
+        "class": "Economic",
+        "indicator_name": "New Zealand Activity Index (NZAC)",
+        "type": "Activity",
+        "parameter_col": 1,
+        "value_col": 
+        [2, 
+         4,
+         5,
+         6,
+         7,
+         8, 
+         9
+         
+         ],
+        "value_names": [
+          "New Zealand Activity Index (NZAC)",
+          "NZAC component - Card transaction spend",
+           "NZAC component - Electricity grid demand",
+           "NZAC component - Manufacturing index",
+           "NZAC component - New jobs posted onlne",
+          "NZAC component - Traffic index (heavy)",
+          "NZAC component - Traffic index (light)"
+          
+        ],
+        "sheet_number": 1,
+        "filename": "NZAC portal data.xlsx",
+        "parameter_transform": "function (x) ymd(x)",
+        "load_function": "read_from_excel",
+        "group_names": [
+            "New Zealand Activity Index (NZAC)",
+          "NZAC component - Card transaction spend",
+           "NZAC component - Electricity grid demand",
+           "NZAC component - Manufacturing index",
+           "NZAC component - New jobs posted onlne",
+          "NZAC component - Traffic index (heavy)",
+          "NZAC component - Traffic index (light)"
+        ],
+        "drop_na": false,
+        "data_type": "TimeSeries"
       }
 ]

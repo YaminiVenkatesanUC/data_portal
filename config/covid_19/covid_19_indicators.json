@@ -829,42 +829,42 @@
     "groups": [
       {
         "name": "New Zealand",
-        "title": "Daily electricity grid demand - Total",
+        "title": "Daily electricity grid demand (final pricing) - Total",
         "units": "Gigawatt hours"
       },
       {
         "name": "North Island",
-        "title": "Daily electricity grid demand - North Island",
+        "title": "Daily electricity grid demand (final pricing) - North Island",
         "units": "Gigawatt hours"
       },
       {
         "name": "Upper North Island",
-        "title": "Daily electricity grid demand - Upper North Island",
+        "title": "Daily electricity grid demand (final pricing) - Upper North Island",
         "units": "Gigawatt hours"
       },
       {
         "name": "Central North Island",
-        "title": "Daily electricity grid demand - Central North Island",
+        "title": "Daily electricity grid demand (final pricing) - Central North Island",
         "units": "Gigawatt hours"
       },
       {
         "name": "Lower North Island",
-        "title": "Daily electricity grid demand - Lower North Island",
+        "title": "Daily electricity grid demand (final pricing) - Lower North Island",
         "units": "Gigawatt hours"
       },
       {
         "name": "South Island",
-        "title": "Daily electricity grid demand - South Island",
+        "title": "Daily electricity grid demand (final pricing) - South Island",
         "units": "Gigawatt hours"
       },
       {
         "name": "Upper South Island",
-        "title": "Daily electricity grid demand - Upper South Island",
+        "title": "Daily electricity grid demand (final pricing) - Upper South Island",
         "units": "Gigawatt hours"
       },
       {
         "name": "Lower South Island",
-        "title": "Daily electricity grid demand - Lower South Island",
+        "title": "Daily electricity grid demand (final pricing) - Lower South Island",
         "units": "Gigawatt hours"
       }
     ]
@@ -3884,6 +3884,59 @@
             "name": "Border quarantine",
             "title": "Number of people in quarantine and managed isolation by location",
             "units": ["Number"]
+        }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "New Zealand Activity Index (NZAC)",
+    "type": "Activity",
+    "source": "Treasury, Stats NZ, Reserve Bank & various",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "disabled": false,
+    "include_date_slider": true,
+    "source_url":"",
+    "download": true,
+    "caveats":"<p> 1) Card transaction spend - A modified version of this series has been utilised in the compilation of the NZAC.</p><p> 2) Electricity grid demand - A comparable indicator based on electricity generation has been utilised in the compilation of the NZAC.<p/><p> 3) New jobs posted onlne - A modified version of this series has been utilised in the compilation of the NZAC.</p>",
+    "groups": [
+        {
+            "name": "New Zealand Activity Index (NZAC)",
+            "title": "New Zealand Activity Index - monthly",
+            "units": ["Annual % change"]
+        },        
+
+         {
+            "name": "NZAC component - Card transaction spend",
+            "title": "Annual percentage change electronic card transaction activity - seasonally adjusted",
+            "units": ["Annual % change"]
+        }
+        ,
+        {
+            "name": "NZAC component - Electricity grid demand",
+            "title": "Annual percentage change electricity grid demand (reconciled)",
+            "units": ["Annual % change"]
+        },
+        {
+            "name": "NZAC component - Manufacturing index",
+            "title": "BNZ-BusinessNZ performance of manufacturing index - seasonally adjusted",
+            "units": ["Index"]
+        },
+        {
+            "name": "NZAC component - New jobs posted onlne",
+            "title": "Annual percentage change SEEK new job advertisement index - seasonally adjusted",
+            "units": ["Annual % change"]
+        },
+         
+        {
+            "name": "NZAC component - Traffic index (heavy)",
+            "title": "Annual percentage change ANZ New Zealand Truckometer heavy vehicles - seasonally adjusted",
+            "units": ["Annual % change"]
+        },
+        {
+            "name": "NZAC component - Traffic index (light)",
+            "title": "Annual percentage change ANZ New Zealand Truckometer light vehicles - seasonally adjusted",
+            "units": ["Annual % change"]
         }
     ]
   }
