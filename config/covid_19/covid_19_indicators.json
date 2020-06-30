@@ -4095,8 +4095,8 @@
     "international": false,
     "disabled": false,
     "include_date_slider": true,
-    "source_url":"",
     "download": true,
+    "source_url": "https://treasury.govt.nz/sites/default/files/2020-06/nzac-tech-note-30jun20.pdf",
     "caveats":"<p> 1) Card transaction spend - A modified version of this series has been utilised in the compilation of the NZAC.</p><p> 2) Electricity grid demand - A comparable indicator based on electricity generation has been utilised in the compilation of the NZAC.<p/><p> 3) New jobs posted onlne - A modified version of this series has been utilised in the compilation of the NZAC.</p>",
     "groups": [
         {

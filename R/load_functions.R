@@ -252,13 +252,10 @@ read_trade_data <- function(config, directory) {
     data_group <- data %>% filter(group_col == group_name) %>% select(-c("group_col"))
     output <- data.frame(Parameter = unique(data_group$Parameter), stringsAsFactors = FALSE) %>% arrange()
     # change this to use pivot_wider
-    for (i in 1:length(unique(data_group$Year))) {
-      output[[paste("col", i)]] <- (
-        data_group %>%
-          filter(Year == unique(data_group$Year)[[i]]) %>%
-          arrange(Parameter))$Cumulative
-    }
-    values <- as.data.frame(output)
+    
+    output <- data_group %>%
+      pivot_wider(names_from = Year, values_from = c("Cumulative")) %>%
+      arrange(Parameter)
     output_group[[group_name]] <- TimeSeries$new(output, unique(data_group$Year), update_date)
   }
 
