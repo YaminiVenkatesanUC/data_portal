@@ -841,6 +841,7 @@
     "plot_function": "get_time_series_plot",
     "international": false,
     "include_date_slider": true,
+    "default_lower_range": "2019-01-01",
     "download": true,
     "caveats": "Daily arrivals and departures data are based solely on border-crossings into and out of New Zealand, and do not incorporate arrival card information. These data are provisional and subject to revision during the full process of producing international travel statistics.",
     "groups": [
@@ -864,6 +865,7 @@
     "plot_function": "get_time_series_plot",
     "international": false,
     "include_date_slider": true,
+    "default_lower_range": "2019-01-01",
     "download": true,
     "caveats": "Daily arrivals and departures data are based solely on border-crossings into and out of New Zealand, and do not incorporate arrival card information. These data are provisional and subject to revision during the full process of producing international travel statistics.",
     "groups": [
