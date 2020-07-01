@@ -738,7 +738,6 @@
     "default_lower_range": "2019-01-01",
     "source_url": "https://www.anz.co.nz/about-us/economic-markets-research/business-outlook/",
     "download": false,
-    "caveats": "Note June 2020 is a preliminary read.",
     "groups": [
       {
         "name": "Business confidence",
@@ -4041,7 +4040,7 @@
     "plot_function": "get_time_series_plot",
     "international": false,
     "include_date_slider": true,
-    "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-paid-jobs-week-ended-24-may-2020",
+    "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-paid-jobs-week-ended-31-may-2020",
     "download": true,
    
     "groups": [
