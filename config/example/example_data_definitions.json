@@ -89,7 +89,7 @@
         "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%Y\")",
         "load_function": "read_from_excel_error",
         "data_type": "TimeSeriesError"
-       },
+       }
     
 	  
 	  
