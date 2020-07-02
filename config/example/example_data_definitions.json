@@ -49,7 +49,7 @@
         "indicator_name": "CSV error bar example - from error bounds",
         "parameter_col": 1,
         "value_col": [2, 3],
-		"lower_bound_col": [4, 6],
+        "lower_bound_col": [4, 6],
         "upper_bound_col": [5, 7],
         "value_names": ["Series 1", "Series 2"],
         "group_names": ["Blah", "Blah"],
@@ -58,8 +58,8 @@
         "load_function": "read_from_csv_error",
         "data_type": "TimeSeriesError"
        },
-	   
-	   {
+   
+      {
        "class": "Example",
         "type": "Example type",
         "indicator_name": "Excel error bar example - from margin of error",
@@ -74,13 +74,14 @@
         "load_function": "read_from_excel_error",
         "data_type": "TimeSeriesError"
        },
-	   
-	  {
+   
+  {
        "class": "Example",
         "type": "Example type",
         "indicator_name": "Excel error bar example - from error bounds",
         "parameter_col": 1,
-		"lower_bound_col": [4, 6],
+        "value_col": [2, 3],
+        "lower_bound_col": [4, 6],
         "upper_bound_col": [5, 7],
         "value_names": ["Series 1", "Series 2"],
         "group_names": ["Blah", "Blah"],
@@ -89,9 +90,7 @@
         "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%Y\")",
         "load_function": "read_from_excel_error",
         "data_type": "TimeSeriesError"
-       },
+       }
     
-	  
-	  
-	  
+  
 ]

@@ -67,7 +67,7 @@
       {
     "class": "Example",
     "type": "Example type",
-    "indicator_name": "CSV error bar example - from error limits",
+    "indicator_name": "CSV error bar example - from error bounds",
     "source": "Name source here",
     "plot_function": "get_unstacked_bar_chart_with_errors",
     "international": false,

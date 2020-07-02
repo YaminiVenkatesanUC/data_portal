@@ -171,15 +171,15 @@ read_from_excel_error <- function(config, directory) {
   }
   
   
-  if (!is.null(error_col)) {
-    cols_to_read <-  c(parameter_col, 
-                       unlist(value_col),
-                       unlist(error_col)) 
+  if (!is.null(config$error_col)) {
+    cols_to_read <-  c(config$parameter_col, 
+                       unlist(config$value_col),
+                       unlist(config$error_col)) 
   } else {
-    cols_to_read <-  c(parameter_col, 
-                       unlist(value_col), 
-                       unlist(lower_bound_col),
-                       unlist(upper_bound_col))
+    cols_to_read <-  c(config$parameter_col, 
+                       unlist(config$value_col), 
+                       unlist(config$lower_bound_col),
+                       unlist(config$upper_bound_col))
   }
   
   
@@ -193,7 +193,7 @@ read_from_excel_error <- function(config, directory) {
       Parameter = paste0("col_", config$parameter_col)
     ) %>%
     mutate(Parameter = parameter_transform(Parameter))
-  data <- data[,cols_to_read - min(cols_to_read) + 1]
+#  data <- data[,cols_to_read - min(cols_to_read) + 1]
   
   
   
