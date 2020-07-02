@@ -42,6 +42,38 @@ data_frame_to_data_object_helper <- function(directory, config, data) {
   return (data_object_list)
 }
 
+
+
+data_frame_to_data_object_helper_error <- function(directory, config, data) {
+  
+  update_date <- as.Date(file.info(paste0(directory, config$filename))$mtime, tz = "NZ")
+  data_object_list <- list()
+  for (group_name in unique(config$group_names)) {
+    indexes <- which(config$group_names == group_name)
+    values <- (data[colnames(data) != "Parameter" &
+                      !endsWith(colnames(data), "_lower") &
+                      !endsWith(colnames(data), "_upper")])[, indexes]
+    lower <- (data[endsWith(colnames(data), "_lower")])[, indexes]
+    upper <- (data[endsWith(colnames(data), "_upper")])[, indexes]
+    value_names <- unlist(config$value_names)[indexes]
+    temp_data <- data.frame(Parameter = data$Parameter)
+    temp_data <- cbind(temp_data, values, lower, upper)
+    data_type <- get_indicator_parameter("data_type", config)
+    data_object_list[[group_name]] <- DATA_TYPES[[data_type]]$new(temp_data, value_names, update_date)
+  }
+  return (data_object_list)
+}
+
+
+
+
+
+
+
+
+
+
+
 render_title <- function(text) {
   return (gsub(" - ", " \U2012 ", text))
 }
@@ -118,7 +150,7 @@ get_indicator_list <- function(
   } else {
     result <- indicators[selection]
   }
-
+  
   return (result)
 }
 
@@ -266,7 +298,7 @@ get_normalisation_factor <- function(values) {
   } else {
     result$digits <- 2
   }
-
+  
   return (result)
 }
 
@@ -348,21 +380,21 @@ createHeaderButton <- function(buttonText, position, id, btn_class) {
   buttonClass <- paste("class=\"btn", btn_class ,"action-button shiny-bound-input\"")
   buttonId <- paste0("id=\"", id ,"\"")
   buttonType <- "type=\"button\""
-
+  
   output <- paste(
     "<div",
-      class,
-      style,
+    class,
+    style,
     ">",
-      "<button",
-          buttonId,
-          buttonClass,
-          buttonType,
-        ">",
-        buttonText,
-      "</button>",
+    "<button",
+    buttonId,
+    buttonClass,
+    buttonType,
+    ">",
+    buttonText,
+    "</button>",
     "</div>"
-    )
+  )
   return (output)
 }
 
@@ -373,20 +405,20 @@ createHeaderLink <- function(buttonText, position, id, url) {
   href <- paste0("href=\"", url, "\"")
   buttonId <- paste0("id=\"", id ,"\"")
   target <- "target=\"_blank\""
-
+  
   output <- paste(
     "<div",
-      class,
-      style,
+    class,
+    style,
     ">",
-      "<a",
-        buttonId,
-        buttonClass,
-        href,
-        target,
-      ">",
-        buttonText,
-      "</a>",
+    "<a",
+    buttonId,
+    buttonClass,
+    href,
+    target,
+    ">",
+    buttonText,
+    "</a>",
     "</div>"
   )
   return (output)
