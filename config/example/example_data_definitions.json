@@ -25,5 +25,73 @@
         "parameter_transform": "function (x) dmy(x)",
         "load_function": "read_from_csv",
         "data_type": "TimeSeries"
-      }
+      },
+	  
+	  
+	  {
+       "class": "Example",
+        "type": "Example type",
+        "indicator_name": "CSV error bar example - from margin of error",
+        "parameter_col": 1,
+        "value_col": [2, 3],
+        "error_col": [9, 8],
+        "value_names": ["Series 1", "Series 2"],
+        "group_names": ["Blah", "Blah"],
+        "filename": "error_bar_test.csv",
+        "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%Y\")",
+        "load_function": "read_from_csv_error",
+        "data_type": "TimeSeriesError"
+       },
+	   
+	  {
+       "class": "Example",
+        "type": "Example type",
+        "indicator_name": "CSV error bar example - from error bounds",
+        "parameter_col": 1,
+        "value_col": [2, 3],
+		"lower_bound_col": [4, 6],
+        "upper_bound_col": [5, 7],
+        "value_names": ["Series 1", "Series 2"],
+        "group_names": ["Blah", "Blah"],
+        "filename": "error_bar_test.csv",
+        "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%Y\")",
+        "load_function": "read_from_csv_error",
+        "data_type": "TimeSeriesError"
+       },
+	   
+	   {
+       "class": "Example",
+        "type": "Example type",
+        "indicator_name": "Excel error bar example - from margin of error",
+        "parameter_col": 1,
+        "value_col": [2, 3],
+        "error_col": [9, 8],
+        "value_names": ["Series 1", "Series 2"],
+        "group_names": ["Blah", "Blah"],
+        "sheet_number": 1,
+        "filename": "error_bar_test.xlsx",
+        "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%Y\")",
+        "load_function": "read_from_excel_error",
+        "data_type": "TimeSeriesError"
+       },
+	   
+	  {
+       "class": "Example",
+        "type": "Example type",
+        "indicator_name": "Excel error bar example - from error bounds",
+        "parameter_col": 1,
+		"lower_bound_col": [4, 6],
+        "upper_bound_col": [5, 7],
+        "value_names": ["Series 1", "Series 2"],
+        "group_names": ["Blah", "Blah"],
+        "sheet_number": 1,
+        "filename": "error_bar_test.xlsx",
+        "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%Y\")",
+        "load_function": "read_from_excel_error",
+        "data_type": "TimeSeriesError"
+       },
+    
+	  
+	  
+	  
 ]
