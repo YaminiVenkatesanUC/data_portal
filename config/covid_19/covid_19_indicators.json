@@ -1526,6 +1526,63 @@
         "source": "Center for System Science and Engineering, Johns Hopkins University",
         "source_url": "https://coronavirus.jhu.edu/"
       },
+      
+      {
+        "name": "Australia - ACT",
+        "title": "COVID-19 cases in Australia - ACT (cumulative)",
+        "units": "Number",
+        "source": "Center for System Science and Engineering, Johns Hopkins University",
+        "source_url": "https://coronavirus.jhu.edu/"
+      },
+      {
+        "name": "Australia - New South Wales",
+        "title": "COVID-19 cases in Australia - New South Wales (cumulative)",
+        "units": "Number",
+        "source": "Center for System Science and Engineering, Johns Hopkins University",
+        "source_url": "https://coronavirus.jhu.edu/"
+      },
+       {
+        "name": "Australia - Northern Territory",
+        "title": "COVID-19 cases in Australia - Northern Territory (cumulative)",
+        "units": "Number",
+        "source": "Center for System Science and Engineering, Johns Hopkins University",
+        "source_url": "https://coronavirus.jhu.edu/"
+      },
+       {
+        "name": "Australia - Queensland",
+        "title": "COVID-19 cases in Australia - Queensland (cumulative)",
+        "units": "Number",
+        "source": "Center for System Science and Engineering, Johns Hopkins University",
+        "source_url": "https://coronavirus.jhu.edu/"
+      },
+      {
+        "name": "Australia - South Australia",
+        "title": "COVID-19 cases in Australia - South Australia (cumulative)",
+        "units": "Number",
+        "source": "Center for System Science and Engineering, Johns Hopkins University",
+        "source_url": "https://coronavirus.jhu.edu/"
+      },
+      {
+        "name": "Australia - Tasmania",
+        "title": "COVID-19 cases in Australia - Tasmania (cumulative)",
+        "units": "Number",
+        "source": "Center for System Science and Engineering, Johns Hopkins University",
+        "source_url": "https://coronavirus.jhu.edu/"
+      },
+       {
+        "name": "Australia - Victoria",
+        "title": "COVID-19 cases in Australia - Victoria (cumulative)",
+        "units": "Number",
+        "source": "Center for System Science and Engineering, Johns Hopkins University",
+        "source_url": "https://coronavirus.jhu.edu/"
+      },
+         {
+        "name": "Australia - Western Australia",
+        "title": "COVID-19 cases in Australia - Western Australia (cumulative)",
+        "units": "Number",
+        "source": "Center for System Science and Engineering, Johns Hopkins University",
+        "source_url": "https://coronavirus.jhu.edu/"
+      },
         {
         "name": "China",
         "title": "COVID-19 cases in China (cumulative)",
