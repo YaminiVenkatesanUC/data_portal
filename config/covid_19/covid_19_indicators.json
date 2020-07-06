@@ -4213,5 +4213,24 @@
         }
     ]
   }
+  ,
+  {
+    "class": "Social",
+    "indicator_name": "COVID-19 Income Relief Payment",
+    "type": "Benefits",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "caveats":"<p> *Number of grants include suspensions and cancellations</p><p> **Transfers to CIRP from Jobseeker Support are cumulative counts of people granted CIRP, who were recently in receipt (or a partner of a primary recipient) of Jobseeker Support.</p>" , 
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Number of recepients - COVID-19 Income Relief Payment (CIRP)",
+        "units": "Number"
+      }
+    ]
+  }
   
 ]

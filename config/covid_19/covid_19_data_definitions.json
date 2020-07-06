@@ -3515,5 +3515,34 @@
         "country_filter": "Australia - Western Australia",
         "data_type": "TimeSeries",
         "group_names": "Australia - Western Australia"
+    },
+    {
+        "class": "Social",
+        "indicator_name": "COVID-19 Income Relief Payment",
+        "type": "Benefits",
+        "parameter_col": 1,
+        "parameter_transform": [
+        "function (x) ",
+        "as.Date(x, format = \"%d/%m/%y\")"
+        ],
+        "sheet_number": 5,
+        "value_col": [
+        2,
+        3,
+        4,
+        5,
+        6
+        ],
+        "value_names": [
+        "Total",
+        "Full-time recipients",
+        "Part-time recipients",
+        "CIRP grants*",
+        "Transfers from Jobseeker Support**"
+        ],
+        "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "group_names": "undefined_name"
     }
 ]
