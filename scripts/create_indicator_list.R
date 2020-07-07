@@ -5,6 +5,7 @@ library(writexl)
 library(readxl)
 library(dplyr)
 library(tidyr)
+library(xlsx)
 
 
 source("R/core/build_ui.R")
@@ -29,13 +30,13 @@ data_definitions <- read_json(CONFIG$data_definitions)
 
 
 
-list_ind<-"/home/STATSNZ/rbaltaza/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/supply_ Use/R/collab/data_portal/"
+# list_ind<-"/home/STATSNZ/rbaltaza/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/supply_ Use/R/collab/data_portal/"
 indicator_files<-"/home/STATSNZ/rbaltaza/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/supply_ Use/R/collab/data_portal/config/covid_19/"
 
 indicator_list<-read.csv(paste0(list_ind, "indicator_register.csv"), stringsAsFactors = F)
 
-by_class<-indicator_list%>%select(class, indicator_name, source)%>%mutate(Number_of_charts=1)%>%group_by(indicator_name, class, source)%>%
-  summarise_if(is.numeric, sum, na.rm=T)%>%ungroup()%>%group_by(class, indicator_name, source)
+by_class<-indicator_list%>%select(class, indicator_name, source)%>%mutate(number_of_charts=1)%>%group_by(indicator_name, class, source)%>%
+  summarise_if(is.numeric, sum, na.rm=T)%>%ungroup()%>%group_by(class, indicator_name, source)%>%as.data.frame()
 
 
 
@@ -67,9 +68,12 @@ return(data)
 
 indicator_data<-indicator_list(data_definitions)%>%select(class, type, indicator_name, filename) 
 
-list_indicators<-merge(indicator_data, by_class, all = T)
+list_indicators<-merge(indicator_data, by_class, all = T)%>%select(-number_of_charts)%>%as.data.frame()
 
-write_xlsx(list_indicators, paste0(list_ind, "COVID - 19 data portal indicators.xlsx"))
+
+write.xlsx(list_indicators, "COVID - 19 data portal indicators.xlsx", sheetName = "Sheet1", row.names = FALSE)
+write.xlsx(by_class, "COVID - 19 data portal indicators.xlsx", sheetName = "Sheet2", append = TRUE, row.names = FALSE)
+
 
 
 
