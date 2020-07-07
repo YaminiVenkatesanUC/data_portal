@@ -3304,5 +3304,245 @@
         ],
         "drop_na": false,
         "data_type": "TimeSeries"
-      }
+      },
+    {
+        "class": "Health",
+        "indicator_name": "Number of cases",
+        "type": "COVID-19",
+        "parameter_col": 1,
+        "parameter_transform": [
+        "function (x) ",
+        "as.Date(x, format = \"%d/%m/%y\")"
+        ],
+        "sheet_number": 1,
+        "value_col": [
+        5,
+        3,
+        4
+        ],
+        "value_names": [
+       "Active",
+        "Recovered",
+         "Deceased"
+        ],
+        "filename": "COVID 19 - Global cases.xlsx",
+        "load_function": "read_global_cases_file",
+        "country_filter": "Australia - Australian Capital Territory",
+        "data_type": "TimeSeries",
+        "group_names": "Australia - ACT"
+    },
+    {
+        "class": "Health",
+        "indicator_name": "Number of cases",
+        "type": "COVID-19",
+        "parameter_col": 1,
+        "parameter_transform": [
+        "function (x) ",
+        "as.Date(x, format = \"%d/%m/%y\")"
+        ],
+        "sheet_number": 1,
+        "value_col": [
+        5,
+        3,
+        4
+        ],
+        "value_names": [
+       "Active",
+        "Recovered",
+         "Deceased"
+        ],
+        "filename": "COVID 19 - Global cases.xlsx",
+        "load_function": "read_global_cases_file",
+        "country_filter": "Australia - New South Wales",
+        "data_type": "TimeSeries",
+        "group_names": "Australia - New South Wales"
+    },
+    {
+        "class": "Health",
+        "indicator_name": "Number of cases",
+        "type": "COVID-19",
+        "parameter_col": 1,
+        "parameter_transform": [
+        "function (x) ",
+        "as.Date(x, format = \"%d/%m/%y\")"
+        ],
+        "sheet_number": 1,
+        "value_col": [
+        5,
+        3,
+        4
+        ],
+        "value_names": [
+       "Active",
+        "Recovered",
+         "Deceased"
+        ],
+        "filename": "COVID 19 - Global cases.xlsx",
+        "load_function": "read_global_cases_file",
+        "country_filter": "Australia - Northern Territory",
+        "data_type": "TimeSeries",
+        "group_names": "Australia - Northern Territory"
+    },
+    {
+        "class": "Health",
+        "indicator_name": "Number of cases",
+        "type": "COVID-19",
+        "parameter_col": 1,
+        "parameter_transform": [
+        "function (x) ",
+        "as.Date(x, format = \"%d/%m/%y\")"
+        ],
+        "sheet_number": 1,
+        "value_col": [
+        5,
+        3,
+        4
+        ],
+        "value_names": [
+       "Active",
+        "Recovered",
+         "Deceased"
+        ],
+        "filename": "COVID 19 - Global cases.xlsx",
+        "load_function": "read_global_cases_file",
+        "country_filter": "Australia - Queensland",
+        "data_type": "TimeSeries",
+        "group_names": "Australia - Queensland"
+    }
+     ,
+    {
+        "class": "Health",
+        "indicator_name": "Number of cases",
+        "type": "COVID-19",
+        "parameter_col": 1,
+        "parameter_transform": [
+        "function (x) ",
+        "as.Date(x, format = \"%d/%m/%y\")"
+        ],
+        "sheet_number": 1,
+        "value_col": [
+        5,
+        3,
+        4
+        ],
+        "value_names": [
+       "Active",
+        "Recovered",
+         "Deceased"
+        ],
+        "filename": "COVID 19 - Global cases.xlsx",
+        "load_function": "read_global_cases_file",
+        "country_filter": "Australia - South Australia",
+        "data_type": "TimeSeries",
+        "group_names": "Australia - South Australia"
+    }
+    ,
+    {
+        "class": "Health",
+        "indicator_name": "Number of cases",
+        "type": "COVID-19",
+        "parameter_col": 1,
+        "parameter_transform": [
+        "function (x) ",
+        "as.Date(x, format = \"%d/%m/%y\")"
+        ],
+        "sheet_number": 1,
+        "value_col": [
+        5,
+        3,
+        4
+        ],
+        "value_names": [
+       "Active",
+        "Recovered",
+         "Deceased"
+        ],
+        "filename": "COVID 19 - Global cases.xlsx",
+        "load_function": "read_global_cases_file",
+        "country_filter": "Australia - Tasmania",
+        "data_type": "TimeSeries",
+        "group_names": "Australia - Tasmania"
+    }
+     ,
+    {
+        "class": "Health",
+        "indicator_name": "Number of cases",
+        "type": "COVID-19",
+        "parameter_col": 1,
+        "parameter_transform": [
+        "function (x) ",
+        "as.Date(x, format = \"%d/%m/%y\")"
+        ],
+        "sheet_number": 1,
+        "value_col": [
+        5,
+        3,
+        4
+        ],
+        "value_names": [
+       "Active",
+        "Recovered",
+         "Deceased"
+        ],
+        "filename": "COVID 19 - Global cases.xlsx",
+        "load_function": "read_global_cases_file",
+        "country_filter": "Australia - Victoria",
+        "data_type": "TimeSeries",
+        "group_names": "Australia - Victoria"
+    } ,
+    {
+        "class": "Health",
+        "indicator_name": "Number of cases",
+        "type": "COVID-19",
+        "parameter_col": 1,
+        "parameter_transform": [
+        "function (x) ",
+        "as.Date(x, format = \"%d/%m/%y\")"
+        ],
+        "sheet_number": 1,
+        "value_col": [
+        5,
+        3,
+        4
+        ],
+        "value_names": [
+       "Active",
+        "Recovered",
+         "Deceased"
+        ],
+        "filename": "COVID 19 - Global cases.xlsx",
+        "load_function": "read_global_cases_file",
+        "country_filter": "Australia - Western Australia",
+        "data_type": "TimeSeries",
+        "group_names": "Australia - Western Australia"
+    },
+    {
+        "class": "Social",
+        "indicator_name": "COVID-19 Income Relief Payment",
+        "type": "Benefits",
+        "parameter_col": 1,
+        "parameter_transform": [
+        "function (x) ",
+        "as.Date(x, format = \"%d/%m/%y\")"
+        ],
+        "sheet_number": 5,
+        "value_col": [
+        2,
+        3,
+        4,
+        5,
+        6
+        ],
+        "value_names": [
+        "Total",
+        "Full-time recipients",
+        "Part-time recipients",
+        "CIRP grants*",
+        "Transfers from Jobseeker Support**"
+        ],
+        "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "group_names": "undefined_name"
+    }
 ]
