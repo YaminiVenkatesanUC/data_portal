@@ -25,7 +25,7 @@ options(scipen = 999)
 
 CONFIG <- read_config_file()
 
-indicator_definitions_raw <- read_json(CONFIG$data_definitions)
+data_definitions <- read_json(CONFIG$data_definitions)
 
 
 
