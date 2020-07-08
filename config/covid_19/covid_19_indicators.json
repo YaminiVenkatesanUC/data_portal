@@ -3399,7 +3399,11 @@
   
   "download": false,
   "groups":[
-     
+      {
+      "name": "Total loan amount disbursed",
+      "title": "Total loan amount disbursed (cumulative)",
+      "units": "$"
+    },
 
     {
       "name": "Total loan applications received",
@@ -3416,6 +3420,9 @@
       "title": "Loan applications received (Manual - cumulative)",
       "units": "Number"
     }
+    
+   
+    
     
     ]
 },
@@ -4093,7 +4100,7 @@
     "plot_function": "get_time_series_plot",
     "international": false,
     "include_date_slider": true,
-    "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-paid-jobs-week-ended-31-may-2020",
+    "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-paid-jobs-week-ended-7-june-2020",
     "download": true,
    
     "groups": [

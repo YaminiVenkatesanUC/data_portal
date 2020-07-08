@@ -2605,12 +2605,12 @@
     "as.Date(x, format = \"%d/%m/%Y\")"
     ],
   "sheet_number": 1,
-  "value_col": [2, 3, 4],
-  "value_names":["Loan applications received (eServices)", "Loan applications received (Manual)","Total loan applications received"],
+  "value_col": [6, 2, 3, 4],
+  "value_names":["Total loan amount disbursed", "Loan applications received (eServices)", "Loan applications received (Manual)","Total loan applications received"],
   "filename": "COVID 19 - IRD lending data.xlsx",
   "load_function": "read_from_excel",
   "data_type": "TimeSeries",
-  "group_names": ["Loan applications received (eServices)", "Loan applications received (Manual)","Total loan applications received"]
+  "group_names": ["Total loan amount disbursed", "Loan applications received (eServices)", "Loan applications received (Manual)","Total loan applications received"]
   
 },
 {
@@ -3536,7 +3536,7 @@
         "value_names": [
         "Total number of recipients of CIRP",
         "Full-time recipients of CIRP",
-        "Part-time recipients",
+        "Part-time recipients of CIRP",
         "CIRP grants*",
         "Transfers from Jobseeker Support**"
         ],
