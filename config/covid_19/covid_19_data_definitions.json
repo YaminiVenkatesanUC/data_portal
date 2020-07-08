@@ -2605,12 +2605,12 @@
     "as.Date(x, format = \"%d/%m/%Y\")"
     ],
   "sheet_number": 1,
-  "value_col": [2, 3, 4, 6],
-  "value_names":["Loan applications received (eServices)", "Loan applications received (Manual)","Total loan applications received", "Total loan amount disbursed"],
+  "value_col": [2, 3, 4],
+  "value_names":["Loan applications received (eServices)", "Loan applications received (Manual)","Total loan applications received"],
   "filename": "COVID 19 - IRD lending data.xlsx",
   "load_function": "read_from_excel",
   "data_type": "TimeSeries",
-  "group_names": ["Loan applications received (eServices)", "Loan applications received (Manual)","Total loan applications received", "Total loan amount disbursed"]
+  "group_names": ["Loan applications received (eServices)", "Loan applications received (Manual)","Total loan applications received"]
   
 },
 {
@@ -3240,7 +3240,7 @@
         "type": "COVID-19",
         "parameter_col": 1,
         "value_col": [3],
-        "value_names": ["Current - 30 June"],
+        "value_names": ["Current - 06 July"],
         "sheet_number": 2,
         "filename": "COVID 19 - MoH Border Control insights.xlsx",
         "parameter_transform": "function (x) x",
@@ -3255,7 +3255,7 @@
         "type": "COVID-19",
         "parameter_col": 1,
         "value_col": [2],
-        "value_names": ["Current - 30 June"],
+        "value_names": ["Current - 06 July"],
         "sheet_number": 1,
         "filename": "COVID 19 - MoH Border Control insights.xlsx",
         "parameter_transform": "function (x) x",

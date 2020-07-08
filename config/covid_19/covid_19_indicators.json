@@ -3399,11 +3399,7 @@
   
   "download": false,
   "groups":[
-     {
-      "name": "Total loan amount disbursed",
-      "title": "Total loan amount disbursed (cumulative)",
-      "units": "$"
-    },
+     
 
     {
       "name": "Total loan applications received",
