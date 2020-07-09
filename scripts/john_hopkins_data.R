@@ -58,31 +58,36 @@ all_data[is.na(all_data)]<-0
 
 
 
-df_cases_new<-all_data%>%select(-Province)%>% group_by(Date, Country )%>%
+df_cases_selected_countries<-all_data%>%select(-Province)%>% group_by(Date, Country )%>%
   dplyr::summarise(Active=sum(Active), Recovered=sum(Recovered),Deceased=sum(Deceased))%>%
   filter(Country %in% country)
 
 
 
-df_cases_new_ROW<-all_data%>%
+df_cases_rest_of_world<-all_data%>%
   filter(!Country %in% country)%>%select(-Country)%>%group_by(Date)%>%
   summarise_if(is.numeric, sum, na.rm=T)%>%
   mutate(Country="Rest of the world")%>%
   select(Country, everything())
 
-# df_cases_all<-full_join(df_cases_new, df_cases_new_ROW)
+# add australian provinces
 
 aus_provinces<-all_data%>%filter(Country=='Australia')%>%mutate(Country= paste0(Country, " - ", Province))%>%
   select(-Province)
 
-
 df_cases_all<-Reduce(function(x,y) merge(x = x, y = y, all=TRUE),
-       list(df_cases_new, df_cases_new_ROW, aus_provinces))%>%mutate(Active=Active-Recovered-Deceased)
+       list(df_cases_selected_countries, df_cases_rest_of_world, aus_provinces))%>%mutate(Active=Active-Recovered-Deceased)
 
 df_cases_all[is.na(df_cases_all)]<-0
 
-##plot to check if data is ok
 
+
+
+
+write_xlsx(df_cases_all,paste0(output,"COVID 19 - Global cases.xlsx"))
+
+
+##plot to check if data is ok
 df_cases4<-df_cases_all
 
 df_cases4<-df_cases4%>%mutate(Active=log(Active), Recovered=log(Recovered), Deceased=log(Deceased))
@@ -98,10 +103,6 @@ p<-ggplot(cases_policy, aes(Date,value, fill=type ))+geom_bar(stat="identity")+f
 
 ggplotly(p)
 
-
-
-
-write_xlsx(df_cases_all,paste0(output,"COVID 19 - Global cases.xlsx"))
 
 
 
