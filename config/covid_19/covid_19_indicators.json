@@ -814,7 +814,7 @@
     "international": false,
     "include_date_slider": true,
     "default_lower_range": "2017-01-01",
-    "source_url": "https://www.stats.govt.nz/information-releases/electronic-card-transactions-march-2020",
+    "source_url": " https://www.stats.govt.nz/news/retail-card-spending-resurgence-in-june",
     "download": true,
     "groups": [
       {
@@ -891,7 +891,7 @@
     "default_lower_range": "2017-01-01",
     "international": false,
     "include_date_slider": true,
-    "source_url": "https://www.stats.govt.nz/information-releases/electronic-card-transactions-march-2020",
+    "source_url": " https://www.stats.govt.nz/news/retail-card-spending-resurgence-in-june",
     "download": true,
     "groups": [
       {
