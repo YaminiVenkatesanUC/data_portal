@@ -570,13 +570,13 @@
             "name": "Retail",
             "units": "Litres",
             "title": "Z Energy weekly fuel supply volumes - retail",
-            "caveats": "<p>(1) Truckstops include Z and Caltex branded Truckstops, private Truckstops and Mini-Tankers.</p><p>(2) Other includes General Aviation and Lubricants.</p><p>(3) The values for the 22nd of March are the average weekly volumes for the preceeding four weeks (24/02/20-22/03/20).  The subsequent values are weekly totals.</p><p>(4) Week ended data includes all fuel volumes for the prior week up to 11.59pm on Sunday.</p>"
+            "caveats": "<p>(1) Truckstops include Z and Caltex branded Truckstops, private Truckstops and Mini-Tankers.</p><p>(2) Other includes General Aviation and Lubricants.</p><p>(3) The values for the 22nd of March are the average weekly volumes for the preceding four weeks (24/02/20-22/03/20).  The subsequent values are weekly totals.</p><p>(4) Week ended data includes all fuel volumes for the prior week up to 11.59pm on Sunday.</p>"
         },
         {
             "name": "Other",
             "units": "Litres",
             "title": "Z Energy weekly fuel supply volumes - other",
-            "caveats": "<p>(1) Z volumes will be retail fuel sales volumes including the Foodstuffs network.</p><p>(2) Domestic retail supply volume is the total bulk fuel delivered to distributor customers.</p><p>(3) The values for the 22nd of March are the average weekly volumes for the preceeding four weeks (24/02/20-22/03/20). The subsequent values are weekly totals.</p><p>(4) Week ended data includes all fuel volumes for the prior week up to 11.59pm on Sunday.</p>"
+            "caveats": "<p>(1) Z volumes will be retail fuel sales volumes including the Foodstuffs network.</p><p>(2) Domestic retail supply volume is the total bulk fuel delivered to distributor customers.</p><p>(3) The values for the 22nd of March are the average weekly volumes for the preceding four weeks (24/02/20-22/03/20). The subsequent values are weekly totals.</p><p>(4) Week ended data includes all fuel volumes for the prior week up to 11.59pm on Sunday.</p>"
         }
     ]
   },
@@ -4176,7 +4176,7 @@
     "include_date_slider": true,
     "download": true,
     "source_url": "https://treasury.govt.nz/sites/default/files/2020-06/nzac-tech-note-30jun20.pdf",
-    "caveats":"<p> 1) Card transaction spend - A modified version of this series has been utilised in the compilation of the NZAC.</p><p> 2) Electricity grid demand - A comparable indicator based on electricity generation has been utilised in the compilation of the NZAC.<p/><p> 3) New jobs posted onlne - A modified version of this series has been utilised in the compilation of the NZAC.</p>",
+    "caveats":"<p> 1) Card transaction spend - A modified version of this series has been utilised in the compilation of the NZAC.</p><p> 2) Electricity grid demand - A comparable indicator based on electricity generation has been utilised in the compilation of the NZAC.<p/><p> 3) New jobs posted online - A modified version of this series has been utilised in the compilation of the NZAC.</p>",
     "groups": [
         {
             "name": "New Zealand Activity Index (NZAC)",
