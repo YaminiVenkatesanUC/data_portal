@@ -867,7 +867,7 @@
     },
     {
         "class": "Social",
-        "indicator_name": "Special needs grants for food",
+        "indicator_name": "Special needs grants for food - (weekly)",
         "type": "Hardship assistance",
         "parameter_col": 1,
         "parameter_transform": [
@@ -3551,7 +3551,7 @@
     },
     {
         "class": "Social",
-        "indicator_name": "Special needs grants food by region",
+        "indicator_name": "Special needs grants for food by region",
         "type": "Hardship assistance",
         "parameter_col": 1,
         "parameter_transform": [
@@ -4017,7 +4017,7 @@
     },
     {
         "class": "Social",
-        "indicator_name": "Number of recipients of CIRP by regional council",
+        "indicator_name": "Number of recipients of CIRP by region",
         "type": "Income relief payment",
         "parameter_col": 2,
         "parameter_transform": "function (x) x",
