@@ -53,7 +53,7 @@
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Manawatū-Whanganui Region",
+        "name": "Manawatu-Whanganui Region",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
@@ -152,7 +152,7 @@
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Manawatū-Whanganui Region",
+        "name": "Manawatu-Whanganui Region",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
@@ -246,7 +246,7 @@
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Manawatū-Whanganui Region",
+        "name": "Manawatu-Whanganui Region",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
@@ -4247,6 +4247,11 @@
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
     "groups": [
+       {
+        "name": "Total",
+        "title": "Number on special needs grants for food - Total",
+        "units": "Number"
+      },
       {
         "name": "Auckland",
         "title": "Number on special needs grants for food - Auckland",
@@ -4331,12 +4336,8 @@
         "name": "Other",
         "title": "Number on special needs grants for food - Other",
         "units": "Number"
-      },
-       {
-        "name": "Total",
-        "title": "Number on special needs grants for food - Total",
-        "units": "Number"
       }
+      
     ]
   }
   ,
@@ -4350,6 +4351,11 @@
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
     "groups": [
+       {
+        "name": "Total",
+        "title": "Number on jobseeker support - Total",
+        "units": "Number"
+      },
       {
         "name": "Auckland",
         "title": "Number on jobseeker support - Auckland",
@@ -4434,12 +4440,8 @@
         "name": "Other",
         "title": "Number on jobseeker support - Other",
         "units": "Number"
-      },
-       {
-        "name": "Total",
-        "title": "Number on jobseeker support - Total",
-        "units": "Number"
       }
+      
     ]
   }
   ,
