@@ -53,7 +53,7 @@
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Manawatu-Whanganui Region",
+        "name": "Manawatū-Whanganui Region",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
@@ -152,7 +152,7 @@
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Manawatu-Whanganui Region",
+        "name": "Manawatū-Whanganui Region",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
@@ -246,7 +246,7 @@
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Manawatu-Whanganui Region",
+        "name": "Manawatū-Whanganui Region",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
@@ -1897,7 +1897,7 @@
   },
   {
     "class": "Social",
-    "indicator_name": "Jobseeker support by regional council",
+    "indicator_name": "Jobseeker support by region - weekly",
     "type": "Benefits",
     "source": "Ministry of Social Development",
     "plot_function": "get_time_series_plot",
@@ -1936,8 +1936,8 @@
             "units": "Number"
         },
         {
-            "name": "Manawatu-Whanganui",
-            "title": "Number on jobseeker support benefit - Manawatu-Whanganui Council",
+            "name": "Manawatū-Whanganui",
+            "title": "Number on jobseeker support benefit - Manawatū-Whanganui Council",
             "units": "Number"
         },
         {
@@ -3722,8 +3722,8 @@
         "units": "$"
       } ,
        {
-        "name": "Manawatu-Whanganui",
-        "title": "Active bonds by region - Manawatu-Whanganui",
+        "name": "Manawatū-Whanganui",
+        "title": "Active bonds by region - Manawatū-Whanganui",
         "units": "$"
       } ,
        {
@@ -3827,8 +3827,8 @@
         "units": "$"
       } ,
        {
-        "name": "Manawatu-Whanganui",
-        "title": "Closed bonds by region - Manawatu-Whanganui",
+        "name": "Manawatū-Whanganui",
+        "title": "Closed bonds by region - Manawatū-Whanganui",
         "units": "$"
       } ,
        {
@@ -3932,8 +3932,8 @@
         "units": "$"
       } ,
        {
-        "name": "Manawatu-Whanganui",
-        "title": "Lodged bonds by region - Manawatu-Whanganui",
+        "name": "Manawatū-Whanganui",
+        "title": "Lodged bonds by region - Manawatū-Whanganui",
         "units": "$"
       } ,
        {
@@ -4037,8 +4037,8 @@
         "units": "$"
       } ,
        {
-        "name": "Manawatu-Whanganui",
-        "title": "Weekly mean rent - Manawatu-Whanganui",
+        "name": "Manawatū-Whanganui",
+        "title": "Weekly mean rent - Manawatū-Whanganui",
         "units": "$"
       } ,
        {
@@ -4221,8 +4221,8 @@
   ,
   {
     "class": "Social",
-    "indicator_name": "COVID-19 Income Relief Payment",
-    "type": "Benefits",
+    "indicator_name": "Number of recipients of CIRP",
+    "type": "Income relief payment",
     "source": "Ministry of Social Development",
     "plot_function": "get_time_series_plot",
     "international": false,
@@ -4232,7 +4232,663 @@
     "groups": [
       {
         "name": "undefined_name",
-        "title": "Number of recipients - COVID-19 Income Relief Payment (CIRP)",
+        "title": "Number of recipients - Income Relief Payment (CIRP)",
+        "units": "Number"
+      }
+    ]
+  },
+  {
+    "class": "Social",
+    "indicator_name": "Special needs grants food by region",
+    "type": "Hardship assistance",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "Auckland",
+        "title": "Number on special needs grants for food - Auckland",
+        "units": "Number"
+      },
+      {
+        "name": "Bay of Plenty",
+        "title": "Number on special needs grants for food - Bay of Plenty",
+        "units": "Number"
+      },
+      {
+        "name": "Canterbury",
+        "title": "Number on special needs grants for food - Canterbury",
+        "units": "Number"
+      },
+      {
+        "name": "Gisborne",
+        "title": "Number on special needs grants for food - Gisborne",
+        "units": "Number"
+      },
+      {
+        "name": "Hawke's Bay",
+        "title": "Number on special needs grants for food - Hawke's Bay",
+        "units": "Number"
+      },
+      {
+        "name": "Manawatū-Whanganui",
+        "title": "Number on special needs grants for food - Manawatū-Whanganui",
+        "units": "Number"
+      },
+      {
+        "name": "Marlborough",
+        "title": "Number on special needs grants for food - Marlborough",
+        "units": "Number"
+      },
+      {
+        "name": "Nelson",
+        "title": "Number on special needs grants for food - Nelson",
+        "units": "Number"
+      },
+      {
+        "name": "Northland",
+        "title": "Number on special needs grants for food - Northland",
+        "units": "Number"
+      },
+      {
+        "name": "Otago",
+        "title": "Number on special needs grants for food - Otago",
+        "units": "Number"
+      },
+     {
+        "name": "Southland",
+        "title": "Number on special needs grants for food - Southland",
+        "units": "Number"
+      },
+     {
+        "name": "Taranaki",
+        "title": "Number on special needs grants for food - Taranaki",
+        "units": "Number"
+      },
+     {
+        "name": "Tasman",
+        "title": "Number on special needs grants for food - Tasman",
+        "units": "Number"
+      },
+      {
+        "name": "Waikato",
+        "title": "Number on special needs grants for food - Waikato",
+        "units": "Number"
+      },
+      {
+        "name": "Wellington",
+        "title": "Number on special needs grants for food - Wellington",
+        "units": "Number"
+      },
+       {
+        "name": "West Coast",
+        "title": "Number on special needs grants for food - West Coast",
+        "units": "Number"
+      },
+       {
+        "name": "Other",
+        "title": "Number on special needs grants for food - Other",
+        "units": "Number"
+      },
+       {
+        "name": "Total",
+        "title": "Number on special needs grants for food - Total",
+        "units": "Number"
+      }
+    ]
+  }
+  ,
+  {
+    "class": "Social",
+    "indicator_name": "Jobseeker support by region - (monthly)",
+    "type": "Benefits",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "Auckland",
+        "title": "Number on jobseeker support - Auckland",
+        "units": "Number"
+      },
+      {
+        "name": "Bay of Plenty",
+        "title": "Number on jobseeker support - Bay of Plenty",
+        "units": "Number"
+      },
+      {
+        "name": "Canterbury",
+        "title": "Number on jobseeker support - Canterbury",
+        "units": "Number"
+      },
+      {
+        "name": "Gisborne",
+        "title": "Number on jobseeker support - Gisborne",
+        "units": "Number"
+      },
+      {
+        "name": "Hawke's Bay",
+        "title": "Number on jobseeker support - Hawke's Bay",
+        "units": "Number"
+      },
+      {
+        "name": "Manawatū-Whanganui",
+        "title": "Number on jobseeker support - Manawatū-Whanganui",
+        "units": "Number"
+      },
+      {
+        "name": "Marlborough",
+        "title": "Number on jobseeker support - Marlborough",
+        "units": "Number"
+      },
+      {
+        "name": "Nelson",
+        "title": "Number on jobseeker support - Nelson",
+        "units": "Number"
+      },
+      {
+        "name": "Northland",
+        "title": "Number on jobseeker support - Northland",
+        "units": "Number"
+      },
+      {
+        "name": "Otago",
+        "title": "Number on jobseeker support - Otago",
+        "units": "Number"
+      },
+     {
+        "name": "Southland",
+        "title": "Number on jobseeker support - Southland",
+        "units": "Number"
+      },
+     {
+        "name": "Taranaki",
+        "title": "Number on jobseeker support - Taranaki",
+        "units": "Number"
+      },
+     {
+        "name": "Tasman",
+        "title": "Number on jobseeker support - Tasman",
+        "units": "Number"
+      },
+      {
+        "name": "Waikato",
+        "title": "Number on jobseeker support - Waikato",
+        "units": "Number"
+      },
+      {
+        "name": "Wellington",
+        "title": "Number on jobseeker support - Wellington",
+        "units": "Number"
+      },
+       {
+        "name": "West Coast",
+        "title": "Number on jobseeker support - West Coast",
+        "units": "Number"
+      },
+       {
+        "name": "Other",
+        "title": "Number on jobseeker support - Other",
+        "units": "Number"
+      },
+       {
+        "name": "Total",
+        "title": "Number on jobseeker support - Total",
+        "units": "Number"
+      }
+    ]
+  }
+  ,
+  {
+    "class": "Social",
+    "indicator_name": "Jobseeker support by region - Maori",
+    "type": "Benefits",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "Total",
+        "title": "Number on jobseeker support (Maori) - Total",
+        "units": "Number"
+      },
+      {
+        "name": "Auckland",
+        "title": "Number on jobseeker support (Maori) - Auckland",
+        "units": "Number"
+      },
+      {
+        "name": "Bay of Plenty",
+        "title": "Number on jobseeker support (Maori) - Bay of Plenty",
+        "units": "Number"
+      },
+      {
+        "name": "Canterbury",
+        "title": "Number on jobseeker support (Maori) - Canterbury",
+        "units": "Number"
+      },
+      {
+        "name": "Gisborne",
+        "title": "Number on jobseeker support (Maori) - Gisborne",
+        "units": "Number"
+      },
+      {
+        "name": "Hawke's Bay",
+        "title": "Number on jobseeker support (Maori) - Hawke's Bay",
+        "units": "Number"
+      },
+      {
+        "name": "Manawatū-Whanganui",
+        "title": "Number on jobseeker support (Maori) - Manawatū-Whanganui",
+        "units": "Number"
+      },
+      {
+        "name": "Marlborough",
+        "title": "Number on jobseeker support (Maori) - Marlborough",
+        "units": "Number"
+      },
+      {
+        "name": "Nelson",
+        "title": "Number on jobseeker support (Maori) - Nelson",
+        "units": "Number"
+      },
+      {
+        "name": "Northland",
+        "title": "Number on jobseeker support (Maori) - Northland",
+        "units": "Number"
+      },
+      {
+        "name": "Otago",
+        "title": "Number on jobseeker support (Maori) - Otago",
+        "units": "Number"
+      },
+     {
+        "name": "Southland",
+        "title": "Number on jobseeker support (Maori) - Southland",
+        "units": "Number"
+      },
+     {
+        "name": "Taranaki",
+        "title": "Number on jobseeker support (Maori) - Taranaki",
+        "units": "Number"
+      },
+     {
+        "name": "Tasman",
+        "title": "Number on jobseeker support (Maori) - Tasman",
+        "units": "Number"
+      },
+      {
+        "name": "Waikato",
+        "title": "Number on jobseeker support (Maori) - Waikato",
+        "units": "Number"
+      },
+      {
+        "name": "Wellington",
+        "title": "Number on jobseeker support (Maori) - Wellington",
+        "units": "Number"
+      },
+       {
+        "name": "West Coast",
+        "title": "Number on jobseeker support (Maori) - West Coast",
+        "units": "Number"
+      },
+       {
+        "name": "Other",
+        "title": "Number on jobseeker support (Maori) - Other",
+        "units": "Number"
+      }
+       
+    ]
+  }
+  ,
+  {
+    "class": "Social",
+    "indicator_name": "Jobseeker support by region - NZ European",
+    "type": "Benefits",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "Total",
+        "title": "Number on jobseeker support (NZ European) - Total",
+        "units": "Number"
+      },
+      {
+        "name": "Auckland",
+        "title": "Number on jobseeker support (NZ European) - Auckland",
+        "units": "Number"
+      },
+      {
+        "name": "Bay of Plenty",
+        "title": "Number on jobseeker support (NZ European) - Bay of Plenty",
+        "units": "Number"
+      },
+      {
+        "name": "Canterbury",
+        "title": "Number on jobseeker support (NZ European) - Canterbury",
+        "units": "Number"
+      },
+      {
+        "name": "Gisborne",
+        "title": "Number on jobseeker support (NZ European) - Gisborne",
+        "units": "Number"
+      },
+      {
+        "name": "Hawke's Bay",
+        "title": "Number on jobseeker support (NZ European) - Hawke's Bay",
+        "units": "Number"
+      },
+      {
+        "name": "Manawatū-Whanganui",
+        "title": "Number on jobseeker support (NZ European) - Manawatū-Whanganui",
+        "units": "Number"
+      },
+      {
+        "name": "Marlborough",
+        "title": "Number on jobseeker support (NZ European) - Marlborough",
+        "units": "Number"
+      },
+      {
+        "name": "Nelson",
+        "title": "Number on jobseeker support (NZ European) - Nelson",
+        "units": "Number"
+      },
+      {
+        "name": "Northland",
+        "title": "Number on jobseeker support (NZ European) - Northland",
+        "units": "Number"
+      },
+      {
+        "name": "Otago",
+        "title": "Number on jobseeker support (NZ European) - Otago",
+        "units": "Number"
+      },
+     {
+        "name": "Southland",
+        "title": "Number on jobseeker support (NZ European) - Southland",
+        "units": "Number"
+      },
+     {
+        "name": "Taranaki",
+        "title": "Number on jobseeker support (NZ European) - Taranaki",
+        "units": "Number"
+      },
+     {
+        "name": "Tasman",
+        "title": "Number on jobseeker support (NZ European) - Tasman",
+        "units": "Number"
+      },
+      {
+        "name": "Waikato",
+        "title": "Number on jobseeker support (NZ European) - Waikato",
+        "units": "Number"
+      },
+      {
+        "name": "Wellington",
+        "title": "Number on jobseeker support (NZ European) - Wellington",
+        "units": "Number"
+      },
+       {
+        "name": "West Coast",
+        "title": "Number on jobseeker support (NZ European) - West Coast",
+        "units": "Number"
+      },
+       {
+        "name": "Other",
+        "title": "Number on jobseeker support (NZ European) - Other",
+        "units": "Number"
+      }
+       
+    ]
+  },
+  {
+    "class": "Social",
+    "indicator_name": "Jobseeker support by region - Pacific peoples",
+    "type": "Benefits",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      
+       {
+        "name": "Total",
+        "title": "Number on jobseeker support (Pacific peoples) - Total",
+        "units": "Number"
+      },
+      {
+        "name": "Auckland",
+        "title": "Number on jobseeker support (Pacific peoples) - Auckland",
+        "units": "Number"
+      },
+      {
+        "name": "Bay of Plenty",
+        "title": "Number on jobseeker support (Pacific peoples) - Bay of Plenty",
+        "units": "Number"
+      },
+      {
+        "name": "Canterbury",
+        "title": "Number on jobseeker support (Pacific peoples) - Canterbury",
+        "units": "Number"
+      },
+      {
+        "name": "Gisborne",
+        "title": "Number on jobseeker support (Pacific peoples) - Gisborne",
+        "units": "Number"
+      },
+      {
+        "name": "Hawke's Bay",
+        "title": "Number on jobseeker support (Pacific peoples) - Hawke's Bay",
+        "units": "Number"
+      },
+      {
+        "name": "Manawatū-Whanganui",
+        "title": "Number on jobseeker support (Pacific peoples) - Manawatū-Whanganui",
+        "units": "Number"
+      },
+      {
+        "name": "Marlborough",
+        "title": "Number on jobseeker support (Pacific peoples) - Marlborough",
+        "units": "Number"
+      },
+      {
+        "name": "Nelson",
+        "title": "Number on jobseeker support (Pacific peoples) - Nelson",
+        "units": "Number"
+      },
+      {
+        "name": "Northland",
+        "title": "Number on jobseeker support (Pacific peoples) - Northland",
+        "units": "Number"
+      },
+      {
+        "name": "Otago",
+        "title": "Number on jobseeker support (Pacific peoples) - Otago",
+        "units": "Number"
+      },
+     {
+        "name": "Southland",
+        "title": "Number on jobseeker support (Pacific peoples) - Southland",
+        "units": "Number"
+      },
+     {
+        "name": "Taranaki",
+        "title": "Number on jobseeker support (Pacific peoples) - Taranaki",
+        "units": "Number"
+      },
+     {
+        "name": "Tasman",
+        "title": "Number on jobseeker support (Pacific peoples) - Tasman",
+        "units": "Number"
+      },
+      {
+        "name": "Waikato",
+        "title": "Number on jobseeker support (Pacific peoples) - Waikato",
+        "units": "Number"
+      },
+      {
+        "name": "Wellington",
+        "title": "Number on jobseeker support (Pacific peoples) - Wellington",
+        "units": "Number"
+      },
+       {
+        "name": "West Coast",
+        "title": "Number on jobseeker support (Pacific peoples) - West Coast",
+        "units": "Number"
+      },
+       {
+        "name": "Other",
+        "title": "Number on jobseeker support (Pacific peoples) - Other",
+        "units": "Number"
+      }
+    ]
+  }
+   ,
+  {
+    "class": "Social",
+    "indicator_name": "Jobseeker support by region - Other ethnicities",
+    "type": "Benefits",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "Total",
+        "title": "Number on jobseeker support (Other ethnicities) - Total",
+        "units": "Number"
+      },
+      {
+        "name": "Auckland",
+        "title": "Number on jobseeker support (Other ethnicities) - Auckland",
+        "units": "Number"
+      },
+      {
+        "name": "Bay of Plenty",
+        "title": "Number on jobseeker support (Other ethnicities) - Bay of Plenty",
+        "units": "Number"
+      },
+      {
+        "name": "Canterbury",
+        "title": "Number on jobseeker support (Other ethnicities) - Canterbury",
+        "units": "Number"
+      },
+      {
+        "name": "Gisborne",
+        "title": "Number on jobseeker support (Other ethnicities) - Gisborne",
+        "units": "Number"
+      },
+      {
+        "name": "Hawke's Bay",
+        "title": "Number on jobseeker support (Other ethnicities) - Hawke's Bay",
+        "units": "Number"
+      },
+      {
+        "name": "Manawatū-Whanganui",
+        "title": "Number on jobseeker support (Other ethnicities) - Manawatū-Whanganui",
+        "units": "Number"
+      },
+      {
+        "name": "Marlborough",
+        "title": "Number on jobseeker support (Other ethnicities) - Marlborough",
+        "units": "Number"
+      },
+      {
+        "name": "Nelson",
+        "title": "Number on jobseeker support (Other ethnicities) - Nelson",
+        "units": "Number"
+      },
+      {
+        "name": "Northland",
+        "title": "Number on jobseeker support (Other ethnicities) - Northland",
+        "units": "Number"
+      },
+      {
+        "name": "Otago",
+        "title": "Number on jobseeker support (Other ethnicities) - Otago",
+        "units": "Number"
+      },
+     {
+        "name": "Southland",
+        "title": "Number on jobseeker support (Other ethnicities) - Southland",
+        "units": "Number"
+      },
+     {
+        "name": "Taranaki",
+        "title": "Number on jobseeker support (Other ethnicities) - Taranaki",
+        "units": "Number"
+      },
+     {
+        "name": "Tasman",
+        "title": "Number on jobseeker support (Other ethnicities) - Tasman",
+        "units": "Number"
+      },
+      {
+        "name": "Waikato",
+        "title": "Number on jobseeker support (Other ethnicities) - Waikato",
+        "units": "Number"
+      },
+      {
+        "name": "Wellington",
+        "title": "Number on jobseeker support (Other ethnicities) - Wellington",
+        "units": "Number"
+      },
+       {
+        "name": "West Coast",
+        "title": "Number on jobseeker support (Other ethnicities) - West Coast",
+        "units": "Number"
+      },
+       {
+        "name": "Other",
+        "title": "Number on jobseeker support (Other ethnicities) - Other",
+        "units": "Number"
+      }
+       
+    ]
+  },
+  {
+    "class": "Social",
+    "indicator_name": "Number of recipients of CIRP by age group",
+    "type": "Income relief payment",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_horizontal_bar",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+   
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Number of recipients of CIRP by age group",
+        "units": "Number"
+      }
+    ]
+  },
+  {
+    "class": "Social",
+    "indicator_name": "Number of recipients of CIRP by regional council",
+    "type": "Income relief payment",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_horizontal_bar",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+   
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Number of recipients of CIRP by regional council",
         "units": "Number"
       }
     ]

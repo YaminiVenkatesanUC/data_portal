@@ -25,7 +25,7 @@ rcv<-getURL("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/cs
 recovered_1<-read.csv(text=rcv)
 
 
-JH_raw_data<-function(data, var){
+jh_raw_data<-function(data, var){
 data<-data
 var=var
 
@@ -45,9 +45,9 @@ colnames(new_data1)[4]<-var
 return(new_data1)
 }
 
-death_new<- JH_raw_data(deaths_1, "Deceased")
-recovered_new<- JH_raw_data(recovered_1, "Recovered")
-confirmed_new<- JH_raw_data(confirmed_1, "Active")
+death_new<- jh_raw_data(deaths_1, "Deceased")
+recovered_new<- jh_raw_data(recovered_1, "Recovered")
+confirmed_new<- jh_raw_data(confirmed_1, "Active")
 
 
 all_data<-Reduce(function(x, y) merge(x, y, all=TRUE), list(death_new, recovered_new, confirmed_new))
@@ -55,13 +55,9 @@ all_data<-Reduce(function(x, y) merge(x, y, all=TRUE), list(death_new, recovered
 all_data[is.na(all_data)]<-0
 
 
-
-
-
 df_cases_selected_countries<-all_data%>%select(-Province)%>% group_by(Date, Country )%>%
   dplyr::summarise(Active=sum(Active), Recovered=sum(Recovered),Deceased=sum(Deceased))%>%
   filter(Country %in% country)
-
 
 
 df_cases_rest_of_world<-all_data%>%
@@ -79,9 +75,6 @@ df_cases_all<-Reduce(function(x,y) merge(x = x, y = y, all=TRUE),
        list(df_cases_selected_countries, df_cases_rest_of_world, aus_provinces))%>%mutate(Active=Active-Recovered-Deceased)
 
 df_cases_all[is.na(df_cases_all)]<-0
-
-
-
 
 
 write_xlsx(df_cases_all,paste0(output,"COVID 19 - Global cases.xlsx"))
