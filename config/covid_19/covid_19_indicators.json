@@ -1312,7 +1312,7 @@
   },
   {
     "class": "Social",
-    "indicator_name": "Special needs grants for food",
+    "indicator_name": "Special needs grants for food - (weekly)",
     "type": "Hardship assistance",
     "source": "Ministry of Social Development",
     "plot_function": "get_time_series_plot",
@@ -1322,7 +1322,7 @@
     "groups": [
       {
         "name": "Special needs grants for food",
-        "title": "Special needs grants for food",
+        "title": "Special needs grants for food - (weekly)",
         "units": "Number"
       }
     ]
@@ -2599,7 +2599,7 @@
     "international": false,
     "include_date_slider": true,
     "default_lower_range": "2019-01-30",
-    "source_url": "https://www.seek.co.nz",
+    "source_url": "https://www.seek.co.nz/about/news/july-employment-report",
     "download": false,
     "groups": [
       {
@@ -4232,14 +4232,14 @@
     "groups": [
       {
         "name": "undefined_name",
-        "title": "Number of recipients - Income Relief Payment (CIRP)",
+        "title": "Number of recipients of COVID-19 Income Relief Payment (CIRP)",
         "units": "Number"
       }
     ]
   },
   {
     "class": "Social",
-    "indicator_name": "Special needs grants food by region",
+    "indicator_name": "Special needs grants for food by region",
     "type": "Hardship assistance",
     "source": "Ministry of Social Development",
     "plot_function": "get_time_series_plot",
@@ -4249,92 +4249,92 @@
     "groups": [
        {
         "name": "Total",
-        "title": "Number on special needs grants for food - Total",
+        "title": "Number of special needs grants for food - Total",
         "units": "Number"
       },
       {
         "name": "Auckland",
-        "title": "Number on special needs grants for food - Auckland",
+        "title": "Number of special needs grants for food - Auckland",
         "units": "Number"
       },
       {
         "name": "Bay of Plenty",
-        "title": "Number on special needs grants for food - Bay of Plenty",
+        "title": "Number of special needs grants for food - Bay of Plenty",
         "units": "Number"
       },
       {
         "name": "Canterbury",
-        "title": "Number on special needs grants for food - Canterbury",
+        "title": "Number of special needs grants for food - Canterbury",
         "units": "Number"
       },
       {
         "name": "Gisborne",
-        "title": "Number on special needs grants for food - Gisborne",
+        "title": "Number of special needs grants for food - Gisborne",
         "units": "Number"
       },
       {
         "name": "Hawke's Bay",
-        "title": "Number on special needs grants for food - Hawke's Bay",
+        "title": "Number of special needs grants for food - Hawke's Bay",
         "units": "Number"
       },
       {
         "name": "Manawatū-Whanganui",
-        "title": "Number on special needs grants for food - Manawatū-Whanganui",
+        "title": "Number of special needs grants for food - Manawatū-Whanganui",
         "units": "Number"
       },
       {
         "name": "Marlborough",
-        "title": "Number on special needs grants for food - Marlborough",
+        "title": "Number of special needs grants for food - Marlborough",
         "units": "Number"
       },
       {
         "name": "Nelson",
-        "title": "Number on special needs grants for food - Nelson",
+        "title": "Number of special needs grants for food - Nelson",
         "units": "Number"
       },
       {
         "name": "Northland",
-        "title": "Number on special needs grants for food - Northland",
+        "title": "Number of special needs grants for food - Northland",
         "units": "Number"
       },
       {
         "name": "Otago",
-        "title": "Number on special needs grants for food - Otago",
+        "title": "Number of special needs grants for food - Otago",
         "units": "Number"
       },
      {
         "name": "Southland",
-        "title": "Number on special needs grants for food - Southland",
+        "title": "Number of special needs grants for food - Southland",
         "units": "Number"
       },
      {
         "name": "Taranaki",
-        "title": "Number on special needs grants for food - Taranaki",
+        "title": "Number of special needs grants for food - Taranaki",
         "units": "Number"
       },
      {
         "name": "Tasman",
-        "title": "Number on special needs grants for food - Tasman",
+        "title": "Number of special needs grants for food - Tasman",
         "units": "Number"
       },
       {
         "name": "Waikato",
-        "title": "Number on special needs grants for food - Waikato",
+        "title": "Number of special needs grants for food - Waikato",
         "units": "Number"
       },
       {
         "name": "Wellington",
-        "title": "Number on special needs grants for food - Wellington",
+        "title": "Number of special needs grants for food - Wellington",
         "units": "Number"
       },
        {
         "name": "West Coast",
-        "title": "Number on special needs grants for food - West Coast",
+        "title": "Number of special needs grants for food - West Coast",
         "units": "Number"
       },
        {
         "name": "Other",
-        "title": "Number on special needs grants for food - Other",
+        "title": "Number of special needs grants for food - Other",
         "units": "Number"
       }
       
@@ -4879,7 +4879,7 @@
   },
   {
     "class": "Social",
-    "indicator_name": "Number of recipients of CIRP by regional council",
+    "indicator_name": "Number of recipients of CIRP by region",
     "type": "Income relief payment",
     "source": "Ministry of Social Development",
     "plot_function": "get_horizontal_bar",
@@ -4890,7 +4890,7 @@
     "groups": [
       {
         "name": "undefined_name",
-        "title": "Number of recipients of CIRP by regional council",
+        "title": "Number of recipients of CIRP by region",
         "units": "Number"
       }
     ]
