@@ -4247,6 +4247,11 @@
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
     "groups": [
+       {
+        "name": "Total",
+        "title": "Number on special needs grants for food - Total",
+        "units": "Number"
+      },
       {
         "name": "Auckland",
         "title": "Number on special needs grants for food - Auckland",
@@ -4331,12 +4336,8 @@
         "name": "Other",
         "title": "Number on special needs grants for food - Other",
         "units": "Number"
-      },
-       {
-        "name": "Total",
-        "title": "Number on special needs grants for food - Total",
-        "units": "Number"
       }
+      
     ]
   }
   ,
