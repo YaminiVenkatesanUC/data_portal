@@ -846,6 +846,11 @@
     "download": true,
     "caveats": "Daily arrivals and departures data are based solely on border-crossings into and out of New Zealand, and do not incorporate arrival card information. These data are provisional and subject to revision during the full process of producing international travel statistics.",
     "groups": [
+       {
+        "name": "Total",
+        "title": "Customs daily border crossings - departures",
+        "units": "Number"
+      },
       {
         "name": "New Zealand passport",
         "title": "Customs daily border crossings - departures",
@@ -870,6 +875,11 @@
     "download": true,
     "caveats": "Daily arrivals and departures data are based solely on border-crossings into and out of New Zealand, and do not incorporate arrival card information. These data are provisional and subject to revision during the full process of producing international travel statistics.",
     "groups": [
+      {
+        "name": "Total",
+        "title": "Customs daily border crossings - arrivals",
+        "units": "Number"
+      },
       {
         "name": "New Zealand passport",
         "title": "Customs daily border crossings - arrivals",

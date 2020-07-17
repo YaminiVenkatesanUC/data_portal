@@ -387,10 +387,12 @@
         ],
         "sheet_number": 2,
         "value_col": [
+        5,  
         4,
         3
         ],
         "value_names": [
+          "Total",
         "New Zealand passport",
         "Other passports"
         ],
@@ -398,6 +400,7 @@
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": [
+          "Total",
         "New Zealand passport",
         "Other passports"
         ]
@@ -413,10 +416,12 @@
         ],
         "sheet_number": 1,
         "value_col": [
+        5,  
         4,
         3
         ],
         "value_names": [
+          "Total",
         "New Zealand passport",
         "Other passports"
         ],
@@ -424,6 +429,7 @@
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": [
+          "Total",
         "New Zealand passport",
         "Other passports"
         ]
@@ -2924,8 +2930,8 @@
         "type": "Activity",
         "parameter_col": 1,
         "input_units": 1000,
-       "parameter_transform": ["function (x) ymd(x)"],
-       "date_filter": "function(x) x > ymd(\"2015-01-01\")",
+       "parameter_transform": ["function (x) dmy(x)"],
+       "date_filter": "function(x) x > dmy(\"01-01-2015\")",
         "value_col": [
         9, 
         2,
@@ -2995,8 +3001,8 @@
         "type": "Activity",
         "parameter_col": 1,
         "input_units": 1000,
-       "parameter_transform": ["function (x) ymd(x)"],
-        "date_filter": "function(x) x > ymd(\"2015-01-01\")",
+       "parameter_transform": ["function (x) dmy(x)"],
+       "date_filter": "function(x) x > dmy(\"01-01-2015\")",
         "value_col": [
         9, 
         2,
@@ -3066,8 +3072,8 @@
         "type": "Activity",
         "parameter_col": 1,
         "input_units": 1000,
-       "parameter_transform": ["function (x) ymd(x)"],
-        "date_filter": "function(x) x > ymd(\"2015-01-01\")",
+       "parameter_transform": ["function (x) dmy(x)"],
+        "date_filter": "function(x) x > dmy(\"01-01-2015\")",
         "value_col": [
         9, 
         2,
@@ -3136,8 +3142,8 @@
         "indicator_name": "Weekly mean rent by region",
         "type": "Activity",
         "parameter_col": 1,
-        "parameter_transform": ["function (x) ymd(x)"],
-        "date_filter": "function(x) x > ymd(\"2015-01-01\")",
+        "parameter_transform": ["function (x) dmy(x)"],
+         "date_filter": "function(x) x > dmy(\"01-01-2015\")",
         "value_col": [
         9, 
         2,
