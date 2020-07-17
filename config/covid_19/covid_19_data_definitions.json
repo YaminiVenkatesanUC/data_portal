@@ -3065,6 +3065,7 @@
         "indicator_name": "Rental bonds by region - lodged",
         "type": "Activity",
         "parameter_col": 1,
+        "input_units": 1000,
        "parameter_transform": ["function (x) ymd(x)"],
         "date_filter": "function(x) x > ymd(\"2015-01-01\")",
         "value_col": [

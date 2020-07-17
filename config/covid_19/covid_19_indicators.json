@@ -4102,7 +4102,7 @@
     "plot_function": "get_time_series_plot",
     "international": false,
     "include_date_slider": true,
-    "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-paid-jobs-week-ended-7-june-2020",
+    "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-paid-jobs-week-ended-14-june-2020",
     "download": true,
    
     "groups": [
@@ -4175,7 +4175,7 @@
     "disabled": false,
     "include_date_slider": true,
     "download": true,
-    "source_url": "https://treasury.govt.nz/sites/default/files/2020-06/nzac-tech-note-30jun20.pdf",
+    "source_url": "https://treasury.govt.nz/publications/research-and-commentary/new-zealand-activity-index",
     "caveats":"<p> 1) Card transaction spend - A modified version of this series has been utilised in the compilation of the NZAC.</p><p> 2) Electricity grid demand - A comparable indicator based on electricity generation has been utilised in the compilation of the NZAC.<p/><p> 3) New jobs posted online - A modified version of this series has been utilised in the compilation of the NZAC.</p>",
     "groups": [
         {
