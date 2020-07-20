@@ -1494,7 +1494,7 @@
     "groups": [
       {
         "name": "undefined_name",
-        "title": "Number of people associated with paid out wage subsidy applications (cumulative)",
+        "title": "Number of jobs associated with paid out wage subsidy applications (cumulative)",
         "units": "Number"
       }
     ]
@@ -4904,6 +4904,76 @@
         "units": "Number"
       }
     ]
+  } ,
+  {
+    "class": "Social",
+    "indicator_name": "Amount of wage subsidy refunds received",
+    "type": "Wage subsidy assistance",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "Amount of wage subsidy refunds received",
+        "title": "Amount of wage subsidy refunds received (cumulative)",
+        "units": "$"
+      }
+    ]
   }
-  
+  ,
+  {
+    "class": "Social",
+    "indicator_name": "Number of wage subsidy refunds received",
+    "type": "Wage subsidy assistance",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "Number of wage subsidy refunds received",
+        "title": "Number of wage subsidy refunds received (cumulative)",
+        "units": "Number"
+      }
+    ]
+  }
+  ,
+  {
+    "class": "Social",
+    "indicator_name": "Amount of wage subsidy extension paid",
+    "type": "Wage subsidy extension",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "Amount of wage subsidy extension paid",
+        "title": "Amount of wage subsidy extension paid (cumulative)",
+        "units": "$"
+      }
+    ]
+  }
+  ,
+  {
+    "class": "Social",
+    "indicator_name": "Number of jobs associated with a paid applicaton",
+    "type": "Wage subsidy extension",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "Number of jobs associated with a paid applicaton",
+        "title": "Number of jobs associated with a paid applicaton for wage subsidy extension (cumulative)",
+        "units": "Number"
+      }
+    ]
+  }
 ]
