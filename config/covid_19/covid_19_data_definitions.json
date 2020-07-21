@@ -396,7 +396,7 @@
         "New Zealand passport",
         "Other passports"
         ],
-        "filename": "COVID 19 - Customs border crossing DAILY.xlsx",
+        "filename": "COVID 19 - Customs border crossing DAILY_CITZ_PORTS.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": [
@@ -425,7 +425,7 @@
         "New Zealand passport",
         "Other passports"
         ],
-        "filename": "COVID 19 - Customs border crossing DAILY.xlsx",
+        "filename": "COVID 19 - Customs border crossing DAILY_CITZ_PORTS.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": [
