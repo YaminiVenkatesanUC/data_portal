@@ -396,7 +396,7 @@
         "New Zealand passport",
         "Other passports"
         ],
-        "filename": "COVID 19 - Customs border crossing DAILY.xlsx",
+        "filename": "COVID 19 - Customs border crossing DAILY_CITZ_PORTS.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": [
@@ -425,7 +425,7 @@
         "New Zealand passport",
         "Other passports"
         ],
-        "filename": "COVID 19 - Customs border crossing DAILY.xlsx",
+        "filename": "COVID 19 - Customs border crossing DAILY_CITZ_PORTS.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": [
@@ -2055,31 +2055,40 @@
         "parameter_transform": "function(x) ymd(x)",
         "sheet_number": 2,
         "value_col": [
-          8,
-          6,
-          7,
+          11,
+          10,
+          9,
           2,
           3,
           4,
-          5
+          5,
+          6,
+          7,
+          8
         ],
         "value_names": [
           "Total",
-          "Total 65 and over",
-          "Total under 65",
-          "Female 65 and over",
-          "Female under 65",
-          "Male 65 and over",
-          "Male under 65"
+          "Total 80 and over",
+          "Total 65 and 79",
+          "Total under 64",
+          "Female under 64",
+          "Female 65 and 79",
+          "Female 80 and over",
+          "Male under 64",
+          "Male 65 to 79",
+          "Male 80 and over"
         ],
         "group_names": [
             "Total",
-            "Total 65 and over",
-            "Total under 65",
-            "Female 65 and over",
-            "Female under 65",
-            "Male 65 and over",
-            "Male under 65"
+          "Total 80 and over",
+          "Total 65 and 79",
+          "Total under 64",
+          "Female under 64",
+          "Female 65 and 79",
+          "Female 80 and over",
+          "Male under 64",
+          "Male 65 to 79",
+          "Male 80 and over"
           ],
         "filename": "COVID 19 - DIA Preliminary Death Data.xlsx",
         "load_function": "read_from_excel",
@@ -4105,5 +4114,83 @@
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": "Amount of wage subsidy extension paid"
-    }
+    },
+    {
+  "class": "Economic",
+  "indicator_name": "Student visa",
+  "type": "Visa",
+  "date_filter": "function(x) x > ymd(\"2015-01-01\")",
+  "parameter_col": 1,
+  "parameter_transform": [
+    "function (x) ymd(x)"   ],
+  
+  "value_col": [
+    
+    2,
+    3,
+    4,
+    5
+    
+    
+    ],
+  "value_names": [
+    "Dependant",
+      "Exchange student",
+      "Fee paying",
+      "Other"
+    ],
+  "filename": "Population_by_Visa_Type_and_Application_Substream_Students.csv",
+  "load_function": "read_from_csv",
+  "data_type": "TimeSeries",
+  "group_names": 
+    [ 
+      "Dependant",
+      "Exchange student",
+      "Fee paying",
+      "Other"
+      
+      ]
+},
+{
+  "class": "Economic",
+  "indicator_name": "Work visa",
+  "type": "Visa",
+  "date_filter": "function(x) x > ymd(\"2015-01-01\")",
+  "parameter_col": 1,
+  "parameter_transform": [
+    "function (x) ymd(x)"   ],
+  
+  "value_col": [
+    2,
+    3,
+    4,
+    5,
+    6
+    
+    ],
+  "value_names": [
+    "Essential skills",
+    "Family",
+    "Recognised seasonal employer",
+    "Other",
+    "Working holiday scheme"
+    
+    ],
+  "filename": "Population_by_Visa_Type_and_Application_Substream_Work.csv",
+  "load_function": "read_from_csv",
+  "data_type": "TimeSeries",
+  "group_names": 
+    [ 
+     "Essential skills",
+    "Family",
+    "Recognised seasonal employer",
+    "Other",
+    "Working holiday scheme"
+    
+      ]
+}
+
+
+
+
 ]

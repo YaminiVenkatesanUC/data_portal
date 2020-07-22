@@ -2357,33 +2357,49 @@
         "units": "Number"
       },
       {
-        "name": "Total 65 and over",
-        "title": "Weekly deaths by age and sex - Total 65 and over",
+        "name": "Total 80 and over",
+        "title": "Weekly deaths by age and sex - Total 80 and over",
         "units": "Number"
       },
       {
-        "name": "Total under 65",
-        "title": "Weekly deaths by age and sex - Total under 65",
+        "name": "Total 65 and 79",
+        "title": "Weekly deaths by age and sex - Total 65 and 79",
         "units": "Number"
       },
       {
-        "name": "Female 65 and over",
-        "title": "Weekly deaths by age and sex - Female 65 and over",
+        "name": "Total under 64",
+        "title": "Weekly deaths by age and sex - Total under 64",
         "units": "Number"
       },
       {
-        "name": "Female under 65",
-        "title": "Weekly deaths by age and sex - Female under 65",
+        "name": "Female under 64",
+        "title": "Weekly deaths by age and sex - Female under 64",
+        "units": "Number"
+      }
+      ,
+      {
+        "name": "Female 65 and 79",
+        "title": "Weekly deaths by age and sex - Female 65 and 79",
         "units": "Number"
       },
       {
-        "name": "Male 65 and over",
-        "title": "Weekly deaths by age and sex - Male 65 and over",
+        "name": "Female 80 and over",
+        "title": "Weekly deaths by age and sex - Female 80 and over",
         "units": "Number"
       },
       {
-        "name": "Male under 65",
-        "title": "Weekly deaths by age and sex - Male under 65",
+        "name": "Male under 64",
+        "title": "Weekly deaths by age and sex - Male under 64",
+        "units": "Number"
+      },
+      {
+        "name": "Male 65 to 79",
+        "title": "Weekly deaths by age and sex - Male 65 to 79",
+        "units": "Number"
+      },
+      {
+        "name": "Male 80 and over",
+        "title": "Weekly deaths by age and sex - Male 80 and over",
         "units": "Number"
       }
     ]
@@ -4975,5 +4991,85 @@
         "units": "Number"
       }
     ]
-  }
+  },
+  
+
+{
+  "class": "Economic",
+  "indicator_name": "Student visa",
+  "type": "Visa",
+  "source": "Ministry of Business, Innovation and Employment",
+  "plot_function": "get_time_series_plot",
+  "international": false,
+  "include_date_slider": true,
+  "default_lower_range": "2018-02-01",
+  "source_url": "https://mbienz.shinyapps.io/migration_data_explorer/",
+  "download": true,
+  
+  "groups": [
+    {
+      "name": "Dependant",
+      "title": "Number of people on dependant visa",
+      "units": "Number"
+    },
+    {
+      "name": "Exchange student",
+      "title": "Number of people on exchange student visa",
+      "units": "Number"
+    },  {
+      "name": "Fee paying",
+      "title": "Number of people on fee paying students visa",
+      "units": "Number"
+    },  {
+      "name": "Other",
+      "title": "Number of people on other student visa",
+      "units": "Number"
+    }
+    
+    ]
+}
+,
+{
+  "class": "Economic",
+  "indicator_name": "Work visa",
+  "type": "Visa",
+  "source": "Ministry of Business, Innovation and Employment",
+  "plot_function": "get_time_series_plot",
+  "international": false,
+  "include_date_slider": true,
+  "default_lower_range": "2018-02-01",
+  "source_url": "https://mbienz.shinyapps.io/migration_data_explorer/",
+  "download": true,
+  
+  "groups": [
+    {
+      "name": "Essential skills",
+      "title": "Number of people on essential skills visa",
+      "units": "Number"
+    },  
+    {
+      "name": "Family",
+      "title": "Number of people on family visa",
+      "units": "Number"
+    },  
+    {
+      "name": "Recognised seasonal employer",
+      "title": "Number of people on recognised seasonal employer visa",
+      "units": "Number"
+    } ,  
+    {
+      "name": "Working holiday scheme",
+      "title": "Number of people on working holiday scheme visa",
+      "units": "Number"
+    },  
+    
+    {
+      "name": "Other",
+      "title": "Number of people on other visa",
+      "units": "Number"
+    }
+    
+    
+    ]
+}
 ]

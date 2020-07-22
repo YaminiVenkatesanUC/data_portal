@@ -468,18 +468,10 @@ read_employment_paid_jobs_data <- function(config, directory) {
     
     colnames(data)<-c("Parameter", paste0("col_", 2:ncol(data)))
     
-  }else if(!is.null(config$filter_visa)){
-  
-    data <- data %>% filter(col_2 == config$filter_visa) %>%
-      select(Parameter = col_1, everything()) %>%
-      mutate(Parameter = as.Date(dmy(Parameter))) %>%
-      spread(col_3, col_4)%>%
-      select(-col_2)
-    
-    colnames(data)<-c("Parameter", paste0("col_", 2:ncol(data)))
-  } else if (!is.null(config$date_filter)) {
+  }else if (!is.null(config$date_filter)) {
     date_filter <- eval(parse(text = config$date_filter))
     data <- data %>% filter(date_filter(Parameter))
+    
   }else{
     
     "please enter a filter for visa type or employment"
