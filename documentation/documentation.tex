@@ -85,11 +85,6 @@ deletekeywords={c, data, get, aggregate, summary}
 \clearpage
 \setcounter{page}{1}
 
-
-{\center\vspace{0.25cm}}
-
-{\center\textbf{For feedback or queries contact James McKay \href{mailto:jhmckay93@gmail.com}{jhmckay93@gmail.com} }.}
-
 \vspace{0.4cm}
 
 \statssection{Introduction}
@@ -141,7 +136,7 @@ See Section \ref{sec:custom_functions} for details on how to build functions for
 This section outlines how to work with data portal software including how to define new visualisations and create custom functions for the data management process.  The generic data portal software can be downloaded from:\\
 
 \noindent
-\url{https://github.com/JamesHMcKay/data_portal}
+\url{https://github.com/StatisticsNZ/data_portal}
 
 \subsection{Examples}
 
@@ -186,7 +181,7 @@ The configuration parameters and meaning are:
 \begin{lstlisting}[language=json,firstnumber=1]
 title: "COVID-19"
 production: true
-data_directory:  "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/"
+data_directory:  "~/COVID-19 data_Secure/COVID-19_dashboard/"
 indicator_definitions: "config/covid_19/covid_19_indicators.json"
 data_definitions: "config/covid_19/covid_19_data_definitions.json"
 default_parameters:
@@ -353,33 +348,33 @@ To define the data service change the \codeword{data_service} parameter in the i
 \subsection{Custom visualisations}
 
 It is possible to display any type of visualisation in this application by defining custom plot functions.  The plot functions are defined in \codeword{R/plot_functions.R}.  All that is required is a function which takes in one of the accepted data models (a new one can be created if required) and returns a highcharter object.
-
-\section{The production process}
-
-The current COVID-19 dashboard may be updated multiple times per day depending on the supply of data.  Generally, one update is run in the mid-afternoon once a number of daily indicators have been delivered.
-
-\subsection{The process for updating data}
-\begin{enumerate}
-\item Data is collected from a range of sources, which includes emails, automated loading into the file system or collection from external websites.
-\item All data is put into a location on the network file system.
-\item The script \codeword{scripts/run_load_process.R} is run to read all relevant files and store them in the \codeword{data_store.RDS} file ready for deployment.
-\item The application is run locally in production mode for a ``smoke test'' and check that data has updated, including a check of the download functionality.
-\item The application is deployed to the production environment at:\\
-\url{https://statisticsnz.shinyapps.io/covid\_19\_dashboard/}
-\end{enumerate}
-
-\subsection{The process for adding new indicators or code changes}
-\begin{enumerate}
-\item The relevant code changes are made and tested locally.
-\item Code changes are committed to our version control system and pushed to GitLab.
-\item The application is deployed to the staging environment at:\\
-\url{https://statisticsnz.shinyapps.io/covid\_19\_dashboard\_staging/}
-\item The application is inspected thoroughly by two people looking at both the new indicators and a range of existing indicators.
-\item Any fixes are pushed to the version control system.
-\item The application is deployed to the production environment at:\\
-\url{https://statisticsnz.shinyapps.io/covid\_19\_dashboard/}
-\end{enumerate}
-
+%
+%\section{The production process}
+%
+%The current COVID-19 dashboard may be updated multiple times per day depending on the supply of data.  Generally, one update is run in the mid-afternoon once a number of daily indicators have been delivered.
+%
+%\subsection{The process for updating data}
+%\begin{enumerate}
+%\item Data is collected from a range of sources, which includes emails, automated loading into the file system or collection from external websites.
+%\item All data is put into a location on the network file system.
+%\item The script \codeword{scripts/run_load_process.R} is run to read all relevant files and store them in the \codeword{data_store.RDS} file ready for deployment.
+%\item The application is run locally in production mode for a ``smoke test'' and check that data has updated, including a check of the download functionality.
+%\item The application is deployed to the production environment at:\\
+%\url{https://statisticsnz.shinyapps.io/covid\_19\_dashboard/}
+%\end{enumerate}
+%
+%\subsection{The process for adding new indicators or code changes}
+%\begin{enumerate}
+%\item The relevant code changes are made and tested locally.
+%\item Code changes are committed to our version control system and pushed to GitLab.
+%\item The application is deployed to the staging environment at:\\
+%\url{https://statisticsnz.shinyapps.io/covid\_19\_dashboard\_staging/}
+%\item The application is inspected thoroughly by two people looking at both the new indicators and a range of existing indicators.
+%\item Any fixes are pushed to the version control system.
+%\item The application is deployed to the production environment at:\\
+%\url{https://statisticsnz.shinyapps.io/covid\_19\_dashboard/}
+%\end{enumerate}
+%
 
 
 
