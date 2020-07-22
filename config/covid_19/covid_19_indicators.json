@@ -2371,6 +2371,17 @@
         "title": "Weekly deaths by age and sex - Total under 64",
         "units": "Number"
       },
+      
+      {
+        "name": "Female 80 and over",
+        "title": "Weekly deaths by age and sex - Female 80 and over",
+        "units": "Number"
+      },
+      {
+        "name": "Female 65 and 79",
+        "title": "Weekly deaths by age and sex - Female 65 and 79",
+        "units": "Number"
+      },
       {
         "name": "Female under 64",
         "title": "Weekly deaths by age and sex - Female under 64",
@@ -2378,28 +2389,19 @@
       }
       ,
       {
-        "name": "Female 65 and 79",
-        "title": "Weekly deaths by age and sex - Female 65 and 79",
+        "name": "Male 80 and over",
+        "title": "Weekly deaths by age and sex - Male 80 and over",
         "units": "Number"
-      },
-      {
-        "name": "Female 80 and over",
-        "title": "Weekly deaths by age and sex - Female 80 and over",
-        "units": "Number"
-      },
-      {
-        "name": "Male under 64",
-        "title": "Weekly deaths by age and sex - Male under 64",
-        "units": "Number"
-      },
+      }
+      ,
       {
         "name": "Male 65 to 79",
         "title": "Weekly deaths by age and sex - Male 65 to 79",
         "units": "Number"
       },
       {
-        "name": "Male 80 and over",
-        "title": "Weekly deaths by age and sex - Male 80 and over",
+        "name": "Male under 64",
+        "title": "Weekly deaths by age and sex - Male under 64",
         "units": "Number"
       }
     ]
@@ -4128,7 +4130,7 @@
     "plot_function": "get_time_series_plot",
     "international": false,
     "include_date_slider": true,
-    "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-paid-jobs-week-ended-14-june-2020",
+    "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-paid-jobs-week-ended-21-june-2020",
     "download": true,
    
     "groups": [
