@@ -57,7 +57,7 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly filled jobs",
-      "filename": "Machine_readable_file_mei_may_2020.csv",
+      "filename": "Machine_readable_file_mei_june_2020.csv",
       "load_function": "read_employment_data",
       "data_type": "TimeSeries",
       "load_parameters": {
@@ -70,7 +70,7 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly earnings",
-      "filename": "Machine_readable_file_mei_may_2020.csv",
+      "filename": "Machine_readable_file_mei_june_2020.csv",
       "load_function": "read_employment_data",
       "data_type": "TimeSeries",
       "load_parameters": {
