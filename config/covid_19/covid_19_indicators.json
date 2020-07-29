@@ -670,7 +670,6 @@
     "type": "Confidence",
     "source": "ANZ",
     "plot_function": "get_time_series_plot",
-    "caveats":"<p>Note data for July 2020 is a preliminary read.</p>",
     "international": false,
     "include_date_slider": true,
     "default_lower_range": "2019-01-01",
@@ -736,7 +735,6 @@
     "plot_function": "get_time_series_plot",
     "international": false,
     "include_date_slider": true,
-    "caveats":"<p>Note data for July 2020 is a preliminary read.</p>",
     "default_lower_range": "2019-01-01",
     "source_url": "https://www.anz.co.nz/about-us/economic-markets-research/business-outlook/",
     "download": false,
@@ -4130,7 +4128,7 @@
     "plot_function": "get_time_series_plot",
     "international": false,
     "include_date_slider": true,
-    "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-paid-jobs-week-ended-21-june-2020",
+    "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-paid-jobs-week-ended-28-june-2020",
     "download": true,
    
     "groups": [
