@@ -410,7 +410,7 @@
     "international": false,
     "include_date_slider": true,
     "default_lower_range": "2017-02-01",
-    "source_url": "https://www.stats.govt.nz/methods/about-new-employment-indicator-series",
+    "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-june-2020",
     "download": true,
     "groups": [
       {
@@ -464,7 +464,7 @@
     "include_date_slider": true,
     "default_lower_range": "2017-02-01",
     "international": false,
-    "source_url":"https://www.stats.govt.nz/methods/about-new-employment-indicator-series",
+    "source_url":"https://www.stats.govt.nz/information-releases/employment-indicators-june-2020",
     "download": true,
     "groups": [
         {
