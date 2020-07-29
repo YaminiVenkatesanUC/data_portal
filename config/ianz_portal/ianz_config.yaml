@@ -1,0 +1,13 @@
+title: "IANZ"
+production: true
+data_directory: "example_data/"
+indicator_definitions: "config/ianz_portal/ianz_indicators.json"
+data_definitions: "config/ianz/ianz_data_definitions.json"
+default_parameters:
+  data_type: "TimeSeries"
+  plot_function: "get_time_series_plot"
+  data_service: "load_from_store"
+primary_color: "#EC6607"
+about_modal_html: "www/about_ianz.html"
+download_modal_html: "www/download_modal_ianz.html"
+data_store_filename: "data_store.RDS"
