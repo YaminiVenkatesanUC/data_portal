@@ -1,0 +1,14 @@
+title: "COVID-19"
+production: true
+data_directory:  "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/"
+indicator_definitions: "config/covid_19/covid_19_indicators.json"
+data_definitions: "config/covid_19/covid_19_data_definitions.json"
+default_parameters:
+  data_type: "TimeSeries"
+  plot_function: "get_time_series_plot"
+  data_service: "load_from_store"
+primary_color: "#EC6607"
+data_store_filename: "data_store.RDS"
+about_modal_html: "www/about_covid_19.html"
+download_modal_html: "www/download_modal_covid_19.html"
+tag_manager: "www/tag_manager.html"
