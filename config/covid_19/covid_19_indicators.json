@@ -5008,6 +5008,11 @@
   
   "groups": [
     {
+      "name": "Total",
+      "title": "Total number of people on student visa",
+      "units": "Number"
+    },
+    {
       "name": "Dependant",
       "title": "Number of people on dependant visa",
       "units": "Number"
@@ -5042,6 +5047,11 @@
   "download": true,
   
   "groups": [
+     {
+      "name": "Total",
+      "title": "Total number of people on work visa",
+      "units": "Number"
+    }, 
     {
       "name": "Essential skills",
       "title": "Number of people on essential skills visa",

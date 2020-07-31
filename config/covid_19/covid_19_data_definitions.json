@@ -3275,7 +3275,7 @@
         "type": "COVID-19",
         "parameter_col": 1,
         "value_col": [2],
-        "value_names": ["Current - 29 July"],
+        "value_names": ["Current - 30 July"],
         "sheet_number": 1,
         "filename": "COVID 19 - MoH Border Control insights.xlsx",
         "parameter_transform": "function (x) x",
@@ -4119,17 +4119,18 @@
   "class": "Economic",
   "indicator_name": "Student visa",
   "type": "Visa",
-  "date_filter": "function(x) x > ymd(\"2015-01-01\")",
+  "date_filter": "function(x) x > dmy(\"01-01-2015\")",
   "parameter_col": 1,
   "parameter_transform": [
-    "function (x) ymd(x)"   ],
+    "function (x) dmy(x)"   ],
   
   "value_col": [
     
     2,
     3,
     4,
-    5
+    5,
+    6
     
     
     ],
@@ -4137,7 +4138,8 @@
     "Dependant",
       "Exchange student",
       "Fee paying",
-      "Other"
+      "Other",
+      "Total"
     ],
   "filename": "Population_by_Visa_Type_and_Application_Substream_Students.csv",
   "load_function": "read_from_csv",
@@ -4147,7 +4149,8 @@
       "Dependant",
       "Exchange student",
       "Fee paying",
-      "Other"
+      "Other",
+      "Total"
       
       ]
 },
@@ -4155,17 +4158,18 @@
   "class": "Economic",
   "indicator_name": "Work visa",
   "type": "Visa",
-  "date_filter": "function(x) x > ymd(\"2015-01-01\")",
+  "date_filter": "function(x) x > dmy(\"01-01-2015\")",
   "parameter_col": 1,
   "parameter_transform": [
-    "function (x) ymd(x)"   ],
+    "function (x) dmy(x)"   ],
   
   "value_col": [
     2,
     3,
     4,
     5,
-    6
+    6,
+    7
     
     ],
   "value_names": [
@@ -4173,7 +4177,8 @@
     "Family",
     "Recognised seasonal employer",
     "Other",
-    "Working holiday scheme"
+    "Working holiday scheme",
+    "Total"
     
     ],
   "filename": "Population_by_Visa_Type_and_Application_Substream_Work.csv",
@@ -4185,7 +4190,8 @@
     "Family",
     "Recognised seasonal employer",
     "Other",
-    "Working holiday scheme"
+    "Working holiday scheme",
+    "Total"
     
       ]
 }
