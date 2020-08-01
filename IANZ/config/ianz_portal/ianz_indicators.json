@@ -1,47 +1,127 @@
 [
   {
-    "class": "Example",
-    "type": "Example type",
-    "indicator_name": "Excel file example",
-    "source": "Name source here",
+    "class": "Contextual indicators",
+    "type": "Production",
+    "indicator_name": "Total New Zealand production",
+    "source": "Stats NZ",
     "plot_function": "get_time_series_plot",
     "include_date_slider": true,
     "international": false,
-    "source_url":"https://www.stats.govt.nz/",
+    "source_url":"https://www.stats.govt.nz/information-releases/gross-domestic-product-march-2020-quarter",
     "download": true,
     "groups": [
         {
-            "name": "Linear",
-            "units": "Number",
-            "title": "Linear plot"
-        },
-        {
-            "name": "Trigonmetric",
-            "units": "Number",
-            "title": "Trigonmetric plot"
+            "name": "Quarterly gross domestic product (Production)",
+            "units": "$",
+            "title": "Gross domestic product (seasonally adjusted chain-volume series expressed in 2009/10 prices)"
         }
     ]
   },
+  
   {
-    "class": "Example",
-    "type": "Example type",
-    "indicator_name": "CSV file example",
-    "source": "Name source here",
+    "class": "Contextual indicators",
+    "type": "Production",
+    "indicator_name": "Regional production",
+    "source": "Stats NZ",
     "plot_function": "get_time_series_plot",
     "include_date_slider": true,
     "international": false,
-    "source_url":"https://www.stats.govt.nz/",
+    "source_url":"https://www.stats.govt.nz/information-releases/regional-gross-domestic-product-year-ended-march-2019",
     "download": true,
     "groups": [
-        {
-            "name": "Linear",
-            "units": "Number",
-            "title": "Linear plot"
+      {
+            "name": "New Zealand",
+            "units": "$",
+            "title": "Gross domestic product in current prices - Auckland"
         },
         {
-            "name": "Trigonmetric",
-            "units": "Number",
-            "title": "Trigonmetric plot"
+            "name": "Auckland",
+            "units": "$",
+            "title": "Gross domestic product in current prices - Auckland"
+        }
+        ,
+        {
+            "name": "Bay of Plenty",
+            "units": "$",
+            "title": "Gross domestic product in current prices - Bay of Plenty"
+        }
+        ,
+        {
+            "name": "Canterbury",
+            "units": "$",
+            "title": "Gross domestic product in current prices - Canterbury"
+        }
+        ,
+        {
+            "name": "Gisborne",
+            "units": "$",
+            "title": "Gross domestic product in current prices - Gisborne"
+        }
+        ,
+        {
+            "name": "Hawke's Bay",
+            "units": "$",
+            "title": "Gross domestic product in current prices - Hawke's Bay"
+        }
+        ,
+        {
+            "name": "Manawatu Whanganui",
+            "units": "$",
+            "title": "Gross domestic product in current prices - Manawatu Whanganui"
+        }
+        ,
+        {
+            "name": "Marlborough",
+            "units": "$",
+            "title": "Gross domestic product in current prices - Marlborough"
+        }
+        ,
+        {
+            "name": "Northland",
+            "units": "$",
+            "title": "Gross domestic product in current prices - Northland"
+        }
+        ,
+        {
+            "name": "Otago",
+            "units": "$",
+            "title": "Gross domestic product in current prices - Otago"
+        }
+        ,
+        {
+            "name": "Southland",
+            "units": "$",
+            "title": "Gross domestic product in current prices - Southland"
+        }
+        ,
+        {
+            "name": "Taranaki",
+            "units": "$",
+            "title": "Gross domestic product in current prices - Taranaki"
+        }
+        ,
+        {
+            "name": "Tasman/ Nelson",
+            "units": "$",
+            "title": "Gross domestic product in current prices - Tasman/ Nelson"
+        }
+         ,
+        {
+            "name": "Waikato",
+            "units": "$",
+            "title": "Gross domestic product in current prices - Waikato"
+        }
+         ,
+        {
+            "name": "Wellington",
+            "units": "$",
+            "title": "Gross domestic product in current prices - Wellington"
+        }
+         ,
+        {
+            "name": "West Coast",
+            "units": "$",
+            "title": "Gross domestic product in current prices - West Coast"
         }
     ]
   }
