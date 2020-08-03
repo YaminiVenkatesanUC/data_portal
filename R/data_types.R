@@ -11,18 +11,18 @@ TimeSeries <- R6Class("TimeSeries", list(
   },
   initialize_from_args = function(data, value_names, update_date) {
     self$dates = data$Parameter
-    self$values <- as.data.frame((data[colnames(data) != "Parameter"]))
+    self$values <- as.data.table((data[colnames(data) != "Parameter"]))
     self$value_names <- value_names
     self$update_date <- update_date
   },
-  get_csv_content = function() {
+  get_csv_content = function(date_range = NULL) {
     output <- cbind(self$dates, self$values)
     names(output) <- c("parameter", self$value_names)
-    output <- pivot_longer(output, cols = 2:ncol(output), names_to = "sub_series_name") %>%
-      mutate(
-        parameter = format(parameter, "%d-%m-%y")
-      )
-    return (output)
+    if (!is.null(date_range)) {
+      output <- output[parameter >= date_range[[1]] & parameter <= date_range[[2]]]
+    }
+    result <- melt(output, measure = 2:ncol(output), value.name = c("value"), variable.name = "sub_series_name")
+    return (result)
   }
 ))
 

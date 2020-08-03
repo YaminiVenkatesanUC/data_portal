@@ -61,11 +61,29 @@ get_tool_tip <- function(units) {
   ))
 }
 
+get_extremum_date <- function(x, condition) {
+  if ("TimeSeries" %in% class(x) && length(x$dates) > 0) {
+    return (condition(x$dates))
+  } else {
+    return (NA)
+  }
+}
+
+get_data_store_date_range <- function(date_store) {
+  max_dates <- as.vector(sapply(date_store, get_extremum_date, condition = max))
+  max_date <- max(date_store[[which(max_dates == max(max_dates, na.rm = TRUE))[[1]]]]$dates)
+
+  min_dates <- as.vector(sapply(date_store, get_extremum_date, condition = min))
+  min_date <- min(date_store[[which(min_dates == min(min_dates, na.rm = TRUE))[[1]]]]$dates)
+
+  return (list(max_date = max_date, min_date = min_date ))
+}
+
 get_most_recent_update_date <- function(data_store) {
   if (is.null(data_store)) {
     return (format(now(), "%d/%m/%Y"))
   }
-  dates <- as.vector(sapply(data_store, function(x) x$update_date))
+  dates <- as.vector(sapply(DATA_STORE, function(x) x$update_date))
   return (format(data_store[[which(dates == max(dates))[[1]]]]$update_date, "%d/%m/%Y"))
 }
 
@@ -121,7 +139,6 @@ get_indicator_list <- function(
 
   return (result)
 }
-
 
 get_type_list <- function(
   indicators,

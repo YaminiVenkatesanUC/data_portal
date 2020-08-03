@@ -9,6 +9,7 @@ library(stringr)
 library(jsonlite)
 library(R6)
 library(httr)
+library(data.table)
 
 source("R/core/build_ui.R")
 source("R/core/utils.R")
@@ -77,4 +78,3 @@ if (!is.null(CONFIG$tag_manager_html)) {
   warning("No tag manager set.")
   tag_manager_html <- "<div></div>"
 }
-

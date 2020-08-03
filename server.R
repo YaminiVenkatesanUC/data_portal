@@ -7,9 +7,11 @@ server <- function(input, output, session) {
     class_name <- gsub(" ", "_", INDICATOR_CLASSES[[i]])
     callModule(main_plot_server, paste0("main_plot_", class_name), INDICATOR_CLASSES[[i]])
   })
+  
   callModule(
     download_data_server,
-    "download_data"
+    "download_data",
+    get_data_store_date_range(DATA_STORE)
   )
-  callModule(about_dialog_server, "about_dialog", get_most_recent_update_date(data_store))
+  callModule(about_dialog_server, "about_dialog", get_most_recent_update_date(DATA_STORE))
 }

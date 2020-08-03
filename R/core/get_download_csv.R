@@ -2,7 +2,7 @@ get_x_values <- function(dates) {
   return (ifelse(format(dates) == "double", as.character(format(dates, "%d-%m-%y")), as.character(dates)))
 }
 
-get_download_csv <- function() {
+get_download_csv <- function(data_store, indicator_definitions, date_range = NULL) {
   downloadable_indicators <- names(indicator_definitions)[
     as.vector(sapply(indicator_definitions, function(x) (!is.null(x$download) && x$download)))
   ]
@@ -32,8 +32,11 @@ get_download_csv <- function() {
     for (i in 1:length(item$groups)) {
       group <- item$groups[[i]]
       key <- paste(item$class, item$type, item$indicator_name, group$name, sep = "_")
-      data_object <- DATA_STORE[[key]]
-      sub_sub_series <- data_object$get_csv_content()
+      if ("TimeSeries" %in% class(data_store[[key]])) {
+        sub_sub_series <- data_store[[key]]$get_csv_content(date_range)
+      } else {
+        sub_sub_series <- data_store[[key]]$get_csv_content()
+      }
 
       sub_sub_series$series_name <- gsub(" \U2012 ", " - ", group$name)
       
