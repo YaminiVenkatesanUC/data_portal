@@ -5081,5 +5081,86 @@
     
     
     ]
-}
+},
+
+    {
+    "class": "Economic",
+    "indicator_name": "Daily border crossings (by port) - departures",
+    "type": "Travel",
+    "source": "New Zealand Customs Service",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    "default_lower_range": "2019-01-01",
+    "download": true,
+    "caveats": "Daily arrivals and departures data are based solely on border-crossings into and out of New Zealand, and do not incorporate arrival card information. These data are provisional and subject to revision during the full process of producing international travel statistics.",
+    "groups": [
+       {
+        "name": "Auckland",
+        "title": "Daily border crossings for all passports (Auckland airport) - departures",
+        "units": "Number"
+      },
+     
+      {
+        "name": "Christchurch",
+        "title": "Daily border crossings for all passports (Christchurch airport) - departures",
+        "units": "Number"
+      },
+      {
+        "name": "Queenstown",
+        "title": "Daily border crossings for all passports (Queenstown airport) - departures",
+        "units": "Number"
+      },
+       {
+        "name": "Wellington",
+        "title": "Daily border crossings for all passports (Wellington airport)- departures",
+        "units": "Number"
+      },
+      {
+        "name": "Other",
+        "title": "Daily border crossings for all passports (other ports) - departures",
+        "units": "Number"
+      }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "Daily border crossings (by port) - arrivals",
+    "type": "Travel",
+    "source": "New Zealand Customs Service",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    "default_lower_range": "2019-01-01",
+    "download": true,
+    "caveats": "Daily arrivals and departures data are based solely on border-crossings into and out of New Zealand, and do not incorporate arrival card information. These data are provisional and subject to revision during the full process of producing international travel statistics.",
+    "groups": [
+       {
+        "name": "Auckland",
+        "title": "Daily border crossings for all passports (Auckland airport) - arrivals",
+        "units": "Number"
+      },
+     
+      {
+        "name": "Christchurch",
+        "title": "Daily border crossings for all passports (Christchurch airport) - arrivals",
+        "units": "Number"
+      },
+      {
+        "name": "Queenstown",
+        "title": "Daily border crossings for all passports (Queenstown airport) - arrivals",
+        "units": "Number"
+      },
+       {
+        "name": "Wellington",
+        "title": "Daily border crossings for all passports (Wellington airport) - arrivals",
+        "units": "Number"
+      },
+      {
+        "name": "Other",
+        "title": "Daily border crossings for all passports (other ports) - arrivals",
+        "units": "Number"
+      }
+    ]
+  }
 ]

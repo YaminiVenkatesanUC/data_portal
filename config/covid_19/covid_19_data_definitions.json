@@ -4194,8 +4194,77 @@
     "Total"
     
       ]
-}
-
+},
+ {
+        "class": "Economic",
+        "indicator_name": "Daily border crossings (by port) - departures",
+        "type": "Travel",
+        "parameter_col": 1,
+        "parameter_transform": [
+        "function (x) ",
+        "as.Date(x, format = \"%Y-%m-%d\")"
+        ],
+        "sheet_number": 2,
+        "value_col": [
+        6,  
+        7,
+        8,
+        9,
+        10
+        ],
+        "value_names": [
+          "Auckland",
+        "Wellington",
+        "Christchurch",
+        "Queenstown",
+        "Other ports"
+        ],
+        "filename": "COVID 19 - Customs border crossing DAILY_CITZ_PORTS.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "group_names": [
+          "Auckland",
+        "Wellington",
+        "Christchurch",
+        "Queenstown",
+        "Other"
+        ]
+    },
+    {
+        "class": "Economic",
+        "indicator_name": "Daily border crossings (by port) - arrivals",
+        "type": "Travel",
+        "parameter_col": 1,
+        "parameter_transform": [
+        "function (x) ",
+        "as.Date(x, format = \"%Y-%m-%d\")"
+        ],
+        "sheet_number": 1,
+        "value_col": [
+        6,  
+        7,
+        8,
+        9,
+        10
+        ],
+        "value_names": [
+          "Auckland",
+        "Wellington",
+        "Christchurch",
+        "Queenstown",
+        "Other ports"
+        ],
+        "filename": "COVID 19 - Customs border crossing DAILY_CITZ_PORTS.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "group_names": [
+          "Auckland",
+        "Wellington",
+        "Christchurch",
+        "Queenstown",
+        "Other"
+        ]
+    }
 
 
 
