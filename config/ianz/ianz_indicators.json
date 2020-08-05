@@ -124,5 +124,23 @@
             "title": "Gross domestic product in current prices - West Coast"
         }
     ]
+  },
+   {
+    "class": "Current wellbeing",
+    "type": "Health",
+    "indicator_name": "Amenable mortality by DHB",
+    "source": "Ministry of Health Mortality Data Collection",
+    "plot_function": "get_horizontal_bar",
+    "include_date_slider": false,
+    "international": false,
+    "source_url":" ",
+    "download": true,
+    "groups": [
+        {
+            "name": "by DHB",
+            "units": "Number",
+            "title": "Amenable mortality, age standardised rates, 0–74 year olds, by district health board, 2016"
+        }
+    ]
   }
 ]

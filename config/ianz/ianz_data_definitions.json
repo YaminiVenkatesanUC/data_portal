@@ -64,5 +64,19 @@
       "parameter_transform": "function (x) dmy(x)",
       "load_function": "read_from_csv",
       "data_type": "TimeSeries"
+    },
+      {
+      "class": "Current wellbeing",
+      "type": "Health",
+      "indicator_name": "Amenable mortality by DHB",
+      "parameter_col": 2,
+      "value_col": 3,
+      "value_names":"Age standardised rates per 100,000",
+      "group_names": "by DHB",
+      "sheet_number": 1,
+      "filename": "amenable_mortality_dhb.csv",
+      "parameter_transform": "function (x) x",
+      "load_function": "read_from_csv",
+      "data_type": "BarChart"
     }
 ]
