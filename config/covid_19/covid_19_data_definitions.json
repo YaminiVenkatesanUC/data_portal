@@ -2055,40 +2055,44 @@
         "parameter_transform": "function(x) ymd(x)",
         "sheet_number": 2,
         "value_col": [
-          11,
-          10,
-          9,
+         
           2,
           3,
           4,
           5,
           6,
           7,
-          8
+          8,
+          9,
+          10,
+          11
         ],
         "value_names": [
-          "Total",
-          "Total 80 and over",
-          "Total 65 and 79",
-          "Total under 64",
+          
           "Female under 64",
           "Female 65 and 79",
           "Female 80 and over",
           "Male under 64",
           "Male 65 to 79",
-          "Male 80 and over"
+          "Male 80 and over",
+          "Total under 64",
+          "Total 65 and 79",
+          "Total 80 and over",
+          "Total"
+          
         ],
         "group_names": [
-            "Total",
-          "Total 80 and over",
-          "Total 65 and 79",
-          "Total under 64",
-          "Female under 64",
+          
+           "Female under 64",
           "Female 65 and 79",
           "Female 80 and over",
           "Male under 64",
           "Male 65 to 79",
-          "Male 80 and over"
+          "Male 80 and over",
+          "Total under 64",
+          "Total 65 and 79",
+          "Total 80 and over",
+          "Total"
           ],
         "filename": "COVID 19 - DIA Preliminary Death Data.xlsx",
         "load_function": "read_from_excel",
@@ -3275,7 +3279,7 @@
         "type": "COVID-19",
         "parameter_col": 1,
         "value_col": [2],
-        "value_names": ["Current - 04 August"],
+        "value_names": ["Current - 05 August"],
         "sheet_number": 1,
         "filename": "COVID 19 - MoH Border Control insights.xlsx",
         "parameter_transform": "function (x) x",
