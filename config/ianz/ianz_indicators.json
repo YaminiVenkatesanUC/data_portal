@@ -218,5 +218,23 @@
             "title": "Percentage of people who reported high or very high levels of psychological distress in the past four weeks"
         }
     ]
+  },
+   {
+    "class": "Transboundary impacts",
+    "type": "Economic standard of living",
+    "indicator_name": "Official development assistance",
+    "source": "Ministry of Health Mortality Data Collection",
+    "plot_function": "get_time_series_plot",
+    "include_date_slider": false,
+    "international": false,
+    "source_url":" ",
+    "download": true,
+    "groups": [
+        {
+            "name": "Official development assistance",
+            "units": "$",
+            "title": "Official development assistance"
+        }
+    ]
   }
 ]

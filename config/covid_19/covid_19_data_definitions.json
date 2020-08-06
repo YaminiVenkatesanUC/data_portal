@@ -3258,21 +3258,7 @@
         
         ]
     },
-      {
-        "class": "Health",
-        "indicator_name": "Quarantine exemptions",
-        "type": "COVID-19",
-        "parameter_col": 1,
-        "value_col": [3],
-        "value_names": ["Current - 06 July"],
-        "sheet_number": 2,
-        "filename": "COVID 19 - MoH Border Control insights.xlsx",
-        "parameter_transform": "function (x) x",
-        "load_function": "read_from_excel",
-        "group_names": "Border exemptions",
-        "drop_na": false,
-        "data_type": "BarChart"
-      },
+      
       {
         "class": "Health",
         "indicator_name": "Quarantine and managed isolation figures",

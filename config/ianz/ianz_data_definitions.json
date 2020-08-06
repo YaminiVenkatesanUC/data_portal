@@ -135,6 +135,21 @@
       "parameter_transform": "function (x) x",
       "load_function": "read_from_csv",
       "data_type": "BarChart"
+    },
+    {
+      "class": "Transboundary impacts",
+      "type": "Economic standard of living",
+      "indicator_name": "Official development assistance",
+      "parameter_col": 1,
+      "value_col": 2,
+      "value_names": "Official development assistance",
+      "group_names": "Official development assistance",
+      "sheet_number": 1,
+      "filename": "amenable-mortality.csv",
+      "parameter_transform": "function (x) ymd(x)",
+      "load_function": "read_from_csv",
+      "data_type": "TimeSeries",
+      "input_units": 1000000
     }
 
 ]
