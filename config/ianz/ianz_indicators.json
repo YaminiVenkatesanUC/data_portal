@@ -143,4 +143,80 @@
         }
     ]
   }
+  ,
+   {
+    "class": "Current wellbeing",
+    "type": "Health",
+    "indicator_name": "Amenable mortality by ethnicity",
+    "source": "Ministry of Health Mortality Data Collection",
+    "plot_function": "get_vertical_bar",
+    "include_date_slider": false,
+    "international": false,
+    "source_url":" ",
+    "download": true,
+    "groups": [
+        {
+            "name": "Amenable mortality by ethnicity",
+            "units": "Rate",
+            "title": "Amenable mortality, age standardised rates, 0 –74 year olds, by ethnic group"
+        }
+    ]
+  }
+  ,
+   {
+    "class": "Current wellbeing",
+    "type": "Governance",
+    "indicator_name": "Corruption",
+    "source": "Corruption perceptions index",
+    "plot_function": "get_vertical_bar",
+    "include_date_slider": false,
+    "international": false,
+    "source_url":"https://www.transparency.org/en/cpi",
+    "download": true,
+    "groups": [
+        {
+            "name": "Corruption",
+            "units": "Index",
+            "title": "Corruption Perceptions Index score"
+        }
+    ]
+  }
+   ,
+   {
+    "class": "Current wellbeing",
+    "type": "Health",
+    "indicator_name": "Amenable mortality",
+    "source": "Ministry of Health Mortality Data Collection",
+    "plot_function": "get_time_series_plot",
+    "include_date_slider": false,
+    "international": false,
+    "source_url":" ",
+    "download": true,
+    "groups": [
+        {
+            "name": "Amenable mortality",
+            "units": "Rates",
+            "title": "Amenable mortality, age-standardised rates, 0–74-year-olds"
+        }
+    ]
+  }
+     ,
+   {
+    "class": "Current wellbeing",
+    "type": "Health",
+    "indicator_name": "Mental health status (psychological distress)",
+    "source": "Ministry of Health Mortality Data Collection",
+    "plot_function": "get_vertical_bar",
+    "include_date_slider": false,
+    "international": false,
+    "source_url":" ",
+    "download": true,
+    "groups": [
+        {
+            "name": "Mental health status (psychological distress)",
+            "units": "%",
+            "title": "Percentage of people who reported high or very high levels of psychological distress in the past four weeks"
+        }
+    ]
+  }
 ]

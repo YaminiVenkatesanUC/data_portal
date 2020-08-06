@@ -78,5 +78,63 @@
       "parameter_transform": "function (x) x",
       "load_function": "read_from_csv",
       "data_type": "BarChart"
+    },
+      {
+      "class": "Current wellbeing",
+      "type": "Health",
+      "indicator_name": "Amenable mortality by ethnicity",
+      "parameter_col": 1,
+      "value_col": [2, 3, 4],
+      "value_names":["Māori", "Non Māori, Non-Pacific", "Pacific"],
+      "group_names": "Amenable mortality by ethnicity",
+      "sheet_number": 1,
+      "filename": "amenable_mortality_ethnicity.csv",
+      "parameter_transform": "function (x) ymd(x)",
+      "load_function": "read_from_csv",
+      "data_type": "TimeSeries"
     }
+    ,
+      {
+      "class": "Current wellbeing",
+      "type": "Governance",
+      "indicator_name": "Corruption",
+      "parameter_col": 1,
+      "value_col": 3,
+      "value_names": "New Zealand",
+      "group_names": "Corruption",
+      "sheet_number": 1,
+      "filename": "corruption_index.csv",
+      "parameter_transform": "function (x) ymd(x)",
+      "load_function": "read_from_csv",
+      "data_type": "TimeSeries"
+    },
+    {
+      "class": "Current wellbeing",
+      "type": "Health",
+      "indicator_name": "Amenable mortality",
+      "parameter_col": 1,
+      "value_col": 2,
+      "value_names": "New Zealand",
+      "group_names": "Amenable mortality",
+      "sheet_number": 1,
+      "filename": "amenable-mortality.csv",
+      "parameter_transform": "function (x) ymd(x)",
+      "load_function": "read_from_csv",
+      "data_type": "TimeSeries"
+    },
+    {
+      "class": "Current wellbeing",
+      "type": "Health",
+      "indicator_name": "Mental health status (psychological distress)",
+      "parameter_col": 1,
+      "value_col": 2,
+      "value_names": "Mental health status (psychological distress)",
+      "group_names": "Mental health status (psychological distress)",
+      "sheet_number": 1,
+      "filename": "amenable-mortality.csv",
+      "parameter_transform": "function (x) x",
+      "load_function": "read_from_csv",
+      "data_type": "BarChart"
+    }
+
 ]
