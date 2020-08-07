@@ -3541,14 +3541,16 @@
         3,
         4,
         5,
-        6
+        6,
+        7
         ],
         "value_names": [
         "Total number of recipients of CIRP",
         "Full-time recipients of CIRP",
         "Part-time recipients of CIRP",
+        "CIRP recipients transferred from Jobseeker",
         "CIRP grants*",
-        "Transfers from Jobseeker Support**"
+        "Total transfers from Jobseeker"
         ],
         "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
         "load_function": "read_from_excel",
