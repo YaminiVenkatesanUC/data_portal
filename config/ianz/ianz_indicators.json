@@ -13,7 +13,7 @@
         {
             "name": "Quarterly gross domestic product (Production)",
             "units": "$",
-            "title": "Gross domestic product (seasonally adjusted chain-volume series expressed in 2009/10 prices)"
+            "title": "Gross domestic product (seasonally adjusted)"
         }
     ]
   },
@@ -345,6 +345,42 @@
             "name": "parent_rated",
             "units": "%",
             "title": "Percentage of children with good, very good, or excellent health (parent-rated), by child’s age"
+        }
+    ]
+  },
+   {
+    "class": "Current wellbeing",
+    "type": "Health",
+    "indicator_name": "Self-reported health status by ethnicity",
+    "source": "Ministry of Health",
+    "plot_function": "get_vertical_bar",
+    "include_date_slider": false,
+    "international": false,
+    "source_url":" ",
+    "download": true,
+    "groups": [
+        {
+            "name": "parent_rated",
+            "units": "%",
+            "title": "Percentage of children with good, very good, or excellent health (parent-rated), by child’s ethnic group"
+        }
+    ]
+  },
+   {
+    "class": "Current wellbeing",
+    "type": "Health",
+    "indicator_name": "Self-reported health status by gender",
+    "source": "Ministry of Health",
+    "plot_function": "get_vertical_bar",
+    "include_date_slider": false,
+    "international": false,
+    "source_url":" ",
+    "download": true,
+    "groups": [
+        {
+            "name": "parent_rated",
+            "units": "%",
+            "title": "Percentage of children with good, very good, or excellent health (parent-rated), by child’s sex"
         }
     ]
   }

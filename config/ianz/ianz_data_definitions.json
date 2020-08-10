@@ -238,6 +238,34 @@
       "parameter_transform": "function (x) x",
       "load_function": "read_from_csv",
       "data_type": "BarChart"
+    },
+    {
+      "class": "Current wellbeing",
+      "type": "Health",
+      "indicator_name": "Self-reported health status by ethnicity",
+      "parameter_col": 1,
+      "value_col": [2, 5, 8, 11],
+      "value_names": ["Asian" , "European/ Other", "Māori", "Pacific peoples"],
+      "group_names": "parent_rated",
+      "sheet_number": 1,
+      "filename": "parent-reported-health-by-ethnic-group.csv",
+      "parameter_transform": "function (x) x",
+      "load_function": "read_from_csv",
+      "data_type": "BarChart"
+    },
+    {
+      "class": "Current wellbeing",
+      "type": "Health",
+      "indicator_name": "Self-reported health status by gender",
+      "parameter_col": 1,
+      "value_col": [2, 5],
+      "value_names": ["Female", "Male"],
+      "group_names": "parent_rated",
+      "sheet_number": 1,
+      "filename": "parent-reported-health-by-sex.csv",
+      "parameter_transform": "function (x) x",
+      "load_function": "read_from_csv",
+      "data_type": "BarChart"
     }
 
 ]
