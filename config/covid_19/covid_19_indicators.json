@@ -3425,7 +3425,7 @@
   "plot_function": "get_time_series_plot",
   "international": false,
   "caveats": "Note data specific to the 'Total loan amount disbursed' chart                  differs from that featured prior to July 9.",
-  "download": false,
+  "download": true,
   "groups":[
       {
       "name": "Total loan amount disbursed",
