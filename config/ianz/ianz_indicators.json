@@ -1,0 +1,388 @@
+[
+  {
+    "class": "Contextual indicators",
+    "type": "Production",
+    "indicator_name": "Total New Zealand production",
+    "source": "Stats NZ",
+    "plot_function": "get_time_series_plot",
+    "include_date_slider": true,
+    "international": false,
+    "source_url":"https://www.stats.govt.nz/information-releases/gross-domestic-product-march-2020-quarter",
+    "download": true,
+    "groups": [
+        {
+            "name": "Quarterly gross domestic product (Production)",
+            "units": "$",
+            "title": "Gross domestic product (seasonally adjusted)"
+        }
+    ]
+  },
+  
+  {
+    "class": "Contextual indicators",
+    "type": "Production",
+    "indicator_name": "Regional production",
+    "source": "Stats NZ",
+    "plot_function": "get_time_series_plot",
+    "include_date_slider": true,
+    "international": false,
+    "source_url":"https://www.stats.govt.nz/information-releases/regional-gross-domestic-product-year-ended-march-2019",
+    "download": true,
+    "groups": [
+      {
+            "name": "New Zealand",
+            "units": "$",
+            "title": "Gross domestic product in current prices - Auckland"
+        },
+        {
+            "name": "Auckland",
+            "units": "$",
+            "title": "Gross domestic product in current prices - Auckland"
+        }
+        ,
+        {
+            "name": "Bay of Plenty",
+            "units": "$",
+            "title": "Gross domestic product in current prices - Bay of Plenty"
+        }
+        ,
+        {
+            "name": "Canterbury",
+            "units": "$",
+            "title": "Gross domestic product in current prices - Canterbury"
+        }
+        ,
+        {
+            "name": "Gisborne",
+            "units": "$",
+            "title": "Gross domestic product in current prices - Gisborne"
+        }
+        ,
+        {
+            "name": "Hawke's Bay",
+            "units": "$",
+            "title": "Gross domestic product in current prices - Hawke's Bay"
+        }
+        ,
+        {
+            "name": "Manawatu Whanganui",
+            "units": "$",
+            "title": "Gross domestic product in current prices - Manawatu Whanganui"
+        }
+        ,
+        {
+            "name": "Marlborough",
+            "units": "$",
+            "title": "Gross domestic product in current prices - Marlborough"
+        }
+        ,
+        {
+            "name": "Northland",
+            "units": "$",
+            "title": "Gross domestic product in current prices - Northland"
+        }
+        ,
+        {
+            "name": "Otago",
+            "units": "$",
+            "title": "Gross domestic product in current prices - Otago"
+        }
+        ,
+        {
+            "name": "Southland",
+            "units": "$",
+            "title": "Gross domestic product in current prices - Southland"
+        }
+        ,
+        {
+            "name": "Taranaki",
+            "units": "$",
+            "title": "Gross domestic product in current prices - Taranaki"
+        }
+        ,
+        {
+            "name": "Tasman/ Nelson",
+            "units": "$",
+            "title": "Gross domestic product in current prices - Tasman/ Nelson"
+        }
+         ,
+        {
+            "name": "Waikato",
+            "units": "$",
+            "title": "Gross domestic product in current prices - Waikato"
+        }
+         ,
+        {
+            "name": "Wellington",
+            "units": "$",
+            "title": "Gross domestic product in current prices - Wellington"
+        }
+         ,
+        {
+            "name": "West Coast",
+            "units": "$",
+            "title": "Gross domestic product in current prices - West Coast"
+        }
+    ]
+  },
+   {
+    "class": "Current wellbeing",
+    "type": "Health",
+    "indicator_name": "Amenable mortality by DHB",
+    "source": "Ministry of Health Mortality Data Collection",
+    "plot_function": "get_horizontal_bar",
+    "include_date_slider": false,
+    "international": false,
+    "source_url":" ",
+    "download": true,
+    "groups": [
+        {
+            "name": "by DHB",
+            "units": "Number",
+            "title": "Amenable mortality, age standardised rates, 0–74 year olds, by district health board, 2016"
+        }
+    ]
+  }
+  ,
+   {
+    "class": "Current wellbeing",
+    "type": "Health",
+    "indicator_name": "Amenable mortality by ethnicity",
+    "source": "Ministry of Health Mortality Data Collection",
+    "plot_function": "get_vertical_bar",
+    "include_date_slider": false,
+    "international": false,
+    "source_url":" ",
+    "download": true,
+    "groups": [
+        {
+            "name": "Amenable mortality by ethnicity",
+            "units": "Rate",
+            "title": "Amenable mortality, age standardised rates, 0 –74 year olds, by ethnic group"
+        }
+    ]
+  }
+  ,
+   {
+    "class": "Current wellbeing",
+    "type": "Governance",
+    "indicator_name": "Corruption",
+    "source": "Corruption perceptions index",
+    "plot_function": "get_vertical_bar",
+    "include_date_slider": false,
+    "international": false,
+    "source_url":"https://www.transparency.org/en/cpi",
+    "download": true,
+    "groups": [
+        {
+            "name": "Corruption",
+            "units": "Index",
+            "title": "Corruption Perceptions Index score"
+        }
+    ]
+  }
+   ,
+   {
+    "class": "Current wellbeing",
+    "type": "Health",
+    "indicator_name": "Amenable mortality",
+    "source": "Ministry of Health Mortality Data Collection",
+    "plot_function": "get_time_series_plot",
+    "include_date_slider": false,
+    "international": false,
+    "source_url":" ",
+    "download": true,
+    "groups": [
+        {
+            "name": "Amenable mortality",
+            "units": "Rates",
+            "title": "Amenable mortality, age-standardised rates, 0–74-year-olds"
+        }
+    ]
+  }
+     ,
+   {
+    "class": "Current wellbeing",
+    "type": "Health",
+    "indicator_name": "Mental health status (psychological distress)",
+    "source": "Ministry of Health Mortality Data Collection",
+    "plot_function": "get_vertical_bar",
+    "include_date_slider": false,
+    "international": false,
+    "source_url":" ",
+    "download": true,
+    "groups": [
+        {
+            "name": "Mental health status (psychological distress)",
+            "units": "%",
+            "title": "Percentage of people who reported high or very high levels of psychological distress in the past four weeks"
+        }
+    ]
+  },
+   {
+    "class": "Transboundary impacts",
+    "type": "Economic standard of living",
+    "indicator_name": "Official development assistance",
+    "source": "Ministry of Health Mortality Data Collection",
+    "plot_function": "get_time_series_plot",
+    "include_date_slider": false,
+    "international": false,
+    "source_url":" ",
+    "download": true,
+    "groups": [
+        {
+            "name": "Official development assistance",
+            "units": "$",
+            "title": "Official development assistance"
+        }
+    ]
+  },
+   {
+    "class": "Current wellbeing",
+    "type": "Governance",
+    "indicator_name": "Democratic participation by age group",
+    "source": "Electoral Commission",
+    "plot_function": "get_horizontal_bar",
+    "include_date_slider": false,
+    "international": false,
+    "source_url":" ",
+    "download": true,
+    "groups": [
+        {
+            "name": "Democratic participation by age group",
+            "units": "%",
+            "title": "Percentage of enrolled electors who voted in the New Zealand general elections, by age group"
+        }
+    ]
+  }
+  ,
+   {
+    "class": "Current wellbeing",
+    "type": "Governance",
+    "indicator_name": "Democratic participation by descent",
+    "source": "Electoral Commission",
+    "plot_function": "get_vertical_bar",
+    "include_date_slider": false,
+    "international": false,
+    "source_url":" ",
+    "download": true,
+    "groups": [
+        {
+            "name": "by_descent",
+            "units": "%",
+            "title": "Percentage of enrolled electors who voted in the New Zealand general elections, by descent"
+        }
+    ]
+  }
+  ,
+   {
+    "class": "Current wellbeing",
+    "type": "Knowledge and skills",
+    "indicator_name": "Early childhood education (ECE) participation",
+    "source": "ENROL – the school student enrolment register",
+    "plot_function": "get_time_series_plot",
+    "include_date_slider": true,
+    "international": false,
+    "source_url":" ",
+    "download": true,
+    "groups": [
+        {
+            "name": "Early childhood participation",
+            "units": "%",
+            "title": "Percentage of children in their first year of school who attended ECE"
+        }
+    ]
+  }
+  ,
+   {
+    "class": "Current wellbeing",
+    "type": "Knowledge and skills",
+    "indicator_name": "Early childhood education (ECE) participation by gender",
+    "source": "ENROL – the school student enrolment register",
+    "plot_function": "get_time_series_plot",
+    "include_date_slider": true,
+    "international": false,
+    "source_url":" ",
+    "download": true,
+    "groups": [
+        {
+            "name": "by_gender_ece",
+            "units": "%",
+            "title": "Percentage of children in their first year of school who attended ECE, by gender"
+        }
+    ]
+  } ,
+   {
+    "class": "Current wellbeing",
+    "type": "Health",
+    "indicator_name": "Self-reported health status",
+    "source": "Ministry of Health",
+    "plot_function": "get_vertical_bar",
+    "include_date_slider": false,
+    "international": false,
+    "source_url":" ",
+    "download": true,
+    "groups": [
+        {
+            "name": "parent_rated",
+            "units": "%",
+            "title": "Percentage of children with good, very good, or excellent health"
+        }
+    ]
+  } ,
+   {
+    "class": "Current wellbeing",
+    "type": "Health",
+    "indicator_name": "Self-reported health status by age",
+    "source": "Ministry of Health",
+    "plot_function": "get_vertical_bar",
+    "include_date_slider": false,
+    "international": false,
+    "source_url":" ",
+    "download": true,
+    "groups": [
+        {
+            "name": "parent_rated",
+            "units": "%",
+            "title": "Percentage of children with good, very good, or excellent health (parent-rated), by child’s age"
+        }
+    ]
+  },
+   {
+    "class": "Current wellbeing",
+    "type": "Health",
+    "indicator_name": "Self-reported health status by ethnicity",
+    "source": "Ministry of Health",
+    "plot_function": "get_vertical_bar",
+    "include_date_slider": false,
+    "international": false,
+    "source_url":" ",
+    "download": true,
+    "groups": [
+        {
+            "name": "parent_rated",
+            "units": "%",
+            "title": "Percentage of children with good, very good, or excellent health (parent-rated), by child’s ethnic group"
+        }
+    ]
+  },
+   {
+    "class": "Current wellbeing",
+    "type": "Health",
+    "indicator_name": "Self-reported health status by gender",
+    "source": "Ministry of Health",
+    "plot_function": "get_vertical_bar",
+    "include_date_slider": false,
+    "international": false,
+    "source_url":" ",
+    "download": true,
+    "groups": [
+        {
+            "name": "parent_rated",
+            "units": "%",
+            "title": "Percentage of children with good, very good, or excellent health (parent-rated), by child’s sex"
+        }
+    ]
+  }
+  
+]

@@ -1942,7 +1942,7 @@
         "parameter_col": 1,
         "parameter_transform": "",
         "value_names": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (28)", "East Asia (excluding China)", "Total (excluding China)"],
-        "filename": "Effects-of_COVID-19-on-trade-1-February-22-July-2020-provisional.csv",
+        "filename": "Effects-of_COVID-19-on-trade-1-February-29-July-2020-provisional.csv",
         "load_function": "read_trade_data",
         "data_type": "TimeSeriesTradeData",
         "group_names": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (28)", "East Asia (excluding China)", "Total (excluding China)"],
@@ -1962,7 +1962,7 @@
         "parameter_col": 1,
         "parameter_transform": "",
         "value_names": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (28)", "East Asia (excluding China)", "Total (excluding China)"],
-        "filename": "Effects-of_COVID-19-on-trade-1-February-22-July-2020-provisional.csv",
+        "filename": "Effects-of_COVID-19-on-trade-1-February-29-July-2020-provisional.csv",
         "load_function": "read_trade_data",
         "data_type": "TimeSeriesTradeData",
         "group_names": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (28)", "East Asia (excluding China)", "Total (excluding China)"],
@@ -1982,7 +1982,7 @@
         "parameter_col": 1,
         "parameter_transform": "",
         "value_names": ["All", "Non-food manufactured goods", "Machinery and electronics"],
-        "filename": "Effects-of_COVID-19-on-trade-1-February-22-July-2020-provisional.csv",
+        "filename": "Effects-of_COVID-19-on-trade-1-February-29-July-2020-provisional.csv",
         "load_function": "read_trade_data",
         "data_type": "TimeSeriesTradeData",
         "group_names": ["All", "Non-food manufactured goods", "Machinery and electronics"],
@@ -2002,7 +2002,7 @@
         "parameter_col": 1,
         "parameter_transform": "",
         "value_names": ["All", "Dairy", "Meat", "Seafood", "Forestry", "Fruit", "Non-food manufactured goods"],
-        "filename": "Effects-of_COVID-19-on-trade-1-February-22-July-2020-provisional.csv",
+        "filename": "Effects-of_COVID-19-on-trade-1-February-29-July-2020-provisional.csv",
         "load_function": "read_trade_data",
         "data_type": "TimeSeriesTradeData",
         "group_names": ["All", "Dairy", "Meat", "Seafood", "Forestry", "Fruit", "Non-food manufactured goods"],
@@ -2055,40 +2055,44 @@
         "parameter_transform": "function(x) ymd(x)",
         "sheet_number": 2,
         "value_col": [
-          11,
-          10,
-          9,
+         
           2,
           3,
           4,
           5,
           6,
           7,
-          8
+          8,
+          9,
+          10,
+          11
         ],
         "value_names": [
-          "Total",
-          "Total 80 and over",
-          "Total 65 and 79",
-          "Total under 64",
+          
           "Female under 64",
           "Female 65 and 79",
           "Female 80 and over",
           "Male under 64",
           "Male 65 to 79",
-          "Male 80 and over"
+          "Male 80 and over",
+          "Total under 64",
+          "Total 65 and 79",
+          "Total 80 and over",
+          "Total"
+          
         ],
         "group_names": [
-            "Total",
-          "Total 80 and over",
-          "Total 65 and 79",
-          "Total under 64",
-          "Female under 64",
+          
+           "Female under 64",
           "Female 65 and 79",
           "Female 80 and over",
           "Male under 64",
           "Male 65 to 79",
-          "Male 80 and over"
+          "Male 80 and over",
+          "Total under 64",
+          "Total 65 and 79",
+          "Total 80 and over",
+          "Total"
           ],
         "filename": "COVID 19 - DIA Preliminary Death Data.xlsx",
         "load_function": "read_from_excel",
@@ -3254,28 +3258,14 @@
         
         ]
     },
-      {
-        "class": "Health",
-        "indicator_name": "Quarantine exemptions",
-        "type": "COVID-19",
-        "parameter_col": 1,
-        "value_col": [3],
-        "value_names": ["Current - 06 July"],
-        "sheet_number": 2,
-        "filename": "COVID 19 - MoH Border Control insights.xlsx",
-        "parameter_transform": "function (x) x",
-        "load_function": "read_from_excel",
-        "group_names": "Border exemptions",
-        "drop_na": false,
-        "data_type": "BarChart"
-      },
+      
       {
         "class": "Health",
         "indicator_name": "Quarantine and managed isolation figures",
         "type": "COVID-19",
         "parameter_col": 1,
         "value_col": [2],
-        "value_names": ["Current - 28 July"],
+        "value_names": ["Current - 09 August"],
         "sheet_number": 1,
         "filename": "COVID 19 - MoH Border Control insights.xlsx",
         "parameter_transform": "function (x) x",
@@ -3551,14 +3541,16 @@
         3,
         4,
         5,
-        6
+        6,
+        7
         ],
         "value_names": [
         "Total number of recipients of CIRP",
         "Full-time recipients of CIRP",
         "Part-time recipients of CIRP",
+        "CIRP recipients transferred from Jobseeker",
         "CIRP grants*",
-        "Transfers from Jobseeker Support**"
+        "Total transfers from Jobseeker"
         ],
         "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
         "load_function": "read_from_excel",
@@ -4119,17 +4111,18 @@
   "class": "Economic",
   "indicator_name": "Student visa",
   "type": "Visa",
-  "date_filter": "function(x) x > ymd(\"2015-01-01\")",
+  "date_filter": "function(x) x > dmy(\"01-01-2015\")",
   "parameter_col": 1,
   "parameter_transform": [
-    "function (x) ymd(x)"   ],
+    "function (x) dmy(x)"   ],
   
   "value_col": [
     
     2,
     3,
     4,
-    5
+    5,
+    6
     
     
     ],
@@ -4137,7 +4130,8 @@
     "Dependant",
       "Exchange student",
       "Fee paying",
-      "Other"
+      "Other",
+      "Total"
     ],
   "filename": "Population_by_Visa_Type_and_Application_Substream_Students.csv",
   "load_function": "read_from_csv",
@@ -4147,7 +4141,8 @@
       "Dependant",
       "Exchange student",
       "Fee paying",
-      "Other"
+      "Other",
+      "Total"
       
       ]
 },
@@ -4155,17 +4150,18 @@
   "class": "Economic",
   "indicator_name": "Work visa",
   "type": "Visa",
-  "date_filter": "function(x) x > ymd(\"2015-01-01\")",
+  "date_filter": "function(x) x > dmy(\"01-01-2015\")",
   "parameter_col": 1,
   "parameter_transform": [
-    "function (x) ymd(x)"   ],
+    "function (x) dmy(x)"   ],
   
   "value_col": [
     2,
     3,
     4,
     5,
-    6
+    6,
+    7
     
     ],
   "value_names": [
@@ -4173,7 +4169,8 @@
     "Family",
     "Recognised seasonal employer",
     "Other",
-    "Working holiday scheme"
+    "Working holiday scheme",
+    "Total"
     
     ],
   "filename": "Population_by_Visa_Type_and_Application_Substream_Work.csv",
@@ -4185,11 +4182,81 @@
     "Family",
     "Recognised seasonal employer",
     "Other",
-    "Working holiday scheme"
+    "Working holiday scheme",
+    "Total"
     
       ]
-}
-
+},
+ {
+        "class": "Economic",
+        "indicator_name": "Daily border crossings (by port) - departures",
+        "type": "Travel",
+        "parameter_col": 1,
+        "parameter_transform": [
+        "function (x) ",
+        "as.Date(x, format = \"%Y-%m-%d\")"
+        ],
+        "sheet_number": 2,
+        "value_col": [
+        6,  
+        7,
+        8,
+        9,
+        10
+        ],
+        "value_names": [
+          "Auckland",
+        "Wellington",
+        "Christchurch",
+        "Queenstown",
+        "Other ports"
+        ],
+        "filename": "COVID 19 - Customs border crossing DAILY_CITZ_PORTS.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "group_names": [
+          "Auckland",
+        "Wellington",
+        "Christchurch",
+        "Queenstown",
+        "Other"
+        ]
+    },
+    {
+        "class": "Economic",
+        "indicator_name": "Daily border crossings (by port) - arrivals",
+        "type": "Travel",
+        "parameter_col": 1,
+        "parameter_transform": [
+        "function (x) ",
+        "as.Date(x, format = \"%Y-%m-%d\")"
+        ],
+        "sheet_number": 1,
+        "value_col": [
+        6,  
+        7,
+        8,
+        9,
+        10
+        ],
+        "value_names": [
+          "Auckland",
+        "Wellington",
+        "Christchurch",
+        "Queenstown",
+        "Other ports"
+        ],
+        "filename": "COVID 19 - Customs border crossing DAILY_CITZ_PORTS.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "group_names": [
+          "Auckland",
+        "Wellington",
+        "Christchurch",
+        "Queenstown",
+        "Other"
+        ]
+    }
 
 
 

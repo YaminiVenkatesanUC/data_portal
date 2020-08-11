@@ -670,7 +670,6 @@
     "type": "Confidence",
     "source": "ANZ",
     "plot_function": "get_time_series_plot",
-    "caveats":"<p>Note data for July 2020 is a preliminary read.</p>",
     "international": false,
     "include_date_slider": true,
     "default_lower_range": "2019-01-01",
@@ -736,7 +735,6 @@
     "plot_function": "get_time_series_plot",
     "international": false,
     "include_date_slider": true,
-    "caveats":"<p>Note data for July 2020 is a preliminary read.</p>",
     "default_lower_range": "2019-01-01",
     "source_url": "https://www.anz.co.nz/about-us/economic-markets-research/business-outlook/",
     "download": false,
@@ -2139,7 +2137,7 @@
     "international": false,
     "download": true,
     "description": "For metadata and details on methodology used to produce these statistics see <a href=\"http://datainfoplus.stats.govt.nz/Item/nz.govt.stats/6ed114da-3571-40d4-a89f-932068a4c753?_ga=2.27617916.1122878806.1587330040-1991109144.1583875067#/nz.govt.stats/6c3485b0-4330-4bd7-b10f-7e9f4580797c/7\" target=\"_blank\">DataInfo+</a>.",
-    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-1-february-22-july-2020-provisional",
+    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-1-february-29-july-2020-provisional",
     "groups": [
         {
             "name": "All",
@@ -2194,7 +2192,7 @@
     "international": false,
     "include_date_slider": true,
     "download": true,
-    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-1-february-22-july-2020-provisional",
+    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-1-february-29-july-2020-provisional",
     "description": "For metadata and details on methodology used to produce these statistics see <a href=\"http://datainfoplus.stats.govt.nz/Item/nz.govt.stats/6ed114da-3571-40d4-a89f-932068a4c753?_ga=2.27617916.1122878806.1587330040-1991109144.1583875067#/nz.govt.stats/6c3485b0-4330-4bd7-b10f-7e9f4580797c/7\" target=\"_blank\">DataInfo+</a>.",
     "groups": [
         {
@@ -2232,7 +2230,7 @@
     "international": false,
     "download": true,
     "include_date_slider": true,
-    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-1-february-22-july-2020-provisional",
+    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-1-february-29-july-2020-provisional",
     "description": "For metadata and details on methodology used to produce these statistics see <a href=\"http://datainfoplus.stats.govt.nz/Item/nz.govt.stats/6ed114da-3571-40d4-a89f-932068a4c753?_ga=2.27617916.1122878806.1587330040-1991109144.1583875067#/nz.govt.stats/6c3485b0-4330-4bd7-b10f-7e9f4580797c/7\" target=\"_blank\">DataInfo+</a>.",
     "groups": [
         {
@@ -2284,7 +2282,7 @@
     "international": false,
     "download": true,
     "description": "For metadata and details on methodology used to produce these statistics see <a href=\"http://datainfoplus.stats.govt.nz/Item/nz.govt.stats/6ed114da-3571-40d4-a89f-932068a4c753?_ga=2.27617916.1122878806.1587330040-1991109144.1583875067#/nz.govt.stats/6c3485b0-4330-4bd7-b10f-7e9f4580797c/7\" target=\"_blank\">DataInfo+</a>.",
-    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-1-february-22-july-2020-provisional",
+    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-1-february-29-july-2020-provisional",
     "groups": [
         {
             "name": "Non-food manufactured goods",
@@ -3427,7 +3425,7 @@
   "plot_function": "get_time_series_plot",
   "international": false,
   "caveats": "Note data specific to the 'Total loan amount disbursed' chart                  differs from that featured prior to July 9.",
-  "download": false,
+  "download": true,
   "groups":[
       {
       "name": "Total loan amount disbursed",
@@ -4130,7 +4128,7 @@
     "plot_function": "get_time_series_plot",
     "international": false,
     "include_date_slider": true,
-    "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-paid-jobs-week-ended-21-june-2020",
+    "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-paid-jobs-week-ended-5-july-2020",
     "download": true,
    
     "groups": [
@@ -4155,25 +4153,7 @@
        
     ]
 },
-  {
-    "class": "Health",
-    "indicator_name": "Quarantine exemptions",
-    "type": "COVID-19",
-    "source": "Ministry of Health",
-    "plot_function": "get_horizontal_bar",
-    "international": false,
-    "disabled": false,
-    "include_date_slider": false,
-    "source_url":"https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation/covid-19-border-controls/covid-19-quarantine-and-managed-isolation-numbers",
-    "download": true,
-    "groups": [
-        {
-            "name": "Border exemptions",
-            "title": "Number of people with exemptions by category",
-            "units": ["Number"]
-        }
-    ]
-  },
+ 
   {
     "class": "Health",
     "indicator_name": "Quarantine and managed isolation figures",
@@ -5010,6 +4990,11 @@
   
   "groups": [
     {
+      "name": "Total",
+      "title": "Total number of people on student visa",
+      "units": "Number"
+    },
+    {
       "name": "Dependant",
       "title": "Number of people on dependant visa",
       "units": "Number"
@@ -5044,6 +5029,11 @@
   "download": true,
   
   "groups": [
+     {
+      "name": "Total",
+      "title": "Total number of people on work visa",
+      "units": "Number"
+    }, 
     {
       "name": "Essential skills",
       "title": "Number of people on essential skills visa",
@@ -5073,5 +5063,86 @@
     
     
     ]
-}
+},
+
+    {
+    "class": "Economic",
+    "indicator_name": "Daily border crossings (by port) - departures",
+    "type": "Travel",
+    "source": "New Zealand Customs Service",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    "default_lower_range": "2019-01-01",
+    "download": true,
+    "caveats": "Daily arrivals and departures data are based solely on border-crossings into and out of New Zealand, and do not incorporate arrival card information. These data are provisional and subject to revision during the full process of producing international travel statistics.",
+    "groups": [
+       {
+        "name": "Auckland",
+        "title": "Daily border crossings for all passports (Auckland airport) - departures",
+        "units": "Number"
+      },
+     
+      {
+        "name": "Christchurch",
+        "title": "Daily border crossings for all passports (Christchurch airport) - departures",
+        "units": "Number"
+      },
+      {
+        "name": "Queenstown",
+        "title": "Daily border crossings for all passports (Queenstown airport) - departures",
+        "units": "Number"
+      },
+       {
+        "name": "Wellington",
+        "title": "Daily border crossings for all passports (Wellington airport)- departures",
+        "units": "Number"
+      },
+      {
+        "name": "Other",
+        "title": "Daily border crossings for all passports (other ports) - departures",
+        "units": "Number"
+      }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "Daily border crossings (by port) - arrivals",
+    "type": "Travel",
+    "source": "New Zealand Customs Service",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    "default_lower_range": "2019-01-01",
+    "download": true,
+    "caveats": "Daily arrivals and departures data are based solely on border-crossings into and out of New Zealand, and do not incorporate arrival card information. These data are provisional and subject to revision during the full process of producing international travel statistics.",
+    "groups": [
+       {
+        "name": "Auckland",
+        "title": "Daily border crossings for all passports (Auckland airport) - arrivals",
+        "units": "Number"
+      },
+     
+      {
+        "name": "Christchurch",
+        "title": "Daily border crossings for all passports (Christchurch airport) - arrivals",
+        "units": "Number"
+      },
+      {
+        "name": "Queenstown",
+        "title": "Daily border crossings for all passports (Queenstown airport) - arrivals",
+        "units": "Number"
+      },
+       {
+        "name": "Wellington",
+        "title": "Daily border crossings for all passports (Wellington airport) - arrivals",
+        "units": "Number"
+      },
+      {
+        "name": "Other",
+        "title": "Daily border crossings for all passports (other ports) - arrivals",
+        "units": "Number"
+      }
+    ]
+  }
 ]
