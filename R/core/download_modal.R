@@ -12,7 +12,6 @@ download_data_server <- function(input, output, session, download_modal_vars) {
   
   downloadModal <- function(failed = FALSE, failedUnique = FALSE) {
     ns <- session$ns
-    date_range <- get_data_store_data_range(DATA_STORE)
 
     modalDialog(
       useShinyjs(),

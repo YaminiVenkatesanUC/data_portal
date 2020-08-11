@@ -30,7 +30,8 @@ get_download_csv <- function(data_store, indicator_definitions, date_range = NUL
       sub_series_name = c(),
       value = c(),
       parameter = c(),
-      units = c()
+      units = c(),
+      date_last_updated = c()
     )
     for (i in 1:length(item$groups)) {
       group <- item$groups[[i]]
@@ -42,6 +43,7 @@ get_download_csv <- function(data_store, indicator_definitions, date_range = NUL
       }
 
       sub_sub_series$series_name <- gsub(" \U2012 ", " - ", group$name)
+      sub_sub_series$date_last_updated <- format(data_store[[key]]$update_date, "%d-%m-%y")
       
       if (!is.null(group$units)) {
         sub_sub_series$units <- group$units
@@ -56,7 +58,7 @@ get_download_csv <- function(data_store, indicator_definitions, date_range = NUL
     sub_series$indicator_name <- gsub(" \U2012 ", " - ", item$indicator_name)
     sub_series$class <- item$class
     sub_series$category <- item$type
-    sub_series$date_last_updated <- format(data_object$update_date, "%d-%m-%y")
+    
     output <- rbind(sub_series, output)
   }
 
