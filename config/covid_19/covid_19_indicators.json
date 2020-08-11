@@ -673,6 +673,7 @@
     "international": false,
     "include_date_slider": true,
     "default_lower_range": "2019-01-01",
+    "caveats":"<p>Note August 2020 is a preliminary read</p>",
     "source_url": "https://www.anz.co.nz/about-us/economic-markets-research/business-outlook/",
     "download": false,
     "groups": [
@@ -736,6 +737,7 @@
     "international": false,
     "include_date_slider": true,
     "default_lower_range": "2019-01-01",
+    "caveats":"<p>Note August 2020 is a preliminary read</p>",
     "source_url": "https://www.anz.co.nz/about-us/economic-markets-research/business-outlook/",
     "download": false,
     "groups": [
@@ -3424,7 +3426,7 @@
   "source": "Inland Revenue",
   "plot_function": "get_time_series_plot",
   "international": false,
-  "caveats": "Note data specific to the 'Total loan amount disbursed' chart                  differs from that featured prior to July 9.",
+  "caveats": "Note data specific to the 'Total loan amount disbursed' chart differs from that featured prior to July 9.",
   "download": true,
   "groups":[
       {
