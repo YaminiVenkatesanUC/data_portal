@@ -576,6 +576,40 @@ read_filled_jobs_by_industry_or_region <- function(config, directory) {
   return (output_group)
 }
 
+read_employment_paid_jobs_data <- function(config, directory) {
+  cols_to_read <- 1:4
+  data <- as.data.frame(read.csv(
+    paste0(directory, config$filename),
+    stringsAsFactors = FALSE
+  ))
+  col_names = paste0("col_", min(cols_to_read):max(cols_to_read))
+  colnames(data)<-col_names
+  if(!is.null(config$filter_paid_jobs)){
+    data <- data %>% filter(col_2 == config$filter_paid_jobs) %>%
+      select(Parameter = col_1, everything()) %>%
+      mutate(Parameter = as.Date(dmy(Parameter))) %>%
+      spread(col_3, col_4)%>%
+      select(Parameter, Total, everything(), -col_2)
+    
+    colnames(data)<-c("Parameter", paste0("col_", 2:ncol(data)))
+    
+  }else if (!is.null(config$date_filter)) {
+    date_filter <- eval(parse(text = config$date_filter))
+    data <- data %>% filter(date_filter(Parameter))
+    
+  }else{
+    
+    "please enter a filter for visa type or employment"
+  }
+  
+  return (data_frame_to_data_object_helper(
+    directory,
+    config,
+    data
+  ))
+}
+
+
 load_functions <- list(
   read_from_csv = read_from_csv,
   read_from_csv_error = read_from_csv_error,

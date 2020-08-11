@@ -410,7 +410,7 @@
     "international": false,
     "include_date_slider": true,
     "default_lower_range": "2017-02-01",
-    "source_url": "https://www.stats.govt.nz/methods/about-new-employment-indicator-series",
+    "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-june-2020",
     "download": true,
     "groups": [
       {
@@ -464,7 +464,7 @@
     "include_date_slider": true,
     "default_lower_range": "2017-02-01",
     "international": false,
-    "source_url":"https://www.stats.govt.nz/methods/about-new-employment-indicator-series",
+    "source_url":"https://www.stats.govt.nz/information-releases/employment-indicators-june-2020",
     "download": true,
     "groups": [
         {
@@ -570,13 +570,13 @@
             "name": "Retail",
             "units": "Litres",
             "title": "Z Energy weekly fuel supply volumes - retail",
-            "caveats": "<p>(1) Truckstops include Z and Caltex branded Truckstops, private Truckstops and Mini-Tankers.</p><p>(2) Other includes General Aviation and Lubricants.</p><p>(3) The values for the 22nd of March are the average weekly volumes for the preceeding four weeks (24/02/20-22/03/20).  The subsequent values are weekly totals.</p><p>(4) Week ended data includes all fuel volumes for the prior week up to 11.59pm on Sunday.</p>"
+            "caveats": "<p>(1) Truckstops include Z and Caltex branded Truckstops, private Truckstops and Mini-Tankers.</p><p>(2) Other includes General Aviation and Lubricants.</p><p>(3) The values for the 22nd of March are the average weekly volumes for the preceding four weeks (24/02/20-22/03/20).  The subsequent values are weekly totals.</p><p>(4) Week ended data includes all fuel volumes for the prior week up to 11.59pm on Sunday.</p>"
         },
         {
             "name": "Other",
             "units": "Litres",
             "title": "Z Energy weekly fuel supply volumes - other",
-            "caveats": "<p>(1) Z volumes will be retail fuel sales volumes including the Foodstuffs network.</p><p>(2) Domestic retail supply volume is the total bulk fuel delivered to distributor customers.</p><p>(3) The values for the 22nd of March are the average weekly volumes for the preceeding four weeks (24/02/20-22/03/20). The subsequent values are weekly totals.</p><p>(4) Week ended data includes all fuel volumes for the prior week up to 11.59pm on Sunday.</p>"
+            "caveats": "<p>(1) Z volumes will be retail fuel sales volumes including the Foodstuffs network.</p><p>(2) Domestic retail supply volume is the total bulk fuel delivered to distributor customers.</p><p>(3) The values for the 22nd of March are the average weekly volumes for the preceding four weeks (24/02/20-22/03/20). The subsequent values are weekly totals.</p><p>(4) Week ended data includes all fuel volumes for the prior week up to 11.59pm on Sunday.</p>"
         }
     ]
   },
@@ -812,7 +812,7 @@
     "international": false,
     "include_date_slider": true,
     "default_lower_range": "2017-01-01",
-    "source_url": "https://www.stats.govt.nz/information-releases/electronic-card-transactions-march-2020",
+    "source_url": " https://www.stats.govt.nz/news/retail-card-spending-resurgence-in-june",
     "download": true,
     "groups": [
       {
@@ -844,6 +844,11 @@
     "download": true,
     "caveats": "Daily arrivals and departures data are based solely on border-crossings into and out of New Zealand, and do not incorporate arrival card information. These data are provisional and subject to revision during the full process of producing international travel statistics.",
     "groups": [
+       {
+        "name": "Total",
+        "title": "Customs daily border crossings - departures",
+        "units": "Number"
+      },
       {
         "name": "New Zealand passport",
         "title": "Customs daily border crossings - departures",
@@ -869,6 +874,11 @@
     "caveats": "Daily arrivals and departures data are based solely on border-crossings into and out of New Zealand, and do not incorporate arrival card information. These data are provisional and subject to revision during the full process of producing international travel statistics.",
     "groups": [
       {
+        "name": "Total",
+        "title": "Customs daily border crossings - arrivals",
+        "units": "Number"
+      },
+      {
         "name": "New Zealand passport",
         "title": "Customs daily border crossings - arrivals",
         "units": "Number"
@@ -889,7 +899,7 @@
     "default_lower_range": "2017-01-01",
     "international": false,
     "include_date_slider": true,
-    "source_url": "https://www.stats.govt.nz/information-releases/electronic-card-transactions-march-2020",
+    "source_url": " https://www.stats.govt.nz/news/retail-card-spending-resurgence-in-june",
     "download": true,
     "groups": [
       {
@@ -1310,7 +1320,7 @@
   },
   {
     "class": "Social",
-    "indicator_name": "Special needs grants for food",
+    "indicator_name": "Special needs grants for food - (weekly)",
     "type": "Hardship assistance",
     "source": "Ministry of Social Development",
     "plot_function": "get_time_series_plot",
@@ -1320,7 +1330,7 @@
     "groups": [
       {
         "name": "Special needs grants for food",
-        "title": "Special needs grants for food",
+        "title": "Special needs grants for food - (weekly)",
         "units": "Number"
       }
     ]
@@ -1482,7 +1492,7 @@
     "groups": [
       {
         "name": "undefined_name",
-        "title": "Number of people associated with paid out wage subsidy applications (cumulative)",
+        "title": "Number of jobs associated with paid out wage subsidy applications (cumulative)",
         "units": "Number"
       }
     ]
@@ -1895,7 +1905,7 @@
   },
   {
     "class": "Social",
-    "indicator_name": "Jobseeker support by regional council",
+    "indicator_name": "Jobseeker support by region - weekly",
     "type": "Benefits",
     "source": "Ministry of Social Development",
     "plot_function": "get_time_series_plot",
@@ -1934,8 +1944,8 @@
             "units": "Number"
         },
         {
-            "name": "Manawatu-Whanganui",
-            "title": "Number on jobseeker support benefit - Manawatu-Whanganui Council",
+            "name": "Manawatū-Whanganui",
+            "title": "Number on jobseeker support benefit - Manawatū-Whanganui Council",
             "units": "Number"
         },
         {
@@ -2127,7 +2137,7 @@
     "international": false,
     "download": true,
     "description": "For metadata and details on methodology used to produce these statistics see <a href=\"http://datainfoplus.stats.govt.nz/Item/nz.govt.stats/6ed114da-3571-40d4-a89f-932068a4c753?_ga=2.27617916.1122878806.1587330040-1991109144.1583875067#/nz.govt.stats/6c3485b0-4330-4bd7-b10f-7e9f4580797c/7\" target=\"_blank\">DataInfo+</a>.",
-    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-1-february-24-june-2020-provisional",
+    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-1-february-29-july-2020-provisional",
     "groups": [
         {
             "name": "All",
@@ -2182,7 +2192,7 @@
     "international": false,
     "include_date_slider": true,
     "download": true,
-    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-1-february-24-june-2020-provisional",
+    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-1-february-29-july-2020-provisional",
     "description": "For metadata and details on methodology used to produce these statistics see <a href=\"http://datainfoplus.stats.govt.nz/Item/nz.govt.stats/6ed114da-3571-40d4-a89f-932068a4c753?_ga=2.27617916.1122878806.1587330040-1991109144.1583875067#/nz.govt.stats/6c3485b0-4330-4bd7-b10f-7e9f4580797c/7\" target=\"_blank\">DataInfo+</a>.",
     "groups": [
         {
@@ -2220,7 +2230,7 @@
     "international": false,
     "download": true,
     "include_date_slider": true,
-    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-1-february-24-june-2020-provisional",
+    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-1-february-29-july-2020-provisional",
     "description": "For metadata and details on methodology used to produce these statistics see <a href=\"http://datainfoplus.stats.govt.nz/Item/nz.govt.stats/6ed114da-3571-40d4-a89f-932068a4c753?_ga=2.27617916.1122878806.1587330040-1991109144.1583875067#/nz.govt.stats/6c3485b0-4330-4bd7-b10f-7e9f4580797c/7\" target=\"_blank\">DataInfo+</a>.",
     "groups": [
         {
@@ -2272,7 +2282,7 @@
     "international": false,
     "download": true,
     "description": "For metadata and details on methodology used to produce these statistics see <a href=\"http://datainfoplus.stats.govt.nz/Item/nz.govt.stats/6ed114da-3571-40d4-a89f-932068a4c753?_ga=2.27617916.1122878806.1587330040-1991109144.1583875067#/nz.govt.stats/6c3485b0-4330-4bd7-b10f-7e9f4580797c/7\" target=\"_blank\">DataInfo+</a>.",
-    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-1-february-24-june-2020-provisional",
+    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-1-february-29-july-2020-provisional",
     "groups": [
         {
             "name": "Non-food manufactured goods",
@@ -2345,33 +2355,51 @@
         "units": "Number"
       },
       {
-        "name": "Total 65 and over",
-        "title": "Weekly deaths by age and sex - Total 65 and over",
+        "name": "Total 80 and over",
+        "title": "Weekly deaths by age and sex - Total 80 and over",
         "units": "Number"
       },
       {
-        "name": "Total under 65",
-        "title": "Weekly deaths by age and sex - Total under 65",
+        "name": "Total 65 and 79",
+        "title": "Weekly deaths by age and sex - Total 65 and 79",
         "units": "Number"
       },
       {
-        "name": "Female 65 and over",
-        "title": "Weekly deaths by age and sex - Female 65 and over",
+        "name": "Total under 64",
+        "title": "Weekly deaths by age and sex - Total under 64",
+        "units": "Number"
+      },
+      
+      {
+        "name": "Female 80 and over",
+        "title": "Weekly deaths by age and sex - Female 80 and over",
         "units": "Number"
       },
       {
-        "name": "Female under 65",
-        "title": "Weekly deaths by age and sex - Female under 65",
+        "name": "Female 65 and 79",
+        "title": "Weekly deaths by age and sex - Female 65 and 79",
         "units": "Number"
       },
       {
-        "name": "Male 65 and over",
-        "title": "Weekly deaths by age and sex - Male 65 and over",
+        "name": "Female under 64",
+        "title": "Weekly deaths by age and sex - Female under 64",
+        "units": "Number"
+      }
+      ,
+      {
+        "name": "Male 80 and over",
+        "title": "Weekly deaths by age and sex - Male 80 and over",
+        "units": "Number"
+      }
+      ,
+      {
+        "name": "Male 65 to 79",
+        "title": "Weekly deaths by age and sex - Male 65 to 79",
         "units": "Number"
       },
       {
-        "name": "Male under 65",
-        "title": "Weekly deaths by age and sex - Male under 65",
+        "name": "Male under 64",
+        "title": "Weekly deaths by age and sex - Male under 64",
         "units": "Number"
       }
     ]
@@ -2597,7 +2625,7 @@
     "international": false,
     "include_date_slider": true,
     "default_lower_range": "2019-01-30",
-    "source_url": "https://www.seek.co.nz",
+    "source_url": "https://www.seek.co.nz/about/news/july-employment-report",
     "download": false,
     "groups": [
       {
@@ -3396,10 +3424,10 @@
   "source": "Inland Revenue",
   "plot_function": "get_time_series_plot",
   "international": false,
-  
-  "download": false,
+  "caveats": "Note data specific to the 'Total loan amount disbursed' chart                  differs from that featured prior to July 9.",
+  "download": true,
   "groups":[
-     {
+      {
       "name": "Total loan amount disbursed",
       "title": "Total loan amount disbursed (cumulative)",
       "units": "$"
@@ -3420,6 +3448,9 @@
       "title": "Loan applications received (Manual - cumulative)",
       "units": "Number"
     }
+    
+   
+    
     
     ]
 },
@@ -3717,8 +3748,8 @@
         "units": "$"
       } ,
        {
-        "name": "Manawatu-Whanganui",
-        "title": "Active bonds by region - Manawatu-Whanganui",
+        "name": "Manawatū-Whanganui",
+        "title": "Active bonds by region - Manawatū-Whanganui",
         "units": "$"
       } ,
        {
@@ -3822,8 +3853,8 @@
         "units": "$"
       } ,
        {
-        "name": "Manawatu-Whanganui",
-        "title": "Closed bonds by region - Manawatu-Whanganui",
+        "name": "Manawatū-Whanganui",
+        "title": "Closed bonds by region - Manawatū-Whanganui",
         "units": "$"
       } ,
        {
@@ -3927,8 +3958,8 @@
         "units": "$"
       } ,
        {
-        "name": "Manawatu-Whanganui",
-        "title": "Lodged bonds by region - Manawatu-Whanganui",
+        "name": "Manawatū-Whanganui",
+        "title": "Lodged bonds by region - Manawatū-Whanganui",
         "units": "$"
       } ,
        {
@@ -4032,8 +4063,8 @@
         "units": "$"
       } ,
        {
-        "name": "Manawatu-Whanganui",
-        "title": "Weekly mean rent - Manawatu-Whanganui",
+        "name": "Manawatū-Whanganui",
+        "title": "Weekly mean rent - Manawatū-Whanganui",
         "units": "$"
       } ,
        {
@@ -4097,7 +4128,7 @@
     "plot_function": "get_time_series_plot",
     "international": false,
     "include_date_slider": true,
-    "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-paid-jobs-week-ended-31-may-2020",
+    "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-paid-jobs-week-ended-5-july-2020",
     "download": true,
    
     "groups": [
@@ -4122,25 +4153,7 @@
        
     ]
 },
-  {
-    "class": "Health",
-    "indicator_name": "Quarantine exemptions",
-    "type": "COVID-19",
-    "source": "Ministry of Health",
-    "plot_function": "get_horizontal_bar",
-    "international": false,
-    "disabled": false,
-    "include_date_slider": false,
-    "source_url":"https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation/covid-19-border-controls/covid-19-quarantine-and-managed-isolation-numbers",
-    "download": true,
-    "groups": [
-        {
-            "name": "Border exemptions",
-            "title": "Number of people with exemptions by category",
-            "units": ["Number"]
-        }
-    ]
-  },
+ 
   {
     "class": "Health",
     "indicator_name": "Quarantine and managed isolation figures",
@@ -4170,8 +4183,8 @@
     "disabled": false,
     "include_date_slider": true,
     "download": true,
-    "source_url": "https://treasury.govt.nz/sites/default/files/2020-06/nzac-tech-note-30jun20.pdf",
-    "caveats":"<p> 1) Card transaction spend - A modified version of this series has been utilised in the compilation of the NZAC.</p><p> 2) Electricity grid demand - A comparable indicator based on electricity generation has been utilised in the compilation of the NZAC.<p/><p> 3) New jobs posted onlne - A modified version of this series has been utilised in the compilation of the NZAC.</p>",
+    "source_url": "https://treasury.govt.nz/publications/research-and-commentary/new-zealand-activity-index",
+    "caveats":"<p> 1) Card transaction spend - A modified version of this series has been utilised in the compilation of the NZAC.</p><p> 2) Electricity grid demand - A comparable indicator based on electricity generation has been utilised in the compilation of the NZAC.<p/><p> 3) New jobs posted online - A modified version of this series has been utilised in the compilation of the NZAC.</p>",
     "groups": [
         {
             "name": "New Zealand Activity Index (NZAC)",
@@ -4216,8 +4229,8 @@
   ,
   {
     "class": "Social",
-    "indicator_name": "COVID-19 Income Relief Payment",
-    "type": "Benefits",
+    "indicator_name": "Number of recipients of CIRP",
+    "type": "Income relief payment",
     "source": "Ministry of Social Development",
     "plot_function": "get_time_series_plot",
     "international": false,
@@ -4227,10 +4240,909 @@
     "groups": [
       {
         "name": "undefined_name",
-        "title": "Number of recepients - COVID-19 Income Relief Payment (CIRP)",
+        "title": "Number of recipients of COVID-19 Income Relief Payment (CIRP)",
+        "units": "Number"
+      }
+    ]
+  },
+  {
+    "class": "Social",
+    "indicator_name": "Special needs grants for food by region",
+    "type": "Hardship assistance",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+       {
+        "name": "Total",
+        "title": "Number of special needs grants for food - Total",
+        "units": "Number"
+      },
+      {
+        "name": "Auckland",
+        "title": "Number of special needs grants for food - Auckland",
+        "units": "Number"
+      },
+      {
+        "name": "Bay of Plenty",
+        "title": "Number of special needs grants for food - Bay of Plenty",
+        "units": "Number"
+      },
+      {
+        "name": "Canterbury",
+        "title": "Number of special needs grants for food - Canterbury",
+        "units": "Number"
+      },
+      {
+        "name": "Gisborne",
+        "title": "Number of special needs grants for food - Gisborne",
+        "units": "Number"
+      },
+      {
+        "name": "Hawke's Bay",
+        "title": "Number of special needs grants for food - Hawke's Bay",
+        "units": "Number"
+      },
+      {
+        "name": "Manawatū-Whanganui",
+        "title": "Number of special needs grants for food - Manawatū-Whanganui",
+        "units": "Number"
+      },
+      {
+        "name": "Marlborough",
+        "title": "Number of special needs grants for food - Marlborough",
+        "units": "Number"
+      },
+      {
+        "name": "Nelson",
+        "title": "Number of special needs grants for food - Nelson",
+        "units": "Number"
+      },
+      {
+        "name": "Northland",
+        "title": "Number of special needs grants for food - Northland",
+        "units": "Number"
+      },
+      {
+        "name": "Otago",
+        "title": "Number of special needs grants for food - Otago",
+        "units": "Number"
+      },
+     {
+        "name": "Southland",
+        "title": "Number of special needs grants for food - Southland",
+        "units": "Number"
+      },
+     {
+        "name": "Taranaki",
+        "title": "Number of special needs grants for food - Taranaki",
+        "units": "Number"
+      },
+     {
+        "name": "Tasman",
+        "title": "Number of special needs grants for food - Tasman",
+        "units": "Number"
+      },
+      {
+        "name": "Waikato",
+        "title": "Number of special needs grants for food - Waikato",
+        "units": "Number"
+      },
+      {
+        "name": "Wellington",
+        "title": "Number of special needs grants for food - Wellington",
+        "units": "Number"
+      },
+       {
+        "name": "West Coast",
+        "title": "Number of special needs grants for food - West Coast",
+        "units": "Number"
+      },
+       {
+        "name": "Other",
+        "title": "Number of special needs grants for food - Other",
+        "units": "Number"
+      }
+      
+    ]
+  }
+  ,
+  {
+    "class": "Social",
+    "indicator_name": "Jobseeker support by region - (monthly)",
+    "type": "Benefits",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+       {
+        "name": "Total",
+        "title": "Number on jobseeker support - Total",
+        "units": "Number"
+      },
+      {
+        "name": "Auckland",
+        "title": "Number on jobseeker support - Auckland",
+        "units": "Number"
+      },
+      {
+        "name": "Bay of Plenty",
+        "title": "Number on jobseeker support - Bay of Plenty",
+        "units": "Number"
+      },
+      {
+        "name": "Canterbury",
+        "title": "Number on jobseeker support - Canterbury",
+        "units": "Number"
+      },
+      {
+        "name": "Gisborne",
+        "title": "Number on jobseeker support - Gisborne",
+        "units": "Number"
+      },
+      {
+        "name": "Hawke's Bay",
+        "title": "Number on jobseeker support - Hawke's Bay",
+        "units": "Number"
+      },
+      {
+        "name": "Manawatū-Whanganui",
+        "title": "Number on jobseeker support - Manawatū-Whanganui",
+        "units": "Number"
+      },
+      {
+        "name": "Marlborough",
+        "title": "Number on jobseeker support - Marlborough",
+        "units": "Number"
+      },
+      {
+        "name": "Nelson",
+        "title": "Number on jobseeker support - Nelson",
+        "units": "Number"
+      },
+      {
+        "name": "Northland",
+        "title": "Number on jobseeker support - Northland",
+        "units": "Number"
+      },
+      {
+        "name": "Otago",
+        "title": "Number on jobseeker support - Otago",
+        "units": "Number"
+      },
+     {
+        "name": "Southland",
+        "title": "Number on jobseeker support - Southland",
+        "units": "Number"
+      },
+     {
+        "name": "Taranaki",
+        "title": "Number on jobseeker support - Taranaki",
+        "units": "Number"
+      },
+     {
+        "name": "Tasman",
+        "title": "Number on jobseeker support - Tasman",
+        "units": "Number"
+      },
+      {
+        "name": "Waikato",
+        "title": "Number on jobseeker support - Waikato",
+        "units": "Number"
+      },
+      {
+        "name": "Wellington",
+        "title": "Number on jobseeker support - Wellington",
+        "units": "Number"
+      },
+       {
+        "name": "West Coast",
+        "title": "Number on jobseeker support - West Coast",
+        "units": "Number"
+      },
+       {
+        "name": "Other",
+        "title": "Number on jobseeker support - Other",
+        "units": "Number"
+      }
+      
+    ]
+  }
+  ,
+  {
+    "class": "Social",
+    "indicator_name": "Jobseeker support by region - Maori",
+    "type": "Benefits",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "Total",
+        "title": "Number on jobseeker support (Maori) - Total",
+        "units": "Number"
+      },
+      {
+        "name": "Auckland",
+        "title": "Number on jobseeker support (Maori) - Auckland",
+        "units": "Number"
+      },
+      {
+        "name": "Bay of Plenty",
+        "title": "Number on jobseeker support (Maori) - Bay of Plenty",
+        "units": "Number"
+      },
+      {
+        "name": "Canterbury",
+        "title": "Number on jobseeker support (Maori) - Canterbury",
+        "units": "Number"
+      },
+      {
+        "name": "Gisborne",
+        "title": "Number on jobseeker support (Maori) - Gisborne",
+        "units": "Number"
+      },
+      {
+        "name": "Hawke's Bay",
+        "title": "Number on jobseeker support (Maori) - Hawke's Bay",
+        "units": "Number"
+      },
+      {
+        "name": "Manawatū-Whanganui",
+        "title": "Number on jobseeker support (Maori) - Manawatū-Whanganui",
+        "units": "Number"
+      },
+      {
+        "name": "Marlborough",
+        "title": "Number on jobseeker support (Maori) - Marlborough",
+        "units": "Number"
+      },
+      {
+        "name": "Nelson",
+        "title": "Number on jobseeker support (Maori) - Nelson",
+        "units": "Number"
+      },
+      {
+        "name": "Northland",
+        "title": "Number on jobseeker support (Maori) - Northland",
+        "units": "Number"
+      },
+      {
+        "name": "Otago",
+        "title": "Number on jobseeker support (Maori) - Otago",
+        "units": "Number"
+      },
+     {
+        "name": "Southland",
+        "title": "Number on jobseeker support (Maori) - Southland",
+        "units": "Number"
+      },
+     {
+        "name": "Taranaki",
+        "title": "Number on jobseeker support (Maori) - Taranaki",
+        "units": "Number"
+      },
+     {
+        "name": "Tasman",
+        "title": "Number on jobseeker support (Maori) - Tasman",
+        "units": "Number"
+      },
+      {
+        "name": "Waikato",
+        "title": "Number on jobseeker support (Maori) - Waikato",
+        "units": "Number"
+      },
+      {
+        "name": "Wellington",
+        "title": "Number on jobseeker support (Maori) - Wellington",
+        "units": "Number"
+      },
+       {
+        "name": "West Coast",
+        "title": "Number on jobseeker support (Maori) - West Coast",
+        "units": "Number"
+      },
+       {
+        "name": "Other",
+        "title": "Number on jobseeker support (Maori) - Other",
+        "units": "Number"
+      }
+       
+    ]
+  }
+  ,
+  {
+    "class": "Social",
+    "indicator_name": "Jobseeker support by region - NZ European",
+    "type": "Benefits",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "Total",
+        "title": "Number on jobseeker support (NZ European) - Total",
+        "units": "Number"
+      },
+      {
+        "name": "Auckland",
+        "title": "Number on jobseeker support (NZ European) - Auckland",
+        "units": "Number"
+      },
+      {
+        "name": "Bay of Plenty",
+        "title": "Number on jobseeker support (NZ European) - Bay of Plenty",
+        "units": "Number"
+      },
+      {
+        "name": "Canterbury",
+        "title": "Number on jobseeker support (NZ European) - Canterbury",
+        "units": "Number"
+      },
+      {
+        "name": "Gisborne",
+        "title": "Number on jobseeker support (NZ European) - Gisborne",
+        "units": "Number"
+      },
+      {
+        "name": "Hawke's Bay",
+        "title": "Number on jobseeker support (NZ European) - Hawke's Bay",
+        "units": "Number"
+      },
+      {
+        "name": "Manawatū-Whanganui",
+        "title": "Number on jobseeker support (NZ European) - Manawatū-Whanganui",
+        "units": "Number"
+      },
+      {
+        "name": "Marlborough",
+        "title": "Number on jobseeker support (NZ European) - Marlborough",
+        "units": "Number"
+      },
+      {
+        "name": "Nelson",
+        "title": "Number on jobseeker support (NZ European) - Nelson",
+        "units": "Number"
+      },
+      {
+        "name": "Northland",
+        "title": "Number on jobseeker support (NZ European) - Northland",
+        "units": "Number"
+      },
+      {
+        "name": "Otago",
+        "title": "Number on jobseeker support (NZ European) - Otago",
+        "units": "Number"
+      },
+     {
+        "name": "Southland",
+        "title": "Number on jobseeker support (NZ European) - Southland",
+        "units": "Number"
+      },
+     {
+        "name": "Taranaki",
+        "title": "Number on jobseeker support (NZ European) - Taranaki",
+        "units": "Number"
+      },
+     {
+        "name": "Tasman",
+        "title": "Number on jobseeker support (NZ European) - Tasman",
+        "units": "Number"
+      },
+      {
+        "name": "Waikato",
+        "title": "Number on jobseeker support (NZ European) - Waikato",
+        "units": "Number"
+      },
+      {
+        "name": "Wellington",
+        "title": "Number on jobseeker support (NZ European) - Wellington",
+        "units": "Number"
+      },
+       {
+        "name": "West Coast",
+        "title": "Number on jobseeker support (NZ European) - West Coast",
+        "units": "Number"
+      },
+       {
+        "name": "Other",
+        "title": "Number on jobseeker support (NZ European) - Other",
+        "units": "Number"
+      }
+       
+    ]
+  },
+  {
+    "class": "Social",
+    "indicator_name": "Jobseeker support by region - Pacific peoples",
+    "type": "Benefits",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      
+       {
+        "name": "Total",
+        "title": "Number on jobseeker support (Pacific peoples) - Total",
+        "units": "Number"
+      },
+      {
+        "name": "Auckland",
+        "title": "Number on jobseeker support (Pacific peoples) - Auckland",
+        "units": "Number"
+      },
+      {
+        "name": "Bay of Plenty",
+        "title": "Number on jobseeker support (Pacific peoples) - Bay of Plenty",
+        "units": "Number"
+      },
+      {
+        "name": "Canterbury",
+        "title": "Number on jobseeker support (Pacific peoples) - Canterbury",
+        "units": "Number"
+      },
+      {
+        "name": "Gisborne",
+        "title": "Number on jobseeker support (Pacific peoples) - Gisborne",
+        "units": "Number"
+      },
+      {
+        "name": "Hawke's Bay",
+        "title": "Number on jobseeker support (Pacific peoples) - Hawke's Bay",
+        "units": "Number"
+      },
+      {
+        "name": "Manawatū-Whanganui",
+        "title": "Number on jobseeker support (Pacific peoples) - Manawatū-Whanganui",
+        "units": "Number"
+      },
+      {
+        "name": "Marlborough",
+        "title": "Number on jobseeker support (Pacific peoples) - Marlborough",
+        "units": "Number"
+      },
+      {
+        "name": "Nelson",
+        "title": "Number on jobseeker support (Pacific peoples) - Nelson",
+        "units": "Number"
+      },
+      {
+        "name": "Northland",
+        "title": "Number on jobseeker support (Pacific peoples) - Northland",
+        "units": "Number"
+      },
+      {
+        "name": "Otago",
+        "title": "Number on jobseeker support (Pacific peoples) - Otago",
+        "units": "Number"
+      },
+     {
+        "name": "Southland",
+        "title": "Number on jobseeker support (Pacific peoples) - Southland",
+        "units": "Number"
+      },
+     {
+        "name": "Taranaki",
+        "title": "Number on jobseeker support (Pacific peoples) - Taranaki",
+        "units": "Number"
+      },
+     {
+        "name": "Tasman",
+        "title": "Number on jobseeker support (Pacific peoples) - Tasman",
+        "units": "Number"
+      },
+      {
+        "name": "Waikato",
+        "title": "Number on jobseeker support (Pacific peoples) - Waikato",
+        "units": "Number"
+      },
+      {
+        "name": "Wellington",
+        "title": "Number on jobseeker support (Pacific peoples) - Wellington",
+        "units": "Number"
+      },
+       {
+        "name": "West Coast",
+        "title": "Number on jobseeker support (Pacific peoples) - West Coast",
+        "units": "Number"
+      },
+       {
+        "name": "Other",
+        "title": "Number on jobseeker support (Pacific peoples) - Other",
         "units": "Number"
       }
     ]
   }
+   ,
+  {
+    "class": "Social",
+    "indicator_name": "Jobseeker support by region - Other ethnicities",
+    "type": "Benefits",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "Total",
+        "title": "Number on jobseeker support (Other ethnicities) - Total",
+        "units": "Number"
+      },
+      {
+        "name": "Auckland",
+        "title": "Number on jobseeker support (Other ethnicities) - Auckland",
+        "units": "Number"
+      },
+      {
+        "name": "Bay of Plenty",
+        "title": "Number on jobseeker support (Other ethnicities) - Bay of Plenty",
+        "units": "Number"
+      },
+      {
+        "name": "Canterbury",
+        "title": "Number on jobseeker support (Other ethnicities) - Canterbury",
+        "units": "Number"
+      },
+      {
+        "name": "Gisborne",
+        "title": "Number on jobseeker support (Other ethnicities) - Gisborne",
+        "units": "Number"
+      },
+      {
+        "name": "Hawke's Bay",
+        "title": "Number on jobseeker support (Other ethnicities) - Hawke's Bay",
+        "units": "Number"
+      },
+      {
+        "name": "Manawatū-Whanganui",
+        "title": "Number on jobseeker support (Other ethnicities) - Manawatū-Whanganui",
+        "units": "Number"
+      },
+      {
+        "name": "Marlborough",
+        "title": "Number on jobseeker support (Other ethnicities) - Marlborough",
+        "units": "Number"
+      },
+      {
+        "name": "Nelson",
+        "title": "Number on jobseeker support (Other ethnicities) - Nelson",
+        "units": "Number"
+      },
+      {
+        "name": "Northland",
+        "title": "Number on jobseeker support (Other ethnicities) - Northland",
+        "units": "Number"
+      },
+      {
+        "name": "Otago",
+        "title": "Number on jobseeker support (Other ethnicities) - Otago",
+        "units": "Number"
+      },
+     {
+        "name": "Southland",
+        "title": "Number on jobseeker support (Other ethnicities) - Southland",
+        "units": "Number"
+      },
+     {
+        "name": "Taranaki",
+        "title": "Number on jobseeker support (Other ethnicities) - Taranaki",
+        "units": "Number"
+      },
+     {
+        "name": "Tasman",
+        "title": "Number on jobseeker support (Other ethnicities) - Tasman",
+        "units": "Number"
+      },
+      {
+        "name": "Waikato",
+        "title": "Number on jobseeker support (Other ethnicities) - Waikato",
+        "units": "Number"
+      },
+      {
+        "name": "Wellington",
+        "title": "Number on jobseeker support (Other ethnicities) - Wellington",
+        "units": "Number"
+      },
+       {
+        "name": "West Coast",
+        "title": "Number on jobseeker support (Other ethnicities) - West Coast",
+        "units": "Number"
+      },
+       {
+        "name": "Other",
+        "title": "Number on jobseeker support (Other ethnicities) - Other",
+        "units": "Number"
+      }
+       
+    ]
+  },
+  {
+    "class": "Social",
+    "indicator_name": "Number of recipients of CIRP by age group",
+    "type": "Income relief payment",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_horizontal_bar",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+   
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Number of recipients of CIRP by age group",
+        "units": "Number"
+      }
+    ]
+  },
+  {
+    "class": "Social",
+    "indicator_name": "Number of recipients of CIRP by region",
+    "type": "Income relief payment",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_horizontal_bar",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+   
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Number of recipients of CIRP by region",
+        "units": "Number"
+      }
+    ]
+  } ,
+  {
+    "class": "Social",
+    "indicator_name": "Amount of wage subsidy refunds received",
+    "type": "Wage subsidy assistance",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "Amount of wage subsidy refunds received",
+        "title": "Amount of wage subsidy refunds received (cumulative)",
+        "units": "$"
+      }
+    ]
+  }
+  ,
+  {
+    "class": "Social",
+    "indicator_name": "Number of wage subsidy refunds received",
+    "type": "Wage subsidy assistance",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "Number of wage subsidy refunds received",
+        "title": "Number of wage subsidy refunds received (cumulative)",
+        "units": "Number"
+      }
+    ]
+  }
+  ,
+  {
+    "class": "Social",
+    "indicator_name": "Amount of wage subsidy extension paid",
+    "type": "Wage subsidy extension",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "Amount of wage subsidy extension paid",
+        "title": "Amount of wage subsidy extension paid (cumulative)",
+        "units": "$"
+      }
+    ]
+  }
+  ,
+  {
+    "class": "Social",
+    "indicator_name": "Number of jobs associated with a paid applicaton",
+    "type": "Wage subsidy extension",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "Number of jobs associated with a paid applicaton",
+        "title": "Number of jobs associated with a paid applicaton for wage subsidy extension (cumulative)",
+        "units": "Number"
+      }
+    ]
+  },
   
+
+{
+  "class": "Economic",
+  "indicator_name": "Student visa",
+  "type": "Visa",
+  "source": "Ministry of Business, Innovation and Employment",
+  "plot_function": "get_time_series_plot",
+  "international": false,
+  "include_date_slider": true,
+  "default_lower_range": "2018-02-01",
+  "source_url": "https://mbienz.shinyapps.io/migration_data_explorer/",
+  "download": true,
+  
+  "groups": [
+    {
+      "name": "Total",
+      "title": "Total number of people on student visa",
+      "units": "Number"
+    },
+    {
+      "name": "Dependant",
+      "title": "Number of people on dependant visa",
+      "units": "Number"
+    },
+    {
+      "name": "Exchange student",
+      "title": "Number of people on exchange student visa",
+      "units": "Number"
+    },  {
+      "name": "Fee paying",
+      "title": "Number of people on fee paying students visa",
+      "units": "Number"
+    },  {
+      "name": "Other",
+      "title": "Number of people on other student visa",
+      "units": "Number"
+    }
+    
+    ]
+}
+,
+{
+  "class": "Economic",
+  "indicator_name": "Work visa",
+  "type": "Visa",
+  "source": "Ministry of Business, Innovation and Employment",
+  "plot_function": "get_time_series_plot",
+  "international": false,
+  "include_date_slider": true,
+  "default_lower_range": "2018-02-01",
+  "source_url": "https://mbienz.shinyapps.io/migration_data_explorer/",
+  "download": true,
+  
+  "groups": [
+     {
+      "name": "Total",
+      "title": "Total number of people on work visa",
+      "units": "Number"
+    }, 
+    {
+      "name": "Essential skills",
+      "title": "Number of people on essential skills visa",
+      "units": "Number"
+    },  
+    {
+      "name": "Family",
+      "title": "Number of people on family visa",
+      "units": "Number"
+    },  
+    {
+      "name": "Recognised seasonal employer",
+      "title": "Number of people on recognised seasonal employer visa",
+      "units": "Number"
+    } ,  
+    {
+      "name": "Working holiday scheme",
+      "title": "Number of people on working holiday scheme visa",
+      "units": "Number"
+    },  
+    
+    {
+      "name": "Other",
+      "title": "Number of people on other visa",
+      "units": "Number"
+    }
+    
+    
+    ]
+},
+
+    {
+    "class": "Economic",
+    "indicator_name": "Daily border crossings (by port) - departures",
+    "type": "Travel",
+    "source": "New Zealand Customs Service",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    "default_lower_range": "2019-01-01",
+    "download": true,
+    "caveats": "Daily arrivals and departures data are based solely on border-crossings into and out of New Zealand, and do not incorporate arrival card information. These data are provisional and subject to revision during the full process of producing international travel statistics.",
+    "groups": [
+       {
+        "name": "Auckland",
+        "title": "Daily border crossings for all passports (Auckland airport) - departures",
+        "units": "Number"
+      },
+     
+      {
+        "name": "Christchurch",
+        "title": "Daily border crossings for all passports (Christchurch airport) - departures",
+        "units": "Number"
+      },
+      {
+        "name": "Queenstown",
+        "title": "Daily border crossings for all passports (Queenstown airport) - departures",
+        "units": "Number"
+      },
+       {
+        "name": "Wellington",
+        "title": "Daily border crossings for all passports (Wellington airport)- departures",
+        "units": "Number"
+      },
+      {
+        "name": "Other",
+        "title": "Daily border crossings for all passports (other ports) - departures",
+        "units": "Number"
+      }
+    ]
+  },
+  {
+    "class": "Economic",
+    "indicator_name": "Daily border crossings (by port) - arrivals",
+    "type": "Travel",
+    "source": "New Zealand Customs Service",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    "default_lower_range": "2019-01-01",
+    "download": true,
+    "caveats": "Daily arrivals and departures data are based solely on border-crossings into and out of New Zealand, and do not incorporate arrival card information. These data are provisional and subject to revision during the full process of producing international travel statistics.",
+    "groups": [
+       {
+        "name": "Auckland",
+        "title": "Daily border crossings for all passports (Auckland airport) - arrivals",
+        "units": "Number"
+      },
+     
+      {
+        "name": "Christchurch",
+        "title": "Daily border crossings for all passports (Christchurch airport) - arrivals",
+        "units": "Number"
+      },
+      {
+        "name": "Queenstown",
+        "title": "Daily border crossings for all passports (Queenstown airport) - arrivals",
+        "units": "Number"
+      },
+       {
+        "name": "Wellington",
+        "title": "Daily border crossings for all passports (Wellington airport) - arrivals",
+        "units": "Number"
+      },
+      {
+        "name": "Other",
+        "title": "Daily border crossings for all passports (other ports) - arrivals",
+        "units": "Number"
+      }
+    ]
+  }
 ]
