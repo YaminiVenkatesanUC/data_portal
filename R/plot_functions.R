@@ -240,8 +240,6 @@ get_unstacked_horizontal_bar <- function(data, input, indicator_definition) {
   get_bar_chart(data, input, indicator_definition, type = "bar", rotation = 0, stacking = NULL)
 }
 
-
-
 get_time_series_plot_with_errors <- function(data_object, input, indicator_definition, type = "line", stacking = "normal") {
   group_index <- which(sapply(indicator_definition$groups, function(x) x$name) == input$line_selector)
   if (length(group_index) == 0) {
@@ -379,31 +377,18 @@ get_time_series_plot_with_errors <- function(data_object, input, indicator_defin
   return (plot)
 }
 
-
-# no idea how to make this work yet :)
-
-# get_stacked_bar_chart_with_errors <- function(data, input, indicator_definition) {
-#   get_time_series_plot_with_errors(data, input, indicator_definition, type = "column")
-# }
-
-
 get_unstacked_bar_chart_with_errors <- function(data, input, indicator_definition) {
   get_time_series_plot_with_errors(data, input, indicator_definition, type = "column", stacking = NULL)
 }
-
-
 
 plot_functions <- list(
   get_time_series_plot = get_time_series_plot,
   get_time_series_plot_with_errors = get_time_series_plot_with_errors,
   get_stacked_bar_chart = get_stacked_bar_chart,
-  #  get_stacked_bar_chart_with_errors = get_stacked_bar_chart_with_errors, # when it works :(
   get_unstacked_bar_chart = get_unstacked_bar_chart,
   get_unstacked_bar_chart_with_errors = get_unstacked_bar_chart_with_errors,
   get_vertical_bar = get_vertical_bar,
   get_horizontal_bar = get_horizontal_bar,
   get_unstacked_horizontal_bar = get_unstacked_horizontal_bar,
   get_unstacked_vertical_bar = get_unstacked_vertical_bar
-  
 )
-

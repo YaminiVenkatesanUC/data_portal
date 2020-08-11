@@ -64,16 +64,6 @@ data_frame_to_data_object_helper_error <- function(directory, config, data) {
   return (data_object_list)
 }
 
-
-
-
-
-
-
-
-
-
-
 render_title <- function(text) {
   return (gsub(" - ", " \U2012 ", text))
 }
@@ -154,7 +144,6 @@ get_indicator_list <- function(
   return (result)
 }
 
-
 get_type_list <- function(
   indicators,
   class,
@@ -182,7 +171,6 @@ expand_data_definition_group_names <- function(data_definition) {
   }
   return (data_definition)
 }
-
 
 get_definition_parameter <- function(parameter, indicator_definition, group_definition) {
   if (!is.null(group_definition[[parameter]])) {
@@ -226,7 +214,6 @@ create_source_text_only <- function(buttonText, id) {
   return (output)
 }
 
-
 create_caveat_box <- function(buttonText, id) {
   class <- "class=\"hidden-xs\""
   buttonClass <- "class=\"btn btn-default\""
@@ -241,7 +228,6 @@ create_caveat_box <- function(buttonText, id) {
   )
   return (output)
 }
-
 
 # Similar to get_normalisation_factor below, but for a single
 #   value

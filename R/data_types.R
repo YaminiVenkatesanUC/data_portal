@@ -26,10 +26,6 @@ TimeSeries <- R6Class("TimeSeries", list(
   }
 ))
 
-
-
-
-
 TimeSeriesError <- R6Class("TimeSeriesError", list(
   dates = NULL,
   values = NULL,
@@ -42,8 +38,6 @@ TimeSeriesError <- R6Class("TimeSeriesError", list(
     self$initialize_from_args(...)
     
   },
-  
-  
   initialize_from_args = function(data, value_names, update_date) {
     self$dates = data$Parameter
     self$values <- as.data.frame(
@@ -65,24 +59,6 @@ TimeSeriesError <- R6Class("TimeSeriesError", list(
     return (output)
   }
 ))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 BarChart <- R6Class("BarChart", list(
   categories = NULL,

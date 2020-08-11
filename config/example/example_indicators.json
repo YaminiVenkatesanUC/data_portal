@@ -45,8 +45,7 @@
         }
     ]
   },
-  
-    {
+  {
     "class": "Example",
     "type": "Example type",
     "indicator_name": "CSV error bar example - from margin of error",
@@ -63,8 +62,7 @@
         }
     ]
   },
-	
-      {
+  {
     "class": "Example",
     "type": "Example type",
     "indicator_name": "CSV error bar example - from error bounds",
@@ -81,8 +79,7 @@
         }
     ]
   },
-  
-      {
+  {
     "class": "Example",
     "type": "Example type",
     "indicator_name": "Excel error bar example - from margin of error",
@@ -99,8 +96,7 @@
         }
     ]
   },
-  
-        {
+  {
     "class": "Example",
     "type": "Example type",
     "indicator_name": "Excel error bar example - from error bounds",
@@ -117,7 +113,4 @@
         }
     ]
   }
-  
-  
-  
 ]

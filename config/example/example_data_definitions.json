@@ -26,8 +26,6 @@
         "load_function": "read_from_csv",
         "data_type": "TimeSeries"
       },
-	  
-	  
 	  {
        "class": "Example",
         "type": "Example type",
@@ -74,8 +72,7 @@
         "load_function": "read_from_excel_error",
         "data_type": "TimeSeriesError"
        },
-   
-  {
+       {
        "class": "Example",
         "type": "Example type",
         "indicator_name": "Excel error bar example - from error bounds",
