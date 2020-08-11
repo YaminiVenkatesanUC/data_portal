@@ -20,16 +20,16 @@ read_from_csv <- function(config, directory) {
   if (!is.null(config$input_units)) {
     data[,2:ncol(data)] <- mapply("*", data[,2:ncol(data)], config$input_units)
   }
-
+  
   if (!is.null(config$date_filter)) {
     date_filter <- eval(parse(text = config$date_filter))
     data <- data %>% filter(date_filter(Parameter))
   }
-
+  
   if (is.null(config$drop_na) || config$drop_na) {
     data <- drop_na(data)
   }
-
+  
   return (data_frame_to_data_object_helper(
     directory,
     config,
@@ -50,30 +50,30 @@ read_from_excel <- function(config, directory) {
     col_names = paste0("col_", min(cols_to_read):max(cols_to_read)),
     range = cell_limits(c(2 + skip, min(cols_to_read)), c(NA,max(cols_to_read)))
   )) %>%
-   dplyr::rename(
-    Parameter = paste0("col_", config$parameter_col)
+    dplyr::rename(
+      Parameter = paste0("col_", config$parameter_col)
     ) %>%
-  mutate(Parameter = parameter_transform(Parameter))
+    mutate(Parameter = parameter_transform(Parameter))
   data <- data[,cols_to_read - min(cols_to_read) + 1]
   
   if (!is.null(config$input_units)) {
     data[,2:ncol(data)] <- mapply("*", data[,2:ncol(data)], config$input_units)
   }
-
+  
   if (!is.null(config$date_filter)) {
     date_filter <- eval(parse(text = config$date_filter))
     data <- data %>% filter(date_filter(Parameter))
   }
-
+  
   if (is.null(config$drop_na) || config$drop_na) {
     data <- drop_na(data)
   }
-
+  
   return (data_frame_to_data_object_helper(
     directory,
     config,
     data %>% arrange(Parameter)
-    ))
+  ))
 }
 
 read_border_crossing_data <- function(config, directory, data_col = 4) {
@@ -87,7 +87,7 @@ read_border_crossing_data <- function(config, directory, data_col = 4) {
     Date = paste0("col_", config$date_col)
   ) %>%
     mutate(Date = ymd(Date))
-
+  
   data <- data[,c(1, data_col)] %>%
     mutate(year = year(Date)) %>%
     mutate(day = yday(Date)) %>%
@@ -97,7 +97,7 @@ read_border_crossing_data <- function(config, directory, data_col = 4) {
   
   output <- left_join(output, data %>% filter(year == 2019) %>% select(c("day", "col_")), by = c("day"), suffix = c("1", "2"))
   output <- filter(output, !is.na(col_1) & !is.na(col_2))
-
+  
   return (data_frame_to_data_object_helper(
     directory,
     config,
@@ -117,7 +117,7 @@ read_monetary_policy_file <- function(config, directory) {
     col_names = paste0("col_", min(cols_to_read):max(cols_to_read)),
     range = cell_limits(c(2, min(cols_to_read)), c(NA,max(cols_to_read)))
   ))
-
+  
   return (data_frame_to_data_object_helper(
     directory,
     config,
@@ -134,7 +134,7 @@ read_traffic_data <- function(config, directory) {
     col_names = paste0("col_", min(cols_to_read):max(cols_to_read)),
     range = cell_limits(c(2, min(cols_to_read)), c(NA,max(cols_to_read)))
   ))
-
+  
   if(!is.null(config$region)){
     data <- data %>% filter(col_3 == config$region) %>%
       select(Parameter = col_1, everything(),-col_4) %>%
@@ -142,7 +142,7 @@ read_traffic_data <- function(config, directory) {
       group_by(Parameter, col_2, col_3) %>%
       summarise(col_5 = sum(col_5)) %>%
       spread(col_2, col_5)
-
+    
     col_names =c("Parameter", paste0("col_", 2:ncol(data)))
     colnames(data) <- col_names
     data <- data %>%
@@ -165,7 +165,7 @@ read_global_cases_file <- function(config, directory) {
     col_names = paste0("col_", min(cols_to_read):max(cols_to_read)),
     range = cell_limits(c(2, min(cols_to_read)), c(NA,max(cols_to_read)))
   ))
-
+  
   if (!is.null(config$region)) {
     data<- data %>%
       filter(col_3==config$region) %>%
@@ -174,7 +174,7 @@ read_global_cases_file <- function(config, directory) {
       group_by(Parameter, col_2, col_3) %>%
       summarise(col_4 = sum(col_4)) %>%
       spread(col_2, col_4)
-
+    
     col_names =c("Parameter", paste0("col_", 2:ncol(data)))
     colnames(data) <- col_names
   } else {
@@ -201,10 +201,10 @@ petrol_read_file <- function(config, directory) {
     col_names = TRUE,
     .name_repair = "minimal"
   ))
-
+  
   data <-data[names(data) != ""]
   names(data)[1:2] <- c("Company", "Type")
-
+  
   data <- data %>%
     filter(!is.na(Company) & !is.na(Type)) %>%
     pivot_longer(cols = 3:ncol(data), names_to = "date") %>%
@@ -213,10 +213,10 @@ petrol_read_file <- function(config, directory) {
   output <- data.frame(Parameter = unique(data$Parameter), stringsAsFactors = FALSE) %>% arrange()
   for (i in 1:length(config$fuel_type)) {
     output[[paste("col", i)]] <- (data %>%
-      filter(Type == config$fuel_type[[i]] & Company == config$company_name[[i]]) %>%
-      arrange(Parameter))$value
+                                    filter(Type == config$fuel_type[[i]] & Company == config$company_name[[i]]) %>%
+                                    arrange(Parameter))$value
   }
-
+  
   return (data_frame_to_data_object_helper(
     directory,
     config,
@@ -258,7 +258,7 @@ read_trade_data <- function(config, directory) {
       arrange(Parameter)
     output_group[[group_name]] <- TimeSeries$new(output, unique(data_group$Year), update_date)
   }
-
+  
   return (output_group)
 }
 
@@ -293,7 +293,7 @@ chorus_load_function <- function(config, directory) {
   data <- aggregate(total ~ date, data = data, FUN = sum)
   data$Parameter <- ymd(paste0(data$date))
   data <- data %>% arrange(Parameter) %>% select("Parameter", "total")
-
+  
   return (data_frame_to_data_object_helper(
     directory,
     config,
@@ -303,7 +303,7 @@ chorus_load_function <- function(config, directory) {
 
 example_web_service_load_function <- function(data, indicator, group_name) {
   data_type <- get_indicator_parameter("data_type", indicator, group_name)
-
+  
   data_object <- DATA_TYPES[[data_type]]$new(
     data %>%
       filter(series_name == group_name) %>%
@@ -314,7 +314,7 @@ example_web_service_load_function <- function(data, indicator, group_name) {
     group_name,
     as.Date(now())
   )
-
+  
   return (data_object)
 }
 
@@ -327,25 +327,25 @@ read_employment_data <- function(config, directory) {
     filter(
       # Subject %in% load_parameters$Subject &
       #   Group %in% load_parameters$Group &
-        Series_title_1 %in% load_parameters$Series_title_1 &
-          substr(Series_reference, 4, 4) == "M"
-        # Series_title_2 %in% load_parameters$Series_title_2 &
-        # Series_title_3 %in% load_parameters$Series_title_3
+      Series_title_1 %in% load_parameters$Series_title_1 &
+        substr(Series_reference, 4, 4) == "M"
+      # Series_title_2 %in% load_parameters$Series_title_2 &
+      # Series_title_3 %in% load_parameters$Series_title_3
     ) %>%
     mutate(
       Parameter = ymd(paste0(str_pad(as.character(Period), 7, side = "right", pad = "0"), ".01")),
       Data_value = Data_value * (10 ** Magnitude)
     ) %>%
     select("Parameter", "Series_title_2", "Series_title_3", "Data_value")
-
+  
   output_group <- list()
   update_date <- as.Date(file.info(paste0(directory, config$filename))$mtime, tz = "NZ")
-
+  
   for (series_title_2 in unique(data$Series_title_2)) {
     for (series_title_3 in unique(data$Series_title_3)) {
       data_group <- data %>%
         filter(
-            Series_title_2 == series_title_2 &
+          Series_title_2 == series_title_2 &
             Series_title_3 == series_title_3
         ) %>%
         select(c("Parameter", "Data_value")) %>%
@@ -355,7 +355,7 @@ read_employment_data <- function(config, directory) {
       output_group[[group_name]] <- TimeSeries$new(data_group, group_name, update_date)
     }
   }
-
+  
   return (output_group)
 }
 
@@ -374,7 +374,7 @@ read_filled_jobs_by_gender <- function(config, directory) {
   names(data)[[2]] <- "group_column"
   output_group <- list()
   update_date <- as.Date(file.info(paste0(directory, config$filename))$mtime, tz = "NZ")
-
+  
   for (industry_group in unique(data$group_column)) {
     data_group <- data %>%
       filter(
@@ -382,11 +382,11 @@ read_filled_jobs_by_gender <- function(config, directory) {
       ) %>%
       select(c("Parameter", "Value", "Sex")) %>%
       pivot_wider(names_from = Sex, values_from = c("Value"))
-
+    
     group_name <- industry_group
     output_group[[group_name]] <- TimeSeries$new(data_group, names(data_group)[2:3], update_date)
   }
-
+  
   return (output_group)
 }
 
@@ -447,7 +447,7 @@ read_filled_jobs_by_industry_or_region <- function(config, directory) {
     group_name <- industry_group
     output_group[[group_name]] <- TimeSeries$new(data_group, group_name, update_date)
   }
-
+  
   return (output_group)
 }
 
@@ -485,6 +485,170 @@ read_employment_paid_jobs_data <- function(config, directory) {
 }
 
 
+read_from_csv_error <- function(config, directory) {
+  parameter_transform <- eval(parse(text = config$parameter_transform))
+  skip <- 0
+  if (!is.null(config$skip)) {
+    skip <- config$skip
+  }
+  
+  data <- as.data.frame(read.csv(
+    paste0(directory, config$filename),
+    skip = skip
+  ))
+  names(data) <- paste0("col_", 1:ncol(data))
+  
+  data <- data %>%
+    dplyr::rename(
+      Parameter = paste0("col_", config$parameter_col)
+    ) %>%
+    mutate(Parameter = parameter_transform(Parameter)) 
+  
+  
+  if (!is.null(config$error_col)) {
+    
+    # don't judge this method too harshly, I am very sleepy
+    stopifnot(length(config$value_col) == length(config$error_col))
+    
+    data_lower <- data %>% select(paste0("col_", config$value_col)) -
+      data %>% select(paste0("col_", config$error_col))
+    names(data_lower) <- paste0("col_", config$value_col, "_lower")
+    
+    
+    data_upper <- data %>% select(paste0("col_", config$value_col)) +
+      data %>% select(paste0("col_", config$error_col))
+    names(data_upper) <- paste0("col_", config$value_col, "_upper")
+    
+    data <- cbind(data, data_lower, data_upper)
+    
+  } else if ((!is.null(config$lower_bound_col) && !is.null(config$upper_bound_col))) {
+    
+    stopifnot(length(config$value_col) == length(config$lower_bound_col),
+              length(config$value_col) == length(config$upper_bound_col))
+    
+    data <- data %>%
+      
+      rename_with(~paste0("col_", config$value_col, "_lower"), unlist(config$lower_bound_col)) %>%
+      rename_with(~paste0("col_", config$value_col, "_upper"), unlist(config$upper_bound_col))
+    
+  }
+  
+  data <- data %>% select("Parameter", 
+                          paste0("col_", config$value_col),
+                          paste0("col_", config$value_col, "_lower"),
+                          paste0("col_", config$value_col, "_upper"))
+  
+  
+  if (!is.null(config$input_units)) {
+    data[,2:ncol(data)] <- mapply("*", data[,2:ncol(data)], config$input_units)
+  }
+  
+  if (!is.null(config$date_filter)) {
+    date_filter <- eval(parse(text = config$date_filter))
+    data <- data %>% filter(date_filter(Parameter))
+  }
+  
+  if (is.null(config$drop_na) || config$drop_na) {
+    data <- drop_na(data)
+  }
+  
+  return (data_frame_to_data_object_helper_error(
+    directory,
+    config,
+    data %>% arrange(Parameter)
+  ))
+}
+
+
+
+read_from_excel_error <- function(config, directory) {
+  parameter_transform <- eval(parse(text = config$parameter_transform))
+  skip <- 0
+  if (!is.null(config$skip)) {
+    skip <- config$skip
+  }
+  
+  
+  if (!is.null(config$error_col)) {
+    cols_to_read <-  c(config$parameter_col, 
+                       unlist(config$value_col),
+                       unlist(config$error_col)) 
+  } else {
+    cols_to_read <-  c(config$parameter_col, 
+                       unlist(config$value_col), 
+                       unlist(config$lower_bound_col),
+                       unlist(config$upper_bound_col))
+  }
+  
+  
+  data <- as.data.frame(read_excel(
+    paste0(directory, config$filename),
+    sheet = config$sheet_number,
+    col_names = paste0("col_", min(cols_to_read):max(cols_to_read)),
+    range = cell_limits(c(2 + skip, min(cols_to_read)), c(NA,max(cols_to_read)))
+  )) %>%
+    dplyr::rename(
+      Parameter = paste0("col_", config$parameter_col)
+    ) %>%
+    mutate(Parameter = parameter_transform(Parameter))
+  #  data <- data[,cols_to_read - min(cols_to_read) + 1]
+  
+  
+  
+  if (!is.null(config$error_col)) {
+    
+    # don't judge this method too harshly, I am very sleepy
+    stopifnot(length(config$value_col) == length(config$error_col))
+    
+    data_lower <- data %>% select(paste0("col_", config$value_col)) -
+      data %>% select(paste0("col_", config$error_col))
+    names(data_lower) <- paste0("col_", config$value_col, "_lower")
+    
+    
+    data_upper <- data %>% select(paste0("col_", config$value_col)) +
+      data %>% select(paste0("col_", config$error_col))
+    names(data_upper) <- paste0("col_", config$value_col, "_upper")
+    
+    data <- cbind(data, data_lower, data_upper)
+    
+  } else if ((!is.null(config$lower_bound_col) && !is.null(config$upper_bound_col))) {
+    
+    stopifnot(length(config$value_col) == length(config$lower_bound_col),
+              length(config$value_col) == length(config$upper_bound_col))
+    
+    data <- data %>%
+      rename_with(~paste0("col_", config$value_col, "_lower"), unlist(config$lower_bound_col)) %>%
+      rename_with(~paste0("col_", config$value_col, "_upper"), unlist(config$upper_bound_col))
+    
+  }
+  
+  data <- data %>% select("Parameter", 
+                          paste0("col_", config$value_col),
+                          paste0("col_", config$value_col, "_lower"),
+                          paste0("col_", config$value_col, "_upper"))
+  
+  
+  
+  
+  if (!is.null(config$input_units)) {
+    data[,2:ncol(data)] <- mapply("*", data[,2:ncol(data)], config$input_units)
+  }
+  
+  if (!is.null(config$date_filter)) {
+    date_filter <- eval(parse(text = config$date_filter))
+    data <- data %>% filter(date_filter(Parameter))
+  }
+  
+  if (is.null(config$drop_na) || config$drop_na) {
+    data <- drop_na(data)
+  }
+  
+  return (data_frame_to_data_object_helper_error(
+    directory,
+    config,
+    data %>% arrange(Parameter)
+  ))
+}
 
 load_functions <- list(
   read_from_csv = read_from_csv,
@@ -502,5 +666,7 @@ load_functions <- list(
   read_filled_jobs_by_industry_or_region = read_filled_jobs_by_industry_or_region,
   read_employment_paid_jobs_data = read_employment_paid_jobs_data,
   read_filled_jobs_by_gender = read_filled_jobs_by_gender,
-  read_filled_jobs_by_age = read_filled_jobs_by_age
+  read_filled_jobs_by_age = read_filled_jobs_by_age,
+  read_from_csv_error = read_from_csv_error,
+  read_from_excel_error = read_from_excel_error
 )
