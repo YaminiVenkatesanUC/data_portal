@@ -17,8 +17,6 @@ download_data_server <- function(input, output, session, download_modal_vars) {
     modalDialog(
       useShinyjs(),
       span(h3(strong(paste(CONFIG$title, 'data download')))),
-      p(paste("Last updated:", get_most_recent_update_date(DATA_STORE))),
-      includeHTML(CONFIG$download_modal_html),
       selectizeInput(
         inputId = ns("indicator_selector"),
         label = "Select indicators",
@@ -27,7 +25,7 @@ download_data_server <- function(input, output, session, download_modal_vars) {
         multiple = TRUE,
         width = '100%',
         options = list(
-          placeholder = 'All indicators',
+          placeholder = 'Download all indicators (or click here to search and select)',
           onInitialize = I('function() { this.setValue(""); }'),
           'plugins' = list('remove_button'),
           'persist' = FALSE
@@ -35,11 +33,13 @@ download_data_server <- function(input, output, session, download_modal_vars) {
       ),
       radioButtons(
         ns("pick_range"),
-        "Select a range",
-        c("Last month" = "last_month", "Last year" = "last_year", "Full range" = "full_range"),
+        "Select a date range",
+        c("Last week" = "last_week", "Last month" = "last_month", "Last year" = "last_year", "Full range" = "full_range"),
         selected = "full_range",
         inline = TRUE
       ),
+      p(paste("Last updated:", get_most_recent_update_date(DATA_STORE))),
+      includeHTML(CONFIG$download_modal_html),
       footer = tagList(
         modalButton("Close"),
         #actionButton(ns("ok"), "Download"),
@@ -78,6 +78,7 @@ download_data_server <- function(input, output, session, download_modal_vars) {
   observe({
     range <- get_date_range()
     state$lower_date <- case_when(
+      range == "last_week" ~ today() - weeks(1),
       range == "last_month" ~ today() - months(1),
       range == "last_year" ~today() - years(1),
       range == "full_range" ~ download_modal_vars$min,
