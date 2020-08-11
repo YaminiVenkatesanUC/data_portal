@@ -99,10 +99,6 @@ download_data_server <- function(input, output, session, download_modal_vars) {
     }
   })
 
-  country_filter <- function(dataset, countries) {
-    return (dataset[dataset$country %in% countries,])
-  }
-
   output$downloadData <- downloadHandler(
     filename = function() {
       paste("covid_19_data_portal", ".csv", sep = "")
@@ -110,16 +106,12 @@ download_data_server <- function(input, output, session, download_modal_vars) {
     content = function(file) {
       
       shiny::withProgress(
-        message = paste0("Downloading", input$dataset, " Data"),
+        message = paste0("Preparing indicators for download - this may take a moment"),
         value = 0,
         {
           ns <- session$ns
           disable(ns("downloadData"))
-          shiny::incProgress(1/10)
-          Sys.sleep(1)
-          shiny::incProgress(5/10)
           selected_keys <- gsub(" - ", "_", input$indicator_selector)
-          print(selected_keys)
           data <- get_download_csv(
             get_data_store_filtered(selected_keys),
             get_indicator_definitions_filtered(selected_keys),

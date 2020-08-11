@@ -18,8 +18,11 @@ get_download_csv <- function(data_store, indicator_definitions, date_range = NUL
     units = c(),
     date_last_updated = c()
   )
-
+  counter <- 0
+  counter_width <- length(downloadable_indicators)
   for (item_name in downloadable_indicators) {
+    shiny::setProgress(counter / counter_width)
+    counter <- counter + 1
     item <- indicator_definitions[[item_name]]
     
     sub_series <- data.frame(

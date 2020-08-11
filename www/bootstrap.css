@@ -1,8 +1,19 @@
+.shiny-notification {
+  height: 100px;
+  width: 800px;
+  position:fixed;
+  top: calc(50% - 50px);
+  left: calc(50% - 400px);
+}
+
+.progress-bar {
+    background-color: var(--custom-color);
+}
+
 .date_range_selected {
   background-color: #ffffff;
   color: white;
 }
-
 
 .navbar-default {
     background-color: #ffffff;
