@@ -10,6 +10,7 @@ library(tidyr)
 library(stringr)
 library(jsonlite)
 library(foreach)
+library(data.table)
 
 source("R/data_types.R")
 source("R/core/type_checks.R")

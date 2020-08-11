@@ -53,7 +53,7 @@ get_time_series_plot <- function(data_object, input, indicator_definition, type 
   }
 
     for (i in 1:length(data_object$value_names)) {
-      time_series_data <- data_object$values[,i][time_range_index]
+      time_series_data <- (data_object$values[,..i][[1]])[time_range_index]
       plot <- plot %>% hc_add_series(
         round(time_series_data / norm_factor_and_unit$factor, norm_factor_and_unit$digits),
         name = data_object$value_names[[i]],

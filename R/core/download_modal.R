@@ -140,13 +140,26 @@ download_data_server <- function(input, output, session, download_modal_vars) {
       paste("covid_19_data_portal", ".csv", sep = "")
     },
     content = function(file) {
-      data <- get_download_csv(
-        get_data_store_filtered(input$indicator_selector),
-        get_indicator_definitions_filtered(input$indicator_selector),
-        c(state$lower_date, state$upper_date)
+      
+      shiny::withProgress(
+        message = paste0("Downloading", input$dataset, " Data"),
+        value = 0,
+        {
+          ns <- session$ns
+          disable(ns("downloadData"))
+          shiny::incProgress(1/10)
+          Sys.sleep(1)
+          shiny::incProgress(5/10)
+          data <- get_download_csv(
+            get_data_store_filtered(input$indicator_selector),
+            get_indicator_definitions_filtered(input$indicator_selector),
+            c(state$lower_date, state$upper_date)
+          )
+          data <- apply(data,2,as.character)
+          enable(ns("downloadData"))
+          write.csv(data, file, row.names = FALSE)
+        }
       )
-      data <- apply(data,2,as.character)
-      write.csv(data, file, row.names = FALSE)
     }
   )
 }
