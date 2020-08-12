@@ -204,7 +204,7 @@ get_bar_chart <- function(data_object, input, indicator_definition, type, rotati
       line = list(animation = FALSE),
       column = list(
         dataLabels = list(enabled = FALSE),
-        stacking = "normal",
+        stacking = stacking,
         animation = FALSE,
         enableMouseTracking = TRUE),
       style = list(fontSize = "30px")
