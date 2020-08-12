@@ -1037,7 +1037,7 @@
     "include_date_slider": true,
     "default_lower_range": "2020-01-01",
     "source_url": "https://www.emi.ea.govt.nz/",
-    "download": true,
+    "download": false,
     "groups": [
       {
         "name": "New Zealand",
@@ -4130,7 +4130,7 @@
     "plot_function": "get_time_series_plot",
     "international": false,
     "include_date_slider": true,
-    "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-paid-jobs-week-ended-5-july-2020",
+    "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-paid-jobs-week-ended-12-july-2020",
     "download": true,
    
     "groups": [
@@ -5147,4 +5147,6 @@
       }
     ]
   }
+ 
+  
 ]
