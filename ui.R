@@ -49,7 +49,7 @@ ui <- fluidPage(
   tags$script(
     HTML(
       "var header = $('.navbar-nav');
-        header.append('", createHeaderButton("Download all data", 10, "download_data-show", "btn-modal"), "');
+        header.append('", createHeaderButton("Download data", 10, "download_data-show", "btn-modal"), "');
         header.append('", createHeaderButton("About", 170, "about_dialog-show", "btn-details"), "');"
     )
   )
