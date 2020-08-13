@@ -55,6 +55,10 @@ for (item in indicator_definitions_raw) {
 
 INDICATOR_CLASSES <- get_class_names(indicator_definitions)
 
+DOWNLOADABLE_INDICATORS <- names(indicator_definitions)[
+  as.vector(sapply(indicator_definitions, function(x) (!is.null(x$download) && x$download)))
+  ]
+
 if (!is.null(CONFIG$production) & !CONFIG$production) {
   warnings(DEV_MODE_WARNING)
   DATA_STORE <- load_to_data_store(CONFIG)

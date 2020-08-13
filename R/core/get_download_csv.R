@@ -58,11 +58,12 @@ get_download_csv <- function(data_store, indicator_definitions, date_range = NUL
     sub_series$indicator_name <- gsub(" \U2012 ", " - ", item$indicator_name)
     sub_series$class <- item$class
     sub_series$category <- item$type
+    sub_series <- mutate(sub_series, parameter = as.character(parameter))
     
     output <- rbind(sub_series, output)
   }
 
   output <- output %>% select(c("class", "category", "indicator_name", "series_name",  "sub_series_name", "parameter", "value", "units", "date_last_updated"))
-
+  
   return (output)
 }

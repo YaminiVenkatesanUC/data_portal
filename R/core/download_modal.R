@@ -19,7 +19,7 @@ download_data_server <- function(input, output, session, download_modal_vars) {
       selectizeInput(
         inputId = ns("indicator_selector"),
         label = "Select indicators",
-        choices = gsub("_", " - ", names(indicator_definitions)),
+        choices = setNames(DOWNLOADABLE_INDICATORS,gsub("_", " - ", DOWNLOADABLE_INDICATORS)),
         selected = "select indicators from the list",
         multiple = TRUE,
         width = '100%',
@@ -111,7 +111,7 @@ download_data_server <- function(input, output, session, download_modal_vars) {
         {
           ns <- session$ns
           disable(ns("downloadData"))
-          selected_keys <- gsub(" - ", "_", input$indicator_selector)
+          selected_keys <- input$indicator_selector #gsub(" - ", "_", input$indicator_selector)
           data <- get_download_csv(
             get_data_store_filtered(selected_keys),
             get_indicator_definitions_filtered(selected_keys),
