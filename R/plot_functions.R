@@ -151,7 +151,12 @@ get_bar_chart <- function(data_object, input, indicator_definition, type, rotati
   }
   
   for (i in 1:length(data_object$value_names)) {
-    time_series_data <- data_object$values[,i]
+    if ("data.table" %in% class(data_object$values)) {
+      time_series_data <- (data_object$values[,..i][[1]])
+    } else {
+      time_series_data <- data_object$values[,i]
+    }
+    
     plot <- plot %>% hc_add_series(
       round(time_series_data / norm_factor_and_unit$factor, norm_factor_and_unit$digits),
       name = data_object$value_names[[i]],
@@ -159,6 +164,10 @@ get_bar_chart <- function(data_object, input, indicator_definition, type, rotati
       type = type,
       visible = visible[[i]]
     )
+    
+    
+    
+    
   }
   
   title <- group_definition$title
