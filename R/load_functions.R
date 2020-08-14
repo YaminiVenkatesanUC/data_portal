@@ -650,6 +650,44 @@ read_from_excel_error <- function(config, directory) {
   ))
 }
 
+
+
+electricity_grid_by_region_data <- function(config, directory){
+  
+  electricity_data<- as.data.frame(read_excel(
+    paste0(directory, config$filename),
+    sheet = config$sheet_number,
+    
+  ))
+  
+  
+  region_codes<- as.data.frame(read_excel(
+    paste0(directory, config$filename),
+    sheet = 2
+    
+  ))
+  
+  
+  data<-left_join(electricity_data, region_codes, by = "Region ID")%>%
+    mutate(`Period start`= ymd(`Period start`))%>%
+    group_by(`Regional Council`,`Period start`)%>%
+    summarise_if(is.numeric, sum, na.rm=T)%>%
+    spread(`Regional Council`, `Demand (GWh)`)
+  
+  
+  
+  col_names =c("Parameter", paste0("col_", 2:ncol(data)))
+  colnames(data) <- col_names
+  
+  return (data_frame_to_data_object_helper(
+    directory,
+    config,
+    data
+  ))
+  
+}
+
+
 load_functions <- list(
   read_from_csv = read_from_csv,
   read_from_excel = read_from_excel,
@@ -668,5 +706,6 @@ load_functions <- list(
   read_filled_jobs_by_gender = read_filled_jobs_by_gender,
   read_filled_jobs_by_age = read_filled_jobs_by_age,
   read_from_csv_error = read_from_csv_error,
-  read_from_excel_error = read_from_excel_error
+  read_from_excel_error = read_from_excel_error,
+  electricity_grid_by_region_data = electricity_grid_by_region_data
 )
