@@ -4075,7 +4075,7 @@
     ,
     {
         "class": "Social",
-        "indicator_name": "Number of jobs associated with a paid applicaton",
+        "indicator_name": "Number of jobs associated with a paid application",
         "type": "Wage subsidy extension",
         "parameter_col": 1,
         "parameter_transform": [

@@ -4961,7 +4961,7 @@
   ,
   {
     "class": "Social",
-    "indicator_name": "Number of jobs associated with a paid applicaton",
+    "indicator_name": "Number of jobs associated with a paid application",
     "type": "Wage subsidy extension",
     "source": "Ministry of Social Development",
     "plot_function": "get_time_series_plot",

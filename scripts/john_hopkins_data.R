@@ -1,4 +1,4 @@
-
+source("scripts/file_paths.R")
 library (RCurl)
 library(dplyr)
 library(ggplot2)
@@ -10,7 +10,7 @@ library(writexl)
 library(lubridate)
 
 
-output<- "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/"
+
 
 country<-c("Spain", "Italy","US",  "United Kingdom","Australia", "Canada", "Singapore" ,"China")
 
