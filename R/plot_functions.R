@@ -49,34 +49,34 @@ get_time_series_plot <- function(data_object, input, indicator_definition, type 
   } else {
     visible = rep(TRUE, length(data_object$value_names))
   }
-
-
-    for (i in 1:length(data_object$value_names)) {
-      time_series_data <- (data_object$values[,..i][[1]])[time_range_index]
-      plot <- plot %>% hc_add_series(
-        round(time_series_data / norm_factor_and_unit$factor, norm_factor_and_unit$digits),
-        name = data_object$value_names[[i]],
-        showInLegend = TRUE,
-        type = type,
-        visible = visible[[i]]
-      )
-    }
-
-    title <- group_definition$title
-
-    plot <- plot %>% hc_title(
-        text = render_title(title), style = list( color = "black", fontWeight = "bold", fontFamily = "Source Sans Pro")
-      )
-
-     y_label <- group_definition$units
-
-    plot <- hc_xAxis(
-      plot,
-      categories = categories,
-      title = list(text = year_label, style = list(fontSize = "20px", color = "black", fontFamily = "Source Sans Pro")),
-      labels = list(style = list(fontSize = "20px", color = "black", fontFamily = "Source Sans Pro")),
-      tickInterval = ceiling(length(categories)/ 8)
+  
+  
+  for (i in 1:length(data_object$value_names)) {
+    time_series_data <- (data_object$values[,..i][[1]])[time_range_index]
+    plot <- plot %>% hc_add_series(
+      round(time_series_data / norm_factor_and_unit$factor, norm_factor_and_unit$digits),
+      name = data_object$value_names[[i]],
+      showInLegend = TRUE,
+      type = type,
+      visible = visible[[i]]
     )
+  }
+  
+  title <- group_definition$title
+  
+  plot <- plot %>% hc_title(
+    text = render_title(title), style = list( color = "black", fontWeight = "bold", fontFamily = "Source Sans Pro")
+  )
+  
+  y_label <- group_definition$units
+  
+  plot <- hc_xAxis(
+    plot,
+    categories = categories,
+    title = list(text = year_label, style = list(fontSize = "20px", color = "black", fontFamily = "Source Sans Pro")),
+    labels = list(style = list(fontSize = "20px", color = "black", fontFamily = "Source Sans Pro")),
+    tickInterval = ceiling(length(categories)/ 8)
+  )
   
   tool_tip <- get_tool_tip(group_definition$units)
   plot <- plot %>%
@@ -169,16 +169,26 @@ get_bar_chart <- function(data_object, input, indicator_definition, type, rotati
   
   y_label <- group_definition$units
   
+  if (!is.null(group_definition$x_axis_label)) {
+    x_label <- group_definition$x_axis_label
+  } else {
+    x_label <- NULL
+  }
+  
   categories <- 
     if (label_suffix != "") {
       plot <- hc_xAxis(
         plot,
+        title = list(text = paste(x_label),
+                     style = list(fontSize = "20px",  color = "black", fontFamily = "Source Sans Pro")), 
         categories = categories,
         labels = list(style = list(fontSize = "14px", color = "black", fontFamily = "Source Sans Pro"), step = 1, rotation = rotation)
       )
     } else {
       plot <- hc_xAxis(
         plot,
+        title = list(text = paste(x_label),
+                     style = list(fontSize = "20px",  color = "black", fontFamily = "Source Sans Pro")), 
         categories = categories,
         labels = list(style = list(fontSize = "14px", color = "black", fontFamily = "Source Sans Pro"), step = 1, rotation = rotation)
       )

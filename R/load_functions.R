@@ -4,9 +4,10 @@ read_from_csv <- function(config, directory) {
   if (!is.null(config$skip)) {
     skip <- config$skip
   }
-  cols_to_read <- c(config$parameter_col, unlist(config$value_col))
+  
   data <- as.data.frame(read.csv(
-    paste0(directory, config$filename)
+    paste0(directory, config$filename),
+    skip = skip
   ))
   names(data) <- paste0("col_", 1:ncol(data))
   
@@ -30,12 +31,21 @@ read_from_csv <- function(config, directory) {
     data <- drop_na(data)
   }
   
+  if (is.null(config$order_parameter) || config$order_parameter) {
+    data <- data %>% arrange(Parameter)
+  }
+  
+  
   return (data_frame_to_data_object_helper(
     directory,
     config,
-    data %>% arrange(Parameter)
+    data 
   ))
 }
+
+
+
+
 
 read_from_excel <- function(config, directory) {
   parameter_transform <- eval(parse(text = config$parameter_transform))
@@ -69,10 +79,14 @@ read_from_excel <- function(config, directory) {
     data <- drop_na(data)
   }
   
+  if (is.null(config$order_parameter) || config$order_parameter) {
+    data <- data %>% arrange(Parameter)
+  }
+  
   return (data_frame_to_data_object_helper(
     directory,
     config,
-    data %>% arrange(Parameter)
+    data
   ))
 }
 
