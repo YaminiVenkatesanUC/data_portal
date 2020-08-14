@@ -2627,7 +2627,7 @@
     "international": false,
     "include_date_slider": true,
     "default_lower_range": "2019-01-30",
-    "source_url": "https://www.seek.co.nz/about/news/july-employment-report",
+    "source_url": "https://www.seek.co.nz/about/news/august-employment-report",
     "download": false,
     "groups": [
       {
@@ -5146,6 +5146,106 @@
         "units": "Number"
       }
     ]
+  }
+  ,
+  {
+    "class": "Economic",
+    "indicator_name": "Electricity grid demand by region",
+    "type": "Activity",
+    "source": "Electricity Authority (New Zealand)",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "include_date_slider": true,
+    "default_lower_range": "2020-01-01",
+    "source_url": "https://www.emi.ea.govt.nz/Wholesale/Reports/W_GD_C?DateFrom=20200326&DateTo=20200401&RegionType=POC&TimeScale=DAY&_rsdr=W1&_cw0=20200319&_si=_dr_DateFrom|20190814,_dr_DateTo|20200813,_dr_RegionType|POC,_dr_TimeScale|DAY,_dr__rsdr|L364D,v|4",
+    "caveats":"<p>1) Please note that these charts feature Stats NZ's mapping and interpretation of publicly available data as sourced from the Electricity Authority to 15 Regional Councils.</p> <p> 2) In some limited instances, a node associated with a region based network can fall outside of the regional council geographic boundary to which it has been attributed to in these charts.</p>",
+    "download": false,
+    "groups": [
+      {
+        "name": "Auckland",
+        "title": "Daily electricity grid demand (final pricing) - Auckland",
+        "units": "Gigawatt hours"
+      },
+      {
+        "name": "Bay of Plenty",
+        "title": "Daily electricity grid demand (final pricing) - Bay of Plenty",
+        "units": "Gigawatt hours"
+      },
+      {
+        "name": "Canterbury",
+        "title": "Daily electricity grid demand (final pricing) - Canterbury",
+        "units": "Gigawatt hours"
+      },
+      {
+        "name": "Gisborne",
+        "title": "Daily electricity grid demand (final pricing) - Gisborne",
+        "units": "Gigawatt hours"
+      },
+      
+      {
+        "name": "Hawke's Bay",
+        "title": "Daily electricity grid demand (final pricing) - Hawke's Bay",
+        "units": "Gigawatt hours"
+      },
+      {
+        "name": "Manawatū-Whanganui",
+        "title": "Daily electricity grid demand (final pricing) - Manawatū-Whanganui",
+        "units": "Gigawatt hours"
+      }
+      ,
+      {
+        "name": "Marlborough",
+        "title": "Daily electricity grid demand (final pricing) - Marlborough",
+        "units": "Gigawatt hours"
+      },
+      {
+        "name": "Northland",
+        "title": "Daily electricity grid demand (final pricing) - Northland",
+        "units": "Gigawatt hours"
+      },
+      {
+        "name": "Otago",
+        "title": "Daily electricity grid demand (final pricing) - Otago",
+        "units": "Gigawatt hours"
+      }
+      ,
+      {
+        "name": "Southland",
+        "title": "Daily electricity grid demand (final pricing) - Southland",
+        "units": "Gigawatt hours"
+      }
+      ,
+      {
+        "name": "Taranaki",
+        "title": "Daily electricity grid demand (final pricing) - Taranaki",
+        "units": "Gigawatt hours"
+      }
+      ,
+      {
+        "name": "Tasman/Nelson",
+        "title": "Daily electricity grid demand (final pricing) - Tasman/Nelson",
+        "units": "Gigawatt hours"
+      }
+       ,
+      {
+        "name": "Waikato",
+        "title": "Daily electricity grid demand (final pricing) - Waikato",
+        "units": "Gigawatt hours"
+      }
+      , 
+      {
+        "name": "Wellington",
+        "title": "Daily electricity grid demand (final pricing) - Wellington",
+        "units": "Gigawatt hours"
+      } , 
+      {
+        "name": "West Coast",
+        "title": "Daily electricity grid demand (final pricing) - West Coast",
+        "units": "Gigawatt hours"
+      }
+      
+      
+      ]
   }
  
 ]
