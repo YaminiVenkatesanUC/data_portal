@@ -4323,8 +4323,52 @@
          "Wellington",
          "West Coast"
         ]
+    },   
+    {
+      "class": "Wellbeing",
+      "type": "Social connection",
+      "indicator_name": "Staying connected with others",
+      "parameter_col": 2,
+      "order_parameter": false,
+      "value_col": 3,
+      "value_names": ["Percentage"],
+      "group_names": ["Percentage of respondents"],
+      "sheet_number": 1,
+      "filename": "Harriet/MOJ_pulse_survey_output.xlsx",
+      "parameter_transform": "function (x) x",
+      "load_function": "read_from_excel",
+      "data_type": "BarChart"
+    },
+    {
+      "class": "Wellbeing",
+      "type": "Crime and safety",
+      "indicator_name": "Safety travelling to and from essential services",
+      "parameter_col": 2,
+      "order_parameter": false,
+      "value_col": [3],
+      "value_names": ["Percentage"],
+      "group_names": ["Percentage of respondents"],
+      "sheet_number": 2,
+      "filename": "Harriet/MOJ_pulse_survey_output.xlsx",
+      "parameter_transform": "function (x) x",
+      "load_function": "read_from_excel",
+      "data_type": "BarChart",
+      "drop_na": false
+    },
+    {
+      "class": "Wellbeing",
+      "type": "Crime and safety",
+      "indicator_name": "COVID-19 related scams",
+      "parameter_col": 2,
+      "order_parameter": false,
+      "value_col": [3],
+      "value_names": ["Percentage"],
+      "group_names": ["Percentage of respondents"],
+      "sheet_number": 3,
+      "filename": "Harriet/MOJ_pulse_survey_output.xlsx",
+      "parameter_transform": "function (x) x",
+      "load_function": "read_from_excel",
+      "data_type": "BarChart"
     }
-
-
-
+  
 ]

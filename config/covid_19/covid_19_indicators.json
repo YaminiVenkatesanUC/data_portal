@@ -5246,6 +5246,62 @@
       
       
       ]
-  }
- 
+   },
+   {
+  	"class": "Wellbeing",
+  	"type": "Social connection",
+  	"indicator_name": "Staying connected with others",
+  	"source": "Ministry of Justice",
+  	"plot_function": "get_vertical_bar",
+  	"international": false,
+  	"source_url":"https://www.justice.govt.nz/justice-sector-policy/research-data/covid-19-justice-sector-survey/",
+  	"download": true,
+  	"groups": [
+  	   {
+  		 "name": "Percentage of respondents",
+  		 "units": "%",
+  		 "x_axis_label": "(2020)",
+  		 "title": "Percentage of respondents who reported it was hard or very hard to stay connected with family, whānau and friends outside their household, over the past 7 days",
+  		 "caveats": "<p> This survey uses an opt-in sampling method based on people who have taken part in the New Zealand Crime and Victims Survey (NZCVS) and agreed to be contacted about future research. As a result, there could be bias associated with the respondents of the survey. The findings reported should not be applied to the overall NZ population.  </p> <p> Approximately 370 people are contacted each week resulting in approximately 300 finalised interviews.</p> "
+  		 }
+  	 ]
+  },
+  {
+	  "class": "Wellbeing",
+	  "type": "Crime and safety",
+	  "indicator_name": "Safety travelling to and from essential services",
+	  "source": "Ministry of Justice",
+	  "plot_function": "get_vertical_bar",
+	  "international": false,
+	  "source_url":"https://www.justice.govt.nz/justice-sector-policy/research-data/covid-19-justice-sector-survey/",
+	  "download": true,
+	  "groups": [
+		   {
+		    "name": "Percentage of respondents",
+		    "units": "%",
+		    "x_axis_label": "(2020)",
+		    "title": "Percentage of respondents who felt safe or very safe travelling to and from essential services, over the past 7 days",
+		    "caveats": "<p> This survey uses an opt-in sampling method based on people who have taken part in the New Zealand Crime and Victims Survey (NZCVS) and agreed to be contacted about future research. As a result, there could be bias associated with the respondents of the survey. The findings reported should not be applied to the overall NZ population.  </p> <p> Approximately 370 people are contacted each week resulting in approximately 300 finalised interviews.</p> "
+	  	}
+		]
+	},
+	{
+	  "class": "Wellbeing",
+	  "type": "Crime and safety",
+	  "indicator_name": "COVID-19 related scams",
+	  "source": "Ministry of Justice",
+	  "plot_function": "get_unstacked_vertical_bar",
+	  "international": false,
+	  "source_url":"https://www.justice.govt.nz/justice-sector-policy/research-data/covid-19-justice-sector-survey/",
+	  "download": true,
+	  "groups": [
+	     {
+		    "name": "Percentage of respondents",
+		    "units": "%",
+		    "x_axis_label": "(2020)",
+		    "title": "Percentage of respondents who reported experiencing a COVID-19 related scam, over the past 7 days",
+		   "caveats": "<p> This survey uses an opt-in sampling method based on people who have taken part in the New Zealand Crime and Victims Survey (NZCVS) and agreed to be contacted about future research. As a result, there could be bias associated with the respondents of the survey. The findings reported should not be applied to the overall NZ population.  </p> <p> Approximately 370 people are contacted each week resulting in approximately 300 finalised interviews.</p> "
+		  }
+		]
+	}
 ]
