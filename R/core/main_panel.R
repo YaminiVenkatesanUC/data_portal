@@ -96,7 +96,7 @@ top_panel_ui <- function(id, indicator_class) {
   )
 }
 
-main_plot_server <- function(input, output, session, indicator_class) {
+main_plot_server <- function(input, output, session, indicator_class, indicator_definitions) {
   get_type_options <- reactive({
     indicators <- get_type_list(indicator_definitions, indicator_class)
     if (length(indicators) == 0) {
@@ -196,7 +196,8 @@ main_plot_server <- function(input, output, session, indicator_class) {
 
   observe({
     indicator_definition <- get_indicator_definition()
-    multiple_time_series <- length(indicator_definition$groups) > 1
+    #multiple_time_series <- length(indicator_definition$groups) > 1
+    multiple_time_series <- "TRUE"
     if (multiple_time_series) {
       result <- "TRUE"
     } else {

@@ -377,9 +377,12 @@ dollar_axis_label <- function(unit) {
   return (result)
 }
 
-createHeaderButton <- function(buttonText, position, id, btn_class) {
+createHeaderButton <- function(buttonText, position, id, btn_class, hidden = FALSE) {
   #style <- paste0("style=\"float:right; margin-top: 10px; right: ", position, "px; position: absolute\"")
-  style <- paste0("style=\"float:right; margin-top: 10px; right:\"")
+  style <- paste0("style=\"float:right; margin-top: 10px;\"")
+  if (hidden) {
+    style <- paste0(style, " display: none;")
+  }
   class <- "class=\"hidden-xs\""
   buttonClass <- paste("class=\"btn", btn_class ,"action-button shiny-bound-input\"")
   buttonId <- paste0("id=\"", id ,"\"")
@@ -423,6 +426,32 @@ createHeaderLink <- function(buttonText, position, id, url) {
     ">",
     buttonText,
     "</a>",
+    "</div>"
+  )
+  return (output)
+}
+
+
+createRegionalFilterButton <- function(btn_class) {
+  style <- paste0("style=\"float:right; margin-top: 10px; right:\"")
+  class <- "class=\"hidden-xs\""
+  #buttonClass <- paste("class=\"btn", "show_regional_filter" ,"action-button shiny-bound-input\"")
+  buttonClass <- paste("class=\"btn", btn_class ,"action-button shiny-bound-input\"")
+  buttonId <- paste0("id=\"", "show_regional_filter" ,"\"")
+  buttonType <- "type=\"button\""
+  
+  output <- paste(
+    "<div",
+    class,
+    style,
+    ">",
+    "<a",
+    buttonId,
+    buttonClass,
+    buttonType,
+    ">",
+    "Regional filter",
+    "</button>",
     "</div>"
   )
   return (output)

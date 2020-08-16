@@ -1,3 +1,14 @@
+.RegionalFilterButton {
+  margin-right: 20px;
+  border-radius: 0px;
+}
+
+
+.navbar {
+  position: inherit;
+}
+
+
 .shiny-notification {
   height: 100px;
   width: 800px;
@@ -147,7 +158,7 @@ body {
   margin-right:0;
 }
 
-#download_data-show, #about_dialog-show{
+#download_data-show, #about_dialog-show, #show_regional_filter, #hide_regional_filter {
   padding: 15px;
     font-weight: 700;
     letter-spacing: 1px;
@@ -155,7 +166,10 @@ body {
     text-transform: uppercase;
     border-radius:0;
     margin-bottom:5px;
-    
+}
+
+#hide_regional_filter {
+  display: none;
 }
 
 #download_data-show:hover{

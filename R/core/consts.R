@@ -33,3 +33,41 @@ DEV_MODE_WARNING <- "Running in development mode - switch to production before d
 TOOL_TIP_SUFFIX <- c("Kg", "Tonne", "Tonnes", "Litres", "Ton", "metres")
 
 TOOL_TIP_PREFIX <- c("$")
+
+REGIONS <- c(
+  "Northland",
+  "Auckland",
+  "Bay of Plenty",
+  "Waikato",
+  "Gisborne",
+  "Hawke's Bay",
+  "Taranaki",
+  "Manawatu-Whanganui",
+  "Wellington",
+  "Tasman",
+  "Nelson",
+  "Marlborough",
+  "West Coast",
+  "Canterbury",
+  "Otago",
+  "Southland"
+)
+
+REGION_LABELS <-  c(
+  "Northland",
+  "Auckland",
+  "Bay of Plenty",
+  "Waikato",
+  "Gisborne",
+  "Hawke's Bay",
+  "Taranaki",
+  "Manawat\u16b-Whanganui",
+  "Wellington",
+  "Tasman",
+  "Nelson",
+  "Marlborough",
+  "West Coast",
+  "Canterbury",
+  "Otago",
+  "Southland"
+)

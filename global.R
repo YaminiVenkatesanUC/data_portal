@@ -20,6 +20,8 @@ source("R/core/consts.R")
 source("R/core/get_download_csv.R")
 source("R/core/type_checks.R")
 source("R/core/data_interface.R")
+source("R/core/region_filter.R")
+source("R/core/filter_indicators.R")
 
 source("R/load_functions.R")
 source("R/plot_functions.R")

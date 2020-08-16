@@ -39,7 +39,24 @@ ui <- fluidPage(
     <!-- End Google Tag Manager (noscript) -->"
   )),
   mainPanel(
-    width = 12, 
+    width = 12,
+      column(
+      6,
+       hidden(selectizeInput(
+         inputId = "region_selector",
+         label = "Select region",
+         selected = NULL,
+         choices = NULL,
+         multiple = TRUE,
+         width = '80%',
+         options = list(
+           placeholder = 'All regions currently selected',
+           onInitialize = I('function() { this.setValue(""); }'),
+           'plugins' = list('remove_button'),
+           'persist' = FALSE
+         )
+       ))
+      ),
     div(
       class = "navbar1",
       id="navbarid",
@@ -50,7 +67,9 @@ ui <- fluidPage(
     HTML(
       "var header = $('.navbar-nav');
         header.append('", createHeaderButton("Download data", 10, "download_data-show", "btn-modal"), "');
-        header.append('", createHeaderButton("About", 170, "about_dialog-show", "btn-details"), "');"
+        header.append('", createHeaderButton("About", 170, "about_dialog-show", "btn-details"), "');
+        header.append('", createHeaderButton("Region filter", 300, "show_regional_filter", "btn-details"), "');
+        header.append('", createHeaderButton("Hide filter", 300, "hide_regional_filter", "btn-details", hidden = TRUE), "');"
     )
   )
 )
