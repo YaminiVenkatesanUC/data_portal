@@ -293,23 +293,6 @@
     },
     {
         "class": "Economic",
-        "indicator_name": "Jobs online measure",
-        "type": "Employment",
-        "parameter_col": 1,
-        "parameter_transform": [
-        "function (x) ",
-        "as.Date(x, format = \"%Y-%d-%m\")"
-        ],
-        "sheet_number": 1,
-        "value_col": 3,
-        "value_names": "Index",
-        "filename": "COVID 19 - MBIE Jobs Online.xlsx",
-        "load_function": "read_from_excel",
-        "data_type": "TimeSeries",
-        "group_names": "Index"
-    },
-    {
-        "class": "Economic",
         "indicator_name": "Economic sentiment",
         "type": "Confidence",
         "parameter_col": 3,
@@ -1720,46 +1703,6 @@
         "Domestic aircraft - Queenstown",
         "International aircraft - Queenstown"
         ]
-    },
-    {
-        "class": "Economic",
-        "indicator_name": "Jobs online measure by industry",
-        "type": "Employment",
-        "parameter_col": 1,
-        "parameter_transform": [
-        "function (x) ",
-        "as.Date(x, format = \"%Y-%d-%m\")"
-        ],
-        "sheet_number": 2,
-        "value_col": [
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18,
-        19,
-        20,
-        21
-        ],
-        "value_names": [
-        "Accounting",
-        "Construction",
-        "Education",
-        "Health",
-        "Hospitality",
-        "Information Technologies",
-        "Manufacturing",
-        "Primary",
-        "Sales",
-        "Other"
-        ],
-        "filename": "COVID 19 - MBIE Jobs Online by industry.xlsx",
-        "load_function": "read_from_excel",
-        "skip": 4,
-        "data_type": "TimeSeries",
-        "group_names": "undefined_name"
     },
     {
         "class": "Social",
@@ -4369,6 +4312,108 @@
       "parameter_transform": "function (x) x",
       "load_function": "read_from_excel",
       "data_type": "BarChart"
+    },
+    {
+      "class": "Economic",
+      "type": "Employment",
+      "indicator_name": "Jobs online measure",
+      "parameter_col": 1,
+      "skip": 1,
+      "value_col": [2],
+      "value_names": ["Index"],
+      "group_names": ["Jobs online index"],
+      "filename": "COVID 19 - MBIE Jobs online unadjusted.csv",
+      "parameter_transform": [
+      "function (x)",
+      "as.Date(parse_date_time(x, orders = \"b-y\"))"
+      ],
+      "load_function": "read_from_csv",
+      "data_type": "TimeSeries"
+     },
+     {
+      "class": "Economic",
+      "type": "Employment",
+      "indicator_name": "Jobs online measure by region",
+      "parameter_col": 1,
+      "skip": 1,
+      "value_col": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "value_names": [
+        "Auckland",
+        "Wellington",
+        "North Island (Other)",
+        "Canterbury",
+        "South Island (Other)"
+      ],
+      "group_names": [
+        "Auckland",
+        "Wellington",
+        "North Island (Other)",
+        "Canterbury",
+        "South Island (Other)"
+      ],
+      "filename": "COVID 19 - MBIE Jobs online unadjusted.csv",
+      "parameter_transform": [
+        "function (x)",
+        "as.Date(parse_date_time(x, orders = \"b-y\"))"
+      ],
+      "load_function": "read_from_csv",
+      "data_type": "TimeSeries"
+    },
+    {
+     "class": "Economic",
+     "type": "Employment",
+     "indicator_name": "Jobs online measure by industry",
+     "parameter_col": 1,
+     "skip": 1,
+     "value_col": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "value_names": [
+        "Accounting, HR, legal and admin",
+        "Construction and engineering",
+        "Education & training",
+        "Healthcare & medical",
+        "Hospitality & tourism",
+        "IT",
+        "Manufacturing",
+        "Primary",
+        "Sales, retail, marketing & advertising",
+        "Other"
+      ],
+      "group_names": [  
+        "Accounting, HR, legal and admin",
+        "Construction and engineering",
+        "Education & training",
+        "Healthcare & medical",
+        "Hospitality & tourism",
+        "IT",
+        "Manufacturing",
+        "Primary",
+        "Sales, retail, marketing & advertising",
+        "Other"
+      ],
+      "filename": "COVID 19 - MBIE Jobs online unadjusted.csv",
+      "parameter_transform": [
+          "function (x)",
+          "as.Date(parse_date_time(x, orders = \"b-y\"))"
+      ],
+      "load_function": "read_from_csv",
+      "data_type": "TimeSeries"
     }
   
 ]

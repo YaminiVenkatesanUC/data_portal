@@ -750,25 +750,6 @@
   },
   {
     "class": "Economic",
-    "indicator_name": "Jobs online measure",
-    "type": "Employment",
-    "source": "Ministry of Business, Innovation and Employment",
-    "plot_function": "get_time_series_plot",
-    "international": false,
-    "include_date_slider": true,
-    "default_lower_range": "2017-02-01",
-    "source_url": "https://mbienz.shinyapps.io/labour-market-dashboard_prod/",
-    "download": true,
-    "groups": [
-      {
-        "name": "Index",
-        "title": "Online job advertisements index",
-        "units": "Index"
-      }
-    ]
-  },
-  {
-    "class": "Economic",
     "indicator_name": "Economic sentiment",
     "type": "Confidence",
     "source": "gdeltproject & C. Ball",
@@ -1884,25 +1865,6 @@
             "source_url": "https://www.queenstownairport.co.nz/corporate/airport-statistics",
             "source": "Queenstown Airport"
         }
-    ]
-  },
-  {
-    "class": "Economic",
-    "indicator_name": "Jobs online measure by industry",
-    "type": "Employment",
-    "source": "Ministry of Business, Innovation and Employment",
-    "plot_function": "get_time_series_plot",
-    "international": false,
-    "include_date_slider": true,
-    "default_lower_range": "2017-02-01",
-    "source_url": "https://mbienz.shinyapps.io/labour-market-dashboard_prod/",
-    "download": true,
-    "groups": [
-      {
-        "name": "undefined_name",
-        "title": "Online job advertisements by industry",
-        "units": "Index"
-      }
     ]
   },
   {
@@ -5303,5 +5265,127 @@
 		   "caveats": "<p> This survey uses an opt-in sampling method based on people who have taken part in the New Zealand Crime and Victims Survey (NZCVS) and agreed to be contacted about future research. As a result, there could be bias associated with the respondents of the survey. The findings reported should not be applied to the overall NZ population.  </p> <p> Approximately 370 people are contacted each week resulting in approximately 300 finalised interviews.</p> "
 		  }
 		]
-	}
+	},
+	{
+	  "class": "Economic",
+	  "type": "Employment",
+	  "indicator_name": "Jobs online measure",
+	  "source": "Ministry of Business, Innovation and Employment",
+	  "plot_function": "get_time_series_plot",
+	  "include_date_slider": true,
+	  "default_lower_range": "2017-02-01",
+	  "international": false,
+	  "source_url":"https://www.mbie.govt.nz/business-and-employment/employment-and-skills/labour-market-reports-data-and-analysis/jobs-online/",
+	  "download": true,
+	  "groups": [
+	   	{
+		    "name": "Jobs online index",
+		    "units": "Index",
+		    "title": "Monthly online job advertisements index"
+		  }
+		]
+	},
+  {
+    "class": "Economic",
+    "type": "Employment",
+    "indicator_name": "Jobs online measure by region",
+    "source": "Ministry of Business, Innovation and Employment",
+    "plot_function": "get_time_series_plot",
+    "include_date_slider": true,
+    "default_lower_range": "2017-02-01",
+    "international": false,
+    "source_url":"https://www.mbie.govt.nz/business-and-employment/employment-and-skills/labour-market-reports-data-and-analysis/jobs-online/",
+    "download": true,
+    "groups": [
+       {
+        "name": "Auckland",
+        "units": "Index",
+        "title": "Monthly online job advertisements index by region - Auckland"
+      },
+      {
+        "name": "Wellington",
+        "units": "Index",
+        "title": "Monthly online job advertisements index by region - Wellington"
+      },
+      {
+        "name": "North Island (Other)",
+        "units": "Index",
+        "title": "Monthly online job advertisements index by region - North Island (Other)"
+      },
+      {
+        "name": "Canterbury",
+        "units": "Index",
+        "title": "Monthly online job advertisements index by region - Canterbury"
+      },
+      {
+        "name": "South Island (Other)",
+        "units": "Index",
+        "title": "Monthly online job advertisements index by region - South Island (Other)"
+      }
+    ]
+  }, 
+  {
+    "class": "Economic",
+    "type": "Employment",
+    "indicator_name": "Jobs online measure by industry",
+    "source": "Ministry of Business, Innovation and Employment",
+    "plot_function": "get_time_series_plot",
+    "include_date_slider": true,
+    "default_lower_range": "2017-02-01",
+    "international": false,
+    "source_url":"https://www.mbie.govt.nz/business-and-employment/employment-and-skills/labour-market-reports-data-and-analysis/jobs-online/",
+    "download": true,
+    "groups": [
+       {
+        "name": "Accounting, HR, legal and admin",
+        "units": "Index",
+        "title": "Monthly online job advertisements index by industry - Accounting, HR, legal and admin"
+      },
+      {
+        "name": "Construction and engineering",
+        "units": "Index",
+        "title": "Monthly online job advertisements index by industry - Construction and engineering"
+      },
+      {
+        "name": "Education & training",
+        "units": "Index",
+        "title": "Monthly online job advertisements index by industry - Education & training"
+      },
+      {
+        "name": "Healthcare & medical",
+        "units": "Index",
+        "title": "Monthly online job advertisements index by industry - Healthcare & medical"
+      },
+      {
+        "name": "Hospitality & tourism",
+        "units": "Index",
+        "title": "Monthly online job advertisements index by industry - Hospitality & tourism"
+      },
+      {
+        "name": "IT",
+        "units": "Index",
+        "title": "Monthly online job advertisements index by industry - IT"
+      },
+      {
+        "name": "Manufacturing",
+        "units": "Index",
+        "title": "Monthly online job advertisements index by industry - Manufacturing"
+      },
+      {
+        "name": "Primary",
+        "units": "Index",
+        "title": "Monthly online job advertisements index by industry - Primary"
+      },
+      {
+        "name": "Sales, retail, marketing & advertising",
+        "units": "Index",
+        "title": "Monthly online job advertisements index by industry - Sales, retail, marketing & advertising"
+      },
+      {
+        "name": "Other",
+        "units": "Index",
+        "title": "Monthly online job advertisements index by industry - Other"
+      }
+    ]
+  } 	
 ]
