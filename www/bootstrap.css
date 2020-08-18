@@ -1,3 +1,44 @@
+#region_selector_div .control-label {
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 20px;
+  color: black;
+}
+
+
+#region_selector_div .selectize-input > input {
+  font-size: 16px;
+  padding-left: 10%;
+  padding-top: 10px;
+}
+
+#region_selector_div .selectize-input {
+  border: 1px solid #EC6607;
+  border-radius: 0px;
+}
+
+.selectize-control.plugin-remove_button [data-value] .remove {
+  top: 2.5px;
+  right: 2.5px;
+  font-size: 16px;
+}
+
+.selectize-control.multi .selectize-input > div {
+  background: #EC6607;
+  color: white;
+  padding: 5px;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
+.selectize-control.multi .selectize-input > div.active {
+  background: #EC6607;
+  color: white;
+  padding: 5px;
+  border-radius: 20px;
+  font-size: 16px;
+}
+
 .RegionalFilterButton {
   margin-right: 20px;
   border-radius: 0px;

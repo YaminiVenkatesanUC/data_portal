@@ -92,7 +92,7 @@ BarChart <- R6Class("BarChart", list(
   result <- TimeSeries$new()
   result$dates <- x$date
   result$values <- cbind(x$values, y$values)
-  result$value_names <- c(x$value_name, y$value_names)
+  result$value_names <- c(x$value_names, y$value_names)
   result$update_date <- x$update_date
   
   return (result) 
@@ -105,7 +105,7 @@ BarChart <- R6Class("BarChart", list(
   result <- BarChart$new()
   result$categories <- x$categories
   result$values <- cbind(x$values, y$values)
-  result$value_names <- c(x$value_name, y$value_names)
+  result$value_names <- c(x$value_names, y$value_names)
   result$update_date <- x$update_date
   return (result) 
 }

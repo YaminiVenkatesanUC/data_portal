@@ -96,7 +96,7 @@ top_panel_ui <- function(id, indicator_class) {
   )
 }
 
-main_plot_server <- function(input, output, session, indicator_class, indicator_definitions) {
+main_plot_server <- function(input, output, session, indicator_class, indicator_definitions, regional_filter_on) {
   get_type_options <- reactive({
     indicators <- get_type_list(indicator_definitions, indicator_class)
     if (length(indicators) == 0) {

@@ -1,8 +1,9 @@
 title: "COVID-19"
 production: true
-data_directory:  "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/"
+data_directory:  "./data/"
 indicator_definitions: "config/covid_19/covid_19_indicators.json"
-data_definitions: "config/covid_19/covid_19_data_definitions.json"
+data_directory:  "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/"
+filter_dictionary_definitions: "config/covid_19/filter_dictionary_definitions.json"
 default_parameters:
   data_type: "TimeSeries"
   plot_function: "get_time_series_plot"
@@ -11,4 +12,5 @@ primary_color: "#EC6607"
 data_store_filename: "data_store.RDS"
 about_modal_html: "www/about_covid_19.html"
 download_modal_html: "www/download_modal_covid_19.html"
-tag_manager_html: "www/tag_manager.html"
+odata_token: "491a2fbfc4344eb89103a11eba034266"
+odata_url: "https://snz-data-api-nonprod.azure-api.net/opendata/uat/v1/Demo-StatsNZ-Portal2/Series"

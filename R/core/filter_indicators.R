@@ -1,7 +1,7 @@
 
 filter_indicator <- function(indicator, regions) {
   for (region in regions) {
-    if (length(grep(region, indicator$indicator_name, ignore.case = TRUE)) > 0) {
+    if (length(grep(paste0("\\<", region, "\\>"), indicator$indicator_name, ignore.case = TRUE)) > 0) {
       return (TRUE)
     }
   }
@@ -10,7 +10,7 @@ filter_indicator <- function(indicator, regions) {
 
 filter_group <- function(group, regions) {
   for (region in regions) {
-    if (length(grep(region, paste(group$title, group$name, collapse = " "), ignore.case = TRUE)) > 0) {
+    if (length(grep(paste0("\\<", region, "\\>"), paste(group$title, group$name, collapse = " "), ignore.case = TRUE)) > 0) {
       return (TRUE)
     }
   }
@@ -19,8 +19,11 @@ filter_group <- function(group, regions) {
 
 filter_indicators_by_region <- function(indicator_definitions, regions) {
   indicator_definitions
-  
+
   output <- list()
+  for (region in regions) {
+    regions <- c(regions, as.character(FILTER_DICTIONARY[[region]]$synonyms))
+  }
   
   for (key in names(indicator_definitions)) {
     if (filter_indicator(indicator_definitions[[key]], regions)) {

@@ -1,0 +1,35 @@
+[
+    {
+        "name":"Canterbury",
+        "synonyms": [
+          "Christchurch",
+          "Lyttelton"
+        ]
+    },
+    {
+        "name":"Otago",
+        "synonyms": [
+          "Dunedin",
+          "Queenstown",
+          "Port Chalmers"
+        ]
+    },
+    {
+        "name":"Bay of Plenty",
+        "synonyms": [
+          "Tauranga"
+        ]
+    },
+    {
+        "name":"Hawke's Bay",
+        "synonyms": [
+          "Napier"
+        ]
+    },
+    {
+        "name":"Waikato",
+        "synonyms": [
+          "Hamilton"
+        ]
+    }
+]

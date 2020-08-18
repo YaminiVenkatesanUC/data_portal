@@ -40,23 +40,28 @@ ui <- fluidPage(
   )),
   mainPanel(
     width = 12,
-      column(
-      6,
-       hidden(selectizeInput(
-         inputId = "region_selector",
-         label = "Select region",
-         selected = NULL,
-         choices = NULL,
-         multiple = TRUE,
-         width = '80%',
-         options = list(
-           placeholder = 'All regions currently selected',
-           onInitialize = I('function() { this.setValue(""); }'),
-           'plugins' = list('remove_button'),
-           'persist' = FALSE
-         )
-       ))
-      ),
+        hidden(
+          tags$div(
+            id='region_selector_div',
+            class='region_selector_div',
+              column(
+                8,
+                align = "left",
+                selectizeInput(
+                  inputId = "region_selector",
+                  label = "Filter data by region",
+                  choices = setNames(REGION_LABELS, REGION_LABELS),
+                  multiple = TRUE,
+                  width = '80%',
+                  options = list(
+                    placeholder = 'Click here to select a region',
+                    # onInitialize = I('function() { this.setValue(""); }'),
+                    'plugins' = list('remove_button')
+                  )
+                )
+            )
+          )
+        ),
     div(
       class = "navbar1",
       id="navbarid",
@@ -69,7 +74,7 @@ ui <- fluidPage(
         header.append('", createHeaderButton("Download data", 10, "download_data-show", "btn-modal"), "');
         header.append('", createHeaderButton("About", 170, "about_dialog-show", "btn-details"), "');
         header.append('", createHeaderButton("Region filter", 300, "show_regional_filter", "btn-details"), "');
-        header.append('", createHeaderButton("Hide filter", 300, "hide_regional_filter", "btn-details", hidden = TRUE), "');"
+        header.append('", createHeaderButton("Remove filter", 300, "hide_regional_filter", "btn-details", hidden = TRUE), "');"
     )
   )
 )
