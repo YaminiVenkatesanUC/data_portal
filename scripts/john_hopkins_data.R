@@ -72,12 +72,26 @@ aus_provinces<-all_data%>%filter(Country=='Australia')%>%mutate(Country= paste0(
   select(-Province)
 
 df_cases_all<-Reduce(function(x,y) merge(x = x, y = y, all=TRUE),
-       list(df_cases_selected_countries, df_cases_rest_of_world, aus_provinces))%>%mutate(Active=Active-Recovered-Deceased)
-
+       list(df_cases_selected_countries, df_cases_rest_of_world, aus_provinces))%>%mutate(Active=Active-Recovered-Deceased)%>%
+  arrange(Country)
 df_cases_all[is.na(df_cases_all)]<-0
 
+check_for_negative<-function(df_cases_all){
+  data<-data
+  negative_active_cases<-which(data["Active"]<0)
+  if (!is.null(negative_active_cases)){
+    print(paste0("Negative Active cases present" ))
+    data[negative_active_cases,]<-df[negative_active_cases-1,]
+  }else{
+  }
+  return(data)
+}
 
-write_xlsx(df_cases_all,paste0(output,"COVID 19 - Global cases.xlsx"))
+data<-check_for_negative(df_cases_all)
+
+
+
+write_xlsx(data,paste0(output,"COVID 19 - Global cases.xlsx"))
 
 
 ##plot to check if data is ok
@@ -99,3 +113,8 @@ ggplotly(p)
 
 
 
+
+
+x<-which(data["Active"]<0)
+
+print(x)
