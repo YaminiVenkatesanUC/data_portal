@@ -197,7 +197,13 @@ main_plot_server <- function(input, output, session, indicator_class, indicator_
   observe({
     indicator_definition <- get_indicator_definition()
     #multiple_time_series <- length(indicator_definition$groups) > 1
-    multiple_time_series <- "TRUE"
+    line_options <- get_line_options()
+    if (length(line_options) > 0 && get_line_options() == c("undefined_name")) {
+      multiple_time_series <- "FALSE"
+    } else {
+      multiple_time_series <- "TRUE"
+    }
+
     if (multiple_time_series) {
       result <- "TRUE"
     } else {

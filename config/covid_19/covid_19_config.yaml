@@ -3,7 +3,7 @@ production: true
 data_directory:  "./data/"
 indicator_definitions: "config/covid_19/covid_19_indicators.json"
 data_directory:  "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/"
-filter_dictionary_definitions: "config/covid_19/filter_dictionary_definitions.json"
+filter_dictionary_definitions: "config/covid_19/filter_dictionary.json"
 default_parameters:
   data_type: "TimeSeries"
   plot_function: "get_time_series_plot"
