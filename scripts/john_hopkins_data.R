@@ -76,12 +76,12 @@ df_cases_all<-Reduce(function(x,y) merge(x = x, y = y, all=TRUE),
   arrange(Country)
 df_cases_all[is.na(df_cases_all)]<-0
 
-check_for_negative<-function(df_cases_all){
+check_for_negative<-function(data){
   data<-data
   negative_active_cases<-which(data["Active"]<0)
   if (!is.null(negative_active_cases)){
     print(paste0("Negative Active cases present" ))
-    data[negative_active_cases,]<-df[negative_active_cases-1,]
+    data[negative_active_cases,]<-data[negative_active_cases-1,]
   }else{
   }
   return(data)
@@ -115,6 +115,4 @@ ggplotly(p)
 
 
 
-x<-which(data["Active"]<0)
 
-print(x)
