@@ -1963,7 +1963,7 @@
         "indicator_name": "By region",
         "type": "Weekly deaths",
         "parameter_col": 1,
-        "parameter_transform": "function(x) ymd(x)",
+        "parameter_transform": "function(x) ymd(x) + 6",
         "sheet_number": 1,
         "value_col": [
           2,
@@ -1995,7 +1995,7 @@
         "indicator_name": "By age and sex",
         "type": "Weekly deaths",
         "parameter_col": 1,
-        "parameter_transform": "function(x) ymd(x)",
+        "parameter_transform": "function(x) ymd(x) + 6",
         "sheet_number": 2,
         "value_col": [
          
@@ -2047,7 +2047,7 @@
         "indicator_name": "By age",
         "type": "Weekly deaths",
         "parameter_col": 1,
-        "parameter_transform": "function(x) ymd(x)",
+        "parameter_transform": "function(x) ymd(x) + 6",
         "sheet_number": 3,
         "value_col": [
           6,
@@ -4268,7 +4268,7 @@
         ]
     },   
     {
-      "class": "Wellbeing",
+      "class": "Social",
       "type": "Social connection",
       "indicator_name": "Staying connected with others",
       "parameter_col": 2,
@@ -4283,7 +4283,7 @@
       "data_type": "BarChart"
     },
     {
-      "class": "Wellbeing",
+      "class": "Social",
       "type": "Crime and safety",
       "indicator_name": "Safety travelling to and from essential services",
       "parameter_col": 2,
@@ -4299,7 +4299,7 @@
       "drop_na": false
     },
     {
-      "class": "Wellbeing",
+      "class": "Social",
       "type": "Crime and safety",
       "indicator_name": "COVID-19 related scams",
       "parameter_col": 2,

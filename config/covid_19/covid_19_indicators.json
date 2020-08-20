@@ -2272,31 +2272,31 @@
     "include_date_slider": true,
     "default_lower_range": "2020-02-01",
     "download": true,
-    "caveats": "<p>(1) Weekly deaths data are based on Date of Death and differ from other deaths statistics based on date of registration. These data are provisional and subject to revision during the full process of producing death statistics.</p><p>(2) Totals are by Date of Death. Week beginning Monday.</p><p>(3) Weekly totals will differ from those in the death registrations time series as deaths are registered at the time of burial or cremation of the body. </p><p>(4) An average of 5% of Deaths are registered 2 weeks or more after Date of Death therefore weekly totals are expected to increase over time as Death Registrations are submitted and processed.</p><p>(5) Overseas addresses or where location could not be determined and records where the persons sex is missing or not in Male or Female have been excluded as these numbers are too low to publish a weekly total. </p><p>(6) The accuracy of any administrative data, which includes but is not limited to address information is subject to human error.</p><p>(7) The data provided has been collated to the best of our ability and may have a small variance to any alternative publications.</p>",
+    "caveats": "<p>(1) Weekly deaths data are based on Date of Death and differ from other deaths statistics based on date of registration. These data are provisional and subject to revision during the full process of producing death statistics.</p><p>(2) Totals are by Date of Death. Week ending Sunday.</p><p>(3) Weekly totals will differ from those in the death registrations time series as deaths are registered at the time of burial or cremation of the body. </p><p>(4) An average of 5% of Deaths are registered 2 weeks or more after Date of Death therefore weekly totals are expected to increase over time as Death Registrations are submitted and processed.</p><p>(5) Overseas addresses or where location could not be determined and records where the persons sex is missing or not in Male or Female have been excluded as these numbers are too low to publish a weekly total. </p><p>(6) The accuracy of any administrative data, which includes but is not limited to address information is subject to human error.</p><p>(7) The data provided has been collated to the best of our ability and may have a small variance to any alternative publications.</p>",
     "groups": [
         {
             "name": "Auckland",
-            "title": "Weekly deaths by region of residence - Auckland",
+            "title": "Deaths by region of residence (week ended) - Auckland",
             "units": "Number"
           },
       {
         "name": "Wellington",
-        "title": "Weekly deaths by region of residence - Wellington",
+        "title": "Deaths by region of residence (week ended) - Wellington",
         "units": "Number"
       },
       {
         "name": "Canterbury",
-        "title": "Weekly deaths by region of residence - Canterbury",
+        "title": "Deaths by region of residence (week ended) - Canterbury",
         "units": "Number"
       },
       {
         "name": "Other North Island regions",
-        "title": "Weekly deaths by region of residence - Other North Island regions",
+        "title": "Deaths by region of residence (week ended) - Other North Island regions",
         "units": "Number"
       },
       {
         "name": "Other South Island regions",
-        "title": "Weekly deaths by region of residence - Other South Island regions",
+        "title": "Deaths by region of residence (week ended) - Other South Island regions",
         "units": "Number"
       }
     ]
@@ -2311,59 +2311,59 @@
     "include_date_slider": true,
     "default_lower_range": "2020-02-01",
     "download": true,
-    "caveats": "<p>(1) Weekly deaths data are based on Date of Death and differ from other deaths statistics based on date of registration. These data are provisional and subject to revision during the full process of producing death statistics.</p><p>(2) Totals are by Date of Death. Week beginning Monday.</p><p>(3) Weekly totals will differ from those in the death registrations time series as deaths are registered at the time of burial or cremation of the body. </p><p>(4) An average of 5% of Deaths are registered 2 weeks or more after Date of Death therefore weekly totals are expected to increase over time as Death Registrations are submitted and processed.</p><p>(5) Overseas addresses or where location could not be determined and records where the persons sex is missing or not in Male or Female have been excluded as these numbers are too low to publish a weekly total. </p><p>(6) The accuracy of any administrative data, which includes but is not limited to address information is subject to human error.</p><p>(7) The data provided has been collated to the best of our ability and may have a small variance to any alternative publications.</p>",
+    "caveats": "<p>(1) Weekly deaths data are based on Date of Death and differ from other deaths statistics based on date of registration. These data are provisional and subject to revision during the full process of producing death statistics.</p><p>(2) Totals are by Date of Death. Week ending Sunday.</p><p>(3) Weekly totals will differ from those in the death registrations time series as deaths are registered at the time of burial or cremation of the body. </p><p>(4) An average of 5% of Deaths are registered 2 weeks or more after Date of Death therefore weekly totals are expected to increase over time as Death Registrations are submitted and processed.</p><p>(5) Overseas addresses or where location could not be determined and records where the persons sex is missing or not in Male or Female have been excluded as these numbers are too low to publish a weekly total. </p><p>(6) The accuracy of any administrative data, which includes but is not limited to address information is subject to human error.</p><p>(7) The data provided has been collated to the best of our ability and may have a small variance to any alternative publications.</p>",
     "groups": [
       {
         "name": "Total",
-        "title": "Weekly deaths by age and sex - Total",
+        "title": "Deaths by age and sex (week ended) - Total",
         "units": "Number"
       },
       {
         "name": "Total 80 and over",
-        "title": "Weekly deaths by age and sex - Total 80 and over",
+        "title": "Deaths by age and sex (week ended) - Total 80 and over",
         "units": "Number"
       },
       {
         "name": "Total 65 and 79",
-        "title": "Weekly deaths by age and sex - Total 65 and 79",
+        "title": "Deaths by age and sex (week ended) - Total 65 and 79",
         "units": "Number"
       },
       {
         "name": "Total under 64",
-        "title": "Weekly deaths by age and sex - Total under 64",
+        "title": "Deaths by age and sex (week ended) - Total under 64",
         "units": "Number"
       },
       
       {
         "name": "Female 80 and over",
-        "title": "Weekly deaths by age and sex - Female 80 and over",
+        "title": "Deaths by age and sex (week ended) - Female 80 and over",
         "units": "Number"
       },
       {
         "name": "Female 65 and 79",
-        "title": "Weekly deaths by age and sex - Female 65 and 79",
+        "title": "Deaths by age and sex (week ended) - Female 65 and 79",
         "units": "Number"
       },
       {
         "name": "Female under 64",
-        "title": "Weekly deaths by age and sex - Female under 64",
+        "title": "Deaths by age and sex (week ended) - Female under 64",
         "units": "Number"
       }
       ,
       {
         "name": "Male 80 and over",
-        "title": "Weekly deaths by age and sex - Male 80 and over",
+        "title": "Deaths by age and sex (week ended) - Male 80 and over",
         "units": "Number"
       }
       ,
       {
         "name": "Male 65 to 79",
-        "title": "Weekly deaths by age and sex - Male 65 to 79",
+        "title": "Deaths by age and sex (week ended) - Male 65 to 79",
         "units": "Number"
       },
       {
         "name": "Male under 64",
-        "title": "Weekly deaths by age and sex - Male under 64",
+        "title": "Deaths by age and sex (week ended) - Male under 64",
         "units": "Number"
       }
     ]
@@ -2379,31 +2379,31 @@
     "include_date_slider": true,
     "default_lower_range": "2020-02-01",
     "download": true,
-    "caveats": "<p>(1) Weekly deaths data are based on Date of Death and differ from other deaths statistics based on date of registration. These data are provisional and subject to revision during the full process of producing death statistics.</p><p>(2) Totals are by Date of Death. Week beginning Monday.</p><p>(3) Weekly totals will differ from those in the death registrations time series as deaths are registered at the time of burial or cremation of the body. </p><p>(4) An average of 5% of Deaths are registered 2 weeks or more after Date of Death therefore weekly totals are expected to increase over time as Death Registrations are submitted and processed.</p><p>(5) Overseas addresses or where location could not be determined and records where the persons sex is missing or not in Male or Female have been excluded as these numbers are too low to publish a weekly total. </p><p>(6) The accuracy of any administrative data, which includes but is not limited to address information is subject to human error.</p><p>(7) The data provided has been collated to the best of our ability and may have a small variance to any alternative publications.</p>",
+    "caveats": "<p>(1) Weekly deaths data are based on Date of Death and differ from other deaths statistics based on date of registration. These data are provisional and subject to revision during the full process of producing death statistics.</p><p>(2) Totals are by Date of Death. Week ending Sunday.</p><p>(3) Weekly totals will differ from those in the death registrations time series as deaths are registered at the time of burial or cremation of the body. </p><p>(4) An average of 5% of Deaths are registered 2 weeks or more after Date of Death therefore weekly totals are expected to increase over time as Death Registrations are submitted and processed.</p><p>(5) Overseas addresses or where location could not be determined and records where the persons sex is missing or not in Male or Female have been excluded as these numbers are too low to publish a weekly total. </p><p>(6) The accuracy of any administrative data, which includes but is not limited to address information is subject to human error.</p><p>(7) The data provided has been collated to the best of our ability and may have a small variance to any alternative publications.</p>",
     "groups": [
       {
         "name": "Total",
-        "title": "Weekly deaths by age - Total",
+        "title": "Deaths by age (week ended) - Total",
         "units": "Number"
       },
       {
         "name": "Under 30",
-        "title": "Weekly deaths by age - Under 30",
+        "title": "Deaths by age (week ended) - Under 30",
         "units": "Number"
       },
       {
         "name": "30 to 59",
-        "title": "Weekly deaths by age - 30 to 59",
+        "title": "Deaths by age (week ended) - 30 to 59",
         "units": "Number"
       },
       {
         "name": "60 to 79",
-        "title": "Weekly deaths by age - 60 to 79",
+        "title": "Deaths by age (week ended) - 60 to 79",
         "units": "Number"
       },
       {
         "name": "80 and over",
-        "title": "Weekly deaths by age - 80 and over",
+        "title": "Deaths by age (week ended) - 80 and over",
         "units": "Number"
       }
     ]
@@ -5210,7 +5210,7 @@
       ]
    },
    {
-  	"class": "Wellbeing",
+  	"class": "Social",
   	"type": "Social connection",
   	"indicator_name": "Staying connected with others",
   	"source": "Ministry of Justice",
@@ -5229,7 +5229,7 @@
   	 ]
   },
   {
-	  "class": "Wellbeing",
+	  "class": "Social",
 	  "type": "Crime and safety",
 	  "indicator_name": "Safety travelling to and from essential services",
 	  "source": "Ministry of Justice",
@@ -5248,7 +5248,7 @@
 		]
 	},
 	{
-	  "class": "Wellbeing",
+	  "class": "Social",
 	  "type": "Crime and safety",
 	  "indicator_name": "COVID-19 related scams",
 	  "source": "Ministry of Justice",
