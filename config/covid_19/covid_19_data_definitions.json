@@ -3208,7 +3208,7 @@
         "type": "COVID-19",
         "parameter_col": 1,
         "value_col": [2],
-        "value_names": ["Current - 19 August"],
+        "value_names": ["Current - 20 August"],
         "sheet_number": 1,
         "filename": "COVID 19 - MoH Border Control insights.xlsx",
         "parameter_transform": "function (x) x",
@@ -4415,5 +4415,6 @@
       "load_function": "read_from_csv",
       "data_type": "TimeSeries"
     }
+ 
   
 ]
