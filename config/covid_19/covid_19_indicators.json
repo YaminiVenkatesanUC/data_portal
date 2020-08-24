@@ -1269,23 +1269,6 @@
   },
   {
     "class": "Social",
-    "indicator_name": "Jobseeker support",
-    "type": "Benefits",
-    "source": "Ministry of Social Development",
-    "plot_function": "get_time_series_plot",
-    "international": false,
-    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
-    "download": true,
-    "groups": [
-      {
-        "name": "undefined_name",
-        "title": "Number on jobseeker support benefit",
-        "units": "Number"
-      }
-    ]
-  },
-  {
-    "class": "Social",
     "indicator_name": "Accomodation supplement",
     "type": "Supplementary support",
     "source": "Ministry of Social Development",
@@ -1426,74 +1409,6 @@
         "name": "Total",
         "title": "Number on jobseeker support benefit - Total",
         "units": "Number"
-      }
-    ]
-  },
-  {
-    "class": "Social",
-    "indicator_name": "Percentage of population",
-    "type": "Benefits",
-    "source": "Ministry of Social Development",
-    "plot_function": "get_time_series_plot",
-    "international": false,
-    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
-    "download": true,
-    "groups": [
-      {
-        "name": "Percentage of the working-age population",
-        "title": "Percentage of the working-age population receiving jobseeker support",
-        "units": "%"
-      }
-    ]
-  },
-  {
-    "class": "Social",
-    "indicator_name": "Number of applications",
-    "type": "Wage subsidy assistance",
-    "source": "Ministry of Social Development",
-    "plot_function": "get_time_series_plot",
-    "international": false,
-    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
-    "download": true,
-    "groups": [
-      {
-        "name": "undefined_name",
-        "title": "Number of wage subsidy applications (cumulative)",
-        "units": "Number"
-      }
-    ]
-  },
-  {
-    "class": "Social",
-    "indicator_name": "Number of paid applications",
-    "type": "Wage subsidy assistance",
-    "source": "Ministry of Social Development",
-    "plot_function": "get_time_series_plot",
-    "international": false,
-    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
-    "download": true,
-    "groups": [
-      {
-        "name": "undefined_name",
-        "title": "Number of jobs associated with paid out wage subsidy applications (cumulative)",
-        "units": "Number"
-      }
-    ]
-  },
-  {
-    "class": "Social",
-    "indicator_name": "Amount of wage subsidy paid out",
-    "type": "Wage subsidy assistance",
-    "source": "Ministry of Social Development",
-    "plot_function": "get_time_series_plot",
-    "international": false,
-    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
-    "download": true,
-    "groups": [
-      {
-        "name": "Amount paid out",
-        "title": "Amount of wage subsidy paid out (cumulative)",
-        "units": "$"
       }
     ]
   },
@@ -4189,25 +4104,6 @@
             "units": ["Annual % change"]
         }
     ]
-  }
-  ,
-  {
-    "class": "Social",
-    "indicator_name": "Number of recipients of CIRP",
-    "type": "Income relief payment",
-    "source": "Ministry of Social Development",
-    "plot_function": "get_time_series_plot",
-    "international": false,
-    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
-    "download": true,
-    "caveats":"<p> *Number of grants include suspensions and cancellations</p><p> **Transfers to CIRP from Jobseeker Support are cumulative counts of people granted CIRP, who were recently in receipt (or a partner of a primary recipient) of Jobseeker Support.</p>" , 
-    "groups": [
-      {
-        "name": "undefined_name",
-        "title": "Number of recipients of COVID-19 Income Relief Payment (CIRP)",
-        "units": "Number"
-      }
-    ]
   },
   {
     "class": "Social",
@@ -4831,113 +4727,6 @@
        
     ]
   },
-  {
-    "class": "Social",
-    "indicator_name": "Number of recipients of CIRP by age group",
-    "type": "Income relief payment",
-    "source": "Ministry of Social Development",
-    "plot_function": "get_horizontal_bar",
-    "international": false,
-    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
-    "download": true,
-   
-    "groups": [
-      {
-        "name": "undefined_name",
-        "title": "Number of recipients of CIRP by age group",
-        "units": "Number"
-      }
-    ]
-  },
-  {
-    "class": "Social",
-    "indicator_name": "Number of recipients of CIRP by region",
-    "type": "Income relief payment",
-    "source": "Ministry of Social Development",
-    "plot_function": "get_horizontal_bar",
-    "international": false,
-    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
-    "download": true,
-   
-    "groups": [
-      {
-        "name": "undefined_name",
-        "title": "Number of recipients of CIRP by region",
-        "units": "Number"
-      }
-    ]
-  } ,
-  {
-    "class": "Social",
-    "indicator_name": "Amount of wage subsidy refunds received",
-    "type": "Wage subsidy assistance",
-    "source": "Ministry of Social Development",
-    "plot_function": "get_time_series_plot",
-    "international": false,
-    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
-    "download": true,
-    "groups": [
-      {
-        "name": "Amount of wage subsidy refunds received",
-        "title": "Amount of wage subsidy refunds received (cumulative)",
-        "units": "$"
-      }
-    ]
-  }
-  ,
-  {
-    "class": "Social",
-    "indicator_name": "Number of wage subsidy refunds received",
-    "type": "Wage subsidy assistance",
-    "source": "Ministry of Social Development",
-    "plot_function": "get_time_series_plot",
-    "international": false,
-    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
-    "download": true,
-    "groups": [
-      {
-        "name": "Number of wage subsidy refunds received",
-        "title": "Number of wage subsidy refunds received (cumulative)",
-        "units": "Number"
-      }
-    ]
-  }
-  ,
-  {
-    "class": "Social",
-    "indicator_name": "Amount of wage subsidy extension paid",
-    "type": "Wage subsidy extension",
-    "source": "Ministry of Social Development",
-    "plot_function": "get_time_series_plot",
-    "international": false,
-    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
-    "download": true,
-    "groups": [
-      {
-        "name": "Amount of wage subsidy extension paid",
-        "title": "Amount of wage subsidy extension paid (cumulative)",
-        "units": "$"
-      }
-    ]
-  }
-  ,
-  {
-    "class": "Social",
-    "indicator_name": "Number of jobs associated with a paid application",
-    "type": "Wage subsidy extension",
-    "source": "Ministry of Social Development",
-    "plot_function": "get_time_series_plot",
-    "international": false,
-    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
-    "download": true,
-    "groups": [
-      {
-        "name": "Number of jobs associated with a paid applicaton",
-        "title": "Number of jobs associated with a paid applicaton for wage subsidy extension (cumulative)",
-        "units": "Number"
-      }
-    ]
-  },
   
 
 {
@@ -5220,7 +5009,7 @@
   	"download": true,
   	"groups": [
   	   {
-  		 "name": "Percentage of respondents",
+  		 "name": "undefined_name",
   		 "units": "%",
   		 "x_axis_label": "(2020)",
   		 "title": "Percentage of respondents who reported it was hard or very hard to stay connected with family, whānau and friends outside their household, over the past 7 days",
@@ -5239,7 +5028,7 @@
 	  "download": true,
 	  "groups": [
 		   {
-		    "name": "Percentage of respondents",
+		    "name": "undefined_name",
 		    "units": "%",
 		    "x_axis_label": "(2020)",
 		    "title": "Percentage of respondents who felt safe or very safe travelling to and from essential services, over the past 7 days",
@@ -5258,7 +5047,7 @@
 	  "download": true,
 	  "groups": [
 	     {
-		    "name": "Percentage of respondents",
+		    "name": "undefined_name",
 		    "units": "%",
 		    "x_axis_label": "(2020)",
 		    "title": "Percentage of respondents who reported experiencing a COVID-19 related scam, over the past 7 days",
@@ -5387,5 +5176,707 @@
         "title": "Monthly online job advertisements index by industry - Other"
       }
     ]
+  },
+  
+	{
+    "class": "Social",
+    "indicator_name": "Number of recipients of CIRP",
+    "type": "Income relief payment",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "caveats":"<p> *Number of grants include suspensions and cancellations</p><p> **Transfers to CIRP from Jobseeker Support are cumulative counts of people granted CIRP, who were recently in receipt (or a partner of a primary recipient) of Jobseeker Support.</p>" , 
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Number of recipients of COVID-19 Income Relief Payment (CIRP)",
+        "units": "Number"
+      }
+    ]
+  },
+	
+	
+   {
+    "class": "Social",
+    "indicator_name": "Number of recipients of CIRP by region",
+    "type": "Income relief payment",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_stacked_bar_chart",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+   
+    "groups": [
+      {
+        "name": "Total",
+        "title": "Number of recipients of CIRP by region - Total",
+        "units": "Number"
+      },
+	  {
+        "name": "Auckland",
+        "title": "Number of recipients of CIRP by region - Auckland",
+        "units": "Number"
+      },
+	  {
+        "name": "Bay of Plenty",
+        "title": "Number of recipients of CIRP by region - Bay of Plenty",
+        "units": "Number"
+      },
+	  {
+        "name": "Canterbury",
+        "title": "Number of recipients of CIRP by region - Canterbury",
+        "units": "Number"
+      },
+	  {
+        "name": "Gisborne",
+        "title": "Number of recipients of CIRP by region - Gisborne",
+        "units": "Number"
+      },
+	  {
+        "name": "Hawke's Bay",
+        "title": "Number of recipients of CIRP by region - Hawke's Bay",
+        "units": "Number"
+      },
+	  {
+        "name": "Manawatū-Whanganui",
+        "title": "Number of recipients of CIRP by region - Manawatū-Whanganui",
+        "units": "Number"
+      },
+	  {
+        "name": "Marlborough",
+        "title": "Number of recipients of CIRP by region - Marlborough",
+        "units": "Number"
+      },
+	  {
+        "name": "Nelson",
+        "title": "Number of recipients of CIRP by region - Nelson",
+        "units": "Number"
+      },
+	  {
+        "name": "Northland",
+        "title": "Number of recipients of CIRP by region - Northland",
+        "units": "Number"
+      },
+	  {
+        "name": "Otago",
+        "title": "Number of recipients of CIRP by region - Otago",
+        "units": "Number"
+      },
+	  {
+        "name": "Southland",
+        "title": "Number of recipients of CIRP by region - Southland",
+        "units": "Number"
+      },
+	  {
+        "name": "Taranaki",
+        "title": "Number of recipients of CIRP by region - Taranaki",
+        "units": "Number"
+      },
+	  {
+        "name": "Tasman",
+        "title": "Number of recipients of CIRP by region - Tasman",
+        "units": "Number"
+      },
+	  {
+        "name": "Waikato",
+        "title": "Number of recipients of CIRP by region - Waikato",
+        "units": "Number"
+      },
+	  {
+        "name": "Wellington",
+        "title": "Number of recipients of CIRP by region - Wellington",
+        "units": "Number"
+      },
+	  {
+        "name": "West Coast",
+        "title": "Number of recipients of CIRP by region - West Coast",
+        "units": "Number"
+      },
+	  {
+        "name": "Other/Unknown",
+        "title": "Number of recipients of CIRP by region - Other/Unknown",
+        "units": "Number"
+      }
+    ]
+  } ,
+  {
+    "class": "Social",
+    "indicator_name": "Amount of wage subsidy refunds received",
+    "type": "Wage subsidy assistance",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Amount of wage subsidy refunds received (cumulative)",
+        "units": "$"
+      }
+    ]
   }
+  ,
+  {
+    "class": "Social",
+    "indicator_name": "Number of wage subsidy refunds received",
+    "type": "Wage subsidy assistance",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Number of wage subsidy refunds received (cumulative)",
+        "units": "Number"
+      }
+    ]
+  }
+  ,
+  {
+    "class": "Social",
+    "indicator_name": "Amount of wage subsidy extension paid",
+    "type": "Wage subsidy extension",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Amount of wage subsidy extension paid (cumulative)",
+        "units": "$"
+      }
+    ]
+  }
+  ,
+  {
+    "class": "Social",
+    "indicator_name": "Number of jobs associated with a paid application",
+    "type": "Wage subsidy extension",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Number of jobs associated with a paid application for wage subsidy extension (cumulative)",
+        "units": "Number"
+      }
+    ]
+  },
+  
+	
+  {
+    "class": "Social",
+    "indicator_name": "Jobseeker support",
+    "type": "Benefits",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Number on jobseeker support benefit",
+        "units": "Number"
+      }
+    ]
+  },
+  
+  
+   {
+    "class": "Social",
+    "indicator_name": "Percentage of population",
+    "type": "Benefits",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Percentage of the working-age population receiving jobseeker support",
+        "units": "%"
+      }
+    ]
+  },
+  {
+    "class": "Social",
+    "indicator_name": "Number of applications",
+    "type": "Wage subsidy assistance",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Number of wage subsidy applications (cumulative)",
+        "units": "Number"
+      }
+    ]
+  },
+  {
+    "class": "Social",
+    "indicator_name": "Number of paid applications",
+    "type": "Wage subsidy assistance",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Number of jobs associated with paid out wage subsidy applications (cumulative)",
+        "units": "Number"
+      }
+    ]
+  },
+  {
+    "class": "Social",
+    "indicator_name": "Amount of wage subsidy paid out",
+    "type": "Wage subsidy assistance",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Amount of wage subsidy paid out (cumulative)",
+        "units": "$"
+      }
+    ]
+  },
+  
+  
+	
+	
+  {
+    "class": "Social",
+    "indicator_name": "Number of recipients of CIRP by age group",
+    "type": "Income relief payment",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_stacked_bar_chart",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "19 years and under",
+        "title": "Number of recipients of CIRP by age group - 19 years and under",
+        "units": "Number"
+      },
+	  {
+        "name": "20-24 years",
+        "title": "Number of recipients of CIRP by age group - 20-24 years",
+        "units": "Number"
+      },
+	  {
+        "name": "25-29 years",
+        "title": "Number of recipients of CIRP by age group - 25-29 years",
+        "units": "Number"
+      },
+	  {
+        "name": "30-34 years",
+        "title": "Number of recipients of CIRP by age group - 30-34 years",
+        "units": "Number"
+      },
+	  {
+        "name": "35-39 years",
+        "title": "Number of recipients of CIRP by age group - 35-39 years",
+        "units": "Number"
+      },
+	  {
+        "name": "40-44 years",
+        "title": "Number of recipients of CIRP by age group - 40-44 years",
+        "units": "Number"
+      },
+	  {
+        "name": "45-49 years",
+        "title": "Number of recipients of CIRP by age group - 45-49 years",
+        "units": "Number"
+      },
+	  {
+        "name": "50-54 years",
+        "title": "Number of recipients of CIRP by age group - 50-54 years",
+        "units": "Number"
+      },
+	  {
+        "name": "55-59 years",
+        "title": "Number of recipients of CIRP by age group - 55-59 years",
+        "units": "Number"
+      },
+	  {
+        "name": "60-64 years",
+        "title": "Number of recipients of CIRP by age group - 60-64 years",
+        "units": "Number"
+      },
+	  {
+        "name": "65+ years",
+        "title": "Number of recipients of CIRP by age group - 65+ years",
+        "units": "Number"
+      }
+    ]
+  },
+  {
+	"class": "Social",
+	"indicator_name": "Number of recipients of CIRP by territorial authority",
+	"type": "Income relief payment",
+	"source": "Ministry of Social Development",
+	"plot_function": "get_stacked_bar_chart",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+	"groups": [
+		{ 
+		 "name": "Ashburton District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Ashburton District",
+		 "units": "Number" 
+		}, 
+		{ 
+		 "name": "Auckland City", 
+		 "title": "Number of recipients of CIRP by territorial authority - Auckland City", 
+		 "units": "Number" 
+		}, 
+	  { 
+		 "name": "Buller District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Buller District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Carterton District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Carterton District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Central Hawke's Bay District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Central Hawke's Bay District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Central Otago District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Central Otago District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Christchurch City", 
+		 "title": "Number of recipients of CIRP by territorial authority - Christchurch City", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Clutha District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Clutha District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Dunedin City", 
+		 "title": "Number of recipients of CIRP by territorial authority - Dunedin City", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Far North District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Far North District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Gisborne District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Gisborne District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Gore District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Gore District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Grey District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Grey District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Hamilton City", 
+		 "title": "Number of recipients of CIRP by territorial authority - Hamilton City", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Hastings District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Hastings District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Hauraki District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Hauraki District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Horowhenua District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Horowhenua District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Hurunui District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Hurunui District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Invercargill City", 
+		 "title": "Number of recipients of CIRP by territorial authority - Invercargill City", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Kaikōura District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Kaikōura District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Kaipara District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Kaipara District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Kāpiti Coast District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Kāpiti Coast District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Kawerau District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Kawerau District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Lower Hutt City", 
+		 "title": "Number of recipients of CIRP by territorial authority - Lower Hutt City", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Mackenzie District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Mackenzie District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Manawatū District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Manawatū District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Marlborough District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Marlborough District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Masterton District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Masterton District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Matamata-Piako District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Matamata-Piako District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Napier City", 
+		 "title": "Number of recipients of CIRP by territorial authority - Napier City", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Nelson City", 
+		 "title": "Number of recipients of CIRP by territorial authority - Nelson City", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "New Plymouth District", 
+		 "title": "Number of recipients of CIRP by territorial authority - New Plymouth District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Ōpōtiki District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Ōpōtiki District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Ōtorohanga District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Ōtorohanga District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Palmerston North City", 
+		 "title": "Number of recipients of CIRP by territorial authority - Palmerston North City", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Porirua City", 
+		 "title": "Number of recipients of CIRP by territorial authority - Porirua City", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Queenstown-Lakes District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Queenstown-Lakes District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Rangitīkei District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Rangitīkei District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Rotorua District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Rotorua District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Ruapehu District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Ruapehu District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Selwyn District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Selwyn District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "South Taranaki District", 
+		 "title": "Number of recipients of CIRP by territorial authority - South Taranaki District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "South Waikato District", 
+		 "title": "Number of recipients of CIRP by territorial authority - South Waikato District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "South Wairarapa District", 
+		 "title": "Number of recipients of CIRP by territorial authority - South Wairarapa District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Southland District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Southland District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Stratford District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Stratford District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Tararua District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Tararua District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Tasman District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Tasman District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Taupō District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Taupō District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Tauranga City", 
+		 "title": "Number of recipients of CIRP by territorial authority - Tauranga City", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Thames-Coromandel District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Thames-Coromandel District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Timaru District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Timaru District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Upper Hutt City", 
+		 "title": "Number of recipients of CIRP by territorial authority - Upper Hutt City", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Waikato District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Waikato District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Waimakariri District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Waimakariri District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Waimate District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Waimate District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Waipā District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Waipā District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Wairoa District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Wairoa District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Waitaki District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Waitaki District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Waitomo District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Waitomo District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Wellington City", 
+		 "title": "Number of recipients of CIRP by territorial authority - Wellington City", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Western Bay Of Plenty District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Western Bay Of Plenty District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Westland District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Westland District",
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Whakatāne District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Whakatāne District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Whanganui District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Whanganui District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Whangārei District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Whangārei District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Other/Unknown", 
+		 "title": "Number of recipients of CIRP by territorial authority - Other/Unknown", 
+		 "units": "Number" 
+		}
+	  ]
+	}	
 ]
