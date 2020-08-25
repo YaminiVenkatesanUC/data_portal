@@ -5878,5 +5878,130 @@
 		 "units": "Number" 
 		}
 	  ]
-	}	
+	},
+	{
+    "class": "Social",
+    "type": "Household finances",
+    "indicator_name": "Confidence in household's financial situation",
+    "source": "Commission for Financial Capability",
+    "plot_function": "get_unstacked_horizontal_bar",
+    "international": false,
+    "source_url":"https://cffc.govt.nz/news-and-media/news/covid-19-exposing-new-zealanders-financial-vulnerability/",
+    "download": true,
+    "groups": [
+        {
+          "name": "undefined_name",
+          "units": "%",
+          "title": "Respondents’ level of confidence in household’s financial situation over next 3 months",
+          "caveats": "<p> 1) Data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3).  </p><p> 2) This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population.  </p>"
+      }
+    ]
+  },
+  {
+   "class": "Social",
+   "type": "Household finances",
+    "indicator_name": "Ability to meet bills",  "source": "Commission for Financial Capability",
+    "plot_function": "get_unstacked_horizontal_bar",
+    "international": false,
+    "source_url":"https://cffc.govt.nz/news-and-media/news/covid-19-exposing-new-zealanders-financial-vulnerability/",
+    "download": true,
+    "groups": [
+        {
+            "name": "undefined_name",
+            "units": "%",
+            "title": "Respondents’ ability to meet bills and other financial commitments over next 3 months",
+            "caveats": "<p> 1) Data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3).  </p><p> 2) This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population.  </p>"
+        }
+    ]
+  },
+   {
+   "class": "Social",
+   "type": "Household finances",
+    "indicator_name": "Use of money in savings",
+    "source": "Commission for Financial Capability",
+    "plot_function": "get_unstacked_horizontal_bar",
+    "international": false,
+    "source_url":"https://cffc.govt.nz/news-and-media/news/covid-19-exposing-new-zealanders-financial-vulnerability/",
+    "download": true,
+    "groups": [
+        {
+            "name": "undefined_name",
+            "units": "%",
+            "title": "Whether respondents used savings to help make ends meet during the last four weeks",
+            "caveats": "<p> 1) Data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3).  </p><p> 2) This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population.  </p>"
+        }
+    ]
+  },
+  {
+   "class": "Social",
+   "type": "Household finances",
+    "indicator_name": "Change in income",
+    "source": "Commission for Financial Capability",
+    "plot_function": "get_unstacked_horizontal_bar",
+    "international": false,
+    "source_url":"https://cffc.govt.nz/news-and-media/news/covid-19-exposing-new-zealanders-financial-vulnerability/",
+    "download": true,
+    "groups": [
+        {
+            "name": "undefined_name",
+            "units": "%",
+            "title": "Way in which respondents' household income* has changed since beginning of March 2020",
+            "caveats": "<p> 1)* Refers to total monthly net household income from all sources. </p><p> 2) Data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3).  </p><p> 3) This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population.  </p>"
+        }
+    ]
+  },
+  {
+   "class": "Social",
+   "type": "Personal finances",
+    "indicator_name": "Financial anxiety",
+    "source": "Commission for Financial Capability",
+    "plot_function": "get_unstacked_horizontal_bar",
+    "international": false,
+    "source_url":"https://cffc.govt.nz/news-and-media/news/covid-19-exposing-new-zealanders-financial-vulnerability/",
+    "download": true,
+    "groups": [
+        {
+            "name": "undefined_name",
+            "units": "%",
+            "title": "How well respondents relate to the statement \"Thinking about my financial situation makes me anxious\"",
+            "caveats": "<p> 1) Data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3).  </p><p> 2) This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population.  </p>"
+        }
+    ]
+  },
+   {
+    "class": "Social",
+    "type": "Household finances",
+    "indicator_name": "Money owed on credit agreements",
+    "source": "Commission for Financial Capability",
+    "plot_function": "get_unstacked_horizontal_bar",
+    "international": false,
+    "source_url":"https://cffc.govt.nz/news-and-media/news/covid-19-exposing-new-zealanders-financial-vulnerability/",
+    "download": true,
+    "groups": [
+        {
+          "name": "undefined_name",
+          "units": "%",
+          "title": "Percentage of respondents who owe money due to missed repayments on credit, by type of credit agreement",
+          "caveats": "<p> 1) Data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3).  </p><p> 2) This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population.  </p>"
+      }
+    ]
+  },
+  {
+    "class": "Social",
+    "type": "Personal finances",
+    "indicator_name": "Effects of COVID-19 on work and income",
+    "source": "Commission for Financial Capability",
+    "plot_function": "get_unstacked_horizontal_bar",
+    "international": false,
+    "source_url":"https://cffc.govt.nz/news-and-media/news/covid-19-exposing-new-zealanders-financial-vulnerability/",
+    "download": true,
+    "groups": [
+        {
+            "name": "undefined_name",
+            "units": "%",
+            "title": "Percentage of respondents who said they or the partner they live with experienced the following as a result of COVID-19",
+            "caveats": "<p> 1)* Includes self-employed income. <p></p> 2) Data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3).  </p><p> 3) This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population.  </p>"
+        }
+    ]
+  }
 ]
