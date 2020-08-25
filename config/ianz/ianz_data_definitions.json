@@ -26,7 +26,7 @@
       "Canterbury",
       "Gisborne",
       "Hawke's Bay",
-      "Manawatu Whanganui",
+      "Manawatu-Whanganui",
       "Marlborough",
       "New Zealand",
       "Northland",
@@ -46,7 +46,7 @@
       "Canterbury",
       "Gisborne",
       "Hawke's Bay",
-      "Manawatu Whanganui",
+      "Manawatu-Whanganui",
       "Marlborough",
       "New Zealand",
       "Northland",
@@ -60,9 +60,9 @@
       ]
       ,
       "sheet_number": 1,
-      "filename": "IANZ regional gdp.csv",
-      "parameter_transform": "function (x) dmy(x)",
-      "load_function": "read_from_csv",
+      "filename": "ianz regional gdp data.xlsx",
+      "parameter_transform": "function (x) ymd(x)",
+      "load_function": "read_from_excel",
       "data_type": "TimeSeries"
     },
       {
@@ -266,6 +266,23 @@
       "parameter_transform": "function (x) x",
       "load_function": "read_from_csv",
       "data_type": "BarChart"
+    }
+    ,
+    {
+      "class": "Future wellbeing",
+      "type": "Natural capital",
+      "indicator_name": "Energy consumption",
+      "parameter_col": 1,
+      "value_col": [2, 3, 4, 5, 6, 7, 8],
+      "value_names": ["Arts and recreation services",	"Industrial and trade sector total",	"Manufacturing",	"Primary sector total",
+      "Public administration and safety", "Services sector total","Transport, postal, and warehousing"],
+      "group_names": ["Arts and recreation services",	"Industrial and trade sector total",	"Manufacturing",	"Primary sector total",
+      "Public administration and safety", "Services sector total","Transport, postal, and warehousing"],
+      "sheet_number": 1,
+      "filename": "ianz energy consumption data.xlsx",
+      "parameter_transform": "function (x) ymd(x)",
+      "load_function": "read_from_excel",
+      "data_type": "TimeSeries"
     }
 
 ]

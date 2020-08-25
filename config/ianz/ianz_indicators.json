@@ -65,7 +65,7 @@
         }
         ,
         {
-            "name": "Manawatu Whanganui",
+            "name": "Manawatu-Whanganui",
             "units": "$",
             "title": "Gross domestic product in current prices - Manawatu Whanganui"
         }
@@ -382,6 +382,56 @@
             "units": "%",
             "title": "Percentage of children with good, very good, or excellent health (parent-rated), by child’s sex"
         }
+    ]
+  }
+  ,
+   {
+    "class": "Future wellbeing",
+    "type": "Natural capital",
+    "indicator_name": "Energy consumption",
+    "source": "NZ Energy use survey",
+    "plot_function": "get_unstacked_bar_chart",
+    "include_date_slider": false,
+    "international": false,
+    "source_url":" ",
+    "download": true,
+    "groups": [
+        {
+            "name": "Arts and recreation services",
+            "units": "Gross terajoules of energy",
+            "title": "Yearly energy consumption for Arts and recreation services"
+        },
+          {
+            "name": "Industrial and trade sector total",
+            "units": "Gross terajoules of energy",
+            "title": "Yearly energy consumption for Industrial and trade sector total"
+        },
+          {
+            "name": "Manufacturing",
+            "units": "Gross terajoules of energy",
+            "title": "Yearly energy consumption for Manufacturing"
+        },
+          {
+            "name": "Primary sector total",
+            "units": "Gross terajoules of energy",
+            "title": "Yearly energy consumption for Primary sector total"
+        },
+          {
+            "name": "Public administration and safety",
+            "units": "Gross terajoules of energy",
+            "title": "Yearly energy consumption for Public administration and safety"
+        },
+          {
+            "name": "Services sector total",
+            "units": "Gross terajoules of energy",
+            "title": "Yearly energy consumption for Services sector total"
+        },
+          {
+            "name": "Transport, postal, and warehousing",
+            "units": "Gross terajoules of energy",
+            "title": "Yearly energy consumption for Transport, postal, and warehousing"
+        }
+    
     ]
   }
   

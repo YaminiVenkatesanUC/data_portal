@@ -2172,7 +2172,7 @@
         {
             "name": "Machinery and electronics",
             "units": "$",
-            "title": "Value of machinary and electronics imports (cumulative) - provisional",
+            "title": "Value of machinery and electronics imports (cumulative) - provisional",
             "visible": ["2020", "2019", "2018"]
         }
     ]
