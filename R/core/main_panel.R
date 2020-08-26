@@ -135,6 +135,7 @@ main_plot_server <- function(input, output, session, indicator_class, indicator_
 
   get_indicator_definition <- reactive({
     key <- paste(indicator_class, input$type_selector, input$indicator_selector, sep = "_")
+    #session$sendCustomMessage('indicator_selected', key)
     indicator_definition <- indicator_definitions[[key]]
     return (indicator_definition)
   })
