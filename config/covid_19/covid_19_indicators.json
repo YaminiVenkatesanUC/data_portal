@@ -606,6 +606,7 @@
     "international": false,
     "disabled": false,
     "include_date_slider": true,
+    "default_lower_range": "2020-02-29",
     "show_zero": true,
     "download": true,
     "groups": [
@@ -4007,7 +4008,7 @@
     "plot_function": "get_time_series_plot",
     "international": false,
     "include_date_slider": true,
-    "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-paid-jobs-week-ended-19-july-2020",
+    "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-paid-jobs-week-ended-26-july-2020",
     "download": true,
    
     "groups": [
@@ -6003,5 +6004,105 @@
             "caveats": "<p> 1)* Includes self-employed income. <p></p> 2) Data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3).  </p><p> 3) This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population.  </p>"
         }
     ]
-  }
+  } ,
+   
+  {
+    "class": "Economic",
+    "indicator_name": "Broadband usage by region",
+    "type": "Activity",
+    "source": "Chorus",
+    "plot_function": "get_time_series_plot",
+      "international": false,
+    "include_date_slider": true,
+    
+    "caveats":"<p> 1. Only includes traffic on the Chorus network (excludes traffic for other local fibre companies, cable and fixed wireless networks).</p><p> 2. Regional traffic is based on the location where the traffic is handed over to the service provider.</p><p> 3. The sum of regional totals may not exactly match the daily national usage.</p><p> 4. Tasman encompasses the Tasman, Nelson and Marlborough regions.</p><p> 5. In some date instances across regions, data will not feature due to collection issues.</p>",
+    
+   
+   
+    "download": false,
+    "groups": [
+     
+      {
+        "name": "Auckland",
+        "title": "Daily Chorus broadband use - Auckland",
+        "units": "Gigagbyte (million)"
+      },
+      {
+        "name": "Bay of Plenty",
+        "title": "Daily Chorus broadband use - Bay of Plenty",
+        "units": "Gigagbyte (million)"
+      },
+      {
+        "name": "Canterbury",
+        "title": "Daily Chorus broadband use - Canterbury",
+        "units": "Gigagbyte (million)"
+      },
+      {
+        "name": "Gisborne",
+        "title": "Daily Chorus broadband use - Gisborne",
+        "units": "Gigagbyte (million)"
+      },
+      
+      {
+        "name": "Hawke's Bay",
+        "title": "Daily Chorus broadband use- Hawke's Bay",
+        "units": "Gigagbyte (million)"
+      },
+      {
+        "name": "Manawatū-Whanganui",
+        "title": "Daily Chorus broadband use- Manawatū-Whanganui",
+        "units": "Gigagbyte (million)"
+      }
+      ,
+     
+      {
+        "name": "Northland",
+        "title": "Daily Chorus broadband use - Northland",
+        "units": "Gigagbyte (million)"
+      },
+      {
+        "name": "Otago",
+        "title": "Daily Chorus broadband use - Otago",
+        "units": "Gigagbyte (million)"
+      }
+      ,
+      {
+        "name": "Southland",
+        "title": "Daily Chorus broadband use - Southland",
+        "units": "Gigagbyte (million)"
+      }
+      ,
+      {
+        "name": "Taranaki",
+        "title": "Daily Chorus broadband use - Taranaki",
+        "units": "Gigagbyte (million)"
+      }
+      ,
+      {
+        "name": "Tasman",
+        "title": "Daily Chorus broadband use - Tasman",
+        "units": "Gigagbyte (million)"
+      }
+       ,
+      {
+        "name": "Waikato",
+        "title": "Daily Chorus broadband use - Waikato",
+        "units": "Gigagbyte (million)"
+      }
+      , 
+      {
+        "name": "Wellington",
+        "title": "Daily Chorus broadband use - Wellington",
+        "units": "Gigagbyte (million)"
+      } , 
+      {
+        "name": "West Coast",
+        "title": "Daily Chorus broadband use - West Coast",
+        "units": "Gigagbyte (million)"
+      }
+      
+      
+      ]
+   }
+   
 ]

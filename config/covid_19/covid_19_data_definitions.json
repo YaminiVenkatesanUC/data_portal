@@ -3090,7 +3090,7 @@
         "type": "COVID-19",
         "parameter_col": 1,
         "value_col": [2],
-        "value_names": ["Current - 24 August"],
+        "value_names": ["Current - 25 August"],
         "sheet_number": 1,
         "filename": "COVID 19 - MoH Border Control insights.xlsx",
         "parameter_transform": "function (x) x",
@@ -4831,4 +4831,73 @@
     "load_function": "read_from_excel",
     "data_type": "BarChart"
    }
+   ,
+    {
+        "class": "Economic",
+        "indicator_name": "Broadband usage by region",
+        "type": "Activity",
+       "parameter_col": 1,
+       "parameter_transform": [
+        "function (x) ",
+        "as.Date(x, format = \"%Y-%m-%d\")"
+        ],
+        "sheet_number": 1,
+        "value_col": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+        
+        ],
+        "value_names": [
+          "Total",
+         "Auckland",	
+         "Bay of Plenty",	
+         "Canterbury",
+         "Gisborne",
+         "Hawke's Bay",
+         "Manawatū-Whanganui",
+         "Northland",
+         "Otago",
+         "Southland",
+         "Taranaki",
+         "Tasman",
+         "Waikato",
+         "Wellington",
+         "West Coast"
+
+        ],
+        "filename": "COVID 19 - Chorus regional broadband.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "group_names": [
+          "Total",
+         "Auckland",	
+         "Bay of Plenty",	
+         "Canterbury",
+         "Gisborne",
+         "Hawke's Bay",
+         "Manawatū-Whanganui",
+         "Northland",
+         "Otago",
+         "Southland",
+         "Taranaki",
+         "Tasman",
+         "Waikato",
+         "Wellington",
+         "West Coast"
+        ]
+    }   
+    
 ]
