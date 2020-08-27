@@ -4043,7 +4043,7 @@
     "international": false,
     "disabled": false,
     "include_date_slider": false,
-    "source_url":"https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation/covid-19-border-controls/covid-19-quarantine-and-managed-isolation-numbers",
+    "source_url":"https://www.mbie.govt.nz/business-and-employment/economic-development/covid-19-data-resources/managed-isolation-and-quarantine-data/",
     "download": true,
     "groups": [
         {
