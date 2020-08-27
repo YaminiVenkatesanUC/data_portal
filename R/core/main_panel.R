@@ -184,7 +184,7 @@ main_plot_server <- function(input, output, session, indicator_class, indicator_
   observeEvent(input$line_selector, {
     if (input$type_selector != "" && input$indicator_selector != "" && input$line_selector != "") {
       key <- paste(indicator_class, input$type_selector, input$indicator_selector, sep = "_")
-      session$sendCustomMessage('indicator_selected', paste(key, "_", input$line_selector))
+      session$sendCustomMessage('indicator_selected', paste0(key, "_", input$line_selector))
     }
   })
 
