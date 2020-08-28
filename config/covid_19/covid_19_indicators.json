@@ -4038,7 +4038,7 @@
     "class": "Health",
     "indicator_name": "Quarantine and managed isolation figures",
     "type": "COVID-19",
-    "source": "Ministry of Health",
+    "source": "Ministry of Business, Innovation and Employment",
     "plot_function": "get_horizontal_bar",
     "international": false,
     "disabled": false,
