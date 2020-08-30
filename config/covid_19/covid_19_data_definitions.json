@@ -4837,6 +4837,7 @@
         "indicator_name": "Broadband usage by region",
         "type": "Activity",
        "parameter_col": 1,
+   
        "parameter_transform": [
         "function (x) ",
         "as.Date(x, format = \"%Y-%m-%d\")"
@@ -4879,7 +4880,7 @@
 
         ],
         "filename": "COVID 19 - Chorus regional broadband.xlsx",
-        "load_function": "read_from_excel",
+        "load_function": "read_chorus_regional_data",
         "data_type": "TimeSeries",
         "group_names": [
           "Total",
