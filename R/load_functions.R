@@ -703,12 +703,13 @@ electricity_grid_by_region_data <- function(config, directory){
 
 read_chorus_regional_data<-function(config, directory){
   
+  
   dates<-ymd(c("2020/04/29", "2020/05/14","2020/07/05", "2020/07/06", "2020/07/21", "2020/07/19", "2020/07/20", "2020/07/26"))
   data<- as.data.frame(read_excel(
     paste0(directory, config$filename),
     sheet = config$sheet_number,
   ))
-  
+  colnames(data)[1]<-"Date"
   data<-data%>%mutate(Date= ymd(Date))%>%
     group_by(Date,`Region Name`)%>%
     summarise_if(is.numeric, sum, na.rm=T)%>%ungroup()%>%
