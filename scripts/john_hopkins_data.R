@@ -95,20 +95,20 @@ write_xlsx(data,paste0(output,"COVID 19 - Global cases.xlsx"))
 
 
 ##plot to check if data is ok
-df_cases4<-df_cases_all
-
-df_cases4<-df_cases4%>%mutate(Active=log(Active), Recovered=log(Recovered), Deceased=log(Deceased))
-
-cases_policy<-df_cases4%>%
-  gather(type, value, -Country, -Date)%>%
-  filter(type=="Active")
-
-p<-ggplot(cases_policy, aes(Date,value, fill=type ))+geom_bar(stat="identity")+facet_wrap(.~Country, ncol=3)+
-  theme_minimal()+ theme(legend.position="none")+geom_bar(stat="identity")+
-  scale_fill_manual(values = c("orange","black", "green"))+ggtitle("log of active COVID 19 cases")
-
-
-ggplotly(p)
+# df_cases4<-df_cases_all
+# 
+# df_cases4<-df_cases4%>%mutate(Active=log(Active), Recovered=log(Recovered), Deceased=log(Deceased))
+# 
+# cases_policy<-df_cases4%>%
+#   gather(type, value, -Country, -Date)%>%
+#   filter(type=="Active")
+# 
+# p<-ggplot(cases_policy, aes(Date,value, fill=type ))+geom_bar(stat="identity")+facet_wrap(.~Country, ncol=3)+
+#   theme_minimal()+ theme(legend.position="none")+geom_bar(stat="identity")+
+#   scale_fill_manual(values = c("orange","black", "green"))+ggtitle("log of active COVID 19 cases")
+# 
+# 
+# ggplotly(p)
 
 
 
