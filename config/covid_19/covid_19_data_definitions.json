@@ -2682,7 +2682,7 @@
     },
 {
         "class": "Economic",
-        "indicator_name": "Gas consumption by selected major users",
+        "indicator_name": "Gas consumption by largest users",
         "type": "Activity",
         "parameter_col": 1,
                 "parameter_transform": [
@@ -2725,7 +2725,7 @@
     },
 {
         "class": "Economic",
-        "indicator_name": "Gas consumption by largest users",
+        "indicator_name": "Gas consumption by selected major users",
         "type": "Activity",
         "parameter_col": 1,
                 "parameter_transform": [

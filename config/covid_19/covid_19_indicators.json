@@ -3490,7 +3490,7 @@
 },
 {
     "class": "Economic",
-    "indicator_name": "Gas consumption by selected major users",
+    "indicator_name": "Gas consumption by largest users",
     "type": "Activity",
     "source": "First Gas",
     "plot_function": "get_time_series_plot",
@@ -3537,7 +3537,7 @@
 },
 {
     "class": "Economic",
-    "indicator_name": "Gas consumption by largest users",
+    "indicator_name": "Gas consumption by selected major users",
     "type": "Activity",
     "source": "First Gas",
     "plot_function": "get_time_series_plot",
@@ -3553,27 +3553,27 @@
      
       {
         "name": "Ballance Agri-Nutrients",
-        "title": "Daily gas consumption by largest users - Ballance Agri-Nutrients",
+        "title": "Daily gas consumption - Ballance Agri-Nutrients",
         "units": "Gigajoules"
       },
         {
         "name": "Fonterra - (selected sites)",
-        "title": "Daily gas consumption by largest users - Fonterra (selected sites)",
+        "title": "Daily gas consumption - Fonterra (selected sites)",
         "units": "Gigajoules"
       },
       {
         "name": "Glenbrook steel mill",
-        "title": "Daily gas consumption by largest users - Glenbrook steel mill",
+        "title": "Daily gas consumption - Glenbrook steel mill",
         "units": "Gigajoules"
       },
       {
         "name": "Kinleith pulp and paper mill",
-        "title": "Daily gas consumption by largest users - Kinleith pulp and paper mill",
+        "title": "Daily gas consumption - Kinleith pulp and paper mill",
         "units": "Gigajoules"
       },
       {
         "name": "Marsden Point oil refinery",
-        "title": "Daily gas consumption by largest users - Marsden Point oil refinery",
+        "title": "Daily gas consumption - Marsden Point oil refinery",
         "units": "Gigajoules"
       }
        
