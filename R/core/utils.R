@@ -52,9 +52,9 @@ data_frame_to_data_object_helper_error <- function(directory, config, data) {
     indexes <- which(config$group_names == group_name)
     values <- (data[colnames(data) != "Parameter" &
                       !endsWith(colnames(data), "_lower") &
-                      !endsWith(colnames(data), "_upper")])[, indexes]
-    lower <- (data[endsWith(colnames(data), "_lower")])[, indexes]
-    upper <- (data[endsWith(colnames(data), "_upper")])[, indexes]
+                      !endsWith(colnames(data), "_upper")])[, indexes, drop = F]
+    lower <- (data[endsWith(colnames(data), "_lower")])[, indexes, drop = F]
+    upper <- (data[endsWith(colnames(data), "_upper")])[, indexes, drop = F]
     value_names <- unlist(config$value_names)[indexes]
     temp_data <- data.frame(Parameter = data$Parameter)
     temp_data <- cbind(temp_data, values, lower, upper)
