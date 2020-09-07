@@ -4857,12 +4857,13 @@
         12,
         13,
         14,
-        15
+        15,
+        16
         
         
         ],
         "value_names": [
-          
+          "Total",
          "Auckland",	
          "Bay of Plenty",	
          "Canterbury",
@@ -4883,7 +4884,7 @@
         "load_function": "read_chorus_regional_data",
         "data_type": "TimeSeries",
         "group_names": [
-          
+          "Total",
          "Auckland",	
          "Bay of Plenty",	
          "Canterbury",
