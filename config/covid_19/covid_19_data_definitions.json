@@ -2680,46 +2680,45 @@
         "data_type": "TimeSeries",
         "group_names": "undefined_name"
     },
+    
 {
         "class": "Economic",
         "indicator_name": "Gas consumption by largest users",
         "type": "Activity",
         "parameter_col": 1,
-                "parameter_transform": [
-        "function (x) ",
-        "as.Date(x, format = \"%d/%m/%y\")"
-        ],
-        "sheet_number": 1,
-        
+                "parameter_transform":"function (x) ymd(x)",
+        "sheet_number": 2,
+        "gas_source":"Maui",
+        "skip":1,
         "value_col": [
-        7,
         2,
         3,
         4,
         5,
-        6
+        6,
+        7
         ],
         "value_names": [
-         "Methanex Motunui",
+         
         "Methanex Waitara Valley",
         "Huntly power station",
         "Stratford peaker power station",
         "Taranaki combined cycle power station",
-        "Te Rapa cogeneration plant"
-        
-        
+        "Te Rapa cogeneration plant",
+        "Methanex Motunui"
         ],
-        "filename": "COVID 19 - Industrial Gas use aggregated.xlsx",
-        "load_function": "read_from_excel",
+        "filename": "COVID 19 - Industrial Gas use.xlsx",
+        "load_function": "gas_use_data",
         "data_type": "TimeSeries",
         "group_names": 
         [ 
-          "Methanex Motunui",
-        "Methanex Waitara Valley",
+        
+       "Methanex Waitara Valley",
         "Huntly power station",
         "Stratford peaker power station",
         "Taranaki combined cycle power station",
-        "Te Rapa cogeneration plant"
+        "Te Rapa cogeneration plant",
+        "Methanex Motunui"
         
         ]
     },
@@ -2732,32 +2731,33 @@
         "function (x) ",
         "as.Date(x, format = \"%d/%m/%y\")"
         ],
-        "sheet_number": 2,
+        "sheet_number": 1,
+        "skip":1,
         
         "value_col": [
-        3,  
         2,
+        3,  
         4,
         5,
         6
         ],
         "value_names": [
-        
-        "Ballance Agri-Nutrients",
         "Fonterra - (selected sites)",
+        "Ballance Agri-Nutrients",
         "Glenbrook steel mill",
         "Kinleith pulp and paper mill",
         "Marsden Point oil refinery"
         
         ],
-        "filename": "COVID 19 - Industrial Gas use aggregated.xlsx",
-        "load_function": "read_from_excel",
+        "filename": "COVID 19 - Industrial Gas use.xlsx",
+        "load_function": "gas_use_data",
+        "gas_source":"Vector",
         "data_type": "TimeSeries",
         "group_names": 
         [ 
         
+      "Fonterra - (selected sites)",
         "Ballance Agri-Nutrients",
-        "Fonterra - (selected sites)",
         "Glenbrook steel mill",
         "Kinleith pulp and paper mill",
         "Marsden Point oil refinery"
@@ -3090,7 +3090,7 @@
         "type": "COVID-19",
         "parameter_col": 1,
         "value_col": [2],
-        "value_names": ["Current - 08 September"],
+        "value_names": ["Current - 09 September"],
         "sheet_number": 1,
         "filename": "COVID 19 - MoH Border Control insights.xlsx",
         "parameter_transform": "function (x) x",
