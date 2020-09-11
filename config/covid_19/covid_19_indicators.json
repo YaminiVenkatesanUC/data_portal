@@ -674,6 +674,7 @@
     "international": false,
     "include_date_slider": true,
     "default_lower_range": "2019-01-01",
+    "caveats":" <p>Data for September 2020 is preliminary.</p>",
     
     "source_url": "https://www.anz.co.nz/about-us/economic-markets-research/business-outlook/",
     "download": false,
@@ -738,6 +739,7 @@
     "international": false,
     "include_date_slider": true,
     "default_lower_range": "2019-01-01",
+    "caveats":" <p>Data for September 2020 is preliminary.</p>",
   
     "source_url": "https://www.anz.co.nz/about-us/economic-markets-research/business-outlook/",
     "download": false,
