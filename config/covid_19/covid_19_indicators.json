@@ -6103,6 +6103,201 @@
       
       
       ]
-   }
-   
+   },
+   {
+    "class": "Contextual",
+    "type": "Business",
+    "indicator_name": "Number of employees by region",
+  	"source": "Stats NZ",
+  	"plot_function": "get_unstacked_horizontal_bar",
+  	"international": false,
+  	"source_url":"http://nzdotstat.stats.govt.nz/wbos/Index.aspx?DataSetCode=TABLECODE7602",
+  	"caveats": "<p> 1) Industries classified in line with the Australian and New Zealand Standard Industrial Classification: <a href=\"http://archive.stats.govt.nz/methods/classifications-and-standards/classification-related-stats-standards/industrial-classification.aspx#gsc.tab=0\">Industrial classification</a>. </p> <p> 2) Employee count is a head count of all salary and wage earners.</p><p> 3) Due to rounding, individual figures may not always sum to the stated total(s). </p>",
+  	"download": true,
+  	"groups": [
+  	   {
+  		 "name": "Total New Zealand",
+  		 "units": "Count",
+  		 "title": "Number of employees by industry type, as at February 2019 – Total New Zealand"
+  		 },
+  	   {
+  		 "name": "Northland",
+  		 "units": "Count",
+  		 "title": "Number of employees by industry type, as at February 2019 – Northland"
+  		 },
+  	   {
+  		 "name": "Auckland",
+  		 "units": "Count",
+  		 "title": "Number of employees by industry type, as at February 2019 – Auckland"
+  		 },
+  	   {
+  		 "name": "Waikato",
+  		 "units": "Count",
+  		 "title": "Number of employees by industry type, as at February 2019 – Waikato"
+  		 },
+  	   {
+  		 "name": "Bay of Plenty",
+  		 "units": "Count",
+  		 "title": "Number of employees by industry type, as at February 2019 – Bay of Plenty"
+  		 },
+  	   {
+  		 "name": "Gisborne",
+  		 "units": "Count",
+  		 "title": "Number of employees by industry type, as at February 2019 – Gisborne"
+  		 },
+  		 {
+  		 "name": "Hawke's Bay",
+  		 "units": "Count",
+  		 "title": "Number of employees by industry type, as at February 2019 – Hawke's Bay"
+  		 },
+    	  	   {
+  		 "name": "Taranaki",
+  		 "units": "Count",
+  		 "title": "Number of employees by industry type, as at February 2019 – Taranaki"
+  		 },
+  		 {
+  		 "name": "Manawatū-Whanganui",
+  		 "units": "Count",
+  		 "title": "Number of employees by industry type, as at February 2019 – Manawatū-Whanganui"
+  		 },
+  		 {
+  		 "name": "Wellington",
+  		 "units": "Count",
+  		 "title": "Number of employees by industry type, as at February 2019 – Wellington"
+  		 },
+  		 {
+  		 "name": "Tasman",
+  		 "units": "Count",
+  		 "title": "Number of employees by industry type, as at February 2019 – Tasman"
+  		 },
+  		 {
+  		 "name": "Nelson",
+  		 "units": "Count",
+  		 "title": "Number of employees by industry type, as at February 2019 – Nelson"
+  		 },
+  		  {
+  		 "name": "Marlborough",
+  		 "units": "Count",
+  		 "title": "Number of employees by industry type, as at as at February 2019 – Marlborough"
+  		 },
+  		 {
+  		 "name": "West Coast",
+  		 "units": "Count",
+  		 "title": "Number of employees by industry type, as at as at February 2019 – West Coast"
+  		 },
+  		  {
+  		 "name": "Canterbury",
+  		 "units": "Count",
+  		 "title": "Number of employees by industry type, as at as at February 2019 – Canterbury"
+  		 },
+  		{
+  		 "name": "Otago",
+  		 "units": "Count",
+  		 "title": "Number of employees by industry type, as at February 2019 – Otago"
+  		 },
+  		 {
+  		 "name": "Southland",
+  		 "units": "Count",
+  		 "title": "Number of employees by industry type, as at February 2019 – Southland"
+  		 }
+  	 ]
+  },
+  {
+    "class": "Contextual",
+    "type": "Business",
+    "indicator_name": "Number of businesses by region",
+  	"source": "Stats NZ",
+  	"plot_function": "get_unstacked_horizontal_bar",
+  	"international": false,
+  	"source_url":"http://nzdotstat.stats.govt.nz/wbos/Index.aspx?DataSetCode=TABLECODE7602",
+  	"download": true,
+  	"caveats": "<p>1) Industries classified in line with the Australian and New Zealand Standard Industrial Classification: <a href=\"http://archive.stats.govt.nz/methods/classifications-and-standards/classification-related-stats-standards/industrial-classification.aspx#gsc.tab=0\">Industrial classification</a>.<br> </p><p> 2) Business unit: A separate operating unit engaged in New Zealand in one, or predominately one, kind of economic activity from a single physical location or base.</p><p> 3) Due to rounding, individual figures may not always sum to the stated total(s). </p>",
+  	"groups": [
+  	   {
+  		 "name": "Total New Zealand",
+  		 "units": "Count",
+  		 "title": "Number of business units by industry type, as at February 2019 – Total New Zealand"
+  		 },
+  	   {
+  		 "name": "Northland",
+  		 "units": "Count",
+  		 "title": "Number of business units by industry type, as at February 2019 – Northland"
+  		 },
+  		 {
+  		 "name": "Auckland",
+  		 "units": "Count",
+  		 "title": "Number of business units by industry type, as at February 2019 – Auckland"
+  		 },
+  	   {
+  		 "name": "Waikato",
+  		 "units": "Count",
+  		 "title": "Number of business units by industry type, as at February 2019 – Waikato"
+  	  },
+  	  {
+  		 "name": "Bay of Plenty",
+  		 "units": "Count",
+  		 "title": "Number of business units by industry type, as at February 2019 – Bay of Plenty"
+  		 },
+  	   {
+  		 "name": "Gisborne",
+  		 "units": "Count",
+  		 "title": "Number of business units by industry type, as at February 2019 – Gisborne"
+  		 },
+  		 {
+  		 "name": "Hawke's Bay",
+  		 "units": "Count",
+  		 "title": "Number of business units by industry type as at February 2019 – Hawke's Bay"
+  		 },
+    	 {
+  		 "name": "Taranaki",
+  		 "units": "Count",
+  		 "title": "Number of business units by industry type, as at February 2019 – Taranaki"
+  		 },
+  		 {
+  		 "name": "Manawatū-Whanganui",
+  		 "units": "Count",
+  		 "title": "Number of business units by industry type, as at February 2019 – Manawatū-Whanganui"
+  		 },
+  		 {
+  		 "name": "Wellington",
+  		 "units": "Count",
+  		 "title": "Number of business units by industry type, as at February 2019 – Wellington"
+  		 },
+  		  {
+  		 "name": "Tasman",
+  		 "units": "Count",
+  		 "title": "Number of business units by industry type, as at February 2019 – Tasman"
+  		 },
+  		 {
+  		 "name": "Nelson",
+  		 "units": "Count",
+  		 "title": "Number of business units by industry type, as at February 2019 – Nelson"
+  		 },
+  		 {
+  		 "name": "Marlborough",
+  		 "units": "Count",
+  		 "title": "Number of business units by industry type, as at February 2019 – Marlborough"
+  		 },
+  		 {
+  		 "name": "West Coast",
+  		 "units": "Count",
+  		 "title": "Number of business units by industry type, as at February 2019 – West Coast"
+  		 },
+  		  {
+  		 "name": "Canterbury",
+  		 "units": "Count",
+  		 "title": "Number of business units by industry type, as at February 2019 – Canterbury"
+  		 },
+  		  {
+  		 "name": "Otago",
+  		 "units": "Count",
+  		 "title": "Number of business units by industry type, as at February 2019 – Otago"
+  		 },
+  		  {
+  		 "name": "Southland",
+  		 "units": "Count",
+  		 "title": "Number of business units by industry type, as at February 2019 – Southland"
+  		 }
+  	 ]
+  }
 ]
