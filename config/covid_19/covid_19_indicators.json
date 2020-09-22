@@ -3315,19 +3315,10 @@
       "units": "$"
     },
 
+   
     {
-      "name": "Total loan applications received",
-      "title": "Total loan applications received (cumulative)",
-      "units": "Number"
-    },
-    {
-      "name": "Loan applications received (eServices)",
-      "title": "Loan applications received (eServices - cumulative)",
-      "units": "Number"
-    },
-    {
-      "name": "Loan applications received (Manual)",
-      "title": "Loan applications received (Manual - cumulative)",
+      "name": "Total loan applications received (cumulative)",
+      "title": "Total Loan applications received (cumulative)",
       "units": "Number"
     }
     
