@@ -1271,7 +1271,7 @@
     ]
   },
   {
-    "class": "Social",
+    "class": "Benefit support",
     "indicator_name": "Accomodation supplement",
     "type": "Supplementary support",
     "source": "Ministry of Social Development",
@@ -1288,7 +1288,7 @@
     ]
   },
   {
-    "class": "Social",
+    "class": "Benefit support",
     "indicator_name": "Special needs grants for food - (weekly)",
     "type": "Hardship assistance",
     "source": "Ministry of Social Development",
@@ -1305,7 +1305,7 @@
     ]
   },
   {
-    "class": "Social",
+    "class": "Benefit support",
     "indicator_name": "Temporary additional support and special benefit",
     "type": "Supplementary support",
     "source": "Ministry of Social Development",
@@ -1322,7 +1322,7 @@
     ]
   },
   {
-    "class": "Social",
+    "class": "Benefit support",
     "indicator_name": "All special needs grants",
     "type": "Hardship assistance",
     "source": "Ministry of Social Development",
@@ -1339,7 +1339,7 @@
     ]
   },
   {
-    "class": "Social",
+    "class": "Benefit support",
     "indicator_name": "Jobseeker support by MSD region",
     "type": "Benefits",
     "source": "Ministry of Social Development",
@@ -1786,7 +1786,7 @@
     ]
   },
   {
-    "class": "Social",
+    "class": "Benefit support",
     "indicator_name": "Jobseeker support by region - weekly",
     "type": "Benefits",
     "source": "Ministry of Social Development",
@@ -2522,7 +2522,7 @@
     ]
   },
   {
-  "class": "Social",
+  "class": "Benefit support",
     "indicator_name": "Jobseeker support by MSD region - Other ethnicities",
     "type": "Benefits",
     "source": "Ministry of Social Development",
@@ -2596,7 +2596,7 @@
     
   },
   {
-  "class": "Social",
+  "class": "Benefit support",
     "indicator_name": "Jobseeker support by MSD region - Pacific peoples",
     "type": "Benefits",
     "source": "Ministry of Social Development",
@@ -2669,7 +2669,7 @@
   ]
   },
   {
-  "class": "Social",
+  "class": "Benefit support",
     "indicator_name": "Jobseeker support by MSD region - Māori",
     "type": "Benefits",
     "source": "Ministry of Social Development",
@@ -2744,7 +2744,7 @@
   },
   
   {
-  "class": "Social",
+  "class": "Benefit support",
     "indicator_name": "Jobseeker support by MSD region - NZ European",
     "type": "Benefits",
     "source": "Ministry of Social Development",
@@ -2818,7 +2818,7 @@
     
   },
   {
-  "class": "Social",
+  "class": "Benefit support",
     "indicator_name": "Jobseeker support by ethnicity - work ready",
     "type": "Benefits",
     "source": "Ministry of Social Development",
@@ -2857,7 +2857,7 @@
       ]
   },
   {
-  "class": "Social",
+  "class": "Benefit support",
     "indicator_name": "Accommodation supplement by MSD region",
     "type": "Supplementary support",
     "source": "Ministry of Social Development",
@@ -2948,7 +2948,7 @@
     ]
   },
   {
-  "class": "Social",
+  "class": "Benefit support",
     "indicator_name": "Jobseeker support by territorial authority",
     "type": "Benefits",
     "source": "Ministry of Social Development",
@@ -4100,7 +4100,7 @@
     ]
   },
   {
-    "class": "Social",
+    "class": "Benefit support",
     "indicator_name": "Special needs grants for food by region",
     "type": "Hardship assistance",
     "source": "Ministry of Social Development",
@@ -4204,7 +4204,7 @@
   }
   ,
   {
-    "class": "Social",
+    "class": "Benefit support",
     "indicator_name": "Jobseeker support by region - (monthly)",
     "type": "Benefits",
     "source": "Ministry of Social Development",
@@ -4308,7 +4308,7 @@
   }
   ,
   {
-    "class": "Social",
+    "class": "Benefit support",
     "indicator_name": "Jobseeker support by region - Maori",
     "type": "Benefits",
     "source": "Ministry of Social Development",
@@ -4412,7 +4412,7 @@
   }
   ,
   {
-    "class": "Social",
+    "class": "Benefit support",
     "indicator_name": "Jobseeker support by region - NZ European",
     "type": "Benefits",
     "source": "Ministry of Social Development",
@@ -4515,7 +4515,7 @@
     ]
   },
   {
-    "class": "Social",
+    "class": "Benefit support",
     "indicator_name": "Jobseeker support by region - Pacific peoples",
     "type": "Benefits",
     "source": "Ministry of Social Development",
@@ -4619,7 +4619,7 @@
   }
    ,
   {
-    "class": "Social",
+    "class": "Benefit support",
     "indicator_name": "Jobseeker support by region - Other ethnicities",
     "type": "Benefits",
     "source": "Ministry of Social Development",
@@ -5173,7 +5173,7 @@
   },
   
 	{
-    "class": "Social",
+    "class": "Benefit support",
     "indicator_name": "Number of recipients of CIRP",
     "type": "Income relief payment",
     "source": "Ministry of Social Development",
@@ -5193,7 +5193,7 @@
 	
 	
    {
-    "class": "Social",
+    "class": "Benefit support",
     "indicator_name": "Number of recipients of CIRP by region",
     "type": "Income relief payment",
     "source": "Ministry of Social Development",
@@ -5296,7 +5296,7 @@
     ]
   } ,
   {
-    "class": "Social",
+    "class": "Benefit support",
     "indicator_name": "Amount of wage subsidy refunds received",
     "type": "Wage subsidy assistance",
     "source": "Ministry of Social Development",
@@ -5314,7 +5314,7 @@
   }
   ,
   {
-    "class": "Social",
+    "class": "Benefit support",
     "indicator_name": "Number of wage subsidy refunds received",
     "type": "Wage subsidy assistance",
     "source": "Ministry of Social Development",
@@ -5332,7 +5332,7 @@
   }
   ,
   {
-    "class": "Social",
+    "class": "Benefit support",
     "indicator_name": "Amount of wage subsidy extension paid",
     "type": "Wage subsidy extension",
     "source": "Ministry of Social Development",
@@ -5350,7 +5350,7 @@
   }
   ,
   {
-    "class": "Social",
+    "class": "Benefit support",
     "indicator_name": "Number of jobs associated with a paid application",
     "type": "Wage subsidy extension",
     "source": "Ministry of Social Development",
@@ -5369,7 +5369,7 @@
   
 	
   {
-    "class": "Social",
+    "class": "Benefit support",
     "indicator_name": "Jobseeker support",
     "type": "Benefits",
     "source": "Ministry of Social Development",
@@ -5388,7 +5388,7 @@
   
   
    {
-    "class": "Social",
+    "class": "Benefit support",
     "indicator_name": "Percentage of population",
     "type": "Benefits",
     "source": "Ministry of Social Development",
@@ -5405,7 +5405,7 @@
     ]
   },
   {
-    "class": "Social",
+    "class": "Benefit support",
     "indicator_name": "Number of applications",
     "type": "Wage subsidy assistance",
     "source": "Ministry of Social Development",
@@ -5422,7 +5422,7 @@
     ]
   },
   {
-    "class": "Social",
+    "class": "Benefit support",
     "indicator_name": "Number of paid applications",
     "type": "Wage subsidy assistance",
     "source": "Ministry of Social Development",
@@ -5439,7 +5439,7 @@
     ]
   },
   {
-    "class": "Social",
+    "class": "Benefit support",
     "indicator_name": "Amount of wage subsidy paid out",
     "type": "Wage subsidy assistance",
     "source": "Ministry of Social Development",
@@ -5460,7 +5460,7 @@
 	
 	
   {
-    "class": "Social",
+    "class": "Benefit support",
     "indicator_name": "Number of recipients of CIRP by age group",
     "type": "Income relief payment",
     "source": "Ministry of Social Development",
@@ -5527,7 +5527,7 @@
     ]
   },
   {
-	"class": "Social",
+	"class": "Benefit support",
 	"indicator_name": "Number of recipients of CIRP by territorial authority",
 	"type": "Income relief payment",
 	"source": "Ministry of Social Development",
@@ -6292,5 +6292,186 @@
   		 "title": "Number of business units by industry type, as at February 2019 – Southland"
   		 }
   	 ]
-  }
+  },
+   {
+    "class": "Health",
+    "type": "General health",
+    "indicator_name": "Health status",
+    "source": "Ministry of Health",
+    "plot_function": "get_unstacked_bar_chart_with_errors",
+    "international": false,
+    "source_url": "https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-resources-and-tools/covid-19-health-and-wellbeing-survey",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Percentage of respondents who said in general their health was good, very good, or excellent - provisional",
+        "units": "Percent",
+        "caveats": "<p> 1) This survey samples people who have previously taken part in the New Zealand Health Survey and agreed to be contacted about future research. As a result, there could be bias associated with the respondents and thus the findings of this survey. </p> <p> 2) Data are for the week ended Sunday.  </p> <p> 3) Approximately 300 people (aged 15+ years) are interviewed each day. </p> <p> 4) There are some limitations to the sample used, such as small numbers of Asian and Pacific respondents. </p>"
+      }
+    ]
+	},
+	{
+    "class": "Health",
+    "type": "General health",
+    "indicator_name": "Sleep quantity",
+    "source": "Ministry of Health",
+    "plot_function": "get_unstacked_bar_chart_with_errors",
+    "international": false,
+    "source_url": "https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-resources-and-tools/covid-19-health-and-wellbeing-survey",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Percentage of respondents who said they slept for the recommended time - provisional ",
+        "units": "Percent",
+        "caveats": "<p> 1) Percentage of respondents who, over the past 7 days, said they have on average slept for the recommended number of hours in a 24-hour period, including all naps and sleeps. The Ministry of Health‘s sleep recommendations are adapted from the National Sleep Foundation. Recommended hours of sleep vary from 7-10 hours depending on age. </p> <p> 2) This survey samples people who have previously taken part in the New Zealand Health Survey and agreed to be contacted about future research. As a result, there could be bias associated with the respondents and thus the findings of this survey. </p> <p> 3) Data are for the week ended Sunday.  </p> <p> 4) Approximately 300 people (aged 15+ years) are interviewed each day. </p> <p> 5) There are some limitations to the sample used, such as small numbers of Asian and Pacific respondents. </p>"
+      }
+    ]
+	},
+	{
+    "class": "Social",
+    "type": "Life satisfaction",
+    "indicator_name": "Life satisfaction - MoH",
+    "source": "Ministry of Health",
+    "plot_function": "get_unstacked_bar_chart_with_errors",
+    "international": false,
+    "source_url": "https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-resources-and-tools/covid-19-health-and-wellbeing-survey",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Percentage of respondents who said they are either somewhat or completely satisfied with life these days - provisional",
+        "units": "Percent",
+        "caveats": "<p> 1) This survey samples people who have previously taken part in the New Zealand Health Survey and agreed to be contacted about future research. As a result, there could be bias associated with the respondents and thus the findings of this survey. </p> <p> 2) Data are for the week ended Sunday.  </p> <p> 3) Approximately 300 people (aged 15+ years) are interviewed each day. </p> <p> 4) There are some limitations to the sample used, such as small numbers of Asian and Pacific respondents. </p>"
+      }
+    ]
+	},
+	{
+    "class": "Health",
+    "type": "Mental health",
+    "indicator_name": "Depression / anxiety",
+    "source": "Ministry of Health",
+    "plot_function": "get_unstacked_bar_chart_with_errors",
+    "international": false,
+    "source_url": "https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-resources-and-tools/covid-19-health-and-wellbeing-survey",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Percentage of respondents experiencing depressive and/or anxiety-related symptoms in the past 7 days - provisional",
+        "units": "Percent",
+        "caveats": "<p> 1) Measured using an adapted version of the Patient Health Questionnaire-2 (PHQ-2) and Generalised Anxiety Disorder-2 (GAD-2). These cover questions about frequency of depressed mood (for example, little interest or pleasure in doing things) and about experience of anxiety symptoms (for example, feeling nervous, anxious or on edge). </p> <p> 2) This survey samples people who have previously taken part in the New Zealand Health Survey and agreed to be contacted about future research. As a result, there could be bias associated with the respondents and thus the findings of this survey. </p><p> 3) Data are for the week ended Sunday.  </p> <p> 4) Approximately 300 people (aged 15+ years) are interviewed each day. </p> <p> 5) There are some limitations to the sample used, such as small numbers of Asian and Pacific respondents. </p>"
+      }
+    ]
+	},
+	{
+    "class": "Social",
+    "type": "Social connection",
+    "indicator_name": "Loneliness - past 7 days",
+    "source": "Ministry of Health",
+    "plot_function": "get_unstacked_bar_chart_with_errors",
+    "international": false,
+    "source_url": "https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-resources-and-tools/covid-19-health-and-wellbeing-survey",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Percentage of respondents who felt lonely or isolated at least a little of the time over the past 7 days - provisional",
+        "units": "Percent",
+        "caveats": "<p> 1) This survey samples people who have previously taken part in the New Zealand Health Survey and agreed to be contacted about future research. As a result, there could be bias associated with the respondents and thus the findings of this survey. </p> <p> 2) Data are for the week ended Sunday.  </p> <p> 3) Approximately 300 people (aged 15+ years) are interviewed each day. </p> <p> 4) There are some limitations to the sample used, such as small numbers of Asian and Pacific respondents. </p>"
+      }
+    ]
+	},
+	{
+    "class": "Social",
+    "type": "General wellbeing",
+    "indicator_name": "Overall wellbeing",
+    "source": "Ministry of Health",
+    "plot_function": "get_unstacked_bar_chart_with_errors",
+    "international": false,
+    "source_url": "https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-resources-and-tools/covid-19-health-and-wellbeing-survey",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Percentage of respondents who said their overall wellbeing at the current alert level is worse than usual - provisional",
+        "units": "Percent",
+        "caveats": "<p> 1) This survey samples people who have previously taken part in the New Zealand Health Survey and agreed to be contacted about future research. As a result, there could be bias associated with the respondents and thus the findings of this survey. </p><p> 2) Data are for the week ended Sunday.  </p> <p> 3) Approximately 300 people (aged 15+ years) are interviewed each day. </p> <p> 4) There are some limitations to the sample used, such as small numbers of Asian and Pacific respondents. </p>"
+      }
+    ]
+	},
+  	{
+    "class": "Health",
+    "type": "Mental health",
+    "indicator_name": "Calmness",
+    "source": "Ministry of Health",
+    "plot_function": "get_unstacked_bar_chart_with_errors",
+    "international": false,
+    "source_url": "https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-resources-and-tools/covid-19-health-and-wellbeing-survey",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Percentage of respondents who said the statement \"I am calm and relaxed\" either strongly or somewhat applies to them right now - provisional",
+        "units": "Percent",
+        "caveats": "<p> 1) This survey samples people who have previously taken part in the New Zealand Health Survey and agreed to be contacted about future research. As a result, there could be bias associated with the respondents and thus the findings of this survey. </p><p> 2) Data are for the week ended Sunday.  </p> <p> 3) Approximately 300 people (aged 15+ years) are interviewed each day. </p> <p> 4) There are some limitations to the sample used, such as small numbers of Asian and Pacific respondents. </p>"
+      }
+    ]
+	},
+		{
+    "class": "Health",
+    "type": "Mental health",
+    "indicator_name": "Nervousness",
+    "source": "Ministry of Health",
+    "plot_function": "get_unstacked_bar_chart_with_errors",
+    "international": false,
+    "source_url": "https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-resources-and-tools/covid-19-health-and-wellbeing-survey",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Percentage of respondents who said the statement \"I am nervous when I think about current circumstances\" either strongly or somewhat applies to them right now - provisional",
+        "units": "Percent",
+        "caveats": "<p> 1) This survey samples people who have previously taken part in the New Zealand Health Survey and agreed to be contacted about future research. As a result, there could be bias associated with the respondents and thus the findings of this survey. </p> <p> 2) Data are for the week ended Sunday. </p> <p> 3) Approximately 300 people (aged 15+ years) are interviewed each day. </p> <p> 4) There are some limitations to the sample used, such as small numbers of Asian and Pacific respondents. </p>"
+      }
+    ]
+	},
+	{
+    "class": "Health",
+    "type": "Mental health",
+    "indicator_name": "Stress about leaving home",
+    "source": "Ministry of Health",
+    "plot_function": "get_unstacked_bar_chart_with_errors",
+    "international": false,
+    "source_url": "https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-resources-and-tools/covid-19-health-and-wellbeing-survey",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Percentage of respondents who said the statement \"I feel stressed about leaving home\" either strongly or somewhat applies to them right now - provisional",
+        "units": "Percent",
+        "caveats": "<p> 1) This survey samples people who have previously taken part in the New Zealand Health Survey and agreed to be contacted about future research. As a result, there could be bias associated with the respondents and thus the findings of this survey. </p><p> 2) Data are for the week ended Sunday.  </p> <p> 3) Approximately 300 people (aged 15+ years) are interviewed each day. </p> <p> 4) There are some limitations to the sample used, such as small numbers of Asian and Pacific respondents. </p>"
+      }
+    ]
+	},
+  {
+    "class": "Health",
+    "type": "Mental health",
+    "indicator_name": "Worry about family health",
+    "source": "Ministry of Health",
+    "plot_function": "get_unstacked_bar_chart_with_errors",
+    "international": false,
+    "source_url": "https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-resources-and-tools/covid-19-health-and-wellbeing-survey",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Percentage of respondents who said the statement \"I am worried about the health of my family members\" either strongly or somewhat applies to them right now - provisional",
+        "units": "Percent",
+        "caveats": "1) This survey samples people who have previously taken part in the New Zealand Health Survey and agreed to be contacted about future research. As a result, there could be bias associated with the respondents and thus the findings of this survey. </p> <p> 2) Data are for the week ended Sunday.  </p> <p> 3) Approximately 300 people (aged 15+ years) are interviewed each day. </p> <p> 4) There are some limitations to the sample used, such as small numbers of Asian and Pacific respondents. </p>"
+        
+      }
+    ]
+	}
 ]

@@ -813,7 +813,7 @@
         "group_names": "undefined_name"
     },
     {
-        "class": "Social",
+        "class": "Benefit support",
         "indicator_name": "Accomodation supplement",
         "type": "Supplementary support",
         "parameter_col": 1,
@@ -830,7 +830,7 @@
         "group_names": "Accomodation supplement"
     },
     {
-        "class": "Social",
+        "class": "Benefit support",
         "indicator_name": "Special needs grants for food - (weekly)",
         "type": "Hardship assistance",
         "parameter_col": 1,
@@ -853,7 +853,7 @@
         ]
     },
     {
-        "class": "Social",
+        "class": "Benefit support",
         "indicator_name": "Temporary additional support and special benefit",
         "type": "Supplementary support",
         "parameter_col": 1,
@@ -872,7 +872,7 @@
         "group_names": "Temporary additional support and special benefit"
     },
     {
-        "class": "Social",
+        "class": "Benefit support",
         "indicator_name": "All special needs grants",
         "type": "Hardship assistance",
         "parameter_col": 1,
@@ -891,7 +891,7 @@
         "group_names": "All special needs grants"
     },
     {
-        "class": "Social",
+        "class": "Benefit support",
         "indicator_name": "Jobseeker support by MSD region",
         "type": "Benefits",
         "parameter_col": 1,
@@ -1588,7 +1588,7 @@
         ]
     },
     {
-        "class": "Social",
+        "class": "Benefit support",
         "indicator_name": "Jobseeker support by region - weekly",
         "type": "Benefits",
         "parameter_col": 1,
@@ -2293,7 +2293,7 @@
           ]
     },
     {
-        "class": "Social",
+        "class": "Benefit support",
         "indicator_name": "Jobseeker support by MSD region - Other ethnicities",
         "type": "Benefits",
         "parameter_col": 1,
@@ -2312,7 +2312,7 @@
         
     },
     {
-        "class": "Social",
+        "class": "Benefit support",
         "indicator_name": "Jobseeker support by MSD region - Pacific peoples",
         "type": "Benefits",
         "parameter_col": 1,
@@ -2331,7 +2331,7 @@
         
     },
     {
-        "class": "Social",
+        "class": "Benefit support",
         "indicator_name": "Jobseeker support by MSD region - NZ European",
         "type": "Benefits",
         "parameter_col": 1,
@@ -2350,7 +2350,7 @@
         
     },
     {
-        "class": "Social",
+        "class": "Benefit support",
         "indicator_name": "Jobseeker support by MSD region - Māori",
         "type": "Benefits",
         "parameter_col": 1,
@@ -2369,7 +2369,7 @@
         
     },
     {
-        "class": "Social",
+        "class": "Benefit support",
         "indicator_name": "Jobseeker support by ethnicity - work ready",
         "type": "Benefits",
         "parameter_col": 1,
@@ -2387,7 +2387,7 @@
         
     },
     {
-        "class": "Social",
+        "class": "Benefit support",
         "indicator_name": "Accommodation supplement by MSD region",
         "type": "Supplementary support",
         "parameter_col": 1,
@@ -2423,7 +2423,7 @@
         "data_type": "TimeSeries"
       },
     {
-        "class": "Social",
+        "class": "Benefit support",
         "indicator_name": "Jobseeker support by territorial authority",
         "type": "Benefits",
         "parameter_col": 1,
@@ -3352,7 +3352,7 @@
         "group_names": "Australia - Western Australia"
     },
     {
-        "class": "Social",
+        "class": "Benefit support",
         "indicator_name": "Special needs grants for food by region",
         "type": "Hardship assistance",
         "parameter_col": 1,
@@ -3427,7 +3427,7 @@
     }
    ,
      {
-        "class": "Social",
+        "class": "Benefit support",
         "indicator_name": "Jobseeker support by region - (monthly)",
         "type": "Benefits",
         "parameter_col": 1,
@@ -3501,7 +3501,7 @@
         "data_type": "TimeSeries"
     } ,
      {
-        "class": "Social",
+        "class": "Benefit support",
         "indicator_name": "Jobseeker support by region - Maori",
         "type": "Benefits",
         "parameter_col": 1,
@@ -3577,7 +3577,7 @@
     }
     ,
      {
-        "class": "Social",
+        "class": "Benefit support",
         "indicator_name": "Jobseeker support by region - NZ European",
         "type": "Benefits",
         "parameter_col": 1,
@@ -3653,7 +3653,7 @@
     }
     ,
      {
-        "class": "Social",
+        "class": "Benefit support",
         "indicator_name": "Jobseeker support by region - Pacific peoples",
         "type": "Benefits",
         "parameter_col": 1,
@@ -3728,7 +3728,7 @@
         "data_type": "TimeSeries"
     },
      {
-        "class": "Social",
+        "class": "Benefit support",
         "indicator_name": "Jobseeker support by region - Other ethnicities",
         "type": "Benefits",
         "parameter_col": 1,
@@ -4167,7 +4167,7 @@
       "data_type": "TimeSeries"
     },
    {
-  	"class": "Social",
+  	"class": "Benefit support",
   	"indicator_name": "Number of recipients of CIRP",
   	"type": "Income relief payment",
   	"parameter_col": 1,
@@ -4198,7 +4198,7 @@
   	"group_names": "undefined_name"
     },
 	  {
-    "class": "Social",
+    "class": "Benefit support",
     "indicator_name": "Number of recipients of CIRP by region",
     "type": "Income relief payment",
     "parameter_col": 1,
@@ -4269,7 +4269,7 @@
       ]
     },
     {
-    "class": "Social",
+    "class": "Benefit support",
     "indicator_name": "Amount of wage subsidy refunds received",
     "type": "Wage subsidy assistance",
     "parameter_col": 1,
@@ -4286,7 +4286,7 @@
     "group_names": "undefined_name"
     },
     {
-    "class": "Social",
+    "class": "Benefit support",
     "indicator_name": "Number of wage subsidy refunds received",
     "type": "Wage subsidy assistance",
     "parameter_col": 1,
@@ -4303,7 +4303,7 @@
     "group_names": "undefined_name"
     },
 	  {
-    "class": "Social",
+    "class": "Benefit support",
     "indicator_name": "Number of jobs associated with a paid application",
     "type": "Wage subsidy extension",
     "parameter_col": 1,
@@ -4320,7 +4320,7 @@
     "group_names": "undefined_name"
     },
     {
-    "class": "Social",
+    "class": "Benefit support",
     "indicator_name": "Amount of wage subsidy extension paid",
     "type": "Wage subsidy extension",
     "parameter_col": 1,
@@ -4337,7 +4337,7 @@
     "group_names": "undefined_name"
     },
 	 {
-    "class": "Social",
+    "class": "Benefit support",
     "indicator_name": "Jobseeker support",
     "type": "Benefits",
     "parameter_col": 1,
@@ -4362,7 +4362,7 @@
     "group_names": "undefined_name"
 },
 	 {
-    "class": "Social",
+    "class": "Benefit support",
     "indicator_name": "Percentage of population",
     "type": "Benefits",
     "parameter_col": 1,
@@ -4385,7 +4385,7 @@
     ]
     },
 	  {
-    "class": "Social",
+    "class": "Benefit support",
     "indicator_name": "Number of applications",
     "type": "Wage subsidy assistance",
     "parameter_col": 1,
@@ -4412,7 +4412,7 @@
     "group_names": "undefined_name"
     },
     {
-    "class": "Social",
+    "class": "Benefit support",
     "indicator_name": "Number of paid applications",
     "type": "Wage subsidy assistance",
     "parameter_col": 1,
@@ -4437,7 +4437,7 @@
     "group_names": "undefined_name"
     },
     {
-    "class": "Social",
+    "class": "Benefit support",
     "indicator_name": "Amount of wage subsidy paid out",
     "type": "Wage subsidy assistance",
     "parameter_col": 1,
@@ -4454,7 +4454,7 @@
     "group_names": "undefined_name"
     },
 	 {
-    "class": "Social",
+    "class": "Benefit support",
     "indicator_name": "Number of recipients of CIRP by age group",
     "type": "Income relief payment",
     "parameter_col": 1,
@@ -4507,7 +4507,7 @@
       ]
     },
     {
-    "class": "Social",
+    "class": "Benefit support",
     "indicator_name": "Number of recipients of CIRP by territorial authority",
     "type": "Income relief payment",
     "parameter_col": 1,
@@ -5038,5 +5038,169 @@
     "parameter_transform": "function (x) x",
     "load_function": "read_from_excel",
     "data_type": "BarChart"
-  }
+  },
+  {
+   "class": "Health",
+      "type": "General health",
+      "indicator_name": "Health status",
+      "parameter_col": 1,
+      "value_col": [11],
+      "lower_bound_col": [12],
+      "upper_bound_col": [13],
+      "value_names": ["Percentage of respondents"],
+      "group_names": ["undefined_name"],
+      "sheet_number": 1,
+      "filename": "COVID 19 - MoH Health and Wellbeing Survey.xlsx",
+      "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%Y\")",
+      "load_function": "read_from_excel_error",
+      "data_type": "TimeSeriesError"
+    },
+    {
+      "class": "Health",
+      "type": "General health",
+      "indicator_name": "Sleep quantity",
+      "parameter_col": 1,
+      "value_col": [14],
+      "lower_bound_col": [15],
+      "upper_bound_col": [16],
+      "value_names": ["Percentage of respondents"],
+      "group_names": ["undefined_name"],
+      "sheet_number": 1,
+      "filename": "COVID 19 - MoH Health and Wellbeing Survey.xlsx",
+      "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%Y\")",
+      "load_function": "read_from_excel_error",
+      "data_type": "TimeSeriesError"
+    },
+     {
+      "class": "Social",
+      "type": "Life satisfaction",
+      "indicator_name": "Life satisfaction - MoH",
+      "parameter_col": 1,
+      "skip": 3,
+      "value_col": [53],
+      "lower_bound_col": [54],
+      "upper_bound_col": [55],
+      "value_names": ["Percentage of respondents"],
+      "group_names": ["undefined_name"],
+      "sheet_number": 1,
+      "filename": "COVID 19 - MoH Health and Wellbeing Survey.xlsx",
+      "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%Y\")",
+      "load_function": "read_from_excel_error",
+      "data_type": "TimeSeriesError"
+    },
+    {
+      "class": "Social",
+      "type": "Social connection",
+      "indicator_name": "Loneliness - past 7 days",
+      "parameter_col": 1,
+      "value_col": [5],
+      "lower_bound_col": [6],
+      "upper_bound_col": [7],
+      "value_names": ["Percentage of respondents"],
+      "group_names": ["undefined_name"],
+      "sheet_number": 1,
+      "filename": "COVID 19 - MoH Health and Wellbeing Survey.xlsx",
+      "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%Y\")",
+      "load_function": "read_from_excel_error",
+      "data_type": "TimeSeriesError"
+    },
+    {
+      "class": "Social",
+      "type": "General wellbeing",
+      "indicator_name": "Overall wellbeing",
+      "parameter_col": 1,
+      "skip": 3,
+      "value_col": [59],
+      "lower_bound_col": [60],
+      "upper_bound_col": [61],
+      "value_names": ["Percentage of respondents"],
+      "group_names": ["undefined_name"],
+      "sheet_number": 1,
+      "filename": "COVID 19 - MoH Health and Wellbeing Survey.xlsx",
+      "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%Y\")",
+      "load_function": "read_from_excel_error",
+      "data_type": "TimeSeriesError"
+    },
+    {
+      "class": "Health",
+      "type": "Mental health",
+      "indicator_name": "Calmness",
+      "parameter_col": 1,
+      "skip": 3,
+      "value_col": [41],
+      "lower_bound_col": [42],
+      "upper_bound_col": [43],
+      "value_names": ["Percentage of respondents"],
+      "group_names": ["undefined_name"],
+      "sheet_number": 1,
+      "filename": "COVID 19 - MoH Health and Wellbeing Survey.xlsx",
+      "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%Y\")",
+      "load_function": "read_from_excel_error",
+      "data_type": "TimeSeriesError"
+    },
+    {
+      "class": "Health",
+      "type": "Mental health",
+      "indicator_name": "Nervousness",
+      "parameter_col": 1,
+      "skip": 3,
+      "value_col": [38],
+      "lower_bound_col": [39],
+      "upper_bound_col": [40],
+      "value_names": ["Percentage of respondents"],
+      "group_names": ["undefined_name"],
+      "sheet_number": 1,
+      "filename": "COVID 19 - MoH Health and Wellbeing Survey.xlsx",
+      "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%Y\")",
+      "load_function": "read_from_excel_error",
+      "data_type": "TimeSeriesError"
+    },
+    {
+      "class": "Health",
+      "type": "Mental health",
+      "indicator_name": "Worry about family health",
+      "parameter_col": 1,
+      "value_col": [47],
+      "lower_bound_col": [48],
+      "upper_bound_col": [49],
+      "value_names": ["Percentage of respondents"],
+      "group_names": ["undefined_name"],
+      "sheet_number": 1,
+      "filename": "COVID 19 - MoH Health and Wellbeing Survey.xlsx",
+      "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%Y\")",
+      "load_function": "read_from_excel_error",
+      "data_type": "TimeSeriesError"
+    },
+    {
+      "class": "Health",
+      "type": "Mental health",
+      "indicator_name": "Depression / anxiety",
+      "parameter_col": 1,
+      "value_col": [35],
+      "lower_bound_col": [36],
+      "upper_bound_col": [37],
+      "value_names": ["Percentage of respondents"],
+      "group_names": ["undefined_name"],
+      "sheet_number": 1,
+      "filename": "COVID 19 - MoH Health and Wellbeing Survey.xlsx",
+      "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%Y\")",
+      "load_function": "read_from_excel_error",
+      "data_type": "TimeSeriesError"
+    },
+    {
+      "class": "Health",
+      "type": "Mental health",
+      "indicator_name": "Stress about leaving home",
+      "parameter_col": 1,
+      "value_col": [50],
+      "lower_bound_col": [51],
+      "upper_bound_col": [52],
+      "value_names": ["Percentage of respondents"],
+      "group_names": ["undefined_name"],
+      "sheet_number": 1,
+      "filename": "COVID 19 - MoH Health and Wellbeing Survey.xlsx",
+      "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%Y\")",
+      "load_function": "read_from_excel_error",
+      "data_type": "TimeSeriesError"
+    }
 ]
