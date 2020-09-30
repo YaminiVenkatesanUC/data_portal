@@ -3048,9 +3048,9 @@
     },
 {
         "class": "Economic",
-        "indicator_name": "Weekly filled jobs (27 days measure)",
+        "indicator_name": "Weekly filled jobs (34 days measure)",
         "type": "Employment",
-        "filter_paid_jobs":"Number of Paid Jobs - 27 days",
+        "filter_paid_jobs":"Number of paid jobs - 34 days",
         "parameter_col": 1,
                 "parameter_transform": [
         "function (x) ",
@@ -3072,7 +3072,7 @@
         "Goods Producing",
         "Services"
         ],
-        "filename": "Employment-indicators-paid-jobs.csv",
+        "filename": "Employment-indicators-weekly-paid-jobs-34-days.csv",
         "load_function": "read_employment_paid_jobs_data",
         "data_type": "TimeSeries",
         "group_names": 

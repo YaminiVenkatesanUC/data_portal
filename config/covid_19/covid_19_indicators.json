@@ -3995,7 +3995,7 @@
 },
 {
     "class": "Economic",
-    "indicator_name": "Weekly filled jobs (27 days measure)",
+    "indicator_name": "Weekly filled jobs (34 days measure)",
     "type": "Employment",
     "source": "Stats NZ",
     "plot_function": "get_time_series_plot",
@@ -4007,20 +4007,20 @@
     "groups": [
       {
         "name": "Total",
-        "title": "Total number of paid jobs - 27 days",
+        "title": "Total number of paid jobs - 34 days",
         "units": "Number"
       },
         {
         "name": "Primary",
-        "title": "Number of paid jobs for Primary industries - 27 days",
+        "title": "Number of paid jobs for Primary industries - 34 days",
         "units": "Number"
       },  {
         "name": "Goods Producing",
-        "title": "Number of paid jobs for Goods Producing industries - 27 days",
+        "title": "Number of paid jobs for Goods Producing industries - 34 days",
         "units": "Number"
       },  {
         "name": "Services",
-        "title": "Number of paid jobs for Services industries - 27 days",
+        "title": "Number of paid jobs for Services industries - 34 days",
         "units": "Number"
       }
        
