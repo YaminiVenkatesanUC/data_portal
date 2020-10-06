@@ -211,8 +211,6 @@ Data definition example below.  This block of JSON tells the application how to 
       }
 ```
 
-
-
 ## Custom functions
 
 This code is designed to provide a robust structure for data management while allowing maximum flexibility in both the input data and the visualisations.  In the data process figure above we show the customisable layers in the process flow.  Each of these layers can be modified using custom functions, such as custom load functions in the transform layer, plot functions in the visualisation layer, or even entirely new data sources in the very first layer.  It is also possible to construct new data models, if the TimeSeries or BarChart classes do suit your needs (for example geographical data may need a new data model to be created).  In this section we describe the customisable parts of the code.
@@ -243,3 +241,10 @@ To define the data service change the `data_service` parameter in the indicator 
 
 It is possible to display any type of visualisation in this application by defining custom plot functions.  The plot functions are defined in `R/plot_functions.R`.  All that is required is a function which takes in one of the accepted data models (a new one can be created if required) and returns a highcharter object.
 
+### The regional filter
+
+The regional filter was added to the COVID-19 Data Portal in response to a need to understand the impact of COVID-19 at a regional level.  This filter breaks some of the generality of the portal, as not all data sets will make sense to have a regional filter.
+
+The filter works by identifying the names of the regions within certain fields in the indicator definitions.  This logic occurs in the file `R/core/filter_indicators.R`.  The regions available in the filter are defined in `R/core/consts.R`.  The filter is then applied at the highest level, within the `server.R` file, and only the filtered indicators passed down to the components.
+
+The regional filter and functionality could be extended to be more general, and allow search functionality.  Ideally the filter will be a general filter, with it possible to define via a configuration what types of fields to filter on, and what the possible values are (these could either be in configuration as well, or retrieved from the indicator definitions).

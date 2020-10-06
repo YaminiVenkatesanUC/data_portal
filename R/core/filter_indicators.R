@@ -1,4 +1,3 @@
-
 filter_indicator <- function(indicator, regions) {
   for (region in regions) {
     if (length(grep(paste0("\\<", region, "\\>"), indicator$indicator_name, ignore.case = TRUE)) > 0) {
@@ -44,13 +43,3 @@ filter_indicators_by_region <- function(indicator_definitions, regions) {
   
   return (output)
 }
-
-
-# 
-# selection = as.vector(sapply(
-#   test,
-#   function(x) filter_group(x, c("Auckland"))
-# ))
-# test[selection]
-
-

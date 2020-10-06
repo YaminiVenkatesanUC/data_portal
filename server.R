@@ -36,13 +36,7 @@ server <- function(input, output, session) {
     shinyjs::show(id = "hide_regional_filter")
     shinyjs::hide(id = "show_regional_filter")
     values$region_selector_on <- TRUE
-    # updateSelectizeInput(
-    #   session,
-    #   "region_selector",
-    #   choices = setNames(REGION_LABELS, REGION_LABELS),
-    #   selected = NULL,
-    #   server = TRUE
-    # )
+
     if (length(input$region_selector) > 0) {
       values$filtered_indicator_definitions <- filter_indicators_by_region(indicator_definitions, input$region_selector)
     } else {
