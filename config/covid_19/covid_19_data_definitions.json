@@ -3048,7 +3048,7 @@
     },
 {
         "class": "Economic",
-        "indicator_name": "Weekly filled jobs (34 days measure)",
+        "indicator_name": "Weekly filled jobs (34 days)",
         "type": "Employment",
         "filter_paid_jobs":"Number of paid jobs - 34 days",
         "parameter_col": 1,
@@ -3090,7 +3090,7 @@
         "type": "COVID-19",
         "parameter_col": 1,
         "value_col": [2],
-        "value_names": ["Current - 05 October 2020"],
+        "value_names": ["Current - 06 October 2020"],
         "sheet_number": 1,
         "filename": "COVID 19 - MoH Border Control insights.xlsx",
         "parameter_transform": "function (x) x",
@@ -5200,4 +5200,47 @@
       "load_function": "read_from_excel_error",
       "data_type": "TimeSeriesError"
     }
+    ,
+
+{
+  "class": "Economic",
+  "indicator_name": "Weekly median earnings (34 days)",
+  "type": "Employment",
+  "filter_paid_jobs":"Weekly earnings - median - 34 days",
+  "parameter_col": 1,
+  "parameter_transform": [
+    "function (x) ",
+    "as.Date(x, format = \"%d/%m/%y\")"
+    ],
+  
+  "value_col": [
+    
+    2,
+    3,
+    4,
+    5
+    
+    
+    ],
+  "value_names": [
+    "Total",
+    "Primary",
+    "Goods Producing",
+    "Services"
+    ],
+  "filename": "Employment-indicators-weekly-paid-jobs-34-days.csv",
+  "load_function": "read_employment_paid_jobs_data",
+  "data_type": "TimeSeries",
+  "group_names": 
+    [ 
+      "Total",
+      "Primary",
+      "Goods Producing",
+      "Services"
+      
+      ]
+}
+
+
+
 ]

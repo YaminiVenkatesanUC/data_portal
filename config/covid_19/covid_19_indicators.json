@@ -3995,7 +3995,7 @@
 },
 {
     "class": "Economic",
-    "indicator_name": "Weekly filled jobs (34 days measure)",
+    "indicator_name": "Weekly filled jobs (34 days)",
     "type": "Employment",
     "source": "Stats NZ",
     "plot_function": "get_time_series_plot",
@@ -6474,4 +6474,38 @@
       }
     ]
 	}
+	,
+{
+  "class": "Economic",
+  "indicator_name": "Weekly median earnings (34 days)",
+  "type": "Employment",
+  "source": "Stats NZ",
+  "plot_function": "get_time_series_plot",
+  "international": false,
+  "include_date_slider": true,
+  "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-paid-jobs-week-ended-05-October-2020",
+  "download": true,
+  
+  "groups": [
+    {
+      "name": "Total",
+      "title": "Total median earnings - 34 days",
+      "units": "$"
+    },
+    {
+      "name": "Primary",
+      "title": "Median earnings for Primary industries - 34 days",
+      "units": "$"
+    },  {
+      "name": "Goods Producing",
+      "title": "Median earnings for Goods Producing industries - 34 days",
+      "units": "$"
+    },  {
+      "name": "Services",
+      "title": "Median earnings for Services industries - 34 days",
+      "units": "$"
+    }
+    
+    ]
+}
 ]
