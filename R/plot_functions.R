@@ -1,3 +1,29 @@
+get_map_plot <- function(data_object, input, indicator_definition) {
+  mapdata <- (download_map_data("countries/nz/nz-all"))
+  
+  test_data <- data.frame(
+    region = REGION_LABELS,
+    value = 1:(length(REGION_LABELS)),
+    stringsAsFactors = FALSE
+  )
+  
+  plot <- highchart() %>%
+    hc_add_series_map(mapdata, test_data,
+                      name = "Fake data",
+                      value = "value", joinBy = c("woe-name", "region"),
+                      dataLabels = list(
+                        enabled = TRUE,
+                        format = "{point.name}"
+                      )
+    ) %>%
+    hc_colorAxis(stops = color_stops()) %>%
+    hc_legend(valueDecimals = 0, valueSuffix = "%") %>%
+    hc_mapNavigation(enabled = TRUE)
+
+  return (plot)
+}
+
+
 get_time_series_plot <- function(data_object, input, indicator_definition, type = "line", stacking = "normal") {
   group_index <- which(sapply(indicator_definition$groups, function(x) x$name) == input$line_selector)
   if (length(group_index) == 0) {
@@ -410,5 +436,6 @@ plot_functions <- list(
   get_vertical_bar = get_vertical_bar,
   get_horizontal_bar = get_horizontal_bar,
   get_unstacked_horizontal_bar = get_unstacked_horizontal_bar,
-  get_unstacked_vertical_bar = get_unstacked_vertical_bar
+  get_unstacked_vertical_bar = get_unstacked_vertical_bar,
+  get_map_plot = get_map_plot
 )
