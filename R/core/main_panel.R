@@ -181,6 +181,13 @@ main_plot_server <- function(input, output, session, indicator_class, indicator_
     }
   })
 
+  observeEvent(input$line_selector, {
+    if (input$type_selector != "" && input$indicator_selector != "" && input$line_selector != "") {
+      key <- paste(indicator_class, input$type_selector, input$indicator_selector, sep = "_")
+      session$sendCustomMessage('indicator_selected', paste0(key, "_", input$line_selector))
+    }
+  })
+
   observe({
     updateSelectInput(
       session,
@@ -197,7 +204,13 @@ main_plot_server <- function(input, output, session, indicator_class, indicator_
   observe({
     indicator_definition <- get_indicator_definition()
     #multiple_time_series <- length(indicator_definition$groups) > 1
-    multiple_time_series <- "TRUE"
+    line_options <- get_line_options()
+    if (length(line_options) > 0 && get_line_options() == c("undefined_name")) {
+      multiple_time_series <- "FALSE"
+    } else {
+      multiple_time_series <- "TRUE"
+    }
+
     if (multiple_time_series) {
       result <- "TRUE"
     } else {

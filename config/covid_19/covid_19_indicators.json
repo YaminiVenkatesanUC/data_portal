@@ -606,6 +606,7 @@
     "international": false,
     "disabled": false,
     "include_date_slider": true,
+    "default_lower_range": "2020-02-29",
     "show_zero": true,
     "download": true,
     "groups": [
@@ -673,7 +674,8 @@
     "international": false,
     "include_date_slider": true,
     "default_lower_range": "2019-01-01",
-    "caveats":"<p>Note August 2020 is a preliminary read</p>",
+    "caveats":" <p>Data for September 2020 is preliminary.</p>",
+    
     "source_url": "https://www.anz.co.nz/about-us/economic-markets-research/business-outlook/",
     "download": false,
     "groups": [
@@ -737,32 +739,14 @@
     "international": false,
     "include_date_slider": true,
     "default_lower_range": "2019-01-01",
-    "caveats":"<p>Note August 2020 is a preliminary read</p>",
+    "caveats":" <p>Data for September 2020 is preliminary.</p>",
+  
     "source_url": "https://www.anz.co.nz/about-us/economic-markets-research/business-outlook/",
     "download": false,
     "groups": [
       {
         "name": "Business confidence",
         "title": "ANZ business confidence",
-        "units": "Index"
-      }
-    ]
-  },
-  {
-    "class": "Economic",
-    "indicator_name": "Jobs online measure",
-    "type": "Employment",
-    "source": "Ministry of Business, Innovation and Employment",
-    "plot_function": "get_time_series_plot",
-    "international": false,
-    "include_date_slider": true,
-    "default_lower_range": "2017-02-01",
-    "source_url": "https://mbienz.shinyapps.io/labour-market-dashboard_prod/",
-    "download": true,
-    "groups": [
-      {
-        "name": "Index",
-        "title": "Online job advertisements index",
         "units": "Index"
       }
     ]
@@ -1287,24 +1271,7 @@
     ]
   },
   {
-    "class": "Social",
-    "indicator_name": "Jobseeker support",
-    "type": "Benefits",
-    "source": "Ministry of Social Development",
-    "plot_function": "get_time_series_plot",
-    "international": false,
-    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
-    "download": true,
-    "groups": [
-      {
-        "name": "undefined_name",
-        "title": "Number on jobseeker support benefit",
-        "units": "Number"
-      }
-    ]
-  },
-  {
-    "class": "Social",
+    "class": "Income support",
     "indicator_name": "Accomodation supplement",
     "type": "Supplementary support",
     "source": "Ministry of Social Development",
@@ -1321,7 +1288,7 @@
     ]
   },
   {
-    "class": "Social",
+    "class": "Income support",
     "indicator_name": "Special needs grants for food - (weekly)",
     "type": "Hardship assistance",
     "source": "Ministry of Social Development",
@@ -1338,7 +1305,7 @@
     ]
   },
   {
-    "class": "Social",
+    "class": "Income support",
     "indicator_name": "Temporary additional support and special benefit",
     "type": "Supplementary support",
     "source": "Ministry of Social Development",
@@ -1355,7 +1322,7 @@
     ]
   },
   {
-    "class": "Social",
+    "class": "Income support",
     "indicator_name": "All special needs grants",
     "type": "Hardship assistance",
     "source": "Ministry of Social Development",
@@ -1372,7 +1339,7 @@
     ]
   },
   {
-    "class": "Social",
+    "class": "Income support",
     "indicator_name": "Jobseeker support by MSD region",
     "type": "Benefits",
     "source": "Ministry of Social Development",
@@ -1445,74 +1412,6 @@
         "name": "Total",
         "title": "Number on jobseeker support benefit - Total",
         "units": "Number"
-      }
-    ]
-  },
-  {
-    "class": "Social",
-    "indicator_name": "Percentage of population",
-    "type": "Benefits",
-    "source": "Ministry of Social Development",
-    "plot_function": "get_time_series_plot",
-    "international": false,
-    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
-    "download": true,
-    "groups": [
-      {
-        "name": "Percentage of the working-age population",
-        "title": "Percentage of the working-age population receiving jobseeker support",
-        "units": "%"
-      }
-    ]
-  },
-  {
-    "class": "Social",
-    "indicator_name": "Number of applications",
-    "type": "Wage subsidy assistance",
-    "source": "Ministry of Social Development",
-    "plot_function": "get_time_series_plot",
-    "international": false,
-    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
-    "download": true,
-    "groups": [
-      {
-        "name": "undefined_name",
-        "title": "Number of wage subsidy applications (cumulative)",
-        "units": "Number"
-      }
-    ]
-  },
-  {
-    "class": "Social",
-    "indicator_name": "Number of paid applications",
-    "type": "Wage subsidy assistance",
-    "source": "Ministry of Social Development",
-    "plot_function": "get_time_series_plot",
-    "international": false,
-    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
-    "download": true,
-    "groups": [
-      {
-        "name": "undefined_name",
-        "title": "Number of jobs associated with paid out wage subsidy applications (cumulative)",
-        "units": "Number"
-      }
-    ]
-  },
-  {
-    "class": "Social",
-    "indicator_name": "Amount of wage subsidy paid out",
-    "type": "Wage subsidy assistance",
-    "source": "Ministry of Social Development",
-    "plot_function": "get_time_series_plot",
-    "international": false,
-    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
-    "download": true,
-    "groups": [
-      {
-        "name": "Amount paid out",
-        "title": "Amount of wage subsidy paid out (cumulative)",
-        "units": "$"
       }
     ]
   },
@@ -1887,26 +1786,7 @@
     ]
   },
   {
-    "class": "Economic",
-    "indicator_name": "Jobs online measure by industry",
-    "type": "Employment",
-    "source": "Ministry of Business, Innovation and Employment",
-    "plot_function": "get_time_series_plot",
-    "international": false,
-    "include_date_slider": true,
-    "default_lower_range": "2017-02-01",
-    "source_url": "https://mbienz.shinyapps.io/labour-market-dashboard_prod/",
-    "download": true,
-    "groups": [
-      {
-        "name": "undefined_name",
-        "title": "Online job advertisements by industry",
-        "units": "Index"
-      }
-    ]
-  },
-  {
-    "class": "Social",
+    "class": "Income support",
     "indicator_name": "Jobseeker support by region - weekly",
     "type": "Benefits",
     "source": "Ministry of Social Development",
@@ -2139,7 +2019,7 @@
     "international": false,
     "download": true,
     "description": "For metadata and details on methodology used to produce these statistics see <a href=\"http://datainfoplus.stats.govt.nz/Item/nz.govt.stats/6ed114da-3571-40d4-a89f-932068a4c753?_ga=2.27617916.1122878806.1587330040-1991109144.1583875067#/nz.govt.stats/6c3485b0-4330-4bd7-b10f-7e9f4580797c/7\" target=\"_blank\">DataInfo+</a>.",
-    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-1-february-5-august-2020-provisional",
+    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-1-february-30-september-2020-provisional",
     "groups": [
         {
             "name": "All",
@@ -2194,7 +2074,7 @@
     "international": false,
     "include_date_slider": true,
     "download": true,
-    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-1-february-5-august-2020-provisional",
+    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-1-february-30-september-2020-provisional",
     "description": "For metadata and details on methodology used to produce these statistics see <a href=\"http://datainfoplus.stats.govt.nz/Item/nz.govt.stats/6ed114da-3571-40d4-a89f-932068a4c753?_ga=2.27617916.1122878806.1587330040-1991109144.1583875067#/nz.govt.stats/6c3485b0-4330-4bd7-b10f-7e9f4580797c/7\" target=\"_blank\">DataInfo+</a>.",
     "groups": [
         {
@@ -2232,7 +2112,7 @@
     "international": false,
     "download": true,
     "include_date_slider": true,
-    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-1-february-5-august-2020-provisional",
+    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-1-february-30-september-2020-provisional",
     "description": "For metadata and details on methodology used to produce these statistics see <a href=\"http://datainfoplus.stats.govt.nz/Item/nz.govt.stats/6ed114da-3571-40d4-a89f-932068a4c753?_ga=2.27617916.1122878806.1587330040-1991109144.1583875067#/nz.govt.stats/6c3485b0-4330-4bd7-b10f-7e9f4580797c/7\" target=\"_blank\">DataInfo+</a>.",
     "groups": [
         {
@@ -2284,7 +2164,7 @@
     "international": false,
     "download": true,
     "description": "For metadata and details on methodology used to produce these statistics see <a href=\"http://datainfoplus.stats.govt.nz/Item/nz.govt.stats/6ed114da-3571-40d4-a89f-932068a4c753?_ga=2.27617916.1122878806.1587330040-1991109144.1583875067#/nz.govt.stats/6c3485b0-4330-4bd7-b10f-7e9f4580797c/7\" target=\"_blank\">DataInfo+</a>.",
-    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-1-february-5-august-2020-provisional",
+    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-1-february-30-september-2020-provisional",
     "groups": [
         {
             "name": "Non-food manufactured goods",
@@ -2295,7 +2175,7 @@
         {
             "name": "Machinery and electronics",
             "units": "$",
-            "title": "Value of machinary and electronics imports (cumulative) - provisional",
+            "title": "Value of machinery and electronics imports (cumulative) - provisional",
             "visible": ["2020", "2019", "2018"]
         }
     ]
@@ -2310,31 +2190,31 @@
     "include_date_slider": true,
     "default_lower_range": "2020-02-01",
     "download": true,
-    "caveats": "<p>(1) Weekly deaths data are based on Date of Death and differ from other deaths statistics based on date of registration. These data are provisional and subject to revision during the full process of producing death statistics.</p><p>(2) Totals are by Date of Death. Week beginning Monday.</p><p>(3) Weekly totals will differ from those in the death registrations time series as deaths are registered at the time of burial or cremation of the body. </p><p>(4) An average of 5% of Deaths are registered 2 weeks or more after Date of Death therefore weekly totals are expected to increase over time as Death Registrations are submitted and processed.</p><p>(5) Overseas addresses or where location could not be determined and records where the persons sex is missing or not in Male or Female have been excluded as these numbers are too low to publish a weekly total. </p><p>(6) The accuracy of any administrative data, which includes but is not limited to address information is subject to human error.</p><p>(7) The data provided has been collated to the best of our ability and may have a small variance to any alternative publications.</p>",
+    "caveats": "<p>(1) Weekly deaths data are based on Date of Death and differ from other deaths statistics based on date of registration. These data are provisional and subject to revision during the full process of producing death statistics.</p><p>(2) Totals are by Date of Death. Week ending Sunday.</p><p>(3) Weekly totals will differ from those in the death registrations time series as deaths are registered at the time of burial or cremation of the body. </p><p>(4) An average of 5% of Deaths are registered 2 weeks or more after Date of Death therefore weekly totals are expected to increase over time as Death Registrations are submitted and processed.</p><p>(5) Overseas addresses or where location could not be determined and records where the persons sex is missing or not in Male or Female have been excluded as these numbers are too low to publish a weekly total. </p><p>(6) The accuracy of any administrative data, which includes but is not limited to address information is subject to human error.</p><p>(7) The data provided has been collated to the best of our ability and may have a small variance to any alternative publications.</p>",
     "groups": [
         {
             "name": "Auckland",
-            "title": "Weekly deaths by region of residence - Auckland",
+            "title": "Deaths by region of residence (week ended) - Auckland",
             "units": "Number"
           },
       {
         "name": "Wellington",
-        "title": "Weekly deaths by region of residence - Wellington",
+        "title": "Deaths by region of residence (week ended) - Wellington",
         "units": "Number"
       },
       {
         "name": "Canterbury",
-        "title": "Weekly deaths by region of residence - Canterbury",
+        "title": "Deaths by region of residence (week ended) - Canterbury",
         "units": "Number"
       },
       {
         "name": "Other North Island regions",
-        "title": "Weekly deaths by region of residence - Other North Island regions",
+        "title": "Deaths by region of residence (week ended) - Other North Island regions",
         "units": "Number"
       },
       {
         "name": "Other South Island regions",
-        "title": "Weekly deaths by region of residence - Other South Island regions",
+        "title": "Deaths by region of residence (week ended) - Other South Island regions",
         "units": "Number"
       }
     ]
@@ -2349,59 +2229,59 @@
     "include_date_slider": true,
     "default_lower_range": "2020-02-01",
     "download": true,
-    "caveats": "<p>(1) Weekly deaths data are based on Date of Death and differ from other deaths statistics based on date of registration. These data are provisional and subject to revision during the full process of producing death statistics.</p><p>(2) Totals are by Date of Death. Week beginning Monday.</p><p>(3) Weekly totals will differ from those in the death registrations time series as deaths are registered at the time of burial or cremation of the body. </p><p>(4) An average of 5% of Deaths are registered 2 weeks or more after Date of Death therefore weekly totals are expected to increase over time as Death Registrations are submitted and processed.</p><p>(5) Overseas addresses or where location could not be determined and records where the persons sex is missing or not in Male or Female have been excluded as these numbers are too low to publish a weekly total. </p><p>(6) The accuracy of any administrative data, which includes but is not limited to address information is subject to human error.</p><p>(7) The data provided has been collated to the best of our ability and may have a small variance to any alternative publications.</p>",
+    "caveats": "<p>(1) Weekly deaths data are based on Date of Death and differ from other deaths statistics based on date of registration. These data are provisional and subject to revision during the full process of producing death statistics.</p><p>(2) Totals are by Date of Death. Week ending Sunday.</p><p>(3) Weekly totals will differ from those in the death registrations time series as deaths are registered at the time of burial or cremation of the body. </p><p>(4) An average of 5% of Deaths are registered 2 weeks or more after Date of Death therefore weekly totals are expected to increase over time as Death Registrations are submitted and processed.</p><p>(5) Overseas addresses or where location could not be determined and records where the persons sex is missing or not in Male or Female have been excluded as these numbers are too low to publish a weekly total. </p><p>(6) The accuracy of any administrative data, which includes but is not limited to address information is subject to human error.</p><p>(7) The data provided has been collated to the best of our ability and may have a small variance to any alternative publications.</p>",
     "groups": [
       {
         "name": "Total",
-        "title": "Weekly deaths by age and sex - Total",
+        "title": "Deaths by age and sex (week ended) - Total",
         "units": "Number"
       },
       {
         "name": "Total 80 and over",
-        "title": "Weekly deaths by age and sex - Total 80 and over",
+        "title": "Deaths by age and sex (week ended) - Total 80 and over",
         "units": "Number"
       },
       {
         "name": "Total 65 and 79",
-        "title": "Weekly deaths by age and sex - Total 65 and 79",
+        "title": "Deaths by age and sex (week ended) - Total 65 and 79",
         "units": "Number"
       },
       {
-        "name": "Total under 64",
-        "title": "Weekly deaths by age and sex - Total under 64",
+        "name": "Total under 65",
+        "title": "Deaths by age and sex (week ended) - Total under 64",
         "units": "Number"
       },
       
       {
         "name": "Female 80 and over",
-        "title": "Weekly deaths by age and sex - Female 80 and over",
+        "title": "Deaths by age and sex (week ended) - Female 80 and over",
         "units": "Number"
       },
       {
         "name": "Female 65 and 79",
-        "title": "Weekly deaths by age and sex - Female 65 and 79",
+        "title": "Deaths by age and sex (week ended) - Female 65 and 79",
         "units": "Number"
       },
       {
         "name": "Female under 64",
-        "title": "Weekly deaths by age and sex - Female under 64",
+        "title": "Deaths by age and sex (week ended) - Female under 64",
         "units": "Number"
       }
       ,
       {
         "name": "Male 80 and over",
-        "title": "Weekly deaths by age and sex - Male 80 and over",
+        "title": "Deaths by age and sex (week ended) - Male 80 and over",
         "units": "Number"
       }
       ,
       {
         "name": "Male 65 to 79",
-        "title": "Weekly deaths by age and sex - Male 65 to 79",
+        "title": "Deaths by age and sex (week ended) - Male 65 to 79",
         "units": "Number"
       },
       {
         "name": "Male under 64",
-        "title": "Weekly deaths by age and sex - Male under 64",
+        "title": "Deaths by age and sex (week ended) - Male under 64",
         "units": "Number"
       }
     ]
@@ -2417,31 +2297,31 @@
     "include_date_slider": true,
     "default_lower_range": "2020-02-01",
     "download": true,
-    "caveats": "<p>(1) Weekly deaths data are based on Date of Death and differ from other deaths statistics based on date of registration. These data are provisional and subject to revision during the full process of producing death statistics.</p><p>(2) Totals are by Date of Death. Week beginning Monday.</p><p>(3) Weekly totals will differ from those in the death registrations time series as deaths are registered at the time of burial or cremation of the body. </p><p>(4) An average of 5% of Deaths are registered 2 weeks or more after Date of Death therefore weekly totals are expected to increase over time as Death Registrations are submitted and processed.</p><p>(5) Overseas addresses or where location could not be determined and records where the persons sex is missing or not in Male or Female have been excluded as these numbers are too low to publish a weekly total. </p><p>(6) The accuracy of any administrative data, which includes but is not limited to address information is subject to human error.</p><p>(7) The data provided has been collated to the best of our ability and may have a small variance to any alternative publications.</p>",
+    "caveats": "<p>(1) Weekly deaths data are based on Date of Death and differ from other deaths statistics based on date of registration. These data are provisional and subject to revision during the full process of producing death statistics.</p><p>(2) Totals are by Date of Death. Week ending Sunday.</p><p>(3) Weekly totals will differ from those in the death registrations time series as deaths are registered at the time of burial or cremation of the body. </p><p>(4) An average of 5% of Deaths are registered 2 weeks or more after Date of Death therefore weekly totals are expected to increase over time as Death Registrations are submitted and processed.</p><p>(5) Overseas addresses or where location could not be determined and records where the persons sex is missing or not in Male or Female have been excluded as these numbers are too low to publish a weekly total. </p><p>(6) The accuracy of any administrative data, which includes but is not limited to address information is subject to human error.</p><p>(7) The data provided has been collated to the best of our ability and may have a small variance to any alternative publications.</p>",
     "groups": [
       {
         "name": "Total",
-        "title": "Weekly deaths by age - Total",
+        "title": "Deaths by age (week ended) - Total",
         "units": "Number"
       },
       {
         "name": "Under 30",
-        "title": "Weekly deaths by age - Under 30",
+        "title": "Deaths by age (week ended) - Under 30",
         "units": "Number"
       },
       {
         "name": "30 to 59",
-        "title": "Weekly deaths by age - 30 to 59",
+        "title": "Deaths by age (week ended) - 30 to 59",
         "units": "Number"
       },
       {
         "name": "60 to 79",
-        "title": "Weekly deaths by age - 60 to 79",
+        "title": "Deaths by age (week ended) - 60 to 79",
         "units": "Number"
       },
       {
         "name": "80 and over",
-        "title": "Weekly deaths by age - 80 and over",
+        "title": "Deaths by age (week ended) - 80 and over",
         "units": "Number"
       }
     ]
@@ -2642,7 +2522,7 @@
     ]
   },
   {
-  "class": "Social",
+  "class": "Income support",
     "indicator_name": "Jobseeker support by MSD region - Other ethnicities",
     "type": "Benefits",
     "source": "Ministry of Social Development",
@@ -2716,7 +2596,7 @@
     
   },
   {
-  "class": "Social",
+  "class": "Income support",
     "indicator_name": "Jobseeker support by MSD region - Pacific peoples",
     "type": "Benefits",
     "source": "Ministry of Social Development",
@@ -2789,7 +2669,7 @@
   ]
   },
   {
-  "class": "Social",
+  "class": "Income support",
     "indicator_name": "Jobseeker support by MSD region - Māori",
     "type": "Benefits",
     "source": "Ministry of Social Development",
@@ -2864,7 +2744,7 @@
   },
   
   {
-  "class": "Social",
+  "class": "Income support",
     "indicator_name": "Jobseeker support by MSD region - NZ European",
     "type": "Benefits",
     "source": "Ministry of Social Development",
@@ -2938,7 +2818,7 @@
     
   },
   {
-  "class": "Social",
+  "class": "Income support",
     "indicator_name": "Jobseeker support by ethnicity - work ready",
     "type": "Benefits",
     "source": "Ministry of Social Development",
@@ -2977,7 +2857,7 @@
       ]
   },
   {
-  "class": "Social",
+  "class": "Income support",
     "indicator_name": "Accommodation supplement by MSD region",
     "type": "Supplementary support",
     "source": "Ministry of Social Development",
@@ -3068,7 +2948,7 @@
     ]
   },
   {
-  "class": "Social",
+  "class": "Income support",
     "indicator_name": "Jobseeker support by territorial authority",
     "type": "Benefits",
     "source": "Ministry of Social Development",
@@ -3435,19 +3315,10 @@
       "units": "$"
     },
 
+   
     {
-      "name": "Total loan applications received",
-      "title": "Total loan applications received (cumulative)",
-      "units": "Number"
-    },
-    {
-      "name": "Loan applications received (eServices)",
-      "title": "Loan applications received (eServices - cumulative)",
-      "units": "Number"
-    },
-    {
-      "name": "Loan applications received (Manual)",
-      "title": "Loan applications received (Manual - cumulative)",
+      "name": "Total loan applications received (cumulative)",
+      "title": "Total Loan applications received (cumulative)",
       "units": "Number"
     }
     
@@ -3612,7 +3483,7 @@
 },
 {
     "class": "Economic",
-    "indicator_name": "Gas consumption by selected major users",
+    "indicator_name": "Gas consumption by largest users",
     "type": "Activity",
     "source": "First Gas",
     "plot_function": "get_time_series_plot",
@@ -3659,7 +3530,7 @@
 },
 {
     "class": "Economic",
-    "indicator_name": "Gas consumption by largest users",
+    "indicator_name": "Gas consumption by selected major users",
     "type": "Activity",
     "source": "First Gas",
     "plot_function": "get_time_series_plot",
@@ -3675,27 +3546,27 @@
      
       {
         "name": "Ballance Agri-Nutrients",
-        "title": "Daily gas consumption by largest users - Ballance Agri-Nutrients",
+        "title": "Daily gas consumption - Ballance Agri-Nutrients",
         "units": "Gigajoules"
       },
         {
         "name": "Fonterra - (selected sites)",
-        "title": "Daily gas consumption by largest users - Fonterra (selected sites)",
+        "title": "Daily gas consumption - Fonterra (selected sites)",
         "units": "Gigajoules"
       },
       {
         "name": "Glenbrook steel mill",
-        "title": "Daily gas consumption by largest users - Glenbrook steel mill",
+        "title": "Daily gas consumption - Glenbrook steel mill",
         "units": "Gigajoules"
       },
       {
         "name": "Kinleith pulp and paper mill",
-        "title": "Daily gas consumption by largest users - Kinleith pulp and paper mill",
+        "title": "Daily gas consumption - Kinleith pulp and paper mill",
         "units": "Gigajoules"
       },
       {
         "name": "Marsden Point oil refinery",
-        "title": "Daily gas consumption by largest users - Marsden Point oil refinery",
+        "title": "Daily gas consumption - Marsden Point oil refinery",
         "units": "Gigajoules"
       }
        
@@ -4124,32 +3995,32 @@
 },
 {
     "class": "Economic",
-    "indicator_name": "Weekly filled jobs (27 days measure)",
+    "indicator_name": "Weekly filled jobs (34 days)",
     "type": "Employment",
     "source": "Stats NZ",
     "plot_function": "get_time_series_plot",
     "international": false,
     "include_date_slider": true,
-    "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-paid-jobs-week-ended-12-july-2020",
+    "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-weekly-as-at-5-october-2020",
     "download": true,
    
     "groups": [
       {
         "name": "Total",
-        "title": "Total number of paid jobs - 27 days",
+        "title": "Total number of paid jobs - 34 days",
         "units": "Number"
       },
         {
         "name": "Primary",
-        "title": "Number of paid jobs for Primary industries - 27 days",
+        "title": "Number of paid jobs for Primary industries - 34 days",
         "units": "Number"
       },  {
         "name": "Goods Producing",
-        "title": "Number of paid jobs for Goods Producing industries - 27 days",
+        "title": "Number of paid jobs for Goods Producing industries - 34 days",
         "units": "Number"
       },  {
         "name": "Services",
-        "title": "Number of paid jobs for Services industries - 27 days",
+        "title": "Number of paid jobs for Services industries - 34 days",
         "units": "Number"
       }
        
@@ -4160,12 +4031,12 @@
     "class": "Health",
     "indicator_name": "Quarantine and managed isolation figures",
     "type": "COVID-19",
-    "source": "Ministry of Health",
+    "source": "Ministry of Business, Innovation and Employment",
     "plot_function": "get_horizontal_bar",
     "international": false,
     "disabled": false,
     "include_date_slider": false,
-    "source_url":"https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation/covid-19-border-controls/covid-19-quarantine-and-managed-isolation-numbers",
+    "source_url":"https://www.mbie.govt.nz/business-and-employment/economic-development/covid-19-data-resources/managed-isolation-and-quarantine-data/",
     "download": true,
     "groups": [
         {
@@ -4227,28 +4098,9 @@
             "units": ["Annual % change"]
         }
     ]
-  }
-  ,
-  {
-    "class": "Social",
-    "indicator_name": "Number of recipients of CIRP",
-    "type": "Income relief payment",
-    "source": "Ministry of Social Development",
-    "plot_function": "get_time_series_plot",
-    "international": false,
-    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
-    "download": true,
-    "caveats":"<p> *Number of grants include suspensions and cancellations</p><p> **Transfers to CIRP from Jobseeker Support are cumulative counts of people granted CIRP, who were recently in receipt (or a partner of a primary recipient) of Jobseeker Support.</p>" , 
-    "groups": [
-      {
-        "name": "undefined_name",
-        "title": "Number of recipients of COVID-19 Income Relief Payment (CIRP)",
-        "units": "Number"
-      }
-    ]
   },
   {
-    "class": "Social",
+    "class": "Income support",
     "indicator_name": "Special needs grants for food by region",
     "type": "Hardship assistance",
     "source": "Ministry of Social Development",
@@ -4352,7 +4204,7 @@
   }
   ,
   {
-    "class": "Social",
+    "class": "Income support",
     "indicator_name": "Jobseeker support by region - (monthly)",
     "type": "Benefits",
     "source": "Ministry of Social Development",
@@ -4456,7 +4308,7 @@
   }
   ,
   {
-    "class": "Social",
+    "class": "Income support",
     "indicator_name": "Jobseeker support by region - Maori",
     "type": "Benefits",
     "source": "Ministry of Social Development",
@@ -4560,7 +4412,7 @@
   }
   ,
   {
-    "class": "Social",
+    "class": "Income support",
     "indicator_name": "Jobseeker support by region - NZ European",
     "type": "Benefits",
     "source": "Ministry of Social Development",
@@ -4663,7 +4515,7 @@
     ]
   },
   {
-    "class": "Social",
+    "class": "Income support",
     "indicator_name": "Jobseeker support by region - Pacific peoples",
     "type": "Benefits",
     "source": "Ministry of Social Development",
@@ -4767,7 +4619,7 @@
   }
    ,
   {
-    "class": "Social",
+    "class": "Income support",
     "indicator_name": "Jobseeker support by region - Other ethnicities",
     "type": "Benefits",
     "source": "Ministry of Social Development",
@@ -4867,113 +4719,6 @@
         "units": "Number"
       }
        
-    ]
-  },
-  {
-    "class": "Social",
-    "indicator_name": "Number of recipients of CIRP by age group",
-    "type": "Income relief payment",
-    "source": "Ministry of Social Development",
-    "plot_function": "get_horizontal_bar",
-    "international": false,
-    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
-    "download": true,
-   
-    "groups": [
-      {
-        "name": "undefined_name",
-        "title": "Number of recipients of CIRP by age group",
-        "units": "Number"
-      }
-    ]
-  },
-  {
-    "class": "Social",
-    "indicator_name": "Number of recipients of CIRP by region",
-    "type": "Income relief payment",
-    "source": "Ministry of Social Development",
-    "plot_function": "get_horizontal_bar",
-    "international": false,
-    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
-    "download": true,
-   
-    "groups": [
-      {
-        "name": "undefined_name",
-        "title": "Number of recipients of CIRP by region",
-        "units": "Number"
-      }
-    ]
-  } ,
-  {
-    "class": "Social",
-    "indicator_name": "Amount of wage subsidy refunds received",
-    "type": "Wage subsidy assistance",
-    "source": "Ministry of Social Development",
-    "plot_function": "get_time_series_plot",
-    "international": false,
-    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
-    "download": true,
-    "groups": [
-      {
-        "name": "Amount of wage subsidy refunds received",
-        "title": "Amount of wage subsidy refunds received (cumulative)",
-        "units": "$"
-      }
-    ]
-  }
-  ,
-  {
-    "class": "Social",
-    "indicator_name": "Number of wage subsidy refunds received",
-    "type": "Wage subsidy assistance",
-    "source": "Ministry of Social Development",
-    "plot_function": "get_time_series_plot",
-    "international": false,
-    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
-    "download": true,
-    "groups": [
-      {
-        "name": "Number of wage subsidy refunds received",
-        "title": "Number of wage subsidy refunds received (cumulative)",
-        "units": "Number"
-      }
-    ]
-  }
-  ,
-  {
-    "class": "Social",
-    "indicator_name": "Amount of wage subsidy extension paid",
-    "type": "Wage subsidy extension",
-    "source": "Ministry of Social Development",
-    "plot_function": "get_time_series_plot",
-    "international": false,
-    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
-    "download": true,
-    "groups": [
-      {
-        "name": "Amount of wage subsidy extension paid",
-        "title": "Amount of wage subsidy extension paid (cumulative)",
-        "units": "$"
-      }
-    ]
-  }
-  ,
-  {
-    "class": "Social",
-    "indicator_name": "Number of jobs associated with a paid application",
-    "type": "Wage subsidy extension",
-    "source": "Ministry of Social Development",
-    "plot_function": "get_time_series_plot",
-    "international": false,
-    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
-    "download": true,
-    "groups": [
-      {
-        "name": "Number of jobs associated with a paid applicaton",
-        "title": "Number of jobs associated with a paid applicaton for wage subsidy extension (cumulative)",
-        "units": "Number"
-      }
     ]
   },
   
@@ -5248,7 +4993,7 @@
       ]
    },
    {
-  	"class": "Wellbeing",
+  	"class": "Social",
   	"type": "Social connection",
   	"indicator_name": "Staying connected with others",
   	"source": "Ministry of Justice",
@@ -5258,7 +5003,7 @@
   	"download": true,
   	"groups": [
   	   {
-  		 "name": "Percentage of respondents",
+  		 "name": "undefined_name",
   		 "units": "%",
   		 "x_axis_label": "(2020)",
   		 "title": "Percentage of respondents who reported it was hard or very hard to stay connected with family, whānau and friends outside their household, over the past 7 days",
@@ -5267,7 +5012,7 @@
   	 ]
   },
   {
-	  "class": "Wellbeing",
+	  "class": "Social",
 	  "type": "Crime and safety",
 	  "indicator_name": "Safety travelling to and from essential services",
 	  "source": "Ministry of Justice",
@@ -5277,7 +5022,7 @@
 	  "download": true,
 	  "groups": [
 		   {
-		    "name": "Percentage of respondents",
+		    "name": "undefined_name",
 		    "units": "%",
 		    "x_axis_label": "(2020)",
 		    "title": "Percentage of respondents who felt safe or very safe travelling to and from essential services, over the past 7 days",
@@ -5286,7 +5031,7 @@
 		]
 	},
 	{
-	  "class": "Wellbeing",
+	  "class": "Social",
 	  "type": "Crime and safety",
 	  "indicator_name": "COVID-19 related scams",
 	  "source": "Ministry of Justice",
@@ -5296,12 +5041,1471 @@
 	  "download": true,
 	  "groups": [
 	     {
-		    "name": "Percentage of respondents",
+		    "name": "undefined_name",
 		    "units": "%",
 		    "x_axis_label": "(2020)",
 		    "title": "Percentage of respondents who reported experiencing a COVID-19 related scam, over the past 7 days",
 		   "caveats": "<p> This survey uses an opt-in sampling method based on people who have taken part in the New Zealand Crime and Victims Survey (NZCVS) and agreed to be contacted about future research. As a result, there could be bias associated with the respondents of the survey. The findings reported should not be applied to the overall NZ population.  </p> <p> Approximately 370 people are contacted each week resulting in approximately 300 finalised interviews.</p> "
 		  }
 		]
+	},
+	{
+	  "class": "Economic",
+	  "type": "Employment",
+	  "indicator_name": "Jobs online measure",
+	  "source": "Ministry of Business, Innovation and Employment",
+	  "plot_function": "get_time_series_plot",
+	  "include_date_slider": true,
+	  "default_lower_range": "2017-02-01",
+	  "international": false,
+	  "source_url":"https://www.mbie.govt.nz/business-and-employment/employment-and-skills/labour-market-reports-data-and-analysis/jobs-online/",
+	  "download": true,
+	  "groups": [
+	   	{
+		    "name": "Jobs online index",
+		    "units": "Index",
+		    "title": "Monthly online job advertisements index"
+		  }
+		]
+	},
+  {
+    "class": "Economic",
+    "type": "Employment",
+    "indicator_name": "Jobs online measure by region",
+    "source": "Ministry of Business, Innovation and Employment",
+    "plot_function": "get_time_series_plot",
+    "include_date_slider": true,
+    "default_lower_range": "2017-02-01",
+    "international": false,
+    "source_url":"https://www.mbie.govt.nz/business-and-employment/employment-and-skills/labour-market-reports-data-and-analysis/jobs-online/",
+    "download": true,
+    "groups": [
+       {
+        "name": "Auckland",
+        "units": "Index",
+        "title": "Monthly online job advertisements index by region - Auckland"
+      },
+      {
+        "name": "Wellington",
+        "units": "Index",
+        "title": "Monthly online job advertisements index by region - Wellington"
+      },
+      {
+        "name": "North Island (Other)",
+        "units": "Index",
+        "title": "Monthly online job advertisements index by region - North Island (Other)"
+      },
+      {
+        "name": "Canterbury",
+        "units": "Index",
+        "title": "Monthly online job advertisements index by region - Canterbury"
+      },
+      {
+        "name": "South Island (Other)",
+        "units": "Index",
+        "title": "Monthly online job advertisements index by region - South Island (Other)"
+      }
+    ]
+  }, 
+  {
+    "class": "Economic",
+    "type": "Employment",
+    "indicator_name": "Jobs online measure by industry",
+    "source": "Ministry of Business, Innovation and Employment",
+    "plot_function": "get_time_series_plot",
+    "include_date_slider": true,
+    "default_lower_range": "2017-02-01",
+    "international": false,
+    "source_url":"https://www.mbie.govt.nz/business-and-employment/employment-and-skills/labour-market-reports-data-and-analysis/jobs-online/",
+    "download": true,
+    "groups": [
+       {
+        "name": "Accounting, HR, legal and admin",
+        "units": "Index",
+        "title": "Monthly online job advertisements index by industry - Accounting, HR, legal and admin"
+      },
+      {
+        "name": "Construction and engineering",
+        "units": "Index",
+        "title": "Monthly online job advertisements index by industry - Construction and engineering"
+      },
+      {
+        "name": "Education & training",
+        "units": "Index",
+        "title": "Monthly online job advertisements index by industry - Education & training"
+      },
+      {
+        "name": "Healthcare & medical",
+        "units": "Index",
+        "title": "Monthly online job advertisements index by industry - Healthcare & medical"
+      },
+      {
+        "name": "Hospitality & tourism",
+        "units": "Index",
+        "title": "Monthly online job advertisements index by industry - Hospitality & tourism"
+      },
+      {
+        "name": "IT",
+        "units": "Index",
+        "title": "Monthly online job advertisements index by industry - IT"
+      },
+      {
+        "name": "Manufacturing",
+        "units": "Index",
+        "title": "Monthly online job advertisements index by industry - Manufacturing"
+      },
+      {
+        "name": "Primary",
+        "units": "Index",
+        "title": "Monthly online job advertisements index by industry - Primary"
+      },
+      {
+        "name": "Sales, retail, marketing & advertising",
+        "units": "Index",
+        "title": "Monthly online job advertisements index by industry - Sales, retail, marketing & advertising"
+      },
+      {
+        "name": "Other",
+        "units": "Index",
+        "title": "Monthly online job advertisements index by industry - Other"
+      }
+    ]
+  },
+  
+	{
+    "class": "Income support",
+    "indicator_name": "Number of recipients of CIRP",
+    "type": "Income relief payment",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "caveats":"<p> *Number of grants include suspensions and cancellations</p><p> **Transfers to CIRP from Jobseeker Support are cumulative counts of people granted CIRP, who were recently in receipt (or a partner of a primary recipient) of Jobseeker Support.</p>" , 
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Number of recipients of COVID-19 Income Relief Payment (CIRP)",
+        "units": "Number"
+      }
+    ]
+  },
+	
+	
+   {
+    "class": "Income support",
+    "indicator_name": "Number of recipients of CIRP by region",
+    "type": "Income relief payment",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_stacked_bar_chart",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+   
+    "groups": [
+      {
+        "name": "Total",
+        "title": "Number of recipients of CIRP by region - Total",
+        "units": "Number"
+      },
+	  {
+        "name": "Auckland",
+        "title": "Number of recipients of CIRP by region - Auckland",
+        "units": "Number"
+      },
+	  {
+        "name": "Bay of Plenty",
+        "title": "Number of recipients of CIRP by region - Bay of Plenty",
+        "units": "Number"
+      },
+	  {
+        "name": "Canterbury",
+        "title": "Number of recipients of CIRP by region - Canterbury",
+        "units": "Number"
+      },
+	  {
+        "name": "Gisborne",
+        "title": "Number of recipients of CIRP by region - Gisborne",
+        "units": "Number"
+      },
+	  {
+        "name": "Hawke's Bay",
+        "title": "Number of recipients of CIRP by region - Hawke's Bay",
+        "units": "Number"
+      },
+	  {
+        "name": "Manawatū-Whanganui",
+        "title": "Number of recipients of CIRP by region - Manawatū-Whanganui",
+        "units": "Number"
+      },
+	  {
+        "name": "Marlborough",
+        "title": "Number of recipients of CIRP by region - Marlborough",
+        "units": "Number"
+      },
+	  {
+        "name": "Nelson",
+        "title": "Number of recipients of CIRP by region - Nelson",
+        "units": "Number"
+      },
+	  {
+        "name": "Northland",
+        "title": "Number of recipients of CIRP by region - Northland",
+        "units": "Number"
+      },
+	  {
+        "name": "Otago",
+        "title": "Number of recipients of CIRP by region - Otago",
+        "units": "Number"
+      },
+	  {
+        "name": "Southland",
+        "title": "Number of recipients of CIRP by region - Southland",
+        "units": "Number"
+      },
+	  {
+        "name": "Taranaki",
+        "title": "Number of recipients of CIRP by region - Taranaki",
+        "units": "Number"
+      },
+	  {
+        "name": "Tasman",
+        "title": "Number of recipients of CIRP by region - Tasman",
+        "units": "Number"
+      },
+	  {
+        "name": "Waikato",
+        "title": "Number of recipients of CIRP by region - Waikato",
+        "units": "Number"
+      },
+	  {
+        "name": "Wellington",
+        "title": "Number of recipients of CIRP by region - Wellington",
+        "units": "Number"
+      },
+	  {
+        "name": "West Coast",
+        "title": "Number of recipients of CIRP by region - West Coast",
+        "units": "Number"
+      },
+	  {
+        "name": "Other/Unknown",
+        "title": "Number of recipients of CIRP by region - Other/Unknown",
+        "units": "Number"
+      }
+    ]
+  } ,
+  {
+    "class": "Income support",
+    "indicator_name": "Amount of wage subsidy refunds received",
+    "type": "Wage subsidy assistance",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Amount of wage subsidy refunds received (cumulative)",
+        "units": "$"
+      }
+    ]
+  }
+  ,
+  {
+    "class": "Income support",
+    "indicator_name": "Number of wage subsidy refunds received",
+    "type": "Wage subsidy assistance",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Number of wage subsidy refunds received (cumulative)",
+        "units": "Number"
+      }
+    ]
+  }
+  ,
+  {
+    "class": "Income support",
+    "indicator_name": "Amount of wage subsidy extension paid",
+    "type": "Wage subsidy extension",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Amount of wage subsidy extension paid (cumulative)",
+        "units": "$"
+      }
+    ]
+  }
+  ,
+  {
+    "class": "Income support",
+    "indicator_name": "Number of jobs associated with a paid application",
+    "type": "Wage subsidy extension",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Number of jobs associated with a paid application for wage subsidy extension (cumulative)",
+        "units": "Number"
+      }
+    ]
+  },
+  
+	
+  {
+    "class": "Income support",
+    "indicator_name": "Jobseeker support",
+    "type": "Benefits",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Number on jobseeker support benefit",
+        "units": "Number"
+      }
+    ]
+  },
+  
+  
+   {
+    "class": "Income support",
+    "indicator_name": "Percentage of population",
+    "type": "Benefits",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Percentage of the working-age population receiving jobseeker support",
+        "units": "%"
+      }
+    ]
+  },
+  {
+    "class": "Income support",
+    "indicator_name": "Number of applications",
+    "type": "Wage subsidy assistance",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Number of wage subsidy applications (cumulative)",
+        "units": "Number"
+      }
+    ]
+  },
+  {
+    "class": "Income support",
+    "indicator_name": "Number of paid applications",
+    "type": "Wage subsidy assistance",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Number of jobs associated with paid out wage subsidy applications (cumulative)",
+        "units": "Number"
+      }
+    ]
+  },
+  {
+    "class": "Income support",
+    "indicator_name": "Amount of wage subsidy paid out",
+    "type": "Wage subsidy assistance",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Amount of wage subsidy paid out (cumulative)",
+        "units": "$"
+      }
+    ]
+  },
+  
+  
+	
+	
+  {
+    "class": "Income support",
+    "indicator_name": "Number of recipients of CIRP by age group",
+    "type": "Income relief payment",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_stacked_bar_chart",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "19 years and under",
+        "title": "Number of recipients of CIRP by age group - 19 years and under",
+        "units": "Number"
+      },
+	  {
+        "name": "20-24 years",
+        "title": "Number of recipients of CIRP by age group - 20-24 years",
+        "units": "Number"
+      },
+	  {
+        "name": "25-29 years",
+        "title": "Number of recipients of CIRP by age group - 25-29 years",
+        "units": "Number"
+      },
+	  {
+        "name": "30-34 years",
+        "title": "Number of recipients of CIRP by age group - 30-34 years",
+        "units": "Number"
+      },
+	  {
+        "name": "35-39 years",
+        "title": "Number of recipients of CIRP by age group - 35-39 years",
+        "units": "Number"
+      },
+	  {
+        "name": "40-44 years",
+        "title": "Number of recipients of CIRP by age group - 40-44 years",
+        "units": "Number"
+      },
+	  {
+        "name": "45-49 years",
+        "title": "Number of recipients of CIRP by age group - 45-49 years",
+        "units": "Number"
+      },
+	  {
+        "name": "50-54 years",
+        "title": "Number of recipients of CIRP by age group - 50-54 years",
+        "units": "Number"
+      },
+	  {
+        "name": "55-59 years",
+        "title": "Number of recipients of CIRP by age group - 55-59 years",
+        "units": "Number"
+      },
+	  {
+        "name": "60-64 years",
+        "title": "Number of recipients of CIRP by age group - 60-64 years",
+        "units": "Number"
+      },
+	  {
+        "name": "65+ years",
+        "title": "Number of recipients of CIRP by age group - 65+ years",
+        "units": "Number"
+      }
+    ]
+  },
+  {
+	"class": "Income support",
+	"indicator_name": "Number of recipients of CIRP by territorial authority",
+	"type": "Income relief payment",
+	"source": "Ministry of Social Development",
+	"plot_function": "get_stacked_bar_chart",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+	"groups": [
+		{ 
+		 "name": "Ashburton District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Ashburton District",
+		 "units": "Number" 
+		}, 
+		{ 
+		 "name": "Auckland City", 
+		 "title": "Number of recipients of CIRP by territorial authority - Auckland City", 
+		 "units": "Number" 
+		}, 
+	  { 
+		 "name": "Buller District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Buller District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Carterton District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Carterton District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Central Hawke's Bay District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Central Hawke's Bay District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Central Otago District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Central Otago District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Christchurch City", 
+		 "title": "Number of recipients of CIRP by territorial authority - Christchurch City", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Clutha District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Clutha District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Dunedin City", 
+		 "title": "Number of recipients of CIRP by territorial authority - Dunedin City", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Far North District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Far North District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Gisborne District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Gisborne District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Gore District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Gore District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Grey District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Grey District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Hamilton City", 
+		 "title": "Number of recipients of CIRP by territorial authority - Hamilton City", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Hastings District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Hastings District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Hauraki District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Hauraki District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Horowhenua District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Horowhenua District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Hurunui District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Hurunui District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Invercargill City", 
+		 "title": "Number of recipients of CIRP by territorial authority - Invercargill City", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Kaikōura District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Kaikōura District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Kaipara District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Kaipara District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Kāpiti Coast District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Kāpiti Coast District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Kawerau District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Kawerau District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Lower Hutt City", 
+		 "title": "Number of recipients of CIRP by territorial authority - Lower Hutt City", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Mackenzie District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Mackenzie District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Manawatū District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Manawatū District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Marlborough District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Marlborough District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Masterton District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Masterton District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Matamata-Piako District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Matamata-Piako District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Napier City", 
+		 "title": "Number of recipients of CIRP by territorial authority - Napier City", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Nelson City", 
+		 "title": "Number of recipients of CIRP by territorial authority - Nelson City", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "New Plymouth District", 
+		 "title": "Number of recipients of CIRP by territorial authority - New Plymouth District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Ōpōtiki District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Ōpōtiki District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Ōtorohanga District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Ōtorohanga District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Palmerston North City", 
+		 "title": "Number of recipients of CIRP by territorial authority - Palmerston North City", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Porirua City", 
+		 "title": "Number of recipients of CIRP by territorial authority - Porirua City", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Queenstown-Lakes District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Queenstown-Lakes District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Rangitīkei District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Rangitīkei District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Rotorua District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Rotorua District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Ruapehu District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Ruapehu District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Selwyn District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Selwyn District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "South Taranaki District", 
+		 "title": "Number of recipients of CIRP by territorial authority - South Taranaki District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "South Waikato District", 
+		 "title": "Number of recipients of CIRP by territorial authority - South Waikato District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "South Wairarapa District", 
+		 "title": "Number of recipients of CIRP by territorial authority - South Wairarapa District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Southland District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Southland District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Stratford District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Stratford District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Tararua District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Tararua District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Tasman District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Tasman District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Taupō District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Taupō District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Tauranga City", 
+		 "title": "Number of recipients of CIRP by territorial authority - Tauranga City", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Thames-Coromandel District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Thames-Coromandel District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Timaru District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Timaru District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Upper Hutt City", 
+		 "title": "Number of recipients of CIRP by territorial authority - Upper Hutt City", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Waikato District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Waikato District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Waimakariri District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Waimakariri District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Waimate District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Waimate District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Waipā District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Waipā District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Wairoa District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Wairoa District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Waitaki District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Waitaki District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Waitomo District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Waitomo District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Wellington City", 
+		 "title": "Number of recipients of CIRP by territorial authority - Wellington City", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Western Bay Of Plenty District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Western Bay Of Plenty District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Westland District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Westland District",
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Whakatāne District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Whakatāne District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Whanganui District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Whanganui District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Whangārei District", 
+		 "title": "Number of recipients of CIRP by territorial authority - Whangārei District", 
+		 "units": "Number" 
+		}, 
+		  { 
+		 "name": "Other/Unknown", 
+		 "title": "Number of recipients of CIRP by territorial authority - Other/Unknown", 
+		 "units": "Number" 
+		}
+	  ]
+	},
+	{
+    "class": "Social",
+    "type": "Household finances",
+    "indicator_name": "Confidence in household's financial situation",
+    "source": "Commission for Financial Capability",
+    "plot_function": "get_unstacked_horizontal_bar",
+    "international": false,
+    "source_url":"https://cffc.govt.nz/news-and-media/news/covid-19-exposing-new-zealanders-financial-vulnerability/",
+    "download": true,
+    "groups": [
+        {
+          "name": "undefined_name",
+          "units": "%",
+          "title": "Respondents’ level of confidence in household’s financial situation over next 3 months",
+          "caveats": "<p> 1) Data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3).  </p><p> 2) This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population.  </p>"
+      }
+    ]
+  },
+  {
+   "class": "Social",
+   "type": "Household finances",
+    "indicator_name": "Ability to meet bills",  "source": "Commission for Financial Capability",
+    "plot_function": "get_unstacked_horizontal_bar",
+    "international": false,
+    "source_url":"https://cffc.govt.nz/news-and-media/news/covid-19-exposing-new-zealanders-financial-vulnerability/",
+    "download": true,
+    "groups": [
+        {
+            "name": "undefined_name",
+            "units": "%",
+            "title": "Respondents’ ability to meet bills and other financial commitments over next 3 months",
+            "caveats": "<p> 1) Data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3).  </p><p> 2) This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population.  </p>"
+        }
+    ]
+  },
+   {
+   "class": "Social",
+   "type": "Household finances",
+    "indicator_name": "Use of money in savings",
+    "source": "Commission for Financial Capability",
+    "plot_function": "get_unstacked_horizontal_bar",
+    "international": false,
+    "source_url":"https://cffc.govt.nz/news-and-media/news/covid-19-exposing-new-zealanders-financial-vulnerability/",
+    "download": true,
+    "groups": [
+        {
+            "name": "undefined_name",
+            "units": "%",
+            "title": "Whether respondents used savings to help make ends meet during the last four weeks",
+            "caveats": "<p> 1) Data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3).  </p><p> 2) This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population.  </p>"
+        }
+    ]
+  },
+  {
+   "class": "Social",
+   "type": "Household finances",
+    "indicator_name": "Change in income",
+    "source": "Commission for Financial Capability",
+    "plot_function": "get_unstacked_horizontal_bar",
+    "international": false,
+    "source_url":"https://cffc.govt.nz/news-and-media/news/covid-19-exposing-new-zealanders-financial-vulnerability/",
+    "download": true,
+    "groups": [
+        {
+            "name": "undefined_name",
+            "units": "%",
+            "title": "Way in which respondents' household income* has changed since beginning of March 2020",
+            "caveats": "<p> 1)* Refers to total monthly net household income from all sources. </p><p> 2) Data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3).  </p><p> 3) This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population.  </p>"
+        }
+    ]
+  },
+  {
+   "class": "Social",
+   "type": "Personal finances",
+    "indicator_name": "Financial anxiety",
+    "source": "Commission for Financial Capability",
+    "plot_function": "get_unstacked_horizontal_bar",
+    "international": false,
+    "source_url":"https://cffc.govt.nz/news-and-media/news/covid-19-exposing-new-zealanders-financial-vulnerability/",
+    "download": true,
+    "groups": [
+        {
+            "name": "undefined_name",
+            "units": "%",
+            "title": "How well respondents relate to the statement \"Thinking about my financial situation makes me anxious\"",
+            "caveats": "<p> 1) Data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3).  </p><p> 2) This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population.  </p>"
+        }
+    ]
+  },
+   {
+    "class": "Social",
+    "type": "Household finances",
+    "indicator_name": "Money owed on credit agreements",
+    "source": "Commission for Financial Capability",
+    "plot_function": "get_unstacked_horizontal_bar",
+    "international": false,
+    "source_url":"https://cffc.govt.nz/news-and-media/news/covid-19-exposing-new-zealanders-financial-vulnerability/",
+    "download": true,
+    "groups": [
+        {
+          "name": "undefined_name",
+          "units": "%",
+          "title": "Percentage of respondents who owe money due to missed repayments on credit, by type of credit agreement",
+          "caveats": "<p> 1) Data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3).  </p><p> 2) This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population.  </p>"
+      }
+    ]
+  },
+  {
+    "class": "Social",
+    "type": "Personal finances",
+    "indicator_name": "Effects of COVID-19 on work and income",
+    "source": "Commission for Financial Capability",
+    "plot_function": "get_unstacked_horizontal_bar",
+    "international": false,
+    "source_url":"https://cffc.govt.nz/news-and-media/news/covid-19-exposing-new-zealanders-financial-vulnerability/",
+    "download": true,
+    "groups": [
+        {
+            "name": "undefined_name",
+            "units": "%",
+            "title": "Percentage of respondents who said they or the partner they live with experienced the following as a result of COVID-19",
+            "caveats": "<p> 1)* Includes self-employed income. <p></p> 2) Data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3).  </p><p> 3) This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population.  </p>"
+        }
+    ]
+  } ,
+   
+  {
+    "class": "Economic",
+    "indicator_name": "Broadband usage by region",
+    "type": "Activity",
+    "source": "Chorus",
+    "plot_function": "get_time_series_plot",
+      "international": false,
+    "include_date_slider": true,
+    
+    "caveats":"<p> 1. Only includes traffic on the Chorus network (excludes traffic for other local fibre companies, cable and fixed wireless networks).</p><p> 2. Regional traffic is based on the location where the traffic is handed over to the service provider.</p><p> 3. The sum of regional totals may not exactly match the daily national usage.</p><p> 4. Tasman encompasses the Tasman, Nelson and Marlborough regions.</p><p> 5. In some date instances across regions, data will not feature due to collection issues.</p>",
+    
+   
+   
+    "download": false,
+    "groups": [
+     
+      {
+        "name": "Auckland",
+        "title": "Daily Chorus broadband use - Auckland",
+        "units": "Gigagbyte (million)"
+      },
+      {
+        "name": "Bay of Plenty",
+        "title": "Daily Chorus broadband use - Bay of Plenty",
+        "units": "Gigagbyte (million)"
+      },
+      {
+        "name": "Canterbury",
+        "title": "Daily Chorus broadband use - Canterbury",
+        "units": "Gigagbyte (million)"
+      },
+      {
+        "name": "Gisborne",
+        "title": "Daily Chorus broadband use - Gisborne",
+        "units": "Gigagbyte (million)"
+      },
+      
+      {
+        "name": "Hawke's Bay",
+        "title": "Daily Chorus broadband use- Hawke's Bay",
+        "units": "Gigagbyte (million)"
+      },
+      {
+        "name": "Manawatū-Whanganui",
+        "title": "Daily Chorus broadband use- Manawatū-Whanganui",
+        "units": "Gigagbyte (million)"
+      }
+      ,
+     
+      {
+        "name": "Northland",
+        "title": "Daily Chorus broadband use - Northland",
+        "units": "Gigagbyte (million)"
+      },
+      {
+        "name": "Otago",
+        "title": "Daily Chorus broadband use - Otago",
+        "units": "Gigagbyte (million)"
+      }
+      ,
+      {
+        "name": "Southland",
+        "title": "Daily Chorus broadband use - Southland",
+        "units": "Gigagbyte (million)"
+      }
+      ,
+      {
+        "name": "Taranaki",
+        "title": "Daily Chorus broadband use - Taranaki",
+        "units": "Gigagbyte (million)"
+      }
+      ,
+      {
+        "name": "Tasman",
+        "title": "Daily Chorus broadband use - Tasman",
+        "units": "Gigagbyte (million)"
+      }
+       ,
+      {
+        "name": "Waikato",
+        "title": "Daily Chorus broadband use - Waikato",
+        "units": "Gigagbyte (million)"
+      }
+      , 
+      {
+        "name": "Wellington",
+        "title": "Daily Chorus broadband use - Wellington",
+        "units": "Gigagbyte (million)"
+      } , 
+      {
+        "name": "West Coast",
+        "title": "Daily Chorus broadband use - West Coast",
+        "units": "Gigagbyte (million)"
+      }
+      
+      
+      ]
+   },
+   {
+    "class": "Contextual",
+    "type": "Business",
+    "indicator_name": "Number of employees by region",
+  	"source": "Stats NZ",
+  	"plot_function": "get_unstacked_horizontal_bar",
+  	"international": false,
+  	"source_url":"http://nzdotstat.stats.govt.nz/wbos/Index.aspx?DataSetCode=TABLECODE7602",
+  	"caveats": "<p> 1) Industries classified in line with the Australian and New Zealand Standard Industrial Classification: <a href=\"http://archive.stats.govt.nz/methods/classifications-and-standards/classification-related-stats-standards/industrial-classification.aspx#gsc.tab=0\">Industrial classification</a>. </p> <p> 2) Employee count is a head count of all salary and wage earners.</p><p> 3) Due to rounding, individual figures may not always sum to the stated total(s). </p>",
+  	"download": true,
+  	"groups": [
+  	   {
+  		 "name": "Total New Zealand",
+  		 "units": "Count",
+  		 "title": "Number of employees by industry type, as at February 2019 – Total New Zealand"
+  		 },
+  	   {
+  		 "name": "Northland",
+  		 "units": "Count",
+  		 "title": "Number of employees by industry type, as at February 2019 – Northland"
+  		 },
+  	   {
+  		 "name": "Auckland",
+  		 "units": "Count",
+  		 "title": "Number of employees by industry type, as at February 2019 – Auckland"
+  		 },
+  	   {
+  		 "name": "Waikato",
+  		 "units": "Count",
+  		 "title": "Number of employees by industry type, as at February 2019 – Waikato"
+  		 },
+  	   {
+  		 "name": "Bay of Plenty",
+  		 "units": "Count",
+  		 "title": "Number of employees by industry type, as at February 2019 – Bay of Plenty"
+  		 },
+  	   {
+  		 "name": "Gisborne",
+  		 "units": "Count",
+  		 "title": "Number of employees by industry type, as at February 2019 – Gisborne"
+  		 },
+  		 {
+  		 "name": "Hawke's Bay",
+  		 "units": "Count",
+  		 "title": "Number of employees by industry type, as at February 2019 – Hawke's Bay"
+  		 },
+    	  	   {
+  		 "name": "Taranaki",
+  		 "units": "Count",
+  		 "title": "Number of employees by industry type, as at February 2019 – Taranaki"
+  		 },
+  		 {
+  		 "name": "Manawatū-Whanganui",
+  		 "units": "Count",
+  		 "title": "Number of employees by industry type, as at February 2019 – Manawatū-Whanganui"
+  		 },
+  		 {
+  		 "name": "Wellington",
+  		 "units": "Count",
+  		 "title": "Number of employees by industry type, as at February 2019 – Wellington"
+  		 },
+  		 {
+  		 "name": "Tasman",
+  		 "units": "Count",
+  		 "title": "Number of employees by industry type, as at February 2019 – Tasman"
+  		 },
+  		 {
+  		 "name": "Nelson",
+  		 "units": "Count",
+  		 "title": "Number of employees by industry type, as at February 2019 – Nelson"
+  		 },
+  		  {
+  		 "name": "Marlborough",
+  		 "units": "Count",
+  		 "title": "Number of employees by industry type, as at as at February 2019 – Marlborough"
+  		 },
+  		 {
+  		 "name": "West Coast",
+  		 "units": "Count",
+  		 "title": "Number of employees by industry type, as at as at February 2019 – West Coast"
+  		 },
+  		  {
+  		 "name": "Canterbury",
+  		 "units": "Count",
+  		 "title": "Number of employees by industry type, as at as at February 2019 – Canterbury"
+  		 },
+  		{
+  		 "name": "Otago",
+  		 "units": "Count",
+  		 "title": "Number of employees by industry type, as at February 2019 – Otago"
+  		 },
+  		 {
+  		 "name": "Southland",
+  		 "units": "Count",
+  		 "title": "Number of employees by industry type, as at February 2019 – Southland"
+  		 }
+  	 ]
+  },
+  {
+    "class": "Contextual",
+    "type": "Business",
+    "indicator_name": "Number of businesses by region",
+  	"source": "Stats NZ",
+  	"plot_function": "get_unstacked_horizontal_bar",
+  	"international": false,
+  	"source_url":"http://nzdotstat.stats.govt.nz/wbos/Index.aspx?DataSetCode=TABLECODE7602",
+  	"download": true,
+  	"caveats": "<p>1) Industries classified in line with the Australian and New Zealand Standard Industrial Classification: <a href=\"http://archive.stats.govt.nz/methods/classifications-and-standards/classification-related-stats-standards/industrial-classification.aspx#gsc.tab=0\">Industrial classification</a>.<br> </p><p> 2) Business unit: A separate operating unit engaged in New Zealand in one, or predominately one, kind of economic activity from a single physical location or base.</p><p> 3) Due to rounding, individual figures may not always sum to the stated total(s). </p>",
+  	"groups": [
+  	   {
+  		 "name": "Total New Zealand",
+  		 "units": "Count",
+  		 "title": "Number of business units by industry type, as at February 2019 – Total New Zealand"
+  		 },
+  	   {
+  		 "name": "Northland",
+  		 "units": "Count",
+  		 "title": "Number of business units by industry type, as at February 2019 – Northland"
+  		 },
+  		 {
+  		 "name": "Auckland",
+  		 "units": "Count",
+  		 "title": "Number of business units by industry type, as at February 2019 – Auckland"
+  		 },
+  	   {
+  		 "name": "Waikato",
+  		 "units": "Count",
+  		 "title": "Number of business units by industry type, as at February 2019 – Waikato"
+  	  },
+  	  {
+  		 "name": "Bay of Plenty",
+  		 "units": "Count",
+  		 "title": "Number of business units by industry type, as at February 2019 – Bay of Plenty"
+  		 },
+  	   {
+  		 "name": "Gisborne",
+  		 "units": "Count",
+  		 "title": "Number of business units by industry type, as at February 2019 – Gisborne"
+  		 },
+  		 {
+  		 "name": "Hawke's Bay",
+  		 "units": "Count",
+  		 "title": "Number of business units by industry type as at February 2019 – Hawke's Bay"
+  		 },
+    	 {
+  		 "name": "Taranaki",
+  		 "units": "Count",
+  		 "title": "Number of business units by industry type, as at February 2019 – Taranaki"
+  		 },
+  		 {
+  		 "name": "Manawatū-Whanganui",
+  		 "units": "Count",
+  		 "title": "Number of business units by industry type, as at February 2019 – Manawatū-Whanganui"
+  		 },
+  		 {
+  		 "name": "Wellington",
+  		 "units": "Count",
+  		 "title": "Number of business units by industry type, as at February 2019 – Wellington"
+  		 },
+  		  {
+  		 "name": "Tasman",
+  		 "units": "Count",
+  		 "title": "Number of business units by industry type, as at February 2019 – Tasman"
+  		 },
+  		 {
+  		 "name": "Nelson",
+  		 "units": "Count",
+  		 "title": "Number of business units by industry type, as at February 2019 – Nelson"
+  		 },
+  		 {
+  		 "name": "Marlborough",
+  		 "units": "Count",
+  		 "title": "Number of business units by industry type, as at February 2019 – Marlborough"
+  		 },
+  		 {
+  		 "name": "West Coast",
+  		 "units": "Count",
+  		 "title": "Number of business units by industry type, as at February 2019 – West Coast"
+  		 },
+  		  {
+  		 "name": "Canterbury",
+  		 "units": "Count",
+  		 "title": "Number of business units by industry type, as at February 2019 – Canterbury"
+  		 },
+  		  {
+  		 "name": "Otago",
+  		 "units": "Count",
+  		 "title": "Number of business units by industry type, as at February 2019 – Otago"
+  		 },
+  		  {
+  		 "name": "Southland",
+  		 "units": "Count",
+  		 "title": "Number of business units by industry type, as at February 2019 – Southland"
+  		 }
+  	 ]
+  },
+   {
+    "class": "Health",
+    "type": "General health",
+    "indicator_name": "Health status",
+    "source": "Ministry of Health",
+    "plot_function": "get_unstacked_bar_chart_with_errors",
+    "international": false,
+    "source_url": "https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-resources-and-tools/covid-19-health-and-wellbeing-survey",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Respondents who said in general their health was good, very good, or excellent - provisional",
+        "units": "%",
+        "caveats": "<p> 1) This survey samples people who have previously taken part in the New Zealand Health Survey and agreed to be contacted about future research. As a result, there could be bias associated with the respondents and thus the findings of this survey. </p> <p> 2) Data are for the week ended Sunday.  </p> <p> 3) Approximately 300 people (aged 15+ years) are interviewed each day. </p> <p> 4) There are some limitations to the sample used, such as small numbers of Asian and Pacific respondents. </p>"
+      }
+    ]
+	},
+	{
+    "class": "Health",
+    "type": "General health",
+    "indicator_name": "Sleep quantity",
+    "source": "Ministry of Health",
+    "plot_function": "get_unstacked_bar_chart_with_errors",
+    "international": false,
+    "source_url": "https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-resources-and-tools/covid-19-health-and-wellbeing-survey",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Respondents who said they slept for the recommended time - provisional ",
+        "units": "%",
+        "caveats": "<p> 1) Percentage of respondents who, over the past 7 days, said they have on average slept for the recommended number of hours in a 24-hour period, including all naps and sleeps. The Ministry of Health‘s sleep recommendations are adapted from the National Sleep Foundation. Recommended hours of sleep vary from 7-10 hours depending on age. </p> <p> 2) This survey samples people who have previously taken part in the New Zealand Health Survey and agreed to be contacted about future research. As a result, there could be bias associated with the respondents and thus the findings of this survey. </p> <p> 3) Data are for the week ended Sunday.  </p> <p> 4) Approximately 300 people (aged 15+ years) are interviewed each day. </p> <p> 5) There are some limitations to the sample used, such as small numbers of Asian and Pacific respondents. </p>"
+      }
+    ]
+	},
+	{
+    "class": "Social",
+    "type": "Life satisfaction",
+    "indicator_name": "Life satisfaction - MoH",
+    "source": "Ministry of Health",
+    "plot_function": "get_unstacked_bar_chart_with_errors",
+    "international": false,
+    "source_url": "https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-resources-and-tools/covid-19-health-and-wellbeing-survey",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Respondents who said they are either somewhat or completely satisfied with life these days - provisional",
+        "units": "%",
+        "caveats": "<p> 1) This survey samples people who have previously taken part in the New Zealand Health Survey and agreed to be contacted about future research. As a result, there could be bias associated with the respondents and thus the findings of this survey. </p> <p> 2) Data are for the week ended Sunday.  </p> <p> 3) Approximately 300 people (aged 15+ years) are interviewed each day. </p> <p> 4) There are some limitations to the sample used, such as small numbers of Asian and Pacific respondents. </p>"
+      }
+    ]
+	},
+	{
+    "class": "Health",
+    "type": "Mental health",
+    "indicator_name": "Depression / anxiety",
+    "source": "Ministry of Health",
+    "plot_function": "get_unstacked_bar_chart_with_errors",
+    "international": false,
+    "source_url": "https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-resources-and-tools/covid-19-health-and-wellbeing-survey",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Respondents experiencing depressive and/or anxiety-related symptoms in the past 7 days - provisional",
+        "units": "%",
+        "caveats": "<p> 1) Measured using an adapted version of the Patient Health Questionnaire-2 (PHQ-2) and Generalised Anxiety Disorder-2 (GAD-2). These cover questions about frequency of depressed mood (for example, little interest or pleasure in doing things) and about experience of anxiety symptoms (for example, feeling nervous, anxious or on edge). </p> <p> 2) This survey samples people who have previously taken part in the New Zealand Health Survey and agreed to be contacted about future research. As a result, there could be bias associated with the respondents and thus the findings of this survey. </p><p> 3) Data are for the week ended Sunday.  </p> <p> 4) Approximately 300 people (aged 15+ years) are interviewed each day. </p> <p> 5) There are some limitations to the sample used, such as small numbers of Asian and Pacific respondents. </p>"
+      }
+    ]
+	},
+	{
+    "class": "Social",
+    "type": "Social connection",
+    "indicator_name": "Loneliness - past 7 days",
+    "source": "Ministry of Health",
+    "plot_function": "get_unstacked_bar_chart_with_errors",
+    "international": false,
+    "source_url": "https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-resources-and-tools/covid-19-health-and-wellbeing-survey",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Respondents who felt lonely or isolated at least a little of the time over the past 7 days - provisional",
+        "units": "%",
+        "caveats": "<p> 1) This survey samples people who have previously taken part in the New Zealand Health Survey and agreed to be contacted about future research. As a result, there could be bias associated with the respondents and thus the findings of this survey. </p> <p> 2) Data are for the week ended Sunday.  </p> <p> 3) Approximately 300 people (aged 15+ years) are interviewed each day. </p> <p> 4) There are some limitations to the sample used, such as small numbers of Asian and Pacific respondents. </p>"
+      }
+    ]
+	},
+	{
+    "class": "Social",
+    "type": "General wellbeing",
+    "indicator_name": "Overall wellbeing",
+    "source": "Ministry of Health",
+    "plot_function": "get_unstacked_bar_chart_with_errors",
+    "international": false,
+    "source_url": "https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-resources-and-tools/covid-19-health-and-wellbeing-survey",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Respondents who said their overall wellbeing at the current alert level is worse than usual - provisional",
+        "units": "%",
+        "caveats": "<p> 1) This survey samples people who have previously taken part in the New Zealand Health Survey and agreed to be contacted about future research. As a result, there could be bias associated with the respondents and thus the findings of this survey. </p><p> 2) Data are for the week ended Sunday.  </p> <p> 3) Approximately 300 people (aged 15+ years) are interviewed each day. </p> <p> 4) There are some limitations to the sample used, such as small numbers of Asian and Pacific respondents. </p>"
+      }
+    ]
+	},
+  	{
+    "class": "Health",
+    "type": "Mental health",
+    "indicator_name": "Calmness",
+    "source": "Ministry of Health",
+    "plot_function": "get_unstacked_bar_chart_with_errors",
+    "international": false,
+    "source_url": "https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-resources-and-tools/covid-19-health-and-wellbeing-survey",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Respondents who said the statement \"I am calm and relaxed\" either strongly or somewhat applies to them right now - provisional",
+        "units": "%",
+        "caveats": "<p> 1) This survey samples people who have previously taken part in the New Zealand Health Survey and agreed to be contacted about future research. As a result, there could be bias associated with the respondents and thus the findings of this survey. </p><p> 2) Data are for the week ended Sunday.  </p> <p> 3) Approximately 300 people (aged 15+ years) are interviewed each day. </p> <p> 4) There are some limitations to the sample used, such as small numbers of Asian and Pacific respondents. </p>"
+      }
+    ]
+	},
+		{
+    "class": "Health",
+    "type": "Mental health",
+    "indicator_name": "Nervousness",
+    "source": "Ministry of Health",
+    "plot_function": "get_unstacked_bar_chart_with_errors",
+    "international": false,
+    "source_url": "https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-resources-and-tools/covid-19-health-and-wellbeing-survey",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Respondents who said the statement \"I am nervous when I think about current circumstances\" either strongly or somewhat applies to them right now - provisional",
+        "units": "%",
+        "caveats": "<p> 1) This survey samples people who have previously taken part in the New Zealand Health Survey and agreed to be contacted about future research. As a result, there could be bias associated with the respondents and thus the findings of this survey. </p> <p> 2) Data are for the week ended Sunday. </p> <p> 3) Approximately 300 people (aged 15+ years) are interviewed each day. </p> <p> 4) There are some limitations to the sample used, such as small numbers of Asian and Pacific respondents. </p>"
+      }
+    ]
+	},
+	{
+    "class": "Health",
+    "type": "Mental health",
+    "indicator_name": "Stress about leaving home",
+    "source": "Ministry of Health",
+    "plot_function": "get_unstacked_bar_chart_with_errors",
+    "international": false,
+    "source_url": "https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-resources-and-tools/covid-19-health-and-wellbeing-survey",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Respondents who said the statement \"I feel stressed about leaving home\" either strongly or somewhat applies to them right now - provisional",
+        "units": "%",
+        "caveats": "<p> 1) This survey samples people who have previously taken part in the New Zealand Health Survey and agreed to be contacted about future research. As a result, there could be bias associated with the respondents and thus the findings of this survey. </p><p> 2) Data are for the week ended Sunday.  </p> <p> 3) Approximately 300 people (aged 15+ years) are interviewed each day. </p> <p> 4) There are some limitations to the sample used, such as small numbers of Asian and Pacific respondents. </p>"
+      }
+    ]
+	},
+  {
+    "class": "Health",
+    "type": "Mental health",
+    "indicator_name": "Worry about family health",
+    "source": "Ministry of Health",
+    "plot_function": "get_unstacked_bar_chart_with_errors",
+    "international": false,
+    "source_url": "https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-resources-and-tools/covid-19-health-and-wellbeing-survey",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Respondents who said the statement \"I am worried about the health of my family members\" either strongly or somewhat applies to them right now - provisional",
+        "units": "%",
+        "caveats": "1) This survey samples people who have previously taken part in the New Zealand Health Survey and agreed to be contacted about future research. As a result, there could be bias associated with the respondents and thus the findings of this survey. </p> <p> 2) Data are for the week ended Sunday.  </p> <p> 3) Approximately 300 people (aged 15+ years) are interviewed each day. </p> <p> 4) There are some limitations to the sample used, such as small numbers of Asian and Pacific respondents. </p>"
+        
+      }
+    ]
 	}
+	,
+{
+  "class": "Economic",
+  "indicator_name": "Weekly median earnings (34 days)",
+  "type": "Employment",
+  "source": "Stats NZ",
+  "plot_function": "get_time_series_plot",
+  "international": false,
+  "include_date_slider": true,
+  "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-weekly-as-at-5-october-2020",
+  "download": true,
+  
+  "groups": [
+    {
+      "name": "Total",
+      "title": "Total median earnings - 34 days",
+      "units": "$"
+    },
+    {
+      "name": "Primary",
+      "title": "Median earnings for Primary industries - 34 days",
+      "units": "$"
+    },  {
+      "name": "Goods Producing",
+      "title": "Median earnings for Goods Producing industries - 34 days",
+      "units": "$"
+    },  {
+      "name": "Services",
+      "title": "Median earnings for Services industries - 34 days",
+      "units": "$"
+    }
+    
+    ]
+}
 ]

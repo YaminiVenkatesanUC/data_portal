@@ -701,6 +701,69 @@ electricity_grid_by_region_data <- function(config, directory){
   
 }
 
+read_chorus_regional_data<-function(config, directory){
+  
+  
+  dates<-ymd(c("2020/04/29", "2020/05/14","2020/07/05", "2020/07/06", "2020/07/21", "2020/07/19", "2020/07/20", "2020/07/26"))
+  data<- as.data.frame(read_excel(
+    paste0(directory, config$filename),
+    sheet = config$sheet_number,
+  ))
+  colnames(data)[1]<-"Date"
+  data<-data%>%mutate(Date= ymd(Date))%>%
+    group_by(Date,`Region Name`)%>%
+    summarise_if(is.numeric, sum, na.rm=T)%>%ungroup()%>%
+    filter(!Date %in% dates)%>%
+    spread(`Region Name`, `Measure Values`)
+  
+  colnames(data)<-c("Parameter", paste0("col_", 2:ncol(data)))
+  
+  return (data_frame_to_data_object_helper(
+    directory,
+    config,
+    data
+  ))
+}
+
+gas_use_data<-function(config, directory){
+  
+  data<- as.data.frame(read_excel(
+    paste0(directory, config$filename),
+    sheet = config$sheet_number,
+    skip = config$skip
+  ))%>%select(-`Source: First Gas`)
+  
+  
+ if(config$gas_source== "Vector"){
+
+
+    data<-data%>% select(Date=`...1`,  everything())%>%
+      mutate(Date=dmy(Date), `Ballance Agri- Nutrients`=`Ballance Agri-Nutrients...2`+`Ballance Agri-Nutrients...3`, Fonterra=`Subtotal Fonterra...6`+`Subtotal Fonterra...7`+
+               `Subtotal Fonterra...8`+`Subtotal Fonterra...9`+`Subtotal Fonterra...10`+`Subtotal Fonterra...11`+`Subtotal Fonterra...12`+`Subtotal Fonterra...13`+
+               `Subtotal Fonterra...14`)%>%
+      select(Date, Fonterra,`Ballance Agri- Nutrients`,`Glenbrook steel mill`, `Kinleith pulp and paper mill`, `Marsden Point oil refinery`)
+ }
+  
+  if(config$gas_source== "Maui"){
+    
+    data<-data%>%mutate(Date=dmy(`...1`), Methanex=`...4`+`Methanex Motunui`)%>%
+      select(Date, everything(), -`...1`, -`...4`, -`Methanex Motunui`)
+    
+  }
+  
+  
+  
+    colnames(data)<-c("Parameter", paste0("col_", 2:ncol(data)))
+    
+    return (data_frame_to_data_object_helper(
+      directory,
+      config,
+      data
+    ))
+  
+}
+
+
 
 load_functions <- list(
   read_from_csv = read_from_csv,
@@ -721,5 +784,8 @@ load_functions <- list(
   read_filled_jobs_by_age = read_filled_jobs_by_age,
   read_from_csv_error = read_from_csv_error,
   read_from_excel_error = read_from_excel_error,
-  electricity_grid_by_region_data = electricity_grid_by_region_data
+  electricity_grid_by_region_data = electricity_grid_by_region_data,
+  read_chorus_regional_data = read_chorus_regional_data,
+  gas_use_data = gas_use_data
+  
 )

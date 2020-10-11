@@ -5,7 +5,7 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly filled jobs (by industry)",
-      "filename": "employment-indicators-june-2020-filled-jobs-by-industry-CSV.csv",
+      "filename": "employment-indicators-august-2020-filled-jobs-by-industry-CSV.csv",
       "load_function": "read_filled_jobs_by_industry_or_region",
       "data_type": "TimeSeries",
       "load_parameters": {
@@ -18,7 +18,7 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly filled jobs (by region)",
-      "filename": "employment-indicators-june-2020-filled-jobs-by-region-CSV.csv",
+      "filename": "employment-indicators-august-2020-filled-jobs-by-region-CSV.csv",
       "load_function": "read_filled_jobs_by_industry_or_region",
       "data_type": "TimeSeries",
       "load_parameters": {
@@ -31,7 +31,7 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly filled jobs (by gender)",
-      "filename": "employment-indicators-june-2020-filled-jobs-by-sex-and-region-CSV.csv",
+      "filename": "employment-indicators-august-2020-filled-jobs-by-sex-and-region-CSV.csv",
       "load_function": "read_filled_jobs_by_gender",
       "data_type": "TimeSeries",
       "load_parameters": {
@@ -44,7 +44,7 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly filled jobs (by age)",
-      "filename": "employment-indicators-june-2020-filled-jobs-by-age-and-region-CSV.csv",
+      "filename": "employment-indicators-august-2020-filled-jobs-by-age-and-region-CSV.csv",
       "load_function": "read_filled_jobs_by_age",
       "data_type": "TimeSeries",
       "load_parameters": {
@@ -57,7 +57,7 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly filled jobs",
-      "filename": "Machine_readable_file_mei_june_2020.csv",
+      "filename": "Machine_readable_file_mei_august_2020.csv",
       "load_function": "read_employment_data",
       "data_type": "TimeSeries",
       "load_parameters": {
@@ -70,7 +70,7 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly earnings",
-      "filename": "Machine_readable_file_mei_june_2020.csv",
+      "filename": "Machine_readable_file_mei_august_2020.csv",
       "load_function": "read_employment_data",
       "data_type": "TimeSeries",
       "load_parameters": {
@@ -290,23 +290,6 @@
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": "Business confidence"
-    },
-    {
-        "class": "Economic",
-        "indicator_name": "Jobs online measure",
-        "type": "Employment",
-        "parameter_col": 1,
-        "parameter_transform": [
-        "function (x) ",
-        "as.Date(x, format = \"%Y-%d-%m\")"
-        ],
-        "sheet_number": 1,
-        "value_col": 3,
-        "value_names": "Index",
-        "filename": "COVID 19 - MBIE Jobs Online.xlsx",
-        "load_function": "read_from_excel",
-        "data_type": "TimeSeries",
-        "group_names": "Index"
     },
     {
         "class": "Economic",
@@ -830,32 +813,7 @@
         "group_names": "undefined_name"
     },
     {
-        "class": "Social",
-        "indicator_name": "Jobseeker support",
-        "type": "Benefits",
-        "parameter_col": 1,
-        "parameter_transform": [
-        "function (x) ",
-        "as.Date(x, format = \"%d/%m/%y\")"
-        ],
-        "sheet_number": 1,
-        "value_col": [
-        3,
-        4,
-        5
-        ],
-        "value_names": [
-        "Total",
-        "Work Ready",
-        "Health Condition and Disability"
-        ],
-        "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
-        "load_function": "read_from_excel",
-        "data_type": "TimeSeries",
-        "group_names": "undefined_name"
-    },
-    {
-        "class": "Social",
+        "class": "Income support",
         "indicator_name": "Accomodation supplement",
         "type": "Supplementary support",
         "parameter_col": 1,
@@ -872,7 +830,7 @@
         "group_names": "Accomodation supplement"
     },
     {
-        "class": "Social",
+        "class": "Income support",
         "indicator_name": "Special needs grants for food - (weekly)",
         "type": "Hardship assistance",
         "parameter_col": 1,
@@ -895,7 +853,7 @@
         ]
     },
     {
-        "class": "Social",
+        "class": "Income support",
         "indicator_name": "Temporary additional support and special benefit",
         "type": "Supplementary support",
         "parameter_col": 1,
@@ -914,7 +872,7 @@
         "group_names": "Temporary additional support and special benefit"
     },
     {
-        "class": "Social",
+        "class": "Income support",
         "indicator_name": "All special needs grants",
         "type": "Hardship assistance",
         "parameter_col": 1,
@@ -933,7 +891,7 @@
         "group_names": "All special needs grants"
     },
     {
-        "class": "Social",
+        "class": "Income support",
         "indicator_name": "Jobseeker support by MSD region",
         "type": "Benefits",
         "parameter_col": 1,
@@ -990,98 +948,6 @@
         "Other region",
         "Total"
         ]
-    },
-    {
-        "class": "Social",
-        "indicator_name": "Percentage of population",
-        "type": "Benefits",
-        "parameter_col": 1,
-        "parameter_transform": [
-        "function (x) ",
-        "as.Date(x, format = \"%d/%m/%y\")"
-        ],
-        "sheet_number": 1,
-        "value_col": [
-        6
-        ],
-        "value_names": [
-        "Percentage of the working-age population"
-        ],
-        "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
-        "load_function": "read_from_excel",
-        "data_type": "TimeSeries",
-        "group_names": [
-        "Percentage of the working-age population"
-        ]
-    },
-    {
-        "class": "Social",
-        "indicator_name": "Number of applications",
-        "type": "Wage subsidy assistance",
-        "parameter_col": 1,
-        "parameter_transform": [
-        "function (x) ",
-        "as.Date(x, format = \"%d/%m/%y\")"
-        ],
-        "sheet_number": 4,
-        "value_col": [
-        2,
-        3,
-        4,
-        5
-        ],
-        "value_names": [
-        "Received",
-        "Approved",
-        "Closed",
-        "Declined"
-        ],
-        "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
-        "load_function": "read_from_excel",
-        "data_type": "TimeSeries",
-        "group_names": "undefined_name"
-    },
-    {
-        "class": "Social",
-        "indicator_name": "Number of paid applications",
-        "type": "Wage subsidy assistance",
-        "parameter_col": 1,
-        "parameter_transform": [
-        "function (x) ",
-        "as.Date(x, format = \"%d/%m/%y\")"
-        ],
-        "sheet_number": 3,
-        "value_col": [
-        2,
-        3,
-        4
-        ],
-        "value_names": [
-        "Total",
-        "Employee",
-        "Self-employed"
-        ],
-        "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
-        "load_function": "read_from_excel",
-        "data_type": "TimeSeries",
-        "group_names": "undefined_name"
-    },
-    {
-        "class": "Social",
-        "indicator_name": "Amount of wage subsidy paid out",
-        "type": "Wage subsidy assistance",
-        "parameter_col": 1,
-        "parameter_transform": [
-        "function (x) ",
-        "as.Date(x, format = \"%d/%m/%y\")"
-        ],
-        "sheet_number": 2,
-        "value_col": 2,
-        "value_names": "Amount paid out",
-        "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
-        "load_function": "read_from_excel",
-        "data_type": "TimeSeries",
-        "group_names": "Amount paid out"
     },
     {
         "class": "Health",
@@ -1722,47 +1588,7 @@
         ]
     },
     {
-        "class": "Economic",
-        "indicator_name": "Jobs online measure by industry",
-        "type": "Employment",
-        "parameter_col": 1,
-        "parameter_transform": [
-        "function (x) ",
-        "as.Date(x, format = \"%Y-%d-%m\")"
-        ],
-        "sheet_number": 2,
-        "value_col": [
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18,
-        19,
-        20,
-        21
-        ],
-        "value_names": [
-        "Accounting",
-        "Construction",
-        "Education",
-        "Health",
-        "Hospitality",
-        "Information Technologies",
-        "Manufacturing",
-        "Primary",
-        "Sales",
-        "Other"
-        ],
-        "filename": "COVID 19 - MBIE Jobs Online by industry.xlsx",
-        "load_function": "read_from_excel",
-        "skip": 4,
-        "data_type": "TimeSeries",
-        "group_names": "undefined_name"
-    },
-    {
-        "class": "Social",
+        "class": "Income support",
         "indicator_name": "Jobseeker support by region - weekly",
         "type": "Benefits",
         "parameter_col": 1,
@@ -1942,7 +1768,7 @@
         "parameter_col": 1,
         "parameter_transform": "",
         "value_names": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (28)", "East Asia (excluding China)", "Total (excluding China)"],
-        "filename": "Effects-of_COVID-19-on-trade-1-February-05-August-2020-provisional.csv",
+        "filename": "Effects-of_COVID-19-on-trade-1-February-30-September-2020-provisional.csv",
         "load_function": "read_trade_data",
         "data_type": "TimeSeriesTradeData",
         "group_names": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (28)", "East Asia (excluding China)", "Total (excluding China)"],
@@ -1962,7 +1788,7 @@
         "parameter_col": 1,
         "parameter_transform": "",
         "value_names": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (28)", "East Asia (excluding China)", "Total (excluding China)"],
-        "filename": "Effects-of_COVID-19-on-trade-1-February-05-August-2020-provisional.csv",
+        "filename": "Effects-of_COVID-19-on-trade-1-February-30-September-2020-provisional.csv",
         "load_function": "read_trade_data",
         "data_type": "TimeSeriesTradeData",
         "group_names": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (28)", "East Asia (excluding China)", "Total (excluding China)"],
@@ -1982,7 +1808,7 @@
         "parameter_col": 1,
         "parameter_transform": "",
         "value_names": ["All", "Non-food manufactured goods", "Machinery and electronics"],
-        "filename": "Effects-of_COVID-19-on-trade-1-February-05-August-2020-provisional.csv",
+        "filename": "Effects-of_COVID-19-on-trade-1-February-30-September-2020-provisional.csv",
         "load_function": "read_trade_data",
         "data_type": "TimeSeriesTradeData",
         "group_names": ["All", "Non-food manufactured goods", "Machinery and electronics"],
@@ -2002,7 +1828,7 @@
         "parameter_col": 1,
         "parameter_transform": "",
         "value_names": ["All", "Dairy", "Meat", "Seafood", "Forestry", "Fruit", "Non-food manufactured goods"],
-        "filename": "Effects-of_COVID-19-on-trade-1-February-05-August-2020-provisional.csv",
+        "filename": "Effects-of_COVID-19-on-trade-1-February-30-September-2020-provisional.csv",
         "load_function": "read_trade_data",
         "data_type": "TimeSeriesTradeData",
         "group_names": ["All", "Dairy", "Meat", "Seafood", "Forestry", "Fruit", "Non-food manufactured goods"],
@@ -2020,7 +1846,7 @@
         "indicator_name": "By region",
         "type": "Weekly deaths",
         "parameter_col": 1,
-        "parameter_transform": "function(x) ymd(x)",
+        "parameter_transform": "function(x) ymd(x) + 6",
         "sheet_number": 1,
         "value_col": [
           2,
@@ -2052,7 +1878,7 @@
         "indicator_name": "By age and sex",
         "type": "Weekly deaths",
         "parameter_col": 1,
-        "parameter_transform": "function(x) ymd(x)",
+        "parameter_transform": "function(x) ymd(x) + 6",
         "sheet_number": 2,
         "value_col": [
          
@@ -2075,7 +1901,7 @@
           "Male under 64",
           "Male 65 to 79",
           "Male 80 and over",
-          "Total under 64",
+          "Total under 65",
           "Total 65 and 79",
           "Total 80 and over",
           "Total"
@@ -2089,7 +1915,7 @@
           "Male under 64",
           "Male 65 to 79",
           "Male 80 and over",
-          "Total under 64",
+          "Total under 65",
           "Total 65 and 79",
           "Total 80 and over",
           "Total"
@@ -2104,7 +1930,7 @@
         "indicator_name": "By age",
         "type": "Weekly deaths",
         "parameter_col": 1,
-        "parameter_transform": "function(x) ymd(x)",
+        "parameter_transform": "function(x) ymd(x) + 6",
         "sheet_number": 3,
         "value_col": [
           6,
@@ -2467,7 +2293,7 @@
           ]
     },
     {
-        "class": "Social",
+        "class": "Income support",
         "indicator_name": "Jobseeker support by MSD region - Other ethnicities",
         "type": "Benefits",
         "parameter_col": 1,
@@ -2486,7 +2312,7 @@
         
     },
     {
-        "class": "Social",
+        "class": "Income support",
         "indicator_name": "Jobseeker support by MSD region - Pacific peoples",
         "type": "Benefits",
         "parameter_col": 1,
@@ -2505,7 +2331,7 @@
         
     },
     {
-        "class": "Social",
+        "class": "Income support",
         "indicator_name": "Jobseeker support by MSD region - NZ European",
         "type": "Benefits",
         "parameter_col": 1,
@@ -2524,7 +2350,7 @@
         
     },
     {
-        "class": "Social",
+        "class": "Income support",
         "indicator_name": "Jobseeker support by MSD region - Māori",
         "type": "Benefits",
         "parameter_col": 1,
@@ -2543,7 +2369,7 @@
         
     },
     {
-        "class": "Social",
+        "class": "Income support",
         "indicator_name": "Jobseeker support by ethnicity - work ready",
         "type": "Benefits",
         "parameter_col": 1,
@@ -2561,7 +2387,7 @@
         
     },
     {
-        "class": "Social",
+        "class": "Income support",
         "indicator_name": "Accommodation supplement by MSD region",
         "type": "Supplementary support",
         "parameter_col": 1,
@@ -2597,7 +2423,7 @@
         "data_type": "TimeSeries"
       },
     {
-        "class": "Social",
+        "class": "Income support",
         "indicator_name": "Jobseeker support by territorial authority",
         "type": "Benefits",
         "parameter_col": 1,
@@ -2625,12 +2451,12 @@
     "as.Date(x, format = \"%d/%m/%Y\")"
     ],
   "sheet_number": 1,
-  "value_col": [6, 2, 3, 4],
-  "value_names":["Total loan amount disbursed", "Loan applications received (eServices)", "Loan applications received (Manual)","Total loan applications received"],
+  "value_col": [ 2, 4],
+  "value_names":["Total loan applications received (cumulative)", "Total loan amount disbursed"],
   "filename": "COVID 19 - IRD lending data.xlsx",
   "load_function": "read_from_excel",
   "data_type": "TimeSeries",
-  "group_names": ["Total loan amount disbursed", "Loan applications received (eServices)", "Loan applications received (Manual)","Total loan applications received"]
+  "group_names": [ "Total loan applications received (cumulative)", "Total loan amount disbursed"]
   
 },
 {
@@ -2854,6 +2680,48 @@
         "data_type": "TimeSeries",
         "group_names": "undefined_name"
     },
+    
+{
+        "class": "Economic",
+        "indicator_name": "Gas consumption by largest users",
+        "type": "Activity",
+        "parameter_col": 1,
+                "parameter_transform":"function (x) ymd(x)",
+        "sheet_number": 2,
+        "gas_source":"Maui",
+        "skip":1,
+        "value_col": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+        ],
+        "value_names": [
+         
+        "Methanex Waitara Valley",
+        "Huntly power station",
+        "Stratford peaker power station",
+        "Taranaki combined cycle power station",
+        "Te Rapa cogeneration plant",
+        "Methanex Motunui"
+        ],
+        "filename": "COVID 19 - Industrial Gas use.xlsx",
+        "load_function": "gas_use_data",
+        "data_type": "TimeSeries",
+        "group_names": 
+        [ 
+        
+       "Methanex Waitara Valley",
+        "Huntly power station",
+        "Stratford peaker power station",
+        "Taranaki combined cycle power station",
+        "Te Rapa cogeneration plant",
+        "Methanex Motunui"
+        
+        ]
+    },
 {
         "class": "Economic",
         "indicator_name": "Gas consumption by selected major users",
@@ -2864,74 +2732,32 @@
         "as.Date(x, format = \"%d/%m/%y\")"
         ],
         "sheet_number": 1,
+        "skip":1,
         
         "value_col": [
-        7,
         2,
-        3,
-        4,
-        5,
-        6
-        ],
-        "value_names": [
-         "Methanex Motunui",
-        "Methanex Waitara Valley",
-        "Huntly power station",
-        "Stratford peaker power station",
-        "Taranaki combined cycle power station",
-        "Te Rapa cogeneration plant"
-        
-        
-        ],
-        "filename": "COVID 19 - Industrial Gas use aggregated.xlsx",
-        "load_function": "read_from_excel",
-        "data_type": "TimeSeries",
-        "group_names": 
-        [ 
-          "Methanex Motunui",
-        "Methanex Waitara Valley",
-        "Huntly power station",
-        "Stratford peaker power station",
-        "Taranaki combined cycle power station",
-        "Te Rapa cogeneration plant"
-        
-        ]
-    },
-{
-        "class": "Economic",
-        "indicator_name": "Gas consumption by largest users",
-        "type": "Activity",
-        "parameter_col": 1,
-                "parameter_transform": [
-        "function (x) ",
-        "as.Date(x, format = \"%d/%m/%y\")"
-        ],
-        "sheet_number": 2,
-        
-        "value_col": [
         3,  
-        2,
         4,
         5,
         6
         ],
         "value_names": [
-        
-        "Ballance Agri-Nutrients",
         "Fonterra - (selected sites)",
+        "Ballance Agri-Nutrients",
         "Glenbrook steel mill",
         "Kinleith pulp and paper mill",
         "Marsden Point oil refinery"
         
         ],
-        "filename": "COVID 19 - Industrial Gas use aggregated.xlsx",
-        "load_function": "read_from_excel",
+        "filename": "COVID 19 - Industrial Gas use.xlsx",
+        "load_function": "gas_use_data",
+        "gas_source":"Vector",
         "data_type": "TimeSeries",
         "group_names": 
         [ 
         
+      "Fonterra - (selected sites)",
         "Ballance Agri-Nutrients",
-        "Fonterra - (selected sites)",
         "Glenbrook steel mill",
         "Kinleith pulp and paper mill",
         "Marsden Point oil refinery"
@@ -3222,9 +3048,9 @@
     },
 {
         "class": "Economic",
-        "indicator_name": "Weekly filled jobs (27 days measure)",
+        "indicator_name": "Weekly filled jobs (34 days)",
         "type": "Employment",
-        "filter_paid_jobs":"Number of Paid Jobs - 27 days",
+        "filter_paid_jobs":"Number of paid jobs - 34 days",
         "parameter_col": 1,
                 "parameter_transform": [
         "function (x) ",
@@ -3246,7 +3072,7 @@
         "Goods Producing",
         "Services"
         ],
-        "filename": "employment-indicators-paid-jobs.csv",
+        "filename": "Employment-indicators-weekly-paid-jobs-34-days.csv",
         "load_function": "read_employment_paid_jobs_data",
         "data_type": "TimeSeries",
         "group_names": 
@@ -3258,14 +3084,13 @@
         
         ]
     },
-      
       {
         "class": "Health",
         "indicator_name": "Quarantine and managed isolation figures",
         "type": "COVID-19",
         "parameter_col": 1,
         "value_col": [2],
-        "value_names": ["Current - 12 August"],
+        "value_names": ["Current - 07 October 2020"],
         "sheet_number": 1,
         "filename": "COVID 19 - MoH Border Control insights.xlsx",
         "parameter_transform": "function (x) x",
@@ -3527,38 +3352,7 @@
         "group_names": "Australia - Western Australia"
     },
     {
-        "class": "Social",
-        "indicator_name": "Number of recipients of CIRP",
-        "type": "Income relief payment",
-        "parameter_col": 1,
-        "parameter_transform": [
-        "function (x) ",
-        "as.Date(x, format = \"%d/%m/%y\")"
-        ],
-        "sheet_number": 5,
-        "value_col": [
-        2,
-        3,
-        4,
-        5,
-        6,
-        7
-        ],
-        "value_names": [
-        "Total number of recipients of CIRP",
-        "Full-time recipients of CIRP",
-        "Part-time recipients of CIRP",
-        "CIRP recipients transferred from Jobseeker",
-        "CIRP grants*",
-        "Total transfers from Jobseeker"
-        ],
-        "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
-        "load_function": "read_from_excel",
-        "data_type": "TimeSeries",
-        "group_names": "undefined_name"
-    },
-    {
-        "class": "Social",
+        "class": "Income support",
         "indicator_name": "Special needs grants for food by region",
         "type": "Hardship assistance",
         "parameter_col": 1,
@@ -3633,7 +3427,7 @@
     }
    ,
      {
-        "class": "Social",
+        "class": "Income support",
         "indicator_name": "Jobseeker support by region - (monthly)",
         "type": "Benefits",
         "parameter_col": 1,
@@ -3707,7 +3501,7 @@
         "data_type": "TimeSeries"
     } ,
      {
-        "class": "Social",
+        "class": "Income support",
         "indicator_name": "Jobseeker support by region - Maori",
         "type": "Benefits",
         "parameter_col": 1,
@@ -3783,7 +3577,7 @@
     }
     ,
      {
-        "class": "Social",
+        "class": "Income support",
         "indicator_name": "Jobseeker support by region - NZ European",
         "type": "Benefits",
         "parameter_col": 1,
@@ -3859,7 +3653,7 @@
     }
     ,
      {
-        "class": "Social",
+        "class": "Income support",
         "indicator_name": "Jobseeker support by region - Pacific peoples",
         "type": "Benefits",
         "parameter_col": 1,
@@ -3934,7 +3728,7 @@
         "data_type": "TimeSeries"
     },
      {
-        "class": "Social",
+        "class": "Income support",
         "indicator_name": "Jobseeker support by region - Other ethnicities",
         "type": "Benefits",
         "parameter_col": 1,
@@ -3945,24 +3739,24 @@
         "sheet_number": 7,
         "skip": 1,
         "value_col": [
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16,
-        17,
-        18,
-        19
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19
         ],
         "value_names": [
         "Auckland",
@@ -4007,105 +3801,6 @@
         "filename": "COVID 19 - MSD Jobseeker by regional council.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries"
-    }
-    ,
-    {
-        "class": "Social",
-        "indicator_name": "Number of recipients of CIRP by age group",
-        "type": "Income relief payment",
-        "parameter_col": 2,
-        "parameter_transform": "function (x) x",
-        "sheet_number":6,
-        "value_col":   3,
-        "value_names": "Figures at week end 26 June",
-        "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
-        "load_function": "read_from_excel",
-        "data_type": "BarChart",
-        "group_names": "undefined_name"
-    },
-    {
-        "class": "Social",
-        "indicator_name": "Number of recipients of CIRP by region",
-        "type": "Income relief payment",
-        "parameter_col": 2,
-        "parameter_transform": "function (x) x",
-        "sheet_number":8,
-        "value_col":   [3],
-         "value_names": "Figures at week end 26 June",
-        "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
-        "load_function": "read_from_excel",
-        "data_type": "BarChart",
-        "date_filter": "function(x) x != \"Total\"",
-        "group_names": "undefined_name"
-    },
-    {
-        "class": "Social",
-        "indicator_name": "Amount of wage subsidy refunds received",
-        "type": "Wage subsidy assistance",
-        "parameter_col": 1,
-        "parameter_transform": [
-        "function (x) ",
-        "as.Date(x, format = \"%d/%m/%y\")"
-        ],
-        "sheet_number": 11,
-        "value_col": 5,
-        "value_names": "Amount of wage subsidy refunds received",
-        "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
-        "load_function": "read_from_excel",
-        "data_type": "TimeSeries",
-        "group_names": "Amount of wage subsidy refunds received"
-    },
-    {
-        "class": "Social",
-        "indicator_name": "Number of wage subsidy refunds received",
-        "type": "Wage subsidy assistance",
-        "parameter_col": 1,
-        "parameter_transform": [
-        "function (x) ",
-        "as.Date(x, format = \"%d/%m/%y\")"
-        ],
-        "sheet_number": 11,
-        "value_col": 4,
-        "value_names": "Number of wage subsidy refunds received",
-        "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
-        "load_function": "read_from_excel",
-        "data_type": "TimeSeries",
-        "group_names": "Number of wage subsidy refunds received"
-    }
-    ,
-    {
-        "class": "Social",
-        "indicator_name": "Number of jobs associated with a paid application",
-        "type": "Wage subsidy extension",
-        "parameter_col": 1,
-        "parameter_transform": [
-        "function (x) ",
-        "as.Date(x, format = \"%d/%m/%y\")"
-        ],
-        "sheet_number": 11,
-        "value_col": 3,
-        "value_names": "Number of jobs associated with a paid applicaton",
-        "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
-        "load_function": "read_from_excel",
-        "data_type": "TimeSeries",
-        "group_names": "Number of jobs associated with a paid applicaton"
-    }  ,
-    {
-        "class": "Social",
-        "indicator_name": "Amount of wage subsidy extension paid",
-        "type": "Wage subsidy extension",
-        "parameter_col": 1,
-        "parameter_transform": [
-        "function (x) ",
-        "as.Date(x, format = \"%d/%m/%y\")"
-        ],
-        "sheet_number": 11,
-        "value_col": 2,
-        "value_names": "Amount of wage subsidy extension paid",
-        "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
-        "load_function": "read_from_excel",
-        "data_type": "TimeSeries",
-        "group_names": "Amount of wage subsidy extension paid"
     },
     {
   "class": "Economic",
@@ -4186,86 +3881,966 @@
     "Total"
     
       ]
-},
+ },
  {
-        "class": "Economic",
-        "indicator_name": "Daily border crossings (by port) - departures",
-        "type": "Travel",
-        "parameter_col": 1,
-        "parameter_transform": [
-        "function (x) ",
-        "as.Date(x, format = \"%Y-%m-%d\")"
-        ],
-        "sheet_number": 2,
-        "value_col": [
-        6,  
-        7,
-        8,
-        9,
-        10
-        ],
-        "value_names": [
-          "Auckland",
-        "Wellington",
-        "Christchurch",
-        "Queenstown",
-        "Other ports"
-        ],
-        "filename": "COVID 19 - Customs border crossing DAILY_CITZ_PORTS.xlsx",
-        "load_function": "read_from_excel",
-        "data_type": "TimeSeries",
-        "group_names": [
-          "Auckland",
-        "Wellington",
-        "Christchurch",
-        "Queenstown",
-        "Other"
-        ]
+    "class": "Economic",
+    "indicator_name": "Daily border crossings (by port) - departures",
+    "type": "Travel",
+    "parameter_col": 1,
+    "parameter_transform": [
+    "function (x) ",
+    "as.Date(x, format = \"%Y-%m-%d\")"
+    ],
+    "sheet_number": 2,
+    "value_col": [
+    6,  
+    7,
+    8,
+    9,
+    10
+    ],
+    "value_names": [
+      "Auckland",
+    "Wellington",
+    "Christchurch",
+    "Queenstown",
+    "Other ports"
+    ],
+    "filename": "COVID 19 - Customs border crossing DAILY_CITZ_PORTS.xlsx",
+    "load_function": "read_from_excel",
+    "data_type": "TimeSeries",
+    "group_names": [
+      "Auckland",
+      "Wellington",
+      "Christchurch",
+      "Queenstown",
+      "Other"
+      ]
     },
     {
-        "class": "Economic",
-        "indicator_name": "Daily border crossings (by port) - arrivals",
-        "type": "Travel",
-        "parameter_col": 1,
-        "parameter_transform": [
-        "function (x) ",
-        "as.Date(x, format = \"%Y-%m-%d\")"
-        ],
-        "sheet_number": 1,
-        "value_col": [
+    "class": "Economic",
+    "indicator_name": "Daily border crossings (by port) - arrivals",
+    "type": "Travel",
+    "parameter_col": 1,
+    "parameter_transform": [
+    "function (x) ",
+    "as.Date(x, format = \"%Y-%m-%d\")"
+    ],
+    "sheet_number": 1,
+    "value_col": [
         6,  
         7,
         8,
         9,
         10
         ],
-        "value_names": [
-          "Auckland",
-        "Wellington",
-        "Christchurch",
-        "Queenstown",
-        "Other ports"
-        ],
-        "filename": "COVID 19 - Customs border crossing DAILY_CITZ_PORTS.xlsx",
-        "load_function": "read_from_excel",
-        "data_type": "TimeSeries",
-        "group_names": [
-          "Auckland",
-        "Wellington",
-        "Christchurch",
-        "Queenstown",
-        "Other"
-        ]
+    "value_names": [
+      "Auckland",
+      "Wellington",
+      "Christchurch",
+      "Queenstown",
+      "Other ports"
+    ],
+  "filename": "COVID 19 - Customs border crossing DAILY_CITZ_PORTS.xlsx",
+  "load_function": "read_from_excel",
+  "data_type": "TimeSeries",
+  "group_names": [
+     "Auckland",
+    "Wellington",
+    "Christchurch",
+    "Queenstown",
+    "Other"
+    ]
     }
     ,
     {
+    "class": "Economic",
+    "indicator_name": "Electricity grid demand by region",
+    "type": "Activity",
+    "parameter_col": 1,
+    "parameter_transform": [
+    "function (x) ",
+    "as.Date(x, format = \"%Y-%m-%d\")"
+    ],
+    "sheet_number": 1,
+    "value_col": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+        ],
+    "value_names": [
+       "Auckland",	
+       "Bay of Plenty",	
+       "Canterbury",
+       "Gisborne",
+       "Hawke's Bay",
+       "Manawatū-Whanganui",
+       "Marlborough",
+       "Northland",
+       "Otago",
+       "Southland",
+       "Taranaki",
+       "Tasman/Nelson",
+       "Waikato",
+       "Wellington",
+       "West Coast"
+        ],
+    "filename": "COVID 19 - EMA Grid demand by Region ID by Regional Council.xlsx",
+    "load_function": "electricity_grid_by_region_data",
+    "data_type": "TimeSeries",
+    "group_names": [
+       "Auckland",	
+       "Bay of Plenty",	
+       "Canterbury",
+       "Gisborne",
+       "Hawke's Bay",
+       "Manawatū-Whanganui",
+       "Marlborough",
+       "Northland",
+       "Otago",
+       "Southland",
+       "Taranaki",
+       "Tasman/Nelson",
+       "Waikato",
+       "Wellington",
+       "West Coast"
+      ]
+    },   
+    {
+      "class": "Social",
+      "type": "Social connection",
+      "indicator_name": "Staying connected with others",
+      "parameter_col": 2,
+      "order_parameter": false,
+      "value_col": 3,
+      "value_names": ["Percentage of respondents"],
+      "group_names": ["undefined_name"],
+      "sheet_number": 1,
+      "filename": "COVID 19 - MoJ Pulse Survey.xlsx",
+      "parameter_transform": "function (x) x",
+      "load_function": "read_from_excel",
+      "data_type": "BarChart"
+    },
+    {
+      "class": "Social",
+      "type": "Crime and safety",
+      "indicator_name": "Safety travelling to and from essential services",
+      "parameter_col": 2,
+      "order_parameter": false,
+      "value_col": [3],
+      "value_names": ["Percentage of respondents"],
+      "group_names": ["undefined_name"],
+      "sheet_number": 2,
+      "filename": "COVID 19 - MoJ Pulse Survey.xlsx",
+      "parameter_transform": "function (x) x",
+      "load_function": "read_from_excel",
+      "data_type": "BarChart",
+      "drop_na": false
+    },
+    {
+      "class": "Social",
+      "type": "Crime and safety",
+      "indicator_name": "COVID-19 related scams",
+      "parameter_col": 2,
+      "order_parameter": false,
+      "value_col": [3],
+      "value_names": ["Percentage of respondents"],
+      "group_names": ["undefined_name"],
+      "sheet_number": 3,
+      "filename": "COVID 19 - MoJ Pulse Survey.xlsx",
+      "parameter_transform": "function (x) x",
+      "load_function": "read_from_excel",
+      "data_type": "BarChart"
+    },
+    {
+      "class": "Economic",
+      "type": "Employment",
+      "indicator_name": "Jobs online measure",
+      "parameter_col": 1,
+      "skip": 1,
+      "value_col": [2],
+      "value_names": ["Index"],
+      "group_names": ["Jobs online index"],
+      "filename": "COVID 19 - MBIE Jobs online unadjusted.csv",
+      "parameter_transform": [
+      "function (x)",
+      "as.Date(parse_date_time(x, orders = \"b-y\"))"
+      ],
+      "load_function": "read_from_csv",
+      "data_type": "TimeSeries"
+     },
+     {
+      "class": "Economic",
+      "type": "Employment",
+      "indicator_name": "Jobs online measure by region",
+      "parameter_col": 1,
+      "skip": 1,
+      "value_col": [
+        8,
+        9,
+        10,
+        11,
+        12
+      ],
+      "value_names": [
+        "Auckland",
+        "Wellington",
+        "North Island (Other)",
+        "Canterbury",
+        "South Island (Other)"
+      ],
+      "group_names": [
+        "Auckland",
+        "Wellington",
+        "North Island (Other)",
+        "Canterbury",
+        "South Island (Other)"
+      ],
+      "filename": "COVID 19 - MBIE Jobs online unadjusted.csv",
+      "parameter_transform": [
+        "function (x)",
+        "as.Date(parse_date_time(x, orders = \"b-y\"))"
+      ],
+      "load_function": "read_from_csv",
+      "data_type": "TimeSeries"
+    },
+    {
+     "class": "Economic",
+     "type": "Employment",
+     "indicator_name": "Jobs online measure by industry",
+     "parameter_col": 1,
+     "skip": 1,
+     "value_col": [
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23
+      ],
+      "value_names": [
+        "Accounting, HR, legal and admin",
+        "Construction and engineering",
+        "Education & training",
+        "Healthcare & medical",
+        "Hospitality & tourism",
+        "IT",
+        "Manufacturing",
+        "Primary",
+        "Sales, retail, marketing & advertising",
+        "Other"
+      ],
+      "group_names": [  
+        "Accounting, HR, legal and admin",
+        "Construction and engineering",
+        "Education & training",
+        "Healthcare & medical",
+        "Hospitality & tourism",
+        "IT",
+        "Manufacturing",
+        "Primary",
+        "Sales, retail, marketing & advertising",
+        "Other"
+      ],
+      "filename": "COVID 19 - MBIE Jobs online unadjusted.csv",
+      "parameter_transform": [
+          "function (x)",
+          "as.Date(parse_date_time(x, orders = \"b-y\"))"
+      ],
+      "load_function": "read_from_csv",
+      "data_type": "TimeSeries"
+    },
+   {
+  	"class": "Income support",
+  	"indicator_name": "Number of recipients of CIRP",
+  	"type": "Income relief payment",
+  	"parameter_col": 1,
+  	"parameter_transform": [
+  	"function (x) ",
+  	"as.Date(x, format = \"%d/%m/%y\")"
+  	],
+  	"sheet_number": 5,
+  	"value_col": [
+    	2,
+    	3,
+    	4,
+    	5,
+    	6,
+    	7
+  	],
+  	"value_names": [
+    	"Total number of recipients of CIRP",
+    	"Full-time recipients of CIRP",
+    	"Part-time recipients of CIRP",
+    	"CIRP recipients transferred from Jobseeker",
+    	"CIRP grants*",
+    	"Total transfers from Jobseeker"
+  	],
+  	"filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+  	"load_function": "read_from_excel",
+  	"data_type": "TimeSeries",
+  	"group_names": "undefined_name"
+    },
+	  {
+    "class": "Income support",
+    "indicator_name": "Number of recipients of CIRP by region",
+    "type": "Income relief payment",
+    "parameter_col": 1,
+    "parameter_transform": "function (x) ymd(x)",
+    "sheet_number":7,
+    "value_col":[
+      19,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "value_names": [
+      "Total",
+      "Auckland",
+      "Bay of Plenty",
+      "Canterbury",
+      "Gisborne",
+      "Hawke's Bay",
+      "Manawatū-Whanganui",
+      "Marlborough",
+      "Nelson",
+      "Northland",
+      "Otago",
+      "Southland",
+      "Taranaki",
+      "Tasman",
+      "Waikato",
+      "Wellington",
+      "West Coast",
+      "Other/Unknown"
+      ],
+    "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "load_function": "read_from_excel",
+    "data_type": "TimeSeries",
+    "group_names": [
+      "Total",
+      "Auckland",
+      "Bay of Plenty",
+      "Canterbury",
+      "Gisborne",
+      "Hawke's Bay",
+      "Manawatū-Whanganui",
+      "Marlborough",
+      "Nelson",
+      "Northland",
+      "Otago",
+      "Southland",
+      "Taranaki",
+      "Tasman",
+      "Waikato",
+      "Wellington",
+      "West Coast",
+      "Other/Unknown"
+      ]
+    },
+    {
+    "class": "Income support",
+    "indicator_name": "Amount of wage subsidy refunds received",
+    "type": "Wage subsidy assistance",
+    "parameter_col": 1,
+    "parameter_transform": [
+    "function (x) ",
+    "as.Date(x, format = \"%d/%m/%y\")"
+    ],
+    "sheet_number": 9,
+    "value_col": 5,
+    "value_names": "Amount of wage subsidy refunds received",
+    "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "load_function": "read_from_excel",
+    "data_type": "TimeSeries",
+    "group_names": "undefined_name"
+    },
+    {
+    "class": "Income support",
+    "indicator_name": "Number of wage subsidy refunds received",
+    "type": "Wage subsidy assistance",
+    "parameter_col": 1,
+    "parameter_transform": [
+    "function (x) ",
+    "as.Date(x, format = \"%d/%m/%y\")"
+    ],
+    "sheet_number": 9,
+    "value_col": 4,
+    "value_names": "Number of wage subsidy refunds received",
+    "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "load_function": "read_from_excel",
+    "data_type": "TimeSeries",
+    "group_names": "undefined_name"
+    },
+	  {
+    "class": "Income support",
+    "indicator_name": "Number of jobs associated with a paid application",
+    "type": "Wage subsidy extension",
+    "parameter_col": 1,
+    "parameter_transform": [
+    "function (x) ",
+    "as.Date(x, format = \"%d/%m/%y\")"
+    ],
+    "sheet_number": 9,
+    "value_col": 3,
+    "value_names": "Number of jobs associated with a paid application",
+    "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "load_function": "read_from_excel",
+    "data_type": "TimeSeries",
+    "group_names": "undefined_name"
+    },
+    {
+    "class": "Income support",
+    "indicator_name": "Amount of wage subsidy extension paid",
+    "type": "Wage subsidy extension",
+    "parameter_col": 1,
+    "parameter_transform": [
+    "function (x) ",
+    "as.Date(x, format = \"%d/%m/%y\")"
+    ],
+    "sheet_number": 9,
+    "value_col": 2,
+    "value_names": "Amount of wage subsidy extension paid",
+    "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "load_function": "read_from_excel",
+    "data_type": "TimeSeries",
+    "group_names": "undefined_name"
+    },
+	 {
+    "class": "Income support",
+    "indicator_name": "Jobseeker support",
+    "type": "Benefits",
+    "parameter_col": 1,
+    "parameter_transform": [
+    "function (x) ",
+    "as.Date(x, format = \"%d/%m/%y\")"
+    ],
+    "sheet_number": 1,
+    "value_col": [
+    3,
+    4,
+    5
+    ],
+    "value_names": [
+    "Total",
+    "Work Ready",
+    "Health Condition and Disability"
+    ],
+    "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "load_function": "read_from_excel",
+    "data_type": "TimeSeries",
+    "group_names": "undefined_name"
+},
+	 {
+    "class": "Income support",
+    "indicator_name": "Percentage of population",
+    "type": "Benefits",
+    "parameter_col": 1,
+    "parameter_transform": [
+    "function (x) ",
+    "as.Date(x, format = \"%d/%m/%y\")"
+    ],
+    "sheet_number": 1,
+    "value_col": [
+    6
+    ],
+    "value_names": [
+    "Percentage of the working-age population"
+    ],
+    "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "load_function": "read_from_excel",
+    "data_type": "TimeSeries",
+    "group_names": [
+    "undefined_name"
+    ]
+    },
+	  {
+    "class": "Income support",
+    "indicator_name": "Number of applications",
+    "type": "Wage subsidy assistance",
+    "parameter_col": 1,
+    "parameter_transform": [
+    "function (x) ",
+    "as.Date(x, format = \"%d/%m/%y\")"
+    ],
+    "sheet_number": 4,
+    "value_col": [
+    2,
+    3,
+    4,
+    5
+    ],
+    "value_names": [
+    "Received",
+    "Approved",
+    "Closed",
+    "Declined"
+    ],
+    "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "load_function": "read_from_excel",
+    "data_type": "TimeSeries",
+    "group_names": "undefined_name"
+    },
+    {
+    "class": "Income support",
+    "indicator_name": "Number of paid applications",
+    "type": "Wage subsidy assistance",
+    "parameter_col": 1,
+    "parameter_transform": [
+    "function (x) ",
+    "as.Date(x, format = \"%d/%m/%y\")"
+    ],
+    "sheet_number": 3,
+    "value_col": [
+    2,
+    3,
+    4
+    ],
+    "value_names": [
+    "Total",
+    "Employee",
+    "Self-employed"
+    ],
+    "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "load_function": "read_from_excel",
+    "data_type": "TimeSeries",
+    "group_names": "undefined_name"
+    },
+    {
+    "class": "Income support",
+    "indicator_name": "Amount of wage subsidy paid out",
+    "type": "Wage subsidy assistance",
+    "parameter_col": 1,
+    "parameter_transform": [
+    "function (x) ",
+    "as.Date(x, format = \"%d/%m/%y\")"
+    ],
+    "sheet_number": 2,
+    "value_col": 2,
+    "value_names": "Amount paid out",
+    "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "load_function": "read_from_excel",
+    "data_type": "TimeSeries",
+    "group_names": "undefined_name"
+    },
+	 {
+    "class": "Income support",
+    "indicator_name": "Number of recipients of CIRP by age group",
+    "type": "Income relief payment",
+    "parameter_col": 1,
+    "parameter_transform": [
+      "function (x) ymd(x)"
+      ],
+    "sheet_number":6,
+    "value_col": [
+         2,
+         3,
+         4,
+         5,
+         6,
+         7,
+         8,
+         9,
+         10,
+         11,
+         12,
+         13
+         ],
+    "value_names": [
+       "19 years and under",
+       "20-24 years",
+       "25-29 years",
+       "30-34 years",
+       "35-39 years",
+       "40-44 years",
+       "45-49 years",
+       "50-54 years",
+       "55-59 years",
+       "60-64 years",
+       "65+ years"
+        ],
+    "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "load_function": "read_from_excel",
+    "data_type": "TimeSeries",
+    "group_names": [
+       "19 years and under",
+       "20-24 years",
+       "25-29 years",
+       "30-34 years",
+       "35-39 years",
+       "40-44 years",
+       "45-49 years",
+       "50-54 years",
+       "55-59 years",
+       "60-64 years",
+       "65+ years"
+      ]
+    },
+    {
+    "class": "Income support",
+    "indicator_name": "Number of recipients of CIRP by territorial authority",
+    "type": "Income relief payment",
+    "parameter_col": 1,
+    "parameter_transform": 
+    "function (x) ymd(x)",
+    "sheet_number":8,
+		"value_col": [
+       2,
+       3,
+       4,
+       5,
+       6,
+       7,
+       8,
+       9,
+       10,
+       11,
+       12,
+       13,
+    	 14,
+    	 15,
+    	 16,
+    	 17,
+    	 18,
+    	 19,
+    	 20,
+    	 21,
+    	 22,
+    	 23,
+    	 24,
+    	 25,
+    	 26,
+    	 27,
+    	 28,
+    	 29,
+    	 30,
+    	 31,
+    	 32,
+    	 33,
+    	 34,
+    	 35,
+    	 36,
+    	 37,
+    	 38, 
+    	 39,
+    	 40,
+    	 41,
+    	 42,
+    	 43,
+    	 44,
+    	 45,
+    	 46,
+    	 47,
+    	 48,
+    	 49,
+    	 50,
+    	 51,
+    	 52,
+    	 53,
+    	 54,
+    	 55,
+    	 56,
+    	 57,
+    	 58,
+    	 59,
+    	 60,
+    	 61,
+    	 62,
+    	 63,
+    	 64,
+    	 65,
+    	 66,
+    	 67,
+    	 68
+    ],
+		 "value_names": [
+		 "Ashburton District", 
+		 "Auckland City", 
+		 "Buller District", 
+		 "Carterton District", 
+		 "Central Hawke's Bay District", 
+		 "Central Otago District", 
+		 "Christchurch City", 
+		 "Clutha District", 
+		 "Dunedin City", 
+		 "Far North District", 
+		 "Gisborne District", 
+		 "Gore District", 
+		 "Grey District", 
+		 "Hamilton City", 
+		 "Hastings District", 
+		 "Hauraki District", 
+		 "Horowhenua District", 
+		 "Hurunui District", 
+		 "Invercargill City", 
+		 "Kaikōura District", 
+		 "Kaipara District", 
+		 "Kāpiti Coast District", 
+		 "Kawerau District", 
+		 "Lower Hutt City", 
+		 "Mackenzie District", 
+		 "Manawatū District", 
+		 "Marlborough District", 
+		 "Masterton District", 
+		 "Matamata-Piako District", 
+		 "Napier City", 
+		 "Nelson City", 
+		 "New Plymouth District", 
+		 "Ōpōtiki District", 
+		 "Ōtorohanga District", 
+		 "Palmerston North City", 
+		 "Porirua City", 
+		 "Queenstown-Lakes District", 
+		 "Rangitīkei District", 
+		 "Rotorua District", 
+		 "Ruapehu District", 
+		 "Selwyn District", 
+		 "South Taranaki District", 
+		 "South Waikato District", 
+		 "South Wairarapa District", 
+		 "Southland District", 
+		 "Stratford District", 
+		 "Tararua District", 
+		 "Tasman District", 
+		 "Taupō District", 
+		 "Tauranga City", 
+		 "Thames-Coromandel District", 
+		 "Timaru District", 
+		 "Upper Hutt City", 
+		 "Waikato District", 
+		 "Waimakariri District", 
+		 "Waimate District", 
+		 "Waipā District", 
+		 "Wairoa District", 
+		 "Waitaki District", 
+		 "Waitomo District", 
+		 "Wellington City", 
+		 "Western Bay Of Plenty District", 
+		 "Westland District", 
+		 "Whakatāne District", 
+		 "Whanganui District", 
+		 "Whangārei District", 
+		 "Other/Unknown"
+		],
+	"filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+  "load_function": "read_from_excel",
+  "data_type": "TimeSeries",
+  "group_names": [
+	   "Ashburton District", 
+		 "Auckland City", 
+		 "Buller District", 
+		 "Carterton District", 
+		 "Central Hawke's Bay District", 
+		 "Central Otago District", 
+		 "Christchurch City", 
+		 "Clutha District", 
+		 "Dunedin City", 
+		 "Far North District", 
+		 "Gisborne District", 
+		 "Gore District", 
+		 "Grey District", 
+		 "Hamilton City", 
+		 "Hastings District", 
+		 "Hauraki District", 
+		 "Horowhenua District", 
+		 "Hurunui District", 
+		 "Invercargill City", 
+		 "Kaikōura District", 
+		 "Kaipara District", 
+		 "Kāpiti Coast District", 
+		 "Kawerau District", 
+		 "Lower Hutt City", 
+		 "Mackenzie District", 
+		 "Manawatū District", 
+		 "Marlborough District", 
+		 "Masterton District", 
+		 "Matamata-Piako District", 
+		 "Napier City", 
+		 "Nelson City", 
+		 "New Plymouth District", 
+		 "Ōpōtiki District", 
+		 "Ōtorohanga District", 
+		 "Palmerston North City", 
+		 "Porirua City", 
+		 "Queenstown-Lakes District", 
+		 "Rangitīkei District", 
+		 "Rotorua District", 
+		 "Ruapehu District", 
+		 "Selwyn District", 
+		 "South Taranaki District", 
+		 "South Waikato District", 
+		 "South Wairarapa District", 
+		 "Southland District", 
+		 "Stratford District", 
+		 "Tararua District", 
+		 "Tasman District", 
+		 "Taupō District", 
+		 "Tauranga City", 
+		 "Thames-Coromandel District", 
+		 "Timaru District", 
+		 "Upper Hutt City", 
+		 "Waikato District", 
+		 "Waimakariri District", 
+		 "Waimate District", 
+		 "Waipā District", 
+		 "Wairoa District", 
+		 "Waitaki District", 
+		 "Waitomo District", 
+		 "Wellington City", 
+		 "Western Bay Of Plenty District", 
+		 "Westland District", 
+		 "Whakatāne District", 
+		 "Whanganui District", 
+		 "Whangārei District", 
+		 "Other/Unknown"
+		 ]
+		},
+		{
+      "class": "Social",
+      "type": "Household finances",
+      "indicator_name": "Confidence in household's financial situation",
+      "parameter_col": 2,
+      "order_parameter": false,
+      "value_col": [3],
+      "value_names": ["Percentage of respondents"],
+      "group_names": ["undefined_name"],
+      "sheet_number": 1,
+      "filename": "COVID 19 - CFFC Financial Wellbeing.xlsx",
+      "parameter_transform": "function (x) x",
+      "load_function": "read_from_excel",
+      "data_type": "BarChart"
+       
+     },
+     {
+      "class": "Social",
+      "type": "Household finances",
+      "indicator_name": "Ability to meet bills",
+      "parameter_col": 2,
+      "order_parameter": false,
+      "value_col": [3],
+      "value_names": ["Percentage of respondents"],
+      "group_names": ["undefined_name"],
+      "sheet_number": 2,
+      "filename": "COVID 19 - CFFC Financial Wellbeing.xlsx",
+      "parameter_transform": "function (x) x",
+      "load_function": "read_from_excel",
+      "data_type": "BarChart"
+     },
+     {
+      "class": "Social",
+      "type": "Household finances",
+      "indicator_name": "Use of money in savings",
+      "parameter_col": 2,
+      "order_parameter": false,
+      "value_col": [3],
+      "value_names": ["Percentage of respondents"],
+      "group_names": ["undefined_name"],
+      "sheet_number": 3,
+      "filename": "COVID 19 - CFFC Financial Wellbeing.xlsx",
+      "parameter_transform": "function (x) x",
+      "load_function": "read_from_excel",
+      "data_type": "BarChart"
+   },
+   {
+    "class": "Social",
+    "type": "Household finances",
+    "indicator_name": "Change in income",
+    "parameter_col": 2,
+    "order_parameter": false,
+    "value_col": [3],
+    "value_names": ["Percentage of respondents"],
+    "group_names": ["undefined_name"],
+    "sheet_number": 4,
+    "filename": "COVID 19 - CFFC Financial Wellbeing.xlsx",
+    "parameter_transform": "function (x) x",
+    "load_function": "read_from_excel",
+    "data_type": "BarChart"
+   },
+   {
+    "class": "Social",
+    "type": "Personal finances",
+    "indicator_name": "Financial anxiety",
+    "parameter_col": 2,
+    "order_parameter": false,
+    "value_col": [3],
+    "value_names": ["Percentage of respondents"],
+    "group_names": ["undefined_name"],
+    "sheet_number": 5,
+    "filename": "COVID 19 - CFFC Financial Wellbeing.xlsx",
+    "parameter_transform": "function (x) x",
+    "load_function": "read_from_excel",
+    "data_type": "BarChart"
+   },
+   {
+    "class": "Social",
+    "type": "Household finances",
+    "indicator_name": "Money owed on credit agreements",
+    "parameter_col": 2,
+    "order_parameter": false,
+    "value_col": [3],
+    "value_names": ["Percentage of respondents"],
+    "group_names": ["undefined_name"],
+    "sheet_number": 6,
+    "filename": "COVID 19 - CFFC Financial Wellbeing.xlsx",
+    "parameter_transform": "function (x) x",
+    "load_function": "read_from_excel",
+    "data_type": "BarChart"
+   },
+   {
+    "class": "Social",
+    "type": "Personal finances",
+    "indicator_name": "Effects of COVID-19 on work and income",
+    "parameter_col": 2,
+    "order_parameter": false,
+    "value_col": [3],
+    "value_names": ["Percentage of respondents"],
+    "group_names": ["undefined_name"],
+    "sheet_number": 7,
+    "filename": "COVID 19 - CFFC Financial Wellbeing.xlsx",
+    "parameter_transform": "function (x) x",
+    "load_function": "read_from_excel",
+    "data_type": "BarChart"
+   }
+   ,
+    {
         "class": "Economic",
-        "indicator_name": "Electricity grid demand by region",
+        "indicator_name": "Broadband usage by region",
         "type": "Activity",
-        "parameter_col": 1,
-        "parameter_transform": [
-        "function (x) ",
-        "as.Date(x, format = \"%Y-%m-%d\")"
+       "parameter_col": 1,
+   
+       "parameter_transform": [
+        "function (x) ymd(x)"
+        
         ],
         "sheet_number": 1,
         "value_col": [
@@ -4284,91 +4859,388 @@
         14,
         15,
         16
+        
+        
         ],
         "value_names": [
+          "Total",
          "Auckland",	
          "Bay of Plenty",	
          "Canterbury",
          "Gisborne",
          "Hawke's Bay",
          "Manawatū-Whanganui",
-         "Marlborough",
          "Northland",
          "Otago",
          "Southland",
          "Taranaki",
-         "Tasman/Nelson",
+         "Tasman",
          "Waikato",
          "Wellington",
          "West Coast"
 
         ],
-        "filename": "COVID 19 - EMA Grid demand by Region ID by Regional Council.xlsx",
-        "load_function": "electricity_grid_by_region_data",
+        "filename": "COVID 19 - Chorus regional broadband.xlsx",
+        "load_function": "read_chorus_regional_data",
         "data_type": "TimeSeries",
         "group_names": [
+          "Total",
          "Auckland",	
          "Bay of Plenty",	
          "Canterbury",
          "Gisborne",
          "Hawke's Bay",
          "Manawatū-Whanganui",
-         "Marlborough",
          "Northland",
          "Otago",
          "Southland",
          "Taranaki",
-         "Tasman/Nelson",
+         "Tasman",
          "Waikato",
          "Wellington",
          "West Coast"
         ]
-    },   
-    {
-      "class": "Wellbeing",
-      "type": "Social connection",
-      "indicator_name": "Staying connected with others",
-      "parameter_col": 2,
-      "order_parameter": false,
-      "value_col": 3,
-      "value_names": ["Percentage"],
-      "group_names": ["Percentage of respondents"],
+   },
+   {
+    "class": "Contextual",
+    "type": "Business",
+    "indicator_name": "Number of employees by region",
+    "parameter_col": 1,
+    "order_parameter": false,
+    "value_col":[
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "value_names": [
+      "Total New Zealand",
+      "Northland",      
+      "Auckland",
+      "Waikato",
+      "Bay of Plenty",
+      "Gisborne",
+      "Hawke's Bay",
+      "Taranaki",
+      "Manawatū-Whanganui",
+      "Wellington",
+      "Tasman",
+      "Marlborough",
+      "Nelson",
+      "West Coast",
+      "Canterbury",
+      "Otago",
+      "Southland"
+      ],
+    "group_names": [
+      "Total New Zealand",
+      "Northland",      
+      "Auckland",
+      "Waikato",
+      "Bay of Plenty",
+      "Gisborne",
+      "Hawke's Bay",
+      "Taranaki",
+      "Manawatū-Whanganui",
+      "Wellington",
+      "Tasman",
+      "Marlborough",
+      "Nelson",
+      "West Coast",
+      "Canterbury",
+      "Otago",
+      "Southland"
+      ],
+    "sheet_number": 1,
+    "filename": "Number of employees by Industry classification by RC.xlsx",
+    "parameter_transform": "function (x) x",
+    "load_function": "read_from_excel",
+    "data_type": "BarChart"
+  },
+  {
+    "class": "Contextual",
+    "type": "Business",
+    "indicator_name": "Number of businesses by region",
+    "parameter_col": 1,
+    "order_parameter": false,
+    "value_col":[
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18
+    ],
+    "value_names": [
+      "Total New Zealand",
+      "Northland",      
+      "Auckland",
+      "Waikato",
+      "Bay of Plenty",
+      "Gisborne",
+      "Hawke's Bay",
+      "Taranaki",
+      "Manawatū-Whanganui",
+      "Wellington",
+      "Tasman",
+      "Marlborough",
+      "Nelson",
+      "West Coast",
+      "Canterbury",
+      "Otago",
+      "Southland"
+      ],
+    "group_names": [
+      "Total New Zealand",
+      "Northland",      
+      "Auckland",
+      "Waikato",
+      "Bay of Plenty",
+      "Gisborne",
+      "Hawke's Bay",
+      "Taranaki",
+      "Manawatū-Whanganui",
+      "Wellington",
+      "Tasman",
+      "Marlborough",
+      "Nelson",
+      "West Coast",
+      "Canterbury",
+      "Otago",
+      "Southland"
+      ],
+    "sheet_number": 1,
+    "filename": "Number of business by Industry classification by RC.xlsx",
+    "parameter_transform": "function (x) x",
+    "load_function": "read_from_excel",
+    "data_type": "BarChart"
+  },
+  {
+   "class": "Health",
+      "type": "General health",
+      "indicator_name": "Health status",
+      "parameter_col": 1,
+      "value_col": [53],
+      "lower_bound_col": [54],
+      "upper_bound_col": [55],
+      "value_names": ["Percentage of respondents"],
+      "group_names": ["undefined_name"],
       "sheet_number": 1,
-      "filename": "Harriet/MOJ_pulse_survey_output.xlsx",
-      "parameter_transform": "function (x) x",
-      "load_function": "read_from_excel",
-      "data_type": "BarChart"
+      "filename": "COVID 19 - MoH Health and Wellbeing Survey.xlsx",
+      "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%Y\")",
+      "load_function": "read_from_excel_error",
+      "data_type": "TimeSeriesError"
     },
     {
-      "class": "Wellbeing",
-      "type": "Crime and safety",
-      "indicator_name": "Safety travelling to and from essential services",
-      "parameter_col": 2,
-      "order_parameter": false,
-      "value_col": [3],
-      "value_names": ["Percentage"],
-      "group_names": ["Percentage of respondents"],
-      "sheet_number": 2,
-      "filename": "Harriet/MOJ_pulse_survey_output.xlsx",
-      "parameter_transform": "function (x) x",
-      "load_function": "read_from_excel",
-      "data_type": "BarChart",
-      "drop_na": false
+      "class": "Health",
+      "type": "General health",
+      "indicator_name": "Sleep quantity",
+      "parameter_col": 1,
+      "value_col": [50],
+      "lower_bound_col": [51],
+      "upper_bound_col": [52],
+      "value_names": ["Percentage of respondents"],
+      "group_names": ["undefined_name"],
+      "sheet_number": 1,
+      "filename": "COVID 19 - MoH Health and Wellbeing Survey.xlsx",
+      "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%Y\")",
+      "load_function": "read_from_excel_error",
+      "data_type": "TimeSeriesError"
+    },
+     {
+      "class": "Social",
+      "type": "Life satisfaction",
+      "indicator_name": "Life satisfaction - MoH",
+      "parameter_col": 1,
+      "value_col": [14],
+      "lower_bound_col": [15],
+      "upper_bound_col": [16],
+      "value_names": ["Percentage of respondents"],
+      "group_names": ["undefined_name"],
+      "sheet_number": 1,
+      "filename": "COVID 19 - MoH Health and Wellbeing Survey.xlsx",
+      "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%Y\")",
+      "load_function": "read_from_excel_error",
+      "data_type": "TimeSeriesError"
     },
     {
-      "class": "Wellbeing",
-      "type": "Crime and safety",
-      "indicator_name": "COVID-19 related scams",
-      "parameter_col": 2,
-      "order_parameter": false,
-      "value_col": [3],
-      "value_names": ["Percentage"],
-      "group_names": ["Percentage of respondents"],
-      "sheet_number": 3,
-      "filename": "Harriet/MOJ_pulse_survey_output.xlsx",
-      "parameter_transform": "function (x) x",
-      "load_function": "read_from_excel",
-      "data_type": "BarChart"
+      "class": "Social",
+      "type": "Social connection",
+      "indicator_name": "Loneliness - past 7 days",
+      "parameter_col": 1,
+      "value_col": [62],
+      "lower_bound_col": [63],
+      "upper_bound_col": [64],
+      "value_names": ["Percentage of respondents"],
+      "group_names": ["undefined_name"],
+      "sheet_number": 1,
+      "filename": "COVID 19 - MoH Health and Wellbeing Survey.xlsx",
+      "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%Y\")",
+      "load_function": "read_from_excel_error",
+      "data_type": "TimeSeriesError"
+    },
+    {
+      "class": "Social",
+      "type": "General wellbeing",
+      "indicator_name": "Overall wellbeing",
+      "parameter_col": 1,
+      "value_col": [2],
+      "lower_bound_col": [3],
+      "upper_bound_col": [4],
+      "value_names": ["Percentage of respondents"],
+      "group_names": ["undefined_name"],
+      "sheet_number": 1,
+      "filename": "COVID 19 - MoH Health and Wellbeing Survey.xlsx",
+      "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%Y\")",
+      "load_function": "read_from_excel_error",
+      "data_type": "TimeSeriesError"
+    },
+    {
+      "class": "Health",
+      "type": "Mental health",
+      "indicator_name": "Calmness",
+      "parameter_col": 1,
+      "skip": 3,
+      "value_col": [26],
+      "lower_bound_col": [27],
+      "upper_bound_col": [28],
+      "value_names": ["Percentage of respondents"],
+      "group_names": ["undefined_name"],
+      "sheet_number": 1,
+      "filename": "COVID 19 - MoH Health and Wellbeing Survey.xlsx",
+      "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%Y\")",
+      "load_function": "read_from_excel_error",
+      "data_type": "TimeSeriesError"
+    },
+    {
+      "class": "Health",
+      "type": "Mental health",
+      "indicator_name": "Nervousness",
+      "parameter_col": 1,
+      "value_col": [29],
+      "lower_bound_col": [30],
+      "upper_bound_col": [31],
+      "value_names": ["Percentage of respondents"],
+      "group_names": ["undefined_name"],
+      "sheet_number": 1,
+      "filename": "COVID 19 - MoH Health and Wellbeing Survey.xlsx",
+      "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%Y\")",
+      "load_function": "read_from_excel_error",
+      "data_type": "TimeSeriesError"
+    },
+    {
+      "class": "Health",
+      "type": "Mental health",
+      "indicator_name": "Worry about family health",
+      "parameter_col": 1,
+      "value_col": [20],
+      "lower_bound_col": [21],
+      "upper_bound_col": [22],
+      "value_names": ["Percentage of respondents"],
+      "group_names": ["undefined_name"],
+      "sheet_number": 1,
+      "filename": "COVID 19 - MoH Health and Wellbeing Survey.xlsx",
+      "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%Y\")",
+      "load_function": "read_from_excel_error",
+      "data_type": "TimeSeriesError"
+    },
+    {
+      "class": "Health",
+      "type": "Mental health",
+      "indicator_name": "Depression / anxiety",
+      "parameter_col": 1,
+      "value_col": [32],
+      "lower_bound_col": [33],
+      "upper_bound_col": [34],
+      "value_names": ["Percentage of respondents"],
+      "group_names": ["undefined_name"],
+      "sheet_number": 1,
+      "filename": "COVID 19 - MoH Health and Wellbeing Survey.xlsx",
+      "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%Y\")",
+      "load_function": "read_from_excel_error",
+      "data_type": "TimeSeriesError"
+    },
+    {
+      "class": "Health",
+      "type": "Mental health",
+      "indicator_name": "Stress about leaving home",
+      "parameter_col": 1,
+      "value_col": [17],
+      "lower_bound_col": [18],
+      "upper_bound_col": [19],
+      "value_names": ["Percentage of respondents"],
+      "group_names": ["undefined_name"],
+      "sheet_number": 1,
+      "filename": "COVID 19 - MoH Health and Wellbeing Survey.xlsx",
+      "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%Y\")",
+      "load_function": "read_from_excel_error",
+      "data_type": "TimeSeriesError"
     }
+    ,
+
+{
+  "class": "Economic",
+  "indicator_name": "Weekly median earnings (34 days)",
+  "type": "Employment",
+  "filter_paid_jobs":"Weekly earnings - median - 34 days",
+  "parameter_col": 1,
+  "parameter_transform": [
+    "function (x) ",
+    "as.Date(x, format = \"%d/%m/%y\")"
+    ],
   
+  "value_col": [
+    
+    2,
+    3,
+    4,
+    5
+    
+    
+    ],
+  "value_names": [
+    "Total",
+    "Primary",
+    "Goods Producing",
+    "Services"
+    ],
+  "filename": "Employment-indicators-weekly-paid-jobs-34-days.csv",
+  "load_function": "read_employment_paid_jobs_data",
+  "data_type": "TimeSeries",
+  "group_names": 
+    [ 
+      "Total",
+      "Primary",
+      "Goods Producing",
+      "Services"
+      
+      ]
+}
+
+
+
 ]
