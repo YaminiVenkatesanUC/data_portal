@@ -1,19 +1,27 @@
 filter_indicator <- function(indicator, regions) {
   for (region in regions) {
-    if (length(grep(paste0("\\<", region, "\\>"), indicator$indicator_name, ignore.case = TRUE)) > 0) {
-      return (TRUE)
+    len_indicators <- length(
+      grep(paste0("\\<", region, "\\>"), indicator$indicator_name, ignore.case = TRUE)
+    )
+    if (len_indicators > 0) {
+      return(TRUE)
     }
   }
-  return (FALSE)
+  return(FALSE)
 }
 
 filter_group <- function(group, regions) {
   for (region in regions) {
-    if (length(grep(paste0("\\<", region, "\\>"), paste(group$title, group$name, collapse = " "), ignore.case = TRUE)) > 0) {
-      return (TRUE)
+    len_indicators <- length(grep(
+      paste0("\\<", region, "\\>"), paste(group$title, group$name, collapse = " "),
+      ignore.case = TRUE
+      )
+    )
+    if (len_indicators > 0) {
+      return(TRUE)
     }
   }
-  return (FALSE)
+  return(FALSE)
 }
 
 filter_indicators_by_region <- function(indicator_definitions, regions) {
@@ -23,14 +31,14 @@ filter_indicators_by_region <- function(indicator_definitions, regions) {
   for (region in regions) {
     regions <- c(regions, as.character(FILTER_DICTIONARY[[region]]$synonyms))
   }
-  
+
   for (key in names(indicator_definitions)) {
     if (filter_indicator(indicator_definitions[[key]], regions)) {
       output[[key]] <- indicator_definitions[[key]]
     } else {
       groups <- indicator_definitions[[key]]$groups
 
-      selection = as.vector(sapply(
+      selection <- as.vector(sapply(
         indicator_definitions[[key]]$groups,
         function(x) filter_group(x, regions)
       ))
@@ -40,6 +48,6 @@ filter_indicators_by_region <- function(indicator_definitions, regions) {
       }
     }
   }
-  
-  return (output)
+
+  return(output)
 }

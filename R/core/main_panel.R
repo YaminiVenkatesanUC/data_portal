@@ -3,14 +3,14 @@ main_plot_ui <- function(id, label) {
   fluidRow(
     column(
       12,
-      align="center",
+      align = "center",
       highchartOutput(outputId = ns("main_plot"))
     ),
     column(
       6,
     conditionalPanel(
       paste0("input['", ns("include_date_slider"), "'] == 'TRUE' "),
-        align="center",
+        align = "center",
         sliderInput(
           ns("range_selector"),
           label = "Select date range",
@@ -88,7 +88,7 @@ top_panel_ui <- function(id, indicator_class) {
         selectInput(
          inputId = ns("line_selector"),
          label = "Select a series",
-         choices ="",
+         choices = "",
          selected = ""
         )
       )
@@ -96,21 +96,28 @@ top_panel_ui <- function(id, indicator_class) {
   )
 }
 
-main_plot_server <- function(input, output, session, indicator_class, indicator_definitions, regional_filter_on) {
+main_plot_server <- function(
+  input,
+  output,
+  session,
+  indicator_class,
+  indicator_definitions,
+  regional_filter_on
+) {
   get_type_options <- reactive({
     indicators <- get_type_list(indicator_definitions, indicator_class)
     if (length(indicators) == 0) {
-      return (c("No indicators"))
+      return(c("No indicators"))
     } else {
       types <- get_type_list(indicators, indicator_class, transform = function(x) x$type)
-      return (sort(unique(types)))
+      return(sort(unique(types)))
     }
   })
 
   get_indicator_options <- reactive({
     indicators <- get_indicator_list(indicator_definitions, indicator_class, input$type_selector)
     if (length(indicators) == 0) {
-      return (c("No indicators"))
+      return(c("No indicators"))
     } else {
       domestic_indicators <- get_indicator_list(
         indicators,
@@ -126,7 +133,7 @@ main_plot_server <- function(input, output, session, indicator_class, indicator_
         international = TRUE,
         transform = function(x) x$indicator_name
       )
-      return (list(
+      return(list(
         "New Zealand" = wrap_list_if_length_one(domestic_indicators),
         "International" = wrap_list_if_length_one(intl_indicators)
       ))
@@ -136,23 +143,26 @@ main_plot_server <- function(input, output, session, indicator_class, indicator_
   get_indicator_definition <- reactive({
     key <- paste(indicator_class, input$type_selector, input$indicator_selector, sep = "_")
     indicator_definition <- indicator_definitions[[key]]
-    return (indicator_definition)
+    return(indicator_definition)
   })
 
   get_group_definition <- reactive({
     indicator_definition <- get_indicator_definition()
-    group_index <- which(sapply(indicator_definition$groups, function(x) x$name) == input$line_selector)
+    group_index <- which(sapply(
+      indicator_definition$groups,
+      function(x) x$name) == input$line_selector
+    )
     if (length(group_index) > 0) {
         group_definition <- indicator_definition$groups[[group_index]]
-        return (group_definition)
+        return(group_definition)
     }
-    return (NULL)
+    return(NULL)
   })
 
   get_line_options <- reactive({
     indicator_definition <- get_indicator_definition()
     line_options <- sapply(indicator_definition$groups, function(x) x$name)
-    return ((line_options))
+    return((line_options))
   })
 
   observe({
@@ -176,7 +186,9 @@ main_plot_server <- function(input, output, session, indicator_class, indicator_
       selected = NULL
     )
     query <- parseQueryString(session$clientData$url_search)
-    if (!is.null(query[['indicator']]) && query[['indicator']] %in% unlist(get_indicator_options())) {
+    if (
+      !is.null(query[['indicator']]) && query[['indicator']] %in% unlist(get_indicator_options())
+    ) {
       updateSelectInput(session, "indicator_selector", selected = query[['indicator']])
     }
   })
@@ -203,7 +215,6 @@ main_plot_server <- function(input, output, session, indicator_class, indicator_
 
   observe({
     indicator_definition <- get_indicator_definition()
-    #multiple_time_series <- length(indicator_definition$groups) > 1
     line_options <- get_line_options()
     if (length(line_options) > 0 && get_line_options() == c("undefined_name")) {
       multiple_time_series <- "FALSE"
@@ -239,7 +250,7 @@ main_plot_server <- function(input, output, session, indicator_class, indicator_
     input_data <- get_data_object()
     if ("Date" %in% names(input_data$data)) {
         dates <- input_data$data$Date
-        return (list(min = min(dates), max = max(dates)))
+        return(list(min = min(dates), max = max(dates)))
     }
   })
 
@@ -250,7 +261,7 @@ main_plot_server <- function(input, output, session, indicator_class, indicator_
     if ("TimeSeries" %in% class(data_object)) {
       dates <- data_object$dates
       range_limits <-  (list(min = min(dates), max = max(dates)))
-      
+
       if (!is.null(indicator_definition$default_lower_range)) {
         range <- c(
           ymd(indicator_definition$default_lower_range),
@@ -268,33 +279,37 @@ main_plot_server <- function(input, output, session, indicator_class, indicator_
         value = range
       )
     }
-    return (data_object)
-  })
-  
-  get_range_selector <- reactive ({
-    return (input$range_selector)
+    return(data_object)
   })
 
-  get_main_plot <-function () {
+  get_range_selector <- reactive({
+    return(input$range_selector)
+  })
+
+  get_main_plot <- function() {
     data_object <- get_data_object()
-    if (is.null(data_object)) {return (NULL)}
+    if (is.null(data_object)) {return(NULL)}
     indicator_definition <- get_indicator_definition()
-    plot_function <- get_indicator_parameter("plot_function", indicator_definition, input$line_selector)
+    plot_function <- get_indicator_parameter(
+      "plot_function",
+      indicator_definition,
+      input$line_selector
+    )
     plot <- plot_functions[[plot_function]](data_object, input, indicator_definition)
-    return (plot)
+    return(plot)
   }
 
   output$main_plot <- renderHighchart({
     get_main_plot()
   })
-  
-  output$indicator_update_date <- renderText({ 
+
+  output$indicator_update_date <- renderText({
     indicator <- get_data_object()
     update_date <- indicator$update_date
     if (is.null(update_date)) {
-        return ("")
+        return("")
     }
-    return (paste("Last updated: ", format(update_date, "%d %B %Y")))
+    return(paste("Last updated: ", format(update_date, "%d %B %Y")))
   })
 
   output$source_html <- renderUI({
@@ -304,22 +319,32 @@ main_plot_server <- function(input, output, session, indicator_class, indicator_
     source_text <- get_definition_parameter("source", indicator_definition, group_definition)
 
     if (!is.null(source_url)) {
-      return (HTML(create_source_link(paste("Source:", source_text), url = source_url, id = "url-link" ), sep = '<br/>'))
+      return(HTML(
+        create_source_link(
+          paste("Source:", source_text),
+          url = source_url,
+          id = "url-link"
+        ),
+        sep = '<br/>'
+        )
+      )
     } else if (!is.null(source_text)) {
-      return (HTML(create_source_text_only(paste("Source:", source_text), id = "url-link" ), sep = '<br/>'))
+      return(HTML(
+        create_source_text_only(paste("Source:", source_text), id = "url-link" ), sep = '<br/>')
+      )
     }
-    return ((HTML("<div></div>", sep = '<br/>')))
+    return((HTML("<div></div>", sep = '<br/>')))
   })
-  
+
   output$caveat_html <- renderUI({
     group_definition <- get_group_definition()
     indicator_definition <- get_indicator_definition()
     caveat <- get_definition_parameter("caveats", indicator_definition, group_definition)
 
     if (!is.null(caveat)) {
-      return (HTML(create_caveat_box(caveat, id = "caveat-box" ), sep = '<br/>'))
+      return(HTML(create_caveat_box(caveat, id = "caveat-box" ), sep = '<br/>'))
     } else {
-      return (HTML(NULL))
+      return(HTML(NULL))
     }
   })
 
@@ -329,9 +354,9 @@ main_plot_server <- function(input, output, session, indicator_class, indicator_
     description <- get_definition_parameter("description", indicator_definition, group_definition)
 
     if (!is.null(description)) {
-      return (HTML(create_caveat_box(description, id = "description-box" ), sep = '<br/>'))
+      return(HTML(create_caveat_box(description, id = "description-box" ), sep = '<br/>'))
     } else {
-      return (HTML(NULL))
+      return(HTML(NULL))
     }
   })
 }

@@ -1,9 +1,9 @@
-about_ui <- function(id) {  
+about_ui <- function(id) {
   ns <- NS(id)
   actionButton(ns("show"), "About")
 }
 
-about_ui_mobile <- function(id) {  
+about_ui_mobile <- function(id) {
   ns <- NS(id)
   actionButton(ns("show"), "About")
 }

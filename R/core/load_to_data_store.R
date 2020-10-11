@@ -28,7 +28,13 @@ add_to_data_store <- function(data_definition, data_store, config) {
   for (group_name in names(data)) {
     print(paste(data_definition$class, data_definition$indicator_name, group_name))
 
-    key <- paste(data_definition$class, data_definition$type, data_definition$indicator_name, group_name, sep = "_")
+    key <- paste(
+      data_definition$class,
+      data_definition$type,
+      data_definition$indicator_name,
+      group_name,
+      sep = "_"
+    )
     if (key %in% names(data_store)) {
       data_store[[key]] <- data_store[[key]] + data[[group_name]]
     } else {
@@ -36,7 +42,7 @@ add_to_data_store <- function(data_definition, data_store, config) {
     }
   }
 
-  return (data_store)
+  return(data_store)
 }
 
 load_to_data_store <- function(config) {
@@ -47,5 +53,5 @@ load_to_data_store <- function(config) {
     data_store <- add_to_data_store(data_definition, data_store, config)
   }
   saveRDS(data_store, config$data_store_filename)
-  return (data_store)
+  return(data_store)
 }

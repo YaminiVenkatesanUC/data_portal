@@ -3,9 +3,9 @@ load_from_store <- function(indicator, group_name) {
   if (length(key) > 0) {
     data_object <- DATA_STORE[[key]]
   } else {
-    return (NULL)
+    return(NULL)
   }
-  return (data_object)
+  return(data_object)
 }
 
 stats_odata_api <- function(indicator, group_name) {
@@ -31,7 +31,7 @@ stats_odata_api <- function(indicator, group_name) {
     add_headers("Ocp-Apim-Subscription-Key" = CONFIG$odata_token)
   )
   result <- parse_httr_response(response)
-  if (length(result$value) == 0) {return (NULL)}
+  if (length(result$value) == 0) {return(NULL)}
   table <- result$value %>%
     rename(Parameter = desc_6) %>%
     pivot_wider(names_from = desc_5, values_from = c("value")) %>%
@@ -44,12 +44,12 @@ stats_odata_api <- function(indicator, group_name) {
     sort(unique(result$value$desc_5)),
     as.Date(now())
   )
-  return (data_object)
+  return(data_object)
 }
 
 load_environmental_data <- function(indicator, group_name) {
   if (is.null(group_name) || group_name == "") {
-    return (NULL)
+    return(NULL)
   }
   url <- get_indicator_parameter("data_service_url", indicator, group_name)
   id <- get_indicator_parameter("data_service_id", indicator, group_name)
@@ -64,14 +64,14 @@ load_environmental_data <- function(indicator, group_name) {
     mutate(Parameter = ymd_hms(time, tz = "NZ")) %>%
     arrange(Parameter) %>%
     unique()
-  
+
   data_object <- TimeSeries$new(
     data %>%
       select(c("Parameter", get_indicator_parameter("data_service_filter", indicator, group_name))),
     c(group_name),
     as.Date(now())
   )
-  return (data_object)
+  return(data_object)
 }
 
 data_service_functions <- list(

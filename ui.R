@@ -26,10 +26,10 @@ ui <- fluidPage(
     tags$style(HTML("hr {border-top: 1px solid #4d5b61;}"))
   ),
   tags$head(tags$style(HTML('.irs-bar {
-        background: var(--custom-color);
-        border-top: 1px solid var(--custom-color);
-        border-bottom: 1px solid var(--custom-color);}
-        .irs-from, .irs-to, .irs-single { background: var(--custom-color)}'
+        background: #EC6607;
+        border-top: 1px solid #EC6607;
+        border-bottom: 1px solid #EC6607;}
+        .irs-from, .irs-to, .irs-single { background: #EC6607}'
   ))
   ),
   tags$body(HTML(

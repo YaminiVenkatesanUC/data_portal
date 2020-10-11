@@ -11,16 +11,16 @@ library(R6)
 library(httr)
 library(data.table)
 
-source("R/core/build_ui.R")
-source("R/core/utils.R")
-source("R/core/download_modal.R")
-source("R/core/about_modal.R")
-source("R/core/main_panel.R")
-source("R/core/consts.R")
-source("R/core/get_download_csv.R")
-source("R/core/type_checks.R")
-source("R/core/data_interface.R")
-source("R/core/filter_indicators.R")
+core_dependencies <-
+  list.files(
+    "R/core",
+    full.names = TRUE,
+    recursive = TRUE
+  )
+
+for (dependency in core_dependencies) {
+  source(core_dependencies)
+}
 
 source("R/load_functions.R")
 source("R/plot_functions.R")
@@ -80,10 +80,9 @@ for (i in 2:(length(INDICATOR_CLASSES) + 2)) {
 if (!is.null(CONFIG$tag_manager_html)) {
   tag_manager_html <- includeHTML("www/tag_manager.html")
 } else {
-  warning("No tag manager set.")
+  print("No tag manager set.")
   tag_manager_html <- "<div></div>"
 }
-
 
 if (!is.null(CONFIG$filter_dictionary_definitions)) {
   filter_dictionary_raw <- read_json(CONFIG$filter_dictionary_definitions)

@@ -1,5 +1,9 @@
 get_x_values <- function(dates) {
-  return (ifelse(format(dates) == "double", as.character(format(dates, "%d-%m-%y")), as.character(dates)))
+  return(ifelse(
+    format(dates) == "double",
+    as.character(format(dates, "%d-%m-%y")),
+    as.character(dates)
+  ))
 }
 
 get_download_csv <- function(data_store, indicator_definitions, date_range = NULL) {
@@ -24,7 +28,7 @@ get_download_csv <- function(data_store, indicator_definitions, date_range = NUL
     shiny::setProgress(counter / counter_width)
     counter <- counter + 1
     item <- indicator_definitions[[item_name]]
-    
+
     sub_series <- data.frame(
       series_name = c(),
       sub_series_name = c(),
@@ -44,7 +48,7 @@ get_download_csv <- function(data_store, indicator_definitions, date_range = NUL
 
       sub_sub_series$series_name <- gsub(" \U2012 ", " - ", group$name)
       sub_sub_series$date_last_updated <- format(data_store[[key]]$update_date, "%d-%m-%y")
-      
+
       if (!is.null(group$units)) {
         sub_sub_series$units <- group$units
       } else if (!is.null(item$units)) {
@@ -59,11 +63,22 @@ get_download_csv <- function(data_store, indicator_definitions, date_range = NUL
     sub_series$class <- item$class
     sub_series$category <- item$type
     sub_series <- mutate(sub_series, parameter = as.character(parameter))
-    
+
     output <- rbind(sub_series, output)
   }
 
-  output <- output %>% select(c("class", "category", "indicator_name", "series_name",  "sub_series_name", "parameter", "value", "units", "date_last_updated"))
-  
-  return (output)
+  output <- output %>%
+    select(c(
+      "class",
+      "category",
+      "indicator_name",
+      "series_name",
+      "sub_series_name",
+      "parameter",
+      "value",
+      "units",
+      "date_last_updated"
+    ))
+
+  return(output)
 }

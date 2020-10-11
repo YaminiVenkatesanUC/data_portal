@@ -5,7 +5,6 @@
   color: black;
 }
 
-
 #region_selector_div .selectize-input > input {
   font-size: 16px;
   padding-left: 10%;
@@ -59,7 +58,7 @@
 }
 
 .progress-bar {
-    background-color: var(--custom-color);
+    background-color: #EC6607;
 }
 
 .date_range_selected {
@@ -78,7 +77,7 @@
 .navbar-default .navbar-nav .active a {
   color: black;
   background-color: #ffffff;
-  border-bottom: 4px solid var(--custom-color);
+  border-bottom: 4px solid #EC6607;
   bottom:-12px;
   padding-bottom:14px;
 }
@@ -151,7 +150,7 @@ body {
   color: white;
   white-space: normal;
   word-wrap: break-word;
-  background-color: var(--custom-color);
+  background-color: #EC6607;
   font-weight: bold;
   font-family: sans-serif;
   font-size: 15px;
@@ -215,7 +214,7 @@ body {
 
 #download_data-show:hover{
   color:#fff;
-  background-color: var(--custom-color);
+  background-color: #EC6607;
 }
 
 .navbar-header{
@@ -247,7 +246,7 @@ body {
 
 .caveat-box {
   background: rgba(204, 204, 204, 0.5);
-  border: 1px solid var(--custom-color);
+  border: 1px solid #EC6607;
   padding: 10px; 
   width: 100%;
   overflow-y: auto;
@@ -258,7 +257,7 @@ body {
 
 .description-box {
   background: 'none';
-  border: 0px solid var(--custom-color);
+  border: 0px solid #EC6607;
   padding: 10px; 
   width: 100%;
   overflow-y: auto;

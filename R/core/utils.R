@@ -1,14 +1,16 @@
 parse_httr_response <- function(response) {
   if (http_type(response) != "application/json") {
     warning("request did not return json")
-    return (NULL)
+    return(NULL)
   }
   if (status_code(response) != 200) {
     warning(paste("request failed with response code", status_code(response)))
-    return (NULL)
+    return(NULL)
   }
-  result <- jsonlite::fromJSON(content(response, "text", encoding = "UTF-8"), simplifyDataFrame = TRUE)
-  return (result)
+  result <- jsonlite::fromJSON(
+    content(response, "text", encoding = "UTF-8"), simplifyDataFrame = TRUE
+  )
+  return(result)
 }
 
 get_indicator_parameter <- function(parameter, indicator, group_name = NULL) {
@@ -17,14 +19,14 @@ get_indicator_parameter <- function(parameter, indicator, group_name = NULL) {
     if (length(group_index) > 0) {
       group_definition <- indicator$groups[[group_index]]
       if (!is.null(group_definition[[parameter]])) {
-        return (group_definition[[parameter]])
+        return(group_definition[[parameter]])
       }
     }
   }
   if (!is.null(indicator[[parameter]])) {
-    return (indicator[[parameter]])
+    return(indicator[[parameter]])
   }
-  return (CONFIG$default_parameters[[parameter]])
+  return(CONFIG$default_parameters[[parameter]])
 }
 
 data_frame_to_data_object_helper <- function(directory, config, data) {
@@ -37,35 +39,40 @@ data_frame_to_data_object_helper <- function(directory, config, data) {
     temp_data <- data.frame(Parameter = data$Parameter)
     temp_data <- cbind(temp_data, values)
     data_type <- get_indicator_parameter("data_type", config)
-    data_object_list[[group_name]] <- DATA_TYPES[[data_type]]$new(temp_data, value_names, update_date)
+    data_object_list[[group_name]] <- DATA_TYPES[[data_type]]$new(
+      temp_data,
+      value_names,
+      update_date
+    )
   }
-  return (data_object_list)
+  return(data_object_list)
 }
 
-
-
 data_frame_to_data_object_helper_error <- function(directory, config, data) {
-  
   update_date <- as.Date(file.info(paste0(directory, config$filename))$mtime, tz = "NZ")
   data_object_list <- list()
   for (group_name in unique(config$group_names)) {
     indexes <- which(config$group_names == group_name)
     values <- (data[colnames(data) != "Parameter" &
                       !endsWith(colnames(data), "_lower") &
-                      !endsWith(colnames(data), "_upper")])[, indexes, drop = F]
-    lower <- (data[endsWith(colnames(data), "_lower")])[, indexes, drop = F]
-    upper <- (data[endsWith(colnames(data), "_upper")])[, indexes, drop = F]
+                      !endsWith(colnames(data), "_upper")])[, indexes, drop = FALSE]
+    values_lower <- (data[endsWith(colnames(data), "_lower")])[, indexes, drop = FALSE]
+    values_upper <- (data[endsWith(colnames(data), "_upper")])[, indexes, drop = FALSE]
     value_names <- unlist(config$value_names)[indexes]
     temp_data <- data.frame(Parameter = data$Parameter)
-    temp_data <- cbind(temp_data, values, lower, upper)
+    temp_data <- cbind(temp_data, values, values_lower, values_upper)
     data_type <- get_indicator_parameter("data_type", config)
-    data_object_list[[group_name]] <- DATA_TYPES[[data_type]]$new(temp_data, value_names, update_date)
+    data_object_list[[group_name]] <- DATA_TYPES[[data_type]]$new(
+      temp_data,
+      value_names,
+      update_date
+    )
   }
-  return (data_object_list)
+  return(data_object_list)
 }
 
 render_title <- function(text) {
-  return (gsub(" - ", " \U2012 ", text))
+  return(gsub(" - ", " \U2012 ", text))
 }
 
 get_tool_tip <- function(units) {
@@ -77,7 +84,7 @@ get_tool_tip <- function(units) {
   if (units %in% TOOL_TIP_PREFIX) {
     prefix <- units
   }
-  return (list(
+  return(list(
     suffix = suffix,
     prefix = prefix
   ))
@@ -85,9 +92,9 @@ get_tool_tip <- function(units) {
 
 get_extremum_date <- function(x, condition) {
   if ("TimeSeries" %in% class(x) && length(x$dates) > 0) {
-    return (condition(x$dates))
+    return(condition(x$dates))
   } else {
-    return (NA)
+    return(NA)
   }
 }
 
@@ -98,20 +105,20 @@ get_data_store_date_range <- function(date_store) {
   min_dates <- as.vector(sapply(date_store, get_extremum_date, condition = min))
   min_date <- min(date_store[[which(min_dates == min(min_dates, na.rm = TRUE))[[1]]]]$dates)
 
-  return (list(max_date = max_date, min_date = min_date ))
+  return(list(max_date = max_date, min_date = min_date ))
 }
 
 get_most_recent_update_date <- function(data_store) {
   if (is.null(data_store)) {
-    return (format(now(), "%d/%m/%Y"))
+    return(format(now(), "%d/%m/%Y"))
   }
   dates <- as.vector(sapply(DATA_STORE, function(x) x$update_date))
-  return (format(data_store[[which(dates == max(dates))[[1]]]]$update_date, "%d/%m/%Y"))
+  return(format(data_store[[which(dates == max(dates))[[1]]]]$update_date, "%d/%m/%Y"))
 }
 
 get_class_names <- function(indicators) {
   class_names <- as.vector(sapply(indicators, function(x) x$class))
-  return (unique(class_names))
+  return(unique(class_names))
 }
 
 read_config_file <- function(file = "config/config.yaml") {
@@ -119,7 +126,7 @@ read_config_file <- function(file = "config/config.yaml") {
     {
       read.config(file = file)
     },
-    warning=function(cond) {
+    warning = function(cond) {
       message(paste("Config file not found - create config.yaml"))
       return(NULL)
     }
@@ -136,30 +143,30 @@ wrap_list_if_length_one <- function(x) {
   } else {
     result <- NULL
   }
-  return (result)
+  return(result)
 }
 
 get_indicator_list <- function(
   indicators,
   class,
   type,
-  international = c(T, F),
+  international = c(TRUE, FALSE),
   transform = NULL
 ) {
-  selection = as.vector(sapply(
+  selection <- as.vector(sapply(
     indicators,
     function(x) (x$class %in% class && x$type %in% type && x$international %in% international)
   ))
   if (!is.null(transform)) {
-    result = as.vector(sapply(
+    result <- as.vector(sapply(
       indicators[selection],
       transform
     ))
   } else {
     result <- indicators[selection]
   }
-  
-  return (result)
+
+  return(result)
 }
 
 get_type_list <- function(
@@ -167,43 +174,46 @@ get_type_list <- function(
   class,
   transform = NULL
 ) {
-  selection = as.vector(sapply(
+  selection <- as.vector(sapply(
     indicators,
     function(x) (x$class %in% class)
   ))
   if (!is.null(transform)) {
-    result = as.vector(sapply(
+    result <- as.vector(sapply(
       indicators[selection],
       transform
     ))
   } else {
     result <- indicators[selection]
   }
-  
-  return (result)
+
+  return(result)
 }
 
 expand_data_definition_group_names <- function(data_definition) {
   if (length(data_definition$group_names) == 1) {
-    data_definition$group_names <- rep(data_definition$group_names, length(data_definition$value_names))
+    data_definition$group_names <- rep(
+      data_definition$group_names,
+      length(data_definition$value_names)
+    )
   }
-  return (data_definition)
+  return(data_definition)
 }
 
 get_definition_parameter <- function(parameter, indicator_definition, group_definition) {
   if (!is.null(group_definition[[parameter]])) {
-    return (group_definition[[parameter]])
+    return(group_definition[[parameter]])
   }
-  return (indicator_definition[[parameter]])
+  return(indicator_definition[[parameter]])
 }
 
 create_source_link <- function(buttonText, id, url) {
   class <- "class=\"hidden-xs\""
   buttonClass <- "class=\"btn btn-default\""
   href <- paste0("href=\"", url, "\"")
-  buttonId <- paste0("id=\"", id ,"\"")
+  buttonId <- paste0("id=\"", id, "\"")
   target <- "target=\"_blank\""
-  
+
   output <- paste(
     "<a",
     buttonId,
@@ -213,15 +223,15 @@ create_source_link <- function(buttonText, id, url) {
     buttonText,
     "</a>"
   )
-  return (output)
+  return(output)
 }
 
 create_source_text_only <- function(buttonText, id) {
   class <- "class=\"hidden-xs\""
   buttonClass <- "class=\"btn btn-default\""
-  buttonId <- paste0("id=\"", id ,"\"")
+  buttonId <- paste0("id=\"", id, "\"")
   target <- "target=\"_blank\""
-  
+
   output <- paste(
     "<p",
     buttonId,
@@ -229,14 +239,14 @@ create_source_text_only <- function(buttonText, id) {
     buttonText,
     "</p>"
   )
-  return (output)
+  return(output)
 }
 
 create_caveat_box <- function(buttonText, id) {
   class <- "class=\"hidden-xs\""
   buttonClass <- "class=\"btn btn-default\""
-  buttonId <- paste0("class=\"", id ,"\"")
-  
+  buttonId <- paste0("class=\"", id, "\"")
+
   output <- paste(
     "<div",
     buttonId,
@@ -244,7 +254,7 @@ create_caveat_box <- function(buttonText, id) {
     buttonText,
     "</p></span></div>"
   )
-  return (output)
+  return(output)
 }
 
 # Similar to get_normalisation_factor below, but for a single
@@ -263,12 +273,12 @@ format_value <- function(value) {
     result$unit <- ""
   }
   result$value <- round(result$value, 2)
-  return (result)
+  return(result)
 }
 
 format_values_to_str <- function(values) {
   formated_values <- sapply(values, format_value)
-  return (apply(formated_values, 2, function(x) paste0("$", x[1], " ", x[2])))
+  return(apply(formated_values, 2, function(x) paste0("$", x[1], " ", x[2])))
 }
 
 # For styling some of the output boxes
@@ -281,7 +291,7 @@ VB_style <- function(msg = "", style = "font-size: 100%;") {
 #   the list and determines what factor is required then
 #   returns a list containing the factor and the "unit"
 get_normalisation_factor <- function(values) {
-  max_value = 0
+  max_value <- 0
   if (length(values) > 0) {
     max_value <- max(abs(values), na.rm = TRUE)
   }
@@ -296,14 +306,14 @@ get_normalisation_factor <- function(values) {
     result$factor <- 1
     result$unit <- ""
   }
-  
+
   if (max_value < 1) {
     result$digits <- 4
   } else {
     result$digits <- 2
   }
-  
-  return (result)
+
+  return(result)
 }
 
 # Takes a single value and rounds it into the correct
@@ -320,7 +330,7 @@ round_and_normalise <- function(value) {
     (magnitude > 6 & magnitude <= 9) ~ 1e6,
     (magnitude > 9) ~ 1e9
   )
-  return (paste0("$", round(value/divisor, 2), " " , unit))
+  return(paste0("$", round(value / divisor, 2), " ", unit))
 }
 
 brand_graph_colours <- c(
@@ -366,28 +376,28 @@ get_brand_colours <- function(type = "primary", number = 1) {
     (type == "secondary") ~ brand_secondary_colours[number],
     (type == "graph") ~ brand_graph_colours[number]
   )
-  return (result)
+  return(result)
 }
 
 dollar_axis_label <- function(unit) {
   result <- "$"
   if (unit != "") {
-    result <- paste0("$ (" , tools::toTitleCase(unit), ")")
+    result <- paste0("$ (", tools::toTitleCase(unit), ")")
   }
-  return (result)
+  return(result)
 }
 
 createHeaderButton <- function(buttonText, position, id, btn_class, hidden = FALSE) {
-  #style <- paste0("style=\"float:right; margin-top: 10px; right: ", position, "px; position: absolute\"")
+
   style <- paste0("style=\"float:right; margin-top: 10px;\"")
   if (hidden) {
     style <- paste0(style, " display: none;")
   }
   class <- "class=\"hidden-xs\""
-  buttonClass <- paste("class=\"btn", btn_class ,"action-button shiny-bound-input\"")
-  buttonId <- paste0("id=\"", id ,"\"")
+  buttonClass <- paste("class=\"btn", btn_class, "action-button shiny-bound-input\"")
+  buttonId <- paste0("id=\"", id, "\"")
   buttonType <- "type=\"button\""
-  
+
   output <- paste(
     "<div",
     class,
@@ -402,17 +412,21 @@ createHeaderButton <- function(buttonText, position, id, btn_class, hidden = FAL
     "</button>",
     "</div>"
   )
-  return (output)
+  return(output)
 }
 
 createHeaderLink <- function(buttonText, position, id, url) {
-  style <- paste0("style=\"float:right; margin-top: 10px; right: ", position, "px; position: absolute\"")
+  style <- paste0(
+    "style=\"float:right; margin-top: 10px; right: ",
+    position,
+    "px; position: absolute\""
+  )
   class <- "class=\"hidden-xs\""
   buttonClass <- "class=\"btn btn-default\""
   href <- paste0("href=\"", url, "\"")
-  buttonId <- paste0("id=\"", id ,"\"")
+  buttonId <- paste0("id=\"", id, "\"")
   target <- "target=\"_blank\""
-  
+
   output <- paste(
     "<div",
     class,
@@ -428,18 +442,17 @@ createHeaderLink <- function(buttonText, position, id, url) {
     "</a>",
     "</div>"
   )
-  return (output)
+  return(output)
 }
 
 
 createRegionalFilterButton <- function(btn_class) {
   style <- paste0("style=\"float:right; margin-top: 10px; right:\"")
   class <- "class=\"hidden-xs\""
-  #buttonClass <- paste("class=\"btn", "show_regional_filter" ,"action-button shiny-bound-input\"")
-  buttonClass <- paste("class=\"btn", btn_class ,"action-button shiny-bound-input\"")
-  buttonId <- paste0("id=\"", "show_regional_filter" ,"\"")
+  buttonClass <- paste("class=\"btn", btn_class, "action-button shiny-bound-input\"")
+  buttonId <- paste0("id=\"", "show_regional_filter", "\"")
   buttonType <- "type=\"button\""
-  
+
   output <- paste(
     "<div",
     class,
@@ -454,5 +467,5 @@ createRegionalFilterButton <- function(btn_class) {
     "</button>",
     "</div>"
   )
-  return (output)
+  return(output)
 }

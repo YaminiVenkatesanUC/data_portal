@@ -57,7 +57,7 @@ check_api_parameters <- function(x) {
         "Please fill these in first - see documentation for details."
       )
     )
-    return (FALSE)
+    return(FALSE)
   }
-  return (TRUE)
+  return(TRUE)
 }
