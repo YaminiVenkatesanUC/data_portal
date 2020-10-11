@@ -5,10 +5,9 @@ source("../linters.R")
 context("Test code formating")
 
 test_that("Linting", {
-  # The linters to be used
   core_dependencies <-
     list.files(
-    "../../R/core",
+    "../../R/",
     full.names = TRUE,
     recursive = TRUE
   )
