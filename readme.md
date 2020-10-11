@@ -46,7 +46,22 @@ See below for details on how to build functions for each of the layers in this p
 
 # Code documentation
 
-This section outlines how to work with data portal software including how to define new visualisations and create custom functions for the data management process.  
+This section outlines how to work with data portal software including how to define new visualisations and create custom functions for the data management process.
+
+## Code style
+
+The code in this project generally follows the Google style guide (https://google.github.io/styleguide/Rguide.html) which is an extension of the tidyverse style guide. Consistency with the basic formatting rules can be checked by running `shiny::runTests()`, which will run the linting package over the source code. If a file causes an error, then you can check the linting of that file by running `source("tests/linters.R")` followed by `lint_file(filename)`. This will give you the errors based on the choosen linters.
+
+The following standards are not checked automatically by the linter so are worth noting:
+
+- Do not use unnecessary white space lines, no more than a single empty line to be used to improve readability (unfortunately there is no linter for this, that I could find).
+- Use literal function and parameter names unless the intention is clear.  For example, `data`, `result` and `output` are acceptable when the purpose of these are clear (such as within a clearly named function returning the result data frame), but if you find yourself using `data2` or `result2` then consider using more descriptive names.  Single variable names such as `x` should be avoided (exluding when used as iterators, such as in a for loop).
+- Keep functions short.  Do not create functions which do a number of complicated steps, instead break these out into smaller functions, even if you only intend to call these functions once.
+- Do not nest functions inside other functions.
+
+## Tests
+
+There are currently no unit or integration tests other than those which run the linter.  Before deployment the application can be smoke tested by running, checking the graphs render and downloading the file.  The download file function iterates through all indicators, so will generally crash if there is an issue.  To debug, put a print statement in the ```get_download_csv.R``` file to determine which ```key``` is causing the function to crash.
 
 ## Examples
 
