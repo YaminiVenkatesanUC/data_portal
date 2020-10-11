@@ -11,16 +11,16 @@ library(R6)
 library(httr)
 library(data.table)
 
-core_dependencies <-
-  list.files(
-    "R/core",
-    full.names = TRUE,
-    recursive = TRUE
-  )
-
-for (dependency in core_dependencies) {
-  source(core_dependencies)
-}
+source("R/core/build_ui.R")
+source("R/core/utils.R")
+source("R/core/download_modal.R")
+source("R/core/about_modal.R")
+source("R/core/main_panel.R")
+source("R/core/consts.R")
+source("R/core/get_download_csv.R")
+source("R/core/type_checks.R")
+source("R/core/data_interface.R")
+source("R/core/filter_indicators.R")
 
 source("R/load_functions.R")
 source("R/plot_functions.R")
