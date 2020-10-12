@@ -370,7 +370,7 @@
         ],
         "sheet_number": 2,
         "value_col": [
-        5,  
+        5,
         4,
         3
         ],
@@ -399,7 +399,7 @@
         ],
         "sheet_number": 1,
         "value_col": [
-        5,  
+        5,
         4,
         3
         ],
@@ -1598,7 +1598,7 @@
         ],
         "sheet_number": 1,
         "value_col": [
-        
+
         2,
         3,
         4,
@@ -1881,7 +1881,7 @@
         "parameter_transform": "function(x) ymd(x) + 6",
         "sheet_number": 2,
         "value_col": [
-         
+
           2,
           3,
           4,
@@ -1894,7 +1894,7 @@
           11
         ],
         "value_names": [
-          
+
           "Female under 64",
           "Female 65 and 79",
           "Female 80 and over",
@@ -1905,10 +1905,10 @@
           "Total 65 and 79",
           "Total 80 and over",
           "Total"
-          
+
         ],
         "group_names": [
-          
+
            "Female under 64",
           "Female 65 and 79",
           "Female 80 and over",
@@ -1924,7 +1924,7 @@
         "load_function": "read_from_excel",
         "data_type": "TimeSeries"
       },
-      
+
       {
         "class": "Health",
         "indicator_name": "By age",
@@ -2309,7 +2309,7 @@
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": ["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"]
-        
+
     },
     {
         "class": "Income support",
@@ -2328,7 +2328,7 @@
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": ["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"]
-        
+
     },
     {
         "class": "Income support",
@@ -2347,7 +2347,7 @@
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": ["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"]
-        
+
     },
     {
         "class": "Income support",
@@ -2366,7 +2366,7 @@
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": ["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"]
-        
+
     },
     {
         "class": "Income support",
@@ -2384,7 +2384,7 @@
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": ["Total - work ready","Māori", "NZ European", "Pacific peoples", "All other ethnicities"]
-        
+
     },
     {
         "class": "Income support",
@@ -2402,7 +2402,7 @@
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": ["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"]
-        
+
     },
     {
         "class": "Health",
@@ -2457,7 +2457,7 @@
   "load_function": "read_from_excel",
   "data_type": "TimeSeries",
   "group_names": [ "Total loan applications received (cumulative)", "Total loan amount disbursed"]
-  
+
 },
 {
         "class": "Economic",
@@ -2470,10 +2470,10 @@
         ],
         "sheet_number": 1,
         "input_units":1000000,
-        
+
         "skip":3,
         "value_col": [
-        3,  
+        3,
         4,
         5,
         6
@@ -2502,7 +2502,7 @@
         "input_units":1000000,
         "skip":3,
         "value_col": [
-        8,  
+        8,
         9,
         10,
         11
@@ -2531,7 +2531,7 @@
          "input_units":1000000,
         "skip":3,
         "value_col": [
-        13,  
+        13,
         14,
         15,
         16
@@ -2560,7 +2560,7 @@
          "input_units":1000000,
         "skip":3,
         "value_col": [
-        18,  
+        18,
         19
         ],
         "value_names": [
@@ -2584,7 +2584,7 @@
         "sheet_number": 1,
         "skip":3,
         "value_col": [
-        21,  
+        21,
         22,
         23,
         24
@@ -2612,7 +2612,7 @@
         "sheet_number": 1,
         "skip":3,
         "value_col": [
-        26,  
+        26,
         27,
         28,
         29
@@ -2640,7 +2640,7 @@
         "sheet_number": 1,
         "skip":3,
         "value_col": [
-        31,  
+        31,
         32,
         33,
         34
@@ -2668,7 +2668,7 @@
         "sheet_number": 1,
         "skip":3,
         "value_col": [
-        36,  
+        36,
         37
         ],
         "value_names": [
@@ -2680,7 +2680,7 @@
         "data_type": "TimeSeries",
         "group_names": "undefined_name"
     },
-    
+
 {
         "class": "Economic",
         "indicator_name": "Gas consumption by largest users",
@@ -2699,7 +2699,7 @@
         7
         ],
         "value_names": [
-         
+
         "Methanex Waitara Valley",
         "Huntly power station",
         "Stratford peaker power station",
@@ -2710,16 +2710,16 @@
         "filename": "COVID 19 - Industrial Gas use.xlsx",
         "load_function": "gas_use_data",
         "data_type": "TimeSeries",
-        "group_names": 
-        [ 
-        
+        "group_names":
+        [
+
        "Methanex Waitara Valley",
         "Huntly power station",
         "Stratford peaker power station",
         "Taranaki combined cycle power station",
         "Te Rapa cogeneration plant",
         "Methanex Motunui"
-        
+
         ]
     },
 {
@@ -2733,10 +2733,10 @@
         ],
         "sheet_number": 1,
         "skip":1,
-        
+
         "value_col": [
         2,
-        3,  
+        3,
         4,
         5,
         6
@@ -2747,15 +2747,15 @@
         "Glenbrook steel mill",
         "Kinleith pulp and paper mill",
         "Marsden Point oil refinery"
-        
+
         ],
         "filename": "COVID 19 - Industrial Gas use.xlsx",
         "load_function": "gas_use_data",
         "gas_source":"Vector",
         "data_type": "TimeSeries",
-        "group_names": 
-        [ 
-        
+        "group_names":
+        [
+
       "Fonterra - (selected sites)",
         "Ballance Agri-Nutrients",
         "Glenbrook steel mill",
@@ -2772,7 +2772,7 @@
        "parameter_transform": ["function (x) dmy(x)"],
        "date_filter": "function(x) x > dmy(\"01-01-2015\")",
         "value_col": [
-        9, 
+        9,
         2,
         3,
         4,
@@ -2808,13 +2808,13 @@
        	"Waikato",
        	"Wellington",
        	"West Coast"
-        
+
         ],
         "filename": "region-active-bonds.csv",
         "load_function": "read_from_csv",
         "data_type": "TimeSeries",
-        "group_names": 
-        [ 
+        "group_names":
+        [
      "National",
         "Auckland",
        "Bay of Plenty",
@@ -2843,7 +2843,7 @@
        "parameter_transform": ["function (x) dmy(x)"],
        "date_filter": "function(x) x > dmy(\"01-01-2015\")",
         "value_col": [
-        9, 
+        9,
         2,
         3,
         4,
@@ -2879,13 +2879,13 @@
        	"Waikato",
        	"Wellington",
        	"West Coast"
-        
+
         ],
         "filename": "region-closed-bonds.csv",
         "load_function": "read_from_csv",
         "data_type": "TimeSeries",
-        "group_names": 
-        [ 
+        "group_names":
+        [
      "National",
         "Auckland",
        "Bay of Plenty",
@@ -2914,7 +2914,7 @@
        "parameter_transform": ["function (x) dmy(x)"],
         "date_filter": "function(x) x > dmy(\"01-01-2015\")",
         "value_col": [
-        9, 
+        9,
         2,
         3,
         4,
@@ -2950,13 +2950,13 @@
        	"Waikato",
        	"Wellington",
        	"West Coast"
-        
+
         ],
         "filename": "region-lodged-bonds.csv",
         "load_function": "read_from_csv",
         "data_type": "TimeSeries",
-        "group_names": 
-        [ 
+        "group_names":
+        [
        "National",
         "Auckland",
        "Bay of Plenty",
@@ -2984,7 +2984,7 @@
         "parameter_transform": ["function (x) dmy(x)"],
          "date_filter": "function(x) x > dmy(\"01-01-2015\")",
         "value_col": [
-        9, 
+        9,
         2,
         3,
         4,
@@ -3020,13 +3020,13 @@
        	"Waikato",
        	"Wellington",
        	"West Coast"
-        
+
         ],
         "filename": "region-mean-rents.csv",
         "load_function": "read_from_csv",
         "data_type": "TimeSeries",
-        "group_names": 
-        [ 
+        "group_names":
+        [
        "National",
         "Auckland",
        "Bay of Plenty",
@@ -3056,15 +3056,15 @@
         "function (x) ",
         "as.Date(x, format = \"%d/%m/%y\")"
         ],
-        
+
         "value_col": [
-    
+
         2,
         3,
         4,
         5
-    
-        
+
+
         ],
         "value_names": [
          "Total",
@@ -3075,13 +3075,13 @@
         "filename": "Employment-indicators-weekly-paid-jobs-34-days.csv",
         "load_function": "read_employment_paid_jobs_data",
         "data_type": "TimeSeries",
-        "group_names": 
-        [ 
+        "group_names":
+        [
         "Total",
         "Primary",
         "Goods Producing",
         "Services"
-        
+
         ]
     },
       {
@@ -3090,7 +3090,7 @@
         "type": "COVID-19",
         "parameter_col": 1,
         "value_col": [2],
-        "value_names": ["Current - 07 October 2020"],
+        "value_names": ["Current - 11 October 2020"],
         "sheet_number": 1,
         "filename": "COVID 19 - MoH Border Control insights.xlsx",
         "parameter_transform": "function (x) x",
@@ -3104,15 +3104,15 @@
         "indicator_name": "New Zealand Activity Index (NZAC)",
         "type": "Activity",
         "parameter_col": 1,
-        "value_col": 
-        [2, 
+        "value_col":
+        [2,
          4,
          5,
          6,
          7,
-         8, 
+         8,
          9
-         
+
          ],
         "value_names": [
           "New Zealand Activity Index (NZAC)",
@@ -3122,7 +3122,7 @@
            "NZAC component - New jobs posted onlne",
           "NZAC component - Traffic index (heavy)",
           "NZAC component - Traffic index (light)"
-          
+
         ],
         "sheet_number": 1,
         "filename": "NZAC portal data.xlsx",
@@ -3810,16 +3810,16 @@
   "parameter_col": 1,
   "parameter_transform": [
     "function (x) dmy(x)"   ],
-  
+
   "value_col": [
-    
+
     2,
     3,
     4,
     5,
     6
-    
-    
+
+
     ],
   "value_names": [
     "Dependant",
@@ -3831,14 +3831,14 @@
   "filename": "Population_by_Visa_Type_and_Application_Substream_Students.csv",
   "load_function": "read_from_csv",
   "data_type": "TimeSeries",
-  "group_names": 
-    [ 
+  "group_names":
+    [
       "Dependant",
       "Exchange student",
       "Fee paying",
       "Other",
       "Total"
-      
+
       ]
 },
 {
@@ -3849,7 +3849,7 @@
   "parameter_col": 1,
   "parameter_transform": [
     "function (x) dmy(x)"   ],
-  
+
   "value_col": [
     2,
     3,
@@ -3857,7 +3857,7 @@
     5,
     6,
     7
-    
+
     ],
   "value_names": [
     "Essential skills",
@@ -3866,20 +3866,20 @@
     "Other",
     "Working holiday scheme",
     "Total"
-    
+
     ],
   "filename": "Population_by_Visa_Type_and_Application_Substream_Work.csv",
   "load_function": "read_from_csv",
   "data_type": "TimeSeries",
-  "group_names": 
-    [ 
+  "group_names":
+    [
      "Essential skills",
     "Family",
     "Recognised seasonal employer",
     "Other",
     "Working holiday scheme",
     "Total"
-    
+
       ]
  },
  {
@@ -3893,7 +3893,7 @@
     ],
     "sheet_number": 2,
     "value_col": [
-    6,  
+    6,
     7,
     8,
     9,
@@ -3928,7 +3928,7 @@
     ],
     "sheet_number": 1,
     "value_col": [
-        6,  
+        6,
         7,
         8,
         9,
@@ -3981,8 +3981,8 @@
         16
         ],
     "value_names": [
-       "Auckland",	
-       "Bay of Plenty",	
+       "Auckland",
+       "Bay of Plenty",
        "Canterbury",
        "Gisborne",
        "Hawke's Bay",
@@ -4001,8 +4001,8 @@
     "load_function": "electricity_grid_by_region_data",
     "data_type": "TimeSeries",
     "group_names": [
-       "Auckland",	
-       "Bay of Plenty",	
+       "Auckland",
+       "Bay of Plenty",
        "Canterbury",
        "Gisborne",
        "Hawke's Bay",
@@ -4017,7 +4017,7 @@
        "Wellington",
        "West Coast"
       ]
-    },   
+    },
     {
       "class": "Social",
       "type": "Social connection",
@@ -4146,7 +4146,7 @@
         "Sales, retail, marketing & advertising",
         "Other"
       ],
-      "group_names": [  
+      "group_names": [
         "Accounting, HR, legal and admin",
         "Construction and engineering",
         "Education & training",
@@ -4280,6 +4280,24 @@
     "sheet_number": 9,
     "value_col": 5,
     "value_names": "Amount of wage subsidy refunds received",
+    "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "load_function": "read_from_excel",
+    "data_type": "TimeSeries",
+    "group_names": "undefined_name"
+    },
+
+    {
+    "class": "Income support",
+    "indicator_name": "Number of jobs supported by the wage subsidy extension",
+    "type": "Wage subsidy assistance",
+    "parameter_col": 1,
+    "parameter_transform": [
+    "function (x) ",
+    "as.Date(x, format = \"%d/%m/%y\")"
+    ],
+    "sheet_number": 9,
+    "value_col": 6,
+    "value_names": "Number of jobs supported by the wage subsidy extension",
     "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
@@ -4506,12 +4524,189 @@
        "65+ years"
       ]
     },
+
+	 {
+    "class": "Income support",
+    "indicator_name": "Income relief payment by gender",
+    "type": "Income relief payment",
+    "parameter_col": 1,
+    "parameter_transform": [
+      "function (x) ymd(x)"
+      ],
+    "sheet_number":10,
+    "value_col": [
+         2,
+         3,
+         4,
+         5
+         ],
+    "value_names": [
+      "Female",
+      "Male",
+      "Gender diverse",
+      "Total"
+        ],
+    "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "load_function": "read_from_excel",
+    "data_type": "TimeSeries",
+    "group_names": [
+       "Female",
+      "Male",
+      "Gender diverse",
+      "Total"
+      ]
+    },
+    {
+    "class": "Income support",
+    "indicator_name": "Income relief payment by ethnicity",
+    "type": "Income relief payment",
+    "parameter_col": 1,
+    "parameter_transform": [
+      "function (x) ymd(x)"
+      ],
+    "sheet_number":11,
+    "value_col": [
+         2,
+         3,
+         4,
+         5,
+         6
+         ],
+    "value_names": [
+      "Māori",
+      "NZ European",
+      "Pacific peoples",
+      "All other ethnicities",
+      "Total"
+        ],
+    "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "load_function": "read_from_excel",
+    "data_type": "TimeSeries",
+    "group_names": [
+         "Māori",
+      "NZ European",
+      "Pacific peoples",
+      "All other ethnicities",
+      "Total"
+      ]
+    },
+
+
+	 {
+    "class": "Income support",
+    "indicator_name": "Income relief payment by relationship",
+    "type": "Income relief payment",
+    "parameter_col": 1,
+    "parameter_transform": [
+      "function (x) ymd(x)"
+      ],
+    "sheet_number":12,
+    "value_col": [
+         2,
+         3,
+         4
+
+         ],
+    "value_names": [
+      "Single",
+      "Couple",
+      "Total"
+        ],
+    "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "load_function": "read_from_excel",
+    "data_type": "TimeSeries",
+    "group_names": [
+       "Single",
+      "Couple",
+      "Total"
+      ]
+    }
+
+    ,
+
+	 {
+    "class": "Income support",
+    "indicator_name": "Number of jobs supported",
+    "type": "Wage subsidy assistance",
+    "parameter_col": 1,
+    "parameter_transform": [
+      "function (x) ymd(x)"
+      ],
+    "sheet_number":13,
+    "value_col": [
+         2,
+         3,
+         4
+
+         ],
+    "value_names": [
+      "Total number of jobs supported by the wage subsidy scheme",
+      "Number of jobs supported by the wage subsidy",
+      "Number of jobs supported by the wage subsidy extension"
+        ],
+    "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "load_function": "read_from_excel",
+    "data_type": "TimeSeries",
+    "group_names": [
+       "Total",
+      "Number of jobs supported by the wage subsidy",
+      "Number of jobs supported by the wage subsidy extension"
+      ]
+    }
+    ,
+
+	 {
+    "class": "Income support",
+    "indicator_name": "Resurgence wage subsidy",
+    "type": "Resurgence wage subsidy",
+    "parameter_col": 1,
+    "parameter_transform": [
+      "function (x) ymd(x)"
+      ],
+    "sheet_number":14,
+    "value_col": [2],
+    "value_names": [
+      "Amount of applications paid"
+
+        ],
+    "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "load_function": "read_from_excel",
+    "data_type": "TimeSeries",
+    "group_names": [
+      "Amount of applications paid"
+      ]
+    }
+    ,
+	 {
+    "class": "Income support",
+    "indicator_name": "Resurgence wage subsidy",
+    "type": "Resurgence wage subsidy",
+    "parameter_col": 1,
+    "parameter_transform": [
+      "function (x) ymd(x)"
+      ],
+    "sheet_number":14,
+    "value_col": [3, 4],
+    "value_names": [
+      "Number of jobs supported by the resurgence wage subsidy",
+      "Number of jobs associated with a paid applicaton"
+
+        ],
+    "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "load_function": "read_from_excel",
+    "data_type": "TimeSeries",
+    "group_names": [
+      "Number of jobs supported"
+      ]
+    }
+
+    ,
     {
     "class": "Income support",
     "indicator_name": "Number of recipients of CIRP by territorial authority",
     "type": "Income relief payment",
     "parameter_col": 1,
-    "parameter_transform": 
+    "parameter_transform":
     "function (x) ymd(x)",
     "sheet_number":8,
 		"value_col": [
@@ -4551,7 +4746,7 @@
     	 35,
     	 36,
     	 37,
-    	 38, 
+    	 38,
     	 39,
     	 40,
     	 41,
@@ -4581,148 +4776,151 @@
     	 65,
     	 66,
     	 67,
-    	 68
+    	 68,
+    	 69
     ],
 		 "value_names": [
-		 "Ashburton District", 
-		 "Auckland City", 
-		 "Buller District", 
-		 "Carterton District", 
-		 "Central Hawke's Bay District", 
-		 "Central Otago District", 
-		 "Christchurch City", 
-		 "Clutha District", 
-		 "Dunedin City", 
-		 "Far North District", 
-		 "Gisborne District", 
-		 "Gore District", 
-		 "Grey District", 
-		 "Hamilton City", 
-		 "Hastings District", 
-		 "Hauraki District", 
-		 "Horowhenua District", 
-		 "Hurunui District", 
-		 "Invercargill City", 
-		 "Kaikōura District", 
-		 "Kaipara District", 
-		 "Kāpiti Coast District", 
-		 "Kawerau District", 
-		 "Lower Hutt City", 
-		 "Mackenzie District", 
-		 "Manawatū District", 
-		 "Marlborough District", 
-		 "Masterton District", 
-		 "Matamata-Piako District", 
-		 "Napier City", 
-		 "Nelson City", 
-		 "New Plymouth District", 
-		 "Ōpōtiki District", 
-		 "Ōtorohanga District", 
-		 "Palmerston North City", 
-		 "Porirua City", 
-		 "Queenstown-Lakes District", 
-		 "Rangitīkei District", 
-		 "Rotorua District", 
-		 "Ruapehu District", 
-		 "Selwyn District", 
-		 "South Taranaki District", 
-		 "South Waikato District", 
-		 "South Wairarapa District", 
-		 "Southland District", 
-		 "Stratford District", 
-		 "Tararua District", 
-		 "Tasman District", 
-		 "Taupō District", 
-		 "Tauranga City", 
-		 "Thames-Coromandel District", 
-		 "Timaru District", 
-		 "Upper Hutt City", 
-		 "Waikato District", 
-		 "Waimakariri District", 
-		 "Waimate District", 
-		 "Waipā District", 
-		 "Wairoa District", 
-		 "Waitaki District", 
-		 "Waitomo District", 
-		 "Wellington City", 
-		 "Western Bay Of Plenty District", 
-		 "Westland District", 
-		 "Whakatāne District", 
-		 "Whanganui District", 
-		 "Whangārei District", 
-		 "Other/Unknown"
+		 "Ashburton District",
+		 "Auckland City",
+		 "Buller District",
+		 "Carterton District",
+		 "Central Hawke's Bay District",
+		 "Central Otago District",
+		 "Christchurch City",
+		 "Clutha District",
+		 "Dunedin City",
+		 "Far North District",
+		 "Gisborne District",
+		 "Gore District",
+		 "Grey District",
+		 "Hamilton City",
+		 "Hastings District",
+		 "Hauraki District",
+		 "Horowhenua District",
+		 "Hurunui District",
+		 "Invercargill City",
+		 "Kaikōura District",
+		 "Kaipara District",
+		 "Kāpiti Coast District",
+		 "Kawerau District",
+		 "Lower Hutt City",
+		 "Mackenzie District",
+		 "Manawatū District",
+		 "Marlborough District",
+		 "Masterton District",
+		 "Matamata-Piako District",
+		 "Napier City",
+		 "Nelson City",
+		 "New Plymouth District",
+		 "Ōpōtiki District",
+		 "Ōtorohanga District",
+		 "Palmerston North City",
+		 "Porirua City",
+		 "Queenstown-Lakes District",
+		 "Rangitīkei District",
+		 "Rotorua District",
+		 "Ruapehu District",
+		 "Selwyn District",
+		 "South Taranaki District",
+		 "South Waikato District",
+		 "South Wairarapa District",
+		 "Southland District",
+		 "Stratford District",
+		 "Tararua District",
+		 "Tasman District",
+		 "Taupō District",
+		 "Tauranga City",
+		 "Thames-Coromandel District",
+		 "Timaru District",
+		 "Upper Hutt City",
+		 "Waikato District",
+		 "Waimakariri District",
+		 "Waimate District",
+		 "Waipā District",
+		 "Wairoa District",
+		 "Waitaki District",
+		 "Waitomo District",
+		 "Wellington City",
+		 "Western Bay Of Plenty District",
+		 "Westland District",
+		 "Whakatāne District",
+		 "Whanganui District",
+		 "Whangārei District",
+		 "Other/Unknown",
+		 "Total"
 		],
 	"filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
   "load_function": "read_from_excel",
   "data_type": "TimeSeries",
   "group_names": [
-	   "Ashburton District", 
-		 "Auckland City", 
-		 "Buller District", 
-		 "Carterton District", 
-		 "Central Hawke's Bay District", 
-		 "Central Otago District", 
-		 "Christchurch City", 
-		 "Clutha District", 
-		 "Dunedin City", 
-		 "Far North District", 
-		 "Gisborne District", 
-		 "Gore District", 
-		 "Grey District", 
-		 "Hamilton City", 
-		 "Hastings District", 
-		 "Hauraki District", 
-		 "Horowhenua District", 
-		 "Hurunui District", 
-		 "Invercargill City", 
-		 "Kaikōura District", 
-		 "Kaipara District", 
-		 "Kāpiti Coast District", 
-		 "Kawerau District", 
-		 "Lower Hutt City", 
-		 "Mackenzie District", 
-		 "Manawatū District", 
-		 "Marlborough District", 
-		 "Masterton District", 
-		 "Matamata-Piako District", 
-		 "Napier City", 
-		 "Nelson City", 
-		 "New Plymouth District", 
-		 "Ōpōtiki District", 
-		 "Ōtorohanga District", 
-		 "Palmerston North City", 
-		 "Porirua City", 
-		 "Queenstown-Lakes District", 
-		 "Rangitīkei District", 
-		 "Rotorua District", 
-		 "Ruapehu District", 
-		 "Selwyn District", 
-		 "South Taranaki District", 
-		 "South Waikato District", 
-		 "South Wairarapa District", 
-		 "Southland District", 
-		 "Stratford District", 
-		 "Tararua District", 
-		 "Tasman District", 
-		 "Taupō District", 
-		 "Tauranga City", 
-		 "Thames-Coromandel District", 
-		 "Timaru District", 
-		 "Upper Hutt City", 
-		 "Waikato District", 
-		 "Waimakariri District", 
-		 "Waimate District", 
-		 "Waipā District", 
-		 "Wairoa District", 
-		 "Waitaki District", 
-		 "Waitomo District", 
-		 "Wellington City", 
-		 "Western Bay Of Plenty District", 
-		 "Westland District", 
-		 "Whakatāne District", 
-		 "Whanganui District", 
-		 "Whangārei District", 
-		 "Other/Unknown"
+	   "Ashburton District",
+		 "Auckland City",
+		 "Buller District",
+		 "Carterton District",
+		 "Central Hawke's Bay District",
+		 "Central Otago District",
+		 "Christchurch City",
+		 "Clutha District",
+		 "Dunedin City",
+		 "Far North District",
+		 "Gisborne District",
+		 "Gore District",
+		 "Grey District",
+		 "Hamilton City",
+		 "Hastings District",
+		 "Hauraki District",
+		 "Horowhenua District",
+		 "Hurunui District",
+		 "Invercargill City",
+		 "Kaikōura District",
+		 "Kaipara District",
+		 "Kāpiti Coast District",
+		 "Kawerau District",
+		 "Lower Hutt City",
+		 "Mackenzie District",
+		 "Manawatū District",
+		 "Marlborough District",
+		 "Masterton District",
+		 "Matamata-Piako District",
+		 "Napier City",
+		 "Nelson City",
+		 "New Plymouth District",
+		 "Ōpōtiki District",
+		 "Ōtorohanga District",
+		 "Palmerston North City",
+		 "Porirua City",
+		 "Queenstown-Lakes District",
+		 "Rangitīkei District",
+		 "Rotorua District",
+		 "Ruapehu District",
+		 "Selwyn District",
+		 "South Taranaki District",
+		 "South Waikato District",
+		 "South Wairarapa District",
+		 "Southland District",
+		 "Stratford District",
+		 "Tararua District",
+		 "Tasman District",
+		 "Taupō District",
+		 "Tauranga City",
+		 "Thames-Coromandel District",
+		 "Timaru District",
+		 "Upper Hutt City",
+		 "Waikato District",
+		 "Waimakariri District",
+		 "Waimate District",
+		 "Waipā District",
+		 "Wairoa District",
+		 "Waitaki District",
+		 "Waitomo District",
+		 "Wellington City",
+		 "Western Bay Of Plenty District",
+		 "Westland District",
+		 "Whakatāne District",
+		 "Whanganui District",
+		 "Whangārei District",
+		 "Other/Unknown",
+		 "Total"
 		 ]
 		},
 		{
@@ -4739,7 +4937,7 @@
       "parameter_transform": "function (x) x",
       "load_function": "read_from_excel",
       "data_type": "BarChart"
-       
+
      },
      {
       "class": "Social",
@@ -4837,10 +5035,10 @@
         "indicator_name": "Broadband usage by region",
         "type": "Activity",
        "parameter_col": 1,
-   
+
        "parameter_transform": [
         "function (x) ymd(x)"
-        
+
         ],
         "sheet_number": 1,
         "value_col": [
@@ -4859,13 +5057,13 @@
         14,
         15,
         16
-        
-        
+
+
         ],
         "value_names": [
           "Total",
-         "Auckland",	
-         "Bay of Plenty",	
+         "Auckland",
+         "Bay of Plenty",
          "Canterbury",
          "Gisborne",
          "Hawke's Bay",
@@ -4885,8 +5083,8 @@
         "data_type": "TimeSeries",
         "group_names": [
           "Total",
-         "Auckland",	
-         "Bay of Plenty",	
+         "Auckland",
+         "Bay of Plenty",
          "Canterbury",
          "Gisborne",
          "Hawke's Bay",
@@ -4928,7 +5126,7 @@
     ],
     "value_names": [
       "Total New Zealand",
-      "Northland",      
+      "Northland",
       "Auckland",
       "Waikato",
       "Bay of Plenty",
@@ -4947,7 +5145,7 @@
       ],
     "group_names": [
       "Total New Zealand",
-      "Northland",      
+      "Northland",
       "Auckland",
       "Waikato",
       "Bay of Plenty",
@@ -4997,7 +5195,7 @@
     ],
     "value_names": [
       "Total New Zealand",
-      "Northland",      
+      "Northland",
       "Auckland",
       "Waikato",
       "Bay of Plenty",
@@ -5016,7 +5214,7 @@
       ],
     "group_names": [
       "Total New Zealand",
-      "Northland",      
+      "Northland",
       "Auckland",
       "Waikato",
       "Bay of Plenty",
@@ -5212,15 +5410,15 @@
     "function (x) ",
     "as.Date(x, format = \"%d/%m/%y\")"
     ],
-  
+
   "value_col": [
-    
+
     2,
     3,
     4,
     5
-    
-    
+
+
     ],
   "value_names": [
     "Total",
@@ -5231,13 +5429,13 @@
   "filename": "Employment-indicators-weekly-paid-jobs-34-days.csv",
   "load_function": "read_employment_paid_jobs_data",
   "data_type": "TimeSeries",
-  "group_names": 
-    [ 
+  "group_names":
+    [
       "Total",
       "Primary",
       "Goods Producing",
       "Services"
-      
+
       ]
 }
 

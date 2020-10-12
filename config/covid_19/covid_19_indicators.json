@@ -675,7 +675,7 @@
     "include_date_slider": true,
     "default_lower_range": "2019-01-01",
     "caveats":" <p>Data for September 2020 is preliminary.</p>",
-    
+
     "source_url": "https://www.anz.co.nz/about-us/economic-markets-research/business-outlook/",
     "download": false,
     "groups": [
@@ -740,7 +740,7 @@
     "include_date_slider": true,
     "default_lower_range": "2019-01-01",
     "caveats":" <p>Data for September 2020 is preliminary.</p>",
-  
+
     "source_url": "https://www.anz.co.nz/about-us/economic-markets-research/business-outlook/",
     "download": false,
     "groups": [
@@ -1437,7 +1437,7 @@
         "source": "Center for System Science and Engineering, Johns Hopkins University",
         "source_url": "https://coronavirus.jhu.edu/"
       },
-      
+
       {
         "name": "Australia - ACT",
         "title": "COVID-19 cases in Australia - ACT (cumulative)",
@@ -2251,7 +2251,7 @@
         "title": "Deaths by age and sex (week ended) - Total under 64",
         "units": "Number"
       },
-      
+
       {
         "name": "Female 80 and over",
         "title": "Deaths by age and sex (week ended) - Female 80 and over",
@@ -2286,7 +2286,7 @@
       }
     ]
   },
-  
+
   {
     "class": "Health",
     "indicator_name": "By age",
@@ -2403,7 +2403,7 @@
         "title":"Sea cargo import cost, insurance and freight (CIF) - Lyttelton port",
         "units":"$"
       },
-      
+
       {
         "name": "Export FOB (Port Chalmers)",
         "title":"Sea cargo export free on board (FOB) - Port Chalmers",
@@ -2414,7 +2414,7 @@
         "title":"Sea cargo import cost, insurance and freight (CIF) - Port Chalmers",
         "units":"$"
       },
-      
+
       {
         "name": "Export FOB (Wellington)",
         "title":"Sea cargo export free on board (FOB) - Wellington port",
@@ -2425,7 +2425,7 @@
         "title":"Sea cargo import cost, insurance and freight (CIF) - Wellington port",
         "units":"$"
       },
-      
+
       {
         "name": "Export FOB (Tauranga)",
         "title":"Sea cargo export free on board (FOB) - Tauranga port",
@@ -2591,9 +2591,9 @@
         "title": "Jobseeker support by region - Other ethnicities",
         "units": "Number"
       }
-      
+
     ]
-    
+
   },
   {
   "class": "Income support",
@@ -2665,7 +2665,7 @@
         "title": "Jobseeker support by region - Pacific peoples",
         "units": "Number"
       }
-  
+
   ]
   },
   {
@@ -2738,11 +2738,11 @@
         "title": "Jobseeker support by region - Māori",
         "units": "Number"
       }
-      
+
     ]
-    
+
   },
-  
+
   {
   "class": "Income support",
     "indicator_name": "Jobseeker support by MSD region - NZ European",
@@ -2813,9 +2813,9 @@
         "title": "Jobseeker support by region - NZ European",
         "units": "Number"
       }
-      
+
     ]
-    
+
   },
   {
   "class": "Income support",
@@ -2852,8 +2852,8 @@
         "title": "Number on jobseeker support for all other ethnicities - work ready",
         "units": "Number"
       }
-      
-      
+
+
       ]
   },
   {
@@ -2926,9 +2926,9 @@
         "title": "Number on accommodation supplement - Other region",
         "units": "Number"
       }
-      
+
     ]
-    
+
   },
     {
     "class": "Health",
@@ -3193,7 +3193,7 @@
         "title": "Jobseeker support by territorial authority - Tararua District",
         "units": "Number"
       },
-  
+
       {
         "name": "Tasman District",
         "title": "Jobseeker support by territorial authority - Tasman District",
@@ -3294,10 +3294,10 @@
         "title": "Jobseeker support by territorial authority - Unknown/Other*",
         "units": "Number"
       }
-      
-      
+
+
     ]
-    
+
   },
 {
   "class": "Economic",
@@ -3315,16 +3315,16 @@
       "units": "$"
     },
 
-   
+
     {
       "name": "Total loan applications received (cumulative)",
       "title": "Total Loan applications received (cumulative)",
       "units": "Number"
     }
-    
-   
-    
-    
+
+
+
+
     ]
 },
 {
@@ -3430,7 +3430,7 @@
     "plot_function": "get_time_series_plot",
     "international": false,
     "include_date_slider": true,
-    
+
     "source_url": "https://www.rbnz.govt.nz/statistics",
     "download": true,
     "caveats":"<p>1) Individual figures may not sum to the totals due to rounding.</p><p>2) Percentage changes are calculated on unrounded numbers.</p>",
@@ -3450,7 +3450,7 @@
     "plot_function": "get_time_series_plot",
     "international": false,
     "include_date_slider": true,
-    
+
     "source_url": "https://www.rbnz.govt.nz/statistics",
     "download": true,
     "caveats":"<p>1) Individual figures may not sum to the totals due to rounding.</p><p>2) Percentage changes are calculated on unrounded numbers.</p><p>",
@@ -3490,7 +3490,7 @@
     "international": false,
     "include_date_slider": true,
     "default_lower_range":"2019-09-01",
-    
+
     "source_url": "https://www.firstgas.co.nz",
     "download": false,
      "caveats":"<p>1) Please note that these charts are Stats NZ's interpretation of publicly available data specific to several large gas users as sourced from First Gas.</p><p>2) It is not designed to be a comprehensive representation of all gas use in New Zealand, nor is all data publicly available due to some gas being transported through private pipelines.</p><p>3) Gas consumption patterns are inclusive of planned and unplanned production outages.</p>",
@@ -3525,7 +3525,7 @@
         "title": "Daily gas consumption - Te Rapa cogeneration plant",
         "units": "Gigajoules"
       }
-       
+
     ]
 },
 {
@@ -3537,13 +3537,13 @@
     "international": false,
     "include_date_slider": true,
     "default_lower_range":"2019-09-01",
-    
+
     "source_url": "https://www.firstgas.co.nz",
     "download": false,
     "caveats":"<p>1) Please note that these charts are Stats NZ's interpretation of publicly available data specific to several large gas users as sourced from First Gas.</p><p>2) It is not designed to be a comprehensive representation of all gas use in New Zealand, nor is all data publicly available due to some gas being transported through private pipelines.</p><p>3) Gas consumption patterns are inclusive of planned and unplanned production outages.</p>",
     "groups": [
-      
-     
+
+
       {
         "name": "Ballance Agri-Nutrients",
         "title": "Daily gas consumption - Ballance Agri-Nutrients",
@@ -3569,8 +3569,8 @@
         "title": "Daily gas consumption - Marsden Point oil refinery",
         "units": "Gigajoules"
       }
-       
-       
+
+
     ]
 },
 {
@@ -3582,12 +3582,12 @@
     "international": false,
     "include_date_slider": true,
     "default_lower_range":"2018-01-01",
-    
+
     "source_url": "https://www.mbie.govt.nz/building-and-energy/tenancy-and-housing/rental-bond-data/",
     "download": true,
     "groups": [
-      
-     
+
+
       {
         "name": "National",
         "title": "Active bonds - National",
@@ -3675,7 +3675,7 @@
         "title": "Active bonds by region - West Coast",
         "units": "$"
       }
-       
+
     ]
 },
 {
@@ -3687,12 +3687,12 @@
     "international": false,
     "include_date_slider": true,
     "default_lower_range":"2018-01-01",
-    
+
     "source_url": "https://www.mbie.govt.nz/building-and-energy/tenancy-and-housing/rental-bond-data/",
     "download": true,
     "groups": [
-      
-     
+
+
       {
         "name": "National",
         "title": "Closed bonds - National",
@@ -3780,7 +3780,7 @@
         "title": "Closed bonds by region - West Coast",
         "units": "$"
       }
-       
+
     ]
 },
 {
@@ -3792,12 +3792,12 @@
     "international": false,
     "include_date_slider": true,
     "default_lower_range":"2018-01-01",
-    
+
     "source_url": "https://www.mbie.govt.nz/building-and-energy/tenancy-and-housing/rental-bond-data/",
     "download": true,
     "groups": [
-      
-     
+
+
       {
         "name": "National",
         "title": "Lodged bonds - National",
@@ -3885,7 +3885,7 @@
         "title": "Lodged bonds by region - West Coast",
         "units": "$"
       }
-       
+
     ]
 },
 {
@@ -3897,12 +3897,12 @@
     "international": false,
     "include_date_slider": true,
     "default_lower_range":"2018-01-01",
-    
+
     "source_url": "https://www.mbie.govt.nz/building-and-energy/tenancy-and-housing/rental-bond-data/",
     "download": true,
     "groups": [
-      
-     
+
+
       {
         "name": "National",
         "title": "Weekly mean rent - National",
@@ -3990,7 +3990,7 @@
         "title": "Weekly mean rent - West Coast",
         "units": "$"
       }
-       
+
     ]
 },
 {
@@ -4003,7 +4003,7 @@
     "include_date_slider": true,
     "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-weekly-as-at-5-october-2020",
     "download": true,
-   
+
     "groups": [
       {
         "name": "Total",
@@ -4023,10 +4023,10 @@
         "title": "Number of paid jobs for Services industries - 34 days",
         "units": "Number"
       }
-       
+
     ]
 },
- 
+
   {
     "class": "Health",
     "indicator_name": "Quarantine and managed isolation figures",
@@ -4063,7 +4063,7 @@
             "name": "New Zealand Activity Index (NZAC)",
             "title": "New Zealand Activity Index - monthly",
             "units": ["Annual % change"]
-        },        
+        },
 
          {
             "name": "NZAC component - Card transaction spend",
@@ -4086,7 +4086,7 @@
             "title": "Annual percentage change SEEK new job advertisement index - seasonally adjusted",
             "units": ["Annual % change"]
         },
-         
+
         {
             "name": "NZAC component - Traffic index (heavy)",
             "title": "Annual percentage change ANZ New Zealand Truckometer heavy vehicles - seasonally adjusted",
@@ -4199,7 +4199,7 @@
         "title": "Number of special needs grants for food - Other",
         "units": "Number"
       }
-      
+
     ]
   }
   ,
@@ -4303,7 +4303,7 @@
         "title": "Number on jobseeker support - Other",
         "units": "Number"
       }
-      
+
     ]
   }
   ,
@@ -4407,7 +4407,7 @@
         "title": "Number on jobseeker support (Maori) - Other",
         "units": "Number"
       }
-       
+
     ]
   }
   ,
@@ -4511,7 +4511,7 @@
         "title": "Number on jobseeker support (NZ European) - Other",
         "units": "Number"
       }
-       
+
     ]
   },
   {
@@ -4524,7 +4524,7 @@
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
     "groups": [
-      
+
        {
         "name": "Total",
         "title": "Number on jobseeker support (Pacific peoples) - Total",
@@ -4718,10 +4718,10 @@
         "title": "Number on jobseeker support (Other ethnicities) - Other",
         "units": "Number"
       }
-       
+
     ]
   },
-  
+
 
 {
   "class": "Economic",
@@ -4734,7 +4734,7 @@
   "default_lower_range": "2018-02-01",
   "source_url": "https://mbienz.shinyapps.io/migration_data_explorer/",
   "download": true,
-  
+
   "groups": [
     {
       "name": "Total",
@@ -4759,7 +4759,7 @@
       "title": "Number of people on other student visa",
       "units": "Number"
     }
-    
+
     ]
 }
 ,
@@ -4774,41 +4774,41 @@
   "default_lower_range": "2018-02-01",
   "source_url": "https://mbienz.shinyapps.io/migration_data_explorer/",
   "download": true,
-  
+
   "groups": [
      {
       "name": "Total",
       "title": "Total number of people on work visa",
       "units": "Number"
-    }, 
+    },
     {
       "name": "Essential skills",
       "title": "Number of people on essential skills visa",
       "units": "Number"
-    },  
+    },
     {
       "name": "Family",
       "title": "Number of people on family visa",
       "units": "Number"
-    },  
+    },
     {
       "name": "Recognised seasonal employer",
       "title": "Number of people on recognised seasonal employer visa",
       "units": "Number"
-    } ,  
+    } ,
     {
       "name": "Working holiday scheme",
       "title": "Number of people on working holiday scheme visa",
       "units": "Number"
-    },  
-    
+    },
+
     {
       "name": "Other",
       "title": "Number of people on other visa",
       "units": "Number"
     }
-    
-    
+
+
     ]
 },
 
@@ -4829,7 +4829,7 @@
         "title": "Daily border crossings for all passports (Auckland airport) - departures",
         "units": "Number"
       },
-     
+
       {
         "name": "Christchurch",
         "title": "Daily border crossings for all passports (Christchurch airport) - departures",
@@ -4869,7 +4869,7 @@
         "title": "Daily border crossings for all passports (Auckland airport) - arrivals",
         "units": "Number"
       },
-     
+
       {
         "name": "Christchurch",
         "title": "Daily border crossings for all passports (Christchurch airport) - arrivals",
@@ -4926,7 +4926,7 @@
         "title": "Daily electricity grid demand (final pricing) - Gisborne",
         "units": "Gigawatt hours"
       },
-      
+
       {
         "name": "Hawke's Bay",
         "title": "Daily electricity grid demand (final pricing) - Hawke's Bay",
@@ -4977,19 +4977,19 @@
         "title": "Daily electricity grid demand (final pricing) - Waikato",
         "units": "Gigawatt hours"
       }
-      , 
+      ,
       {
         "name": "Wellington",
         "title": "Daily electricity grid demand (final pricing) - Wellington",
         "units": "Gigawatt hours"
-      } , 
+      } ,
       {
         "name": "West Coast",
         "title": "Daily electricity grid demand (final pricing) - West Coast",
         "units": "Gigawatt hours"
       }
-      
-      
+
+
       ]
    },
    {
@@ -5106,7 +5106,7 @@
         "title": "Monthly online job advertisements index by region - South Island (Other)"
       }
     ]
-  }, 
+  },
   {
     "class": "Economic",
     "type": "Employment",
@@ -5171,7 +5171,7 @@
       }
     ]
   },
-  
+
 	{
     "class": "Income support",
     "indicator_name": "Number of recipients of CIRP",
@@ -5181,7 +5181,7 @@
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
-    "caveats":"<p> *Number of grants include suspensions and cancellations</p><p> **Transfers to CIRP from Jobseeker Support are cumulative counts of people granted CIRP, who were recently in receipt (or a partner of a primary recipient) of Jobseeker Support.</p>" , 
+    "caveats":"<p> *Number of grants include suspensions and cancellations</p><p> **Transfers to CIRP from Jobseeker Support are cumulative counts of people granted CIRP, who were recently in receipt (or a partner of a primary recipient) of Jobseeker Support.</p>" ,
     "groups": [
       {
         "name": "undefined_name",
@@ -5190,8 +5190,8 @@
       }
     ]
   },
-	
-	
+
+
    {
     "class": "Income support",
     "indicator_name": "Number of recipients of CIRP by region",
@@ -5201,7 +5201,7 @@
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
-   
+
     "groups": [
       {
         "name": "Total",
@@ -5315,6 +5315,24 @@
   ,
   {
     "class": "Income support",
+    "indicator_name": "Number of jobs supported by the wage subsidy extension",
+    "type": "Wage subsidy assistance",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "undefined_name",
+        "title": "Number of jobs supported by the wage subsidy extension",
+        "units": "Number"
+      }
+    ]
+  }
+  ,
+  {
+    "class": "Income support",
     "indicator_name": "Number of wage subsidy refunds received",
     "type": "Wage subsidy assistance",
     "source": "Ministry of Social Development",
@@ -5366,8 +5384,8 @@
       }
     ]
   },
-  
-	
+
+
   {
     "class": "Income support",
     "indicator_name": "Jobseeker support",
@@ -5385,8 +5403,8 @@
       }
     ]
   },
-  
-  
+
+
    {
     "class": "Income support",
     "indicator_name": "Percentage of population",
@@ -5455,10 +5473,164 @@
       }
     ]
   },
-  
-  
-	
-	
+
+  {
+    "class": "Income support",
+    "indicator_name": "Income relief payment by gender",
+    "type": "Income relief payment",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_stacked_bar_chart",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "Total",
+        "title": "Total number of recipients of CIRP by gender",
+        "units": "Number"
+      },
+	  {
+        "name": "Female",
+        "title": "Number of recipients of CIRP by gender - Female",
+        "units": "Number"
+      },
+	  {
+        "name": "Male",
+        "title": "Number of recipients of CIRP by gender - Male",
+        "units": "Number"
+      },
+	  {
+         "name":  "Gender diverse",
+        "title": "Number of recipients of CIRP by gender - Gender diverse",
+        "units": "Number"
+      }
+    ]
+  },
+
+  {
+    "class": "Income support",
+    "indicator_name": "Income relief payment by relationship",
+    "type": "Income relief payment",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_stacked_bar_chart",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "Total",
+        "title": "Total number of recipients of CIRP by relationship",
+        "units": "Number"
+      },
+	  {
+        "name": "Single",
+        "title": "Number of recipients of CIRP by relationship - Single",
+        "units": "Number"
+      },
+	  {
+        "name": "Couple",
+        "title": "Number of recipients of CIRP by relationship - Couple",
+        "units": "Number"
+      }
+
+    ]
+  },
+
+
+  {
+    "class": "Income support",
+   "indicator_name": "Number of jobs supported",
+    "type": "Wage subsidy assistance",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "Total",
+        "title": "Total number of jobs supported by the wage subsidy scheme",
+        "units": "Number"
+      },
+	  {
+        "name":  "Number of jobs supported by the wage subsidy",
+        "title":  "Number of jobs supported by the wage subsidy",
+        "units": "Number"
+      },
+	  {
+        "name": "Number of jobs supported by the wage subsidy extension",
+        "title": "Number of jobs supported by the wage subsidy extension",
+        "units": "Number"
+      }
+
+    ]
+  },
+
+  {
+    "class": "Income support",
+     "indicator_name": "Resurgence wage subsidy",
+    "type": "Resurgence wage subsidy",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_stacked_bar_chart",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "Amount of applications paid",
+        "title": "Total amount of applications paid - resurgence wage subsidy",
+        "units": "$"
+      },
+	  {
+        "name":  "Number of jobs supported",
+        "title": "Number of jobs supported by the resurgence wage subsidy",
+         "plot_function": "get_stacked_bar_chart",
+        "units": "Number"
+      }
+
+    ]
+  },
+
+	 {
+    "class": "Income support",
+    "indicator_name": "Income relief payment by ethnicity",
+    "type": "Income relief payment",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_stacked_bar_chart",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name": "Total",
+        "title": "Total number of recipients of CIRP by ethnicity",
+        "units": "Number"
+      },
+	  {
+        "name":  "Māori",
+        "title": "Number of recipients of CIRP by ethnicity - Māori",
+        "units": "Number"
+      },
+	  {
+        "name":  "NZ European",
+        "title": "Number of recipients of CIRP by ethnicity - NZ European",
+        "units": "Number"
+      },
+	  {
+         "name":  "Pacific peoples",
+        "title": "Number of recipients of CIRP by ethnicity - Pacific peoples",
+        "units": "Number"
+      },
+	  {
+         "name":"All other ethnicities",
+        "title": "Number of recipients of CIRP by ethnicity - All other ethnicities",
+        "units": "Number"
+      }
+    ]
+  },
+
+
+
   {
     "class": "Income support",
     "indicator_name": "Number of recipients of CIRP by age group",
@@ -5536,340 +5708,345 @@
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
 	"groups": [
-		{ 
-		 "name": "Ashburton District", 
+		{
+		 "name": "Total",
+		 "title": "Number of recipients of CIRP by territorial authority - Total",
+		 "units": "Number"
+		},
+		{
+		 "name": "Ashburton District",
 		 "title": "Number of recipients of CIRP by territorial authority - Ashburton District",
-		 "units": "Number" 
-		}, 
-		{ 
-		 "name": "Auckland City", 
-		 "title": "Number of recipients of CIRP by territorial authority - Auckland City", 
-		 "units": "Number" 
-		}, 
-	  { 
-		 "name": "Buller District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Buller District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Carterton District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Carterton District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Central Hawke's Bay District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Central Hawke's Bay District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Central Otago District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Central Otago District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Christchurch City", 
-		 "title": "Number of recipients of CIRP by territorial authority - Christchurch City", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Clutha District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Clutha District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Dunedin City", 
-		 "title": "Number of recipients of CIRP by territorial authority - Dunedin City", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Far North District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Far North District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Gisborne District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Gisborne District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Gore District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Gore District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Grey District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Grey District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Hamilton City", 
-		 "title": "Number of recipients of CIRP by territorial authority - Hamilton City", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Hastings District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Hastings District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Hauraki District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Hauraki District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Horowhenua District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Horowhenua District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Hurunui District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Hurunui District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Invercargill City", 
-		 "title": "Number of recipients of CIRP by territorial authority - Invercargill City", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Kaikōura District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Kaikōura District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Kaipara District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Kaipara District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Kāpiti Coast District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Kāpiti Coast District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Kawerau District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Kawerau District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Lower Hutt City", 
-		 "title": "Number of recipients of CIRP by territorial authority - Lower Hutt City", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Mackenzie District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Mackenzie District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Manawatū District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Manawatū District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Marlborough District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Marlborough District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Masterton District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Masterton District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Matamata-Piako District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Matamata-Piako District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Napier City", 
-		 "title": "Number of recipients of CIRP by territorial authority - Napier City", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Nelson City", 
-		 "title": "Number of recipients of CIRP by territorial authority - Nelson City", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "New Plymouth District", 
-		 "title": "Number of recipients of CIRP by territorial authority - New Plymouth District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Ōpōtiki District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Ōpōtiki District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Ōtorohanga District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Ōtorohanga District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Palmerston North City", 
-		 "title": "Number of recipients of CIRP by territorial authority - Palmerston North City", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Porirua City", 
-		 "title": "Number of recipients of CIRP by territorial authority - Porirua City", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Queenstown-Lakes District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Queenstown-Lakes District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Rangitīkei District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Rangitīkei District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Rotorua District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Rotorua District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Ruapehu District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Ruapehu District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Selwyn District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Selwyn District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "South Taranaki District", 
-		 "title": "Number of recipients of CIRP by territorial authority - South Taranaki District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "South Waikato District", 
-		 "title": "Number of recipients of CIRP by territorial authority - South Waikato District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "South Wairarapa District", 
-		 "title": "Number of recipients of CIRP by territorial authority - South Wairarapa District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Southland District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Southland District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Stratford District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Stratford District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Tararua District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Tararua District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Tasman District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Tasman District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Taupō District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Taupō District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Tauranga City", 
-		 "title": "Number of recipients of CIRP by territorial authority - Tauranga City", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Thames-Coromandel District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Thames-Coromandel District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Timaru District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Timaru District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Upper Hutt City", 
-		 "title": "Number of recipients of CIRP by territorial authority - Upper Hutt City", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Waikato District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Waikato District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Waimakariri District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Waimakariri District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Waimate District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Waimate District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Waipā District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Waipā District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Wairoa District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Wairoa District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Waitaki District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Waitaki District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Waitomo District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Waitomo District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Wellington City", 
-		 "title": "Number of recipients of CIRP by territorial authority - Wellington City", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Western Bay Of Plenty District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Western Bay Of Plenty District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Westland District", 
+		 "units": "Number"
+		},
+		{
+		 "name": "Auckland City",
+		 "title": "Number of recipients of CIRP by territorial authority - Auckland City",
+		 "units": "Number"
+		},
+	  {
+		 "name": "Buller District",
+		 "title": "Number of recipients of CIRP by territorial authority - Buller District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Carterton District",
+		 "title": "Number of recipients of CIRP by territorial authority - Carterton District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Central Hawke's Bay District",
+		 "title": "Number of recipients of CIRP by territorial authority - Central Hawke's Bay District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Central Otago District",
+		 "title": "Number of recipients of CIRP by territorial authority - Central Otago District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Christchurch City",
+		 "title": "Number of recipients of CIRP by territorial authority - Christchurch City",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Clutha District",
+		 "title": "Number of recipients of CIRP by territorial authority - Clutha District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Dunedin City",
+		 "title": "Number of recipients of CIRP by territorial authority - Dunedin City",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Far North District",
+		 "title": "Number of recipients of CIRP by territorial authority - Far North District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Gisborne District",
+		 "title": "Number of recipients of CIRP by territorial authority - Gisborne District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Gore District",
+		 "title": "Number of recipients of CIRP by territorial authority - Gore District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Grey District",
+		 "title": "Number of recipients of CIRP by territorial authority - Grey District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Hamilton City",
+		 "title": "Number of recipients of CIRP by territorial authority - Hamilton City",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Hastings District",
+		 "title": "Number of recipients of CIRP by territorial authority - Hastings District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Hauraki District",
+		 "title": "Number of recipients of CIRP by territorial authority - Hauraki District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Horowhenua District",
+		 "title": "Number of recipients of CIRP by territorial authority - Horowhenua District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Hurunui District",
+		 "title": "Number of recipients of CIRP by territorial authority - Hurunui District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Invercargill City",
+		 "title": "Number of recipients of CIRP by territorial authority - Invercargill City",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Kaikōura District",
+		 "title": "Number of recipients of CIRP by territorial authority - Kaikōura District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Kaipara District",
+		 "title": "Number of recipients of CIRP by territorial authority - Kaipara District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Kāpiti Coast District",
+		 "title": "Number of recipients of CIRP by territorial authority - Kāpiti Coast District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Kawerau District",
+		 "title": "Number of recipients of CIRP by territorial authority - Kawerau District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Lower Hutt City",
+		 "title": "Number of recipients of CIRP by territorial authority - Lower Hutt City",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Mackenzie District",
+		 "title": "Number of recipients of CIRP by territorial authority - Mackenzie District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Manawatū District",
+		 "title": "Number of recipients of CIRP by territorial authority - Manawatū District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Marlborough District",
+		 "title": "Number of recipients of CIRP by territorial authority - Marlborough District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Masterton District",
+		 "title": "Number of recipients of CIRP by territorial authority - Masterton District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Matamata-Piako District",
+		 "title": "Number of recipients of CIRP by territorial authority - Matamata-Piako District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Napier City",
+		 "title": "Number of recipients of CIRP by territorial authority - Napier City",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Nelson City",
+		 "title": "Number of recipients of CIRP by territorial authority - Nelson City",
+		 "units": "Number"
+		},
+		  {
+		 "name": "New Plymouth District",
+		 "title": "Number of recipients of CIRP by territorial authority - New Plymouth District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Ōpōtiki District",
+		 "title": "Number of recipients of CIRP by territorial authority - Ōpōtiki District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Ōtorohanga District",
+		 "title": "Number of recipients of CIRP by territorial authority - Ōtorohanga District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Palmerston North City",
+		 "title": "Number of recipients of CIRP by territorial authority - Palmerston North City",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Porirua City",
+		 "title": "Number of recipients of CIRP by territorial authority - Porirua City",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Queenstown-Lakes District",
+		 "title": "Number of recipients of CIRP by territorial authority - Queenstown-Lakes District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Rangitīkei District",
+		 "title": "Number of recipients of CIRP by territorial authority - Rangitīkei District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Rotorua District",
+		 "title": "Number of recipients of CIRP by territorial authority - Rotorua District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Ruapehu District",
+		 "title": "Number of recipients of CIRP by territorial authority - Ruapehu District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Selwyn District",
+		 "title": "Number of recipients of CIRP by territorial authority - Selwyn District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "South Taranaki District",
+		 "title": "Number of recipients of CIRP by territorial authority - South Taranaki District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "South Waikato District",
+		 "title": "Number of recipients of CIRP by territorial authority - South Waikato District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "South Wairarapa District",
+		 "title": "Number of recipients of CIRP by territorial authority - South Wairarapa District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Southland District",
+		 "title": "Number of recipients of CIRP by territorial authority - Southland District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Stratford District",
+		 "title": "Number of recipients of CIRP by territorial authority - Stratford District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Tararua District",
+		 "title": "Number of recipients of CIRP by territorial authority - Tararua District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Tasman District",
+		 "title": "Number of recipients of CIRP by territorial authority - Tasman District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Taupō District",
+		 "title": "Number of recipients of CIRP by territorial authority - Taupō District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Tauranga City",
+		 "title": "Number of recipients of CIRP by territorial authority - Tauranga City",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Thames-Coromandel District",
+		 "title": "Number of recipients of CIRP by territorial authority - Thames-Coromandel District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Timaru District",
+		 "title": "Number of recipients of CIRP by territorial authority - Timaru District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Upper Hutt City",
+		 "title": "Number of recipients of CIRP by territorial authority - Upper Hutt City",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Waikato District",
+		 "title": "Number of recipients of CIRP by territorial authority - Waikato District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Waimakariri District",
+		 "title": "Number of recipients of CIRP by territorial authority - Waimakariri District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Waimate District",
+		 "title": "Number of recipients of CIRP by territorial authority - Waimate District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Waipā District",
+		 "title": "Number of recipients of CIRP by territorial authority - Waipā District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Wairoa District",
+		 "title": "Number of recipients of CIRP by territorial authority - Wairoa District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Waitaki District",
+		 "title": "Number of recipients of CIRP by territorial authority - Waitaki District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Waitomo District",
+		 "title": "Number of recipients of CIRP by territorial authority - Waitomo District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Wellington City",
+		 "title": "Number of recipients of CIRP by territorial authority - Wellington City",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Western Bay Of Plenty District",
+		 "title": "Number of recipients of CIRP by territorial authority - Western Bay Of Plenty District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Westland District",
 		 "title": "Number of recipients of CIRP by territorial authority - Westland District",
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Whakatāne District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Whakatāne District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Whanganui District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Whanganui District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Whangārei District", 
-		 "title": "Number of recipients of CIRP by territorial authority - Whangārei District", 
-		 "units": "Number" 
-		}, 
-		  { 
-		 "name": "Other/Unknown", 
-		 "title": "Number of recipients of CIRP by territorial authority - Other/Unknown", 
-		 "units": "Number" 
+		 "units": "Number"
+		},
+		  {
+		 "name": "Whakatāne District",
+		 "title": "Number of recipients of CIRP by territorial authority - Whakatāne District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Whanganui District",
+		 "title": "Number of recipients of CIRP by territorial authority - Whanganui District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Whangārei District",
+		 "title": "Number of recipients of CIRP by territorial authority - Whangārei District",
+		 "units": "Number"
+		},
+		  {
+		 "name": "Other/Unknown",
+		 "title": "Number of recipients of CIRP by territorial authority - Other/Unknown",
+		 "units": "Number"
 		}
 	  ]
 	},
@@ -5998,7 +6175,7 @@
         }
     ]
   } ,
-   
+
   {
     "class": "Economic",
     "indicator_name": "Broadband usage by region",
@@ -6007,14 +6184,14 @@
     "plot_function": "get_time_series_plot",
       "international": false,
     "include_date_slider": true,
-    
+
     "caveats":"<p> 1. Only includes traffic on the Chorus network (excludes traffic for other local fibre companies, cable and fixed wireless networks).</p><p> 2. Regional traffic is based on the location where the traffic is handed over to the service provider.</p><p> 3. The sum of regional totals may not exactly match the daily national usage.</p><p> 4. Tasman encompasses the Tasman, Nelson and Marlborough regions.</p><p> 5. In some date instances across regions, data will not feature due to collection issues.</p>",
-    
-   
-   
+
+
+
     "download": false,
     "groups": [
-     
+
       {
         "name": "Auckland",
         "title": "Daily Chorus broadband use - Auckland",
@@ -6035,7 +6212,7 @@
         "title": "Daily Chorus broadband use - Gisborne",
         "units": "Gigagbyte (million)"
       },
-      
+
       {
         "name": "Hawke's Bay",
         "title": "Daily Chorus broadband use- Hawke's Bay",
@@ -6047,7 +6224,7 @@
         "units": "Gigagbyte (million)"
       }
       ,
-     
+
       {
         "name": "Northland",
         "title": "Daily Chorus broadband use - Northland",
@@ -6082,19 +6259,19 @@
         "title": "Daily Chorus broadband use - Waikato",
         "units": "Gigagbyte (million)"
       }
-      , 
+      ,
       {
         "name": "Wellington",
         "title": "Daily Chorus broadband use - Wellington",
         "units": "Gigagbyte (million)"
-      } , 
+      } ,
       {
         "name": "West Coast",
         "title": "Daily Chorus broadband use - West Coast",
         "units": "Gigagbyte (million)"
       }
-      
-      
+
+
       ]
    },
    {
@@ -6470,7 +6647,7 @@
         "title": "Respondents who said the statement \"I am worried about the health of my family members\" either strongly or somewhat applies to them right now - provisional",
         "units": "%",
         "caveats": "1) This survey samples people who have previously taken part in the New Zealand Health Survey and agreed to be contacted about future research. As a result, there could be bias associated with the respondents and thus the findings of this survey. </p> <p> 2) Data are for the week ended Sunday.  </p> <p> 3) Approximately 300 people (aged 15+ years) are interviewed each day. </p> <p> 4) There are some limitations to the sample used, such as small numbers of Asian and Pacific respondents. </p>"
-        
+
       }
     ]
 	}
@@ -6485,7 +6662,7 @@
   "include_date_slider": true,
   "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-weekly-as-at-5-october-2020",
   "download": true,
-  
+
   "groups": [
     {
       "name": "Total",
@@ -6505,7 +6682,7 @@
       "title": "Median earnings for Services industries - 34 days",
       "units": "$"
     }
-    
+
     ]
 }
 ]
