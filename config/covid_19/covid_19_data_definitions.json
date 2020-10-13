@@ -3657,7 +3657,10 @@
         "indicator_name": "Jobseeker support by region - Pacific peoples",
         "type": "Benefits",
         "parameter_col": 1,
-        "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%y)\"",
+        "parameter_transform": [
+        "function (x) ",
+        "as.Date(x, format = \"%d/%m/%y\")"
+        ],
         "sheet_number": 6,
         "skip": 1,
         "value_col": [
