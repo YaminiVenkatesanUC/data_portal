@@ -42,10 +42,6 @@ read_from_csv <- function(config, directory) {
   ))
 }
 
-
-
-
-
 read_from_excel <- function(config, directory) {
   parameter_transform <- eval(parse(text = config$parameter_transform))
   skip <- 0
