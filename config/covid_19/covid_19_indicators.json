@@ -611,7 +611,7 @@
     "download": true,
     "groups": [
         {
-            "name": "Broadband usage",
+            "name": "undefined_name",
             "units": "Gigabyte",
             "title": "Daily Chorus broadband usage"
         }
