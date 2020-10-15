@@ -764,7 +764,7 @@
     "download": true,
     "groups": [
       {
-        "name": "Weekly economic sentiment",
+        "name": "undefined_name",
         "title": "Weekly economic sentiment",
         "units": "Index"
       }
