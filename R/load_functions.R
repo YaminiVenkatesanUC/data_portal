@@ -889,8 +889,7 @@ get_john_hopkins_data<-function(config, directory){
     cols_to_read <- 1:5
     data <- as.data.frame(read_excel(
       paste0(directory, config$filename),
-      sheet = config$sheet_number,
-      range = cell_limits(c(2, min(cols_to_read)), c(NA, max(cols_to_read)))
+      sheet = config$sheet_number
     ))
 
   }
