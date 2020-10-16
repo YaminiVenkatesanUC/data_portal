@@ -680,7 +680,7 @@
     "download": false,
     "groups": [
       {
-        "name": "Activity outlook - all sectors",
+        "name": "undefined_name",
         "title": "ANZ activity outlook - all sectors",
         "units": "Index"
       }
@@ -745,7 +745,7 @@
     "download": false,
     "groups": [
       {
-        "name": "Business confidence",
+        "name": "undefined_name",
         "title": "ANZ business confidence",
         "units": "Index"
       }
@@ -2003,7 +2003,7 @@
     "download": true,
     "groups": [
       {
-        "name": "Retail sales index",
+        "name": "undefined_name",
         "title": "Retail NZ monthly spend compared to previous year",
         "units": "%"
       }

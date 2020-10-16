@@ -782,6 +782,134 @@ gas_use_data <- function(config, directory) {
   ))
 }
 
+
+
+
+get_john_hopkins_data<-function(config, directory){
+
+  file_path<- "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/"
+  files <- list.files(path= file_path,
+                      pattern="COVID 19 - Global cases.xlsx",
+                      full.names = TRUE,
+                      recursive = TRUE)
+  details <- (file.info(files)$ctime)
+  current_date<-as.POSIXct(Sys.Date())
+
+  if(details<current_date){
+    print("updating data")
+
+    country<-c("Spain", "Italy","US",  "United Kingdom","Australia", "Canada", "Singapore" ,"China")
+    ##get data from github
+    dth<-RCurl::getURL("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv")
+    deaths <- read.csv (text = dth)
+
+    cnf<-RCurl::getURL("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv")
+    confirmed<-read.csv(text=cnf)
+
+    rcv<-RCurl::getURL("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_recovered_global.csv")
+    recovered<-read.csv(text=rcv)
+
+
+
+    jh_raw_data<-function(data, var){
+      data<-data
+      var=var
+
+      Country<-grep("Country", names(data))
+      Province<-grep("Province", names(data))
+      date<-grep("X", names(data))
+
+      colnames(data)[Country]<-"Country"
+      colnames(data)[Province]<-"Province"
+      new_data<-data[,c(Country,Province, date)]
+
+      new_data1<-new_data%>%gather(Date, var, -Country, -Province )%>%
+        mutate(Date=as.Date(str_replace_all(substr(Date, 2, nchar(Date)), "[X.]", "/"), format= "%m/%d/%y"))
+
+      colnames(new_data1)[4]<-var
+
+      return(new_data1)
+    }
+
+    death_new<- jh_raw_data(deaths, "Deceased")
+    recovered_new<- jh_raw_data(recovered, "Recovered")
+    confirmed_new<- jh_raw_data(confirmed, "Active")
+
+
+    all_data<-Reduce(function(x, y) merge(x, y, all=TRUE), list(death_new, recovered_new, confirmed_new))
+
+    all_data[is.na(all_data)]<-0
+
+
+    cases_selected_countries<-all_data%>%
+      group_by(Date, Country )%>%
+      summarise_if(is.numeric, sum, na.rm=T)%>%
+      filter(Country %in% country)
+
+
+    cases_rest_of_world<-all_data%>%
+      filter(!Country %in% country)%>%select(-Country)%>%
+      group_by(Date)%>%
+      summarise_if(is.numeric, sum, na.rm=T)%>%
+      mutate(Country="Rest of the world")%>%
+      select(Country, everything())
+
+    aus_provinces<-all_data%>%
+      filter(Country=='Australia')%>%
+      mutate(Country= paste0(Country, " - ", Province))%>%
+      select(-Province)
+
+    df_cases_all<-Reduce(function(x,y) merge(x = x, y = y, all=TRUE),
+                         list(cases_selected_countries, cases_rest_of_world, aus_provinces))%>%
+      mutate(Active=Active-Recovered-Deceased)%>%
+      arrange(Country)%>%
+      replace(is.na(.), 0)
+
+
+    check_for_negative<-function(data){
+
+      negative_active_cases<-which(data["Active"]<0)
+      if (!is.null(negative_active_cases)){
+        print(paste0("Negative Active cases present" ))
+        data[negative_active_cases,]<-data[negative_active_cases-1,]
+      }else{
+      }
+      return(data)
+    }
+
+    data<-check_for_negative(df_cases_all)
+    writexl::write_xlsx(data, paste0(file_path,"COVID 19 - Global cases.xlsx"))
+    print("created new file")
+
+
+  }else{
+
+
+    print("using files from folder")
+    cols_to_read <- 1:5
+    data <- as.data.frame(read_excel(
+      paste0(directory, config$filename),
+      sheet = config$sheet_number,
+      range = cell_limits(c(2, min(cols_to_read)), c(NA, max(cols_to_read)))
+    ))
+
+  }
+
+  data <- data %>%
+    filter(Country == config$country_filter) %>%
+    mutate(Date = as.Date(ymd(Date))) %>%
+    select(-Country)
+
+
+  colnames(data) <- c("Parameter", paste0("col_", 2:ncol(data)))
+  return(data_frame_to_data_object_helper(
+    directory,
+    config,
+    data
+  ))
+}
+
+
 load_functions <- list(
   read_from_csv = read_from_csv,
   read_from_excel = read_from_excel,
@@ -803,5 +931,6 @@ load_functions <- list(
   read_from_excel_error = read_from_excel_error,
   electricity_grid_by_region_data = electricity_grid_by_region_data,
   read_chorus_regional_data = read_chorus_regional_data,
-  gas_use_data = gas_use_data
+  gas_use_data = gas_use_data,
+  get_john_hopkins_data =get_john_hopkins_data
 )

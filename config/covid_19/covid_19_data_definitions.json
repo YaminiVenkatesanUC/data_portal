@@ -237,7 +237,7 @@
         "filename": "COVID 19 - ANZ insights.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": "Activity outlook - all sectors"
+        "group_names": "undefined_name"
     },
     {
         "class": "Economic",
@@ -289,7 +289,7 @@
         "filename": "COVID 19 - ANZ insights.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": "Business confidence"
+        "group_names": "undefined_name"
     },
     {
         "class": "Economic",
@@ -995,7 +995,7 @@
          "Deceased"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
-        "load_function": "read_global_cases_file",
+        "load_function": "get_john_hopkins_data",
         "country_filter": "China",
         "data_type": "TimeSeries",
         "group_names": "China"
@@ -1021,7 +1021,7 @@
          "Deceased"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
-        "load_function": "read_global_cases_file",
+        "load_function": "get_john_hopkins_data",
         "country_filter": "Australia",
         "data_type": "TimeSeries",
         "group_names": "Australia"
@@ -1047,7 +1047,7 @@
          "Deceased"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
-        "load_function": "read_global_cases_file",
+        "load_function": "get_john_hopkins_data",
         "country_filter": "Canada",
         "data_type": "TimeSeries",
         "group_names": "Canada"
@@ -1073,7 +1073,7 @@
          "Deceased"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
-        "load_function": "read_global_cases_file",
+        "load_function": "get_john_hopkins_data",
         "country_filter": "Singapore",
         "data_type": "TimeSeries",
         "group_names": "Singapore"
@@ -1099,7 +1099,7 @@
          "Deceased"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
-        "load_function": "read_global_cases_file",
+        "load_function": "get_john_hopkins_data",
         "country_filter": "Italy",
         "data_type": "TimeSeries",
         "group_names": "Italy"
@@ -1125,7 +1125,7 @@
          "Deceased"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
-        "load_function": "read_global_cases_file",
+        "load_function": "get_john_hopkins_data",
         "country_filter": "Spain",
         "data_type": "TimeSeries",
         "group_names": "Spain"
@@ -1759,7 +1759,7 @@
         "filename": "COVID 19 - Retail NZ Sales Index month on month comparison.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": "Retail sales index"
+        "group_names": "undefined_name"
     },
     {
         "class": "Economic",
