@@ -2941,9 +2941,14 @@
     "download": true,
     "groups": [
         {
-            "name": "Test by day",
+            "name": "Tests by day",
             "units": "Number",
             "title": "Daily tests"
+        },
+          {
+            "name": "Total tests (cumulative)",
+            "units": "Number",
+            "title": "Daily tests - cumulative"
         }
     ]
   },

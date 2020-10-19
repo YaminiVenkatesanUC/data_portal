@@ -1151,7 +1151,7 @@
          "Deceased"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
-        "load_function": "read_global_cases_file",
+        "load_function": "get_john_hopkins_data",
         "country_filter": "United Kingdom",
         "data_type": "TimeSeries",
         "group_names": "United Kingdom"
@@ -1177,7 +1177,7 @@
          "Deceased"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
-        "load_function": "read_global_cases_file",
+        "load_function": "get_john_hopkins_data",
         "country_filter": "US",
         "data_type": "TimeSeries",
         "group_names": "United States"
@@ -1203,7 +1203,7 @@
          "Deceased"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
-        "load_function": "read_global_cases_file",
+        "load_function": "get_john_hopkins_data",
         "country_filter": "Rest of the world",
         "data_type": "TimeSeries",
         "group_names": "Rest of world"
@@ -2411,7 +2411,7 @@
         "parameter_col": 1,
         "value_col": [2, 3],
         "value_names": ["Tests by day", "Total tests (cumulative)"],
-        "group_names": ["Test by day"],
+        "group_names": ["Tests by day", "Total tests (cumulative)"],
         "sheet_number": 5,
         "filename": "COVID 19 - MoH COVID-19 cases.xlsx",
         "parameter_transform": [
@@ -3090,7 +3090,7 @@
         "type": "COVID-19",
         "parameter_col": 1,
         "value_col": [2],
-        "value_names": ["Current - 15 October 2020"],
+        "value_names": ["Current - 18 October 2020"],
         "sheet_number": 1,
         "filename": "COVID 19 - MoH Border Control insights.xlsx",
         "parameter_transform": "function (x) x",
