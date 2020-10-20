@@ -15,7 +15,8 @@ test_that("Linting", {
   for (dependency in core_dependencies) {
     expect_equal(
       length(lintr::lint(dependency, linters = linterList)),
-      0
+      0,
+      label = dependency
     )
   }
 })
