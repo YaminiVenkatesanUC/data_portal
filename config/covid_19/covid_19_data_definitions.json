@@ -4072,7 +4072,7 @@
       "skip": 1,
       "value_col": [2],
       "value_names": ["Index"],
-      "group_names": ["Jobs online index"],
+      "group_names": ["undefined_name"],
       "filename": "COVID 19 - MBIE Jobs online unadjusted.csv",
       "parameter_transform": [
       "function (x)",
