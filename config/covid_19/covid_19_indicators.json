@@ -4045,7 +4045,7 @@
     "download": true,
     "groups": [
         {
-            "name": "Border quarantine",
+            "name": "undefined_name",
             "title": "Number of people in quarantine and managed isolation by location",
             "units": ["Number"]
         }
