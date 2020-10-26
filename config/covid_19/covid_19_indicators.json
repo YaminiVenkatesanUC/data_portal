@@ -969,7 +969,7 @@
     "download": false,
     "groups": [
       {
-        "name": "undefined_name",
+        "name": "NZX - all index",
         "title": "New Zealand stock exchange - all index",
         "units": "Index"
       }
@@ -987,7 +987,7 @@
     "download": true,
     "groups": [
       {
-        "name": "undefined_name",
+        "name": "New Zealand bank bill yields - 90-days",
         "title": "New Zealand bank bill yields - 90-days",
         "units": "% per annum"
       }
@@ -1005,7 +1005,7 @@
     "download": true,
     "groups": [
       {
-        "name": "undefined_name",
+        "name": "NZD/USD",
         "title": "New Zealand dollar (NZD/USD)",
         "units": "$"
       }
@@ -1093,7 +1093,7 @@
     "download": true,
     "groups": [
       {
-        "name": "undefined_name",
+        "name": "US jobless claims (initial)",
         "title": "United States unemployment insurance weekly claims - seasonally adjusted",
         "units": "Number"
       }
@@ -1112,7 +1112,7 @@
     "download": false,
     "groups": [
       {
-        "name": "undefined_name",
+        "name": "US weekly economic index",
         "title": "United States weekly economic index",
         "units": "Index"
       }
@@ -1128,7 +1128,7 @@
     "download": false,
     "groups": [
       {
-        "name": "undefined_name",
+        "name": "Sentiment index",
         "title": "Global investor sentiment index",
         "units": "Index"
       }
@@ -1199,7 +1199,7 @@
     "download": false,
     "groups": [
       {
-        "name": "undefined_name",
+        "name": "Market volatility index",
         "title": "Market volatility index",
         "units": "Index"
       }
@@ -1216,7 +1216,7 @@
     "download": false,
     "groups": [
       {
-        "name": "undefined_name",
+        "name": "Baltic dry index",
         "title": "Baltic dry index",
         "units": "Index"
       }
@@ -1232,7 +1232,7 @@
     "download": false,
     "groups": [
       {
-        "name": "undefined_name",
+        "name": "Global dairy trade price index",
         "title": "Global dairy trade price index",
         "units": "Index"
       }
@@ -1281,7 +1281,7 @@
     "download": true,
     "groups": [
       {
-        "name": "undefined_name",
+        "name": "Accomodation supplement",
         "title": "Accomodation supplement",
         "units": "Number"
       }
@@ -1298,7 +1298,7 @@
     "download": true,
     "groups": [
       {
-        "name": "undefined_name",
+        "name": "Special needs grants for food",
         "title": "Special needs grants for food - (weekly)",
         "units": "Number"
       }
@@ -1315,7 +1315,7 @@
     "download": true,
     "groups": [
       {
-        "name": "undefined_name",
+        "name": "Temporary additional support and special benefit",
         "title": "Temporary additional support and special benefit",
         "units": "Number"
       }
@@ -1332,7 +1332,7 @@
     "download": true,
     "groups": [
       {
-        "name": "undefined_name",
+        "name": "All special needs grants",
         "title": "All special needs grants",
         "units": "Number"
       }

@@ -510,7 +510,7 @@
         "skip": 2,
         "data_type": "TimeSeries",
         "group_names": [
-        "undefined_name"
+        "NZX - all index"
         ]
     },
     {
@@ -532,7 +532,7 @@
         "skip": 2,
         "data_type": "TimeSeries",
         "group_names": [
-        "undefined_name"
+        "New Zealand bank bill yields - 90-days"
         ]
     },
     {
@@ -553,7 +553,7 @@
         "skip": 2,
         "data_type": "TimeSeries",
         "group_names": [
-        "undefined_name"
+        "NZD/USD"
         ]
     },
     {
@@ -626,7 +626,7 @@
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": [
-        "undefined_name"
+        "US jobless claims (initial)"
         ]
     },
     {
@@ -645,7 +645,8 @@
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": [
-        "undefined_name"        ]
+        "US weekly economic index"
+        ]
     },
     {
         "class": "Economic",
@@ -659,7 +660,7 @@
         "filename": "COVID 19 - Haver sourced indicators.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": "undefined_name"
+        "group_names": "Sentiment index"
     },
     {
         "class": "Economic",
@@ -728,7 +729,7 @@
         "load_function": "read_from_excel",
         "skip": 2,
         "data_type": "TimeSeries",
-        "group_names": "undefined_name"
+        "group_names": "Market volatility index"
     },
     {
         "class": "Economic",
@@ -743,7 +744,7 @@
         "load_function": "read_from_excel",
         "skip": 2,
         "data_type": "TimeSeries",
-        "group_names": "undefined_name"
+        "group_names": "Baltic dry index"
     },
     {
         "class": "Economic",
@@ -758,7 +759,7 @@
         "load_function": "read_from_excel",
         "skip": 2,
         "data_type": "TimeSeries",
-        "group_names": "undefined_name"
+        "group_names": "Global dairy trade price index"
     },
     {
         "class": "Economic",
@@ -826,7 +827,7 @@
         "filename": "COVID 19 - MSD Jobseeker by region and Hardship grants.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": "undefined_name"
+        "group_names": "Accomodation supplement"
     },
     {
         "class": "Income support",
@@ -848,7 +849,7 @@
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": [
-        "undefined_name"
+        "Special needs grants for food"
         ]
     },
     {
@@ -868,7 +869,7 @@
         "filename": "COVID 19 - MSD Jobseeker by region and Hardship grants.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": "undefined_name"
+        "group_names": "Temporary additional support and special benefit"
     },
     {
         "class": "Income support",
@@ -887,7 +888,7 @@
         "filename": "COVID 19 - MSD Jobseeker by region and Hardship grants.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": "undefined_name"
+        "group_names": "All special needs grants"
     },
     {
         "class": "Income support",
@@ -3089,7 +3090,7 @@
         "type": "COVID-19",
         "parameter_col": 1,
         "value_col": [2],
-        "value_names": ["Current - 22 October 2020"],
+        "value_names": ["Current - 21 October 2020"],
         "sheet_number": 1,
         "filename": "COVID 19 - MoH Border Control insights.xlsx",
         "parameter_transform": "function (x) x",
