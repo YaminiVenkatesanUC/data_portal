@@ -782,123 +782,138 @@ gas_use_data <- function(config, directory) {
   ))
 }
 
-
-
-
-get_john_hopkins_data<-function(config, directory){
-
-  file_path<- "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/"
-  files <- list.files(path= file_path,
-                      pattern="COVID 19 - Global cases.xlsx",
-                      full.names = TRUE,
-                      recursive = TRUE)
+# This function should not be here, it is not simply a load function but it is also
+# caching data. This logic needs to be split up into a another step for caching.
+# There is also too much hard coding of things that should be handled by configuration.
+get_john_hopkins_data <- function(config, directory) {
+  file_path <- directory
+  files <- list.files(
+    path = file_path,
+    pattern = "COVID 19 - Global cases.xlsx",
+    full.names = TRUE,
+    recursive = TRUE
+  )
   details <- (file.info(files)$ctime)
-  current_date<-as.POSIXct(Sys.Date())
+  current_date <- as.POSIXct(Sys.Date())
+  github_url <- paste0(
+    "https://raw.githubusercontent.com/CSSEGISandData/",
+    "COVID-19/master/csse_covid_19_data/"
+  )
 
-  if(details<current_date){
-    print("updating data")
+  if (details < current_date) {
 
-    country<-c("Spain", "Italy","US",  "United Kingdom","Australia", "Canada", "Singapore" ,"China")
-    ##get data from github
-    dth<-RCurl::getURL("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_deaths_global.csv")
-    deaths <- read.csv (text = dth)
+    country <- c(
+      "Spain",
+      "Italy",
+      "US",
+      "United Kingdom",
+      "Australia",
+      "Canada",
+      "Singapore",
+      "China"
+    )
 
-    cnf<-RCurl::getURL("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_confirmed_global.csv")
-    confirmed<-read.csv(text=cnf)
+    dth <- RCurl::getURL(paste0(
+      github_url,
+      "csse_covid_19_time_series/time_series_covid19_deaths_global.csv")
+    )
+    deaths <- read.csv(text = dth)
+    cnf <- RCurl::getURL(paste0(
+      github_url,
+      "csse_covid_19_time_series/time_series_covid19_confirmed_global.csv")
+    )
+    confirmed <- read.csv(text = cnf)
 
-    rcv<-RCurl::getURL("https://raw.githubusercontent.com/CSSEGISandData/COVID-19/master/csse_covid_19_data/csse_covid_19_time_series/time_series_covid19_recovered_global.csv")
-    recovered<-read.csv(text=rcv)
+    rcv <- RCurl::getURL(paste0(
+      github_url,
+      "csse_covid_19_time_series/time_series_covid19_recovered_global.csv")
+    )
+    recovered <- read.csv(text = rcv)
 
+    jh_raw_data <- function(data, var) {
+      Country <- grep("Country", names(data))
+      Province <- grep("Province", names(data))
+      date <- grep("X", names(data))
 
+      colnames(data)[Country] <- "Country"
+      colnames(data)[Province] <- "Province"
+      new_data <- data[, c(Country, Province, date)]
 
-    jh_raw_data<-function(data, var){
-      data<-data
-      var=var
+      output <- new_data %>%
+        gather(Date, var, -Country, -Province ) %>%
+        mutate(Date = as.Date(
+          str_replace_all(substr(Date, 2, nchar(Date)), "[X.]", "/"),
+          format = "%m/%d/%y"
+        )
+      )
 
-      Country<-grep("Country", names(data))
-      Province<-grep("Province", names(data))
-      date<-grep("X", names(data))
+      colnames(output)[4] <- var
 
-      colnames(data)[Country]<-"Country"
-      colnames(data)[Province]<-"Province"
-      new_data<-data[,c(Country,Province, date)]
-
-      new_data1<-new_data%>%gather(Date, var, -Country, -Province )%>%
-        mutate(Date=as.Date(str_replace_all(substr(Date, 2, nchar(Date)), "[X.]", "/"), format= "%m/%d/%y"))
-
-      colnames(new_data1)[4]<-var
-
-      return(new_data1)
+      return(output)
     }
 
-    death_new<- jh_raw_data(deaths, "Deceased")
-    recovered_new<- jh_raw_data(recovered, "Recovered")
-    confirmed_new<- jh_raw_data(confirmed, "Active")
+    death_new <- jh_raw_data(deaths, "Deceased")
+    recovered_new <- jh_raw_data(recovered, "Recovered")
+    confirmed_new <- jh_raw_data(confirmed, "Active")
+
+    all_data <- Reduce(
+      function(x, y) merge(x, y, all = TRUE),
+      list(death_new, recovered_new, confirmed_new)
+    )
+
+    all_data[is.na(all_data)] <- 0
 
 
-    all_data<-Reduce(function(x, y) merge(x, y, all=TRUE), list(death_new, recovered_new, confirmed_new))
-
-    all_data[is.na(all_data)]<-0
-
-
-    cases_selected_countries<-all_data%>%
-      group_by(Date, Country )%>%
-      summarise_if(is.numeric, sum, na.rm=T)%>%
+    cases_selected_countries <- all_data %>%
+      group_by(Date, Country ) %>%
+      summarise_if(is.numeric, sum, na.rm = TRUE) %>%
       filter(Country %in% country)
 
 
-    cases_rest_of_world<-all_data%>%
-      filter(!Country %in% country)%>%select(-Country)%>%
-      group_by(Date)%>%
-      summarise_if(is.numeric, sum, na.rm=T)%>%
-      mutate(Country="Rest of the world")%>%
+    cases_rest_of_world <- all_data %>%
+      filter(!Country %in% country) %>%
+      select(-Country) %>%
+      group_by(Date) %>%
+      summarise_if(is.numeric, sum, na.rm = TRUE) %>%
+      mutate(Country = "Rest of the world") %>%
       select(Country, everything())
 
-    aus_provinces<-all_data%>%
-      filter(Country=='Australia')%>%
-      mutate(Country= paste0(Country, " - ", Province))%>%
+    aus_provinces <- all_data %>%
+      filter(Country == 'Australia') %>%
+      mutate(Country = paste0(Country, " - ", Province)) %>%
       select(-Province)
 
-    df_cases_all<-Reduce(function(x,y) merge(x = x, y = y, all=TRUE),
-                         list(cases_selected_countries, cases_rest_of_world, aus_provinces))%>%
-      mutate(Active=Active-Recovered-Deceased)%>%
-      arrange(Country)%>%
-      replace(is.na(.), 0)
+    df_cases_all <- Reduce(
+      function(x, y) merge(x = x, y = y, all = TRUE),
+      list(cases_selected_countries, cases_rest_of_world, aus_provinces)
+      ) %>%
+        mutate(Active = Active - Recovered - Deceased) %>%
+        arrange(Country) %>%
+        replace(is.na(.), 0)
 
-
-    check_for_negative<-function(data){
-
-      negative_active_cases<-which(data["Active"]<0)
-      if (!is.null(negative_active_cases)){
-        print(paste0("Negative Active cases present" ))
-        data[negative_active_cases,]<-data[negative_active_cases-1,]
-      }else{
+    check_for_negative <- function(data) {
+      negative_active_cases <- which(data["Active"] < 0)
+      if (!is.null(negative_active_cases)) {
+        print(paste0("Negative Active cases present"))
+        data[negative_active_cases, ] <- data[negative_active_cases - 1, ]
       }
       return(data)
     }
 
-    data<-check_for_negative(df_cases_all)
-    writexl::write_xlsx(data, paste0(file_path,"COVID 19 - Global cases.xlsx"))
-    print("created new file")
-
-
-  }else{
-
-
-    print("using files from folder")
+    data <- check_for_negative(df_cases_all)
+    writexl::write_xlsx(data, paste0(file_path, "COVID 19 - Global cases.xlsx"))
+  } else {
     cols_to_read <- 1:5
     data <- as.data.frame(read_excel(
       paste0(directory, config$filename),
       sheet = config$sheet_number
     ))
-
   }
 
   data <- data %>%
     filter(Country == config$country_filter) %>%
     mutate(Date = as.Date(ymd(Date))) %>%
     select(-Country)
-
 
   colnames(data) <- c("Parameter", paste0("col_", 2:ncol(data)))
   return(data_frame_to_data_object_helper(
@@ -908,6 +923,24 @@ get_john_hopkins_data<-function(config, directory){
   ))
 }
 
+read_managed_isolotion_data <- function(config, directory) {
+  data_object <- read_from_excel(config, directory)
+
+  data <- as.data.frame(read_excel(
+    paste0(directory, config$filename),
+    sheet = config$sheet_number,
+    col_names = c("header_date", "occupancy"),
+    range = cell_limits(c(1, 1), c(1, 2))
+  ))
+  value_name <- data$header_date
+  value_name_transformed <- gsub(
+    "Quarantine and managed isolation figures as at ",
+    "Current - ",
+    value_name
+  )
+  data_object[["undefined_name"]]$value_names <- value_name
+  return(data_object)
+}
 
 load_functions <- list(
   read_from_csv = read_from_csv,
@@ -931,5 +964,6 @@ load_functions <- list(
   electricity_grid_by_region_data = electricity_grid_by_region_data,
   read_chorus_regional_data = read_chorus_regional_data,
   gas_use_data = gas_use_data,
-  get_john_hopkins_data =get_john_hopkins_data
+  get_john_hopkins_data = get_john_hopkins_data,
+  read_managed_isolotion_data = read_managed_isolotion_data
 )
