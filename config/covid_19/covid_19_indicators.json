@@ -783,7 +783,7 @@
     "download": true,
     "groups": [
       {
-        "name": "Milksolids",
+        "name": "undefined_name",
         "title": "Monthly milk production - milksolids",
         "units": "Kg"
       }
@@ -4006,7 +4006,7 @@
     "plot_function": "get_time_series_plot",
     "international": false,
     "include_date_slider": true,
-    "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-weekly-as-at-12-october-2020",
+    "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-weekly-as-at-19-october-2020",
     "download": true,
 
     "groups": [
@@ -4045,7 +4045,7 @@
     "download": true,
     "groups": [
         {
-            "name": "Border quarantine",
+            "name": "undefined_name",
             "title": "Number of people in quarantine and managed isolation by location",
             "units": ["Number"]
         }
@@ -5067,7 +5067,7 @@
 	  "download": true,
 	  "groups": [
 	   	{
-		    "name": "Jobs online index",
+		    "name": "undefined_name",
 		    "units": "Index",
 		    "title": "Monthly online job advertisements index"
 		  }
