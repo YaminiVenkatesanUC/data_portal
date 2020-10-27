@@ -211,82 +211,82 @@
     "download": true,
     "groups": [
       {
-        "name": "Northland Region",
+        "name": "Northland",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Auckland Region",
+        "name": "Auckland",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Waikato Region",
+        "name": "Waikato",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Bay of Plenty Region",
+        "name": "Bay of Plenty",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Gisborne Region",
+        "name": "Gisborne",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Hawke's Bay Region",
+        "name": "Hawke's Bay",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Taranaki Region",
+        "name": "Taranaki",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Manawatu-Whanganui Region",
+        "name": "Manawatu-Wanganui",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Wellington Region",
+        "name": "Wellington",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "West Coast Region",
+        "name": "West Coast",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Canterbury Region",
+        "name": "Canterbury",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Otago Region",
+        "name": "Otago",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Southland Region",
+        "name": "Southland",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Tasman Region",
+        "name": "Tasman",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Nelson Region",
+        "name": "Nelson",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Marlborough Region",
+        "name": "Marlborough",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       }
@@ -558,7 +558,7 @@
   {
     "class": "Economic",
     "title": "Z Energy weekly fuel supply volumes",
-    "indicator_name": "Fuel supply volumes",
+    "indicator_name": "Fuel supply volumes - weekly",
     "type": "Activity",
     "source": "Z Energy",
     "plot_function": "get_stacked_bar_chart",
@@ -6690,4 +6690,5 @@
 
     ]
 }
+
 ]
