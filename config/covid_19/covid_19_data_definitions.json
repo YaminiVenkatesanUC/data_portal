@@ -2414,7 +2414,7 @@
         "group_names": ["Tests by day", "Total tests (cumulative)"],
         "sheet_number": 5,
         "filename": "COVID 19 - MoH COVID-19 cases.xlsx",
-        "parameter_transform": [
+       "parameter_transform": [
         "function (x) ",
         "as.Date(x, format = \"%d/%m/%Y\")"
         ],

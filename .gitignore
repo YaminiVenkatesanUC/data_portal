@@ -7,3 +7,5 @@ rsconnect/*
 *.RDS
 config/config.yaml
 www/tag_manager.html
+*.csv
+*.xlsx
