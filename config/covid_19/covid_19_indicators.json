@@ -18,82 +18,82 @@
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Northland Region",
+        "name": "Northland",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Auckland Region",
+        "name": "Auckland",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Waikato Region",
+        "name": "Waikato",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Bay of Plenty Region",
+        "name": "Bay of Plenty",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Gisborne Region",
+        "name": "Gisborne",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Hawke's Bay Region",
+        "name": "Hawke's Bay",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Taranaki Region",
+        "name": "Taranaki",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Manawatu-Whanganui Region",
+        "name": "Manawatu-Whanganui",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Wellington Region",
+        "name": "Wellington",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "West Coast Region",
+        "name": "West Coast",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Canterbury Region",
+        "name": "Canterbury",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Otago Region",
+        "name": "Otago",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Southland Region",
+        "name": "Southland",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Tasman Region",
+        "name": "Tasman",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Nelson Region",
+        "name": "Nelson",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Marlborough Region",
+        "name": "Marlborough",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       }
@@ -117,82 +117,82 @@
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Northland Region",
+        "name": "Northland",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Auckland Region",
+        "name": "Auckland",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Waikato Region",
+        "name": "Waikato",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Bay of Plenty Region",
+        "name": "Bay of Plenty",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Gisborne Region",
+        "name": "Gisborne",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Hawke's Bay Region",
+        "name": "Hawke's Bay",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Taranaki Region",
+        "name": "Taranaki",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Manawatu-Whanganui Region",
+        "name": "Manawatu-Whanganui",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Wellington Region",
+        "name": "Wellington",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "West Coast Region",
+        "name": "West Coast",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Canterbury Region",
+        "name": "Canterbury",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Otago Region",
+        "name": "Otago",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Southland Region",
+        "name": "Southland",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Tasman Region",
+        "name": "Tasman",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Nelson Region",
+        "name": "Nelson",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       },
       {
-        "name": "Marlborough Region",
+        "name": "Marlborough",
         "units": "Number",
         "title": "Monthly employment indicator - filled jobs (actual)"
       }
@@ -2936,9 +2936,9 @@
     "type": "COVID-19",
     "source": "Ministry of Health",
     "plot_function": "get_stacked_bar_chart",
-    "international": false,
+    "international": true,
     "source_url":"https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation/covid-19-current-cases",
-    "download": true,
+    "download": false,
     "groups": [
         {
             "name": "Tests by day",
