@@ -6833,6 +6833,42 @@
         "title":"Percentage of people who received help from a welfare organisation in the last 12 months, by regional council area"
       }
     ]
+},
+
+{
+    "class":"Social",
+    "type":"Life Satisfaction",
+    "indicator_name":"Life Satisfaction – HLFS quarterly",
+    "plot_function":"get_unstacked_bar_chart_with_errors",
+    "download":false,
+    "source":"Stats NZ household labour force survey",
+    "frquency":"Quarterly",
+    "source_url":"https://www.stats.govt.nz/information-releases/wellbeing-statistics-june-2020-quarter",
+    "caveat":"Those aged 18+ who rated satisfaction with their lives as a whole these days at 7 or higher, where 0 is completely dissatisfied and 10 is completely satisfied.",
+    "measure":null,
+    "agency":"Stats NZ",
+    "groups":[
+      {
+        "name":"By sex",
+        "units":"%",
+        "title":"Percentage of people who rated their life satisfaction highly, by sex"
+      },
+      {
+        "name":"By age",
+        "units":"%",
+        "title":"Percentage of people who rated their life satisfaction highly, by age group"
+      },
+      {
+        "name":"By ethnicity",
+        "units":"%",
+        "title":"Percentage of people who rated their life satisfaction highly, by ethnic group"
+      },
+      {
+        "name":"By region",
+        "units":"%",
+        "title":"Percentage of people who rated their life satisfaction highly, by regional council area"
+      }
+	  ]
 }
 
 
