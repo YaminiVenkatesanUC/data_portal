@@ -942,6 +942,78 @@ read_managed_isolotion_data <- function(config, directory) {
   return(data_object)
 }
 
+read_HLFS <- function(config, directory) {
+  library(tibble)
+  parameter_transform <- eval(parse(text = config$parameter_transform))
+
+  skip <- 0
+  if (!is.null(config$skip)) {
+    skip <- config$skip
+  }
+  colNames <- c("Parameter", paste0("col_", config$value_col), paste0("col_", config$lower_bound_col, "_lower"), paste0("col_", config$upper_bound_col, "_upper"))
+  values <- rep(NA, length(colNames))
+  data_all <- data.frame(colNames = colNames, values = values) %>%
+    spread(key = colNames, value = values)
+  data_all$Parameter <- as.Date(data_all$Parameter)
+
+
+  for (i in 1:length(config$filename)) {
+    data <- as.data.frame(read_excel(paste0(directory, config$filename[i]), sheet = config$sheet_number, col_names = TRUE, skip = skip, .name_repair = "unique"))
+
+    data <- data %>% select(-2, -4, -5, -6)
+    start_row <- grep(pattern = config$description, x = data[[1]])+1
+    end_row <- start_row + config$n_rows - 1
+    data <- data[c(start_row:end_row), ]
+
+    if (config$n_rows > 1) {
+      data <- data %>% filter(data[2] == '7 to 10')
+    }
+
+    data <- data %>% select(-1, -2)
+
+
+    for (col in 1:length(data)) {
+      data[[col]] <- as.numeric(data[[col]])
+    }
+
+    not_any_na <- function(x) all(!is.na(x))
+    data <- data %>% select_if(not_any_na)
+
+    quarter <- as.data.frame(read_excel(paste0(directory, config$filename[i]), sheet = config$sheet_number, range = "A4", col_names = FALSE))
+    data$Parameter <- quarter[[1]]
+    data$Parameter <- stringr::str_replace(data$Parameter, "quarter", replacement = "01")
+    data$Parameter <- as.Date(data$Parameter, format = "%B %Y %d")
+    data <- data %>% relocate(Parameter)
+
+    stopifnot(all.equal(length(config$value_col), length(config$lower_bound_col), length(config$upper_bound_col)))
+
+    for (i in 1:length(config$value_col)) {
+      value <- unlist(config$value_col[i])
+
+      data <- data %>%
+        tibble::add_column(lower = data[[value]] - data[[value+1]], .after = value+1) %>%
+        tibble::add_column(upper = data[[value]] + data[[value+1]], .after = "lower") %>%
+        select(-c(value+1))
+
+      data <- data %>%
+        dplyr::rename_with(.fn = ~paste0("col_", value+1, "_lower"), .cols = lower) %>%
+        dplyr::rename_with(.fn = ~paste0("col_", value+2, "_upper"), .cols = upper) %>%
+        dplyr::rename_with(.fn = ~paste0("col_", value), .cols = value)
+    }
+
+    data_all <- rbind(data_all, data)
+    data_all <- drop_na(data_all)
+  }
+  data_all$Parameter <- parameter_transform(data_all$Parameter)
+  View(data_all)
+
+  return(data_frame_to_data_object_helper_error(
+    directory,
+    config,
+    data_all
+  ))
+}
+
 load_functions <- list(
   read_from_csv = read_from_csv,
   read_from_excel = read_from_excel,
@@ -965,5 +1037,6 @@ load_functions <- list(
   read_chorus_regional_data = read_chorus_regional_data,
   gas_use_data = gas_use_data,
   get_john_hopkins_data = get_john_hopkins_data,
-  read_managed_isolotion_data = read_managed_isolotion_data
+  read_managed_isolotion_data = read_managed_isolotion_data,
+  read_HLFS = read_HLFS
 )
