@@ -5438,11 +5438,12 @@
 
       ]
 },
+
 {
     "class":"Social",
-    "type":"Life Satisfaction",
-    "indicator_name":"Life Satisfaction – HLFS quarterly",
-    "description":"Overall life satisfaction",
+    "type":"General wellbeing",
+    "indicator_name":"Life worthwhile",
+    "description":"Life worthwhile",
     "skip":5,
     "n_rows":2,
     "parameter_col":1,
@@ -5465,9 +5466,9 @@
   },
   {
     "class":"Social",
-    "type":"Life Satisfaction",
-    "indicator_name":"Life Satisfaction – HLFS quarterly",
-    "description":"Overall life satisfaction",
+    "type":"General Wellbeing",
+    "indicator_name":"Life worthwhile",
+    "description":"Life worthwhile",
     "skip":5,
     "n_rows":2,
     "parameter_col":1,
@@ -5495,9 +5496,9 @@
   },
   {
     "class":"Social",
-    "type":"Life Satisfaction",
-    "indicator_name":"Life Satisfaction – HLFS quarterly",
-    "description":"Overall life satisfaction",
+    "type":"General Wellbeing",
+    "indicator_name":"Life worthwhile",
+    "description":"Life worthwhile",
     "skip":5,
     "n_rows":2,
     "parameter_col":1,
@@ -5522,9 +5523,9 @@
   },
   {
     "class":"Social",
-    "type":"Life Satisfaction",
-    "indicator_name":"Life Satisfaction – HLFS quarterly",
-    "description":"Overall life satisfaction",
+    "type":"General wellbeing",
+    "indicator_name":"Life worthwhile",
+    "description":"Life worthwhile",
     "skip":5,
     "n_rows":2,
     "parameter_col":1,
@@ -5555,5 +5556,7 @@
     "load_function":"read_HLFS",
     "data_type":"BarChart"
   }
+
+
 
 ]
