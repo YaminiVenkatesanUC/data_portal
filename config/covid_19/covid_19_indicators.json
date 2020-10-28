@@ -6848,7 +6848,7 @@
     "type":"Life Satisfaction",
     "indicator_name":"Life Satisfaction – HLFS quarterly",
     "plot_function":"get_unstacked_bar_chart_with_errors",
-    "download":false
+    "download":false,
     "international": false,
     "source":"Stats NZ household labour force survey",
     "frquency":"Quarterly",
