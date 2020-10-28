@@ -6761,6 +6761,42 @@
         "title":"Percentage of people who rated their family wellbeing highly, by regional council area"
       }
     ]
+},
+
+{
+    "class":"Social",
+    "type":"Household finances",
+    "indicator_name":"Enough money for everyday needs",
+    "plot_function":"get_unstacked_bar_chart_with_errors",
+    "download":false,
+    "source":"Stats NZ household labour force survey",
+    "frquency":"Quarterly",
+    "source_url":"https://www.stats.govt.nz/information-releases/wellbeing-statistics-june-2020-quarter",
+    "caveat":"Those aged 18+ who reported enough money / more than enough money to meet everyday needs. Includes partner's income where applicable.",
+    "measure":null,
+    "agency":"Stats NZ",
+    "groups":[
+      {
+        "name":"By sex",
+        "units":"%",
+        "title":"Percentage of people who reported enough money for everyday needs, by sex"
+      },
+      {
+        "name":"By age",
+        "units":"%",
+        "title":"Percentage of people who reported enough money for everyday needs, by age group"
+      },
+      {
+        "name":"By ethnicity",
+        "units":"%",
+        "title":"Percentage of people who reported enough money for everyday needs, by ethnic group"
+      },
+      {
+        "name":"By region",
+        "units":"%",
+        "title":"Percentage of people who reported enough money for everyday needs, by regional council area"
+      }
+    ]
 }
 
 
