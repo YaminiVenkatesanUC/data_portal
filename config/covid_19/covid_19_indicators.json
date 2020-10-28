@@ -6703,7 +6703,6 @@
     "source_url":"https://www.stats.govt.nz/information-releases/wellbeing-statistics-june-2020-quarter",
     "caveat":"Those aged 18+ who rated the things they do in their life at 7 or higher, where 0 is not at all worthwhile and 10 is completely worthwhile.",
     "measure":null,
-    "international": false,
     "agency":"Stats NZ",
     "groups":[
       {
@@ -6741,7 +6740,6 @@
     "source_url":"https://www.stats.govt.nz/information-releases/wellbeing-statistics-june-2020-quarter",
     "caveat":"Those aged 18+ who rated how their family was generally doing at 7 or higher, where 0 is doing extremely badly and 10 is doing extremely well.",
     "measure":null,
-    "international":false,
     "agency":"Stats NZ",
     "groups":[
       {
@@ -6779,7 +6777,6 @@
     "source_url":"https://www.stats.govt.nz/information-releases/wellbeing-statistics-june-2020-quarter",
     "caveat":"Those aged 18+ who reported enough money / more than enough money to meet everyday needs. Includes partner's income where applicable.",
     "measure":null,
-    "international":false,
     "agency":"Stats NZ",
     "groups":[
       {
@@ -6817,7 +6814,6 @@
     "source_url":"https://www.stats.govt.nz/information-releases/wellbeing-statistics-june-2020-quarter",
     "caveat":"Those aged 18+ who reported they received help in the form of food, clothes, or money from a welfare / community organisation such as a church or foodbank in the previous 12 months.",
     "measure":null,
-    "international":false,
     "agency":"Stats NZ",
     "groups":[
       {
@@ -6855,7 +6851,6 @@
     "source_url":"https://www.stats.govt.nz/information-releases/wellbeing-statistics-june-2020-quarter",
     "caveat":"Those aged 18+ who rated satisfaction with their lives as a whole these days at 7 or higher, where 0 is completely dissatisfied and 10 is completely satisfied.",
     "measure":null,
-    "international":false,
     "agency":"Stats NZ",
     "groups":[
       {
@@ -6892,7 +6887,6 @@
     "source_url":"https://www.stats.govt.nz/information-releases/wellbeing-statistics-june-2020-quarter",
     "caveat":"Those aged 18+ who rated their trust held for parliament at 7 or higher, where 0 is not trusted at all and 10 is trusted completely.",
     "measure":null,
-    "international":false,
     "agency":"Stats NZ",
     "groups":[
       {
