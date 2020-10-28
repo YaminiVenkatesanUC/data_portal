@@ -6797,6 +6797,42 @@
         "title":"Percentage of people who reported enough money for everyday needs, by regional council area"
       }
     ]
+},
+
+{
+    "class":"Social",
+    "type":"Personal finances",
+    "indicator_name":"Help from welfare organisation",
+    "plot_function":"get_unstacked_bar_chart_with_errors",
+    "download":false,
+    "source":"Stats NZ household labour force survey",
+    "frquency":"Quarterly",
+    "source_url":"https://www.stats.govt.nz/information-releases/wellbeing-statistics-june-2020-quarter",
+    "caveat":"Those aged 18+ who reported they received help in the form of food, clothes, or money from a welfare / community organisation such as a church or foodbank in the previous 12 months.",
+    "measure":null,
+    "agency":"Stats NZ",
+    "groups":[
+      {
+        "name":"By sex",
+        "units":"%",
+        "title":"Percentage of people who received help from a welfare organisation in the last 12 months, by sex"
+      },
+      {
+        "name":"By age",
+        "units":"%",
+        "title":"Percentage of people who received help from a welfare organisation in the last 12 months, by age group"
+      },
+      {
+        "name":"By ethnicity",
+        "units":"%",
+        "title":"Percentage of people who received help from a welfare organisation in the last 12 months, by ethnic group"
+      },
+      {
+        "name":"By region",
+        "units":"%",
+        "title":"Percentage of people who received help from a welfare organisation in the last 12 months, by regional council area"
+      }
+    ]
 }
 
 
