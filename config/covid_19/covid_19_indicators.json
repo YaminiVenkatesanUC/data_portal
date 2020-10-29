@@ -6902,7 +6902,8 @@
       {
         "name":"By ethnicity",
         "units":"%",
-        "title":"Percentage who rated their trust held for parliament highly, by ethnic group"
+        "title":"Percentage who rated their trust held for parliament highly, by ethnic group",
+        "description":"Where a person reported more than one ethnic group, they were counted in each applicable group."
       },
       {
         "name":"By region",
@@ -6938,7 +6939,8 @@
       {
         "name":"By ethnicity",
         "units":"%",
-        "title":"Percentage who rated their trust held for police highly, by ethnic group"
+        "title":"Percentage who rated their trust held for police highly, by ethnic group",
+        "description":"Where a person reported more than one ethnic group, they were counted in each applicable group."
       },
 	  {
 	    "name":"By region",
@@ -6975,7 +6977,8 @@
       {
         "name":"By ethnicity",
         "units":"%",
-        "title":"Percentage who rated their trust held for the media highly, by ethnic group"
+        "title":"Percentage who rated their trust held for the media highly, by ethnic group",
+        "description":"Where a person reported more than one ethnic group, they were counted in each applicable group."
       },
 	  {
 	    "name":"By region",
@@ -7012,7 +7015,8 @@
       {
         "name":"By ethnicity",
         "units":"%",
-        "title":"Percentage who rated their trust held for the health system highly, by ethnic group"
+        "title":"Percentage who rated their trust held for the health system highly, by ethnic group",
+        "description":"Where a person reported more than one ethnic group, they were counted in each applicable group."
       },
 	  {
 	    "name":"By region",

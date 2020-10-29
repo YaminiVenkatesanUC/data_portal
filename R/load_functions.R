@@ -942,7 +942,7 @@ read_managed_isolotion_data <- function(config, directory) {
   return(data_object)
 }
 
-read_HLFS <- function(config, directory) {
+read_hlfs_data <- function(config, directory) {
   library(tibble)
   parameter_transform <- eval(parse(text = config$parameter_transform))
 
@@ -1035,5 +1035,5 @@ load_functions <- list(
   gas_use_data = gas_use_data,
   get_john_hopkins_data = get_john_hopkins_data,
   read_managed_isolotion_data = read_managed_isolotion_data,
-  read_HLFS = read_HLFS
+  read_hlfs_data = read_hlfs_data
 )

@@ -5462,7 +5462,7 @@
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
-    "load_function":"read_HLFS",
+    "load_function":"read_hlfs_data",
     "data_type":"BarChart"
   },
   {
@@ -5493,7 +5493,7 @@
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
-    "load_function":"read_HLFS",
+    "load_function":"read_hlfs_data",
     "data_type":"BarChart"
   },
   {
@@ -5521,7 +5521,7 @@
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
-    "load_function":"read_HLFS",
+    "load_function":"read_hlfs_data",
     "data_type":"BarChart"
   },
   {
@@ -5557,7 +5557,7 @@
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
-    "load_function":"read_HLFS",
+    "load_function":"read_hlfs_data",
     "data_type":"BarChart"
   },
 
@@ -5584,7 +5584,7 @@
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
-    "load_function":"read_HLFS",
+    "load_function":"read_hlfs_data",
     "data_type":"BarChart"
   },
   {
@@ -5615,7 +5615,7 @@
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
-    "load_function":"read_HLFS",
+    "load_function":"read_hlfs_data",
     "data_type":"BarChart"
   },
   {
@@ -5643,7 +5643,7 @@
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
-    "load_function":"read_HLFS",
+    "load_function":"read_hlfs_data",
     "data_type":"BarChart"
   },
   {
@@ -5679,7 +5679,7 @@
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
-    "load_function":"read_HLFS",
+    "load_function":"read_hlfs_data",
     "data_type":"BarChart"
   },
 
@@ -5706,7 +5706,7 @@
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
-    "load_function":"read_HLFS",
+    "load_function":"read_hlfs_data",
     "data_type":"BarChart"
   },
   {
@@ -5737,7 +5737,7 @@
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
-    "load_function":"read_HLFS",
+    "load_function":"read_hlfs_data",
     "data_type":"BarChart"
   },
   {
@@ -5765,7 +5765,7 @@
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
-    "load_function":"read_HLFS",
+    "load_function":"read_hlfs_data",
     "data_type":"BarChart"
   },
   {
@@ -5801,7 +5801,7 @@
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
-    "load_function":"read_HLFS",
+    "load_function":"read_hlfs_data",
     "data_type":"BarChart"
   },
 
@@ -5828,7 +5828,7 @@
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
-    "load_function":"read_HLFS",
+    "load_function":"read_hlfs_data",
     "data_type":"BarChart"
   },
   {
@@ -5859,7 +5859,7 @@
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
-    "load_function":"read_HLFS",
+    "load_function":"read_hlfs_data",
     "data_type":"BarChart"
   },
   {
@@ -5887,7 +5887,7 @@
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
-    "load_function":"read_HLFS",
+    "load_function":"read_hlfs_data",
     "data_type":"BarChart"
   },
   {
@@ -5923,7 +5923,7 @@
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
-    "load_function":"read_HLFS",
+    "load_function":"read_hlfs_data",
     "data_type":"BarChart"
   },
 
@@ -5950,7 +5950,7 @@
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
-    "load_function":"read_HLFS",
+    "load_function":"read_hlfs_data",
     "data_type":"BarChart"
   },
   {
@@ -5981,7 +5981,7 @@
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
-    "load_function":"read_HLFS",
+    "load_function":"read_hlfs_data",
     "data_type":"BarChart"
   },
   {
@@ -6009,7 +6009,7 @@
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
-    "load_function":"read_HLFS",
+    "load_function":"read_hlfs_data",
     "data_type":"BarChart"
   },
   {
@@ -6045,7 +6045,7 @@
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
-    "load_function":"read_HLFS",
+    "load_function":"read_hlfs_data",
     "data_type":"BarChart"
   },
 
@@ -6072,7 +6072,7 @@
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
-    "load_function":"read_HLFS",
+    "load_function":"read_hlfs_data",
     "data_type":"BarChart"
   },
   {
@@ -6103,7 +6103,7 @@
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
-    "load_function":"read_HLFS",
+    "load_function":"read_hlfs_data",
     "data_type":"BarChart"
   },
   {
@@ -6131,7 +6131,7 @@
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
-    "load_function":"read_HLFS",
+    "load_function":"read_hlfs_data",
     "data_type":"BarChart"
   },
   {
@@ -6167,7 +6167,7 @@
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
-    "load_function":"read_HLFS",
+    "load_function":"read_hlfs_data",
     "data_type":"BarChart"
   },
   {
@@ -6193,7 +6193,7 @@
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
-    "load_function":"read_HLFS",
+    "load_function":"read_hlfs_data",
     "data_type":"BarChart"
   },
   {
@@ -6224,7 +6224,7 @@
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
-    "load_function":"read_HLFS",
+    "load_function":"read_hlfs_data",
     "data_type":"BarChart"
   },
   {
@@ -6252,7 +6252,7 @@
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
-    "load_function":"read_HLFS",
+    "load_function":"read_hlfs_data",
     "data_type":"BarChart"
   },
   {
@@ -6288,7 +6288,7 @@
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
-    "load_function":"read_HLFS",
+    "load_function":"read_hlfs_data",
     "data_type":"BarChart"
   },
   {
@@ -6314,7 +6314,7 @@
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
-    "load_function":"read_HLFS",
+    "load_function":"read_hlfs_data",
     "data_type":"BarChart"
   },
   {
@@ -6345,7 +6345,7 @@
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
-    "load_function":"read_HLFS",
+    "load_function":"read_hlfs_data",
     "data_type":"BarChart"
   },
   {
@@ -6373,7 +6373,7 @@
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
-    "load_function":"read_HLFS",
+    "load_function":"read_hlfs_data",
     "data_type":"BarChart"
   },
   {
@@ -6409,7 +6409,7 @@
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
-    "load_function":"read_HLFS",
+    "load_function":"read_hlfs_data",
     "data_type":"BarChart"
   },
 
@@ -6436,7 +6436,7 @@
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
-    "load_function":"read_HLFS",
+    "load_function":"read_hlfs_data",
     "data_type":"BarChart"
   },
   {
@@ -6467,7 +6467,7 @@
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
-    "load_function":"read_HLFS",
+    "load_function":"read_hlfs_data",
     "data_type":"BarChart"
   },
   {
@@ -6495,7 +6495,7 @@
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
-    "load_function":"read_HLFS",
+    "load_function":"read_hlfs_data",
     "data_type":"BarChart"
   },
   {
@@ -6503,7 +6503,7 @@
     "type":"Social connection",
     "indicator_name":"Loneliness – past 4 weeks",
     "description":"Felt lonely in last four weeks",
-	"keyword":"Some / most / all of the time",
+	  "keyword":"Some / most / all of the time",
     "skip":5,
     "n_rows":3,
     "parameter_col":1,
@@ -6531,7 +6531,7 @@
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
-    "load_function":"read_HLFS",
+    "load_function":"read_hlfs_data",
     "data_type":"BarChart"
   },
 
@@ -6558,7 +6558,7 @@
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
-    "load_function":"read_HLFS",
+    "load_function":"read_hlfs_data",
     "data_type":"BarChart"
   },
   {
@@ -6589,7 +6589,7 @@
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
-    "load_function":"read_HLFS",
+    "load_function":"read_hlfs_data",
     "data_type":"BarChart"
   },
   {
@@ -6617,7 +6617,7 @@
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
-    "load_function":"read_HLFS",
+    "load_function":"read_hlfs_data",
     "data_type":"BarChart"
   },
   {
@@ -6653,7 +6653,7 @@
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
-    "load_function":"read_HLFS",
+    "load_function":"read_hlfs_data",
     "data_type":"BarChart"
   },
   {
@@ -6679,7 +6679,7 @@
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
-    "load_function":"read_HLFS",
+    "load_function":"read_hlfs_data",
     "data_type":"BarChart"
   },
   {
@@ -6710,7 +6710,7 @@
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
-    "load_function":"read_HLFS",
+    "load_function":"read_hlfs_data",
     "data_type":"BarChart"
   },
   {
@@ -6738,7 +6738,7 @@
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
-    "load_function":"read_HLFS",
+    "load_function":"read_hlfs_data",
     "data_type":"BarChart"
   },
   {
@@ -6774,7 +6774,7 @@
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
-    "load_function":"read_HLFS",
+    "load_function":"read_hlfs_data",
     "data_type":"BarChart"
   }
 
