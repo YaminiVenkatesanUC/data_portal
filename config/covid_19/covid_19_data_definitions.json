@@ -6535,14 +6535,14 @@
     "data_type":"BarChart"
   },
 
-   {
+  {
     "class":"Social",
-    "type":"Crime and safety",
-    "indicator_name":"Experienced discrimination",
-    "description":"Discrimination",
-	"keyword":"Experienced discrimination in last 12 months",
+    "type":"Trust",
+    "indicator_name":"Trust in other people",
+    "description":"Trust held for people in New Zealand",
+	"keyword":"7 to 10",
     "skip":5,
-    "n_rows":1,
+    "n_rows":2,
     "parameter_col":1,
     "value_col":[2,5],
     "lower_bound_col":[
@@ -6563,12 +6563,12 @@
   },
   {
     "class":"Social",
-    "type":"Crime and safety",
-    "indicator_name":"Experienced discrimination",
-    "description":"Discrimination",
-	"keyword":"Experienced discrimination in last 12 months",
+    "type":"Trust",
+    "indicator_name":"Trust in other people",
+    "description":"Trust held for people in New Zealand",
+	"keyword":"7 to 10",
     "skip":5,
-    "n_rows":1,
+    "n_rows":3,
     "parameter_col":1,
     "value_col":[2,5,8,11,14,17,20],
     "lower_bound_col":[
@@ -6594,12 +6594,12 @@
   },
   {
     "class":"Social",
-    "type":"Crime and safety",
-    "indicator_name":"Experienced discrimination",
-    "description":"Discrimination",
-	"keyword":"Experienced discrimination in last 12 months",
+    "type":"Trust",
+    "indicator_name":"Trust in other people",
+    "description":"Trust held for people in New Zealand",
+	"keyword":"7 to 10",
     "skip":5,
-    "n_rows":1,
+    "n_rows":3,
     "parameter_col":1,
     "value_col":[2,5,8,11],
     "lower_bound_col":[
@@ -6622,12 +6622,12 @@
   },
   {
     "class":"Social",
-    "type":"Crime and safety",
-    "indicator_name":"Experienced discrimination",
-    "description":"Discrimination",
-	"keyword":"Experienced discrimination in last 12 months",
+    "type":"Trust",
+    "indicator_name":"Trust in other people",
+    "description":"Trust held for people in New Zealand",
+	"keyword":"7 to 10",
     "skip":5,
-    "n_rows":1,
+    "n_rows":3,
     "parameter_col":1,
     "value_col":[2,5,8,11,14,17,20,23,26,29,32,35],
     "lower_bound_col":[
