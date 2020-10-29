@@ -96,6 +96,7 @@
         "indicator_name": "Fuel supply volumes - weekly",
         "type": "Activity",
         "parameter_col": 1,
+        "skip":1,
         "value_names": ["Z Network diesel", "Z Network retail fuel (91 & 95)", "Caltex diesel", "Caltex retail fuel (91 & 95)", "Other domestic retail supply"],
         "group_names": ["Retail", "Retail", "Retail", "Retail", "Retail"],
         "sheet_number": 1,
@@ -109,6 +110,7 @@
         "indicator_name": "Fuel supply volumes - weekly",
         "type": "Activity",
         "parameter_col": 1,
+        "skip":1,
         "value_names": ["Truckstops", "Other commercial fuels - Jet", "Other commercial fuels - Marine", "Other commercial fuels - Other"],
         "group_names": ["Other", "Other", "Other", "Other"],
         "sheet_number": 1,
@@ -6893,6 +6895,35 @@
     "parameter_transform":"function (x) x",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
-  }
+  },
 
+    {
+  "class": "Economic",
+  "indicator_name": "Fuel supply volumes - monthly",
+  "type": "Activity",
+  "parameter_col": 1,
+  "skip":0,
+  "value_names": ["Z Network diesel", "Z Network retail fuel (91 & 95)", "Caltex diesel", "Caltex retail fuel (91 & 95)", "Other domestic retail supply", "Other domestic retail supply"],
+  "group_names": ["Retail", "Retail", "Retail", "Retail", "Retail", "Retail"],
+  "sheet_number": 2,
+  "filename": "COVID 19 - Z Energy weekly volume data.xlsx",
+  "company_name": ["Z Network (inc. Foodstuffs)", "Z Network (inc. Foodstuffs)", "Caltex Retail Fuel", "Caltex Retail Fuel", "Other domestic retail supply", "Other domestic retail supply"],
+  "fuel_type": ["Z Retail diesel", "Z Retail petrol", "Caltex Retail diesel", "Caltex Retail petrol", "Domestic petrol", "Domestic diesel"],
+  "load_function": "petrol_read_file_month"
+},
+
+{
+  "class": "Economic",
+  "indicator_name": "Fuel supply volumes - monthly",
+  "type": "Activity",
+  "parameter_col": 1,
+  "skip":0,
+  "value_names": ["Truckstops", "Other commercial fuels - Jet", "Other commercial fuels - Marine", "Other commercial fuels - Bitumen", "Other commercial fuels - Other"],
+  "group_names": ["Other", "Other", "Other", "Other", "Other"],
+  "sheet_number": 2,
+  "filename": "COVID 19 - Z Energy weekly volume data.xlsx",
+  "company_name": ["Truckstops", "Jet", "Marine", "Bitumen", "Other"],
+  "fuel_type": ["Truckstops", "Jet", "Marine fuel oil", "Bitumen", "Other"],
+  "load_function": "petrol_read_file_month"
+}
 ]

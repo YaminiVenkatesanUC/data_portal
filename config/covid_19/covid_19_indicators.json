@@ -7028,6 +7028,32 @@
 	  }
 	  ]
 },
+
+{
+  "class": "Economic",
+  "title": "Z Energy weekly fuel supply volumes",
+  "indicator_name": "Fuel supply volumes - monthly",
+  "type": "Activity",
+  "source": "Z Energy",
+  "plot_function": "get_stacked_bar_chart",
+  "international": false,
+  "download": true,
+  "source_url":"https://www.nzx.com/companies/ZEL/announcements",
+  "groups": [
+    {
+      "name": "Retail",
+      "units": "Litres",
+      "title": "Z Energy monthly fuel supply volumes - retail",
+      "caveats": "<p>(1) Truckstops include Z and Caltex branded Truckstops, private Truckstops and Mini-Tankers.</p><p>(2) Other includes General Aviation and Lubricants.</p>"
+    },
+    {
+      "name": "Other",
+      "units": "Litres",
+      "title": "Z Energy monthly fuel supply volumes - other",
+      "caveats": "<p>(1) Z volumes will be retail fuel sales volumes including the Foodstuffs network.</p><p>(2) Domestic retail supply volume is the total bulk fuel delivered to distributor customers.</p>"
+    }
+    ]
+},
 {
     "class":"Social",
     "type":"Trust",
