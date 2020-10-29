@@ -5504,8 +5504,7 @@
     "keyword":"7 to 10",
     "parameter_col":1,
     "value_col":[2,5,8,11],
-    "lower_bound_col":[
-      3,6,9,12],
+    "lower_bound_col":[3,6,9,12],
     "upper_bound_col":[4,7,10,13],
     "sheet_number":3,
     "value_names":[
@@ -5949,7 +5948,7 @@
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
     "load_function":"read_hlfs_data",
-    "data_type":"BarChart"
+    "data_type":"TimeSeriesError"
   },
   {
     "class":"Social",
@@ -5980,7 +5979,7 @@
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
     "load_function":"read_hlfs_data",
-    "data_type":"BarChart"
+    "data_type":"TimeSeriesError"
   },
   {
     "class":"Social",
@@ -6008,7 +6007,7 @@
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
     "load_function":"read_hlfs_data",
-    "data_type":"BarChart"
+    "data_type":"TimeSeriesError"
   },
   {
     "class":"Social",
@@ -6044,7 +6043,7 @@
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
     "load_function":"read_hlfs_data",
-    "data_type":"BarChart"
+    "data_type":"TimeSeriesError"
   },
 
   {
@@ -6435,14 +6434,14 @@
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
     "load_function":"read_hlfs_data",
-    "data_type":"BarChart"
+    "data_type":"TimeSeriesError"
   },
   {
     "class":"Social",
     "type":"Social connection",
     "indicator_name":"Loneliness – past 4 weeks",
     "description":"Felt lonely in last four weeks",
-	"keyword":"Some / most / all of the time",
+	 "keyword":"Some / most / all of the time",
     "skip":5,
     "n_rows":3,
     "parameter_col":1,
@@ -6466,7 +6465,7 @@
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
     "load_function":"read_hlfs_data",
-    "data_type":"BarChart"
+    "data_type":"TimeSeriesError"
   },
   {
     "class":"Social",
@@ -6494,7 +6493,7 @@
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
     "load_function":"read_hlfs_data",
-    "data_type":"BarChart"
+    "data_type":"TimeSeriesError"
   },
   {
     "class":"Social",
@@ -6530,7 +6529,7 @@
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
     "load_function":"read_hlfs_data",
-    "data_type":"BarChart"
+    "data_type":"TimeSeriesError"
   },
 
   {
@@ -6751,6 +6750,126 @@
     "value_col":[2,5,8,11,14,17,20,23,26,29,32,35],
     "lower_bound_col":[
       3,6,9,12,15,18,21,24,27,30,33,36],
+    "upper_bound_col":[4,7,10,13,16,19,22,25,28,31,34,37],
+    "sheet_number":4,
+    "value_names":[
+      "Northland",
+      "Auckland",
+      "Waikato",
+      "Bay of Plenty",
+      "Gisborne/Hawke's Bay",
+      "Taranaki",
+      "Manawatu-Whanganui",
+      "Wellington",
+      "Nelson/Tasman/Marlborough/West Coast",
+      "Canterbury",
+      "Otago",
+      "Southland"
+    ],
+    "group_names":[
+      "By region"
+    ],
+    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function (x) x",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+  {
+    "class":"Social",
+    "type":"Crime and safety",
+    "indicator_name":"Experienced discrimination",
+    "description":"Discrimination",
+    "skip":5,
+    "n_rows":1,
+    "parameter_col":1,
+	  "keyword":"Experienced discrimination in last 12 months",
+    "value_col":[2,5],
+    "lower_bound_col":[
+      3,6],
+    "upper_bound_col":[4,7],
+    "sheet_number":1,
+    "value_names":[
+      "Male",
+      "Female"
+    ],
+    "group_names":[
+      "By sex"
+    ],
+    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function (x) x",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+  {
+    "class":"Social",
+    "type":"Crime and safety",
+    "indicator_name":"Experienced discrimination",
+    "description":"Discrimination",
+    "skip":5,
+    "n_rows":1,
+    "parameter_col":1,
+	  "keyword":"Experienced discrimination in last 12 months",
+    "value_col":[2,5,8,11,14,17,20],
+    "lower_bound_col":[
+      3,6,9,12,15,18,21],
+    "upper_bound_col":[4,7,10,13,16,19,22],
+    "sheet_number":2,
+    "value_names":[
+      "18-24",
+      "25-34",
+      "35-44",
+      "45-54",
+      "55-64",
+      "65-74",
+      "75+"
+    ],
+    "group_names":[
+      "By age"
+    ],
+    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function (x) x",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+  {
+    "class":"Social",
+    "type":"Crime and safety",
+    "indicator_name":"Experienced discrimination",
+    "description":"Discrimination",
+    "skip":5,
+    "n_rows":1,
+    "parameter_col":1,
+	  "keyword":"Experienced discrimination in last 12 months",
+    "value_col":[2,5,8,11],
+    "lower_bound_col":[
+      3,6,9,12],
+    "upper_bound_col":[4,7,10,13],
+    "sheet_number":3,
+    "value_names":[
+      "European",
+      "Maori",
+      "Pacific peoples",
+      "Asian"
+    ],
+    "group_names":[
+      "By ethnicity"
+    ],
+    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function (x) x",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+  {
+    "class":"Social",
+    "type":"Crime and Safety",
+    "indicator_name":"Experienced discrimination",
+    "description":"Discrimination",
+    "skip":5,
+    "n_rows":1,
+    "parameter_col":1,
+	  "keyword":"Experienced discrimination in last 12 months",
+    "value_col":[2,5,8,11,14,17,20,23,26,29,32,35],
+    "lower_bound_col":[3,6,9,12,15,18,21,24,27,30,33,36],
     "upper_bound_col":[4,7,10,13,16,19,22,25,28,31,34,37],
     "sheet_number":4,
     "value_names":[
