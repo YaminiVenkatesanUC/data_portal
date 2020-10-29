@@ -963,11 +963,9 @@ read_HLFS <- function(config, directory) {
     data <- data %>% select(-2, -4, -5, -6)
     start_row <- grep(pattern = config$description, x = data[[1]])+1
     end_row <- start_row + config$n_rows - 1
-    data <- data[c(start_row:end_row), ]
 
-    if (config$n_rows > 1) {
-      data <- data %>% filter(data[2] == '7 to 10')
-    }
+    data <- data[c(start_row:end_row), ]
+    data <- data %>% filter(grepl(pattern = config$keyword, x = data[[2]]))
 
     data <- data %>% select(-1, -2)
 
@@ -1005,7 +1003,6 @@ read_HLFS <- function(config, directory) {
     data_all <- drop_na(data_all)
   }
   data_all$Parameter <- parameter_transform(data_all$Parameter)
-  View(data_all)
 
   return(data_frame_to_data_object_helper_error(
     directory,
