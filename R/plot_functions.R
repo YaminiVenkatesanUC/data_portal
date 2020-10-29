@@ -76,6 +76,7 @@ get_time_series_plot <- function(
     units = c("days")
   )))
 
+
   if (duration < 7 & length(dates) > 7) {
     categories <- format(dates, "%d-%b %H:%M")
   } else if (length(unique(year(dates))) == 1) {
@@ -86,6 +87,12 @@ get_time_series_plot <- function(
   } else {
     categories <- format(dates, "%b-%y")
   }
+
+  if (!is.null(indicator_definition$frequency)) {
+      if (indicator_definition$frequency == "monthly") {
+        categories <- format(dates, "%b")
+      }
+    }
 
   if (all(data_object$value_names %in% 2010:2030)) {
     year_label <- ""
