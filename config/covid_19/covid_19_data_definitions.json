@@ -99,6 +99,7 @@
         "value_names": ["Z Network diesel", "Z Network retail fuel (91 & 95)", "Caltex diesel", "Caltex retail fuel (91 & 95)", "Other domestic retail supply"],
         "group_names": ["Retail", "Retail", "Retail", "Retail", "Retail"],
         "sheet_number": 1,
+        "skip":1,
         "filename": "COVID 19 - Z Energy weekly volume data.xlsx",
         "company_name": ["Z Network (inc. Foodstuffs)", "Z Network (inc. Foodstuffs)", "Caltex Retail Fuel", "Caltex Retail Fuel", "Other domestic retail supply"],
         "fuel_type": ["Diesel", "Z Energy", "Diesel", "Retail fuel (91 & 95)", "Other domestic retail supply"],
@@ -444,6 +445,7 @@
         "filename": "COVID 19 - Electronic Card Transaction data.xlsx",
         "load_function": "read_from_excel",
         "skip": 1,
+
         "data_type": "TimeSeries",
         "group_names": [
         "Retail (actual)",
@@ -5438,6 +5440,5 @@
 
       ]
 }
-
 
 ]

@@ -674,7 +674,6 @@
     "international": false,
     "include_date_slider": true,
     "default_lower_range": "2019-01-01",
-    "caveats":" <p>Data for October 2020 is preliminary.</p>",
 
     "source_url": "https://www.anz.co.nz/about-us/economic-markets-research/business-outlook/",
     "download": false,
@@ -739,7 +738,6 @@
     "international": false,
     "include_date_slider": true,
     "default_lower_range": "2019-01-01",
-    "caveats":" <p>Data for October 2020 is preliminary.</p>",
 
     "source_url": "https://www.anz.co.nz/about-us/economic-markets-research/business-outlook/",
     "download": false,
@@ -4006,7 +4004,7 @@
     "plot_function": "get_time_series_plot",
     "international": false,
     "include_date_slider": true,
-    "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-weekly-as-at-19-october-2020",
+    "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-weekly-as-at-26-october-2020",
     "download": true,
 
     "groups": [
@@ -6293,87 +6291,87 @@
   	   {
   		 "name": "Total New Zealand",
   		 "units": "Count",
-  		 "title": "Number of employees by industry type, as at February 2019 – Total New Zealand"
+  		 "title": "Number of employees by industry type, as at February 2020 – Total New Zealand"
   		 },
   	   {
   		 "name": "Northland",
   		 "units": "Count",
-  		 "title": "Number of employees by industry type, as at February 2019 – Northland"
+  		 "title": "Number of employees by industry type, as at February 2020 – Northland"
   		 },
   	   {
   		 "name": "Auckland",
   		 "units": "Count",
-  		 "title": "Number of employees by industry type, as at February 2019 – Auckland"
+  		 "title": "Number of employees by industry type, as at February 2020 – Auckland"
   		 },
   	   {
   		 "name": "Waikato",
   		 "units": "Count",
-  		 "title": "Number of employees by industry type, as at February 2019 – Waikato"
+  		 "title": "Number of employees by industry type, as at February 2020 – Waikato"
   		 },
   	   {
   		 "name": "Bay of Plenty",
   		 "units": "Count",
-  		 "title": "Number of employees by industry type, as at February 2019 – Bay of Plenty"
+  		 "title": "Number of employees by industry type, as at February 2020 – Bay of Plenty"
   		 },
   	   {
   		 "name": "Gisborne",
   		 "units": "Count",
-  		 "title": "Number of employees by industry type, as at February 2019 – Gisborne"
+  		 "title": "Number of employees by industry type, as at February 2020 – Gisborne"
   		 },
   		 {
   		 "name": "Hawke's Bay",
   		 "units": "Count",
-  		 "title": "Number of employees by industry type, as at February 2019 – Hawke's Bay"
+  		 "title": "Number of employees by industry type, as at February 2020 – Hawke's Bay"
   		 },
     	  	   {
   		 "name": "Taranaki",
   		 "units": "Count",
-  		 "title": "Number of employees by industry type, as at February 2019 – Taranaki"
+  		 "title": "Number of employees by industry type, as at February 2020 – Taranaki"
   		 },
   		 {
   		 "name": "Manawatū-Whanganui",
   		 "units": "Count",
-  		 "title": "Number of employees by industry type, as at February 2019 – Manawatū-Whanganui"
+  		 "title": "Number of employees by industry type, as at February 2020 – Manawatū-Whanganui"
   		 },
   		 {
   		 "name": "Wellington",
   		 "units": "Count",
-  		 "title": "Number of employees by industry type, as at February 2019 – Wellington"
+  		 "title": "Number of employees by industry type, as at February 2020 – Wellington"
   		 },
   		 {
   		 "name": "Tasman",
   		 "units": "Count",
-  		 "title": "Number of employees by industry type, as at February 2019 – Tasman"
+  		 "title": "Number of employees by industry type, as at February 2020 – Tasman"
   		 },
   		 {
   		 "name": "Nelson",
   		 "units": "Count",
-  		 "title": "Number of employees by industry type, as at February 2019 – Nelson"
+  		 "title": "Number of employees by industry type, as at February 2020 – Nelson"
   		 },
   		  {
   		 "name": "Marlborough",
   		 "units": "Count",
-  		 "title": "Number of employees by industry type, as at as at February 2019 – Marlborough"
+  		 "title": "Number of employees by industry type, as at as at February 2020 – Marlborough"
   		 },
   		 {
   		 "name": "West Coast",
   		 "units": "Count",
-  		 "title": "Number of employees by industry type, as at as at February 2019 – West Coast"
+  		 "title": "Number of employees by industry type, as at as at February 2020 – West Coast"
   		 },
   		  {
   		 "name": "Canterbury",
   		 "units": "Count",
-  		 "title": "Number of employees by industry type, as at as at February 2019 – Canterbury"
+  		 "title": "Number of employees by industry type, as at as at February 2020 – Canterbury"
   		 },
   		{
   		 "name": "Otago",
   		 "units": "Count",
-  		 "title": "Number of employees by industry type, as at February 2019 – Otago"
+  		 "title": "Number of employees by industry type, as at February 2020 – Otago"
   		 },
   		 {
   		 "name": "Southland",
   		 "units": "Count",
-  		 "title": "Number of employees by industry type, as at February 2019 – Southland"
+  		 "title": "Number of employees by industry type, as at February 2020 – Southland"
   		 }
   	 ]
   },
@@ -6391,87 +6389,87 @@
   	   {
   		 "name": "Total New Zealand",
   		 "units": "Count",
-  		 "title": "Number of business units by industry type, as at February 2019 – Total New Zealand"
+  		 "title": "Number of business units by industry type, as at February 2020 – Total New Zealand"
   		 },
   	   {
   		 "name": "Northland",
   		 "units": "Count",
-  		 "title": "Number of business units by industry type, as at February 2019 – Northland"
+  		 "title": "Number of business units by industry type, as at February 2020 – Northland"
   		 },
   		 {
   		 "name": "Auckland",
   		 "units": "Count",
-  		 "title": "Number of business units by industry type, as at February 2019 – Auckland"
+  		 "title": "Number of business units by industry type, as at February 2020 – Auckland"
   		 },
   	   {
   		 "name": "Waikato",
   		 "units": "Count",
-  		 "title": "Number of business units by industry type, as at February 2019 – Waikato"
+  		 "title": "Number of business units by industry type, as at February 2020 – Waikato"
   	  },
   	  {
   		 "name": "Bay of Plenty",
   		 "units": "Count",
-  		 "title": "Number of business units by industry type, as at February 2019 – Bay of Plenty"
+  		 "title": "Number of business units by industry type, as at February 2020 – Bay of Plenty"
   		 },
   	   {
   		 "name": "Gisborne",
   		 "units": "Count",
-  		 "title": "Number of business units by industry type, as at February 2019 – Gisborne"
+  		 "title": "Number of business units by industry type, as at February 2020 – Gisborne"
   		 },
   		 {
   		 "name": "Hawke's Bay",
   		 "units": "Count",
-  		 "title": "Number of business units by industry type as at February 2019 – Hawke's Bay"
+  		 "title": "Number of business units by industry type as at February 2020 – Hawke's Bay"
   		 },
     	 {
   		 "name": "Taranaki",
   		 "units": "Count",
-  		 "title": "Number of business units by industry type, as at February 2019 – Taranaki"
+  		 "title": "Number of business units by industry type, as at February 2020 – Taranaki"
   		 },
   		 {
   		 "name": "Manawatū-Whanganui",
   		 "units": "Count",
-  		 "title": "Number of business units by industry type, as at February 2019 – Manawatū-Whanganui"
+  		 "title": "Number of business units by industry type, as at February 2020 – Manawatū-Whanganui"
   		 },
   		 {
   		 "name": "Wellington",
   		 "units": "Count",
-  		 "title": "Number of business units by industry type, as at February 2019 – Wellington"
+  		 "title": "Number of business units by industry type, as at February 2020 – Wellington"
   		 },
   		  {
   		 "name": "Tasman",
   		 "units": "Count",
-  		 "title": "Number of business units by industry type, as at February 2019 – Tasman"
+  		 "title": "Number of business units by industry type, as at February 2020 – Tasman"
   		 },
   		 {
   		 "name": "Nelson",
   		 "units": "Count",
-  		 "title": "Number of business units by industry type, as at February 2019 – Nelson"
+  		 "title": "Number of business units by industry type, as at February 2020 – Nelson"
   		 },
   		 {
   		 "name": "Marlborough",
   		 "units": "Count",
-  		 "title": "Number of business units by industry type, as at February 2019 – Marlborough"
+  		 "title": "Number of business units by industry type, as at February 2020 – Marlborough"
   		 },
   		 {
   		 "name": "West Coast",
   		 "units": "Count",
-  		 "title": "Number of business units by industry type, as at February 2019 – West Coast"
+  		 "title": "Number of business units by industry type, as at February 2020 – West Coast"
   		 },
   		  {
   		 "name": "Canterbury",
   		 "units": "Count",
-  		 "title": "Number of business units by industry type, as at February 2019 – Canterbury"
+  		 "title": "Number of business units by industry type, as at February 2020 – Canterbury"
   		 },
   		  {
   		 "name": "Otago",
   		 "units": "Count",
-  		 "title": "Number of business units by industry type, as at February 2019 – Otago"
+  		 "title": "Number of business units by industry type, as at February 2020 – Otago"
   		 },
   		  {
   		 "name": "Southland",
   		 "units": "Count",
-  		 "title": "Number of business units by industry type, as at February 2019 – Southland"
+  		 "title": "Number of business units by industry type, as at February 2020 – Southland"
   		 }
   	 ]
   },
@@ -6665,7 +6663,7 @@
   "plot_function": "get_time_series_plot",
   "international": false,
   "include_date_slider": true,
-  "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-weekly-as-at-12-october-2020",
+  "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-weekly-as-at-26-october-2020",
   "download": true,
 
   "groups": [
@@ -6690,5 +6688,6 @@
 
     ]
 }
+
 
 ]
