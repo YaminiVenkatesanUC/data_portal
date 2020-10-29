@@ -6843,8 +6843,8 @@
 
 {
     "class":"Social",
-    "type":"Life Satisfaction",
-    "indicator_name":"Life Satisfaction – HLFS quarterly",
+    "type":"Life satisfaction",
+    "indicator_name":"Life satisfaction – HLFS quarterly",
     "plot_function":"get_unstacked_bar_chart_with_errors",
     "download":false,
     "international": false,
