@@ -7020,6 +7020,43 @@
         "title":"Percentage of people who felt lonely at least some of the time in the past four weeks, by regional council area"
       }
 	  ]
+},
+
+{
+    "class":"Social",
+    "type":"Crime and safety",
+    "indicator_name":"Experienced discrimination",
+    "plot_function":"get_unstacked_bar_chart_with_errors",
+    "download":false,
+    "international": false,
+    "source":"Stats NZ household labour force survey",
+    "frquency":"Quarterly",
+    "source_url":"https://www.stats.govt.nz/information-releases/wellbeing-statistics-june-2020-quarter",
+    "caveat":"Those aged 18+ who reported they had experienced discrimination in the previous 12 months.",
+    "measure":null,
+    "agency":"Stats NZ",
+    "groups":[
+      {
+        "name":"By sex",
+        "units":"%",
+        "title":"Percentage of people who had experienced discrimination in the last 12 months, by sex"
+      },
+      {
+        "name":"By age",
+        "units":"%",
+        "title":"Percentage of people who had experienced discrimination in the last 12 months, by age group"
+      },
+      {
+        "name":"By ethnicity",
+        "units":"%",
+        "title":"Percentage of people who had experienced discrimination in the last 12 months, by ethnic group"
+      },
+      {
+        "name":"By region",
+        "units":"%",
+        "title":"Percentage of people who had experienced discrimination in the last 12 months, by regional council area"
+      }
+	  ]
 }
 
 
