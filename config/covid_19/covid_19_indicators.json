@@ -6983,6 +6983,42 @@
         "title":"Percentage who rated their trust held for the media highly, by regional council area"
 	  }
 	  ]
+},
+{
+    "class":"Social",
+    "type":"Trust",
+    "indicator_name":"Trust for health system",
+    "plot_function":"get_unstacked_bar_chart_with_errors",
+    "download":false,
+    "source":"Stats NZ household labour force survey",
+    "frquency":"Quarterly",
+    "source_url":"https://www.stats.govt.nz/information-releases/wellbeing-statistics-june-2020-quarter",
+    "caveat":"Those aged 18+ who rated their trust held for the health system at 7 or higher, where 0 is not trusted at all and 10 is trusted completely.",
+    "measure":null,
+    "international":false,
+    "agency":"Stats NZ",
+    "groups":[
+      {
+        "name":"By sex",
+        "units":"%",
+        "title":": Percentage who rated their trust held for the health system highly, by sex"
+      },
+      {
+        "name":"By age",
+        "units":"%",
+        "title":"Percentage who rated their trust held for the health system highly, by age group"
+      },
+      {
+        "name":"By ethnicity",
+        "units":"%",
+        "title":"Percentage who rated their trust held for the health system highly, by ethnic group"
+      },
+	  {
+	    "name":"By region",
+        "units":"%",
+        "title":"Percentage who rated their trust held for the health system highly, by regional council"
+	  }
+	  ]
 }
 
 
