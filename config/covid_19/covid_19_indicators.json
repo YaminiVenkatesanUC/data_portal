@@ -6718,7 +6718,8 @@
       {
         "name":"By ethnicity",
         "units":"%",
-        "title":"Percentage of people who rated the things they do in their life as worthwhile, by ethnic group"
+        "title":"Percentage of people who rated the things they do in their life as worthwhile, by ethnic group",
+        "description":"Where a person reported more than one ethnic group, they were counted in each applicable group"
       },
       {
         "name":"By region",
@@ -6792,8 +6793,9 @@
       {
         "name":"By ethnicity",
         "units":"%",
-        "title":"Percentage of people who reported enough money for everyday needs, by ethnic group"
-      },
+        "title":"Percentage of people who reported enough money for everyday needs, by ethnic group",
+        "description":"Where a person reported more than one ethnic group, they were counted in each applicable group"
+        },
       {
         "name":"By region",
         "units":"%",
@@ -7004,7 +7006,7 @@
       {
         "name":"By sex",
         "units":"%",
-        "title":": Percentage who rated their trust held for the health system highly, by sex"
+        "title":"Percentage who rated their trust held for the health system highly, by sex"
       },
       {
         "name":"By age",
@@ -7021,10 +7023,12 @@
 	  {
 	    "name":"By region",
         "units":"%",
-        "title":"Percentage who rated their trust held for the health system highly, by regional council"
+        "title":"Percentage who rated their trust held for the health system highly, by regional council area",
+        "plot_function":"get_unstacked_horizontal_bar"
 	  }
 	  ]
 },
+<<<<<<< HEAD
 
 {
   "class": "Economic",
@@ -7050,6 +7054,46 @@
       "caveats": "<p>(1) Z volumes will be retail fuel sales volumes including the Foodstuffs network.</p><p>(2) Domestic retail supply volume is the total bulk fuel delivered to distributor customers.</p>"
     }
     ]
+=======
+{
+    "class":"Social",
+    "type":"Trust",
+    "indicator_name":"Trust in other people",
+    "plot_function":"get_unstacked_bar_chart_with_errors",
+    "download":false,
+    "source":"Stats NZ household labour force survey",
+    "frquency":"Quarterly",
+    "source_url":"https://www.stats.govt.nz/information-releases/wellbeing-statistics-june-2020-quarter",
+    "caveat":"Those aged 18+ who rated their trust held for people in New Zealand at 7 or higher, where 0 is not trusted at all and 10 is trusted completely.",
+    "measure":null,
+    "international":false,
+    "agency":"Stats NZ",
+    "groups":[
+      {
+        "name":"By sex",
+        "units":"%",
+        "title":"Percentage who rated their trust held for people in New Zealand highly, by sex"
+      },
+      {
+        "name":"By age",
+        "units":"%",
+        "title":"Percentage who rated their trust held for people in New Zealand highly, by age group"
+
+      },
+      {
+        "name":"By ethnicity",
+        "units":"%",
+        "title":"Percentage who rated their trust held for people in New Zealand highly, by ethnic group",
+        "description":"Where a person reported more than one ethnic group, they were counted in each applicable group."
+      },
+	    {
+	       "name":"By region",
+        "units":"%",
+        "title":"Percentage who rated their trust held for people in New Zealand highly, by regional council area",
+        "plot_function":"get_unstacked_horizontal_bar"
+	   }
+	  ]
+>>>>>>> 253cb018561cd547d122e474a58a6608658cd0bb
 }
 
 
