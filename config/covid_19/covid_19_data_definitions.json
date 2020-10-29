@@ -5417,8 +5417,6 @@
     3,
     4,
     5
-
-
     ],
   "value_names": [
     "Total",
@@ -5463,7 +5461,7 @@
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
     "load_function":"read_hlfs_data",
-    "data_type":"BarChart"
+    "data_type":"TimeSeriesError"
   },
   {
     "class":"Social",
@@ -5494,7 +5492,7 @@
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
     "load_function":"read_hlfs_data",
-    "data_type":"BarChart"
+    "data_type":"TimeSeriesError"
   },
   {
     "class":"Social",
@@ -5522,7 +5520,7 @@
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
     "load_function":"read_hlfs_data",
-    "data_type":"BarChart"
+    "data_type":"TimeSeriesError"
   },
   {
     "class":"Social",
@@ -5558,7 +5556,7 @@
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
     "load_function":"read_hlfs_data",
-    "data_type":"BarChart"
+    "data_type":"TimeSeriesError"
   },
 
   {
@@ -5585,7 +5583,7 @@
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
     "load_function":"read_hlfs_data",
-    "data_type":"BarChart"
+    "data_type":"TimeSeriesError"
   },
   {
     "class":"Social",
@@ -5616,7 +5614,7 @@
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
     "load_function":"read_hlfs_data",
-    "data_type":"BarChart"
+    "data_type":"TimeSeriesError"
   },
   {
     "class":"Social",
@@ -5644,7 +5642,7 @@
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
     "load_function":"read_hlfs_data",
-    "data_type":"BarChart"
+    "data_type":"TimeSeriesError"
   },
   {
     "class":"Social",
@@ -5680,7 +5678,7 @@
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
     "load_function":"read_hlfs_data",
-    "data_type":"BarChart"
+    "data_type":"TimeSeriesError"
   },
 
   {
@@ -5707,7 +5705,7 @@
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
     "load_function":"read_hlfs_data",
-    "data_type":"BarChart"
+    "data_type":"TimeSeriesError"
   },
   {
     "class":"Social",
@@ -5738,7 +5736,7 @@
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
     "load_function":"read_hlfs_data",
-    "data_type":"BarChart"
+    "data_type":"TimeSeriesError"
   },
   {
     "class":"Social",
@@ -5766,7 +5764,7 @@
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
     "load_function":"read_hlfs_data",
-    "data_type":"BarChart"
+    "data_type":"TimeSeriesError"
   },
   {
     "class":"Social",
@@ -5802,7 +5800,7 @@
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
     "load_function":"read_hlfs_data",
-    "data_type":"BarChart"
+    "data_type":"TimeSeriesError"
   },
 
   {
@@ -5829,7 +5827,7 @@
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
     "load_function":"read_hlfs_data",
-    "data_type":"BarChart"
+    "data_type":"TimeSeriesError"
   },
   {
     "class":"Social",
@@ -5860,7 +5858,7 @@
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
     "load_function":"read_hlfs_data",
-    "data_type":"BarChart"
+    "data_type":"TimeSeriesError"
   },
   {
     "class":"Social",
@@ -5888,7 +5886,7 @@
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
     "load_function":"read_hlfs_data",
-    "data_type":"BarChart"
+    "data_type":"TimeSeriesError"
   },
   {
     "class":"Social",
@@ -5924,7 +5922,7 @@
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
     "load_function":"read_hlfs_data",
-    "data_type":"BarChart"
+    "data_type":"TimeSeriesError"
   },
 
   {
@@ -6073,7 +6071,7 @@
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
     "load_function":"read_hlfs_data",
-    "data_type":"BarChart"
+    "data_type":"TimeSeriesError"
   },
   {
     "class":"Social",
@@ -6104,7 +6102,7 @@
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
     "load_function":"read_hlfs_data",
-    "data_type":"BarChart"
+    "data_type":"TimeSeriesError"
   },
   {
     "class":"Social",
@@ -6132,7 +6130,7 @@
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
     "load_function":"read_hlfs_data",
-    "data_type":"BarChart"
+    "data_type":"TimeSeriesError"
   },
   {
     "class":"Social",
@@ -6168,7 +6166,7 @@
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
     "load_function":"read_hlfs_data",
-    "data_type":"BarChart"
+    "data_type":"TimeSeriesError"
   },
   {
     "class":"Social",
@@ -6194,7 +6192,7 @@
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
     "load_function":"read_hlfs_data",
-    "data_type":"BarChart"
+    "data_type":"TimeSeriesError"
   },
   {
     "class":"Social",
@@ -6225,7 +6223,7 @@
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
     "load_function":"read_hlfs_data",
-    "data_type":"BarChart"
+    "data_type":"TimeSeriesError"
   },
   {
     "class":"Social",
@@ -6253,7 +6251,7 @@
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
     "load_function":"read_hlfs_data",
-    "data_type":"BarChart"
+    "data_type":"TimeSeriesError"
   },
   {
     "class":"Social",
@@ -6289,7 +6287,7 @@
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
     "load_function":"read_hlfs_data",
-    "data_type":"BarChart"
+    "data_type":"TimeSeriesError"
   },
   {
     "class":"Social",
@@ -6315,7 +6313,7 @@
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
     "load_function":"read_hlfs_data",
-    "data_type":"BarChart"
+    "data_type":"TimeSeriesError"
   },
   {
     "class":"Social",
@@ -6346,7 +6344,7 @@
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
     "load_function":"read_hlfs_data",
-    "data_type":"BarChart"
+    "data_type":"TimeSeriesError"
   },
   {
     "class":"Social",
@@ -6374,7 +6372,7 @@
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
     "load_function":"read_hlfs_data",
-    "data_type":"BarChart"
+    "data_type":"TimeSeriesError"
   },
   {
     "class":"Social",
@@ -6410,7 +6408,7 @@
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
     "load_function":"read_hlfs_data",
-    "data_type":"BarChart"
+    "data_type":"TimeSeriesError"
   },
 
   {
@@ -6540,7 +6538,7 @@
     "type":"Trust",
     "indicator_name":"Trust in other people",
     "description":"Trust held for people in New Zealand",
-	"keyword":"7 to 10",
+	  "keyword":"7 to 10",
     "skip":5,
     "n_rows":2,
     "parameter_col":1,
@@ -6559,14 +6557,14 @@
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
     "load_function":"read_hlfs_data",
-    "data_type":"BarChart"
+    "data_type":"TimeSeriesError"
   },
   {
     "class":"Social",
     "type":"Trust",
     "indicator_name":"Trust in other people",
     "description":"Trust held for people in New Zealand",
-	"keyword":"7 to 10",
+	  "keyword":"7 to 10",
     "skip":5,
     "n_rows":3,
     "parameter_col":1,
@@ -6590,14 +6588,14 @@
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
     "load_function":"read_hlfs_data",
-    "data_type":"BarChart"
+    "data_type":"TimeSeriesError"
   },
   {
     "class":"Social",
     "type":"Trust",
     "indicator_name":"Trust in other people",
     "description":"Trust held for people in New Zealand",
-	"keyword":"7 to 10",
+	  "keyword":"7 to 10",
     "skip":5,
     "n_rows":3,
     "parameter_col":1,
@@ -6618,14 +6616,14 @@
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
     "load_function":"read_hlfs_data",
-    "data_type":"BarChart"
+    "data_type":"TimeSeriesError"
   },
   {
     "class":"Social",
     "type":"Trust",
     "indicator_name":"Trust in other people",
     "description":"Trust held for people in New Zealand",
-	"keyword":"7 to 10",
+	  "keyword":"7 to 10",
     "skip":5,
     "n_rows":3,
     "parameter_col":1,
@@ -6654,7 +6652,7 @@
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
     "load_function":"read_hlfs_data",
-    "data_type":"BarChart"
+    "data_type":"TimeSeriesError"
   },
   {
     "class":"Social",
@@ -6680,7 +6678,7 @@
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
     "load_function":"read_hlfs_data",
-    "data_type":"BarChart"
+    "data_type":"TimeSeriesError"
   },
   {
     "class":"Social",
@@ -6711,7 +6709,7 @@
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
     "load_function":"read_hlfs_data",
-    "data_type":"BarChart"
+    "data_type":"TimeSeriesError"
   },
   {
     "class":"Social",
@@ -6739,7 +6737,7 @@
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
     "load_function":"read_hlfs_data",
-    "data_type":"BarChart"
+    "data_type":"TimeSeriesError"
   },
   {
     "class":"Social",
@@ -6775,7 +6773,7 @@
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function (x) x",
     "load_function":"read_hlfs_data",
-    "data_type":"BarChart"
+    "data_type":"TimeSeriesError"
   }
 
 ]
