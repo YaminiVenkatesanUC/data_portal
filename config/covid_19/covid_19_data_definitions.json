@@ -5438,7 +5438,6 @@
 
       ]
 },
-
 {
     "class":"Social",
     "type":"General wellbeing",
@@ -5467,13 +5466,13 @@
   },
   {
     "class":"Social",
-    "type":"General Wellbeing",
+    "type":"General wellbeing",
     "indicator_name":"Life worthwhile",
     "description":"Life worthwhile",
     "skip":5,
     "n_rows":2,
-    "keyword":"7 to 10",
     "parameter_col":1,
+	  "keyword":"7 to 10",
     "value_col":[2,5,8,11,14,17,20],
     "lower_bound_col":[
       3,6,9,12,15,18,21],
@@ -5498,15 +5497,16 @@
   },
   {
     "class":"Social",
-    "type":"General Wellbeing",
+    "type":"General wellbeing",
     "indicator_name":"Life worthwhile",
     "description":"Life worthwhile",
     "skip":5,
     "n_rows":2,
-    "keyword":"7 to 10",
     "parameter_col":1,
+	  "keyword":"7 to 10",
     "value_col":[2,5,8,11],
-    "lower_bound_col":[3,6,9,12],
+    "lower_bound_col":[
+      3,6,9,12],
     "upper_bound_col":[4,7,10,13],
     "sheet_number":3,
     "value_names":[
@@ -6861,9 +6861,9 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
-  {
+ {
     "class":"Social",
-    "type":"Crime and Safety",
+    "type":"Crime and safety",
     "indicator_name":"Experienced discrimination",
     "description":"Discrimination",
     "skip":5,
@@ -6871,7 +6871,8 @@
     "parameter_col":1,
 	  "keyword":"Experienced discrimination in last 12 months",
     "value_col":[2,5,8,11,14,17,20,23,26,29,32,35],
-    "lower_bound_col":[3,6,9,12,15,18,21,24,27,30,33,36],
+    "lower_bound_col":[
+      3,6,9,12,15,18,21,24,27,30,33,36],
     "upper_bound_col":[4,7,10,13,16,19,22,25,28,31,34,37],
     "sheet_number":4,
     "value_names":[
@@ -6896,7 +6897,6 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
-
     {
   "class": "Economic",
   "indicator_name": "Fuel supply volumes - monthly",
