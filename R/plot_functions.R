@@ -87,6 +87,12 @@ get_time_series_plot <- function(
     categories <- format(dates, "%b-%y")
   }
 
+    if (!is.null(indicator_definition$frequency)) {
+      if (indicator_definition$frequency == "monthly") {
+        categories <- format(dates, "%b")
+      }
+    }
+
   if (all(data_object$value_names %in% 2010:2030)) {
     year_label <- ""
     categories <- format(dates, "%d-%b")
