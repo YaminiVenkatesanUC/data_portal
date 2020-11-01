@@ -381,6 +381,7 @@ read_employment_data <- function(config, directory) {
     paste0(directory, config$filename),
     stringsAsFactors = FALSE
   ) %>%
+    filter(Group == load_parameters$keyword) %>%
     filter(
       Series_title_1 %in% load_parameters$Series_title_1 &
         substr(Series_reference, 4, 4) == "M"
@@ -421,10 +422,12 @@ read_filled_jobs_by_gender <- function(config, directory) {
   ) %>%
     mutate(
       Parameter = ymd(paste0(str_pad(as.character(Period), 7, side = "right", pad = "0"), ".01")),
-      Value = as.numeric(Value)
+      Value = as.numeric(Data_value)
     ) %>%
-    select("Parameter", load_parameters$group_type, "Value", "Sex")
+    filter(Group == load_parameters$keyword) %>%
+    select("Parameter", load_parameters$group_type, "Value", "Series_title_2")
   names(data)[[2]] <- "group_column"
+  names(data)[[4]] <- "Sex"
   output_group <- list()
   update_date <- as.Date(file.info(paste0(directory, config$filename))$mtime, tz = "NZ")
 
@@ -453,10 +456,12 @@ read_filled_jobs_by_age <- function(config, directory) {
   ) %>%
     mutate(
       Parameter = ymd(paste0(str_pad(as.character(Period), 7, side = "right", pad = "0"), ".01")),
-      Value = as.numeric(Value)
+      Value = as.numeric(Data_value)
     ) %>%
-    select("Parameter", load_parameters$group_type, "Value", "Age_group")
+    filter(Group == load_parameters$keyword) %>%
+    select("Parameter", load_parameters$group_type, "Value", "Series_title_2")
   names(data)[[2]] <- "group_column"
+  names(data)[[4]] <- "Age_group"
   output_group <- list()
   update_date <- as.Date(file.info(paste0(directory, config$filename))$mtime, tz = "NZ")
 
@@ -488,12 +493,15 @@ read_filled_jobs_by_industry_or_region <- function(config, directory) {
   ) %>%
     mutate(
       Parameter = ymd(paste0(str_pad(as.character(Period), 7, side = "right", pad = "0"), ".01")),
-      Value = Value * (10 ** Magnitude)
+      Value = Data_value * (10 ** Magnitude)
     ) %>%
+    filter(Group == load_parameters$keyword) %>%
     select("Parameter", load_parameters$group_type, "Value")
+
   names(data)[[2]] <- "group_column"
   output_group <- list()
   update_date <- as.Date(file.info(paste0(directory, config$filename))$mtime, tz = "NZ")
+
 
   for (industry_group in unique(data$group_column)) {
     data_group <- data %>%
@@ -504,6 +512,8 @@ read_filled_jobs_by_industry_or_region <- function(config, directory) {
     group_name <- industry_group
     output_group[[group_name]] <- TimeSeries$new(data_group, group_name, update_date)
   }
+
+  print(head(output_group))
 
   return(output_group)
 }
@@ -1047,6 +1057,7 @@ read_hlfs_data <- function(config, directory) {
     data_all
   ))
 }
+
 
 load_functions <- list(
   read_from_csv = read_from_csv,

@@ -5,11 +5,12 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly filled jobs (by industry)",
-      "filename": "employment-indicators-september-2020-filled-jobs-by-industry-CSV.csv",
+      "filename": "employment-indicators-september-2020-csv-tables.csv",
       "load_function": "read_filled_jobs_by_industry_or_region",
       "data_type": "TimeSeries",
       "load_parameters": {
-        "group_type": "Industry.Group"
+        "group_type": "Series_title_2",
+        "keyword": "Industry by variable"
       }
     },
     {
@@ -18,11 +19,12 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly filled jobs (by region)",
-      "filename": "employment-indicators-september-2020-filled-jobs-by-region-CSV.csv",
+      "filename": "employment-indicators-september-2020-csv-tables.csv",
       "load_function": "read_filled_jobs_by_industry_or_region",
       "data_type": "TimeSeries",
       "load_parameters": {
-        "group_type": "Region"
+        "group_type": "Series_title_2",
+        "keyword": "Region by variable"
       }
     },
     {
@@ -31,11 +33,12 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly filled jobs (by gender)",
-      "filename": "employment-indicators-september-2020-filled-jobs-by-sex-and-region-CSV.csv",
+      "filename": "employment-indicators-september-2020-csv-tables.csv",
       "load_function": "read_filled_jobs_by_gender",
       "data_type": "TimeSeries",
       "load_parameters": {
-        "group_type": "Region"
+        "group_type": "Series_title_3",
+        "keyword": "Sex and Region by variable"
       }
     },
         {
@@ -44,11 +47,12 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly filled jobs (by age)",
-      "filename": "employment-indicators-september-2020-filled-jobs-by-age-and-region-CSV.csv",
+      "filename": "employment-indicators-september-2020-csv-tables.csv",
       "load_function": "read_filled_jobs_by_age",
       "data_type": "TimeSeries",
       "load_parameters": {
-        "group_type": "Region"
+        "group_type": "Series_title_3",
+        "keyword": "Age and Region by variable"
       }
     },
     {
@@ -57,11 +61,12 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly filled jobs",
-      "filename": "Machine_readable_file_mei_september_2020.csv",
+      "filename": "employment-indicators-september-2020-csv-tables.csv",
       "load_function": "read_employment_data",
       "data_type": "TimeSeries",
       "load_parameters": {
-        "Series_title_1": "Filled jobs"
+        "Series_title_1": "Filled jobs",
+        "keyword": "High level industry by variable"
       }
     },
         {
@@ -70,11 +75,12 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly earnings",
-      "filename": "Machine_readable_file_mei_september_2020.csv",
+      "filename": "employment-indicators-september-2020-csv-tables.csv",
       "load_function": "read_employment_data",
       "data_type": "TimeSeries",
       "load_parameters": {
-        "Series_title_1": "Total earnings"
+        "Series_title_1": "Total earnings",
+        "keyword": "High level industry by variable"
       }
     },
     {
@@ -5460,7 +5466,7 @@
       "By sex"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -5491,7 +5497,7 @@
       "By age"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -5519,7 +5525,7 @@
       "By ethnicity"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -5555,7 +5561,7 @@
       "By region"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -5582,7 +5588,7 @@
       "By sex"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -5613,7 +5619,7 @@
       "By age"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -5641,7 +5647,7 @@
       "By ethnicity"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -5677,7 +5683,7 @@
       "By region"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -5704,7 +5710,7 @@
       "By sex"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -5735,7 +5741,7 @@
       "By age"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -5763,7 +5769,7 @@
       "By ethnicity"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -5799,7 +5805,7 @@
       "By region"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -5826,7 +5832,7 @@
       "By sex"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -5857,7 +5863,7 @@
       "By age"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -5885,7 +5891,7 @@
       "By ethnicity"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -5921,7 +5927,7 @@
       "By region"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -5948,7 +5954,7 @@
       "By sex"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -5979,7 +5985,7 @@
       "By age"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -6007,7 +6013,7 @@
       "By ethnicity"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -6043,7 +6049,7 @@
       "By region"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -6070,7 +6076,7 @@
       "By sex"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -6101,7 +6107,7 @@
       "By age"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -6129,7 +6135,7 @@
       "By ethnicity"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -6165,7 +6171,7 @@
       "By region"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -6191,7 +6197,7 @@
       "By sex"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -6222,7 +6228,7 @@
       "By age"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -6250,7 +6256,7 @@
       "By ethnicity"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -6286,7 +6292,7 @@
       "By region"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -6312,7 +6318,7 @@
       "By sex"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -6343,7 +6349,7 @@
       "By age"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -6371,7 +6377,7 @@
       "By ethnicity"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -6407,7 +6413,7 @@
       "By region"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -6434,7 +6440,7 @@
       "By sex"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -6465,7 +6471,7 @@
       "By age"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -6493,7 +6499,7 @@
       "By ethnicity"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -6529,7 +6535,7 @@
       "By region"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -6556,7 +6562,7 @@
       "By sex"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -6587,7 +6593,7 @@
       "By age"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -6615,7 +6621,7 @@
       "By ethnicity"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -6651,7 +6657,7 @@
       "By region"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -6677,7 +6683,7 @@
       "By sex"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -6708,7 +6714,7 @@
       "By age"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -6736,7 +6742,7 @@
       "By ethnicity"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -6772,7 +6778,7 @@
       "By region"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -6798,7 +6804,7 @@
       "By sex"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -6829,7 +6835,7 @@
       "By age"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -6857,7 +6863,7 @@
       "By ethnicity"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
@@ -6893,37 +6899,8 @@
       "By region"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
-  },
-    {
-  "class": "Economic",
-  "indicator_name": "Fuel supply volumes - monthly",
-  "type": "Activity",
-  "parameter_col": 1,
-  "skip":0,
-  "value_names": ["Z Network diesel", "Z Network retail fuel (91 & 95)", "Caltex diesel", "Caltex retail fuel (91 & 95)", "Other domestic retail supply", "Other domestic retail supply"],
-  "group_names": ["Retail", "Retail", "Retail", "Retail", "Retail", "Retail"],
-  "sheet_number": 2,
-  "filename": "COVID 19 - Z Energy weekly volume data.xlsx",
-  "company_name": ["Z Network (inc. Foodstuffs)", "Z Network (inc. Foodstuffs)", "Caltex Retail Fuel", "Caltex Retail Fuel", "Other domestic retail supply", "Other domestic retail supply"],
-  "fuel_type": ["Z Retail diesel", "Z Retail petrol", "Caltex Retail diesel", "Caltex Retail petrol", "Domestic petrol", "Domestic diesel"],
-  "load_function": "petrol_read_file_month"
-},
-
-{
-  "class": "Economic",
-  "indicator_name": "Fuel supply volumes - monthly",
-  "type": "Activity",
-  "parameter_col": 1,
-  "skip":0,
-  "value_names": ["Truckstops", "Other commercial fuels - Jet", "Other commercial fuels - Marine", "Other commercial fuels - Bitumen", "Other commercial fuels - Other"],
-  "group_names": ["Other", "Other", "Other", "Other", "Other"],
-  "sheet_number": 2,
-  "filename": "COVID 19 - Z Energy weekly volume data.xlsx",
-  "company_name": ["Truckstops", "Jet", "Marine", "Bitumen", "Other"],
-  "fuel_type": ["Truckstops", "Jet", "Marine fuel oil", "Bitumen", "Other"],
-  "load_function": "petrol_read_file_month"
-}
+  }
 ]
