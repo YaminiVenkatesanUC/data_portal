@@ -988,13 +988,13 @@
         "sheet_number": 1,
         "value_col": [
         3,
-        5,
-        4
+        4,
+        5
         ],
         "value_names": [
-          "Active",
+           "Deceased",
         "Recovered",
-         "Deceased"
+         "Active"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
         "load_function": "get_john_hopkins_data",
@@ -1013,14 +1013,14 @@
         ],
         "sheet_number": 1,
         "value_col": [
-        5,
         3,
-        4
+        4,
+        5
         ],
         "value_names": [
-        "Active",
+           "Deceased",
         "Recovered",
-         "Deceased"
+         "Active"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
         "load_function": "read_global_cases_file",
@@ -1038,15 +1038,15 @@
         "as.Date(x, format = \"%d/%m/%y\")"
         ],
         "sheet_number": 1,
-        "value_col": [
-        5,
+      "value_col": [
         3,
-        4
+        4,
+        5
         ],
         "value_names": [
-       "Active",
+           "Deceased",
         "Recovered",
-         "Deceased"
+         "Active"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
         "load_function": "read_global_cases_file",
@@ -1064,15 +1064,15 @@
         "as.Date(x, format = \"%d/%m/%y\")"
         ],
         "sheet_number": 1,
-        "value_col": [
-        5,
+      "value_col": [
         3,
-        4
+        4,
+        5
         ],
         "value_names": [
-         "Active",
+           "Deceased",
         "Recovered",
-         "Deceased"
+         "Active"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
         "load_function": "read_global_cases_file",
@@ -1090,15 +1090,15 @@
         "as.Date(x, format = \"%d/%m/%y\")"
         ],
         "sheet_number": 1,
-        "value_col": [
-        5,
+      "value_col": [
         3,
-        4
+        4,
+        5
         ],
         "value_names": [
-        "Active",
+           "Deceased",
         "Recovered",
-         "Deceased"
+         "Active"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
         "load_function": "read_global_cases_file",
@@ -1116,15 +1116,15 @@
         "as.Date(x, format = \"%d/%m/%y\")"
         ],
         "sheet_number": 1,
-        "value_col": [
-        5,
+      "value_col": [
         3,
-        4
+        4,
+        5
         ],
         "value_names": [
-         "Active",
+           "Deceased",
         "Recovered",
-         "Deceased"
+         "Active"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
         "load_function": "read_global_cases_file",
@@ -1143,14 +1143,14 @@
         ],
         "sheet_number": 1,
         "value_col": [
-        5,
         3,
-        4
+        4,
+        5
         ],
         "value_names": [
-        "Active",
+           "Deceased",
         "Recovered",
-         "Deceased"
+         "Active"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
         "load_function": "read_global_cases_file",
@@ -1168,15 +1168,15 @@
         "as.Date(x, format = \"%d/%m/%y\")"
         ],
         "sheet_number": 1,
-        "value_col": [
-        5,
+      "value_col": [
         3,
-        4
+        4,
+        5
         ],
         "value_names": [
-        "Active",
+           "Deceased",
         "Recovered",
-         "Deceased"
+         "Active"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
         "load_function": "read_global_cases_file",
@@ -1195,14 +1195,14 @@
         ],
         "sheet_number": 1,
         "value_col": [
-        5,
         3,
-        4
+        4,
+        5
         ],
         "value_names": [
-        "Active",
+           "Deceased",
         "Recovered",
-         "Deceased"
+         "Active"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
         "load_function": "read_global_cases_file",
@@ -3153,14 +3153,14 @@
         ],
         "sheet_number": 1,
         "value_col": [
-        5,
         3,
-        4
+        4,
+        5
         ],
         "value_names": [
-       "Active",
+       "Deceased",
         "Recovered",
-         "Deceased"
+         "Active"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
         "load_function": "read_global_cases_file",
@@ -3179,14 +3179,14 @@
         ],
         "sheet_number": 1,
         "value_col": [
-        5,
         3,
-        4
+        4,
+        5
         ],
         "value_names": [
-       "Active",
+          "Deceased",
         "Recovered",
-         "Deceased"
+         "Active"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
         "load_function": "read_global_cases_file",
@@ -3205,14 +3205,14 @@
         ],
         "sheet_number": 1,
         "value_col": [
-        5,
         3,
-        4
+        4,
+        5
         ],
         "value_names": [
-       "Active",
+          "Deceased",
         "Recovered",
-         "Deceased"
+         "Active"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
         "load_function": "read_global_cases_file",
@@ -3231,14 +3231,14 @@
         ],
         "sheet_number": 1,
         "value_col": [
-        5,
         3,
-        4
+        4,
+        5
         ],
         "value_names": [
-       "Active",
+           "Deceased",
         "Recovered",
-         "Deceased"
+         "Active"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
         "load_function": "read_global_cases_file",
@@ -3258,14 +3258,14 @@
         ],
         "sheet_number": 1,
         "value_col": [
-        5,
         3,
-        4
+        4,
+        5
         ],
         "value_names": [
-       "Active",
+           "Deceased",
         "Recovered",
-         "Deceased"
+         "Active"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
         "load_function": "read_global_cases_file",
@@ -3285,14 +3285,14 @@
         ],
         "sheet_number": 1,
         "value_col": [
-        5,
         3,
-        4
+        4,
+        5
         ],
         "value_names": [
-       "Active",
+           "Deceased",
         "Recovered",
-         "Deceased"
+         "Active"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
         "load_function": "read_global_cases_file",
@@ -3311,15 +3311,15 @@
         "as.Date(x, format = \"%d/%m/%y\")"
         ],
         "sheet_number": 1,
-        "value_col": [
-        5,
+      "value_col": [
         3,
-        4
+        4,
+        5
         ],
         "value_names": [
-       "Active",
+           "Deceased",
         "Recovered",
-         "Deceased"
+         "Active"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
         "load_function": "read_global_cases_file",
@@ -3337,15 +3337,15 @@
         "as.Date(x, format = \"%d/%m/%y\")"
         ],
         "sheet_number": 1,
-        "value_col": [
-        5,
+       "value_col": [
         3,
-        4
+        4,
+        5
         ],
         "value_names": [
-       "Active",
+           "Deceased",
         "Recovered",
-         "Deceased"
+         "Active"
         ],
         "filename": "COVID 19 - Global cases.xlsx",
         "load_function": "read_global_cases_file",
@@ -5447,7 +5447,7 @@
   "type": "Activity",
   "parameter_col": 1,
   "skip":0,
-  "value_names": ["Z Network diesel", "Z Network retail fuel (91 & 95)", "Caltex diesel", "Caltex retail fuel (91 & 95)", "Other domestic retail supply", "Other domestic retail supply"],
+  "value_names": ["Z Network diesel", "Z Network retail fuel (91 & 95)", "Caltex diesel", "Caltex retail fuel (91 & 95)", "Other domestic retail supply (petrol)", "Other domestic retail supply (diesel)"],
   "group_names": ["Retail", "Retail", "Retail", "Retail", "Retail", "Retail"],
   "sheet_number": 2,
   "filename": "COVID 19 - Z Energy weekly volume data.xlsx",
