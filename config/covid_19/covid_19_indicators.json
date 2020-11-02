@@ -6724,7 +6724,9 @@
       {
         "name":"By region",
         "units":"%",
-        "title":"Percentage of people who rated the things they do in their life as worthwhile, by regional council area"
+        "title":"Percentage of people who rated the things they do in their life as worthwhile, by regional council area",
+        "x_axis_label":"Regions",
+        "plot_function":"get_unstacked_vertical_bar_with_errors"
       }
     ]
 },
@@ -6761,7 +6763,9 @@
       {
         "name":"By region",
         "units":"%",
-        "title":"Percentage of people who rated their family wellbeing highly, by regional council area"
+        "title":"Percentage of people who rated their family wellbeing highly, by regional council area",
+        "x_axis_label":"Regions",
+        "plot_function":"get_unstacked_vertical_bar_with_errors"
       }
     ]
 },
@@ -6799,7 +6803,9 @@
       {
         "name":"By region",
         "units":"%",
-        "title":"Percentage of people who reported enough money for everyday needs, by regional council area"
+        "title":"Percentage of people who reported enough money for everyday needs, by regional council area",
+        "x_axis_label":"Regions",
+        "plot_function":"get_unstacked_vertical_bar_with_errors"
       }
     ]
 },
@@ -6836,7 +6842,9 @@
       {
         "name":"By region",
         "units":"%",
-        "title":"Percentage of people who received help from a welfare organisation in the last 12 months, by regional council area"
+        "title":"Percentage of people who received help from a welfare organisation in the last 12 months, by regional council area",
+        "x_axis_label":"Regions",
+        "plot_function":"get_unstacked_vertical_bar_with_errors"
       }
     ]
 },
@@ -6873,7 +6881,9 @@
       {
         "name":"By region",
         "units":"%",
-        "title":"Percentage of people who rated their life satisfaction highly, by regional council area"
+        "title":"Percentage of people who rated their life satisfaction highly, by regional council area",
+        "x_axis_label":"Regions",
+        "plot_function":"get_unstacked_vertical_bar_with_errors"
       }
 	  ]
 },
@@ -6910,7 +6920,9 @@
       {
         "name":"By region",
         "units":"%",
-        "title":"Percentage who rated their trust held for parliament highly, by regional council area"
+        "title":"Percentage who rated their trust held for parliament highly, by regional council area",
+        "x_axis_label":"Regions",
+        "plot_function":"get_unstacked_vertical_bar_with_errors"
       }
 	  ]
 },
@@ -6947,7 +6959,9 @@
 	  {
 	    "name":"By region",
         "units":"%",
-        "title":"Percentage who rated their trust held for police highly, by regional council area"
+        "title":"Percentage who rated their trust held for police highly, by regional council area",
+        "x_axis_label":"Regions",
+        "plot_function":"get_unstacked_vertical_bar_with_errors"
 	  }
 	  ]
 },
@@ -6985,7 +6999,9 @@
 	  {
 	    "name":"By region",
         "units":"%",
-        "title":"Percentage who rated their trust held for the media highly, by regional council area"
+        "title":"Percentage who rated their trust held for the media highly, by regional council area",
+        "x_axis_label":"Regions",
+        "plot_function":"get_unstacked_vertical_bar_with_errors"
 	  }
 	  ]
 },
@@ -7024,7 +7040,8 @@
 	    "name":"By region",
         "units":"%",
         "title":"Percentage who rated their trust held for the health system highly, by regional council area",
-        "plot_function":"get_unstacked_horizontal_bar"
+        "x_axis_label":"Regions",
+        "plot_function":"get_unstacked_vertical_bar_with_errors"
 	  }
 	  ]
 },
@@ -7090,7 +7107,8 @@
 	       "name":"By region",
         "units":"%",
         "title":"Percentage who rated their trust held for people in New Zealand highly, by regional council area",
-        "plot_function":"get_unstacked_horizontal_bar"
+        "x_axis_label":"Regions",
+        "plot_function":"get_unstacked_vertical_bar_with_errors"
 	   }
 	  ]
 },
@@ -7170,7 +7188,9 @@
 	    {
 	       "name":"By region",
         "units":"%",
-        "title":"Percentage of people who felt lonely at least some of the time in the past four weeks, by regional council area"
+        "title":"Percentage of people who felt lonely at least some of the time in the past four weeks, by regional council area",
+        "x_axis_label":"Regions",
+        "plot_function":"get_unstacked_vertical_bar_with_errors"
 	   }
 	  ]
 }

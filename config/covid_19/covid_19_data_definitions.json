@@ -5538,25 +5538,11 @@
     "n_rows":2,
     "keyword":"7 to 10",
     "parameter_col":1,
-    "value_col":[2,5,8,11,14,17,20,23,26,29,32,35],
-    "lower_bound_col":[
-      3,6,9,12,15,18,21,24,27,30,33,36],
-    "upper_bound_col":[4,7,10,13,16,19,22,25,28,31,34,37],
+    "value_col":[2],
+    "lower_bound_col":[3],
+    "upper_bound_col":[4],
     "sheet_number":4,
-    "value_names":[
-      "Northland",
-      "Auckland",
-      "Waikato",
-      "Bay of Plenty",
-      "Gisborne/Hawke's Bay",
-      "Taranaki",
-      "Manawatu-Whanganui",
-      "Wellington",
-      "Nelson/Tasman/Marlborough/West Coast",
-      "Canterbury",
-      "Otago",
-      "Southland"
-    ],
+    "value_names":["June 2020"],
     "group_names":[
       "By region"
     ],
@@ -5660,25 +5646,11 @@
     "n_rows":2,
     "keyword":"7 to 10",
     "parameter_col":1,
-    "value_col":[2,5,8,11,14,17,20,23,26,29,32,35],
-    "lower_bound_col":[
-      3,6,9,12,15,18,21,24,27,30,33,36],
-    "upper_bound_col":[4,7,10,13,16,19,22,25,28,31,34,37],
+    "value_col":[2],
+    "lower_bound_col":[3],
+    "upper_bound_col":[4],
     "sheet_number":4,
-    "value_names":[
-      "Northland",
-      "Auckland",
-      "Waikato",
-      "Bay of Plenty",
-      "Gisborne/Hawke's Bay",
-      "Taranaki",
-      "Manawatu-Whanganui",
-      "Wellington",
-      "Nelson/Tasman/Marlborough/West Coast",
-      "Canterbury",
-      "Otago",
-      "Southland"
-    ],
+    "value_names":["June 2020"],
     "group_names":[
       "By region"
     ],
@@ -5782,25 +5754,11 @@
     "skip":5,
     "n_rows":3,
     "parameter_col":1,
-    "value_col":[2,5,8,11,14,17,20,23,26,29,32,35],
-    "lower_bound_col":[
-      3,6,9,12,15,18,21,24,27,30,33,36],
-    "upper_bound_col":[4,7,10,13,16,19,22,25,28,31,34,37],
+    "value_col":[2],
+    "lower_bound_col":[3],
+    "upper_bound_col":[4],
     "sheet_number":4,
-    "value_names":[
-      "Northland",
-      "Auckland",
-      "Waikato",
-      "Bay of Plenty",
-      "Gisborne/Hawke's Bay",
-      "Taranaki",
-      "Manawatu-Whanganui",
-      "Wellington",
-      "Nelson/Tasman/Marlborough/West Coast",
-      "Canterbury",
-      "Otago",
-      "Southland"
-    ],
+    "value_names":["June 2020"],
     "group_names":[
       "By region"
     ],
@@ -5904,25 +5862,11 @@
     "skip":5,
     "n_rows":2,
     "parameter_col":1,
-    "value_col":[2,5,8,11,14,17,20,23,26,29,32,35],
-    "lower_bound_col":[
-      3,6,9,12,15,18,21,24,27,30,33,36],
-    "upper_bound_col":[4,7,10,13,16,19,22,25,28,31,34,37],
+    "value_col":[2],
+    "lower_bound_col":[3],
+    "upper_bound_col":[4],
     "sheet_number":4,
-    "value_names":[
-      "Northland",
-      "Auckland",
-      "Waikato",
-      "Bay of Plenty",
-      "Gisborne/Hawke's Bay",
-      "Taranaki",
-      "Manawatu-Whanganui",
-      "Wellington",
-      "Nelson/Tasman/Marlborough/West Coast",
-      "Canterbury",
-      "Otago",
-      "Southland"
-    ],
+    "value_names":["June 2020"],
     "group_names":[
       "By region"
     ],
@@ -6026,25 +5970,11 @@
     "skip":5,
     "n_rows":2,
     "parameter_col":1,
-    "value_col":[2,5,8,11,14,17,20,23,26,29,32,35],
-    "lower_bound_col":[
-      3,6,9,12,15,18,21,24,27,30,33,36],
-    "upper_bound_col":[4,7,10,13,16,19,22,25,28,31,34,37],
+    "value_col":[2],
+    "lower_bound_col":[3],
+    "upper_bound_col":[4],
     "sheet_number":4,
-    "value_names":[
-      "Northland",
-      "Auckland",
-      "Waikato",
-      "Bay of Plenty",
-      "Gisborne/Hawke's Bay",
-      "Taranaki",
-      "Manawatu-Whanganui",
-      "Wellington",
-      "Nelson/Tasman/Marlborough/West Coast",
-      "Canterbury",
-      "Otago",
-      "Southland"
-    ],
+    "value_names":["June 2020"],
     "group_names":[
       "By region"
     ],
@@ -6148,25 +6078,11 @@
     "skip":5,
     "n_rows":2,
     "parameter_col":1,
-    "value_col":[2,5,8,11,14,17,20,23,26,29,32,35],
-    "lower_bound_col":[
-      3,6,9,12,15,18,21,24,27,30,33,36],
-    "upper_bound_col":[4,7,10,13,16,19,22,25,28,31,34,37],
+    "value_col":[2],
+    "lower_bound_col":[3],
+    "upper_bound_col":[4],
     "sheet_number":4,
-    "value_names":[
-      "Northland",
-      "Auckland",
-      "Waikato",
-      "Bay of Plenty",
-      "Gisborne/Hawke's Bay",
-      "Taranaki",
-      "Manawatu-Whanganui",
-      "Wellington",
-      "Nelson/Tasman/Marlborough/West Coast",
-      "Canterbury",
-      "Otago",
-      "Southland"
-    ],
+    "value_names":["June 2020"],
     "group_names":[
       "By region"
     ],
@@ -6269,25 +6185,11 @@
     "skip":5,
     "n_rows":2,
     "parameter_col":1,
-    "value_col":[2,5,8,11,14,17,20,23,26,29,32,35],
-    "lower_bound_col":[
-      3,6,9,12,15,18,21,24,27,30,33,36],
-    "upper_bound_col":[4,7,10,13,16,19,22,25,28,31,34,37],
+    "value_col":[2],
+    "lower_bound_col":[3],
+    "upper_bound_col":[4],
     "sheet_number":4,
-    "value_names":[
-      "Northland",
-      "Auckland",
-      "Waikato",
-      "Bay of Plenty",
-      "Gisborne/Hawke's Bay",
-      "Taranaki",
-      "Manawatu-Whanganui",
-      "Wellington",
-      "Nelson/Tasman/Marlborough/West Coast",
-      "Canterbury",
-      "Otago",
-      "Southland"
-    ],
+    "value_names":["June 2020"],
     "group_names":[
       "By region"
     ],
@@ -6390,25 +6292,11 @@
     "skip":5,
     "n_rows":2,
     "parameter_col":1,
-    "value_col":[2,5,8,11,14,17,20,23,26,29,32,35],
-    "lower_bound_col":[
-      3,6,9,12,15,18,21,24,27,30,33,36],
-    "upper_bound_col":[4,7,10,13,16,19,22,25,28,31,34,37],
+    "value_col":[2],
+    "lower_bound_col":[3],
+    "upper_bound_col":[4],
     "sheet_number":4,
-    "value_names":[
-      "Northland",
-      "Auckland",
-      "Waikato",
-      "Bay of Plenty",
-      "Gisborne/Hawke's Bay",
-      "Taranaki",
-      "Manawatu-Whanganui",
-      "Wellington",
-      "Nelson/Tasman/Marlborough/West Coast",
-      "Canterbury",
-      "Otago",
-      "Southland"
-    ],
+    "value_names":["June 2020"],
     "group_names":[
       "By region"
     ],
@@ -6512,25 +6400,11 @@
     "skip":5,
     "n_rows":3,
     "parameter_col":1,
-    "value_col":[2,5,8,11,14,17,20,23,26,29,32,35],
-    "lower_bound_col":[
-      3,6,9,12,15,18,21,24,27,30,33,36],
-    "upper_bound_col":[4,7,10,13,16,19,22,25,28,31,34,37],
+    "value_col":[2],
+    "lower_bound_col":[3],
+    "upper_bound_col":[4],
     "sheet_number":4,
-    "value_names":[
-      "Northland",
-      "Auckland",
-      "Waikato",
-      "Bay of Plenty",
-      "Gisborne/Hawke's Bay",
-      "Taranaki",
-      "Manawatu-Whanganui",
-      "Wellington",
-      "Nelson/Tasman/Marlborough/West Coast",
-      "Canterbury",
-      "Otago",
-      "Southland"
-    ],
+    "value_names":["June 2020"],
     "group_names":[
       "By region"
     ],
@@ -6634,25 +6508,11 @@
     "skip":5,
     "n_rows":3,
     "parameter_col":1,
-    "value_col":[2,5,8,11,14,17,20,23,26,29,32,35],
-    "lower_bound_col":[
-      3,6,9,12,15,18,21,24,27,30,33,36],
-    "upper_bound_col":[4,7,10,13,16,19,22,25,28,31,34,37],
+    "value_col":[2],
+    "lower_bound_col":[3],
+    "upper_bound_col":[4],
     "sheet_number":4,
-    "value_names":[
-      "Northland",
-      "Auckland",
-      "Waikato",
-      "Bay of Plenty",
-      "Gisborne/Hawke's Bay",
-      "Taranaki",
-      "Manawatu-Whanganui",
-      "Wellington",
-      "Nelson/Tasman/Marlborough/West Coast",
-      "Canterbury",
-      "Otago",
-      "Southland"
-    ],
+    "value_names":["June 2020"],
     "group_names":[
       "By region"
     ],
@@ -6755,25 +6615,11 @@
     "n_rows":2,
     "parameter_col":1,
 	  "keyword":"7 to 10",
-    "value_col":[2,5,8,11,14,17,20,23,26,29,32,35],
-    "lower_bound_col":[
-      3,6,9,12,15,18,21,24,27,30,33,36],
-    "upper_bound_col":[4,7,10,13,16,19,22,25,28,31,34,37],
+    "value_col":[2],
+    "lower_bound_col":[3],
+    "upper_bound_col":[4],
     "sheet_number":4,
-    "value_names":[
-      "Northland",
-      "Auckland",
-      "Waikato",
-      "Bay of Plenty",
-      "Gisborne/Hawke's Bay",
-      "Taranaki",
-      "Manawatu-Whanganui",
-      "Wellington",
-      "Nelson/Tasman/Marlborough/West Coast",
-      "Canterbury",
-      "Otago",
-      "Southland"
-    ],
+    "value_names":["June 2020"],
     "group_names":[
       "By region"
     ],

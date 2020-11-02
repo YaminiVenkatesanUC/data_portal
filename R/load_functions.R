@@ -1028,7 +1028,7 @@ read_hlfs_data <- function(config, directory) {
 
     stopifnot(all.equal(length(config$value_col), length(config$lower_bound_col), length(config$upper_bound_col)))
 
-    if (config$group_names == "By region" && config$indicator_name == "Experienced discrimination") {
+    if (config$group_names == "By region") {
 
       data <- data %>% rename("date" = "Parameter")
       regions <- c("Northland",
@@ -1088,8 +1088,6 @@ read_hlfs_data <- function(config, directory) {
     data_all <- rbind(data_all, data)
     data_all <- drop_na(data_all)
   }
-
-  dplyr::glimpse(data_all)
 
   return(data_frame_to_data_object_helper_error(
     directory,
