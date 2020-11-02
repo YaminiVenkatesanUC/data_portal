@@ -1,116 +1,25 @@
 [
   {
-    "class": "Example",
-    "type": "Example type",
-    "indicator_name": "Excel file example",
-    "source": "Name source here",
-    "plot_function": "get_time_series_plot",
-    "include_date_slider": true,
-    "international": false,
-    "source_url":"https://www.stats.govt.nz/",
-    "download": true,
-    "groups": [
-        {
-            "name": "Linear",
-            "units": "Number",
-            "title": "Linear plot"
-        },
-        {
-            "name": "Trigonmetric",
-            "units": "Number",
-            "title": "Trigonmetric plot"
-        }
-    ]
-  },
-  {
-    "class": "Example",
-    "type": "Example type",
-    "indicator_name": "CSV file example",
-    "source": "Name source here",
-    "plot_function": "get_time_series_plot",
-    "include_date_slider": true,
-    "international": false,
-    "source_url":"https://www.stats.govt.nz/",
-    "download": true,
-    "groups": [
-        {
-            "name": "Linear",
-            "units": "Number",
-            "title": "Linear plot"
-        },
-        {
-            "name": "Trigonmetric",
-            "units": "Number",
-            "title": "Trigonmetric plot"
-        }
-    ]
-  },
-  {
-    "class": "Example",
-    "type": "Example type",
-    "indicator_name": "CSV error bar example - from margin of error",
-    "source": "Name source here",
-    "plot_function": "get_unstacked_bar_chart_with_errors",
-    "international": false,
-    "source_url":"https://www.stats.govt.nz/",
-    "download": true,
-    "groups": [
-        {
-            "name": "Blah",
-            "units": "%",
-            "title": "Blah blah blah"
-        }
-    ]
-  },
-  {
-    "class": "Example",
-    "type": "Example type",
-    "indicator_name": "CSV error bar example - from error bounds",
-    "source": "Name source here",
-    "plot_function": "get_unstacked_bar_chart_with_errors",
-    "international": false,
-    "source_url":"https://www.stats.govt.nz/",
-    "download": true,
-    "groups": [
-        {
-            "name": "Blah",
-            "units": "%",
-            "title": "Blah blah blah"
-        }
-    ]
-  },
-  {
-    "class": "Example",
-    "type": "Example type",
-    "indicator_name": "Excel error bar example - from margin of error",
-    "source": "Name source here",
-    "plot_function": "get_unstacked_bar_chart_with_errors",
-    "international": false,
-    "source_url":"https://www.stats.govt.nz/",
-    "download": true,
-    "groups": [
-        {
-            "name": "Blah",
-            "units": "%",
-            "title": "Blah blah blah"
-        }
-    ]
-  },
-  {
-    "class": "Example",
-    "type": "Example type",
-    "indicator_name": "Excel error bar example - from error bounds",
-    "source": "Name source here",
-    "plot_function": "get_unstacked_bar_chart_with_errors",
-    "international": false,
-    "source_url":"https://www.stats.govt.nz/",
-    "download": true,
-    "groups": [
-        {
-            "name": "Blah",
-            "units": "%",
-            "title": "Blah blah blah"
-        }
-    ]
-  }
+    "class":"Social",
+    "type":"Crime and safety",
+    "indicator_name":"Experienced discrimination",
+    "plot_function":"get_unstacked_bar_chart_with_errors",
+    "download":false,
+    "source":"Stats NZ household labour force survey",
+    "frequency":"Quarterly",
+    "source_url":"https://www.stats.govt.nz/information-releases/wellbeing-statistics-june-2020-quarter",
+    "caveat":"Those aged 18+ who reported they had experienced discrimination in the previous 12 months.",
+    "measure":null,
+    "international":false,
+    "agency":"Stats NZ",
+    "groups":[
+	    {
+	       "name":"By region",
+        "units":"%",
+        "title":"Percentage of people who had experienced discrimination in the last 12 months, by regional council area",
+        "plot_function":"get_region_plot",
+        "x_axis_label":"Regions"
+	   }
+	  ]
+}
 ]

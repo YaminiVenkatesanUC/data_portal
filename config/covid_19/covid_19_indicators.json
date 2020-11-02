@@ -7129,7 +7129,9 @@
 	    {
 	       "name":"By region",
         "units":"%",
-        "title":"Percentage of people who had experienced discrimination in the last 12 months, by regional council area"
+        "title":"Percentage of people who had experienced discrimination in the last 12 months, by regional council area",
+        "x_axis_label":"Regions",
+        "plot_function":"get_unstacked_vertical_bar_with_errors"
 	   }
 	  ]
 },

@@ -988,7 +988,6 @@ read_hlfs_data <- function(config, directory) {
   values <- rep(NA, length(colNames))
   data_all <- data.frame(colNames = colNames, values = values) %>%
     spread(key = colNames, value = values)
-  data_all$Parameter <- as.Date(data_all$Parameter)
 
 
   for (i in 1:length(config$filename)) {
@@ -1019,27 +1018,68 @@ read_hlfs_data <- function(config, directory) {
 
     stopifnot(all.equal(length(config$value_col), length(config$lower_bound_col), length(config$upper_bound_col)))
 
-    for (i in 1:length(config$value_col)) {
-      value <- unlist(config$value_col[i])
+    if (config$group_names == "By region" && config$indicator_name == "Experienced discrimination") {
+
+      data <- data %>% rename("date" = "Parameter")
+      regions <- c("Northland",
+                   "Auckland",
+                   "Waikato",
+                   "Bay of Plenty",
+                   "Gisborne/Hawke's Bay",
+                   "Taranaki",
+                   "Manawatu-Whanganui",
+                   "Wellington",
+                   "Nelson/Tasman/Marlborough/West Coast",
+                   "Canterbury",
+                   "Otago",
+                   "Southland")
+
+      cols <- ((ncol(data)-1)/2)+1
+
+      for (ind in 2:cols) {
+        region <- ind
+        error <- ind+1
+        name_region <- names(data)[[ind]]
+        new_name <- paste0(name_region, "_error")
+        data <- unite(data = data, col = united, region:error, sep = "_", remove = TRUE) %>%
+          dplyr::rename_with(.fn = ~paste0(name_region, "_error"), .cols = united)
+      }
 
       data <- data %>%
-        tibble::add_column(lower = data[[value]] - data[[value+1]], .after = value+1) %>%
-        tibble::add_column(upper = data[[value]] + data[[value+1]], .after = "lower") %>%
-        select(-c(value+1))
+        pivot_longer(cols = 2:ncol(data), names_to = "Parameter") %>%
+        separate(col = value, into = c("value", "error"), sep = "_", convert = TRUE) %>%
+        # modify later!!!
+        mutate(lower = value - error, upper = value + error) %>%
+        select(-date, -error) %>%
+        dplyr::rename(col_2 = value, col_3_lower = lower, col_4_upper = upper) %>%
+        relocate(Parameter)
+      data$Parameter <- stringr::str_remove(string = data$Parameter, pattern = "_error")
 
-      data <- data %>%
-        dplyr::rename_with(.fn = ~paste0("col_", value+1, "_lower"), .cols = lower) %>%
-        dplyr::rename_with(.fn = ~paste0("col_", value+2, "_upper"), .cols = upper) %>%
-        dplyr::rename_with(.fn = ~paste0("col_", value), .cols = value)
+    } else {
+      for (i in 1:length(config$value_col)) {
+        value <- unlist(config$value_col[i])
+
+        data <- data %>%
+          tibble::add_column(lower = data[[value]] - data[[value+1]], .after = value+1) %>%
+          tibble::add_column(upper = data[[value]] + data[[value+1]], .after = "lower") %>%
+          select(-c(value+1))
+
+        data <- data %>%
+          dplyr::rename_with(.fn = ~paste0("col_", value+1, "_lower"), .cols = lower) %>%
+          dplyr::rename_with(.fn = ~paste0("col_", value+2, "_upper"), .cols = upper) %>%
+          dplyr::rename_with(.fn = ~paste0("col_", value), .cols = value)
+
+        names(data_all) <- names(data)
+
+      }
+      data_all$Parameter <- as.Date(data_all$Parameter)
     }
 
     data_all <- rbind(data_all, data)
     data_all <- drop_na(data_all)
   }
-  data_all$Parameter <- parameter_transform(data_all$Parameter)
 
-
-  #print(data_all)
+  dplyr::glimpse(data_all)
 
   return(data_frame_to_data_object_helper_error(
     directory,
