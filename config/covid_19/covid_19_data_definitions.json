@@ -3097,10 +3097,28 @@
         "filename": "COVID 19 - MoH Border Control insights.xlsx",
         "parameter_transform": "function (x) x",
         "load_function": "read_managed_isolotion_data",
-        "group_names": "undefined_name",
+        "group_names": "Occupancy",
         "drop_na": false,
         "data_type": "BarChart"
       },
+
+      {
+        "class": "Health",
+        "indicator_name": "Quarantine and managed isolation figures",
+        "type": "COVID-19",
+        "parameter_col": 1,
+        "value_col": [2],
+        "value_names": ["Current - 02 November 2020"],
+        "sheet_number": 3,
+        "filename": "COVID 19 - MoH Border Control insights.xlsx",
+        "parameter_transform": "function (x) ymd(x)",
+        "load_function": "read_from_excel",
+        "group_names": "Projected occupacy rate",
+        "drop_na": false,
+        "data_type": "TimeSeries"
+      },
+
+
       {
         "class": "Economic",
         "indicator_name": "New Zealand Activity Index (NZAC)",
