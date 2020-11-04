@@ -3101,6 +3101,22 @@
         "drop_na": false,
         "data_type": "BarChart"
       },
+      {
+        "class": "Health",
+        "indicator_name": "Quarantine and managed isolation figures",
+        "type": "COVID-19",
+        "parameter_col": 1,
+        "value_col": [3],
+        "value_names": ["Current - 21 October 2020"],
+        "sheet_number": 1,
+        "filename": "COVID 19 - MoH Border Control insights.xlsx",
+        "parameter_transform": "function (x) x",
+        "occupancy_rate": true,
+        "load_function": "read_managed_isolotion_data",
+        "group_names": "Occupancy rate",
+        "drop_na": false,
+        "data_type": "BarChart"
+      },
 
       {
         "class": "Health",
@@ -3108,7 +3124,7 @@
         "type": "COVID-19",
         "parameter_col": 1,
         "value_col": [2],
-        "value_names": ["Current - 02 November 2020"],
+        "value_names": ["Projected occupancy rate"],
         "sheet_number": 3,
         "filename": "COVID 19 - MoH Border Control insights.xlsx",
         "parameter_transform": "function (x) ymd(x)",

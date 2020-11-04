@@ -938,7 +938,14 @@ read_managed_isolotion_data <- function(config, directory) {
     "Current - ",
     value_name
   )
-  data_object[["Occupancy"]]$value_names <- value_name
+  if(!is.null(config$occupancy_rate)){
+
+    data_object[["Occupancy rate"]]$value_names <- value_name
+
+  }else{
+    data_object[["Occupancy"]]$value_names <- value_name
+  }
+
   return(data_object)
 }
 
