@@ -681,7 +681,8 @@
       {
         "name": "undefined_name",
         "title": "ANZ activity outlook - all sectors",
-        "units": "Index"
+        "units": "Index",
+        "caveats":"'Please note November 2020 data is preliminary."
       }
     ]
   },
@@ -745,7 +746,8 @@
       {
         "name": "undefined_name",
         "title": "ANZ business confidence",
-        "units": "Index"
+        "units": "Index",
+        "caveats": "Please note November 2020 data is preliminary."
       }
     ]
   },
@@ -1332,6 +1334,24 @@
       {
         "name": "All special needs grants",
         "title": "All special needs grants",
+        "units": "Number"
+      }
+    ]
+  },
+
+  {
+    "class": "Income support",
+    "indicator_name":  "Emergency housing grants",
+    "type": "Hardship assistance",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "groups": [
+      {
+        "name":  "Emergency housing grants",
+        "title":  "Emergency housing grants",
         "units": "Number"
       }
     ]
@@ -4004,7 +4024,7 @@
     "plot_function": "get_time_series_plot",
     "international": false,
     "include_date_slider": true,
-    "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-weekly-as-at-26-october-2020",
+    "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-weekly-as-at-2-november-2020",
     "download": true,
 
     "groups": [
@@ -6675,7 +6695,7 @@
   "plot_function": "get_time_series_plot",
   "international": false,
   "include_date_slider": true,
-  "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-weekly-as-at-26-october-2020",
+  "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-weekly-as-at-2-november-2020",
   "download": true,
 
   "groups": [

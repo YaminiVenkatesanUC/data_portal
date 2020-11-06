@@ -875,6 +875,33 @@
     },
     {
         "class": "Income support",
+        "indicator_name": "Emergency housing grants",
+        "type": "Hardship assistance",
+        "parameter_col": 1,
+        "parameter_transform": [
+        "function (x) ",
+        "as.Date(x, format = \"%d/%m/%y\")"
+        ],
+        "sheet_number": 3,
+        "value_col": [
+
+        6
+        ],
+        "value_names": [
+
+          "Emergency housing grants"
+          ],
+        "filename": "COVID 19 - MSD Jobseeker by region and Hardship grants.xlsx",
+        "load_function": "read_from_excel",
+        "data_type": "TimeSeries",
+        "group_names": [
+
+        "Emergency housing grants"
+        ]
+    },
+
+    {
+        "class": "Income support",
         "indicator_name": "All special needs grants",
         "type": "Hardship assistance",
         "parameter_col": 1,
@@ -886,11 +913,15 @@
         "value_col": [
         4
         ],
-        "value_names": "All special needs grants",
+        "value_names": [
+          "All special needs grants"
+          ],
         "filename": "COVID 19 - MSD Jobseeker by region and Hardship grants.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": "All special needs grants"
+        "group_names": [
+          "All special needs grants"
+        ]
     },
     {
         "class": "Income support",
