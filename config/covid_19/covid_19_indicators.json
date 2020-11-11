@@ -2954,7 +2954,7 @@
     "type": "COVID-19",
     "source": "Ministry of Health",
     "plot_function": "get_stacked_bar_chart",
-    "international": true,
+    "international": false,
     "source_url":"https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation/covid-19-current-cases",
     "download": false,
     "groups": [
@@ -4024,7 +4024,7 @@
     "plot_function": "get_time_series_plot",
     "international": false,
     "include_date_slider": true,
-    "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-weekly-as-at-2-november-2020",
+    "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-weekly-as-at-9-november-2020",
     "download": true,
 
     "groups": [
@@ -6695,7 +6695,7 @@
   "plot_function": "get_time_series_plot",
   "international": false,
   "include_date_slider": true,
-  "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-weekly-as-at-2-november-2020",
+  "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-weekly-as-at-9-november-2020",
   "download": true,
 
   "groups": [
