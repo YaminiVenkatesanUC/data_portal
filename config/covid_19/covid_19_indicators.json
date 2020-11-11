@@ -1433,6 +1433,7 @@
       }
     ]
   },
+
   {
     "class": "Health",
     "indicator_name": "Number of cases",
@@ -1447,7 +1448,19 @@
         "title": "COVID-19 cases in New Zealand (cumulative)",
         "units": "Number",
         "source_url": "https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation/covid-19-current-cases"
-      },
+      }]
+  }
+      ,
+  {
+    "class": "Health",
+    "indicator_name": "Number of cases (other countries)",
+    "type": "COVID-19",
+    "source": "Ministry of Health",
+    "plot_function": "get_stacked_bar_chart",
+    "international": false,
+    "download": true,
+    "groups": [
+
       {
         "name": "Australia",
         "title": "COVID-19 cases in Australia (cumulative)",
