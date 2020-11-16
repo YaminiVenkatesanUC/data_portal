@@ -1,7 +1,7 @@
 title: "API Example"
 production: true
 data_directory: data/
-indicator_definitions: "config/environmental_indicators.json"
+indicator_definitions: "config/api_example/environmental_indicators.json"
 default_parameters:
   data_type: "TimeSeries"
   plot_function: "get_time_series_plot"

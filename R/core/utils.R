@@ -98,14 +98,18 @@ get_extremum_date <- function(x, condition) {
   }
 }
 
-get_data_store_date_range <- function(date_store) {
-  max_dates <- as.vector(sapply(date_store, get_extremum_date, condition = max))
-  max_date <- max(date_store[[which(max_dates == max(max_dates, na.rm = TRUE))[[1]]]]$dates)
+get_data_store_date_range <- function(data_store) {
+  if (is.null(data_store)) {
+    date_now <- as.Date(now())
+    return(list(max_date = date_now, min_date = date_now))
+  }
+  max_dates <- as.vector(sapply(data_store, get_extremum_date, condition = max))
+  max_date <- max(data_store[[which(max_dates == max(max_dates, na.rm = TRUE))[[1]]]]$dates)
 
-  min_dates <- as.vector(sapply(date_store, get_extremum_date, condition = min))
-  min_date <- min(date_store[[which(min_dates == min(min_dates, na.rm = TRUE))[[1]]]]$dates)
+  min_dates <- as.vector(sapply(data_store, get_extremum_date, condition = min))
+  min_date <- min(data_store[[which(min_dates == min(min_dates, na.rm = TRUE))[[1]]]]$dates)
 
-  return(list(max_date = max_date, min_date = min_date ))
+  return(list(max_date = max_date, min_date = min_date))
 }
 
 get_most_recent_update_date <- function(data_store) {
