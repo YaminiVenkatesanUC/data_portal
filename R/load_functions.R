@@ -982,7 +982,14 @@ read_managed_isolotion_data <- function(config, directory) {
     "Current - ",
     value_name
   )
-  data_object[["undefined_name"]]$value_names <- value_name
+  if(!is.null(config$occupancy_rate)){
+
+    data_object[["Occupancy rate"]]$value_names <- value_name
+
+  }else{
+    data_object[["Occupancy"]]$value_names <- value_name
+  }
+
   return(data_object)
 }
 
@@ -1096,6 +1103,41 @@ read_hlfs_data <- function(config, directory) {
   ))
 }
 
+
+petrol_read_file_month <- function(config, directory) {
+  filename <- config$filename
+  data <- as.data.frame(read_excel(
+    paste0(directory, filename),
+    sheet = config$sheet_number,
+    skip = config$skip,
+    col_names = TRUE,
+    .name_repair = "minimal"
+  ))
+
+  data <- data[names(data) != ""]
+  names(data)[1:2] <- c("Company", "Type")
+  data$Type[data$Company == "Truckstops"] <- "Truckstops"
+
+  data <- data %>%
+    filter(!is.na(Company) & !is.na(Type)) %>%
+    pivot_longer(cols = 3:ncol(data), names_to = "date") %>%
+    mutate(Parameter = as.Date(as.numeric(date), origin = "1899-12-30"))
+
+  output <- data.frame(Parameter = unique(data$Parameter), stringsAsFactors = FALSE) %>% arrange()
+  for (i in 1:length(config$fuel_type)) {
+    output[[paste("col", i)]] <- (
+      data %>%
+        filter(Type == config$fuel_type[[i]] & Company == config$company_name[[i]]) %>%
+        arrange(Parameter)
+    )$value
+  }
+
+  return(data_frame_to_data_object_helper(
+    directory,
+    config,
+    output
+  ))
+}
 
 load_functions <- list(
   read_from_csv = read_from_csv,

@@ -90,6 +90,7 @@ get_time_series_plot <- function(
 
   if (!is.null(indicator_definition$frequency)) {
       if (indicator_definition$frequency == "monthly" || indicator_definition$frequency == "quarterly") {
+
         categories <- format(dates, "%b")
       }
     }
