@@ -5532,7 +5532,7 @@
     "group_names":[
       "By sex"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -5563,7 +5563,7 @@
     "group_names":[
       "By age"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -5591,7 +5591,7 @@
     "group_names":[
       "By ethnicity"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -5613,7 +5613,7 @@
     "group_names":[
       "By region"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -5640,7 +5640,7 @@
     "group_names":[
       "By sex"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -5671,7 +5671,7 @@
     "group_names":[
       "By age"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -5699,7 +5699,7 @@
     "group_names":[
       "By ethnicity"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -5721,7 +5721,7 @@
     "group_names":[
       "By region"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -5779,7 +5779,7 @@
     "group_names":[
       "By sex"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -5810,7 +5810,7 @@
     "group_names":[
       "By age"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -5838,7 +5838,7 @@
     "group_names":[
       "By ethnicity"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -5860,7 +5860,7 @@
     "group_names":[
       "By region"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -5887,7 +5887,7 @@
     "group_names":[
       "By sex"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -5918,7 +5918,7 @@
     "group_names":[
       "By age"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -5946,7 +5946,7 @@
     "group_names":[
       "By ethnicity"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -5968,7 +5968,7 @@
     "group_names":[
       "By region"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -5995,7 +5995,7 @@
     "group_names":[
       "By sex"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6026,7 +6026,7 @@
     "group_names":[
       "By age"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6054,7 +6054,7 @@
     "group_names":[
       "By ethnicity"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6076,7 +6076,7 @@
     "group_names":[
       "By region"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6103,7 +6103,7 @@
     "group_names":[
       "By sex"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6134,7 +6134,7 @@
     "group_names":[
       "By age"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6162,7 +6162,7 @@
     "group_names":[
       "By ethnicity"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6184,7 +6184,7 @@
     "group_names":[
       "By region"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6210,7 +6210,7 @@
     "group_names":[
       "By sex"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6241,7 +6241,7 @@
     "group_names":[
       "By age"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6269,7 +6269,7 @@
     "group_names":[
       "By ethnicity"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6291,7 +6291,7 @@
     "group_names":[
       "By region"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6317,7 +6317,7 @@
     "group_names":[
       "By sex"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6348,7 +6348,7 @@
     "group_names":[
       "By age"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6376,7 +6376,7 @@
     "group_names":[
       "By ethnicity"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6398,7 +6398,7 @@
     "group_names":[
       "By region"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6425,7 +6425,7 @@
     "group_names":[
       "By sex"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6456,7 +6456,7 @@
     "group_names":[
       "By age"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6484,7 +6484,7 @@
     "group_names":[
       "By ethnicity"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6506,7 +6506,7 @@
     "group_names":[
       "By region"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6533,7 +6533,7 @@
     "group_names":[
       "By sex"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6564,7 +6564,7 @@
     "group_names":[
       "By age"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6592,7 +6592,7 @@
     "group_names":[
       "By ethnicity"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6614,7 +6614,7 @@
     "group_names":[
       "By region"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6640,7 +6640,7 @@
     "group_names":[
       "By sex"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6671,7 +6671,7 @@
     "group_names":[
       "By age"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6699,7 +6699,7 @@
     "group_names":[
       "By ethnicity"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6721,7 +6721,7 @@
     "group_names":[
       "By region"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6747,7 +6747,7 @@
     "group_names":[
       "By sex"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6778,7 +6778,7 @@
     "group_names":[
       "By age"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6806,7 +6806,7 @@
     "group_names":[
       "By ethnicity"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6828,7 +6828,7 @@
     "group_names":[
       "By region"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
