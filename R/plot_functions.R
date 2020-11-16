@@ -489,6 +489,8 @@ get_time_series_plot_with_errors <- function(
     }
   }
 
+  #print(categories)
+
   norm_factor_and_unit <- get_normalisation_factor(data_object$values)
   tool_tip <- get_tool_tip(group_definition$units)
 
@@ -557,6 +559,10 @@ get_time_series_plot_with_errors <- function(
 
   y_label <- group_definition$units
 
+  categories <- "lalal"
+
+  print(categories)
+
   plot <- hc_xAxis(
     plot,
     categories = categories,
@@ -564,7 +570,7 @@ get_time_series_plot_with_errors <- function(
       text = year_label,
       style = list(fontSize = "20px", color = "black", fontFamily = "Source Sans Pro")
     ),
-    labels = list(style = list(fontSize = "20px", color = "black", fontFamily = "Source Sans Pro")),
+    labels = list(style = list(fontSize = "20px", color = "red", fontFamily = "Source Sans Pro")),
     tickInterval = ceiling(length(categories) / 8)
   )
 
