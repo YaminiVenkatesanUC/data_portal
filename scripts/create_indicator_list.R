@@ -29,8 +29,13 @@ return(data)
 indicator_data<-indicator_list(data_definitions)%>%select(class, type, indicator_name, filename) 
 list_indicators<-merge(indicator_data, by_class, all = T)%>%select(-number_of_charts)%>%as.data.frame()
 
-write.xlsx(list_indicators, "COVID - 19 data portal indicators.xlsx", sheetName = "Sheet1", row.names = FALSE)
-write.xlsx(by_class, "COVID - 19 data portal indicators.xlsx", sheetName = "Sheet2", append = TRUE, row.names = FALSE)
+run_date<-Sys.Date()
+setwd("~/Network-Shares/J-Drive-WLG-Shared/Indicators_aotearoa/Covid-19/IANZ v2/reports/COVID - 19")
+
+write.xlsx(list_indicators, paste0("COVID - 19 data portal indicators ", run_date, ".xlsx"), sheetName = "source", row.names = FALSE)
+write.xlsx(by_class, paste0("COVID - 19 data portal indicators ", run_date, ".xlsx"), sheetName = "chart_count", append = TRUE, row.names = FALSE)
+
+setwd("~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/supply_ Use/R/collab/data_portal")
 
 
 
