@@ -1017,7 +1017,7 @@
     },
     {
         "class": "Health",
-        "indicator_name": "Number of cases",
+        "indicator_name": "Number of cases (other countries)",
         "type": "COVID-19",
         "parameter_col": 1,
         "parameter_transform": [
@@ -1043,7 +1043,7 @@
     },
     {
         "class": "Health",
-        "indicator_name": "Number of cases",
+        "indicator_name": "Number of cases (other countries)",
         "type": "COVID-19",
         "parameter_col": 1,
         "parameter_transform": [
@@ -1069,7 +1069,7 @@
     },
     {
         "class": "Health",
-        "indicator_name": "Number of cases",
+        "indicator_name": "Number of cases (other countries)",
         "type": "COVID-19",
         "parameter_col": 1,
         "parameter_transform": [
@@ -1095,7 +1095,7 @@
     },
     {
         "class": "Health",
-        "indicator_name": "Number of cases",
+        "indicator_name": "Number of cases (other countries)",
         "type": "COVID-19",
         "parameter_col": 1,
         "parameter_transform": [
@@ -1121,7 +1121,7 @@
     },
     {
         "class": "Health",
-        "indicator_name": "Number of cases",
+        "indicator_name": "Number of cases (other countries)",
         "type": "COVID-19",
         "parameter_col": 1,
         "parameter_transform": [
@@ -1147,7 +1147,7 @@
     },
     {
         "class": "Health",
-        "indicator_name": "Number of cases",
+        "indicator_name": "Number of cases (other countries)",
         "type": "COVID-19",
         "parameter_col": 1,
         "parameter_transform": [
@@ -1173,7 +1173,7 @@
     },
     {
         "class": "Health",
-        "indicator_name": "Number of cases",
+        "indicator_name": "Number of cases (other countries)",
         "type": "COVID-19",
         "parameter_col": 1,
         "parameter_transform": [
@@ -1199,7 +1199,7 @@
     },
     {
         "class": "Health",
-        "indicator_name": "Number of cases",
+        "indicator_name": "Number of cases (other countries)",
         "type": "COVID-19",
         "parameter_col": 1,
         "parameter_transform": [
@@ -1225,7 +1225,7 @@
     },
     {
         "class": "Health",
-        "indicator_name": "Number of cases",
+        "indicator_name": "Number of cases (other countries)",
         "type": "COVID-19",
         "parameter_col": 1,
         "parameter_transform": [
@@ -3217,7 +3217,7 @@
       },
     {
         "class": "Health",
-        "indicator_name": "Number of cases",
+        "indicator_name": "Number of cases (other countries)",
         "type": "COVID-19",
         "parameter_col": 1,
         "parameter_transform": [
@@ -3243,7 +3243,7 @@
     },
     {
         "class": "Health",
-        "indicator_name": "Number of cases",
+        "indicator_name": "Number of cases (other countries)",
         "type": "COVID-19",
         "parameter_col": 1,
         "parameter_transform": [
@@ -3269,7 +3269,7 @@
     },
     {
         "class": "Health",
-        "indicator_name": "Number of cases",
+        "indicator_name": "Number of cases (other countries)",
         "type": "COVID-19",
         "parameter_col": 1,
         "parameter_transform": [
@@ -3295,7 +3295,7 @@
     },
     {
         "class": "Health",
-        "indicator_name": "Number of cases",
+        "indicator_name": "Number of cases (other countries)",
         "type": "COVID-19",
         "parameter_col": 1,
         "parameter_transform": [
@@ -3322,7 +3322,7 @@
      ,
     {
         "class": "Health",
-        "indicator_name": "Number of cases",
+        "indicator_name": "Number of cases (other countries)",
         "type": "COVID-19",
         "parameter_col": 1,
         "parameter_transform": [
@@ -3349,7 +3349,7 @@
     ,
     {
         "class": "Health",
-        "indicator_name": "Number of cases",
+        "indicator_name": "Number of cases (other countries)",
         "type": "COVID-19",
         "parameter_col": 1,
         "parameter_transform": [
@@ -3376,7 +3376,7 @@
      ,
     {
         "class": "Health",
-        "indicator_name": "Number of cases",
+        "indicator_name": "Number of cases (other countries)",
         "type": "COVID-19",
         "parameter_col": 1,
         "parameter_transform": [
@@ -3402,7 +3402,7 @@
     } ,
     {
         "class": "Health",
-        "indicator_name": "Number of cases",
+        "indicator_name": "Number of cases (other countries)",
         "type": "COVID-19",
         "parameter_col": 1,
         "parameter_transform": [
