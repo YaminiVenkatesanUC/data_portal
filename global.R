@@ -10,6 +10,8 @@ library(jsonlite)
 library(R6)
 library(httr)
 library(data.table)
+library(tibble)
+
 
 source("R/core/build_ui.R")
 source("R/core/utils.R")
