@@ -762,6 +762,7 @@
     "default_lower_range": "2019-07-01",
     "source_url": "https://www.gdeltproject.org/",
     "download": true,
+    "caveats" : "<p>Please note - there are progressively more missing files in the source GDELT data set from August 2020. This is contributing to volatility in this measure and may lead to significant revisions if the missing files become available.</p>",
     "groups": [
       {
         "name": "undefined_name",
