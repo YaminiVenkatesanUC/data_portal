@@ -1006,6 +1006,26 @@ read_hlfs_data <- function(config, directory) {
   data_all <- data.frame(colNames = colNames, values = values) %>%
     spread(key = colNames, value = values)
 
+  if (config$group_names == "By region") {
+    regions <- c("Northland",
+                 "Auckland",
+                 "Waikato",
+                 "Bay of Plenty",
+                 "Gisborne/Hawke's Bay",
+                 "Taranaki",
+                 "Manawatu-Whanganui",
+                 "Wellington",
+                 "Nelson/Tasman/Marlborough/West Coast",
+                 "Canterbury",
+                 "Otago",
+                 "Southland")
+    for (region in 2:length(regions)) {
+      data_all[region,] <- NA
+    }
+    data_all <- data_all %>% relocate(Parameter)
+    data_all$Parameter <- regions
+  }
+
 
   for (i in 1:length(config$filename)) {
     data <- as.data.frame(read_excel(paste0(directory, config$filename[i]), sheet = config$sheet_number, col_names = TRUE, skip = skip, .name_repair = "unique"))
@@ -1036,21 +1056,7 @@ read_hlfs_data <- function(config, directory) {
     stopifnot(all.equal(length(config$value_col), length(config$lower_bound_col), length(config$upper_bound_col)))
 
     if (config$group_names == "By region") {
-
       data <- data %>% rename("date" = "Parameter")
-      regions <- c("Northland",
-                   "Auckland",
-                   "Waikato",
-                   "Bay of Plenty",
-                   "Gisborne/Hawke's Bay",
-                   "Taranaki",
-                   "Manawatu-Whanganui",
-                   "Wellington",
-                   "Nelson/Tasman/Marlborough/West Coast",
-                   "Canterbury",
-                   "Otago",
-                   "Southland")
-
       cols <- ((ncol(data)-1)/2)+1
 
       for (ind in 2:cols) {
@@ -1065,13 +1071,13 @@ read_hlfs_data <- function(config, directory) {
       data <- data %>%
         pivot_longer(cols = 2:ncol(data), names_to = "Parameter") %>%
         separate(col = value, into = c("value", "error"), sep = "_", convert = TRUE) %>%
-        # modify later!!!
-        mutate(lower = value - error, upper = value + error) %>%
-        select(-date, -error) %>%
-        dplyr::rename(col_2 = value, col_3_lower = lower, col_4_upper = upper) %>%
-        relocate(Parameter)
-      data$Parameter <- stringr::str_remove(string = data$Parameter, pattern = "_error")
-
+        mutate(lower = value - error, upper = value + error)
+      value_ind <- unlist(config$value_col[i])
+      lower_ind <- unlist(config$lower_bound_col[i])
+      upper_ind <- unlist(config$upper_bound_col[i])
+      data_all[[value_ind]] <- data$value
+      data_all[[lower_ind]] <- data$lower
+      data_all[[upper_ind]] <- data$upper
     } else {
       for (i in 1:length(config$value_col)) {
         value <- unlist(config$value_col[i])
@@ -1087,13 +1093,11 @@ read_hlfs_data <- function(config, directory) {
           dplyr::rename_with(.fn = ~paste0("col_", value), .cols = value)
 
         names(data_all) <- names(data)
-
       }
       data_all$Parameter <- as.Date(data_all$Parameter)
+      data_all <- rbind(data_all, data)
+      data_all <- drop_na(data_all)
     }
-
-    data_all <- rbind(data_all, data)
-    data_all <- drop_na(data_all)
   }
 
   return(data_frame_to_data_object_helper_error(
