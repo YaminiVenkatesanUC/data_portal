@@ -116,8 +116,10 @@ get_most_recent_update_date <- function(data_store) {
   if (is.null(data_store)) {
     return(format(now(), "%d/%m/%Y"))
   }
-  dates <- as.vector(sapply(DATA_STORE, function(x) x$update_date))
+  dates <- as.vector(sapply(DATA_STORE, function(x) max(x$update_date)))  # Added max for multiple dates
   return(format(data_store[[which(dates == max(dates))[[1]]]]$update_date, "%d/%m/%Y"))
+
+
 }
 
 get_class_names <- function(indicators) {
