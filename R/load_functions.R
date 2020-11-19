@@ -1013,7 +1013,7 @@ read_hlfs_data <- function(config, directory) {
                  "Bay of Plenty",
                  "Gisborne/Hawke's Bay",
                  "Taranaki",
-                 "Manawatu-Whanganui",
+                 "Manawatū-Whanganui",
                  "Wellington",
                  "Nelson/Tasman/Marlborough/West Coast",
                  "Canterbury",

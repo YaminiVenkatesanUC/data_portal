@@ -475,3 +475,15 @@ createRegionalFilterButton <- function(btn_class) {
   )
   return(output)
 }
+macrons_list <- function(macrons){
+
+  key = c("M.\\w+i$","^M.\\w+u$")
+  value = c("M\u101ori","Manawat\u16B-Whanganui")
+
+  macrons_df <- data.frame(key,value)
+
+  macron_col <- lapply(macrons, function(x) { gsub(macrons_df$key, macrons_df$value,x)})
+
+  return(macron_col)
+
+}
