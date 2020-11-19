@@ -90,7 +90,6 @@ get_time_series_plot <- function(
 
   if (!is.null(indicator_definition$frequency)) {
       if (indicator_definition$frequency == "monthly" || indicator_definition$frequency == "quarterly") {
-
         categories <- format(dates, "%b")
       }
     }
@@ -466,8 +465,6 @@ get_time_series_plot_with_errors <- function(
     units = c("days")
   )))
 
-
-
   if (duration < 7 & length(dates) > 7) {
     categories <- format(dates, "%d-%b %H:%M")
   } else if (length(unique(year(dates))) == 1) {
@@ -486,11 +483,10 @@ get_time_series_plot_with_errors <- function(
 
   if (!is.null(indicator_definition$frequency)) {
     if (indicator_definition$frequency == "monthly" || indicator_definition$frequency == "Quarterly") {
-      categories <- format(dates, "%b")
+      year_label <- ""
+      categories <- format(dates, "%b-%Y")
     }
   }
-
-  #print(categories)
 
   norm_factor_and_unit <- get_normalisation_factor(data_object$values)
   tool_tip <- get_tool_tip(group_definition$units)
@@ -609,6 +605,10 @@ get_time_series_plot_with_errors <- function(
   if (!is.null(indicator_definition$show_zero) && indicator_definition$show_zero) {
     plot <- hc_yAxis(plot, min = 0)
   }
+
+  # if (group_definition$units == "%") {
+  #   plot <- hc_yAxis(plot, max = 100)
+  # }
   return(plot)
 }
 
@@ -865,6 +865,8 @@ get_bar_chart_with_errors <- function(
   if (!is.null(indicator_definition$show_zero) && indicator_definition$show_zero) {
     plot <- hc_yAxis(plot, min = 0)
   }
+
+  plot <- hc_yAxis(plot, max = max(data_object$values) + 5)
   return(plot)
 }
 
