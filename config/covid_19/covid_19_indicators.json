@@ -4038,7 +4038,7 @@
     "plot_function": "get_time_series_plot",
     "international": false,
     "include_date_slider": true,
-    "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-weekly-as-at-16-november-2020",
+    "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-weekly-as-at-23-november-2020",
     "download": true,
 
     "groups": [
@@ -6709,7 +6709,7 @@
   "plot_function": "get_time_series_plot",
   "international": false,
   "include_date_slider": true,
-  "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-weekly-as-at-16-november-2020",
+  "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-weekly-as-at-23-november-2020",
   "download": true,
 
   "groups": [

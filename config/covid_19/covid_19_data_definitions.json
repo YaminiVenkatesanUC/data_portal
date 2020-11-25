@@ -3094,8 +3094,7 @@
         "filter_paid_jobs":"Number of paid jobs - 34 days",
         "parameter_col": 1,
                 "parameter_transform": [
-        "function (x) ",
-        "as.Date(x, format = \"%d/%m/%y\")"
+        "function (x) ymd(x)"
         ],
 
         "value_col": [
@@ -5482,8 +5481,7 @@
   "filter_paid_jobs":"Weekly earnings - median - 34 days",
   "parameter_col": 1,
   "parameter_transform": [
-    "function (x) ",
-    "as.Date(x, format = \"%d/%m/%y\")"
+    "function (x) ymd(x)"
     ],
 
   "value_col": [

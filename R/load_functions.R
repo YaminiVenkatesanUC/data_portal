@@ -526,11 +526,12 @@ read_employment_paid_jobs_data <- function(config, directory) {
   ))
   col_names <- paste0("col_", min(cols_to_read):max(cols_to_read))
   colnames(data) <- col_names
+
   if (!is.null(config$filter_paid_jobs)) {
     data <- data %>%
       filter(col_2 == config$filter_paid_jobs) %>%
       select(Parameter = col_1, everything()) %>%
-      mutate(Parameter = as.Date(dmy(Parameter))) %>%
+      mutate(Parameter = as.Date(ymd(Parameter))) %>%
       spread(col_3, col_4) %>%
       select(Parameter, Total, everything(), -col_2)
 
@@ -545,6 +546,7 @@ read_employment_paid_jobs_data <- function(config, directory) {
     "please enter a filter for visa type or employment"
   }
 
+  print(head(data))
   return(data_frame_to_data_object_helper(
     directory,
     config,
