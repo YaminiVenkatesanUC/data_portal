@@ -9,7 +9,7 @@
     "include_date_slider": true,
     "default_lower_range": "2017-02-01",
     "source_url": "https://www.stats.govt.nz/methods/about-new-employment-indicator-series",
-    "download": true,
+    "download": false,
     "visible": ["15 - 19", "20 - 24", "25 - 29", "30 - 34", "35 - 39", "40 - 44", "45 - 49", "50 - 54", "55 - 59", "60 - 64"],
     "groups": [
      {
@@ -109,7 +109,7 @@
     "include_date_slider": true,
     "default_lower_range": "2017-02-01",
     "source_url": "https://www.stats.govt.nz/methods/about-new-employment-indicator-series",
-    "download": true,
+    "download": false,
     "groups": [
      {
         "name": "Total NZ",
@@ -208,7 +208,7 @@
     "include_date_slider": true,
     "default_lower_range": "2017-02-01",
     "source_url": "https://www.stats.govt.nz/methods/about-new-employment-indicator-series",
-    "download": true,
+    "download": false,
     "groups": [
       {
         "name": "Northland",
