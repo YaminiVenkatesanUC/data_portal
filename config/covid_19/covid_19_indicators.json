@@ -681,8 +681,7 @@
       {
         "name": "undefined_name",
         "title": "ANZ activity outlook - all sectors",
-        "units": "Index",
-        "caveats":"'Please note November 2020 data is preliminary."
+        "units": "Index"
       }
     ]
   },
@@ -746,8 +745,7 @@
       {
         "name": "undefined_name",
         "title": "ANZ business confidence",
-        "units": "Index",
-        "caveats": "Please note November 2020 data is preliminary."
+        "units": "Index"
       }
     ]
   },
