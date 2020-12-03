@@ -2948,7 +2948,7 @@
     "plot_function": "get_stacked_bar_chart",
     "international": false,
     "source_url":"https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation/covid-19-current-cases",
-    "download": false,
+    "download": true,
     "groups": [
         {
             "name": "Tests by day",
