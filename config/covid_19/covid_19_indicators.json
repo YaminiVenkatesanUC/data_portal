@@ -506,26 +506,6 @@
             "name": "Service industries (seasonally adjusted)",
             "units": "Number",
             "title": "Monthly employment indicator - filled jobs (seasonally adjusted)"
-        },
-        {
-            "name": "All industries (trend)",
-            "units": "Number",
-            "title": "Monthly employment indicator - filled jobs (trend)"
-        },
-        {
-            "name": "Primary industries (trend)",
-            "units": "Number",
-            "title": "Monthly employment indicator - filled jobs (trend)"
-        },
-        {
-            "name": "Goods-producing industries (trend)",
-            "units": "Number",
-            "title": "Monthly employment indicator - filled jobs (trend)"
-        },
-        {
-            "name": "Service industries (trend)",
-            "units": "Number",
-            "title": "Monthly employment indicator - filled jobs (trend)"
         }
     ]
   },
