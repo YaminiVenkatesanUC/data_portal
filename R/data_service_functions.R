@@ -5,18 +5,23 @@ load_from_store <- function(indicator, group_name) {
   } else {
     return(NULL)
   }
-
   return(data_object)
 }
 
 stats_odata_api <- function(indicator, group_name) {
+  print(indicator$api_resource_id)
+  print(paste0(CONFIG$odata_url,
+               "Covid-19Indicators/Observations",
+               "?$filter=(ResourceID eq '",
+               indicator$api_resource_id,
+               "')"))
   Observations <- GET(
     URLencode(paste0(CONFIG$odata_url,
                      "Covid-19Indicators/Observations",
                      "?$filter=(ResourceID eq '",
                      indicator$api_resource_id,
                      "')")),
-    add_headers("Ocp-Apim-Subscription-Key" = key)) %>%
+    add_headers("Ocp-Apim-Subscription-Key" = CONFIG$odata_token)) %>%
     content("text", encoding = "UTF-8") %>%
     jsonlite::fromJSON(flatten = TRUE)
 
@@ -26,17 +31,19 @@ stats_odata_api <- function(indicator, group_name) {
                      "?$filter=(ResourceID eq '",
                      indicator$api_resource_id,
                      "')")),
-    add_headers("Ocp-Apim-Subscription-Key" = key))  %>%
+    add_headers("Ocp-Apim-Subscription-Key" = CONFIG$odata_token))  %>%
     content("text", encoding = "UTF-8") %>%
     jsonlite::fromJSON(flatten = TRUE)
 
   parsed <- jsonlite::fromJSON(content(response, "text", encoding = "UTF-8"), flatten = TRUE)
   data  <- parsed$value
 
+  print(data)
+
   if (length(data$Value) == 0) {return(NULL)}
 
   data_group <- data %>%
-    mutate(Parameter = ymd(table$Period)) %>%
+    mutate(Parameter = ymd(data$Period)) %>%
     select(Parameter=Period , Value)
 
   data_object <- TimeSeries$new(data_group, unique(Resource$value$Title), as.Date(now()))
