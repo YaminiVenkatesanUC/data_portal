@@ -10,42 +10,36 @@ load_from_store <- function(indicator, group_name) {
 }
 
 stats_odata_api <- function(indicator, group_name) {
-  print("In API fucntion")
-  query <- paste0(
-    CONFIG$odata_url,
-    "?$apply=filter(Table/subject%20eq%20%27Covid-19%20Portal%27%20and%20",
-    "desc_1%20eq%20%27",
-    gsub(" ", "%20", indicator$class),
-    "%27%20and%20",
-    "desc_2%20eq%20%27",
-    gsub(" ", "%20", indicator$type),
-    "%27%20and%20",
-    "desc_3%20eq%20%27",
-    gsub(" ", "%20", indicator$indicator_name),
-    "%27%20",
-    "and%20desc_4%20eq%20%27",
-    gsub(" ", "%20", group_name),
-    "%27%20",
-    ")&$select=desc_5,desc_6,value"
-  )
-  response <- GET(
-    query,
-    add_headers("Ocp-Apim-Subscription-Key" = CONFIG$odata_token)
-  )
-  result <- parse_httr_response(response)
-  if (length(result$value) == 0) {return(NULL)}
-  table <- result$value %>%
-    rename(Parameter = desc_6) %>%
-    pivot_wider(names_from = desc_5, values_from = c("value")) %>%
-    select(c("Parameter", sort(unique(result$value$desc_5)))) %>%
-    mutate(Parameter = dmy(Parameter)) %>%
-    arrange(Parameter)
+  Observations <- GET(
+    URLencode(paste0(CONFIG$odata_url,
+                     "Covid-19Indicators/Observations",
+                     "?$filter=(ResourceID eq '",
+                     indicator$api_resource_id,
+                     "')")),
+    add_headers("Ocp-Apim-Subscription-Key" = key)) %>%
+    content("text", encoding = "UTF-8") %>%
+    jsonlite::fromJSON(flatten = TRUE)
 
-  data_object <- TimeSeries$new(
-    table,
-    sort(unique(result$value$desc_5)),
-    as.Date(now())
-  )
+  Resource <- GET(
+    URLencode(paste0(CONFIG$odata_url,
+                     "Covid-19Indicators/Resources",
+                     "?$filter=(ResourceID eq '",
+                     indicator$api_resource_id,
+                     "')")),
+    add_headers("Ocp-Apim-Subscription-Key" = key))  %>%
+    content("text", encoding = "UTF-8") %>%
+    jsonlite::fromJSON(flatten = TRUE)
+
+  parsed <- jsonlite::fromJSON(content(response, "text", encoding = "UTF-8"), flatten = TRUE)
+  data  <- parsed$value
+
+  if (length(data$Value) == 0) {return(NULL)}
+
+  data_group <- data %>%
+    mutate(Parameter = ymd(table$Period)) %>%
+    select(Parameter=Period , Value)
+
+  data_object <- TimeSeries$new(data_group, unique(Resource$value$Title), as.Date(now()))
   return(data_object)
 }
 
