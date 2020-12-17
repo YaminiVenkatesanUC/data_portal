@@ -5,10 +5,12 @@ load_from_store <- function(indicator, group_name) {
   } else {
     return(NULL)
   }
+
   return(data_object)
 }
 
 stats_odata_api <- function(indicator, group_name) {
+  print("In API fucntion")
   query <- paste0(
     CONFIG$odata_url,
     "?$apply=filter(Table/subject%20eq%20%27Covid-19%20Portal%27%20and%20",

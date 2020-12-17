@@ -513,8 +513,6 @@ read_filled_jobs_by_industry_or_region <- function(config, directory) {
     output_group[[group_name]] <- TimeSeries$new(data_group, group_name, update_date)
   }
 
-  print(head(output_group))
-
   return(output_group)
 }
 
