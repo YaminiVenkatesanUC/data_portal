@@ -654,7 +654,7 @@
     "international": false,
     "include_date_slider": true,
     "default_lower_range": "2019-01-01",
-
+    "caveats":"Note: December 2020 data is provisional.",
     "source_url": "https://www.anz.co.nz/about-us/economic-markets-research/business-outlook/",
     "download": false,
     "groups": [
@@ -718,7 +718,7 @@
     "international": false,
     "include_date_slider": true,
     "default_lower_range": "2019-01-01",
-
+    "caveats":"Note: December 2020 data is provisional.",
     "source_url": "https://www.anz.co.nz/about-us/economic-markets-research/business-outlook/",
     "download": false,
     "groups": [
