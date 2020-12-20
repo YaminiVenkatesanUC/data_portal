@@ -9,12 +9,6 @@ load_from_store <- function(indicator, group_name) {
 }
 
 stats_odata_api <- function(indicator, group_name) {
-  print(indicator$api_resource_id)
-  print(paste0(CONFIG$odata_url,
-               "Covid-19Indicators/Observations",
-               "?$filter=(ResourceID eq '",
-               indicator$api_resource_id,
-               "')"))
   Observations <- GET(
     URLencode(paste0(CONFIG$odata_url,
                      "Covid-19Indicators/Observations",
@@ -37,14 +31,11 @@ stats_odata_api <- function(indicator, group_name) {
 
   parsed <- jsonlite::fromJSON(content(response, "text", encoding = "UTF-8"), flatten = TRUE)
   data  <- parsed$value
-
-  print(data)
-
   if (length(data$Value) == 0) {return(NULL)}
-
   data_group <- data %>%
-    mutate(Parameter = ymd(data$Period)) %>%
-    select(Parameter=Period , Value)
+    mutate(Parameter = ymd(str_pad(as.character(Period), 7, side = "right", pad = "0"))) %>%
+    select(Parameter, Value)
+    # filter by group
 
   data_object <- TimeSeries$new(data_group, unique(Resource$value$Title), as.Date(now()))
   return(data_object)

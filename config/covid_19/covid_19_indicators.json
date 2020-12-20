@@ -209,8 +209,6 @@
     "default_lower_range": "2017-02-01",
     "source_url": "https://www.stats.govt.nz/methods/about-new-employment-indicator-series",
     "download": true,
-    "data_service": "stats_odata_api",
-    "api_resource_id": "CPWAG1",
     "groups": [
       {
         "name": "Northland",
@@ -5494,6 +5492,8 @@
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
+    "data_service": "stats_odata_api",
+    "api_resource_id": "CPWAG1",
     "groups": [
       {
         "name": "undefined_name",
