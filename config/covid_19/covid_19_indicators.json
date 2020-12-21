@@ -5422,6 +5422,8 @@
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
+    "data_service": "stats_odata_api",
+    "api_resource_id": "CPBEN1",
     "groups": [
       {
         "name": "undefined_name",

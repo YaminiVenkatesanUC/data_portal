@@ -29,13 +29,11 @@ stats_odata_api <- function(indicator, group_name) {
     content("text", encoding = "UTF-8") %>%
     jsonlite::fromJSON(flatten = TRUE)
 
-  parsed <- jsonlite::fromJSON(content(response, "text", encoding = "UTF-8"), flatten = TRUE)
-  data  <- parsed$value
-  if (length(data$Value) == 0) {return(NULL)}
-  data_group <- data %>%
+  if (length(Observations$value$Value) == 0) {return(NULL)}
+  data_group <- Observations$value %>%
     mutate(Parameter = ymd(str_pad(as.character(Period), 7, side = "right", pad = "0"))) %>%
-    select(Parameter, Value)
-    # filter by group
+    #filter(Label1 == group_name) %>%
+    select(Parameter , Value)
 
   data_object <- TimeSeries$new(data_group, unique(Resource$value$Title), as.Date(now()))
   return(data_object)
