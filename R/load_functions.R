@@ -513,7 +513,7 @@ read_filled_jobs_by_industry_or_region <- function(config, directory) {
     output_group[[group_name]] <- TimeSeries$new(data_group, group_name, update_date)
   }
 
-  print(head(output_group))
+ # print(head(output_group))
 
   return(output_group)
 }
@@ -546,7 +546,7 @@ read_employment_paid_jobs_data <- function(config, directory) {
     "please enter a filter for visa type or employment"
   }
 
-  print(head(data))
+  #print(head(data))
   return(data_frame_to_data_object_helper(
     directory,
     config,
