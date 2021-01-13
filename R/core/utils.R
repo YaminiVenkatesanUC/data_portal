@@ -348,7 +348,11 @@ brand_graph_colours <- c(
   "#6f2e38",
   "#0d94a3",
   "#dd6829",
-  "#1a6e5b")
+  "#1a6e5b",
+  "#4d5b61",
+  "#007f39",
+  "#d0cdbb"
+)
 
 brand_secondary_colours <- c(
   "#172a45",
