@@ -1194,14 +1194,12 @@
         "function (x) ",
         "as.Date(x, format = \"%d/%m/%y\")"
         ],
-        "sheet_number": 3,
-        "value_col": [
-        4
-        ],
+        "sheet_number": 1,
+        "value_col": 2,
         "value_names": [
           "All special needs grants"
           ],
-        "filename": "COVID 19 - MSD Jobseeker by region and Hardship grants.xlsx",
+        "filename": "COVID-19 MSD All Special Needs Grants.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": [
