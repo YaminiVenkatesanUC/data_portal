@@ -4391,7 +4391,7 @@
     "function (x) ",
     "as.Date(x, format = \"%d/%m/%y\")"
     ],
-    "sheet_number": 4,
+    "sheet_number": 1,
     "value_col": [
     2,
     3,
@@ -4404,7 +4404,7 @@
     "Closed",
     "Declined"
     ],
-    "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "filename": "COVID-19 MSD Number of Applications.xlsx",
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
     "group_names": "undefined_name"
