@@ -1251,7 +1251,7 @@
   },
   {
     "class": "Income support",
-    "indicator_name": "Accomodation supplement",
+    "indicator_name": "Accommodation supplement",
     "type": "Supplementary support",
     "source": "Ministry of Social Development",
     "plot_function": "get_time_series_plot",
@@ -1260,8 +1260,8 @@
     "download": true,
     "groups": [
       {
-        "name": "Accomodation supplement",
-        "title": "Accomodation supplement",
+        "name": "Accommodation supplement",
+        "title": "Accommodation supplement",
         "units": "Number"
       }
     ]
