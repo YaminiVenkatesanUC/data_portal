@@ -1170,16 +1170,15 @@
         "function (x) ",
         "as.Date(x, format = \"%d/%m/%y\")"
         ],
-        "sheet_number": 3,
+        "sheet_number": 1,
         "value_col": [
-
-        6
+        2
         ],
         "value_names": [
 
           "Emergency housing grants"
           ],
-        "filename": "COVID 19 - MSD Jobseeker by region and Hardship grants.xlsx",
+        "filename": "COVID-19 MSD Emergency Housing Grants.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": [
