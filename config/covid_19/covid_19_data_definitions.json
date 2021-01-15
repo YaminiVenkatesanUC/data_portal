@@ -1244,7 +1244,7 @@
         "Other region",
         "Total"
         ],
-        "filename": "COVID 19 - MSD Jobseeker by region and Hardship grants.xlsx",
+        "filename": "COVID-19 MSD Jobseeker Support by MSD Region.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": [
