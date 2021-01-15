@@ -4354,7 +4354,7 @@
     "Work Ready",
     "Health Condition and Disability"
     ],
-    "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "filename": "COVID-19 MSD Jobseeker Support.xlsx",
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
     "group_names": "undefined_name"
