@@ -1979,7 +1979,7 @@
             "Other",
             "Total"
         ],
-        "filename": "COVID 19 - MSD Jobseeker by regional council.xlsx",
+        "filename": "COVID-19 MSD Jobseeker Support By Region.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries"
     },
