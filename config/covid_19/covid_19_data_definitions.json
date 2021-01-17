@@ -4172,11 +4172,7 @@
     	"CIRP grants*",
     	"Total transfers from Jobseeker"
   	],
-<<<<<<< HEAD
-  	"filename": "Raw data/Development/COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
-=======
   	"filename": "COVID-19 MSD Number of CIRP Recipients.xlsx",
->>>>>>> master
   	"load_function": "read_from_excel",
   	"data_type": "TimeSeries",
   	"group_names": "undefined_name"

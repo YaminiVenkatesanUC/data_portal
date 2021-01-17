@@ -22,46 +22,46 @@ library(sjlabelled)
 
 
 
-# read the SPSS file 
-cffc <- read_sav("example_data/NZ_Covid 19 Wellbeing 2 with components with serials.sav")
+# read the SPSS file
+cffc <- read_sav("example_data/ORD-551132-J1V4_Covid19 Wellbeing W2_MAIN_Final Data_SPSS_v1.sav")
 
 # get labels instead of codes for every variable
-cffc <- 
+cffc <-
   cffc %>%
-  mutate(across(everything(), as_label)) 
+  mutate(across(everything(), as_label))
 
 
 # variables at the household level
 # a1 is the filter for respondents who could answer for their household
 
-cffc_h <- 
+cffc_h <-
   cffc %>%
   filter(a1 == "Yes") %>%
-  select("a3_wb", 
+  select("a3_wb",
          "b18_wb_1",
-         "c101", 
+         "c101",
          "c17",
-         paste0("b19_wb", 11:19)) 
-                          
-  
-# variables at the individual level 
+         paste0("b19_wb", 11:19))
+
+
+# variables at the individual level
 # removed corona_3c
 
 cffc_i <-
   cffc %>%
   select(
-    "anxiety", 
-     paste0("corona_", 
+    "Anxiety",
+     paste0("corona_",
                 c("1c1",
-                  "1c2", 
+                  "1c2",
                   "1c3",
                   "1c4",
-                  "2c1", 
-                  "2c2", 
+                  "2c1",
+                  "2c2",
                   "2c3",
                   "2c4",
-                  "3c1", 
-                  "3c2", 
+                  "3c1",
+                  "3c2",
                   "3c3",
                   "3c4")
             )
@@ -69,7 +69,7 @@ cffc_i <-
 
  ## Recodes to 'yes' if this has happened
  ## to respondent OR the partner they live with, 'no' if neither
-   
+
   mutate(across(starts_with("corona"), ~(.x=="Selected")))  %>%
   mutate(corona_1c = case_when(
                         corona_1c4 ~ "Don't know",
@@ -92,14 +92,14 @@ cffc_i <-
     TRUE ~ "No"
   )
   ) %>%
-  select(anxiety, corona_1c, corona_2c, corona_3c)
-                    
+  select(Anxiety, corona_1c, corona_2c, corona_3c)
+
 
 # create one dataframe per indicator in a list object
 # filter out Don't Know answers to exclude from denominator
 # then calculate relative frequencies
 
-cffc_output <- 
+cffc_output <-
   list(lapply(colnames(cffc_h),
                      function(x) {
                        df <- cffc_h %>%
@@ -125,7 +125,7 @@ cffc_output <-
 )
 
 
-# un-nest the list 
+# un-nest the list
 # no one wants a list of lists
 
 cffc_output <- unlist(cffc_output, recursive = FALSE)
@@ -137,7 +137,7 @@ names(cffc_output) <- c(colnames(cffc_h), colnames(cffc_i))
 
 # we need one dataframe for all of the b19_wb variables
 # this  code:
-# creates an empty dataframe 
+# creates an empty dataframe
 # cycles through and adds the appropriate values
 # gets the question labels instead of e.g., b19_wb11
 
@@ -149,7 +149,7 @@ cffc_output$b19_wb <- as.data.frame(
 vars <- paste0("b19_wb", 11:19)
 
 for (var in vars) {
-  
+
   colnames(cffc_output[[var]]) <- c ("Question", "Percentage")
   cffc_output$b19_wb <- rbind(
     cffc_output$b19_wb,
@@ -159,15 +159,15 @@ for (var in vars) {
       "Percentage" = cffc_output[[var]][2, 2])
     )
   )
-  
+
 }
 
 
 # we don't need the full labels - extract the meaningful portion
-# using regex (a bit unnecessary) 
-# gsub seemed easier than substring but either works 
+# using regex (a bit unnecessary)
+# gsub seemed easier than substring but either works
 
-cffc_output$b19_wb <- 
+cffc_output$b19_wb <-
   cffc_output$b19_wb %>%
   mutate(Question = str_extract_all(Question,
                                 "\\:.+?\\-")) %>%
@@ -196,27 +196,27 @@ cffc_output$corona <- as.data.frame(
 
 
 # keep the dataframes we want
-# controlling the order just makes config easier 
+# controlling the order just makes config easier
 
 df_order <- c("a3_wb",
               "b18_wb_1",
               "c101",
               "c17",
-              "anxiety",
+              "Anxiety",
               "b19_wb",
               "corona")
-              
+
 
 cffc_output <- cffc_output[df_order]
 
-# write output file 
+# write output file
 
 if (file.exists("example_data/CFFC_output.xlsx")) file.remove("example_data/CFFC_output.xlsx")
 
 for (i in 1:length(cffc_output)) {
   write.xlsx(cffc_output[[i]],
-             file = "example_data/CFFC_output.xlsx", 
-             sheetName = names(cffc_output)[i], 
+             file = "example_data/CFFC_output.xlsx",
+             sheetName = names(cffc_output)[i],
              append = T,
              showNA = F)
 }
@@ -225,4 +225,3 @@ for (i in 1:length(cffc_output)) {
 
 
 
-           
