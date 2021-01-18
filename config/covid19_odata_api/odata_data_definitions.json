@@ -14,6 +14,12 @@
     "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
+    "ResourceID": "CPWAG1",
+    "Var1": "Treatment",
+    "measure": "Wage subsidy paid out (cumulative)",
+    "frequency": "Weekly",
+    "duration": "P7D",
+    "treatment": "Actual",
     "group_names": "undefined_name"
     }
 ]
