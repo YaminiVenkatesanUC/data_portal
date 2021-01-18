@@ -8,12 +8,8 @@
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
-    "ResourceID": "CPWAG1",
-    "Var1": "Treatment",
-    "measure": "Wage subsidy paid out (cumulative)",
-    "frequency": "Weekly",
-    "duration": "P7D",
-    "treatment": "Actual",
+    "data_service": "stats_odata_api",
+    "api_resource_id": "CPBEN1",
     "groups": [
       {
         "name": "undefined_name",
