@@ -788,7 +788,8 @@
       {
         "name": "Spend (seasonally adjusted)",
         "title": "Monthly electronic card transaction activity",
-        "units": "$"
+        "units": "$",
+        "caveats": "The COVID-19 pandemic has introduced unusual patterns to the monthly and quarterly electronic card transaction series. Months from March 2020 (inclusive) and quarters from June 2020 (inclusive) will not be published. This approach will continue until an observable seasonal pattern returns to each series."
       },
       {
         "name": "Transactions (count)",
@@ -885,17 +886,20 @@
       {
         "name": "Retail (seasonally adjusted)",
         "title": "Monthly card transaction spend by industry",
-        "units": "$"
+        "units": "$",
+         "caveats": "The COVID-19 pandemic has introduced unusual patterns to the monthly and quarterly electronic card transaction series. Months from March 2020 (inclusive) and quarters from June 2020 (inclusive) will not be published. This approach will continue until an observable seasonal pattern returns to each series."
       },
       {
         "name": "Services (seasonally adjusted)",
         "title": "Monthly card transaction spend by industry",
-        "units": "$"
+        "units": "$",
+         "caveats": "The COVID-19 pandemic has introduced unusual patterns to the monthly and quarterly electronic card transaction series. Months from March 2020 (inclusive) and quarters from June 2020 (inclusive) will not be published. This approach will continue until an observable seasonal pattern returns to each series."
       },
       {
         "name": "Non-retail (seasonally adjusted)",
         "title": "Monthly card transaction spend by industry",
-        "units": "$"
+        "units": "$",
+         "caveats": "The COVID-19 pandemic has introduced unusual patterns to the monthly and quarterly electronic card transaction series. Months from March 2020 (inclusive) and quarters from June 2020 (inclusive) will not be published. This approach will continue until an observable seasonal pattern returns to each series."
       }
     ]
   },
@@ -1251,7 +1255,7 @@
   },
   {
     "class": "Income support",
-    "indicator_name": "Accomodation supplement",
+    "indicator_name": "Accommodation supplement",
     "type": "Supplementary support",
     "source": "Ministry of Social Development",
     "plot_function": "get_time_series_plot",
@@ -1260,8 +1264,8 @@
     "download": true,
     "groups": [
       {
-        "name": "Accomodation supplement",
-        "title": "Accomodation supplement",
+        "name": "Accommodation supplement",
+        "title": "Accommodation supplement",
         "units": "Number"
       }
     ]
@@ -5990,7 +5994,7 @@
           "name": "undefined_name",
           "units": "%",
           "title": "Respondents’ level of confidence in household’s financial situation over next 3 months",
-          "caveats": "<p> 1) Data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3).  </p><p> 2) This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population.  </p>"
+          "caveats": "<p> 1) April data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3). October data collected over 30 September and 22 October 2020.  </p><p> 2) This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population.  </p>"
       }
     ]
   },
@@ -6007,7 +6011,7 @@
             "name": "undefined_name",
             "units": "%",
             "title": "Respondents’ ability to meet bills and other financial commitments over next 3 months",
-            "caveats": "<p> 1) Data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3).  </p><p> 2) This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population.  </p>"
+            "caveats": "<p> 1) April data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3). October data collected over 30 September and 22 October 2020.  </p><p> 2) This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population.  </p>"
         }
     ]
   },
@@ -6025,7 +6029,7 @@
             "name": "undefined_name",
             "units": "%",
             "title": "Whether respondents used savings to help make ends meet during the last four weeks",
-            "caveats": "<p> 1) Data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3).  </p><p> 2) This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population.  </p>"
+            "caveats": "<p> 1) April data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3). October data collected over 30 September and 22 October 2020.  </p><p> 2) This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population.  </p>"
         }
     ]
   },
@@ -6061,7 +6065,7 @@
             "name": "undefined_name",
             "units": "%",
             "title": "How well respondents relate to the statement \"Thinking about my financial situation makes me anxious\"",
-            "caveats": "<p> 1) Data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3).  </p><p> 2) This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population.  </p>"
+            "caveats": "<p> 1) April data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3). October data collected over 30 September and 22 October 2020.  </p><p> 2) This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population.  </p>"
         }
     ]
   },
@@ -6079,7 +6083,7 @@
           "name": "undefined_name",
           "units": "%",
           "title": "Percentage of respondents who owe money due to missed repayments on credit, by type of credit agreement",
-          "caveats": "<p> 1) Data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3).  </p><p> 2) This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population.  </p>"
+          "caveats": "<p> 1) April data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3). October data collected over 30 September and 22 October 2020.  </p><p> 2) This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population.  </p>"
       }
     ]
   },
@@ -6097,7 +6101,7 @@
             "name": "undefined_name",
             "units": "%",
             "title": "Percentage of respondents who said they or the partner they live with experienced the following as a result of COVID-19",
-            "caveats": "<p> 1)* Includes self-employed income. <p></p> 2) Data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3).  </p><p> 3) This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population.  </p>"
+            "caveats": "<p> 1)* Includes self-employed income. <p></p> 2) April data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3). October data collected over 30 September and 22 October 2020.  </p><p> 3) This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population.  </p>"
         }
     ]
   } ,

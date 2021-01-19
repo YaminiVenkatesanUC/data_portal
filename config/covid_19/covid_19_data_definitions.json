@@ -642,6 +642,7 @@
         "filename": "COVID 19 - Electronic Card Transaction data.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
+        "drop_na":false,
         "group_names": [
         "Spend (actual)",
         "Spend (seasonally adjusted)",
@@ -731,6 +732,7 @@
         "Non-retail (seasonally adjusted)"
         ],
         "filename": "COVID 19 - Electronic Card Transaction data.xlsx",
+        "drop_na":false,
         "load_function": "read_from_excel",
         "skip": 1,
 
@@ -1104,20 +1106,20 @@
     },
     {
         "class": "Income support",
-        "indicator_name": "Accomodation supplement",
+        "indicator_name": "Accommodation supplement",
         "type": "Supplementary support",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
         "as.Date(x, format = \"%d/%m/%y\")"
         ],
-        "sheet_number": 3,
+        "sheet_number": 1,
         "value_col": 2,
-        "value_names": "Accomodation supplement",
-        "filename": "COVID 19 - MSD Jobseeker by region and Hardship grants.xlsx",
+        "value_names": "Accommodation supplement",
+        "filename": "COVID-19 MSD Accommodation Supplement.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": "Accomodation supplement"
+        "group_names": "Accommodation supplement"
     },
     {
         "class": "Income support",
@@ -1128,14 +1130,12 @@
         "function (x) ",
         "as.Date(x, format = \"%d/%m/%y\")"
         ],
-        "sheet_number": 3,
-        "value_col": [
-        5
-        ],
+        "sheet_number": 1,
+        "value_col": 2,
         "value_names": [
         "Special needs grants for food"
         ],
-        "filename": "COVID 19 - MSD Jobseeker by region and Hardship grants.xlsx",
+        "filename": "COVID-19 MSD Special Needs Grants for Food.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": [
@@ -1151,12 +1151,10 @@
         "function (x) ",
         "as.Date(x, format = \"%d/%m/%y\")"
         ],
-        "sheet_number": 3,
-        "value_col": [
-        3
-        ],
+        "sheet_number": 1,
+        "value_col": 2,
         "value_names": "Temporary additional support and special benefit",
-        "filename": "COVID 19 - MSD Jobseeker by region and Hardship grants.xlsx",
+        "filename": "COVID-19 MSD Temporary Additional Support and Special Benefit.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": "Temporary additional support and special benefit"
@@ -1170,16 +1168,15 @@
         "function (x) ",
         "as.Date(x, format = \"%d/%m/%y\")"
         ],
-        "sheet_number": 3,
+        "sheet_number": 1,
         "value_col": [
-
-        6
+        2
         ],
         "value_names": [
 
           "Emergency housing grants"
           ],
-        "filename": "COVID 19 - MSD Jobseeker by region and Hardship grants.xlsx",
+        "filename": "COVID-19 MSD Emergency Housing Grants.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": [
@@ -1197,14 +1194,12 @@
         "function (x) ",
         "as.Date(x, format = \"%d/%m/%y\")"
         ],
-        "sheet_number": 3,
-        "value_col": [
-        4
-        ],
+        "sheet_number": 1,
+        "value_col": 2,
         "value_names": [
           "All special needs grants"
           ],
-        "filename": "COVID 19 - MSD Jobseeker by region and Hardship grants.xlsx",
+        "filename": "COVID-19 MSD All Special Needs Grants.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": [
@@ -1251,7 +1246,7 @@
         "Other region",
         "Total"
         ],
-        "filename": "COVID 19 - MSD Jobseeker by region and Hardship grants.xlsx",
+        "filename": "COVID-19 MSD Jobseeker Support by MSD Region.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": [
@@ -1979,7 +1974,7 @@
             "Other",
             "Total"
         ],
-        "filename": "COVID 19 - MSD Jobseeker by regional council.xlsx",
+        "filename": "COVID-19 MSD Jobseeker Support By Region.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries"
     },
@@ -4162,7 +4157,7 @@
   	"function (x) ",
   	"as.Date(x, format = \"%d/%m/%y\")"
   	],
-  	"sheet_number": 5,
+  	"sheet_number": 1,
   	"value_col": [
     	2,
     	3,
@@ -4179,7 +4174,7 @@
     	"CIRP grants*",
     	"Total transfers from Jobseeker"
   	],
-  	"filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+  	"filename": "COVID-19 MSD Number of CIRP Recipients.xlsx",
   	"load_function": "read_from_excel",
   	"data_type": "TimeSeries",
   	"group_names": "undefined_name"
@@ -4264,10 +4259,10 @@
     "function (x) ",
     "as.Date(x, format = \"%d/%m/%y\")"
     ],
-    "sheet_number": 9,
-    "value_col": 5,
+    "sheet_number": 1,
+    "value_col": 2,
     "value_names": "Amount of wage subsidy refunds received",
-    "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "filename": "COVID-19 MSD Amount of Wage Subsidy Refunds.xlsx",
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
     "group_names": "undefined_name"
@@ -4299,10 +4294,10 @@
     "function (x) ",
     "as.Date(x, format = \"%d/%m/%y\")"
     ],
-    "sheet_number": 9,
-    "value_col": 4,
+    "sheet_number": 1,
+    "value_col": 2,
     "value_names": "Number of wage subsidy refunds received",
-    "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "filename": "COVID-19 MSD Number of Wage Subsidy Refunds.xlsx",
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
     "group_names": "undefined_name"
@@ -4361,7 +4356,7 @@
     "Work Ready",
     "Health Condition and Disability"
     ],
-    "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "filename": "COVID-19 MSD Jobseeker Support.xlsx",
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
     "group_names": "undefined_name"
@@ -4376,13 +4371,11 @@
     "as.Date(x, format = \"%d/%m/%y\")"
     ],
     "sheet_number": 1,
-    "value_col": [
-    6
-    ],
+    "value_col": 2,
     "value_names": [
     "Percentage of the working-age population"
     ],
-    "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "filename": "COVID-19 MSD Percentage of Population.xlsx",
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
     "group_names": [
@@ -4398,7 +4391,7 @@
     "function (x) ",
     "as.Date(x, format = \"%d/%m/%y\")"
     ],
-    "sheet_number": 4,
+    "sheet_number": 1,
     "value_col": [
     2,
     3,
@@ -4411,7 +4404,7 @@
     "Closed",
     "Declined"
     ],
-    "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "filename": "COVID-19 MSD Number of Applications.xlsx",
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
     "group_names": "undefined_name"
