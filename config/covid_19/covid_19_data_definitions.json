@@ -44,8 +44,9 @@
         "Nelson",
         "Marlborough"
         ],
-        "filename": "COVID 19 - MBIE rentalbond data regional.xlsx",
-        "load_function": "read_MBIE_rental",
+        "filename": "Raw data/Development/COVID-19 MBIE Rental Active Bonds.csv",
+        "load_function": "read_from_csv",
+        "parameter_transform":"function (x) ymd(x)",
         "order_parameter": false,
         "data_type": "TimeSeries",
         "group_names":
@@ -114,8 +115,9 @@
         "Nelson",
         "Marlborough"
         ],
-        "filename": "COVID 19 - MBIE rentalbond data regional.xlsx",
-        "load_function": "read_MBIE_rental",
+        "filename": "Raw data/Development/COVID-19 MBIE Rental Closed Bonds.csv",
+        "load_function": "read_from_csv",
+        "parameter_transform":"function (x) ymd(x)",
         "data_type": "TimeSeries",
         "order_parameter": false,
         "group_names":
@@ -185,8 +187,9 @@
         "Marlborough"
 
         ],
-        "filename": "COVID 19 - MBIE rentalbond data regional.xlsx",
-        "load_function": "read_MBIE_rental",
+        "filename": "Raw data/Development/COVID-19 MBIE Rental Lodged Bonds.csv",
+        "load_function": "read_from_csv",
+        "parameter_transform":"function (x) ymd(x)",
         "order_parameter": false,
         "data_type": "TimeSeries",
         "group_names":
@@ -254,8 +257,9 @@
         "Nelson",
         "Marlborough"
         ],
-        "filename": "COVID 19 - MBIE rentalbond data regional.xlsx",
-        "load_function": "read_MBIE_rental",
+        "filename": "Raw data/Development/COVID-19 MBIE Rental Average Weekly Rent.csv",
+        "load_function": "read_from_csv",
+        "parameter_transform":"function (x) ymd(x)",
         "data_type": "TimeSeries",
         "order_parameter": false,
         "group_names":
