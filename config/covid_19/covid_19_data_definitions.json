@@ -642,6 +642,7 @@
         "filename": "COVID 19 - Electronic Card Transaction data.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
+        "drop_na":false,
         "group_names": [
         "Spend (actual)",
         "Spend (seasonally adjusted)",
@@ -731,6 +732,7 @@
         "Non-retail (seasonally adjusted)"
         ],
         "filename": "COVID 19 - Electronic Card Transaction data.xlsx",
+        "drop_na":false,
         "load_function": "read_from_excel",
         "skip": 1,
 
