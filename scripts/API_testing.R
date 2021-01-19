@@ -1,15 +1,6 @@
 CONFIG <- read_config_file()
-indicator <- indicators[[1]]
+indicator <- read_json(CONFIG$indicator_definitions)[[1]]
 
-Observations <- GET(
-  URLencode(paste0(CONFIG$odata_url,
-                   "Covid-19Indicators/Observations",
-                   "?$filter=(ResourceID eq '",
-                   indicator$api_resource_id,
-                   "')")),
-  add_headers("Ocp-Apim-Subscription-Key" = CONFIG$odata_token)) %>%
-  content("text", encoding = "UTF-8") %>%
-  jsonlite::fromJSON(flatten = TRUE)
 
 Resource <- GET(
   URLencode(paste0(CONFIG$odata_url,
