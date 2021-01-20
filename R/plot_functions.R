@@ -484,7 +484,7 @@ get_time_series_plot_with_errors <- function(
   if (!is.null(indicator_definition$frequency)) {
     if (indicator_definition$frequency == "monthly" || indicator_definition$frequency == "Quarterly") {
       year_label <- ""
-      categories <- format(dates, "%b-%Y")
+      categories <- format(dates, "%b-%Y quarter")
     }
   }
 
