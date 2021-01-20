@@ -788,7 +788,8 @@
       {
         "name": "Spend (seasonally adjusted)",
         "title": "Monthly electronic card transaction activity",
-        "units": "$"
+        "units": "$",
+        "caveats": "The COVID-19 pandemic has introduced unusual patterns to the monthly and quarterly electronic card transaction series. Months from March 2020 (inclusive) and quarters from June 2020 (inclusive) will not be published. This approach will continue until an observable seasonal pattern returns to each series."
       },
       {
         "name": "Transactions (count)",
@@ -885,17 +886,20 @@
       {
         "name": "Retail (seasonally adjusted)",
         "title": "Monthly card transaction spend by industry",
-        "units": "$"
+        "units": "$",
+         "caveats": "The COVID-19 pandemic has introduced unusual patterns to the monthly and quarterly electronic card transaction series. Months from March 2020 (inclusive) and quarters from June 2020 (inclusive) will not be published. This approach will continue until an observable seasonal pattern returns to each series."
       },
       {
         "name": "Services (seasonally adjusted)",
         "title": "Monthly card transaction spend by industry",
-        "units": "$"
+        "units": "$",
+         "caveats": "The COVID-19 pandemic has introduced unusual patterns to the monthly and quarterly electronic card transaction series. Months from March 2020 (inclusive) and quarters from June 2020 (inclusive) will not be published. This approach will continue until an observable seasonal pattern returns to each series."
       },
       {
         "name": "Non-retail (seasonally adjusted)",
         "title": "Monthly card transaction spend by industry",
-        "units": "$"
+        "units": "$",
+         "caveats": "The COVID-19 pandemic has introduced unusual patterns to the monthly and quarterly electronic card transaction series. Months from March 2020 (inclusive) and quarters from June 2020 (inclusive) will not be published. This approach will continue until an observable seasonal pattern returns to each series."
       }
     ]
   },
