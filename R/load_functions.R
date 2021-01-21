@@ -513,7 +513,7 @@ read_filled_jobs_by_industry_or_region <- function(config, directory) {
     output_group[[group_name]] <- TimeSeries$new(data_group, group_name, update_date)
   }
 
-  print(head(output_group))
+ # print(head(output_group))
 
   return(output_group)
 }
@@ -531,7 +531,7 @@ read_employment_paid_jobs_data <- function(config, directory) {
     data <- data %>%
       filter(col_2 == config$filter_paid_jobs) %>%
       select(Parameter = col_1, everything()) %>%
-      mutate(Parameter = as.Date(ymd(Parameter))) %>%
+      mutate(Parameter = as.Date(dmy(Parameter))) %>%
       spread(col_3, col_4) %>%
       select(Parameter, Total, everything(), -col_2)
 
@@ -546,7 +546,7 @@ read_employment_paid_jobs_data <- function(config, directory) {
     "please enter a filter for visa type or employment"
   }
 
-  print(head(data))
+  #print(head(data))
   return(data_frame_to_data_object_helper(
     directory,
     config,
@@ -1145,6 +1145,47 @@ petrol_read_file_month <- function(config, directory) {
   ))
 }
 
+read_MBIE_rental <- function(config, directory) {
+  parameter_transform <- eval(parse(text = config$parameter_transform))
+  skip <- 0
+  if (!is.null(config$skip)) {
+    skip <- config$skip
+  }
+  data <- as.data.frame(read_excel(paste0(directory, config$filename))) %>%
+    select(`Time Frame`, Location, `Lodged Bonds`, `Active Bonds`, `Closed Bonds`, `Average Weekly Rent`) %>%
+    filter(Location != "NA")
+
+  data$`Time Frame` <- as.Date(data$`Time Frame`, "%b %d %Y")
+  data$Location <- str_remove_all(data$Location, " Region")
+  data <- data %>%
+    filter(`Time Frame` > "2015-01-01") %>%
+    select(`Time Frame`, Location, config$sub_series) %>%
+    arrange(`Time Frame`) %>%
+    pivot_wider(names_from = Location, values_from = config$sub_series)
+
+  glimpse(data)
+  # %>%
+  #   select(`Time Frame`, ALL, everything())
+
+  names(data) <- c("Parameter", paste0("col_", config$value_col))
+
+  if (is.null(config$order_parameter) || config$order_parameter) {
+    data <- data %>% arrange(Parameter)
+  }
+
+  glimpse(data)
+
+  if (!is.null(config$input_units)) {
+    data[, 2:ncol(data)] <- mapply("*", data[, 2:ncol(data)], config$input_units)
+  }
+
+  return(data_frame_to_data_object_helper(
+    directory,
+    config,
+    data
+  ))
+}
+
 load_functions <- list(
   read_from_csv = read_from_csv,
   read_from_excel = read_from_excel,
@@ -1170,5 +1211,6 @@ load_functions <- list(
   gas_use_data = gas_use_data,
   get_john_hopkins_data = get_john_hopkins_data,
   read_managed_isolotion_data = read_managed_isolotion_data,
-  read_hlfs_data = read_hlfs_data
+  read_hlfs_data = read_hlfs_data,
+  read_MBIE_rental = read_MBIE_rental
 )

@@ -654,7 +654,7 @@
     "international": false,
     "include_date_slider": true,
     "default_lower_range": "2019-01-01",
-
+    "caveats":"Note: December 2020 data is provisional.",
     "source_url": "https://www.anz.co.nz/about-us/economic-markets-research/business-outlook/",
     "download": false,
     "groups": [
@@ -718,7 +718,7 @@
     "international": false,
     "include_date_slider": true,
     "default_lower_range": "2019-01-01",
-
+    "caveats":"Note: December 2020 data is provisional.",
     "source_url": "https://www.anz.co.nz/about-us/economic-markets-research/business-outlook/",
     "download": false,
     "groups": [
@@ -788,7 +788,8 @@
       {
         "name": "Spend (seasonally adjusted)",
         "title": "Monthly electronic card transaction activity",
-        "units": "$"
+        "units": "$",
+        "caveats": "The COVID-19 pandemic has introduced unusual patterns to the monthly and quarterly electronic card transaction series. Months from March 2020 (inclusive) and quarters from June 2020 (inclusive) will not be published. This approach will continue until an observable seasonal pattern returns to each series."
       },
       {
         "name": "Transactions (count)",
@@ -885,17 +886,20 @@
       {
         "name": "Retail (seasonally adjusted)",
         "title": "Monthly card transaction spend by industry",
-        "units": "$"
+        "units": "$",
+         "caveats": "The COVID-19 pandemic has introduced unusual patterns to the monthly and quarterly electronic card transaction series. Months from March 2020 (inclusive) and quarters from June 2020 (inclusive) will not be published. This approach will continue until an observable seasonal pattern returns to each series."
       },
       {
         "name": "Services (seasonally adjusted)",
         "title": "Monthly card transaction spend by industry",
-        "units": "$"
+        "units": "$",
+         "caveats": "The COVID-19 pandemic has introduced unusual patterns to the monthly and quarterly electronic card transaction series. Months from March 2020 (inclusive) and quarters from June 2020 (inclusive) will not be published. This approach will continue until an observable seasonal pattern returns to each series."
       },
       {
         "name": "Non-retail (seasonally adjusted)",
         "title": "Monthly card transaction spend by industry",
-        "units": "$"
+        "units": "$",
+         "caveats": "The COVID-19 pandemic has introduced unusual patterns to the monthly and quarterly electronic card transaction series. Months from March 2020 (inclusive) and quarters from June 2020 (inclusive) will not be published. This approach will continue until an observable seasonal pattern returns to each series."
       }
     ]
   },
@@ -1251,7 +1255,7 @@
   },
   {
     "class": "Income support",
-    "indicator_name": "Accomodation supplement",
+    "indicator_name": "Accommodation supplement",
     "type": "Supplementary support",
     "source": "Ministry of Social Development",
     "plot_function": "get_time_series_plot",
@@ -1260,8 +1264,8 @@
     "download": true,
     "groups": [
       {
-        "name": "Accomodation supplement",
-        "title": "Accomodation supplement",
+        "name": "Accommodation supplement",
+        "title": "Accommodation supplement",
         "units": "Number"
       }
     ]
@@ -1896,111 +1900,6 @@
             "units": "Number"
         }
     ]
-  },
-  {
-    "class": "Economic",
-    "indicator_name": "Business lending",
-    "type": "Financial",
-    "source": "New Zealand Bankers Association",
-    "plot_function": "get_stacked_bar_chart",
-    "international": false,
-    "source_url": "https://www.nzba.org.nz/consumer-information/covid-19/",
-    "download": false,
-    "groups": [
-      {
-        "name": "New lending - number of customers",
-        "title": "New business lending - (cumulative since 26 March 2020)",
-        "units": "Number"
-      },
-      {
-        "name": "New lending - amount",
-        "title": "New business lending - (cumulative since 26 March 2020)",
-        "units": "$"
-      },{
-        "name": "Business finance guarantee scheme (BFGS) loans - number of customers",
-        "title": "Business finance guarantee scheme (BFGS) loans - (cumulative since 26 March 2020)",
-        "units": "Number"
-      },
-      {
-        "name": "Business finance guarantee scheme (BFGS) loans - amount",
-        "title": "Business finance guarantee scheme (BFGS) loans - (cumulative since 26 March 2020)",
-        "units": "$"
-      },
-      {
-        "name": "Reduced loan repayments - number of customers",
-        "title": "Reduced loan repayments - (cumulative since 26 March 2020)",
-        "units": "Number"
-      },
-      {
-        "name": "Reduced loan repayments - amount",
-        "title": "Reduced loan repayments - (cumulative since 26 March 2020)",
-        "units": "$"
-      },
-      {
-        "name": "All deferred loan repayments - number of customers",
-        "title": "All deferred loan repayments - (cumulative since 26 March 2020)",
-        "units": "Number"
-      },
-      {
-        "name": "All deferred loan repayments - amount",
-        "title": "All deferred loan repayments - (cumulative since 26 March 2020)",
-        "units": "$"
-      },
-      {
-        "name": "Restructured loans - number of customers",
-        "title": "Restructured loans - (cumulative since 26 March 2020)",
-        "units": "Number"
-      },
-      {
-        "name": "Restructured loans - amount",
-        "title": "Restructured loans - (cumulative since 26 March 2020)",
-        "units": "$"
-      }
-    ],
-    "caveats":"<p>1. Business lending includes temporary or term business lending, stock or equipment finance, and arranged overdrafts.</p><p>2. Amounts for new lending represents limits or limit increases.</p><p>3. Amounts for loans represents outstanding balance at date of conversion/reduction/deferral.</p><p>4. Reduced loan repayments represents interest-only, or reduced principal and/or interest repayments.</p>"
-  },
-  {
-    "class": "Economic",
-    "indicator_name": "Consumer lending",
-    "type": "Financial",
-    "source": "New Zealand Bankers Association",
-    "plot_function": "get_stacked_bar_chart",
-    "international": false,
-    "source_url": "https://www.nzba.org.nz/consumer-information/covid-19/",
-    "download": false,
-    "groups": [
-      {
-        "name": "New lending - number of customers",
-        "title": "New consumer lending - (cumulative since 26 March 2020)",
-        "units": "Number"
-      },
-      {
-        "name": "New lending - amount",
-        "title": "New consumer lending - (cumulative since 26 March 2020)",
-        "units": "$"
-      },
-      {
-        "name": "Reduced loan repayments - number of customers",
-        "title": "Reduced loan repayments from consumer - (cumulative since 26 March 2020)",
-        "units": "Number"
-      },
-      {
-        "name": "Reduced loan repayments - amount",
-        "title": "Reduced loan repayments from consumers - (cumulative since 26 March 2020)",
-        "units": "$"
-      },
-      {
-        "name": "All deferred loan repayments - number of customers",
-        "title": "All deferred loan repayments - (cumulative since 26 March 2020)",
-        "units": "Number"
-      },
-      {
-        "name": "All deferred loan repayments - amount",
-        "title": "All deferred loan repayments - (cumulative since 26 March 2020)",
-        "units": "$"
-      }
-    ],
-    "caveats":"<p>1. Consumer lending includes home loans, personal lending, credit cards and arranged overdrafts.</p><p>2. Amounts represents outstanding balance at date of lending/ conversion/ reduction/ deferral.</p><p>3. Reduced loan repayments represents interest-only, or reduced principal and/or interest repayments.</p>"
   },
   {
     "class": "Economic",
@@ -6091,7 +5990,7 @@
           "name": "undefined_name",
           "units": "%",
           "title": "Respondents’ level of confidence in household’s financial situation over next 3 months",
-          "caveats": "<p> 1) Data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3).  </p><p> 2) This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population.  </p>"
+          "caveats": "<p> 1) April data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3). October data collected over 30 September and 22 October 2020.  </p><p> 2) This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population.  </p>"
       }
     ]
   },
@@ -6108,7 +6007,7 @@
             "name": "undefined_name",
             "units": "%",
             "title": "Respondents’ ability to meet bills and other financial commitments over next 3 months",
-            "caveats": "<p> 1) Data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3).  </p><p> 2) This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population.  </p>"
+            "caveats": "<p> 1) April data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3). October data collected over 30 September and 22 October 2020.  </p><p> 2) This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population.  </p>"
         }
     ]
   },
@@ -6126,7 +6025,7 @@
             "name": "undefined_name",
             "units": "%",
             "title": "Whether respondents used savings to help make ends meet during the last four weeks",
-            "caveats": "<p> 1) Data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3).  </p><p> 2) This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population.  </p>"
+            "caveats": "<p> 1) April data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3). October data collected over 30 September and 22 October 2020.  </p><p> 2) This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population.  </p>"
         }
     ]
   },
@@ -6162,7 +6061,7 @@
             "name": "undefined_name",
             "units": "%",
             "title": "How well respondents relate to the statement \"Thinking about my financial situation makes me anxious\"",
-            "caveats": "<p> 1) Data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3).  </p><p> 2) This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population.  </p>"
+            "caveats": "<p> 1) April data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3). October data collected over 30 September and 22 October 2020.  </p><p> 2) This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population.  </p>"
         }
     ]
   },
@@ -6180,7 +6079,7 @@
           "name": "undefined_name",
           "units": "%",
           "title": "Percentage of respondents who owe money due to missed repayments on credit, by type of credit agreement",
-          "caveats": "<p> 1) Data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3).  </p><p> 2) This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population.  </p>"
+          "caveats": "<p> 1) April data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3). October data collected over 30 September and 22 October 2020.  </p><p> 2) This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population.  </p>"
       }
     ]
   },
@@ -6198,7 +6097,7 @@
             "name": "undefined_name",
             "units": "%",
             "title": "Percentage of respondents who said they or the partner they live with experienced the following as a result of COVID-19",
-            "caveats": "<p> 1)* Includes self-employed income. <p></p> 2) Data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3).  </p><p> 3) This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population.  </p>"
+            "caveats": "<p> 1)* Includes self-employed income. <p></p> 2) April data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3). October data collected over 30 September and 22 October 2020.  </p><p> 3) This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population.  </p>"
         }
     ]
   } ,
