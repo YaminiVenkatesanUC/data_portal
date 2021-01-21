@@ -5434,7 +5434,7 @@
     "upper_bound_col":[4],
     "sheet_number":1,
     "value_names":[
-     "Total NZ Population"
+     "Total"
     ],
     "group_names":[
       "Total NZ Population"
@@ -5566,7 +5566,7 @@
     "upper_bound_col":[4],
     "sheet_number":1,
     "value_names":[
-      "Total NZ Population"
+      "Total"
     ],
     "group_names":[
       "Total NZ Population"
@@ -5675,7 +5675,7 @@
     "lower_bound_col":[3, 6],
     "upper_bound_col":[4, 7],
     "sheet_number":4,
-    "value_names":["Jun-2020 quarter", "Sep-2020 quarter"],
+    "value_names":["Jun-2020", "Sep-2020"],
     "group_names":[
       "By region"
     ],
@@ -5729,7 +5729,7 @@
     "upper_bound_col":[4],
     "sheet_number":1,
     "value_names":[
-      "Total NZ Population"
+      "Total"
     ],
     "group_names":[
       "Total NZ Population"
@@ -5862,7 +5862,7 @@
     "upper_bound_col":[4],
     "sheet_number":1,
     "value_names":[
-     "Total NZ Population"
+     "Total"
     ],
     "group_names":[
      "Total NZ Population"
@@ -5995,7 +5995,7 @@
     "upper_bound_col":[4],
     "sheet_number":1,
     "value_names":[
-      "Total NZ Population"
+      "Total"
     ],
     "group_names":[
       "Total NZ Population"
@@ -6128,7 +6128,7 @@
     "upper_bound_col":[4],
     "sheet_number":1,
     "value_names":[
-      "Total NZ Population"
+      "Total"
     ],
     "group_names":[
      "Total NZ Population"
@@ -6261,7 +6261,7 @@
     "upper_bound_col":[4],
     "sheet_number":1,
     "value_names":[
-      "Total NZ Population"
+      "Total"
     ],
     "group_names":[
       "Total NZ Population"
@@ -6393,7 +6393,7 @@
     "upper_bound_col":[4],
     "sheet_number":1,
     "value_names":[
-      "Total NZ Population"
+      "Total"
     ],
     "group_names":[
      "Total NZ Population"
@@ -6525,7 +6525,7 @@
     "upper_bound_col":[4],
     "sheet_number":1,
     "value_names":[
-      "Total NZ Population"
+      "Total"
     ],
     "group_names":[
      "Total NZ Population"
@@ -6658,7 +6658,7 @@
     "upper_bound_col":[4],
     "sheet_number":1,
     "value_names":[
-      "Total NZ Population"
+      "Total"
     ],
     "group_names":[
       "Total NZ Population"
@@ -6791,7 +6791,7 @@
     "upper_bound_col":[4],
     "sheet_number":1,
     "value_names":[
-      "Total NZ Population"
+      "Total"
     ],
     "group_names":[
       "Total NZ Population"
@@ -6923,10 +6923,36 @@
     "upper_bound_col":[4],
     "sheet_number":1,
     "value_names":[
-      "Total NZ Population"
+      "Total"
     ],
     "group_names":[
       "Total NZ Population"
+    ],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+   {
+    "class":"Social",
+    "type":"Crime and safety",
+    "indicator_name":"Experienced discrimination",
+    "description":"Discrimination",
+    "skip":5,
+    "n_rows":1,
+    "parameter_col":1,
+	  "keyword":"Experienced discrimination in last 12 months",
+    "value_col":[2,5],
+    "lower_bound_col":[
+      3,6],
+    "upper_bound_col":[4,7],
+    "sheet_number":1,
+    "value_names":[
+      "Male",
+      "Female"
+    ],
+    "group_names":[
+      "By sex"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",

@@ -6629,29 +6629,33 @@
       {
         "name":"Total NZ Population",
         "units":"%",
-        "title":"Percentage of people who rated the things they do in their life as worthwhile"
+        "title":"Percentage of people who rated the things they do in their life as worthwhile",
+        "x_axis_label":"Quarter"
       }
       ,
       {
         "name":"By sex",
         "units":"%",
-        "title":"Percentage of people who rated the things they do in their life as worthwhile, by sex"
+        "title":"Percentage of people who rated the things they do in their life as worthwhile, by sex",
+        "x_axis_label":"Quarter"
       },
       {
         "name":"By age",
         "units":"%",
-        "title":"Percentage of people who rated the things they do in their life as worthwhile, by age group"
+        "title":"Percentage of people who rated the things they do in their life as worthwhile, by age group",
+        "x_axis_label":"Quarter"
       },
       {
         "name":"By ethnicity",
         "units":"%",
         "title":"Percentage of people who rated the things they do in their life as worthwhile, by ethnic group",
-        "description":"Where a person reported more than one ethnic group, they were counted in each applicable group"
+        "description":"Where a person reported more than one ethnic group, they were counted in each applicable group",
+        "x_axis_label":"Quarter"
       },
       {
         "name":"By region",
         "units":"%",
-        "title":"Percentage of people who rated the things they do in their life as worthwhile, by regional council area",
+        "title":"Percentage of people who rated the things they do in their life as worthwhile, by regional council area, quarterly",
         "x_axis_label":"Regions",
         "plot_function":"get_unstacked_vertical_bar_with_errors"
       }
@@ -6675,28 +6679,32 @@
       {
         "name":"Total NZ Population",
         "units":"%",
-        "title":"Percentage of people who rated their family wellbeing highly"
+        "title":"Percentage of people who rated their family wellbeing highly",
+        "x_axis_label":"Quarter"
       },
       {
         "name":"By sex",
         "units":"%",
-        "title":"Percentage of people who rated their family wellbeing highly, by sex"
+        "title":"Percentage of people who rated their family wellbeing highly, by sex",
+        "x_axis_label":"Quarter"
       },
       {
         "name":"By age",
         "units":"%",
-        "title":"Percentage of people who rated their family wellbeing highly, by age group"
+        "title":"Percentage of people who rated their family wellbeing highly, by age group",
+        "x_axis_label":"Quarter"
       },
       {
         "name":"By ethnicity",
         "units":"%",
         "title":"Percentage of people who rated their family wellbeing highly, by ethnic group",
-        "description":"Where a person reported more than one ethnic group, they were counted in each applicable group"
+        "description":"Where a person reported more than one ethnic group, they were counted in each applicable group",
+        "x_axis_label":"Quarter"
       },
       {
         "name":"By region",
         "units":"%",
-        "title":"Percentage of people who rated their family wellbeing highly, by regional council area",
+        "title":"Percentage of people who rated their family wellbeing highly, by regional council area, quarterly",
         "x_axis_label":"Regions",
         "plot_function":"get_unstacked_vertical_bar_with_errors"
       }
@@ -6720,28 +6728,32 @@
       {
         "name":"Total NZ Population",
         "units":"%",
-        "title":"Percentage of people who reported enough money for everyday needs"
+        "title":"Percentage of people who reported enough money for everyday needs",
+        "x_axis_label":"Quarter"
       },
       {
         "name":"By sex",
         "units":"%",
-        "title":"Percentage of people who reported enough money for everyday needs, by sex"
+        "title":"Percentage of people who reported enough money for everyday needs, by sex",
+        "x_axis_label":"Quarter"
       },
       {
         "name":"By age",
         "units":"%",
-        "title":"Percentage of people who reported enough money for everyday needs, by age group"
+        "title":"Percentage of people who reported enough money for everyday needs, by age group",
+        "x_axis_label":"Quarter"
       },
       {
         "name":"By ethnicity",
         "units":"%",
         "title":"Percentage of people who reported enough money for everyday needs, by ethnic group",
-        "description":"Where a person reported more than one ethnic group, they were counted in each applicable group"
+        "description":"Where a person reported more than one ethnic group, they were counted in each applicable group",
+        "x_axis_label":"Quarter"
         },
       {
         "name":"By region",
         "units":"%",
-        "title":"Percentage of people who reported enough money for everyday needs, by regional council area",
+        "title":"Percentage of people who reported enough money for everyday needs, by regional council area, quarterly",
         "x_axis_label":"Regions",
         "plot_function":"get_unstacked_vertical_bar_with_errors"
       }
@@ -6765,28 +6777,32 @@
       {
         "name":"Total NZ Population",
         "units":"%",
-        "title":"Percentage of people who received help from a welfare organisation in the last 12 months"
+        "title":"Percentage of people who received help from a welfare organisation in the last 12 months",
+        "x_axis_label":"Quarter"
       },
       {
         "name":"By sex",
         "units":"%",
-        "title":"Percentage of people who received help from a welfare organisation in the last 12 months, by sex"
+        "title":"Percentage of people who received help from a welfare organisation in the last 12 months, by sex",
+        "x_axis_label":"Quarter"
       },
       {
         "name":"By age",
         "units":"%",
-        "title":"Percentage of people who received help from a welfare organisation in the last 12 months, by age group"
+        "title":"Percentage of people who received help from a welfare organisation in the last 12 months, by age group",
+        "x_axis_label":"Quarter"
       },
       {
         "name":"By ethnicity",
         "units":"%",
         "title":"Percentage of people who received help from a welfare organisation in the last 12 months, by ethnic group",
-        "description":"Where a person reported more than one ethnic group, they were counted in each applicable group"
+        "description":"Where a person reported more than one ethnic group, they were counted in each applicable group",
+        "x_axis_label":"Quarter"
       },
       {
         "name":"By region",
         "units":"%",
-        "title":"Percentage of people who received help from a welfare organisation in the last 12 months, by regional council area",
+        "title":"Percentage of people who received help from a welfare organisation in the last 12 months, by regional council area, quarterly",
         "x_axis_label":"Regions",
         "plot_function":"get_unstacked_vertical_bar_with_errors"
       }
@@ -6810,29 +6826,33 @@
       {
         "name":"Total NZ Population",
         "units":"%",
-        "title":"Percentage of people who rated their life satisfaction highly"
+        "title":"Percentage of people who rated their life satisfaction highly",
+        "x_axis_label":"Quarter"
       },
       {
         "name":"By sex",
         "units":"%",
-        "title":"Percentage of people who rated their life satisfaction highly, by sex"
+        "title":"Percentage of people who rated their life satisfaction highly, by sex",
+        "x_axis_label":"Quarter"
       },
       {
         "name":"By age",
         "units":"%",
-        "title":"Percentage of people who rated their life satisfaction highly, by age group"
+        "title":"Percentage of people who rated their life satisfaction highly, by age group",
+        "x_axis_label":"Quarter"
       },
       {
         "name":"By ethnicity",
         "units":"%",
         "title":"Percentage of people who rated their life satisfaction highly, by ethnic group",
         "caveat":"Where a person reported more than one ethnic group, they were counted in each applicable group",
-        "description":"Where a person reported more than one ethnic group, they were counted in each applicable group"
+        "description":"Where a person reported more than one ethnic group, they were counted in each applicable group",
+        "x_axis_label":"Quarter"
       },
       {
         "name":"By region",
         "units":"%",
-        "title":"Percentage of people who rated their life satisfaction highly, by regional council area",
+        "title":"Percentage of people who rated their life satisfaction highly, by regional council area, quarterly",
         "x_axis_label":"Regions",
         "plot_function":"get_unstacked_vertical_bar_with_errors"
       }
@@ -6856,28 +6876,32 @@
       {
         "name":"Total NZ Population",
         "units":"%",
-        "title":"Percentage who rated their trust held for parliament highly"
+        "title":"Percentage who rated their trust held for parliament highly",
+        "x_axis_label":"Quarter"
       },
       {
         "name":"By sex",
         "units":"%",
-        "title":"Percentage who rated their trust held for parliament highly, by sex"
+        "title":"Percentage who rated their trust held for parliament highly, by sex",
+        "x_axis_label":"Quarter"
       },
       {
         "name":"By age",
         "units":"%",
-        "title":"Percentage who rated their trust held for parliament highly, by age group"
+        "title":"Percentage who rated their trust held for parliament highly, by age group",
+        "x_axis_label":"Quarter"
       },
       {
         "name":"By ethnicity",
         "units":"%",
         "title":"Percentage who rated their trust held for parliament highly, by ethnic group",
-        "caveats":"Where a person reported more than one ethnic group, they were counted in each applicable group.<p>Those aged 18+ who rated their trust held for parliament at 7 or higher, where 0 is not trusted at all and 10 is trusted completely.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
+        "caveats":"Where a person reported more than one ethnic group, they were counted in each applicable group.<p>Those aged 18+ who rated their trust held for parliament at 7 or higher, where 0 is not trusted at all and 10 is trusted completely.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>",
+        "x_axis_label":"Quarter"
       },
       {
         "name":"By region",
         "units":"%",
-        "title":"Percentage who rated their trust held for parliament highly, by regional council area",
+        "title":"Percentage who rated their trust held for parliament highly, by regional council area, quarterly",
         "x_axis_label":"Regions",
         "plot_function":"get_unstacked_vertical_bar_with_errors"
       }
@@ -6900,28 +6924,32 @@
       {
         "name":"Total NZ Population",
         "units":"%",
-        "title":"Percentage who rated their trust held for police highly"
+        "title":"Percentage who rated their trust held for police highly",
+        "x_axis_label":"Quarter"
       },
       {
         "name":"By sex",
         "units":"%",
-        "title":"Percentage who rated their trust held for police highly, by sex"
+        "title":"Percentage who rated their trust held for police highly, by sex",
+        "x_axis_label":"Quarter"
       },
       {
         "name":"By age",
         "units":"%",
-        "title":"Percentage who rated their trust held for police highly, by age group"
+        "title":"Percentage who rated their trust held for police highly, by age group",
+        "x_axis_label":"Quarter"
       },
       {
         "name":"By ethnicity",
         "units":"%",
         "title":"Percentage who rated their trust held for police highly, by ethnic group",
-        "description":"Where a person reported more than one ethnic group, they were counted in each applicable group."
+        "description":"Where a person reported more than one ethnic group, they were counted in each applicable group.",
+        "x_axis_label":"Quarter"
       },
 	  {
 	    "name":"By region",
         "units":"%",
-        "title":"Percentage who rated their trust held for police highly, by regional council area",
+        "title":"Percentage who rated their trust held for police highly, by regional council area, quarterly",
         "x_axis_label":"Regions",
         "plot_function":"get_unstacked_vertical_bar_with_errors"
 	  }
@@ -6945,28 +6973,32 @@
       {
         "name":"Total NZ Population",
         "units":"%",
-        "title":"Percentage who rated their trust held for the media highly"
+        "title":"Percentage who rated their trust held for the media highly",
+        "x_axis_label":"Quarter"
       },
       {
         "name":"By sex",
         "units":"%",
-        "title":"Percentage who rated their trust held for the media highly, by sex"
+        "title":"Percentage who rated their trust held for the media highly, by sex",
+        "x_axis_label":"Quarter"
       },
       {
         "name":"By age",
         "units":"%",
-        "title":"Percentage who rated their trust held for the media highly, by age group"
+        "title":"Percentage who rated their trust held for the media highly, by age group",
+        "x_axis_label":"Quarter"
       },
       {
         "name":"By ethnicity",
         "units":"%",
         "title":"Percentage who rated their trust held for the media highly, by ethnic group",
-        "description":"Where a person reported more than one ethnic group, they were counted in each applicable group."
+        "description":"Where a person reported more than one ethnic group, they were counted in each applicable group.",
+        "x_axis_label":"Quarter"
       },
 	  {
 	    "name":"By region",
         "units":"%",
-        "title":"Percentage who rated their trust held for the media highly, by regional council area",
+        "title":"Percentage who rated their trust held for the media highly, by regional council area, quarterly",
         "x_axis_label":"Regions",
         "plot_function":"get_unstacked_vertical_bar_with_errors"
 	  }
@@ -6989,29 +7021,33 @@
        {
         "name":"Total NZ Population",
         "units":"%",
-        "title":"Percentage who rated their trust held for the health system highly"
+        "title":"Percentage who rated their trust held for the health system highly",
+        "x_axis_label":"Quarter"
       },
       {
         "name":"By sex",
         "units":"%",
-        "title":"Percentage who rated their trust held for the health system highly, by sex"
+        "title":"Percentage who rated their trust held for the health system highly, by sex",
+        "x_axis_label":"Quarter"
       },
       {
         "name":"By age",
         "units":"%",
-        "title":"Percentage who rated their trust held for the health system highly, by age group"
+        "title":"Percentage who rated their trust held for the health system highly, by age group",
+        "x_axis_label":"Quarter"
 
       },
       {
         "name":"By ethnicity",
         "units":"%",
         "title":"Percentage who rated their trust held for the health system highly, by ethnic group",
-        "description":"Where a person reported more than one ethnic group, they were counted in each applicable group."
+        "description":"Where a person reported more than one ethnic group, they were counted in each applicable group.",
+        "x_axis_label":"Quarter"
       },
 	  {
 	    "name":"By region",
         "units":"%",
-        "title":"Percentage who rated their trust held for the health system highly, by regional council area",
+        "title":"Percentage who rated their trust held for the health system highly, by regional council area, quarterly",
         "x_axis_label":"Regions",
         "plot_function":"get_unstacked_vertical_bar_with_errors"
 	  }
@@ -7035,29 +7071,33 @@
       {
         "name":"Total NZ Population",
         "units":"%",
-        "title":"Percentage who rated their trust held for people in New Zealand highly"
+        "title":"Percentage who rated their trust held for people in New Zealand highly",
+        "x_axis_label":"Quarter"
       },
       {
         "name":"By sex",
         "units":"%",
-        "title":"Percentage who rated their trust held for people in New Zealand highly, by sex"
+        "title":"Percentage who rated their trust held for people in New Zealand highly, by sex",
+        "x_axis_label":"Quarter"
       },
       {
         "name":"By age",
         "units":"%",
-        "title":"Percentage who rated their trust held for people in New Zealand highly, by age group"
+        "title":"Percentage who rated their trust held for people in New Zealand highly, by age group",
+        "x_axis_label":"Quarter"
 
       },
       {
         "name":"By ethnicity",
         "units":"%",
         "title":"Percentage who rated their trust held for people in New Zealand highly, by ethnic group",
-        "description":"Where a person reported more than one ethnic group, they were counted in each applicable group."
+        "description":"Where a person reported more than one ethnic group, they were counted in each applicable group.",
+        "x_axis_label":"Quarter"
       },
 	    {
 	       "name":"By region",
         "units":"%",
-        "title":"Percentage who rated their trust held for people in New Zealand highly, by regional council area",
+        "title":"Percentage who rated their trust held for people in New Zealand highly, by regional council area, quarterly",
         "x_axis_label":"Regions",
         "plot_function":"get_unstacked_vertical_bar_with_errors"
 	   }
@@ -7081,29 +7121,33 @@
       {
         "name":"Total NZ Population",
         "units":"%",
-        "title":"Percentage of people who had experienced discrimination in the last 12 months"
+        "title":"Percentage of people who had experienced discrimination in the last 12 months",
+        "x_axis_label":"Quarter"
       },
       {
         "name":"By sex",
         "units":"%",
-        "title":"Percentage of people who had experienced discrimination in the last 12 months, by sex"
+        "title":"Percentage of people who had experienced discrimination in the last 12 months, by sex",
+        "x_axis_label":"Quarter"
       },
       {
         "name":"By age",
         "units":"%",
-        "title":"Percentage of people who had experienced discrimination in the last 12 months, by age group"
+        "title":"Percentage of people who had experienced discrimination in the last 12 months, by age group",
+        "x_axis_label":"Quarter"
 
       },
       {
         "name":"By ethnicity",
         "units":"%",
         "title":"Percentage of people who had experienced discrimination in the last 12 months, by ethnic group",
-        "description":"Where a person reported more than one ethnic group, they were counted in each applicable group."
+        "description":"Where a person reported more than one ethnic group, they were counted in each applicable group.",
+        "x_axis_label":"Quarter"
       },
 	    {
 	       "name":"By region",
         "units":"%",
-        "title":"Percentage of people who had experienced discrimination in the last 12 months, by regional council area",
+        "title":"Percentage of people who had experienced discrimination in the last 12 months, by regional council area, quarterly",
         "x_axis_label":"Regions",
         "plot_function":"get_unstacked_vertical_bar_with_errors"
 	   }
@@ -7127,29 +7171,33 @@
        {
         "name":"Total NZ Population",
         "units":"%",
-        "title":"Percentage of people who felt lonely at least some of the time in the past four weeks"
+        "title":"Percentage of people who felt lonely at least some of the time in the past four weeks",
+        "x_axis_label":"Quarter"
       },
       {
         "name":"By sex",
         "units":"%",
-        "title":"Percentage of people who felt lonely at least some of the time in the past four weeks, by sex"
+        "title":"Percentage of people who felt lonely at least some of the time in the past four weeks, by sex",
+        "x_axis_label":"Quarter"
       },
       {
         "name":"By age",
         "units":"%",
-        "title":"Percentage of people who felt lonely at least some of the time in the past four weeks, by age group"
+        "title":"Percentage of people who felt lonely at least some of the time in the past four weeks, by age group",
+        "x_axis_label":"Quarter"
 
       },
       {
         "name":"By ethnicity",
         "units":"%",
         "title":"Percentage of people who felt lonely at least some of the time in the past four weeks, by ethnic group",
-        "description":"Where a person reported more than one ethnic group, they were counted in each applicable group."
+        "description":"Where a person reported more than one ethnic group, they were counted in each applicable group.",
+        "x_axis_label":"Quarter"
       },
 	    {
 	       "name":"By region",
         "units":"%",
-        "title":"Percentage of people who felt lonely at least some of the time in the past four weeks, by regional council area",
+        "title":"Percentage of people who felt lonely at least some of the time in the past four weeks, by regional council area, quarterly",
         "x_axis_label":"Regions",
         "plot_function":"get_unstacked_vertical_bar_with_errors"
 	   }
