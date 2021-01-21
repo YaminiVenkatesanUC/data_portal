@@ -3983,7 +3983,7 @@
     "include_date_slider": true,
     "download": true,
     "source_url": "https://treasury.govt.nz/publications/research-and-commentary/new-zealand-activity-index",
-    "caveats":"<p> 1) Card transaction spend - A modified version of this series has been utilised in the compilation of the NZAC.</p><p> 2) Electricity grid demand - A comparable indicator based on electricity generation has been utilised in the compilation of the NZAC.<p/><p> 3) New jobs posted online - A modified version of this series has been utilised in the compilation of the NZAC.</p>",
+    "caveats":"<p> 1) Card transaction spend - Note the NZAC normally uses seasonally adjusted data on electronic card transactions as a measure of spending activity. However, spending did not follow typical seasonal patterns for much of 2020 due to the effects of COVID-19. Consequently, it is not appropriate to apply the usual seasonal adjustment methods on the card spending series over this period. Therefore, we have replaced the seasonally adjusted series with the non-seasonally adjusted version for the December NZAC update. This has made little difference to the overall index, and we will continue this approach until an appropriate method of adjustment is determined.</p><p> 2) Electricity grid demand - A comparable indicator based on electricity generation has been utilised in the compilation of the NZAC.<p/><p> 3) New jobs posted online - A modified version of this series has been utilised in the compilation of the NZAC.</p>",
     "groups": [
         {
             "name": "New Zealand Activity Index (NZAC)",
