@@ -996,8 +996,7 @@ read_managed_isolotion_data <- function(config, directory) {
 }
 
 read_hlfs_data <- function(config, directory) {
-  library(tibble)
-  parameter_transform <- eval(parse(text = config$parameter_transform))
+  parameter_transform <- eval(parse(text = config$parameter_transform, ))
 
   skip <- 0
   if (!is.null(config$skip)) {
