@@ -17,7 +17,7 @@ main_plot_ui <- function(id, label) {
           min = 0,
           max = 0,
           value = c(0, 0),
-          timeFormat = "%d-%b-%y"
+          timeFormat = "%d-%b"
         )
       ),
     offset = 3
