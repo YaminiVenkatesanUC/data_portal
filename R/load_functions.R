@@ -290,7 +290,7 @@ read_trade_data <- function(config, directory) {
         Transport_Mode %in% load_parameters$transport_mode
     ) %>%
     mutate(
-      Parameter = dmy(Current_Match)
+      Parameter = dmy(portal_match)
     ) %>%
     select("Parameter", "Year", load_parameters$group_col, "Cumulative")
 
@@ -996,8 +996,7 @@ read_managed_isolotion_data <- function(config, directory) {
 }
 
 read_hlfs_data <- function(config, directory) {
-  library(tibble)
-  parameter_transform <- eval(parse(text = config$parameter_transform))
+  parameter_transform <- eval(parse(text = config$parameter_transform, ))
 
   skip <- 0
   if (!is.null(config$skip)) {
