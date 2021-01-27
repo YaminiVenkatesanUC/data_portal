@@ -531,7 +531,7 @@ read_employment_paid_jobs_data <- function(config, directory) {
     data <- data %>%
       filter(col_2 == config$filter_paid_jobs) %>%
       select(Parameter = col_1, everything()) %>%
-      mutate(Parameter = as.Date(dmy(Parameter))) %>%
+      mutate(Parameter = as.Date(ymd(Parameter))) %>%
       spread(col_3, col_4) %>%
       select(Parameter, Total, everything(), -col_2)
 
