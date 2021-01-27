@@ -290,7 +290,7 @@ read_trade_data <- function(config, directory) {
         Transport_Mode %in% load_parameters$transport_mode
     ) %>%
     mutate(
-      Parameter = dmy(Current_Match)
+      Parameter = dmy(portal_match)
     ) %>%
     select("Parameter", "Year", load_parameters$group_col, "Cumulative")
 
