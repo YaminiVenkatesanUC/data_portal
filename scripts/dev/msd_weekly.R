@@ -149,28 +149,28 @@ jobseeker_region_series <- c("Auckland",
 
 #CALLS---------------------------------------------
 msd(df = jobseeker_percent, series = jobseeker_series, rows = jobseeker_rows,
-    filename_to_write = "COVID-19 MSD Jobseeker Support.xlsx")
+    filename_to_write = "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/Raw data/Development/COVID-19 MSD Jobseeker Support.xlsx")
 msd(df = jobseeker_percent, series = percentPop_series, rows = percentPop_rows,
-    filename_to_write = "COVID-19 MSD Percentage of Population.xlsx")
+    filename_to_write = "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/Raw data/Development/COVID-19 MSD Percentage of Population.xlsx")
 msd(df = numAppls, series = numAppls_series, rows = numAppls_rows,
-    filename_to_write = "COVID-19 MSD Number of Applications.xlsx")
+    filename_to_write = "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/Raw data/Development/COVID-19 MSD Number of Applications.xlsx")
 msd(df = numCIRP, series = numCIRP_series, rows = numCIRP_rows,
-    filename_to_write = "COVID-19 MSD Number of CIRP Recipients.xlsx")
+    filename_to_write = "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/Raw data/Development/COVID-19 MSD Number of CIRP Recipients.xlsx")
 msd(df = wageSubsRefunds, series = num_wageSubsRefunds_series, rows = num_wageSubsRefunds_rows,
-    filename_to_write = "COVID-19 MSD Number of Wage Subsidy Refunds.xlsx")
+    filename_to_write = "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/Raw data/Development/COVID-19 MSD Number of Wage Subsidy Refunds.xlsx")
 msd(df = wageSubsRefunds, series = am_wageSubsRefunds_series, rows = am_wageSubsRefunds_rows,
-    filename_to_write = "COVID-19 MSD Amount of Wage Subsidy Refunds.xlsx")
+    filename_to_write = "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/Raw data/Development/COVID-19 MSD Amount of Wage Subsidy Refunds.xlsx")
 msd(df = jobseeker_MSD, series = jobseeker_MSD_series, rows = jobseeker_MSD_rows,
-    filename_to_write = "COVID-19 MSD Jobseeker Support by MSD Region.xlsx")
+    filename_to_write = "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/Raw data/Development/COVID-19 MSD Jobseeker Support by MSD Region.xlsx")
 msd(df = suppleSupport, series = suppleSupport_accom_series, rows = suppleSupport_accom_rows,
-    filename_to_write = "COVID-19 MSD Accommodation Supplement.xlsx")
+    filename_to_write = "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/Raw data/Development/COVID-19 MSD Accommodation Supplement.xlsx")
 msd(df = suppleSupport, series = suppleSupport_temp_series, rows = suppleSupport_temp_rows,
-    filename_to_write = "COVID-19 MSD Temporary Additional Support and Special Benefit.xlsx")
+    filename_to_write = "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/Raw data/Development/COVID-19 MSD Temporary Additional Support and Special Benefit.xlsx")
 msd(df = specialGrants, series = specialGrants_all_series, rows = specialGrants_all_rows,
-    filename_to_write = "COVID-19 MSD All Special Needs Grants.xlsx")
+    filename_to_write = "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/Raw data/Development/COVID-19 MSD All Special Needs Grants.xlsx")
 msd(df = specialGrants, series = specialGrants_food_series, rows = specialGrants_food_rows,
-    filename_to_write = "COVID-19 MSD Special Needs Grants for Food.xlsx")
+    filename_to_write = "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/Raw data/Development/COVID-19 MSD Special Needs Grants for Food.xlsx")
 msd(df = specialGrants, series = specialGrants_housing_series, rows = specialGrants_housing_rows,
-    filename_to_write = "COVID-19 MSD Emergency Housing Grants.xlsx")
+    filename_to_write = "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/Raw data/Development/COVID-19 MSD Emergency Housing Grants.xlsx")
 msd(df = jobseeker_region, series = jobseeker_region_series, rows = jobseeker_region_rows,
-    filename_to_write = "COVID-19 MSD Jobseeker Support By Region.xlsx")
+    filename_to_write = "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/Raw data/Development/COVID-19 MSD Jobseeker Support By Region.xlsx")
