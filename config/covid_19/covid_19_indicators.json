@@ -589,6 +589,8 @@
     "default_lower_range": "2020-02-29",
     "show_zero": true,
     "download": true,
+    "data_service": "stats_odata_api",
+    "api_resource_id": "CPACT1",
     "groups": [
         {
             "name": "undefined_name",
@@ -759,6 +761,8 @@
     "include_date_slider": true,
     "default_lower_range": "2017-01-01",
     "source_url": "https://www.dcanz.com/about-the-nz-dairy-industry/",
+    "data_service": "stats_odata_api",
+    "api_resource_id": "CPACT2",
     "download": true,
     "groups": [
       {
@@ -1109,6 +1113,8 @@
     "plot_function": "get_time_series_plot",
     "international": true,
     "download": false,
+    "data_service": "stats_odata_api",
+    "api_resource_id": "CPCON1",
     "groups": [
       {
         "name": "Sentiment index",
@@ -1909,6 +1915,8 @@
     "plot_function": "get_stacked_bar_chart",
     "international": false,
     "source_url": "https://www.retail.kiwi/advice/benchmarking-data",
+    "data_service": "stats_odata_api",
+    "api_resource_id": "CPACT3",
     "download": true,
     "groups": [
       {
@@ -4991,6 +4999,8 @@
 	  "default_lower_range": "2017-02-01",
 	  "international": false,
 	  "source_url":"https://www.mbie.govt.nz/business-and-employment/employment-and-skills/labour-market-reports-data-and-analysis/jobs-online/",
+	  "data_service": "stats_odata_api",
+	  "api_resource_id": "CPEMP1",
 	  "download": true,
 	  "groups": [
 	   	{

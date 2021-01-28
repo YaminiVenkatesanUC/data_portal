@@ -30,6 +30,7 @@ stats_odata_api <- function(indicator, group_name) {
     jsonlite::fromJSON(flatten = TRUE)
 
   if (length(Observations$value$Value) == 0) {return(NULL)}
+  #To Do: implement api to TimeSeries helper
   data_group <- Observations$value %>%
     mutate(Parameter = ymd(str_pad(as.character(Period), 7, side = "right", pad = "0"))) %>%
     #filter(Label1 == group_name) %>%
