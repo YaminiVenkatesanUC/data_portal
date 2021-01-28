@@ -23,8 +23,6 @@ library(sjlabelled)
 data <- c("example_data/NZ_Covid 19 Wellbeing 2 with components with serials.sav",
           "example_data/ORD-551132-J1V4_Covid19 Wellbeing W2_MAIN_Final Data_SPSS_v1.sav")
 
-#waves <- c("wave1", "wave2")
-
 output_list <- list()
 
 for (i in 1:length(data)) {
@@ -231,8 +229,6 @@ for (i in 1:length(output_list)) {
       df_ii <- as.data.frame(output_list[[i+1]][j])
       df_i[[1]] <- as.factor(df_i[[1]])
       df_ii[[1]] <- as.factor(df_ii[[1]])
-      print(str(df_i))
-      print(str(df_ii))
       if (all(levels(df_i[[1]]) != levels(df_ii[[1]]))) {
         df_ii <-df_ii[order(df_ii[[1]], decreasing = TRUE),]
         names(df_i) <- c(df_order[j], "wave1")
@@ -243,8 +239,6 @@ for (i in 1:length(output_list)) {
         df <- merge(df_i, df_ii, by.x = 1, by.y = 1, all.x = T, all.y = F, sort = FALSE)
         names(df) <- c(df_order[j], "wave1", "wave2")
       }
-      #print(df)
-      #print(df_order[j])
       write.xlsx(df,
                  file = "example_data/CFFC_output.xlsx",
                  sheetName = df_order[j],
