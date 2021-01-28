@@ -1,5 +1,8 @@
 read_from_csv <- function(config, directory) {
-  parameter_transform <- eval(parse(text = config$parameter_transform))
+
+  if (!is.null(config$parameter_transform)) {
+    parameter_transform <- eval(parse(text = config$parameter_transform))
+  }
   skip <- 0
   if (!is.null(config$skip)) {
     skip <- config$skip
@@ -43,7 +46,9 @@ read_from_csv <- function(config, directory) {
 }
 
 read_from_excel <- function(config, directory) {
-  parameter_transform <- eval(parse(text = config$parameter_transform))
+  if (!is.null(config$parameter_transform)) {
+    parameter_transform <- eval(parse(text = config$parameter_transform))
+  }
   skip <- 0
   if (!is.null(config$skip)) {
     skip <- config$skip
@@ -556,7 +561,9 @@ read_employment_paid_jobs_data <- function(config, directory) {
 
 
 read_from_csv_error <- function(config, directory) {
-  parameter_transform <- eval(parse(text = config$parameter_transform))
+  if (!is.null(config$parameter_transform)) {
+    parameter_transform <- eval(parse(text = config$parameter_transform))
+  }
   skip <- 0
   if (!is.null(config$skip)) {
     skip <- config$skip
@@ -632,7 +639,9 @@ read_from_csv_error <- function(config, directory) {
 
 
 read_from_excel_error <- function(config, directory) {
-  parameter_transform <- eval(parse(text = config$parameter_transform))
+  if (!is.null(config$parameter_transform)) {
+    parameter_transform <- eval(parse(text = config$parameter_transform))
+  }
   skip <- 0
   if (!is.null(config$skip)) {
     skip <- config$skip
@@ -996,8 +1005,9 @@ read_managed_isolotion_data <- function(config, directory) {
 }
 
 read_hlfs_data <- function(config, directory) {
-  parameter_transform <- eval(parse(text = config$parameter_transform, ))
-
+  if (!is.null(config$parameter_transform)) {
+    parameter_transform <- eval(parse(text = config$parameter_transform, ))
+  }
   skip <- 0
   if (!is.null(config$skip)) {
     skip <- config$skip
@@ -1145,7 +1155,9 @@ petrol_read_file_month <- function(config, directory) {
 }
 
 read_MBIE_rental <- function(config, directory) {
-  parameter_transform <- eval(parse(text = config$parameter_transform))
+  if (!is.null(config$parameter_transform)) {
+    parameter_transform <- eval(parse(text = config$parameter_transform))
+  }
   skip <- 0
   if (!is.null(config$skip)) {
     skip <- config$skip
