@@ -48,6 +48,7 @@
         "load_function": "read_MBIE_rental",
         "order_parameter": false,
         "data_type": "TimeSeries",
+        "parameter_transform": "function (x) x",
         "group_names":
         [
         "National",
@@ -118,6 +119,7 @@
         "load_function": "read_MBIE_rental",
         "data_type": "TimeSeries",
         "order_parameter": false,
+        "parameter_transform": "function (x) x",
         "group_names":
         [
         "National",
@@ -188,6 +190,7 @@
         "filename": "COVID 19 - MBIE rentalbond data regional.xlsx",
         "load_function": "read_MBIE_rental",
         "order_parameter": false,
+        "parameter_transform": "function (x) x",
         "data_type": "TimeSeries",
         "group_names":
         [
@@ -258,6 +261,7 @@
         "load_function": "read_MBIE_rental",
         "data_type": "TimeSeries",
         "order_parameter": false,
+        "parameter_transform": "function (x) x",
         "group_names":
         [
         "National",
@@ -285,7 +289,7 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly filled jobs (by industry)",
-      "filename": "employment-indicators-november-2020-csv-tables.csv",
+      "filename": "employment-indicators-december-2020-csv-tables.csv",
       "load_function": "read_filled_jobs_by_industry_or_region",
       "data_type": "TimeSeries",
       "load_parameters": {
@@ -299,7 +303,7 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly filled jobs (by region)",
-      "filename": "employment-indicators-november-2020-csv-tables.csv",
+      "filename": "employment-indicators-december-2020-csv-tables.csv",
       "load_function": "read_filled_jobs_by_industry_or_region",
       "data_type": "TimeSeries",
       "load_parameters": {
@@ -313,7 +317,7 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly filled jobs (by gender)",
-      "filename": "employment-indicators-november-2020-csv-tables.csv",
+      "filename": "employment-indicators-december-2020-csv-tables.csv",
       "load_function": "read_filled_jobs_by_gender",
       "data_type": "TimeSeries",
       "load_parameters": {
@@ -327,7 +331,7 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly filled jobs (by age)",
-      "filename": "employment-indicators-november-2020-csv-tables.csv",
+      "filename": "employment-indicators-december-2020-csv-tables.csv",
       "load_function": "read_filled_jobs_by_age",
       "data_type": "TimeSeries",
       "load_parameters": {
@@ -341,7 +345,7 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly filled jobs",
-      "filename": "employment-indicators-november-2020-csv-tables.csv",
+      "filename": "employment-indicators-december-2020-csv-tables.csv",
       "load_function": "read_employment_data",
       "data_type": "TimeSeries",
       "load_parameters": {
@@ -355,7 +359,7 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly earnings",
-      "filename": "employment-indicators-november-2020-csv-tables.csv",
+      "filename": "employment-indicators-december-2020-csv-tables.csv",
       "load_function": "read_employment_data",
       "data_type": "TimeSeries",
       "load_parameters": {
@@ -422,19 +426,7 @@
         "drop_na": false,
         "data_type": "BarChart"
       },
-      {
-        "class": "Economic",
-        "indicator_name": "Broadband usage",
-        "type": "Activity",
-        "parameter_col": 1,
-        "value_col": [2],
-        "value_names": ["Broadband usage"],
-        "group_names": ["undefined_name"],
-        "sheet_number": 1,
-        "filename": "/Chorus data/",
-        "parameter_transform": ["function (x) ymd(x)"],
-        "load_function": "chorus_load_function"
-      },
+
       {
         "class": "Health",
         "indicator_name": "Status of cases",
@@ -746,6 +738,88 @@
         "Non-retail (seasonally adjusted)"
         ]
     },
+    {
+        "class": "Economic",
+        "indicator_name": "Broadband usage",
+        "type": "Activity",
+        "parameter_col": 1,
+        "value_col": [2],
+        "value_names": ["Broadband usage"],
+        "group_names": ["undefined_name"],
+        "sheet_number": 1,
+        "filename": "/Chorus data/",
+        "parameter_transform": ["function (x) ymd(x)"],
+        "load_function": "chorus_load_function"
+      },
+    {
+        "class": "Economic",
+        "indicator_name": "Broadband usage by region",
+        "type": "Activity",
+       "parameter_col": 1,
+
+       "parameter_transform": [
+        "function (x) ymd(x)"
+
+        ],
+        "sheet_number": 1,
+        "value_col": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+
+
+        ],
+        "value_names": [
+          "Total",
+         "Auckland",
+         "Bay of Plenty",
+         "Canterbury",
+         "Gisborne",
+         "Hawke's Bay",
+         "Manawatū-Whanganui",
+         "Northland",
+         "Otago",
+         "Southland",
+         "Taranaki",
+         "Tasman",
+         "Waikato",
+         "Wellington",
+         "West Coast"
+
+        ],
+        "filename": "COVID 19 - Chorus regional broadband.xlsx",
+        "load_function": "read_chorus_regional_data",
+        "data_type": "TimeSeries",
+        "group_names": [
+          "Total",
+         "Auckland",
+         "Bay of Plenty",
+         "Canterbury",
+         "Gisborne",
+         "Hawke's Bay",
+         "Manawatū-Whanganui",
+         "Northland",
+         "Otago",
+         "Southland",
+         "Taranaki",
+         "Tasman",
+         "Waikato",
+         "Wellington",
+         "West Coast"
+        ]
+   },
     {
         "class": "Economic",
         "indicator_name": "Commodity price index",
@@ -1999,13 +2073,13 @@
         "type": "Trade",
         "parameter_col": 1,
         "parameter_transform": "",
-        "value_names": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (28)", "East Asia (excluding China)", "Total (excluding China)"],
-        "filename": "Effects-of-COVID-19-on-trade-1-February-16-December-2020-provisional.csv",
+        "value_names": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (27)", "East Asia (excluding China)", "Total (excluding China)"],
+        "filename": "Weekly_Trade_Portal_Pub_27_Jan.csv",
         "load_function": "read_trade_data",
         "data_type": "TimeSeriesTradeData",
-        "group_names": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (28)", "East Asia (excluding China)", "Total (excluding China)"],
+        "group_names": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (27)", "East Asia (excluding China)", "Total (excluding China)"],
         "load_parameters": {
-            "country": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (28)", "East Asia (excluding China)", "Total (excluding China)"],
+            "country": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (27)", "East Asia (excluding China)", "Total (excluding China)"],
             "transport_mode": "All",
             "commodity": "All",
             "measure": "$",
@@ -2019,13 +2093,13 @@
         "type": "Trade",
         "parameter_col": 1,
         "parameter_transform": "",
-        "value_names": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (28)", "East Asia (excluding China)", "Total (excluding China)"],
-        "filename": "Effects-of-COVID-19-on-trade-1-February-16-December-2020-provisional.csv",
+        "value_names": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (27)", "East Asia (excluding China)", "Total (excluding China)"],
+        "filename": "Weekly_Trade_Portal_Pub_27_Jan.csv",
         "load_function": "read_trade_data",
         "data_type": "TimeSeriesTradeData",
-        "group_names": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (28)", "East Asia (excluding China)", "Total (excluding China)"],
+        "group_names": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (27)", "East Asia (excluding China)", "Total (excluding China)"],
         "load_parameters": {
-            "country": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (28)", "East Asia (excluding China)", "Total (excluding China)"],
+            "country": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (27)", "East Asia (excluding China)", "Total (excluding China)"],
             "transport_mode": "All",
             "commodity": "All",
             "measure": "$",
@@ -2039,15 +2113,15 @@
         "type": "Trade",
         "parameter_col": 1,
         "parameter_transform": "",
-        "value_names": ["All", "Non-food manufactured goods", "Machinery and electronics"],
-        "filename": "Effects-of-COVID-19-on-trade-1-February-16-December-2020-provisional.csv",
+        "value_names": ["All", "Non-food manufactured goods", "Mechanical machinery and equip", "Electrical machinery and equip"],
+        "filename": "Weekly_Trade_Portal_Pub_27_Jan.csv",
         "load_function": "read_trade_data",
         "data_type": "TimeSeriesTradeData",
-        "group_names": ["All", "Non-food manufactured goods", "Machinery and electronics"],
+        "group_names": ["All", "Non-food manufactured goods", "Mechanical machinery and equip", "Electrical machinery and equip"],
         "load_parameters": {
             "country": ["All"],
             "transport_mode": "All",
-            "commodity": ["All", "Non-food manufactured goods", "Machinery and electronics"],
+            "commodity": ["All", "Non-food manufactured goods", "Mechanical machinery and equip", "Electrical machinery and equip"],
             "measure": "$",
             "direction": "Imports",
             "group_col": "Commodity"
@@ -2059,15 +2133,15 @@
         "type": "Trade",
         "parameter_col": 1,
         "parameter_transform": "",
-        "value_names": ["All", "Dairy", "Meat", "Seafood", "Forestry", "Fruit", "Non-food manufactured goods"],
-        "filename": "Effects-of-COVID-19-on-trade-1-February-16-December-2020-provisional.csv",
+        "value_names": ["All", "Milk powder, butter, and cheese", "Meat and edible offal", "Fish, crustaceans, and molluscs", "Logs, wood, and wood articles", "Fruit", "Non-food manufactured goods"],
+        "filename": "Weekly_Trade_Portal_Pub_27_Jan.csv",
         "load_function": "read_trade_data",
         "data_type": "TimeSeriesTradeData",
-        "group_names": ["All", "Dairy", "Meat", "Seafood", "Forestry", "Fruit", "Non-food manufactured goods"],
+        "group_names": ["All", "Milk powder, butter, and cheese", "Meat and edible offal", "Fish, crustaceans, and molluscs", "Logs, wood, and wood articles", "Fruit", "Non-food manufactured goods"],
         "load_parameters": {
             "country": ["All"],
             "transport_mode": "All",
-            "commodity": ["All", "Dairy", "Meat", "Seafood", "Forestry", "Fruit", "Non-food manufactured goods"],
+            "commodity": ["All", "Milk powder, butter, and cheese", "Meat and edible offal", "Fish, crustaceans, and molluscs", "Logs, wood, and wood articles", "Fruit", "Non-food manufactured goods"],
             "measure": "$",
             "direction": "Exports",
             "group_col": "Commodity"
@@ -5010,75 +5084,7 @@
     "data_type": "BarChart"
    }
    ,
-    {
-        "class": "Economic",
-        "indicator_name": "Broadband usage by region",
-        "type": "Activity",
-       "parameter_col": 1,
 
-       "parameter_transform": [
-        "function (x) ymd(x)"
-
-        ],
-        "sheet_number": 1,
-        "value_col": [
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16
-
-
-        ],
-        "value_names": [
-          "Total",
-         "Auckland",
-         "Bay of Plenty",
-         "Canterbury",
-         "Gisborne",
-         "Hawke's Bay",
-         "Manawatū-Whanganui",
-         "Northland",
-         "Otago",
-         "Southland",
-         "Taranaki",
-         "Tasman",
-         "Waikato",
-         "Wellington",
-         "West Coast"
-
-        ],
-        "filename": "COVID 19 - Chorus regional broadband.xlsx",
-        "load_function": "read_chorus_regional_data",
-        "data_type": "TimeSeries",
-        "group_names": [
-          "Total",
-         "Auckland",
-         "Bay of Plenty",
-         "Canterbury",
-         "Gisborne",
-         "Hawke's Bay",
-         "Manawatū-Whanganui",
-         "Northland",
-         "Otago",
-         "Southland",
-         "Taranaki",
-         "Tasman",
-         "Waikato",
-         "Wellington",
-         "West Coast"
-        ]
-   },
    {
     "class": "Contextual",
     "type": "Business",
