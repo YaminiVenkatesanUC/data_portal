@@ -1136,7 +1136,7 @@
         "indicator_name": "Coal consumption - China",
         "type": "Trade",
         "parameter_col": 1,
-        "parameter_transform": "function(x) x + as_date(ymd(\"2020-01-25\")) - 1",
+        "parameter_transform": "function(x) x + as_date(ymd(\"2021-02-12\")) - 1",
         "sheet_number": 2,
         "value_col": [
         6,
@@ -1162,7 +1162,7 @@
         "indicator_name": "Property sales - China",
         "type": "Financial",
         "parameter_col": 1,
-        "parameter_transform": "function(x) x + as_date(ymd(\"2020-01-25\")) - 1",
+        "parameter_transform": "function(x) x + as_date(ymd(\"2021-02-12\")) - 1",
         "sheet_number": 3,
         "value_col": [
         2,
@@ -1915,7 +1915,7 @@
         "indicator_name": "Transport congestion - China",
         "type": "Transport",
         "parameter_col": 1,
-        "parameter_transform": "function(x) x + as_date(ymd(\"2020-01-25\")) - 1",
+        "parameter_transform": "function(x) x + as_date(ymd(\"2021-02-12\")) - 1",
         "sheet_number": 1,
         "value_col": [
         2,
