@@ -44,11 +44,12 @@
         "Nelson",
         "Marlborough"
         ],
-        "filename": "COVID-19 MBIE Rental Active Bonds.csv",
+        "filename": "Raw data/Development/COVID-19 MBIE Rental Active Bonds.csv",
         "load_function": "read_from_csv",
+        "parameter_transform":"function (x) ymd(x)",
         "order_parameter": false,
         "data_type": "TimeSeries",
-        "parameter_transform": "function (x) ymd(x)",
+        "parameter_transform": "function (x) x",
         "group_names":
         [
         "National",
@@ -115,11 +116,12 @@
         "Nelson",
         "Marlborough"
         ],
-        "filename": "COVID-19 MBIE Rental Closed Bonds.csv",
+        "filename": "Raw data/Development/COVID-19 MBIE Rental Closed Bonds.csv",
         "load_function": "read_from_csv",
+        "parameter_transform":"function (x) ymd(x)",
         "data_type": "TimeSeries",
         "order_parameter": false,
-        "parameter_transform": "function (x) ymd(x)",
+        "parameter_transform": "function (x) x",
         "group_names":
         [
         "National",
@@ -187,10 +189,11 @@
         "Marlborough"
 
         ],
-        "filename": "COVID-19 MBIE Rental Lodged Bonds.csv",
+        "filename": "Raw data/Development/COVID-19 MBIE Rental Lodged Bonds.csv",
         "load_function": "read_from_csv",
+        "parameter_transform":"function (x) ymd(x)",
         "order_parameter": false,
-        "parameter_transform": "function (x) ymd(x)",
+        "parameter_transform": "function (x) x",
         "data_type": "TimeSeries",
         "group_names":
         [
@@ -257,11 +260,12 @@
         "Nelson",
         "Marlborough"
         ],
-        "filename": "COVID-19 MBIE Rental Average Weekly Rent.csv",
+        "filename": "Raw data/Development/COVID-19 MBIE Rental Average Weekly Rent.csv",
         "load_function": "read_from_csv",
+        "parameter_transform":"function (x) ymd(x)",
         "data_type": "TimeSeries",
         "order_parameter": false,
-        "parameter_transform": "function (x) ymd(x)",
+        "parameter_transform": "function (x) x",
         "group_names":
         [
         "National",
@@ -2074,7 +2078,7 @@
         "parameter_col": 1,
         "parameter_transform": "",
         "value_names": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (27)", "East Asia (excluding China)", "Total (excluding China)"],
-        "filename": "Weekly_Trade_Portal_Pub_27_Jan.csv",
+        "filename": "Weekly_Trade_Portal_29_Jan.csv",
         "load_function": "read_trade_data",
         "data_type": "TimeSeriesTradeData",
         "group_names": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (27)", "East Asia (excluding China)", "Total (excluding China)"],
@@ -2094,7 +2098,7 @@
         "parameter_col": 1,
         "parameter_transform": "",
         "value_names": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (27)", "East Asia (excluding China)", "Total (excluding China)"],
-        "filename": "Weekly_Trade_Portal_Pub_27_Jan.csv",
+        "filename": "Weekly_Trade_Portal_29_Jan.csv",
         "load_function": "read_trade_data",
         "data_type": "TimeSeriesTradeData",
         "group_names": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (27)", "East Asia (excluding China)", "Total (excluding China)"],
@@ -2114,7 +2118,7 @@
         "parameter_col": 1,
         "parameter_transform": "",
         "value_names": ["All", "Non-food manufactured goods", "Mechanical machinery and equip", "Electrical machinery and equip"],
-        "filename": "Weekly_Trade_Portal_Pub_27_Jan.csv",
+        "filename": "Weekly_Trade_Portal_29_Jan.csv",
         "load_function": "read_trade_data",
         "data_type": "TimeSeriesTradeData",
         "group_names": ["All", "Non-food manufactured goods", "Mechanical machinery and equip", "Electrical machinery and equip"],
@@ -2134,7 +2138,7 @@
         "parameter_col": 1,
         "parameter_transform": "",
         "value_names": ["All", "Milk powder, butter, and cheese", "Meat and edible offal", "Fish, crustaceans, and molluscs", "Logs, wood, and wood articles", "Fruit", "Non-food manufactured goods"],
-        "filename": "Weekly_Trade_Portal_Pub_27_Jan.csv",
+        "filename": "Weekly_Trade_Portal_29_Jan.csv",
         "load_function": "read_trade_data",
         "data_type": "TimeSeriesTradeData",
         "group_names": ["All", "Milk powder, butter, and cheese", "Meat and edible offal", "Fish, crustaceans, and molluscs", "Logs, wood, and wood articles", "Fruit", "Non-food manufactured goods"],
@@ -4987,7 +4991,7 @@
       "value_names": ["Wave 1", "Wave 2"],
       "group_names": ["undefined_name"],
       "sheet_number": 1,
-      "filename": "COVID 19 - CFFC Financial Wellbeing.xlsx",
+      "filename": "Raw data/Development/CFFC_output.xlsx",
       "parameter_transform": "function (x) x",
       "load_function": "read_from_excel",
       "data_type": "BarChart"
@@ -5003,7 +5007,7 @@
       "value_names": ["Wave 1", "Wave 2"],
       "group_names": ["undefined_name"],
       "sheet_number": 2,
-      "filename": "COVID 19 - CFFC Financial Wellbeing.xlsx",
+      "filename": "Raw data/Development/CFFC_output.xlsx",
       "parameter_transform": "function (x) x",
       "load_function": "read_from_excel",
       "data_type": "BarChart"
@@ -5018,7 +5022,7 @@
       "value_names": ["Wave 1", "Wave 2"],
       "group_names": ["undefined_name"],
       "sheet_number": 3,
-      "filename": "COVID 19 - CFFC Financial Wellbeing.xlsx",
+      "filename": "Raw data/Development/CFFC_output.xlsx",
       "parameter_transform": "function (x) x",
       "load_function": "read_from_excel",
       "data_type": "BarChart"
@@ -5033,7 +5037,7 @@
     "value_names": ["Wave 1", "Wave 2"],
     "group_names": ["undefined_name"],
     "sheet_number": 4,
-    "filename": "COVID 19 - CFFC Financial Wellbeing.xlsx",
+    "filename": "Raw data/Development/CFFC_output.xlsx",
     "parameter_transform": "function (x) x",
     "load_function": "read_from_excel",
     "data_type": "BarChart"
@@ -5048,7 +5052,7 @@
     "value_names": ["Wave 1", "Wave 2"],
     "group_names": ["undefined_name"],
     "sheet_number": 5,
-    "filename": "COVID 19 - CFFC Financial Wellbeing.xlsx",
+    "filename": "Raw data/Development/CFFC_output.xlsx",
     "parameter_transform": "function (x) x",
     "load_function": "read_from_excel",
     "data_type": "BarChart"
@@ -5063,7 +5067,7 @@
     "value_names": ["Wave 1", "Wave 2"],
     "group_names": ["undefined_name"],
     "sheet_number": 6,
-    "filename": "COVID 19 - CFFC Financial Wellbeing.xlsx",
+    "filename": "Raw data/Development/CFFC_output.xlsx",
     "parameter_transform": "function (x) x",
     "load_function": "read_from_excel",
     "data_type": "BarChart"
@@ -5078,7 +5082,7 @@
     "value_names": ["Wave 1", "Wave 2"],
     "group_names": ["undefined_name"],
     "sheet_number": 7,
-    "filename": "COVID 19 - CFFC Financial Wellbeing.xlsx",
+    "filename": "Raw data/Development/CFFC_output.xlsx",
     "parameter_transform": "function (x) x",
     "load_function": "read_from_excel",
     "data_type": "BarChart"
