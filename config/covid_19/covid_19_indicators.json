@@ -1548,14 +1548,16 @@
         "title": "COVID-19 cases in United Kingdom (cumulative)",
         "units": "Number",
         "source": "Center for System Science and Engineering, Johns Hopkins University",
-        "source_url": "https://coronavirus.jhu.edu/"
+        "source_url": "https://coronavirus.jhu.edu/",
+        "caveats":"Note: The reporting detail of the externally sourced data has changed."
       },
       {
         "name": "United States",
         "title": "COVID-19 cases in United States (cumulative)",
         "units": "Number",
         "source": "Center for System Science and Engineering, Johns Hopkins University",
-        "source_url": "https://coronavirus.jhu.edu/"
+        "source_url": "https://coronavirus.jhu.edu/",
+        "caveats":"Note: The reporting detail of the externally sourced data has changed."
       },
       {
         "name": "Rest of world",
