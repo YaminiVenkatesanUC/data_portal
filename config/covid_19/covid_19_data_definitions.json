@@ -49,7 +49,6 @@
         "parameter_transform":"function (x) ymd(x)",
         "order_parameter": false,
         "data_type": "TimeSeries",
-        "parameter_transform": "function (x) x",
         "group_names":
         [
         "National",
@@ -121,7 +120,6 @@
         "parameter_transform":"function (x) ymd(x)",
         "data_type": "TimeSeries",
         "order_parameter": false,
-        "parameter_transform": "function (x) x",
         "group_names":
         [
         "National",
@@ -193,7 +191,6 @@
         "load_function": "read_from_csv",
         "parameter_transform":"function (x) ymd(x)",
         "order_parameter": false,
-        "parameter_transform": "function (x) x",
         "data_type": "TimeSeries",
         "group_names":
         [
@@ -265,7 +262,6 @@
         "parameter_transform":"function (x) ymd(x)",
         "data_type": "TimeSeries",
         "order_parameter": false,
-        "parameter_transform": "function (x) x",
         "group_names":
         [
         "National",
