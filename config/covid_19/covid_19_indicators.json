@@ -6666,6 +6666,20 @@
         "title":"Percentage of people who rated the things they do in their life as worthwhile, by regional council area, quarterly",
         "x_axis_label":"Regions",
         "plot_function":"get_unstacked_vertical_bar_with_errors"
+      },
+       {
+        "name":"By dependent child parent status",
+        "units":"%",
+        "title":"Percentage of people who rated the things they do in their life as worthwhile, by dependent child parent status",
+        "x_axis_label":"Quarter",
+        "caveats":"Whether person is parent to a dependent child. Children aged under 15 or aged between 15 and 18 and not employed full-time are considered dependent."
+      },
+      {
+        "name":"By disability status",
+        "units":"%",
+        "title":"Percentage of people who rated the things they do in their life as worthwhile, by disability status",
+        "x_axis_label":"Quarter",
+        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for the September quarter.  [will change once December 2020 quarter data is available: Disability status is only available for the June and December 2020 quarters.]"
       }
     ]
 },
@@ -6715,6 +6729,20 @@
         "title":"Percentage of people who rated their family wellbeing highly, by regional council area, quarterly",
         "x_axis_label":"Regions",
         "plot_function":"get_unstacked_vertical_bar_with_errors"
+      },
+       {
+        "name":"By dependent child parent status",
+        "units":"%",
+        "title":"Percentage of people who rated their family wellbeing highly, by dependent child parent status",
+        "x_axis_label":"Quarter",
+        "caveats":"Whether person is parent to a dependent child. Children aged under 15 or aged between 15 and 18 and not employed full-time are considered dependent."
+      },
+      {
+        "name":"By disability status",
+        "units":"%",
+        "title":"Percentage of people who rated their family wellbeing highly, by disability status",
+        "x_axis_label":"Quarter",
+        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for the September quarter.  [will change once December 2020 quarter data is available: Disability status is only available for the June and December 2020 quarters.]"
       }
     ]
 },
@@ -6764,6 +6792,20 @@
         "title":"Percentage of people who reported enough money for everyday needs, by regional council area, quarterly",
         "x_axis_label":"Regions",
         "plot_function":"get_unstacked_vertical_bar_with_errors"
+      },
+       {
+        "name":"By dependent child parent status",
+        "units":"%",
+        "title":"Percentage of people who reported enough money for everyday needs, by dependent child parent status",
+        "x_axis_label":"Quarter",
+        "caveats":"Whether person is parent to a dependent child. Children aged under 15 or aged between 15 and 18 and not employed full-time are considered dependent."
+      },
+      {
+        "name":"By disability status",
+        "units":"%",
+        "title":"Percentage of people who reported enough money for everyday needs, by disability status",
+        "x_axis_label":"Quarter",
+        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for the September quarter.  [will change once December 2020 quarter data is available: Disability status is only available for the June and December 2020 quarters.]"
       }
     ]
 },
@@ -6813,6 +6855,20 @@
         "title":"Percentage of people who received help from a welfare organisation in the last 12 months, by regional council area, quarterly",
         "x_axis_label":"Regions",
         "plot_function":"get_unstacked_vertical_bar_with_errors"
+      },
+      {
+        "name":"By dependent child parent status",
+        "units":"%",
+        "title":"Percentage of people who received help from a welfare organisation in the last 12 months, by dependent child parent status",
+        "x_axis_label":"Quarter",
+        "caveats":"Whether person is parent to a dependent child. Children aged under 15 or aged between 15 and 18 and not employed full-time are considered dependent."
+      },
+      {
+        "name":"By disability status",
+        "units":"%",
+        "title":"Percentage of people who received help from a welfare organisation in the last 12 months, by disability status",
+        "x_axis_label":"Quarter",
+        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for the September quarter.  [will change once December 2020 quarter data is available: Disability status is only available for the June and December 2020 quarters.]"
       }
     ]
 },
@@ -6854,7 +6910,7 @@
         "units":"%",
         "title":"Percentage of people who rated their life satisfaction highly, by ethnic group",
         "caveats":"Where a person reported more than one ethnic group, they were counted in each applicable group.<p>Those aged 18+ who rated satisfaction with their lives as a whole these days at 7 or higher, where 0 is completely dissatisfied and 10 is completely satisfied.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>",
-        "x_axiss_label":"Quarter"
+        "x_axis_label":"Quarter"
       },
       {
         "name":"By region",
@@ -6862,6 +6918,20 @@
         "title":"Percentage of people who rated their life satisfaction highly, by regional council area, quarterly",
         "x_axis_label":"Regions",
         "plot_function":"get_unstacked_vertical_bar_with_errors"
+      },
+      {
+        "name":"By dependent child parent status",
+        "units":"%",
+        "title":"Percentage of people who rated their life satisfaction highly, by dependent child parent status",
+        "x_axis_label":"Quarter",
+        "caveats":"Whether person is parent to a dependent child. Children aged under 15 or aged between 15 and 18 and not employed full-time are considered dependent."
+      },
+      {
+        "name":"By disability status",
+        "units":"%",
+        "title":"Percentage of people who rated their life satisfaction highly, by disability status",
+        "x_axis_label":"Quarter",
+        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for the September quarter.  [will change once December 2020 quarter data is available: Disability status is only available for the June and December 2020 quarters.]"
       }
 
 	  ]
@@ -6911,6 +6981,20 @@
         "title":"Percentage who rated their trust held for parliament highly, by regional council area, quarterly",
         "x_axis_label":"Regions",
         "plot_function":"get_unstacked_vertical_bar_with_errors"
+      },
+      {
+        "name":"By dependent child parent status",
+        "units":"%",
+        "title":"Percentage who rated their trust held for parliament highly, by dependent child parent status",
+        "x_axis_label":"Quarter",
+        "caveats":"Whether person is parent to a dependent child. Children aged under 15 or aged between 15 and 18 and not employed full-time are considered dependent."
+      },
+      {
+        "name":"By disability status",
+        "units":"%",
+        "title":"Percentage who rated their trust held for parliament highly, by disability status",
+        "x_axis_label":"Quarter",
+        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for the September quarter.  [will change once December 2020 quarter data is available: Disability status is only available for the June and December 2020 quarters.]"
       }
 	  ]
 },
@@ -6959,7 +7043,21 @@
         "title":"Percentage who rated their trust held for police highly, by regional council area, quarterly",
         "x_axis_label":"Regions",
         "plot_function":"get_unstacked_vertical_bar_with_errors"
-	  }
+	  },
+	  {
+        "name":"By dependent child parent status",
+        "units":"%",
+        "title":"Percentage who rated their trust held for police highly, by dependent child parent status",
+        "x_axis_label":"Quarter",
+        "caveats":"Whether person is parent to a dependent child. Children aged under 15 or aged between 15 and 18 and not employed full-time are considered dependent."
+      },
+      {
+        "name":"By disability status",
+        "units":"%",
+        "title":"Percentage who rated their trust held for police highly, by disability status",
+        "x_axis_label":"Quarter",
+        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for the September quarter.  [will change once December 2020 quarter data is available: Disability status is only available for the June and December 2020 quarters.]"
+      }
 	  ]
 },
 
@@ -7008,7 +7106,21 @@
         "title":"Percentage who rated their trust held for the media highly, by regional council area, quarterly",
         "x_axis_label":"Regions",
         "plot_function":"get_unstacked_vertical_bar_with_errors"
-	  }
+	  },
+	   {
+        "name":"By dependent child parent status",
+        "units":"%",
+        "title":"Percentage who rated their trust held for the media highly, by dependent child parent status",
+        "x_axis_label":"Quarter",
+        "caveats":"Whether person is parent to a dependent child. Children aged under 15 or aged between 15 and 18 and not employed full-time are considered dependent."
+      },
+      {
+        "name":"By disability status",
+        "units":"%",
+        "title":"Percentage who rated their trust held for the media highly, by disability status",
+        "x_axis_label":"Quarter",
+        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for the September quarter.  [will change once December 2020 quarter data is available: Disability status is only available for the June and December 2020 quarters.]"
+      }
 	  ]
 },
 {
@@ -7057,7 +7169,21 @@
         "title":"Percentage who rated their trust held for the health system highly, by regional council area, quarterly",
         "x_axis_label":"Regions",
         "plot_function":"get_unstacked_vertical_bar_with_errors"
-	  }
+	  },
+	  {
+        "name":"By dependent child parent status",
+        "units":"%",
+        "title":"Percentage who rated their trust held for the health system highly, by dependent child parent status",
+        "x_axis_label":"Quarter",
+        "caveats":"Whether person is parent to a dependent child. Children aged under 15 or aged between 15 and 18 and not employed full-time are considered dependent."
+      },
+      {
+        "name":"By disability status",
+        "units":"%",
+        "title":"Percentage who rated their trust held for the health system highly, by disability status",
+        "x_axis_label":"Quarter",
+        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for the September quarter.  [will change once December 2020 quarter data is available: Disability status is only available for the June and December 2020 quarters.]"
+      }
 	  ]
 },
 
@@ -7107,7 +7233,21 @@
         "title":"Percentage who rated their trust held for people in New Zealand highly, by regional council area, quarterly",
         "x_axis_label":"Regions",
         "plot_function":"get_unstacked_vertical_bar_with_errors"
-	   }
+	   },
+	   {
+        "name":"By dependent child parent status",
+        "units":"%",
+        "title":"Percentage who rated their trust held for people in New Zealand highly, by dependent child parent status",
+        "x_axis_label":"Quarter",
+        "caveats":"Whether person is parent to a dependent child. Children aged under 15 or aged between 15 and 18 and not employed full-time are considered dependent."
+      },
+      {
+        "name":"By disability status",
+        "units":"%",
+        "title":"Percentage who rated their trust held for people in New Zealand highly, by disability status",
+        "x_axis_label":"Quarter",
+        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for the September quarter.  [will change once December 2020 quarter data is available: Disability status is only available for the June and December 2020 quarters.]"
+      }
 	  ]
 },
 
@@ -7157,7 +7297,22 @@
         "title":"Percentage of people who had experienced discrimination in the last 12 months, by regional council area, quarterly",
         "x_axis_label":"Regions",
         "plot_function":"get_unstacked_vertical_bar_with_errors"
-	   }
+	   },
+	   {
+        "name":"By dependent child parent status",
+        "units":"%",
+        "title":"Percentage of people who had experienced discrimination in the last 12 months, by dependent child parent status",
+        "x_axis_label":"Quarter",
+        "caveats":"Whether person is parent to a dependent child. Children aged under 15 or aged between 15 and 18 and not employed full-time are considered dependent."
+      },
+      {
+        "name":"By disability status",
+        "units":"%",
+        "title":"Percentage of people who had experienced discrimination in the last 12 months, by disability status",
+        "x_axis_label":"Quarter",
+        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for the September quarter.  [will change once December 2020 quarter data is available: Disability status is only available for the June and December 2020 quarters.]"
+      }
+
 	  ]
 },
 
@@ -7207,7 +7362,21 @@
         "title":"Percentage of people who felt lonely at least some of the time in the past four weeks, by regional council area, quarterly",
         "x_axis_label":"Regions",
         "plot_function":"get_unstacked_vertical_bar_with_errors"
-	   }
+	   },
+	    {
+        "name":"By dependent child parent status",
+        "units":"%",
+        "title":"Percentage of people who felt lonely at least some of the time in the past four weeks, by dependent child parent status",
+        "x_axis_label":"Quarter",
+        "caveats":"Whether person is parent to a dependent child. Children aged under 15 or aged between 15 and 18 and not employed full-time are considered dependent."
+      },
+      {
+        "name":"By disability status",
+        "units":"%",
+        "title":"Percentage of people who felt lonely at least some of the time in the past four weeks, by disability status",
+        "x_axis_label":"Quarter",
+        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for the September quarter.  [will change once December 2020 quarter data is available: Disability status is only available for the June and December 2020 quarters.]"
+      }
 	  ]
 
 }
