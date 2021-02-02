@@ -19,8 +19,8 @@ library(xlsx)
 library(haven)
 library(sjlabelled)
 
-data <-  ("~/Network-Shares/J:/Covid-19/Portal Data Supply/CFFC/Wave 1/NZ_Covid 19 Wellbeing 2 with components with serials.sav",
-          "~/Network-Shares/J:/Covid-19/Portal Data Supply/CFFC/Wave 1/ORD-551132-J1V4_Covid19 Wellbeing W2_MAIN_Final Data_SPSS_v1.sav")
+data <-  c("~/Network-Shares/J-Drive-WLG-Shared/Indicators_aotearoa/Covid-19/Portal Data Supply/CFFC/Wave 1/NZ_Covid 19 Wellbeing 2 with components with serials.sav",
+           "~/Network-Shares/J-Drive-WLG-Shared/Indicators_aotearoa/Covid-19/Portal Data Supply/CFFC/Wave 1/ORD-551132-J1V4_Covid19 Wellbeing W2_MAIN_Final Data_SPSS_v1.sav")
 
 # data <- c("example_data/NZ_Covid 19 Wellbeing 2 with components with serials.sav",
 #           "example_data/ORD-551132-J1V4_Covid19 Wellbeing W2_MAIN_Final Data_SPSS_v1.sav")
