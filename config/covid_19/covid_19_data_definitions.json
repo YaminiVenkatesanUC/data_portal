@@ -5557,6 +5557,63 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
+    {
+	"class":"Social",
+    "type":"General wellbeing",
+    "indicator_name":"Life worthwhile",
+    "description":"Life worthwhile",
+    "keyword":"7 to 10",
+    "skip":5,
+    "n_rows":2,
+    "parameter_col":1,
+    "value_col":[2,5,8,11,14],
+    "lower_bound_col":[
+      3,6,9,12,15],
+    "upper_bound_col":[4,7,10,13,16],
+    "sheet_number":5,
+    "value_names":[
+      "Sole Parent",
+      "Mother in two-parent family",
+      "Father in two-parent family",
+      "Not parent of dependent child, female",
+      "Not parent of dependent child, male"
+    ],
+    "group_names":[
+      "By dependent child parent status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx", "Raw data/SeptQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+  {
+    "class":"Social",
+    "type":"General wellbeing",
+    "indicator_name":"Life worthwhile",
+    "description":"Life worthwhile",
+    "keyword":"7 to 10",
+    "skip":5,
+    "n_rows":2,
+    "parameter_col":1,
+    "value_col":[2,5,8,11],
+    "lower_bound_col":[
+      3,6,9,12],
+    "upper_bound_col":[4,7,10,13],
+    "sheet_number": 6,
+    "value_names":[
+      "Disabled aged 18 years and over",
+      "Non–disabled aged 18 years and over",
+      "Disabled aged 18–64 years",
+      "Non–disabled aged 18–64 years"
+    ],
+    "group_names":[
+      "By disability status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
    {
     "class":"Social",
     "type":"Social connection",
@@ -5686,6 +5743,63 @@
       "By region"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+    {
+	"class":"Social",
+    "type":"Social connection",
+    "indicator_name":"Family wellbeing",
+    "description":"Family wellbeing",
+    "keyword":"7 to 10",
+    "skip":5,
+    "n_rows":2,
+    "parameter_col":1,
+    "value_col":[2,5,8,11,14],
+    "lower_bound_col":[
+      3,6,9,12,15],
+    "upper_bound_col":[4,7,10,13,16],
+    "sheet_number":5,
+    "value_names":[
+      "Sole Parent",
+      "Mother in two-parent family",
+      "Father in two-parent family",
+      "Not parent of dependent child, female",
+      "Not parent of dependent child, male"
+    ],
+    "group_names":[
+      "By dependent child parent status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx", "Raw data/SeptQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+  {
+    "class":"Social",
+    "type":"Social connection",
+    "indicator_name":"Family wellbeing",
+    "description":"Family wellbeing",
+    "keyword":"7 to 10",
+    "skip":5,
+    "n_rows":2,
+    "parameter_col":1,
+    "value_col":[2,5,8,11],
+    "lower_bound_col":[
+      3,6,9,12],
+    "upper_bound_col":[4,7,10,13],
+    "sheet_number": 6,
+    "value_names":[
+      "Disabled aged 18 years and over",
+      "Non–disabled aged 18 years and over",
+      "Disabled aged 18–64 years",
+      "Non–disabled aged 18–64 years"
+    ],
+    "group_names":[
+      "By disability status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -5853,6 +5967,63 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
+    {
+	"class":"Social",
+    "type":"Household finances",
+    "indicator_name":"Enough money for everyday needs",
+    "description":"Adequacy of income to meet everyday needs",
+    "keyword":"Enough money / more than enough money",
+    "skip":5,
+    "n_rows":3,
+    "parameter_col":1,
+    "value_col":[2,5,8,11,14],
+    "lower_bound_col":[
+      3,6,9,12,15],
+    "upper_bound_col":[4,7,10,13,16],
+    "sheet_number":5,
+    "value_names":[
+      "Sole Parent",
+      "Mother in two-parent family",
+      "Father in two-parent family",
+      "Not parent of dependent child, female",
+      "Not parent of dependent child, male"
+    ],
+    "group_names":[
+      "By dependent child parent status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx", "Raw data/SeptQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+  {
+    "class":"Social",
+    "type":"Household finances",
+    "indicator_name":"Enough money for everyday needs",
+    "description":"Adequacy of income to meet everyday needs",
+    "keyword":"Enough money / more than enough money",
+    "skip":5,
+    "n_rows":3,
+    "parameter_col":1,
+    "value_col":[2,5,8,11],
+    "lower_bound_col":[
+      3,6,9,12],
+    "upper_bound_col":[4,7,10,13],
+    "sheet_number": 6,
+    "value_names":[
+      "Disabled aged 18 years and over",
+      "Non–disabled aged 18 years and over",
+      "Disabled aged 18–64 years",
+      "Non–disabled aged 18–64 years"
+    ],
+    "group_names":[
+      "By disability status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
    {
     "class":"Social",
     "type":"Personal finances",
@@ -5985,6 +6156,63 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
+    {
+	"class":"Social",
+    "type":"Personal finances",
+    "indicator_name":"Help from welfare organisation",
+    "description":"Received help from organisation such as a church or foodbank in last 12 months",
+    "keyword":"At least once",
+    "skip":5,
+    "n_rows":2,
+    "parameter_col":1,
+    "value_col":[2,5,8,11,14],
+    "lower_bound_col":[
+      3,6,9,12,15],
+    "upper_bound_col":[4,7,10,13,16],
+    "sheet_number":5,
+    "value_names":[
+      "Sole Parent",
+      "Mother in two-parent family",
+      "Father in two-parent family",
+      "Not parent of dependent child, female",
+      "Not parent of dependent child, male"
+    ],
+    "group_names":[
+      "By dependent child parent status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx", "Raw data/SeptQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+  {
+    "class":"Social",
+    "type":"Personal finances",
+    "indicator_name":"Help from welfare organisation",
+    "description":"Received help from organisation such as a church or foodbank in last 12 months",
+    "keyword":"At least once",
+    "skip":5,
+    "n_rows":2,
+    "parameter_col":1,
+    "value_col":[2,5,8,11],
+    "lower_bound_col":[
+      3,6,9,12],
+    "upper_bound_col":[4,7,10,13],
+    "sheet_number": 6,
+    "value_names":[
+      "Disabled aged 18 years and over",
+      "Non–disabled aged 18 years and over",
+      "Disabled aged 18–64 years",
+      "Non–disabled aged 18–64 years"
+    ],
+    "group_names":[
+      "By disability status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
 
    {
     "class":"Social",
@@ -6118,6 +6346,62 @@
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
+  },  {
+	 "class":"Social",
+    "type":"Life satisfaction",
+    "indicator_name":"Life satisfaction – HLFS quarterly",
+    "description":"Overall life satisfaction",
+    "keyword":"7 to 10",
+    "skip":5,
+    "n_rows":2,
+    "parameter_col":1,
+    "value_col":[2,5,8,11,14],
+    "lower_bound_col":[
+      3,6,9,12,15],
+    "upper_bound_col":[4,7,10,13,16],
+    "sheet_number":5,
+    "value_names":[
+      "Sole Parent",
+      "Mother in two-parent family",
+      "Father in two-parent family",
+      "Not parent of dependent child, female",
+      "Not parent of dependent child, male"
+    ],
+    "group_names":[
+      "By dependent child parent status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx", "Raw data/SeptQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+  {
+     "class":"Social",
+    "type":"Life satisfaction",
+    "indicator_name":"Life satisfaction – HLFS quarterly",
+    "description":"Overall life satisfaction",
+    "keyword":"7 to 10",
+    "skip":5,
+    "n_rows":2,
+    "parameter_col":1,
+    "value_col":[2,5,8,11],
+    "lower_bound_col":[
+      3,6,9,12],
+    "upper_bound_col":[4,7,10,13],
+    "sheet_number": 6,
+    "value_names":[
+      "Disabled aged 18 years and over",
+      "Non–disabled aged 18 years and over",
+      "Disabled aged 18–64 years",
+      "Non–disabled aged 18–64 years"
+    ],
+    "group_names":[
+      "By disability status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
   },
   {
     "class":"Social",
@@ -6248,6 +6532,63 @@
       "By region"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+    {
+	"class":"Social",
+    "type":"Trust",
+    "indicator_name":"Trust for parliament",
+    "description":"Trust held for parliament",
+    "keyword":"7 to 10",
+    "skip":5,
+    "n_rows":2,
+    "parameter_col":1,
+    "value_col":[2,5,8,11,14],
+    "lower_bound_col":[
+      3,6,9,12,15],
+    "upper_bound_col":[4,7,10,13,16],
+    "sheet_number":5,
+    "value_names":[
+      "Sole Parent",
+      "Mother in two-parent family",
+      "Father in two-parent family",
+      "Not parent of dependent child, female",
+      "Not parent of dependent child, male"
+    ],
+    "group_names":[
+      "By dependent child parent status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx", "Raw data/SeptQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+  {
+    "class":"Social",
+    "type":"Trust",
+    "indicator_name":"Trust for parliament",
+    "description":"Trust held for parliament",
+    "keyword":"7 to 10",
+    "skip":5,
+    "n_rows":2,
+    "parameter_col":1,
+    "value_col":[2,5,8,11],
+    "lower_bound_col":[
+      3,6,9,12],
+    "upper_bound_col":[4,7,10,13],
+    "sheet_number": 6,
+    "value_names":[
+      "Disabled aged 18 years and over",
+      "Non–disabled aged 18 years and over",
+      "Disabled aged 18–64 years",
+      "Non–disabled aged 18–64 years"
+    ],
+    "group_names":[
+      "By disability status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6384,6 +6725,63 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
+    {
+	"class":"Social",
+    "type":"Trust",
+    "indicator_name":"Trust for police",
+    "description":"Trust held for police",
+    "keyword":"7 to 10",
+    "skip":5,
+    "n_rows":2,
+    "parameter_col":1,
+    "value_col":[2,5,8,11,14],
+    "lower_bound_col":[
+      3,6,9,12,15],
+    "upper_bound_col":[4,7,10,13,16],
+    "sheet_number":5,
+    "value_names":[
+      "Sole Parent",
+      "Mother in two-parent family",
+      "Father in two-parent family",
+      "Not parent of dependent child, female",
+      "Not parent of dependent child, male"
+    ],
+    "group_names":[
+      "By dependent child parent status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx", "Raw data/SeptQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+  {
+    "class":"Social",
+    "type":"Trust",
+    "indicator_name":"Trust for police",
+    "description":"Trust held for police",
+    "keyword":"7 to 10",
+    "skip":5,
+    "n_rows":2,
+    "parameter_col":1,
+    "value_col":[2,5,8,11],
+    "lower_bound_col":[
+      3,6,9,12],
+    "upper_bound_col":[4,7,10,13],
+    "sheet_number": 6,
+    "value_names":[
+      "Disabled aged 18 years and over",
+      "Non–disabled aged 18 years and over",
+      "Disabled aged 18–64 years",
+      "Non–disabled aged 18–64 years"
+    ],
+    "group_names":[
+      "By disability status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
   {
     "class":"Social",
     "type":"Trust",
@@ -6512,6 +6910,63 @@
       "By region"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+    {
+	"class":"Social",
+    "type":"Trust",
+    "indicator_name":"Trust for the media",
+    "description":"Trust held for media",
+    "keyword":"7 to 10",
+    "skip":5,
+    "n_rows":2,
+    "parameter_col":1,
+    "value_col":[2,5,8,11,14],
+    "lower_bound_col":[
+      3,6,9,12,15],
+    "upper_bound_col":[4,7,10,13,16],
+    "sheet_number":5,
+    "value_names":[
+      "Sole Parent",
+      "Mother in two-parent family",
+      "Father in two-parent family",
+      "Not parent of dependent child, female",
+      "Not parent of dependent child, male"
+    ],
+    "group_names":[
+      "By dependent child parent status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx", "Raw data/SeptQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+  {
+    "class":"Social",
+    "type":"Trust",
+    "indicator_name":"Trust for the media",
+    "description":"Trust held for media",
+    "keyword":"7 to 10",
+    "skip":5,
+    "n_rows":2,
+    "parameter_col":1,
+    "value_col":[2,5,8,11],
+    "lower_bound_col":[
+      3,6,9,12],
+    "upper_bound_col":[4,7,10,13],
+    "sheet_number": 6,
+    "value_names":[
+      "Disabled aged 18 years and over",
+      "Non–disabled aged 18 years and over",
+      "Disabled aged 18–64 years",
+      "Non–disabled aged 18–64 years"
+    ],
+    "group_names":[
+      "By disability status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6649,6 +7104,63 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
+    {
+	"class":"Social",
+    "type":"Social connection",
+    "indicator_name":"Loneliness – past 4 weeks",
+    "description":"Felt lonely in last four weeks",
+	"keyword":"Some / most / all of the time",
+    "skip":5,
+    "n_rows":3,
+    "parameter_col":1,
+    "value_col":[2,5,8,11,14],
+    "lower_bound_col":[
+      3,6,9,12,15],
+    "upper_bound_col":[4,7,10,13,16],
+    "sheet_number":5,
+    "value_names":[
+      "Sole Parent",
+      "Mother in two-parent family",
+      "Father in two-parent family",
+      "Not parent of dependent child, female",
+      "Not parent of dependent child, male"
+    ],
+    "group_names":[
+      "By dependent child parent status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx", "Raw data/SeptQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+  {
+    "class":"Social",
+    "type":"Social connection",
+    "indicator_name":"Loneliness – past 4 weeks",
+    "description":"Felt lonely in last four weeks",
+	"keyword":"Some / most / all of the time",
+    "skip":5,
+    "n_rows":3,
+    "parameter_col":1,
+    "value_col":[2,5,8,11],
+    "lower_bound_col":[
+      3,6,9,12],
+    "upper_bound_col":[4,7,10,13],
+    "sheet_number": 6,
+    "value_names":[
+      "Disabled aged 18 years and over",
+      "Non–disabled aged 18 years and over",
+      "Disabled aged 18–64 years",
+      "Non–disabled aged 18–64 years"
+    ],
+    "group_names":[
+      "By disability status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
   {
     "class":"Social",
     "type":"Trust",
@@ -6782,6 +7294,63 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
+    {
+	"class":"Social",
+    "type":"Trust",
+    "indicator_name":"Trust in other people",
+    "description":"Trust held for people in New Zealand",
+	"keyword":"7 to 10",
+    "skip":5,
+    "n_rows":2,
+    "parameter_col":1,
+    "value_col":[2,5,8,11,14],
+    "lower_bound_col":[
+      3,6,9,12,15],
+    "upper_bound_col":[4,7,10,13,16],
+    "sheet_number":5,
+    "value_names":[
+      "Sole Parent",
+      "Mother in two-parent family",
+      "Father in two-parent family",
+      "Not parent of dependent child, female",
+      "Not parent of dependent child, male"
+    ],
+    "group_names":[
+      "By dependent child parent status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx", "Raw data/SeptQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+  {
+    "class":"Social",
+    "type":"Trust",
+    "indicator_name":"Trust in other people",
+    "description":"Trust held for people in New Zealand",
+	"keyword":"7 to 10",
+    "skip":5,
+    "n_rows":2,
+    "parameter_col":1,
+    "value_col":[2,5,8,11],
+    "lower_bound_col":[
+      3,6,9,12],
+    "upper_bound_col":[4,7,10,13],
+    "sheet_number": 6,
+    "value_names":[
+      "Disabled aged 18 years and over",
+      "Non–disabled aged 18 years and over",
+      "Disabled aged 18–64 years",
+      "Non–disabled aged 18–64 years"
+    ],
+    "group_names":[
+      "By disability status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
   {
     "class":"Social",
     "type":"Trust",
@@ -6910,6 +7479,63 @@
       "By region"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+    {
+	"class":"Social",
+    "type":"Trust",
+    "indicator_name":"Trust for health system",
+    "description":"Trust held for health system",
+	"keyword":"7 to 10",
+    "skip":5,
+    "n_rows":2,
+    "parameter_col":1,
+    "value_col":[2,5,8,11,14],
+    "lower_bound_col":[
+      3,6,9,12,15],
+    "upper_bound_col":[4,7,10,13,16],
+    "sheet_number":5,
+    "value_names":[
+      "Sole Parent",
+      "Mother in two-parent family",
+      "Father in two-parent family",
+      "Not parent of dependent child, female",
+      "Not parent of dependent child, male"
+    ],
+    "group_names":[
+      "By dependent child parent status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx", "Raw data/SeptQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+  {
+    "class":"Social",
+    "type":"Trust",
+    "indicator_name":"Trust for health system",
+    "description":"Trust held for health system",
+	"keyword":"7 to 10",
+    "skip":5,
+    "n_rows":2,
+    "parameter_col":1,
+    "value_col":[2,5,8,11],
+    "lower_bound_col":[
+      3,6,9,12],
+    "upper_bound_col":[4,7,10,13],
+    "sheet_number": 6,
+    "value_names":[
+      "Disabled aged 18 years and over",
+      "Non–disabled aged 18 years and over",
+      "Disabled aged 18–64 years",
+      "Non–disabled aged 18–64 years"
+    ],
+    "group_names":[
+      "By disability status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -7042,6 +7668,63 @@
       "By region"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+    {
+	"class":"Social",
+    "type":"Crime and safety",
+    "indicator_name":"Experienced discrimination",
+    "description":"Discrimination",
+    "keyword":"Experienced discrimination in last 12 months",
+    "skip":5,
+    "n_rows":1,
+    "parameter_col":1,
+    "value_col":[2,5,8,11,14],
+    "lower_bound_col":[
+      3,6,9,12,15],
+    "upper_bound_col":[4,7,10,13,16],
+    "sheet_number":5,
+    "value_names":[
+      "Sole Parent",
+      "Mother in two-parent family",
+      "Father in two-parent family",
+      "Not parent of dependent child, female",
+      "Not parent of dependent child, male"
+    ],
+    "group_names":[
+      "By dependent child parent status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx", "Raw data/SeptQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+  {
+    "class":"Social",
+    "type":"Crime and safety",
+    "indicator_name":"Experienced discrimination",
+    "description":"Discrimination",
+    "keyword":"Experienced discrimination in last 12 months",
+    "skip":5,
+    "n_rows":1,
+    "parameter_col":1,
+    "value_col":[2,5,8,11],
+    "lower_bound_col":[
+      3,6,9,12],
+    "upper_bound_col":[4,7,10,13],
+    "sheet_number": 6,
+    "value_names":[
+      "Disabled aged 18 years and over",
+      "Non–disabled aged 18 years and over",
+      "Disabled aged 18–64 years",
+      "Non–disabled aged 18–64 years"
+    ],
+    "group_names":[
+      "By disability status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
