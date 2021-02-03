@@ -6410,63 +6410,6 @@
   },
   {
     "class":"Social",
-    "type":"Life satisfaction",
-    "indicator_name":"Life satisfaction – HLFS quarterly",
-    "description":"Overall life satisfaction",
-    "keyword":"7 to 10",
-    "skip":5,
-    "n_rows":2,
-    "parameter_col":1,
-    "value_col":[2,5,8,11,14],
-    "lower_bound_col":[
-      3,6,9,12,15],
-    "upper_bound_col":[4,7,10,13,16],
-    "sheet_number":5,
-    "value_names":[
-      "Sole Parent",
-      "Mother in two-parent family",
-      "Father in two-parent family",
-      "Not parent of dependent child, female",
-      "Not parent of dependent child, male"
-    ],
-    "group_names":[
-      "By dependent child parent status"
-    ],
-    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx", "Raw data/SeptQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
-    "data_type":"TimeSeriesError"
-  },
-  {
-    "class":"Social",
-    "type":"Life satisfaction",
-    "indicator_name":"Life satisfaction – HLFS quarterly",
-    "description":"Overall life satisfaction",
-    "keyword":"7 to 10",
-    "skip":5,
-    "n_rows":2,
-    "parameter_col":1,
-    "value_col":[2,5,8,11],
-    "lower_bound_col":[
-      3,6,9,12],
-    "upper_bound_col":[4,7,10,13],
-    "sheet_number": 6,
-    "value_names":[
-      "Disabled aged 18 years and over",
-      "Non–disabled aged 18 years and over",
-      "Disabled aged 18–64 years",
-      "Non–disabled aged 18–64 years"
-    ],
-    "group_names":[
-      "By disability status"
-    ],
-    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
-    "data_type":"TimeSeriesError"
-  },
-  {
-    "class":"Social",
     "type":"Trust",
     "indicator_name":"Trust for parliament",
     "description":"Trust held for parliament",
