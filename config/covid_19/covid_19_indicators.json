@@ -6783,7 +6783,7 @@
         "name":"By ethnicity",
         "units":"%",
         "title":"Percentage of people who reported enough money for everyday needs, by ethnic group",
-        "caveats":"Where a person reported more than one ethnic group, they were counted in each applicable group.<p>Those aged 18+ who rated how their family was generally doing at 7 or higher, where 0 is doing extremely badly and 10 is doing extremely well.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>",
+        "caveats":"Where a person reported more than one ethnic group, they were counted in each applicable group.<p>Those aged 18+ who reported enough money / more than enough money to meet everyday needs. Includes partner's income where applicable.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>",
         "x_axis_label":"Quarter"
         },
       {
@@ -6798,14 +6798,14 @@
         "units":"%",
         "title":"Percentage of people who reported enough money for everyday needs, by parent status",
         "x_axis_label":"Quarter",
-        "caveats":"Parent Status refers to whether a person is parent to a dependent child. Children aged under 15 or aged between 15 and 18 and not employed full-time are considered dependent.<p>Those aged 18+ who rated how their family was generally doing at 7 or higher, where 0 is doing extremely badly and 10 is doing extremely well.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
+        "caveats":"Parent Status refers to whether a person is parent to a dependent child. Children aged under 15 or aged between 15 and 18 and not employed full-time are considered dependent.<p>Those aged 18+ who reported enough money / more than enough money to meet everyday needs. Includes partner's income where applicable.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
 	   },
 	   {
 	       "name":"By disability status",
         "units":"%",
         "title":"Percentage of people who reported enough money for everyday needs, by disability status",
         "x_axis_label":"Quarter",
-        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for the September quarter.<p>Those aged 18+ who rated how their family was generally doing at 7 or higher, where 0 is doing extremely badly and 10 is doing extremely well.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
+        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for the September quarter.<p>Those aged 18+ who reported enough money / more than enough money to meet everyday needs. Includes partner's income where applicable.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
 	   }
     ]
 },
