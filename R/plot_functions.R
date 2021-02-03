@@ -492,6 +492,7 @@ get_time_series_plot_with_errors <- function(
     }
   }
 
+
   norm_factor_and_unit <- get_normalisation_factor(data_object$values)
   tool_tip <- get_tool_tip(group_definition$units)
 
