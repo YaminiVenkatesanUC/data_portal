@@ -6686,7 +6686,7 @@
 
 {
     "class":"Social",
-    "type":"Social connection",
+    "type":"General wellbeing",
     "indicator_name":"Family wellbeing",
     "plot_function":"get_unstacked_bar_chart_with_errors",
     "download":false,

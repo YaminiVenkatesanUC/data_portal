@@ -5618,7 +5618,7 @@
   },
    {
     "class":"Social",
-    "type":"Social connection",
+    "type":"General wellbeing",
     "indicator_name":"Family wellbeing",
     "description":"Family wellbeing",
     "skip":5,
@@ -5644,7 +5644,7 @@
 
   {
     "class":"Social",
-    "type":"Social connection",
+    "type":"General wellbeing",
     "indicator_name":"Family wellbeing",
     "description":"Family wellbeing",
     "skip":5,
@@ -5670,7 +5670,7 @@
   },
   {
     "class":"Social",
-    "type":"Social connection",
+    "type":"General wellbeing",
     "indicator_name":"Family wellbeing",
     "description":"Family wellbeing",
     "skip":5,
@@ -5701,7 +5701,7 @@
   },
   {
     "class":"Social",
-    "type":"Social connection",
+    "type":"General wellbeing",
     "indicator_name":"Family wellbeing",
     "description":"Family wellbeing",
     "skip":5,
@@ -5729,7 +5729,7 @@
   },
   {
     "class":"Social",
-    "type":"Social connection",
+    "type":"General wellbeing",
     "indicator_name":"Family wellbeing",
     "description":"Family wellbeing",
     "skip":5,
@@ -5752,7 +5752,7 @@
     {
 
 	  "class":"Social",
-    "type":"Social connection",
+    "type":"General wellbeing",
     "indicator_name":"Family wellbeing",
     "description":"Family wellbeing",
     "keyword":"7 to 10",
@@ -5781,7 +5781,7 @@
   },
   {
     "class":"Social",
-    "type":"Social connection",
+    "type":"General wellbeing",
     "indicator_name":"Family wellbeing",
     "description":"Family wellbeing",
     "keyword":"7 to 10",
