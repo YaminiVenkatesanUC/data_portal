@@ -589,6 +589,7 @@
     {
         "class": "Economic",
         "indicator_name": "Milk production",
+        "api_resource_id": "CPACT2",
         "type": "Activity",
         "parameter_col": 1,
         "input_units": 1000,
@@ -606,6 +607,7 @@
         "filename": "COVID 19 - DCANZ milk production.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
+        "frequency" : "Monthly",
         "group_names": [
         "undefined_name"
         ]
@@ -742,6 +744,7 @@
         "class": "Economic",
         "indicator_name": "Broadband usage",
         "type": "Activity",
+        "api_resource_id": "CPACT1",
         "parameter_col": 1,
         "value_col": [2],
         "value_names": ["Broadband usage"],
@@ -749,7 +752,8 @@
         "sheet_number": 1,
         "filename": "/Chorus data/",
         "parameter_transform": ["function (x) ymd(x)"],
-        "load_function": "chorus_load_function"
+        "load_function": "chorus_load_function",
+        "frequency": "Daily"
       },
     {
         "class": "Economic",
@@ -2059,6 +2063,7 @@
     {
         "class": "Economic",
         "indicator_name": "Retail sales index",
+        "api_resource_id": "CPACT3",
         "input_units": 100,
         "type": "Activity",
         "parameter_col": 1,
@@ -2069,7 +2074,8 @@
         "filename": "COVID 19 - Retail NZ Sales Index month on month comparison.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": "undefined_name"
+        "group_names": "undefined_name",
+        "frequency" : "Monthly"
     },
     {
         "class": "Economic",
@@ -4417,6 +4423,7 @@
 	 {
     "class": "Income support",
     "indicator_name": "Jobseeker support",
+    "api_resource_id": "CPBEN1",
     "type": "Benefits",
     "parameter_col": 1,
     "parameter_transform": [
@@ -4436,6 +4443,9 @@
     ],
     "filename": "COVID-19 MSD Jobseeker Support.xlsx",
     "load_function": "read_from_excel",
+    "frequency" : "Weekly",
+    "var1" : "Support Type",
+    "var2" : "Treatment",
     "data_type": "TimeSeries",
     "group_names": "undefined_name"
 },

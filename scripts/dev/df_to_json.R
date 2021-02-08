@@ -2,10 +2,11 @@ source("R/core/utils_API.R")
 
 CONFIG <- read_config_file()
 directory <- CONFIG$data_directory
-config <- read_json(CONFIG$data_definitions)[[1]]
 
-read_from_csv <- function(config, directory) {
+config_milk <- read_json(CONFIG$data_definitions)[[23]]
+config_job <- read_json(CONFIG$data_definitions)[[157]]
 
+read_from_excel <- function(config, directory) {
   if (!is.null(config$parameter_transform)) {
     parameter_transform <- eval(parse(text = config$parameter_transform))
   }
@@ -13,19 +14,18 @@ read_from_csv <- function(config, directory) {
   if (!is.null(config$skip)) {
     skip <- config$skip
   }
-
-  data <- as.data.frame(read.csv(
+  cols_to_read <- c(config$parameter_col, unlist(config$value_col))
+  data <- as.data.frame(read_excel(
     paste0(directory, config$filename),
-    skip = skip
-  ))
-  names(data) <- paste0("col_", 1:ncol(data))
-
-  data <- data %>%
+    sheet = config$sheet_number,
+    col_names = paste0("col_", min(cols_to_read):max(cols_to_read)),
+    range = cell_limits(c(2 + skip, min(cols_to_read)), c(NA, max(cols_to_read)))
+  )) %>%
     dplyr::rename(
       Parameter = paste0("col_", config$parameter_col)
     ) %>%
-    mutate(Parameter = parameter_transform(Parameter)) %>%
-    select(c("Parameter", paste0("col_", config$value_col)))
+    mutate(Parameter = parameter_transform(Parameter))
+  data <- data[, cols_to_read - min(cols_to_read) + 1]
 
   if (!is.null(config$input_units)) {
     data[, 2:ncol(data)] <- mapply("*", data[, 2:ncol(data)], config$input_units)
