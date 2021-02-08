@@ -1,7 +1,9 @@
 library(tidyr)
 library(writexl)
 
-filename <- "example_data/rentalbond-data-regional.csv"
+filename <- "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/MBIE/rentalbond-data-regional.csv"
+
+#filename <- "example_data/rentalbond-data-regional.csv"
 sub_series <- c("Active Bonds", "Closed Bonds", "Lodged Bonds", "Average Weekly Rent")
 
   data <- as.data.frame(read_csv(file = filename)) %>%
@@ -19,5 +21,6 @@ sub_series <- c("Active Bonds", "Closed Bonds", "Lodged Bonds", "Average Weekly 
       select(`Time Frame`, Location, series) %>%
       pivot_wider(names_from = Location, values_from = series) %>%
       select(`Time Frame`, ALL, everything())
-    write_csv(x = df, file = paste0("example_data/COVID-19 MBIE Rental ", series, ".csv"))
+    #write_csv(x = df, file = paste0("example_data/COVID-19 MBIE Rental ", series, ".csv"))
+    write_csv(x = df, file = paste0("~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/COVID-19 MBIE Rental ", series, ".csv"))
   }

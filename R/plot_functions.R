@@ -483,10 +483,15 @@ get_time_series_plot_with_errors <- function(
 
   if (!is.null(indicator_definition$frequency)) {
     if (indicator_definition$frequency == "monthly" || indicator_definition$frequency == "Quarterly") {
-      year_label <- ""
       categories <- format(dates, "%b-%Y")
+      categories <- rep(categories,2)
+      if(indicator_definition$frequency == "Quarterly"){
+        year_label <- "Quarter"
+      }
+
     }
   }
+
 
   norm_factor_and_unit <- get_normalisation_factor(data_object$values)
   tool_tip <- get_tool_tip(group_definition$units)

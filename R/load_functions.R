@@ -1041,7 +1041,7 @@ read_hlfs_data <- function(config, directory) {
   for (i in 1:length(config$filename)) {
     data <- as.data.frame(read_excel(paste0(directory, config$filename[i]), sheet = config$sheet_number, col_names = TRUE, skip = skip, .name_repair = "unique"))
 
-    data <- data %>% select(-2, -4, -5, -6)
+    data <- data %>% select(-2,-6)
     start_row <- grep(pattern = config$description, x = data[[1]])+1
     end_row <- start_row + config$n_rows - 1
 
@@ -1066,7 +1066,11 @@ read_hlfs_data <- function(config, directory) {
 
     stopifnot(all.equal(length(config$value_col), length(config$lower_bound_col), length(config$upper_bound_col)))
 
+
     if (config$group_names == "By region") {
+
+      data <- data %>% select(-2, -3)
+
       data <- data %>% rename("date" = "Parameter")
       cols <- ((ncol(data)-1)/2)+1
 
@@ -1089,7 +1093,30 @@ read_hlfs_data <- function(config, directory) {
       data_all[[value_ind]] <- data$value
       data_all[[lower_ind]] <- data$lower
       data_all[[upper_ind]] <- data$upper
-    } else {
+    }  else if(config$group_names == "Total NZ Population"){
+
+      data <- data %>% select(1,2,3)
+
+      names(data) <- c("Parameter","Value","Error")
+
+      value <- unlist(config$value_col)
+
+      data <- data %>% mutate(lower = Value-Error, upper = Value + Error) %>%
+        select(-c(value+1))
+
+      data <- data %>%
+        dplyr::rename_with(.fn = ~paste0("col_", value+1, "_lower"), .cols = lower) %>%
+        dplyr::rename_with(.fn = ~paste0("col_", value+2, "_upper"), .cols = upper) %>%
+        dplyr::rename_with(.fn = ~paste0("col_", value), .cols = value)
+
+      data_all$Parameter <- as.Date(data_all$Parameter)
+      data_all <- rbind(data_all, data)
+      data_all <- drop_na(data_all)
+
+    }
+    else {
+      data <- data %>% select(-2,-3)
+
       for (i in 1:length(config$value_col)) {
         value <- unlist(config$value_col[i])
 
@@ -1110,6 +1137,8 @@ read_hlfs_data <- function(config, directory) {
       data_all <- drop_na(data_all)
     }
   }
+
+
 
   return(data_frame_to_data_object_helper_error(
     directory,
