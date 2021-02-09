@@ -851,7 +851,7 @@
         "parameter_col": 1,
         "parameter_transform": "function(x) ymd(x)",
         "sheet_number": 1,
-        "value_col": 3,
+        "value_col": 2,
         "value_names": "New Zealand trade weighted index ",
         "filename": "COVID 19 - RBNZ Financial indicators.xlsx",
         "load_function": "read_from_excel",
