@@ -3993,7 +3993,7 @@
 
          {
             "name": "NZAC component - Card transaction spend",
-            "title": "Annual percentage change electronic card transaction activity - seasonally adjusted",
+            "title": "Annual percentage change electronic card transaction activity - actual",
             "units": ["Annual % change"]
         }
         ,
