@@ -11,6 +11,7 @@ library(stringr)
 library(jsonlite)
 library(foreach)
 library(data.table)
+library(tibble)
 
 source("R/data_types.R")
 source("R/core/type_checks.R")
@@ -35,6 +36,7 @@ add_to_data_store <- function(data_definition, data_store, config) {
       group_name,
       sep = "_"
     )
+
     if (key %in% names(data_store)) {
       data_store[[key]] <- data_store[[key]] + data[[group_name]]
     } else {

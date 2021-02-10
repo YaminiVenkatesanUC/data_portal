@@ -44,8 +44,9 @@
         "Nelson",
         "Marlborough"
         ],
-        "filename": "COVID 19 - MBIE rentalbond data regional.xlsx",
-        "load_function": "read_MBIE_rental",
+        "filename": "Raw data/Development/COVID-19 MBIE Rental Active Bonds.csv",
+        "load_function": "read_from_csv",
+        "parameter_transform":"function (x) ymd(x)",
         "order_parameter": false,
         "data_type": "TimeSeries",
         "group_names":
@@ -114,8 +115,9 @@
         "Nelson",
         "Marlborough"
         ],
-        "filename": "COVID 19 - MBIE rentalbond data regional.xlsx",
-        "load_function": "read_MBIE_rental",
+        "filename": "Raw data/Development/COVID-19 MBIE Rental Closed Bonds.csv",
+        "load_function": "read_from_csv",
+        "parameter_transform":"function (x) ymd(x)",
         "data_type": "TimeSeries",
         "order_parameter": false,
         "group_names":
@@ -185,8 +187,9 @@
         "Marlborough"
 
         ],
-        "filename": "COVID 19 - MBIE rentalbond data regional.xlsx",
-        "load_function": "read_MBIE_rental",
+        "filename": "Raw data/Development/COVID-19 MBIE Rental Lodged Bonds.csv",
+        "load_function": "read_from_csv",
+        "parameter_transform":"function (x) ymd(x)",
         "order_parameter": false,
         "data_type": "TimeSeries",
         "group_names":
@@ -254,8 +257,9 @@
         "Nelson",
         "Marlborough"
         ],
-        "filename": "COVID 19 - MBIE rentalbond data regional.xlsx",
-        "load_function": "read_MBIE_rental",
+        "filename": "Raw data/Development/COVID-19 MBIE Rental Average Weekly Rent.csv",
+        "load_function": "read_from_csv",
+        "parameter_transform":"function (x) ymd(x)",
         "data_type": "TimeSeries",
         "order_parameter": false,
         "group_names":
@@ -285,7 +289,7 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly filled jobs (by industry)",
-      "filename": "employment-indicators-november-2020-csv-tables.csv",
+      "filename": "employment-indicators-december-2020-csv-tables.csv",
       "load_function": "read_filled_jobs_by_industry_or_region",
       "data_type": "TimeSeries",
       "load_parameters": {
@@ -299,7 +303,7 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly filled jobs (by region)",
-      "filename": "employment-indicators-november-2020-csv-tables.csv",
+      "filename": "employment-indicators-december-2020-csv-tables.csv",
       "load_function": "read_filled_jobs_by_industry_or_region",
       "data_type": "TimeSeries",
       "load_parameters": {
@@ -313,7 +317,7 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly filled jobs (by gender)",
-      "filename": "employment-indicators-november-2020-csv-tables.csv",
+      "filename": "employment-indicators-december-2020-csv-tables.csv",
       "load_function": "read_filled_jobs_by_gender",
       "data_type": "TimeSeries",
       "load_parameters": {
@@ -327,7 +331,7 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly filled jobs (by age)",
-      "filename": "employment-indicators-november-2020-csv-tables.csv",
+      "filename": "employment-indicators-december-2020-csv-tables.csv",
       "load_function": "read_filled_jobs_by_age",
       "data_type": "TimeSeries",
       "load_parameters": {
@@ -341,7 +345,7 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly filled jobs",
-      "filename": "employment-indicators-november-2020-csv-tables.csv",
+      "filename": "employment-indicators-december-2020-csv-tables.csv",
       "load_function": "read_employment_data",
       "data_type": "TimeSeries",
       "load_parameters": {
@@ -355,7 +359,7 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly earnings",
-      "filename": "employment-indicators-november-2020-csv-tables.csv",
+      "filename": "employment-indicators-december-2020-csv-tables.csv",
       "load_function": "read_employment_data",
       "data_type": "TimeSeries",
       "load_parameters": {
@@ -422,19 +426,7 @@
         "drop_na": false,
         "data_type": "BarChart"
       },
-      {
-        "class": "Economic",
-        "indicator_name": "Broadband usage",
-        "type": "Activity",
-        "parameter_col": 1,
-        "value_col": [2],
-        "value_names": ["Broadband usage"],
-        "group_names": ["undefined_name"],
-        "sheet_number": 1,
-        "filename": "/Chorus data/",
-        "parameter_transform": ["function (x) ymd(x)"],
-        "load_function": "chorus_load_function"
-      },
+
       {
         "class": "Health",
         "indicator_name": "Status of cases",
@@ -748,6 +740,88 @@
     },
     {
         "class": "Economic",
+        "indicator_name": "Broadband usage",
+        "type": "Activity",
+        "parameter_col": 1,
+        "value_col": [2],
+        "value_names": ["Broadband usage"],
+        "group_names": ["undefined_name"],
+        "sheet_number": 1,
+        "filename": "/Chorus data/",
+        "parameter_transform": ["function (x) ymd(x)"],
+        "load_function": "chorus_load_function"
+      },
+    {
+        "class": "Economic",
+        "indicator_name": "Broadband usage by region",
+        "type": "Activity",
+       "parameter_col": 1,
+
+       "parameter_transform": [
+        "function (x) ymd(x)"
+
+        ],
+        "sheet_number": 1,
+        "value_col": [
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16
+
+
+        ],
+        "value_names": [
+          "Total",
+         "Auckland",
+         "Bay of Plenty",
+         "Canterbury",
+         "Gisborne",
+         "Hawke's Bay",
+         "Manawatū-Whanganui",
+         "Northland",
+         "Otago",
+         "Southland",
+         "Taranaki",
+         "Tasman",
+         "Waikato",
+         "Wellington",
+         "West Coast"
+
+        ],
+        "filename": "COVID 19 - Chorus regional broadband.xlsx",
+        "load_function": "read_chorus_regional_data",
+        "data_type": "TimeSeries",
+        "group_names": [
+          "Total",
+         "Auckland",
+         "Bay of Plenty",
+         "Canterbury",
+         "Gisborne",
+         "Hawke's Bay",
+         "Manawatū-Whanganui",
+         "Northland",
+         "Otago",
+         "Southland",
+         "Taranaki",
+         "Tasman",
+         "Waikato",
+         "Wellington",
+         "West Coast"
+        ]
+   },
+    {
+        "class": "Economic",
         "indicator_name": "Commodity price index",
         "type": "Trade",
         "parameter_col": 1,
@@ -777,7 +851,7 @@
         "parameter_col": 1,
         "parameter_transform": "function(x) ymd(x)",
         "sheet_number": 1,
-        "value_col": 3,
+        "value_col": 2,
         "value_names": "New Zealand trade weighted index ",
         "filename": "COVID 19 - RBNZ Financial indicators.xlsx",
         "load_function": "read_from_excel",
@@ -1058,7 +1132,7 @@
         "indicator_name": "Coal consumption - China",
         "type": "Trade",
         "parameter_col": 1,
-        "parameter_transform": "function(x) x + as_date(ymd(\"2020-01-25\")) - 1",
+        "parameter_transform": "function(x) x + as_date(ymd(\"2021-02-12\")) - 1",
         "sheet_number": 2,
         "value_col": [
         6,
@@ -1084,19 +1158,21 @@
         "indicator_name": "Property sales - China",
         "type": "Financial",
         "parameter_col": 1,
-        "parameter_transform": "function(x) x + as_date(ymd(\"2020-01-25\")) - 1",
+        "parameter_transform": "function(x) x + as_date(ymd(\"2021-02-12\")) - 1",
         "sheet_number": 3,
         "value_col": [
         2,
         3,
         4,
-        5
+        5,
+        6
         ],
         "value_names": [
         "2017",
         "2018",
         "2019",
-        "2020"
+        "2020",
+        "2021"
         ],
         "filename": "COVID 19 - UBS indicators.xlsx",
         "load_function": "read_from_excel",
@@ -1835,19 +1911,21 @@
         "indicator_name": "Transport congestion - China",
         "type": "Transport",
         "parameter_col": 1,
-        "parameter_transform": "function(x) ymd(x)",
+        "parameter_transform": "function(x) x + as_date(ymd(\"2021-02-12\")) - 1",
         "sheet_number": 1,
         "value_col": [
         2,
         3,
         4,
-        5
+        5,
+        6
         ],
         "value_names": [
         "2017",
         "2018",
         "2019",
-        "2020"
+        "2020",
+        "2021"
         ],
         "filename": "COVID 19 - UBS indicators.xlsx",
         "load_function": "read_from_excel",
@@ -1999,13 +2077,13 @@
         "type": "Trade",
         "parameter_col": 1,
         "parameter_transform": "",
-        "value_names": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (28)", "East Asia (excluding China)", "Total (excluding China)"],
-        "filename": "Effects-of-COVID-19-on-trade-1-February-16-December-2020-provisional.csv",
+        "value_names": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (27)", "East Asia (excluding China)", "Total (excluding China)"],
+        "filename": "Weekly_Trade_Portal.csv",
         "load_function": "read_trade_data",
         "data_type": "TimeSeriesTradeData",
-        "group_names": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (28)", "East Asia (excluding China)", "Total (excluding China)"],
+        "group_names": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (27)", "East Asia (excluding China)", "Total (excluding China)"],
         "load_parameters": {
-            "country": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (28)", "East Asia (excluding China)", "Total (excluding China)"],
+            "country": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (27)", "East Asia (excluding China)", "Total (excluding China)"],
             "transport_mode": "All",
             "commodity": "All",
             "measure": "$",
@@ -2019,13 +2097,13 @@
         "type": "Trade",
         "parameter_col": 1,
         "parameter_transform": "",
-        "value_names": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (28)", "East Asia (excluding China)", "Total (excluding China)"],
-        "filename": "Effects-of-COVID-19-on-trade-1-February-16-December-2020-provisional.csv",
+        "value_names": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (27)", "East Asia (excluding China)", "Total (excluding China)"],
+        "filename": "Weekly_Trade_Portal.csv",
         "load_function": "read_trade_data",
         "data_type": "TimeSeriesTradeData",
-        "group_names": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (28)", "East Asia (excluding China)", "Total (excluding China)"],
+        "group_names": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (27)", "East Asia (excluding China)", "Total (excluding China)"],
         "load_parameters": {
-            "country": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (28)", "East Asia (excluding China)", "Total (excluding China)"],
+            "country": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (27)", "East Asia (excluding China)", "Total (excluding China)"],
             "transport_mode": "All",
             "commodity": "All",
             "measure": "$",
@@ -2039,15 +2117,15 @@
         "type": "Trade",
         "parameter_col": 1,
         "parameter_transform": "",
-        "value_names": ["All", "Non-food manufactured goods", "Machinery and electronics"],
-        "filename": "Effects-of-COVID-19-on-trade-1-February-16-December-2020-provisional.csv",
+        "value_names": ["All", "Non-food manufactured goods", "Mechanical machinery and equip", "Electrical machinery and equip"],
+        "filename": "Weekly_Trade_Portal.csv",
         "load_function": "read_trade_data",
         "data_type": "TimeSeriesTradeData",
-        "group_names": ["All", "Non-food manufactured goods", "Machinery and electronics"],
+        "group_names": ["All", "Non-food manufactured goods", "Mechanical machinery and equip", "Electrical machinery and equip"],
         "load_parameters": {
             "country": ["All"],
             "transport_mode": "All",
-            "commodity": ["All", "Non-food manufactured goods", "Machinery and electronics"],
+            "commodity": ["All", "Non-food manufactured goods", "Mechanical machinery and equip", "Electrical machinery and equip"],
             "measure": "$",
             "direction": "Imports",
             "group_col": "Commodity"
@@ -2059,15 +2137,15 @@
         "type": "Trade",
         "parameter_col": 1,
         "parameter_transform": "",
-        "value_names": ["All", "Dairy", "Meat", "Seafood", "Forestry", "Fruit", "Non-food manufactured goods"],
-        "filename": "Effects-of-COVID-19-on-trade-1-February-16-December-2020-provisional.csv",
+        "value_names": ["All", "Milk powder, butter, and cheese", "Meat and edible offal", "Fish, crustaceans, and molluscs", "Logs, wood, and wood articles", "Fruit", "Non-food manufactured goods"],
+        "filename": "Weekly_Trade_Portal.csv",
         "load_function": "read_trade_data",
         "data_type": "TimeSeriesTradeData",
-        "group_names": ["All", "Dairy", "Meat", "Seafood", "Forestry", "Fruit", "Non-food manufactured goods"],
+        "group_names": ["All", "Milk powder, butter, and cheese", "Meat and edible offal", "Fish, crustaceans, and molluscs", "Logs, wood, and wood articles", "Fruit", "Non-food manufactured goods"],
         "load_parameters": {
             "country": ["All"],
             "transport_mode": "All",
-            "commodity": ["All", "Dairy", "Meat", "Seafood", "Forestry", "Fruit", "Non-food manufactured goods"],
+            "commodity": ["All", "Milk powder, butter, and cheese", "Meat and edible offal", "Fish, crustaceans, and molluscs", "Logs, wood, and wood articles", "Fruit", "Non-food manufactured goods"],
             "measure": "$",
             "direction": "Exports",
             "group_col": "Commodity"
@@ -4909,11 +4987,11 @@
       "indicator_name": "Confidence in household's financial situation",
       "parameter_col": 2,
       "order_parameter": false,
-      "value_col": [3],
-      "value_names": ["Percentage of respondents"],
+      "value_col": [3, 4],
+      "value_names": ["Wave 1", "Wave 2"],
       "group_names": ["undefined_name"],
       "sheet_number": 1,
-      "filename": "COVID 19 - CFFC Financial Wellbeing.xlsx",
+      "filename": "Raw data/Development/CFFC_output.xlsx",
       "parameter_transform": "function (x) x",
       "load_function": "read_from_excel",
       "data_type": "BarChart"
@@ -4925,11 +5003,11 @@
       "indicator_name": "Ability to meet bills",
       "parameter_col": 2,
       "order_parameter": false,
-      "value_col": [3],
-      "value_names": ["Percentage of respondents"],
+      "value_col": [3, 4],
+      "value_names": ["Wave 1", "Wave 2"],
       "group_names": ["undefined_name"],
       "sheet_number": 2,
-      "filename": "COVID 19 - CFFC Financial Wellbeing.xlsx",
+      "filename": "Raw data/Development/CFFC_output.xlsx",
       "parameter_transform": "function (x) x",
       "load_function": "read_from_excel",
       "data_type": "BarChart"
@@ -4940,11 +5018,11 @@
       "indicator_name": "Use of money in savings",
       "parameter_col": 2,
       "order_parameter": false,
-      "value_col": [3],
-      "value_names": ["Percentage of respondents"],
+      "value_col": [3, 4],
+      "value_names": ["Wave 1", "Wave 2"],
       "group_names": ["undefined_name"],
       "sheet_number": 3,
-      "filename": "COVID 19 - CFFC Financial Wellbeing.xlsx",
+      "filename": "Raw data/Development/CFFC_output.xlsx",
       "parameter_transform": "function (x) x",
       "load_function": "read_from_excel",
       "data_type": "BarChart"
@@ -4955,11 +5033,11 @@
     "indicator_name": "Change in income",
     "parameter_col": 2,
     "order_parameter": false,
-    "value_col": [3],
-    "value_names": ["Percentage of respondents"],
+    "value_col": [3, 4],
+    "value_names": ["Wave 1", "Wave 2"],
     "group_names": ["undefined_name"],
     "sheet_number": 4,
-    "filename": "COVID 19 - CFFC Financial Wellbeing.xlsx",
+    "filename": "Raw data/Development/CFFC_output.xlsx",
     "parameter_transform": "function (x) x",
     "load_function": "read_from_excel",
     "data_type": "BarChart"
@@ -4970,11 +5048,11 @@
     "indicator_name": "Financial anxiety",
     "parameter_col": 2,
     "order_parameter": false,
-    "value_col": [3],
-    "value_names": ["Percentage of respondents"],
+    "value_col": [3, 4],
+    "value_names": ["Wave 1", "Wave 2"],
     "group_names": ["undefined_name"],
     "sheet_number": 5,
-    "filename": "COVID 19 - CFFC Financial Wellbeing.xlsx",
+    "filename": "Raw data/Development/CFFC_output.xlsx",
     "parameter_transform": "function (x) x",
     "load_function": "read_from_excel",
     "data_type": "BarChart"
@@ -4985,11 +5063,11 @@
     "indicator_name": "Money owed on credit agreements",
     "parameter_col": 2,
     "order_parameter": false,
-    "value_col": [3],
-    "value_names": ["Percentage of respondents"],
+    "value_col": [3, 4],
+    "value_names": ["Wave 1", "Wave 2"],
     "group_names": ["undefined_name"],
     "sheet_number": 6,
-    "filename": "COVID 19 - CFFC Financial Wellbeing.xlsx",
+    "filename": "Raw data/Development/CFFC_output.xlsx",
     "parameter_transform": "function (x) x",
     "load_function": "read_from_excel",
     "data_type": "BarChart"
@@ -5000,85 +5078,17 @@
     "indicator_name": "Effects of COVID-19 on work and income",
     "parameter_col": 2,
     "order_parameter": false,
-    "value_col": [3],
-    "value_names": ["Percentage of respondents"],
+    "value_col": [3, 4],
+    "value_names": ["Wave 1", "Wave 2"],
     "group_names": ["undefined_name"],
     "sheet_number": 7,
-    "filename": "COVID 19 - CFFC Financial Wellbeing.xlsx",
+    "filename": "Raw data/Development/CFFC_output.xlsx",
     "parameter_transform": "function (x) x",
     "load_function": "read_from_excel",
     "data_type": "BarChart"
    }
    ,
-    {
-        "class": "Economic",
-        "indicator_name": "Broadband usage by region",
-        "type": "Activity",
-       "parameter_col": 1,
 
-       "parameter_transform": [
-        "function (x) ymd(x)"
-
-        ],
-        "sheet_number": 1,
-        "value_col": [
-        2,
-        3,
-        4,
-        5,
-        6,
-        7,
-        8,
-        9,
-        10,
-        11,
-        12,
-        13,
-        14,
-        15,
-        16
-
-
-        ],
-        "value_names": [
-          "Total",
-         "Auckland",
-         "Bay of Plenty",
-         "Canterbury",
-         "Gisborne",
-         "Hawke's Bay",
-         "Manawatū-Whanganui",
-         "Northland",
-         "Otago",
-         "Southland",
-         "Taranaki",
-         "Tasman",
-         "Waikato",
-         "Wellington",
-         "West Coast"
-
-        ],
-        "filename": "COVID 19 - Chorus regional broadband.xlsx",
-        "load_function": "read_chorus_regional_data",
-        "data_type": "TimeSeries",
-        "group_names": [
-          "Total",
-         "Auckland",
-         "Bay of Plenty",
-         "Canterbury",
-         "Gisborne",
-         "Hawke's Bay",
-         "Manawatū-Whanganui",
-         "Northland",
-         "Otago",
-         "Southland",
-         "Taranaki",
-         "Tasman",
-         "Waikato",
-         "Wellington",
-         "West Coast"
-        ]
-   },
    {
     "class": "Contextual",
     "type": "Business",
@@ -5424,6 +5434,31 @@
     "n_rows":2,
     "keyword":"7 to 10",
     "parameter_col":1,
+    "value_col":[2],
+    "lower_bound_col":[
+      3],
+    "upper_bound_col":[4],
+    "sheet_number":1,
+    "value_names":[
+     "Total"
+    ],
+    "group_names":[
+      "Total NZ Population"
+    ],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+{
+    "class":"Social",
+    "type":"General wellbeing",
+    "indicator_name":"Life worthwhile",
+    "description":"Life worthwhile",
+    "skip":5,
+    "n_rows":2,
+    "keyword":"7 to 10",
+    "parameter_col":1,
     "value_col":[2,5],
     "lower_bound_col":[
       3,6],
@@ -5516,6 +5551,90 @@
     "value_names":["Jun-2020", "Sep-2020"],
     "group_names":[
       "By region"
+    ],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+    {
+
+	  "class":"Social",
+    "type":"General wellbeing",
+    "indicator_name":"Life worthwhile",
+    "description":"Life worthwhile",
+    "keyword":"7 to 10",
+    "skip":5,
+    "n_rows":2,
+    "parameter_col":1,
+    "value_col":[2,5,8,11,14],
+    "lower_bound_col":[
+      3,6,9,12,15],
+    "upper_bound_col":[4,7,10,13,16],
+    "sheet_number":5,
+    "value_names":[
+      "Sole Parent",
+      "Mother in two-parent family",
+      "Father in two-parent family",
+      "Not parent of dependent child, female",
+      "Not parent of dependent child, male"
+    ],
+    "group_names":[
+      "By parent status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx", "Raw data/SeptQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+  {
+
+    "class":"Social",
+    "type":"General wellbeing",
+    "indicator_name":"Life worthwhile",
+    "description":"Life worthwhile",
+    "keyword":"7 to 10",
+    "skip":5,
+    "n_rows":2,
+    "parameter_col":1,
+    "value_col":[2,5,8,11],
+    "lower_bound_col":[
+      3,6,9,12],
+    "upper_bound_col":[4,7,10,13],
+    "sheet_number": 6,
+    "value_names":[
+      "Disabled aged 18 years and over",
+      "Non–disabled aged 18 years and over",
+      "Disabled aged 18–64 years",
+      "Non–disabled aged 18–64 years"
+    ],
+    "group_names":[
+      "By disability status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+   {
+    "class":"Social",
+    "type":"General wellbeing",
+    "indicator_name":"Family wellbeing",
+    "description":"Family wellbeing",
+    "skip":5,
+    "n_rows":2,
+    "keyword":"7 to 10",
+    "parameter_col":1,
+    "value_col":[2],
+    "lower_bound_col":[
+      3],
+    "upper_bound_col":[4],
+    "sheet_number":1,
+    "value_names":[
+      "Total"
+    ],
+    "group_names":[
+      "Total NZ Population"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
@@ -5525,7 +5644,7 @@
 
   {
     "class":"Social",
-    "type":"Social connection",
+    "type":"General wellbeing",
     "indicator_name":"Family wellbeing",
     "description":"Family wellbeing",
     "skip":5,
@@ -5551,7 +5670,7 @@
   },
   {
     "class":"Social",
-    "type":"Social connection",
+    "type":"General wellbeing",
     "indicator_name":"Family wellbeing",
     "description":"Family wellbeing",
     "skip":5,
@@ -5582,7 +5701,7 @@
   },
   {
     "class":"Social",
-    "type":"Social connection",
+    "type":"General wellbeing",
     "indicator_name":"Family wellbeing",
     "description":"Family wellbeing",
     "skip":5,
@@ -5610,7 +5729,7 @@
   },
   {
     "class":"Social",
-    "type":"Social connection",
+    "type":"General wellbeing",
     "indicator_name":"Family wellbeing",
     "description":"Family wellbeing",
     "skip":5,
@@ -5626,6 +5745,64 @@
       "By region"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+    {
+
+	  "class":"Social",
+    "type":"General wellbeing",
+    "indicator_name":"Family wellbeing",
+    "description":"Family wellbeing",
+    "keyword":"7 to 10",
+    "skip":5,
+    "n_rows":2,
+    "parameter_col":1,
+    "value_col":[2,5,8,11,14],
+    "lower_bound_col":[
+      3,6,9,12,15],
+    "upper_bound_col":[4,7,10,13,16],
+    "sheet_number":5,
+    "value_names":[
+      "Sole Parent",
+      "Mother in two-parent family",
+      "Father in two-parent family",
+      "Not parent of dependent child, female",
+      "Not parent of dependent child, male"
+    ],
+    "group_names":[
+      "By parent status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx", "Raw data/SeptQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+  {
+    "class":"Social",
+    "type":"General wellbeing",
+    "indicator_name":"Family wellbeing",
+    "description":"Family wellbeing",
+    "keyword":"7 to 10",
+    "skip":5,
+    "n_rows":2,
+    "parameter_col":1,
+    "value_col":[2,5,8,11],
+    "lower_bound_col":[
+      3,6,9,12],
+    "upper_bound_col":[4,7,10,13],
+    "sheet_number": 6,
+    "value_names":[
+      "Disabled aged 18 years and over",
+      "Non–disabled aged 18 years and over",
+      "Disabled aged 18–64 years",
+      "Non–disabled aged 18–64 years"
+    ],
+    "group_names":[
+      "By disability status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -5659,8 +5836,32 @@
   "company_name": ["Truckstops", "Jet", "Marine", "Bitumen", "Other"],
   "fuel_type": ["Truckstops", "Jet", "Marine fuel oil", "Bitumen", "Other"],
   "load_function": "petrol_read_file_month"
-}
-,
+},
+ {
+    "class":"Social",
+    "type":"Household finances",
+    "indicator_name":"Enough money for everyday needs",
+    "description":"Adequacy of income to meet everyday needs",
+    "keyword":"Enough money / more than enough money",
+    "skip":5,
+    "n_rows":3,
+    "parameter_col":1,
+    "value_col":[2],
+    "lower_bound_col":[
+      3],
+    "upper_bound_col":[4],
+    "sheet_number":1,
+    "value_names":[
+      "Total"
+    ],
+    "group_names":[
+      "Total NZ Population"
+    ],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
 
   {
     "class":"Social",
@@ -5769,7 +5970,89 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
+    {
 
+	  "class":"Social",
+    "type":"Household finances",
+    "indicator_name":"Enough money for everyday needs",
+    "description":"Adequacy of income to meet everyday needs",
+    "keyword":"Enough money / more than enough money",
+    "skip":5,
+    "n_rows":3,
+    "parameter_col":1,
+    "value_col":[2,5,8,11,14],
+    "lower_bound_col":[
+      3,6,9,12,15],
+    "upper_bound_col":[4,7,10,13,16],
+    "sheet_number":5,
+    "value_names":[
+      "Sole Parent",
+      "Mother in two-parent family",
+      "Father in two-parent family",
+      "Not parent of dependent child, female",
+      "Not parent of dependent child, male"
+    ],
+    "group_names":[
+      "By parent status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx", "Raw data/SeptQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+  {
+    "class":"Social",
+    "type":"Household finances",
+    "indicator_name":"Enough money for everyday needs",
+    "description":"Adequacy of income to meet everyday needs",
+    "keyword":"Enough money / more than enough money",
+    "skip":5,
+    "n_rows":3,
+    "parameter_col":1,
+    "value_col":[2,5,8,11],
+    "lower_bound_col":[
+      3,6,9,12],
+    "upper_bound_col":[4,7,10,13],
+    "sheet_number": 6,
+    "value_names":[
+      "Disabled aged 18 years and over",
+      "Non–disabled aged 18 years and over",
+      "Disabled aged 18–64 years",
+      "Non–disabled aged 18–64 years"
+    ],
+    "group_names":[
+      "By disability status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+   {
+    "class":"Social",
+    "type":"Personal finances",
+    "indicator_name":"Help from welfare organisation",
+    "description":"Received help from organisation such as a church or foodbank in last 12 months",
+    "keyword":"At least once",
+    "skip":5,
+    "n_rows":2,
+    "parameter_col":1,
+    "value_col":[2],
+    "lower_bound_col":[
+      3],
+    "upper_bound_col":[4],
+    "sheet_number":1,
+    "value_names":[
+     "Total"
+    ],
+    "group_names":[
+     "Total NZ Population"
+    ],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
   {
     "class":"Social",
     "type":"Personal finances",
@@ -5877,6 +6160,90 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
+    {
+
+  	"class":"Social",
+    "type":"Personal finances",
+    "indicator_name":"Help from welfare organisation",
+    "description":"Received help from organisation such as a church or foodbank in last 12 months",
+    "keyword":"At least once",
+    "skip":5,
+    "n_rows":2,
+    "parameter_col":1,
+    "value_col":[2,5,8,11,14],
+    "lower_bound_col":[
+      3,6,9,12,15],
+    "upper_bound_col":[4,7,10,13,16],
+    "sheet_number":5,
+    "value_names":[
+      "Sole Parent",
+      "Mother in two-parent family",
+      "Father in two-parent family",
+      "Not parent of dependent child, female",
+      "Not parent of dependent child, male"
+    ],
+    "group_names":[
+      "By parent status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx", "Raw data/SeptQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+  {
+    "class":"Social",
+    "type":"Personal finances",
+    "indicator_name":"Help from welfare organisation",
+    "description":"Received help from organisation such as a church or foodbank in last 12 months",
+    "keyword":"At least once",
+    "skip":5,
+    "n_rows":2,
+    "parameter_col":1,
+    "value_col":[2,5,8,11],
+    "lower_bound_col":[
+      3,6,9,12],
+    "upper_bound_col":[4,7,10,13],
+    "sheet_number": 6,
+    "value_names":[
+      "Disabled aged 18 years and over",
+      "Non–disabled aged 18 years and over",
+      "Disabled aged 18–64 years",
+      "Non–disabled aged 18–64 years"
+    ],
+    "group_names":[
+      "By disability status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+
+   {
+    "class":"Social",
+    "type":"Life satisfaction",
+    "indicator_name":"Life satisfaction – HLFS quarterly",
+    "description":"Overall life satisfaction",
+    "keyword":"7 to 10",
+    "skip":5,
+    "n_rows":2,
+    "parameter_col":1,
+    "value_col":[2],
+    "lower_bound_col":[
+      3],
+    "upper_bound_col":[4],
+    "sheet_number":1,
+    "value_names":[
+      "Total"
+    ],
+    "group_names":[
+      "Total NZ Population"
+    ],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
 
   {
     "class":"Social",
@@ -5979,6 +6346,87 @@
     "value_names":["Jun-2020", "Sep-2020"],
     "group_names":[
       "By region"
+    ],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },  {
+	 "class":"Social",
+    "type":"Life satisfaction",
+    "indicator_name":"Life satisfaction – HLFS quarterly",
+    "description":"Overall life satisfaction",
+    "keyword":"7 to 10",
+    "skip":5,
+    "n_rows":2,
+    "parameter_col":1,
+    "value_col":[2,5,8,11,14],
+    "lower_bound_col":[
+      3,6,9,12,15],
+    "upper_bound_col":[4,7,10,13,16],
+    "sheet_number":5,
+    "value_names":[
+      "Sole Parent",
+      "Mother in two-parent family",
+      "Father in two-parent family",
+      "Not parent of dependent child, female",
+      "Not parent of dependent child, male"
+    ],
+    "group_names":[
+      "By parent status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx", "Raw data/SeptQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+  {
+     "class":"Social",
+    "type":"Life satisfaction",
+    "indicator_name":"Life satisfaction – HLFS quarterly",
+    "description":"Overall life satisfaction",
+    "keyword":"7 to 10",
+    "skip":5,
+    "n_rows":2,
+    "parameter_col":1,
+    "value_col":[2,5,8,11],
+    "lower_bound_col":[
+      3,6,9,12],
+    "upper_bound_col":[4,7,10,13],
+    "sheet_number": 6,
+    "value_names":[
+      "Disabled aged 18 years and over",
+      "Non–disabled aged 18 years and over",
+      "Disabled aged 18–64 years",
+      "Non–disabled aged 18–64 years"
+    ],
+    "group_names":[
+      "By disability status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+  {
+    "class":"Social",
+    "type":"Trust",
+    "indicator_name":"Trust for parliament",
+    "description":"Trust held for parliament",
+    "keyword":"7 to 10",
+    "skip":5,
+    "n_rows":2,
+    "parameter_col":1,
+    "value_col":[2],
+    "lower_bound_col":[
+      3],
+    "upper_bound_col":[4],
+    "sheet_number":1,
+    "value_names":[
+      "Total"
+    ],
+    "group_names":[
+     "Total NZ Population"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
@@ -6093,6 +6541,90 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
+    {
+
+	  "class":"Social",
+    "type":"Trust",
+    "indicator_name":"Trust for parliament",
+    "description":"Trust held for parliament",
+    "keyword":"7 to 10",
+    "skip":5,
+    "n_rows":2,
+    "parameter_col":1,
+    "value_col":[2,5,8,11,14],
+    "lower_bound_col":[
+      3,6,9,12,15],
+    "upper_bound_col":[4,7,10,13,16],
+    "sheet_number":5,
+    "value_names":[
+      "Sole Parent",
+      "Mother in two-parent family",
+      "Father in two-parent family",
+      "Not parent of dependent child, female",
+      "Not parent of dependent child, male"
+    ],
+    "group_names":[
+      "By parent status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx", "Raw data/SeptQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+  {
+
+    "class":"Social",
+    "type":"Trust",
+    "indicator_name":"Trust for parliament",
+    "description":"Trust held for parliament",
+    "keyword":"7 to 10",
+    "skip":5,
+    "n_rows":2,
+    "parameter_col":1,
+    "value_col":[2,5,8,11],
+    "lower_bound_col":[
+      3,6,9,12],
+    "upper_bound_col":[4,7,10,13],
+    "sheet_number": 6,
+    "value_names":[
+      "Disabled aged 18 years and over",
+      "Non–disabled aged 18 years and over",
+      "Disabled aged 18–64 years",
+      "Non–disabled aged 18–64 years"
+    ],
+    "group_names":[
+      "By disability status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+  {
+    "class":"Social",
+    "type":"Trust",
+    "indicator_name":"Trust for police",
+    "description":"Trust held for police",
+    "keyword":"7 to 10",
+    "skip":5,
+    "n_rows":2,
+    "parameter_col":1,
+    "value_col":[2],
+    "lower_bound_col":[
+      3],
+    "upper_bound_col":[4],
+    "sheet_number":1,
+    "value_names":[
+      "Total"
+    ],
+    "group_names":[
+      "Total NZ Population"
+    ],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
   {
     "class":"Social",
     "type":"Trust",
@@ -6200,6 +6732,89 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
+    {
+
+	  "class":"Social",
+    "type":"Trust",
+    "indicator_name":"Trust for police",
+    "description":"Trust held for police",
+    "keyword":"7 to 10",
+    "skip":5,
+    "n_rows":2,
+    "parameter_col":1,
+    "value_col":[2,5,8,11,14],
+    "lower_bound_col":[
+      3,6,9,12,15],
+    "upper_bound_col":[4,7,10,13,16],
+    "sheet_number":5,
+    "value_names":[
+      "Sole Parent",
+      "Mother in two-parent family",
+      "Father in two-parent family",
+      "Not parent of dependent child, female",
+      "Not parent of dependent child, male"
+    ],
+    "group_names":[
+      "By parent status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx", "Raw data/SeptQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+  {
+    "class":"Social",
+    "type":"Trust",
+    "indicator_name":"Trust for police",
+    "description":"Trust held for police",
+    "keyword":"7 to 10",
+    "skip":5,
+    "n_rows":2,
+    "parameter_col":1,
+    "value_col":[2,5,8,11],
+    "lower_bound_col":[
+      3,6,9,12],
+    "upper_bound_col":[4,7,10,13],
+    "sheet_number": 6,
+    "value_names":[
+      "Disabled aged 18 years and over",
+      "Non–disabled aged 18 years and over",
+      "Disabled aged 18–64 years",
+      "Non–disabled aged 18–64 years"
+    ],
+    "group_names":[
+      "By disability status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+  {
+    "class":"Social",
+    "type":"Trust",
+    "indicator_name":"Trust for the media",
+    "description":"Trust held for media",
+    "keyword":"7 to 10",
+    "skip":5,
+    "n_rows":2,
+    "parameter_col":1,
+    "value_col":[2],
+    "lower_bound_col":[
+      3],
+    "upper_bound_col":[4],
+    "sheet_number":1,
+    "value_names":[
+      "Total"
+    ],
+    "group_names":[
+     "Total NZ Population"
+    ],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
   {
     "class":"Social",
     "type":"Trust",
@@ -6301,6 +6916,89 @@
     "value_names":["Jun-2020", "Sep-2020"],
     "group_names":[
       "By region"
+    ],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+    {
+
+	  "class":"Social",
+    "type":"Trust",
+    "indicator_name":"Trust for the media",
+    "description":"Trust held for media",
+    "keyword":"7 to 10",
+    "skip":5,
+    "n_rows":2,
+    "parameter_col":1,
+    "value_col":[2,5,8,11,14],
+    "lower_bound_col":[
+      3,6,9,12,15],
+    "upper_bound_col":[4,7,10,13,16],
+    "sheet_number":5,
+    "value_names":[
+      "Sole Parent",
+      "Mother in two-parent family",
+      "Father in two-parent family",
+      "Not parent of dependent child, female",
+      "Not parent of dependent child, male"
+    ],
+    "group_names":[
+      "By parent status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx", "Raw data/SeptQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+  {
+    "class":"Social",
+    "type":"Trust",
+    "indicator_name":"Trust for the media",
+    "description":"Trust held for media",
+    "keyword":"7 to 10",
+    "skip":5,
+    "n_rows":2,
+    "parameter_col":1,
+    "value_col":[2,5,8,11],
+    "lower_bound_col":[
+      3,6,9,12],
+    "upper_bound_col":[4,7,10,13],
+    "sheet_number": 6,
+    "value_names":[
+      "Disabled aged 18 years and over",
+      "Non–disabled aged 18 years and over",
+      "Disabled aged 18–64 years",
+      "Non–disabled aged 18–64 years"
+    ],
+    "group_names":[
+      "By disability status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+   {
+    "class":"Social",
+    "type":"Social connection",
+    "indicator_name":"Loneliness – past 4 weeks",
+    "description":"Felt lonely in last four weeks",
+	"keyword":"Some / most / all of the time",
+    "skip":5,
+    "n_rows":3,
+    "parameter_col":1,
+    "value_col":[2],
+    "lower_bound_col":[
+      3],
+    "upper_bound_col":[4],
+    "sheet_number":1,
+    "value_names":[
+      "Total"
+    ],
+    "group_names":[
+     "Total NZ Population"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
@@ -6415,6 +7113,89 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
+    {
+
+	  "class":"Social",
+    "type":"Social connection",
+    "indicator_name":"Loneliness – past 4 weeks",
+    "description":"Felt lonely in last four weeks",
+	"keyword":"Some / most / all of the time",
+    "skip":5,
+    "n_rows":3,
+    "parameter_col":1,
+    "value_col":[2,5,8,11,14],
+    "lower_bound_col":[
+      3,6,9,12,15],
+    "upper_bound_col":[4,7,10,13,16],
+    "sheet_number":5,
+    "value_names":[
+      "Sole Parent",
+      "Mother in two-parent family",
+      "Father in two-parent family",
+      "Not parent of dependent child, female",
+      "Not parent of dependent child, male"
+    ],
+    "group_names":[
+      "By parent status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx", "Raw data/SeptQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+  {
+    "class":"Social",
+    "type":"Social connection",
+    "indicator_name":"Loneliness – past 4 weeks",
+    "description":"Felt lonely in last four weeks",
+	"keyword":"Some / most / all of the time",
+    "skip":5,
+    "n_rows":3,
+    "parameter_col":1,
+    "value_col":[2,5,8,11],
+    "lower_bound_col":[
+      3,6,9,12],
+    "upper_bound_col":[4,7,10,13],
+    "sheet_number": 6,
+    "value_names":[
+      "Disabled aged 18 years and over",
+      "Non–disabled aged 18 years and over",
+      "Disabled aged 18–64 years",
+      "Non–disabled aged 18–64 years"
+    ],
+    "group_names":[
+      "By disability status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+  {
+    "class":"Social",
+    "type":"Trust",
+    "indicator_name":"Trust in other people",
+    "description":"Trust held for people in New Zealand",
+	  "keyword":"7 to 10",
+    "skip":5,
+    "n_rows":2,
+    "parameter_col":1,
+    "value_col":[2],
+    "lower_bound_col":[
+      3],
+    "upper_bound_col":[4],
+    "sheet_number":1,
+    "value_names":[
+      "Total"
+    ],
+    "group_names":[
+      "Total NZ Population"
+    ],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
 
   {
     "class":"Social",
@@ -6523,6 +7304,88 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
+    {
+	"class":"Social",
+    "type":"Trust",
+    "indicator_name":"Trust in other people",
+    "description":"Trust held for people in New Zealand",
+	  "keyword":"7 to 10",
+    "skip":5,
+    "n_rows":2,
+    "parameter_col":1,
+    "value_col":[2,5,8,11,14],
+    "lower_bound_col":[
+      3,6,9,12,15],
+    "upper_bound_col":[4,7,10,13,16],
+    "sheet_number":5,
+    "value_names":[
+      "Sole Parent",
+      "Mother in two-parent family",
+      "Father in two-parent family",
+      "Not parent of dependent child, female",
+      "Not parent of dependent child, male"
+    ],
+    "group_names":[
+      "By parent status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx", "Raw data/SeptQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+  {
+    "class":"Social",
+    "type":"Trust",
+    "indicator_name":"Trust in other people",
+    "description":"Trust held for people in New Zealand",
+	  "keyword":"7 to 10",
+    "skip":5,
+    "n_rows":2,
+    "parameter_col":1,
+    "value_col":[2,5,8,11],
+    "lower_bound_col":[
+      3,6,9,12],
+    "upper_bound_col":[4,7,10,13],
+    "sheet_number": 6,
+    "value_names":[
+      "Disabled aged 18 years and over",
+      "Non–disabled aged 18 years and over",
+      "Disabled aged 18–64 years",
+      "Non–disabled aged 18–64 years"
+    ],
+    "group_names":[
+      "By disability status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+  {
+    "class":"Social",
+    "type":"Trust",
+    "indicator_name":"Trust for health system",
+    "description":"Trust held for health system",
+    "skip":5,
+    "n_rows":2,
+    "parameter_col":1,
+	  "keyword":"7 to 10",
+    "value_col":[2],
+    "lower_bound_col":[
+      3],
+    "upper_bound_col":[4],
+    "sheet_number":1,
+    "value_names":[
+      "Total"
+    ],
+    "group_names":[
+      "Total NZ Population"
+    ],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
   {
     "class":"Social",
     "type":"Trust",
@@ -6630,7 +7493,91 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
+    {
+
+	  "class":"Social",
+    "type":"Trust",
+    "indicator_name":"Trust for health system",
+    "description":"Trust held for health system",
+	"keyword":"7 to 10",
+    "skip":5,
+    "n_rows":2,
+    "parameter_col":1,
+    "value_col":[2,5,8,11,14],
+    "lower_bound_col":[
+      3,6,9,12,15],
+    "upper_bound_col":[4,7,10,13,16],
+    "sheet_number":5,
+    "value_names":[
+      "Sole Parent",
+      "Mother in two-parent family",
+      "Father in two-parent family",
+      "Not parent of dependent child, female",
+      "Not parent of dependent child, male"
+    ],
+    "group_names":[
+      "By parent status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx", "Raw data/SeptQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
   {
+    "class":"Social",
+    "type":"Trust",
+    "indicator_name":"Trust for health system",
+    "description":"Trust held for health system",
+	"keyword":"7 to 10",
+    "skip":5,
+    "n_rows":2,
+    "parameter_col":1,
+    "value_col":[2,5,8,11],
+    "lower_bound_col":[
+      3,6,9,12],
+    "upper_bound_col":[4,7,10,13],
+    "sheet_number": 6,
+    "value_names":[
+      "Disabled aged 18 years and over",
+      "Non–disabled aged 18 years and over",
+      "Disabled aged 18–64 years",
+      "Non–disabled aged 18–64 years"
+    ],
+    "group_names":[
+      "By disability status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+
+  {
+    "class":"Social",
+    "type":"Crime and safety",
+    "indicator_name":"Experienced discrimination",
+    "description":"Discrimination",
+    "skip":5,
+    "n_rows":1,
+    "parameter_col":1,
+	  "keyword":"Experienced discrimination in last 12 months",
+    "value_col":[2],
+    "lower_bound_col":[
+      3],
+    "upper_bound_col":[4],
+    "sheet_number":1,
+    "value_names":[
+      "Total"
+    ],
+    "group_names":[
+      "Total NZ Population"
+    ],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+   {
     "class":"Social",
     "type":"Crime and safety",
     "indicator_name":"Experienced discrimination",
@@ -6733,6 +7680,65 @@
       "By region"
     ],
     "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+    {
+
+	  "class":"Social",
+    "type":"Crime and safety",
+    "indicator_name":"Experienced discrimination",
+    "description":"Discrimination",
+    "keyword":"Experienced discrimination in last 12 months",
+    "skip":5,
+    "n_rows":1,
+    "parameter_col":1,
+    "value_col":[2,5,8,11,14],
+    "lower_bound_col":[
+      3,6,9,12,15],
+    "upper_bound_col":[4,7,10,13,16],
+    "sheet_number":5,
+    "value_names":[
+      "Sole Parent",
+      "Mother in two-parent family",
+      "Father in two-parent family",
+      "Not parent of dependent child, female",
+      "Not parent of dependent child, male"
+    ],
+    "group_names":[
+      "By parent status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx", "Raw data/SeptQtr_WSTabs_DP.xlsx"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_hlfs_data",
+    "data_type":"TimeSeriesError"
+  },
+  {
+
+    "class":"Social",
+    "type":"Crime and safety",
+    "indicator_name":"Experienced discrimination",
+    "description":"Discrimination",
+    "keyword":"Experienced discrimination in last 12 months",
+    "skip":5,
+    "n_rows":1,
+    "parameter_col":1,
+    "value_col":[2,5,8,11],
+    "lower_bound_col":[
+      3,6,9,12],
+    "upper_bound_col":[4,7,10,13],
+    "sheet_number": 6,
+    "value_names":[
+      "Disabled aged 18 years and over",
+      "Non–disabled aged 18 years and over",
+      "Disabled aged 18–64 years",
+      "Non–disabled aged 18–64 years"
+    ],
+    "group_names":[
+      "By disability status"
+    ],
+    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
