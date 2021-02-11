@@ -5,7 +5,7 @@ library(tidyr)
 library(stringr)
 
 raw_prev <- "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/MSD/data-file-income-support-and-wage-subsidy-weekly-update-11-december-2020.xlsx"
-raw_update <- "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/MSD/data-file-income-support-and-wage-subsidy-weekly-update-22-january-2021.xlsx"
+raw_update <- "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/MSD/data-file-income-support-and-wage-subsidy-weekly-update-29-january-2021.xlsx"
 
 read_msd <- function(raw_prev, raw_update, sheet, range_start, range_end, col_types, col_names) {
   df_prev <- read_excel(path = raw_prev,
