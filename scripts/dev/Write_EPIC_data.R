@@ -8,23 +8,29 @@
 #' @return success   TRUE / FALSE if http POST successful
 #'
 #' @export
- 
+
+Resource <- tibble("ResourceID" = config$api_resource_id,
+                   "Peroid" = 3,
+                   "Value" = 3,
+                   "Unit" = "3",
+                   "Mesasure" = "3",
+                   "Multiplier" = 3) %>% toJSON(na ="null")
 
 writeDatastore(observation,location = list(collection = "PDS", instance = "Covid-19", table = "Observation_test"), version = NULL, server = "uat")
 
 
 writeDatastore <- function(data, location, version = NULL, server = "uat") {
-  
+
   if (server == "uat"){
     baseURL <- "https://epl-uat/statsnz-epl-data/api/v1/collections/"
   }
   else{
     baseURL <- "https://epl-prd/statsnz-epl-data/api/v1/collections/"
   }
-  
-  
+
+
   #POST /api/v1/collections/{collectionCode}/{collectionInstanceCode}/datasets/{tableName}
-  
+
   if(is.null(version)){
     theUrl <- paste0( baseURL,
                       location$collection,
@@ -43,12 +49,12 @@ writeDatastore <- function(data, location, version = NULL, server = "uat") {
                       "/versions/",
                       version)
   }
-  
+
   result <- httr::POST( url = theUrl, httr::use_proxy(""), httr::config(http_version = 2L), httr::config(ssl_verifypeer = 0L),
                         httr::authenticate("","", type ="gssnegotiate"),
                         httr::content_type_json(),
                         body = jsonlite::toJSON(data), encode = "raw" )
-  
+
   # boolean success code
   if(http_error(result))
   {
@@ -86,18 +92,18 @@ getLatestVersion <- function(location, server = "uat") {
                     "/tables/",
                     location$table,
                     "/versions")
-  
+
   # get current version
   result <- httr::GET(url = theUrl, httr::use_proxy(""), httr::config(http_version = 2L), httr::config(ssl_verifypeer = 0L),
                       httr::authenticate("","", type ="gssnegotiate"))
-  
+
   version <- jsonlite::fromJSON(httr::content(result, "text", encoding = "UTF-8"))
   if (length(version) > 0){
     version <- version$VersionNumber[1]
   } else{
     version <- 0
   }
-  
+
   version
 }
 
