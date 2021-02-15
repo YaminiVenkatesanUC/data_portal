@@ -2740,11 +2740,6 @@
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
     "groups":[
-      {
-        "name": "Total - work ready",
-        "title": "Number on jobseeker support - work ready (total)",
-        "units": "Number"
-      },
        {
         "name": "Māori",
         "title": "Number on jobseeker support for Māori - work ready",
@@ -4039,11 +4034,6 @@
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
     "groups": [
-       {
-        "name": "Total",
-        "title": "Number of special needs grants for food - Total",
-        "units": "Number"
-      },
       {
         "name": "Auckland",
         "title": "Number of special needs grants for food - Auckland",
@@ -4143,11 +4133,6 @@
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
     "groups": [
-       {
-        "name": "Total",
-        "title": "Number on jobseeker support - Total",
-        "units": "Number"
-      },
       {
         "name": "Auckland",
         "title": "Number on jobseeker support - Auckland",
@@ -4248,11 +4233,6 @@
     "download": true,
     "groups": [
       {
-        "name": "Total",
-        "title": "Number on jobseeker support (Maori) - Total",
-        "units": "Number"
-      },
-      {
         "name": "Auckland",
         "title": "Number on jobseeker support (Maori) - Auckland",
         "units": "Number"
@@ -4352,11 +4332,6 @@
     "download": true,
     "groups": [
       {
-        "name": "Total",
-        "title": "Number on jobseeker support (NZ European) - Total",
-        "units": "Number"
-      },
-      {
         "name": "Auckland",
         "title": "Number on jobseeker support (NZ European) - Auckland",
         "units": "Number"
@@ -4454,12 +4429,6 @@
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
     "groups": [
-
-       {
-        "name": "Total",
-        "title": "Number on jobseeker support (Pacific peoples) - Total",
-        "units": "Number"
-      },
       {
         "name": "Auckland",
         "title": "Number on jobseeker support (Pacific peoples) - Auckland",
@@ -4558,11 +4527,6 @@
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
     "groups": [
-      {
-        "name": "Total",
-        "title": "Number on jobseeker support (Other ethnicities) - Total",
-        "units": "Number"
-      },
       {
         "name": "Auckland",
         "title": "Number on jobseeker support (Other ethnicities) - Auckland",
@@ -5133,11 +5097,6 @@
     "download": true,
 
     "groups": [
-      {
-        "name": "Total",
-        "title": "Number of recipients of CIRP by region - Total",
-        "units": "Number"
-      },
 	  {
         "name": "Auckland",
         "title": "Number of recipients of CIRP by region - Auckland",
@@ -5415,11 +5374,6 @@
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
     "groups": [
-      {
-        "name": "Total",
-        "title": "Total number of recipients of CIRP by gender",
-        "units": "Number"
-      },
 	  {
         "name": "Female",
         "title": "Number of recipients of CIRP by gender - Female",
@@ -5448,11 +5402,6 @@
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
     "groups": [
-      {
-        "name": "Total",
-        "title": "Total number of recipients of CIRP by relationship",
-        "units": "Number"
-      },
 	  {
         "name": "Single",
         "title": "Number of recipients of CIRP by relationship - Single",
@@ -5532,11 +5481,6 @@
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
     "groups": [
-      {
-        "name": "Total",
-        "title": "Total number of recipients of CIRP by ethnicity",
-        "units": "Number"
-      },
 	  {
         "name":  "Māori",
         "title": "Number of recipients of CIRP by ethnicity - Māori",
@@ -5639,11 +5583,6 @@
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
 	"groups": [
-		{
-		 "name": "Total",
-		 "title": "Number of recipients of CIRP by territorial authority - Total",
-		 "units": "Number"
-		},
 		{
 		 "name": "Ashburton District",
 		 "title": "Number of recipients of CIRP by territorial authority - Ashburton District",

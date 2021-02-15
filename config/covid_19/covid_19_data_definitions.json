@@ -3452,8 +3452,7 @@
         16,
         17,
         18,
-        19,
-        20
+        19
         ],
         "value_names": [
         "Auckland",
@@ -3473,8 +3472,7 @@
         "Waikato",
         "Wellington",
         "West Coast",
-        "Other",
-        "Total"
+        "Other"
         ],
         "group_names": [
             "Auckland",
@@ -3493,8 +3491,7 @@
             "Waikato",
             "Wellington",
             "West Coast",
-            "Other",
-            "Total"
+            "Other"
         ],
         "filename": "COVID 19 - MSD Jobseeker by regional council.xlsx",
         "drop_na": false,
@@ -3529,8 +3526,7 @@
         15,
         16,
         17,
-        18,
-        19
+        18
         ],
         "value_names": [
         "Auckland",
@@ -3549,8 +3545,7 @@
         "Waikato",
         "Wellington",
         "West Coast",
-        "Other",
-        "Total"
+        "Other"
         ],
         "group_names": [
             "Auckland",
@@ -3569,8 +3564,7 @@
             "Waikato",
             "Wellington",
             "West Coast",
-            "Other",
-            "Total"
+            "Other"
         ],
         "filename": "COVID 19 - MSD Jobseeker by regional council.xlsx",
         "drop_na": false,
@@ -3605,8 +3599,7 @@
         15,
         16,
         17,
-        18,
-        19
+        18
         ],
         "value_names": [
         "Auckland",
@@ -3625,8 +3618,7 @@
         "Waikato",
         "Wellington",
         "West Coast",
-        "Other",
-        "Total"
+        "Other"
         ],
         "group_names": [
             "Auckland",
@@ -3645,8 +3637,7 @@
             "Waikato",
             "Wellington",
             "West Coast",
-            "Other",
-            "Total"
+            "Other"
         ],
         "filename": "COVID 19 - MSD Jobseeker by regional council.xlsx",
         "drop_na": false,
@@ -3682,8 +3673,7 @@
         15,
         16,
         17,
-        18,
-        19
+        18
         ],
         "value_names": [
         "Auckland",
@@ -3702,8 +3692,7 @@
         "Waikato",
         "Wellington",
         "West Coast",
-        "Other",
-        "Total"
+        "Other"
         ],
         "group_names": [
             "Auckland",
@@ -3722,8 +3711,7 @@
             "Waikato",
             "Wellington",
             "West Coast",
-            "Other",
-            "Total"
+            "Other"
         ],
         "filename": "COVID 19 - MSD Jobseeker by regional council.xlsx",
         "drop_na": false,
@@ -3759,8 +3747,7 @@
         15,
         16,
         17,
-        18,
-        19
+        18
         ],
         "value_names": [
         "Auckland",
@@ -3779,8 +3766,7 @@
         "Waikato",
         "Wellington",
         "West Coast",
-        "Other",
-        "Total"
+        "Other"
         ],
         "group_names": [
             "Auckland",
@@ -3799,8 +3785,7 @@
             "Waikato",
             "Wellington",
             "West Coast",
-            "Other",
-            "Total"
+            "Other"
         ],
         "filename": "COVID 19 - MSD Jobseeker by regional council.xlsx",
         "drop_na": false,
@@ -3835,8 +3820,7 @@
           15,
           16,
           17,
-          18,
-          19
+          18
         ],
         "value_names": [
         "Auckland",
@@ -3855,8 +3839,7 @@
         "Waikato",
         "Wellington",
         "West Coast",
-        "Other",
-        "Total"
+        "Other"
         ],
         "group_names": [
             "Auckland",
@@ -3875,8 +3858,7 @@
             "Waikato",
             "Wellington",
             "West Coast",
-            "Other",
-            "Total"
+            "Other"
         ],
         "filename": "COVID 19 - MSD Jobseeker by regional council.xlsx",
         "drop_na": false,
@@ -4287,7 +4269,6 @@
     "parameter_transform": "function (x) ymd(x)",
     "sheet_number":7,
     "value_col":[
-      19,
       2,
       3,
       4,
@@ -4307,7 +4288,6 @@
       18
     ],
     "value_names": [
-      "Total",
       "Auckland",
       "Bay of Plenty",
       "Canterbury",
@@ -4331,7 +4311,6 @@
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
     "group_names": [
-      "Total",
       "Auckland",
       "Bay of Plenty",
       "Canterbury",
@@ -4529,12 +4508,10 @@
     ],
     "sheet_number": 3,
     "value_col": [
-    2,
     3,
     4
     ],
     "value_names": [
-    "Total",
     "Employee",
     "Self-employed"
     ],
@@ -4629,14 +4606,12 @@
     "value_col": [
          2,
          3,
-         4,
-         5
+         4
          ],
     "value_names": [
       "Female",
       "Male",
-      "Gender diverse",
-      "Total"
+      "Gender diverse"
         ],
     "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
     "drop_na": false,
@@ -4645,8 +4620,7 @@
     "group_names": [
        "Female",
       "Male",
-      "Gender diverse",
-      "Total"
+      "Gender diverse"
       ]
     },
     {
@@ -4662,15 +4636,13 @@
          2,
          3,
          4,
-         5,
-         6
+         5
          ],
     "value_names": [
       "Māori",
       "NZ European",
       "Pacific peoples",
-      "All other ethnicities",
-      "Total"
+      "All other ethnicities"
         ],
     "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
     "drop_na": false,
@@ -4680,8 +4652,7 @@
          "Māori",
       "NZ European",
       "Pacific peoples",
-      "All other ethnicities",
-      "Total"
+      "All other ethnicities"
       ]
     },
 
@@ -4697,14 +4668,11 @@
     "sheet_number":12,
     "value_col": [
          2,
-         3,
-         4
-
+         3
          ],
     "value_names": [
       "Single",
-      "Couple",
-      "Total"
+      "Couple"
         ],
     "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
     "drop_na": false,
@@ -4712,8 +4680,7 @@
     "data_type": "TimeSeries",
     "group_names": [
        "Single",
-      "Couple",
-      "Total"
+      "Couple"
       ]
     }
 
@@ -4874,8 +4841,7 @@
     	 65,
     	 66,
     	 67,
-    	 68,
-    	 69
+    	 68
     ],
 		 "value_names": [
 		 "Ashburton District",
@@ -4944,8 +4910,7 @@
 		 "Whakatāne District",
 		 "Whanganui District",
 		 "Whangārei District",
-		 "Other/Unknown",
-		 "Total"
+		 "Other/Unknown"
 		],
 	"filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
 	"drop_na": false,
@@ -5018,8 +4983,7 @@
 		 "Whakatāne District",
 		 "Whanganui District",
 		 "Whangārei District",
-		 "Other/Unknown",
-		 "Total"
+		 "Other/Unknown"
 		 ]
 		},
 		{
