@@ -16,20 +16,20 @@ library (jsonlite)
 library (httr)
 
 
-observation <- getDatastore(location = list(collection = "PDS", instance = "Covid-19", table = "Observation"), variables = "", filters = "", other ="", server = "uat"))
+observation <- getDatastore(location = list(collection = "PDS", instance = "Covid-19", table = "Observation"), variables = "", filters = "", other ="", server = "uat")
 
 
 getDatastore <- function(location, variables = "", filters = "", other = "", server = "uat")
 {
-  
+
   if(grepl("[1-9a-zA-Z]",location$instance) == FALSE | grepl("[1-9a-zA-Z]",location$table) == FALSE | grepl("[1-9a-zA-Z]", location$collection) == FALSE) {
     stop("At least one input argument is missing (make sure collection, instance and table have been specified in location list)")
   }
-  
+
   if(is.character(location$instance) == FALSE | is.character(location$table) == FALSE | is.character(location$collection) == FALSE){
     stop("At least one input argument is not in character format. Check that specified parameters are in quotation marks")
   }
-  
+
   # If there is a filter we need to put an &q in front to put in call, if a list need to flatten with appropriate syntax
   # paste will work on a single item
   if (filters[1] != "") {
@@ -38,14 +38,14 @@ getDatastore <- function(location, variables = "", filters = "", other = "", ser
   }
   else{filterString <- ""
   }
-  
+
   if (server == "uat"){
     baseUrl <- "https://epl-uat/statsnz-epl-data/api/v1/collections/"
   }
   else{
     baseUrl <- "https://epl-prd/statsnz-epl-data/api/v1/collections/"
   }
-  
+
   # combine all to make the call
   if(length(variables) > 0){
     # Create the string for the call from the list of variables
@@ -74,7 +74,7 @@ getDatastore <- function(location, variables = "", filters = "", other = "", ser
   # Write out to log and create some timing
   message(theUrl)
   start <- proc.time()
-  
+
   #Error checking while loop - retries call
   attempt <- 0
   result <- NULL
@@ -83,7 +83,7 @@ getDatastore <- function(location, variables = "", filters = "", other = "", ser
     try (result <- httr::GET(url = theUrl, httr::use_proxy(""), httr::config(http_version = 2L), httr::config(ssl_verifypeer = 0L),
                              httr::authenticate("","", type ="gssnegotiate")))
   }
-  
+
   # Check for error status - this should return the error code
   if(http_error(result))
   {
@@ -95,18 +95,18 @@ getDatastore <- function(location, variables = "", filters = "", other = "", ser
   httpend <- proc.time()
   httpdur <- httpend - start
   message("Total time for http call: ", sprintf("%g", httpdur["elapsed"]), "s")
-  
+
   # Process the JSON - this seems to be the slow bit, so time separately.
-  
+
   table <- jsonlite::fromJSON(httr::content(result, "text", encoding = "UTF-8"), bigint_as_char = TRUE)
   jsondur <- proc.time() - httpend
-  
+
   # Log to output and then return value.
-  
+
   message("Total time for JSON parse: ", sprintf("%g", jsondur["elapsed"]), "s")
   numRows <- nrow(table)
   numCols <- ncol(table)
   message("Table returned with ", numRows, " rows and ", numCols, " columns")
-  
+
   table
 }
