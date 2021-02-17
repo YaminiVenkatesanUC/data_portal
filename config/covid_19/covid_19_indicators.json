@@ -654,7 +654,7 @@
     "international": false,
     "include_date_slider": true,
     "default_lower_range": "2019-01-01",
-    "caveats":"Note: December 2020 data is provisional.",
+    "caveats":"Note: February 2021 data is provisional.",
     "source_url": "https://www.anz.co.nz/about-us/economic-markets-research/business-outlook/",
     "download": false,
     "groups": [
@@ -718,7 +718,7 @@
     "international": false,
     "include_date_slider": true,
     "default_lower_range": "2019-01-01",
-    "caveats":"Note: December 2020 data is provisional.",
+    "caveats":"Note: February 2021 data is provisional.",
     "source_url": "https://www.anz.co.nz/about-us/economic-markets-research/business-outlook/",
     "download": false,
     "groups": [
@@ -788,8 +788,7 @@
       {
         "name": "Spend (seasonally adjusted)",
         "title": "Monthly electronic card transaction activity",
-        "units": "$",
-        "caveats": "The COVID-19 pandemic has introduced unusual patterns to the monthly and quarterly electronic card transaction series. Months from March 2020 (inclusive) and quarters from June 2020 (inclusive) will not be published. This approach will continue until an observable seasonal pattern returns to each series."
+        "units": "$"
       },
       {
         "name": "Transactions (count)",
@@ -886,20 +885,17 @@
       {
         "name": "Retail (seasonally adjusted)",
         "title": "Monthly card transaction spend by industry",
-        "units": "$",
-         "caveats": "The COVID-19 pandemic has introduced unusual patterns to the monthly and quarterly electronic card transaction series. Months from March 2020 (inclusive) and quarters from June 2020 (inclusive) will not be published. This approach will continue until an observable seasonal pattern returns to each series."
+        "units": "$"
       },
       {
         "name": "Services (seasonally adjusted)",
         "title": "Monthly card transaction spend by industry",
-        "units": "$",
-         "caveats": "The COVID-19 pandemic has introduced unusual patterns to the monthly and quarterly electronic card transaction series. Months from March 2020 (inclusive) and quarters from June 2020 (inclusive) will not be published. This approach will continue until an observable seasonal pattern returns to each series."
+        "units": "$"
       },
       {
         "name": "Non-retail (seasonally adjusted)",
         "title": "Monthly card transaction spend by industry",
-        "units": "$",
-         "caveats": "The COVID-19 pandemic has introduced unusual patterns to the monthly and quarterly electronic card transaction series. Months from March 2020 (inclusive) and quarters from June 2020 (inclusive) will not be published. This approach will continue until an observable seasonal pattern returns to each series."
+        "units": "$"
       }
     ]
   },
@@ -1930,7 +1926,7 @@
     "international": false,
     "download": true,
     "description": "For metadata and details on methodology used to produce these statistics see <a href=\"http://datainfoplus.stats.govt.nz/Item/nz.govt.stats/6ed114da-3571-40d4-a89f-932068a4c753?_ga=2.27617916.1122878806.1587330040-1991109144.1583875067#/nz.govt.stats/6c3485b0-4330-4bd7-b10f-7e9f4580797c/7\" target=\"_blank\">DataInfo+</a>.",
-    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-at-20-january-2021-provisional",
+    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-at-3-february-2021-provisional",
     "groups": [
         {
             "name": "All",
@@ -1985,7 +1981,7 @@
     "international": false,
     "include_date_slider": true,
     "download": true,
-    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-at-20-january-2021-provisional",
+    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-at-3-february-2021-provisional",
     "description": "For metadata and details on methodology used to produce these statistics see <a href=\"http://datainfoplus.stats.govt.nz/Item/nz.govt.stats/6ed114da-3571-40d4-a89f-932068a4c753?_ga=2.27617916.1122878806.1587330040-1991109144.1583875067#/nz.govt.stats/6c3485b0-4330-4bd7-b10f-7e9f4580797c/7\" target=\"_blank\">DataInfo+</a>.",
     "groups": [
         {
@@ -2023,7 +2019,7 @@
     "international": false,
     "download": true,
     "include_date_slider": true,
-    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-at-20-january-2021-provisional",
+    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-at-3-february-2021-provisional",
     "description": "For metadata and details on methodology used to produce these statistics see <a href=\"http://datainfoplus.stats.govt.nz/Item/nz.govt.stats/6ed114da-3571-40d4-a89f-932068a4c753?_ga=2.27617916.1122878806.1587330040-1991109144.1583875067#/nz.govt.stats/6c3485b0-4330-4bd7-b10f-7e9f4580797c/7\" target=\"_blank\">DataInfo+</a>.",
     "groups": [
         {
@@ -2075,7 +2071,7 @@
     "international": false,
     "download": true,
     "description": "For metadata and details on methodology used to produce these statistics see <a href=\"http://datainfoplus.stats.govt.nz/Item/nz.govt.stats/6ed114da-3571-40d4-a89f-932068a4c753?_ga=2.27617916.1122878806.1587330040-1991109144.1583875067#/nz.govt.stats/6c3485b0-4330-4bd7-b10f-7e9f4580797c/7\" target=\"_blank\">DataInfo+</a>.",
-    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-at-20-january-2021-provisional",
+    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-at-3-february-2021-provisional",
     "groups": [
         {
             "name": "Non-food manufactured goods",
@@ -3923,7 +3919,7 @@
     "plot_function": "get_time_series_plot",
     "international": false,
     "include_date_slider": true,
-    "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-weekly-as-at-23-november-2020",
+    "source_url": "https://www.stats.govt.nz/publications?filters=Employment%20indicators%2CInformation%20releases",
     "download": true,
 
     "groups": [
@@ -5361,6 +5357,7 @@
     "indicator_name": "Number of applications",
     "type": "Wage subsidy assistance",
     "source": "Ministry of Social Development",
+    "caveats":"Note: The number of applications received for a Wage Subsidy or Leave Payment was last updated on 22 January 2021. Due to a processing error these more recent applications cannot currently be loaded.",
     "plot_function": "get_time_series_plot",
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
@@ -6594,7 +6591,7 @@
   "plot_function": "get_time_series_plot",
   "international": false,
   "include_date_slider": true,
-  "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-weekly-as-at-23-november-2020",
+  "source_url": "https://www.stats.govt.nz/publications?filters=Employment%20indicators%2CInformation%20releases",
   "download": true,
 
   "groups": [
