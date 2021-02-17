@@ -3,17 +3,6 @@
     "class": "Income support",
     "indicator_name": "Amount of wage subsidy paid out",
     "type": "Wage subsidy assistance",
-    "parameter_col": 1,
-    "parameter_transform": [
-    "function (x) ",
-    "as.Date(x, format = \"%d/%m/%y\")"
-    ],
-    "sheet_number": 2,
-    "value_col": 2,
-    "value_names": "Amount paid out",
-    "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
-    "load_function": "read_from_excel",
-    "data_type": "TimeSeries",
     "ResourceID": "CPWAG1",
     "Var1": "Treatment",
     "measure": "Wage subsidy paid out (cumulative)",

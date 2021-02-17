@@ -9,12 +9,23 @@
 #'
 #' @export
 
-Resource <- tibble("ResourceID" = config$api_resource_id,
-                   "Peroid" = 3,
+observation <- tibble("ResourceID" = "CPWAG1",
+                   "Geo" = "",
+                   "GeoUnit" = "",
+                   "Duration" = "P7D",
+                   "Peroid" = "2020-03-20",
+                   "Label1" = "",
+                   "Label2" = "",
+                   "Label3" = "",
+                   "Label4" = "",
+                   "Label5" = "",
+                   "Label6" = "",
                    "Value" = 3,
-                   "Unit" = "3",
-                   "Mesasure" = "3",
-                   "Multiplier" = 3) %>% toJSON(na ="null")
+                   "Unit" = "NZD",
+                   "Mesasure" = "Wage subsidy paid out (cumulative)",
+                   "NullReason" = "",
+                   "Multiplier" = 0,
+                   "Status" = "") #%>% toJSON(na ="null")
 
 writeDatastore(observation,location = list(collection = "PDS", instance = "Covid-19", table = "Observation_test"), version = NULL, server = "uat")
 
