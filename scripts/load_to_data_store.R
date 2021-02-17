@@ -19,28 +19,30 @@ source("R/core/utils.R")
 source("R/core/consts.R")
 source("R/load_functions.R")
 
-add_to_data_store <- function(data_definition, data_store, config) {
+add_to_data_store <- function(data_definition, odata_definitions, data_store, config) {
   check_data_definition(data_definition)
   data_definition <- expand_data_definition_group_names(data_definition)
-  data <- load_functions[[data_definition$load_function]](data_definition, config$data_directory)
+  data <- load_functions[[data_definition$load_function]](data_definition, odata_definitions, config$data_directory)
   update_date <- as.Date(file.info(paste0(config$data_directory, data_definition$filename))$mtime)
 
-  #for (group_name in unique(data_definition$group_names)) {
-  for (group_name in names(data)) {
-    print(paste(data_definition$class, data_definition$indicator_name, group_name))
+  #If data is added to API
+  if(!is.null(data)){
+    #for (group_name in unique(data_definition$group_names)) {
+    for (group_name in names(data)) {
+      #print(paste(data_definition$class, data_definition$indicator_name, group_name))
 
-    key <- paste(
-      data_definition$class,
-      data_definition$type,
-      data_definition$indicator_name,
-      group_name,
-      sep = "_"
-    )
+      key <- paste(
+        data_definition$class,
+        data_definition$type,
+        data_definition$indicator_name,
+        sep = "_"
+      )
 
-    if (key %in% names(data_store)) {
-      data_store[[key]] <- data_store[[key]] + data[[group_name]]
-    } else {
-      data_store[[key]] <- data[[group_name]]
+      if (key %in% names(data_store)) {
+        data_store[[key]] <- data_store[[key]] + data[[group_name]]
+      } else {
+        data_store[[key]] <- data[[group_name]]
+      }
     }
   }
 
@@ -50,9 +52,12 @@ add_to_data_store <- function(data_definition, data_store, config) {
 load_to_data_store <- function(config) {
   data_store <- list()
   data_definitions <- read_json(config$data_definitions)
+  odata_definitions <- fromJSON(config$odata_definitions)
 
   for (data_definition in data_definitions) {
-    data_store <- add_to_data_store(data_definition, data_store, config)
+    #print(data_definition)
+    data_store <- add_to_data_store(data_definition, odata_definitions, data_store, config)
+    break
   }
   saveRDS(data_store, config$data_store_filename)
   return(data_store)

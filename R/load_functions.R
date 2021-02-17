@@ -1,4 +1,4 @@
-read_from_csv <- function(config, directory) {
+read_from_csv <- function(config, odata_definitions, directory) {
 
   if (!is.null(config$parameter_transform)) {
     parameter_transform <- eval(parse(text = config$parameter_transform))
@@ -38,6 +38,11 @@ read_from_csv <- function(config, directory) {
     data <- data %>% arrange(Parameter)
   }
 
+  if(any(config$indicator_name %in% odata_definitions$indicator_name)){
+    print("Adding data to API")
+    #data_frame_to_json_helper
+    return(NULL)
+  }
   return(data_frame_to_data_object_helper(
     directory,
     config,

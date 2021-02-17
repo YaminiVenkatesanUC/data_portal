@@ -10,5 +10,17 @@
     "duration": "P7D",
     "treatment": "Actual",
     "group_names": "undefined_name"
+    },
+    {
+    "class": "Economic",
+    "indicator_name": "Rental bonds by region - active",
+    "type": "Activity",
+    "ResourceID": "CPWAG1",
+    "Var1": "Treatment",
+    "measure": "Wage subsidy paid out (cumulative)",
+    "frequency": "Weekly",
+    "duration": "P7D",
+    "treatment": "Actual",
+    "group_names": ["undefined_name","undefined_name_2"]
     }
 ]
