@@ -4,6 +4,7 @@ data_frame_to_json_helper <- function(directory, config, odata_definitions, data
   resource <- to_resource(config, metadata)
   print(resource)
   observations <- to_observations(config, data)
+  print(observations)
 }
 
 to_observations <- function(config, data){
