@@ -1,28 +1,31 @@
 
 data_frame_to_json_helper <- function(directory, config, odata_definitions, data){
-  resource <- to_resource(config, odata_definitions)
+  metadata <- odata_definitions[which(odata_definitions$indicator_name == config$indicator_name),]
+  resource <- to_resource(config, metadata)
+  print(resource)
   observations <- to_observations(config, data)
 }
 
-to_observations <- functions(config, data){
-  data <- reshape2::melt(data,  id.vars = "Parameter") %>% toJSON(na ="null")
+to_observations <- function(config, data){
+  data <- reshape2::melt(data,  id.vars = "Parameter") #%>% toJSON(na ="null")
   return(data)
 }
 
-to_resource <- function(config, odata_definitions){
-  Resource <- tibble("ResourceID" = config$api_resource_id,
-                       "Subject" = config$type,
-                       "Title" = config$indicator_name,
+to_resource <- function(config, metadata){
+  Resource <- tibble("ResourceID" = metadata$ResourceID,
+                       "Subject" = metadata$Subject,
+                       "Title" = metadata$Title,
                        "Description" = NA,
                        "Notes" = NA,
                        "Caveats" = NA,
                        "Source" = NA,
                        "SourceURL" = NA,
                        "Modified" = NA,
-                       "Frequency" = check_null(config$frequency),
-                       "Var1" = check_null(config$var1),
-                       "Var2" = check_null(config$var2),
-                       "Var3" = check_null(config$var3)) %>% toJSON(na ="null")
+                       "Frequency" = check_null(metadata$Frequency),
+                       "Var1" = check_null(metadata$Var1),
+                       "Var2" = check_null(metadata$Var2),
+                       "Var3" = check_null(metadata$Var3)) #%>% toJSON(na ="null")
+  return(Resource)
 }
 
 check_null <- function(value){
