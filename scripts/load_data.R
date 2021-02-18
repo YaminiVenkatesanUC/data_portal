@@ -57,7 +57,7 @@ load_data <- function(config) {
   for (data_definition in data_definitions) {
     #print(data_definition)
     data_store <- add_to_data_service(data_definition, odata_definitions, data_store, config)
-    break
+    #break
   }
   saveRDS(data_store, config$data_store_filename)
   return(data_store)

@@ -1,6 +1,6 @@
 
-data_frame_to_json_helper <- function(directory, config, data){
-  resource <- to_resource(config)
+data_frame_to_json_helper <- function(directory, config, odata_definitions, data){
+  resource <- to_resource(config, odata_definitions)
   observations <- to_observations(config, data)
 }
 
@@ -9,7 +9,7 @@ to_observations <- functions(config, data){
   return(data)
 }
 
-to_resource <- function(config){
+to_resource <- function(config, odata_definitions){
   Resource <- tibble("ResourceID" = config$api_resource_id,
                        "Subject" = config$type,
                        "Title" = config$indicator_name,
