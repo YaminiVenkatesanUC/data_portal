@@ -19,7 +19,7 @@ source("R/core/utils.R")
 source("R/core/consts.R")
 source("R/load_functions.R")
 
-add_to_data_store <- function(data_definition, odata_definitions, data_store, config) {
+add_to_data_service <- function(data_definition, odata_definitions, data_store, config) {
   check_data_definition(data_definition)
   data_definition <- expand_data_definition_group_names(data_definition)
   data <- load_functions[[data_definition$load_function]](data_definition, odata_definitions, config$data_directory)
@@ -49,14 +49,14 @@ add_to_data_store <- function(data_definition, odata_definitions, data_store, co
   return(data_store)
 }
 
-load_to_data_store <- function(config) {
+load_data <- function(config) {
   data_store <- list()
   data_definitions <- read_json(config$data_definitions)
   odata_definitions <- fromJSON(config$odata_definitions)
 
   for (data_definition in data_definitions) {
     #print(data_definition)
-    data_store <- add_to_data_store(data_definition, odata_definitions, data_store, config)
+    data_store <- add_to_data_service(data_definition, odata_definitions, data_store, config)
     break
   }
   saveRDS(data_store, config$data_store_filename)
