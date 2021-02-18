@@ -7,7 +7,7 @@ odata_definitions <- fromJSON(config$odata_definitions)
 config_milk <- read_json(CONFIG$data_definitions)[[23]]
 config_job <- read_json(CONFIG$data_definitions)[[157]]
 
-dummy_var <- read_from_excel(config_milk, odata_definitions, directory)
+dummy_var <- read_from_excel(config_job, odata_definitions, directory)
 
 read_from_excel <- function(config, odata_definitions, directory) {
   if (!is.null(config$parameter_transform)) {
@@ -46,14 +46,14 @@ read_from_excel <- function(config, odata_definitions, directory) {
   if (is.null(config$order_parameter) || config$order_parameter) {
     data <- data %>% arrange(Parameter)
   }
-  if(any(config$indicator_name %in% odata_definitions$indicator_name)){
+  #error when there is not a match or indicator removed
+  if(any(config$api_resource_id %in% odata_definitions$ResourceID)){
     print("Adding data to API")
     data_frame_to_json_helper(
       directory,
       config,
       odata_definitions,
       data)
-    print("return")
     return(NULL)
   }
   return(data_frame_to_data_object_helper(

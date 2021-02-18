@@ -1,6 +1,7 @@
 
 data_frame_to_json_helper <- function(directory, config, odata_definitions, data){
-  metadata <- odata_definitions[which(odata_definitions$indicator_name == config$indicator_name),]
+  #error when there is not a match or indicator removed
+  metadata <- odata_definitions[which(odata_definitions$ResourceID == config$api_resource_id),]
   resource <- to_resource(config, metadata)
   print(resource)
   observations <- to_observations(config, data)

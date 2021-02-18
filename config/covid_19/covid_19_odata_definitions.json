@@ -1,20 +1,5 @@
 [
    {
-      "class": "Economic",
-      "indicator_name": "Rental bonds by region - active",
-      "type": "Activity",
-      "ResourceID": "CPWAG1",
-      "Var1": "Treatment",
-      "measure": "Wage subsidy paid out (cumulative)",
-      "frequency": "Weekly",
-      "duration": "P7D",
-      "treatment": "Actual",
-      "group_names": ["undefined_name","undefined_name_2"]
-   },
-   {
-      "class": "Economic",
-      "indicator_name": "Broadband usage",
-      "type": "Activity",
       "ResourceID":"CPACT1",
       "Subject":"Activity",
       "Title":"Broadband usage",
@@ -28,9 +13,6 @@
       "Multiplier":0
    },
    {
-      "class": "Economic",
-      "indicator_name": "Milk production",
-      "type": "Activity",
       "ResourceID":"CPACT2",
       "Subject":"Activity",
       "Title":"Milk production",
@@ -45,9 +27,6 @@
       "Multiplier":0
    },
    {
-      "class": "Economic",
-      "indicator_name": "Retail sales index",
-      "type": "Activity",
       "ResourceID":"CPACT3",
       "Subject":"Activity",
       "Title":"Retail sales index",
@@ -62,9 +41,6 @@
       "Multiplier":0
    },
    {
-      "class": "Income support",
-      "indicator_name": "Jobseeker support",
-      "type": "Benefits",
       "ResourceID":"CPBEN1",
       "Subject":"Benefits",
       "Title":"Jobseeker support",
@@ -81,9 +57,6 @@
       "Multiplier":""
    },
    {
-      "class": "Income support",
-      "indicator_name": "Jobseeker support by ethnicity - work ready",
-      "type": "Benefits",
       "ResourceID":"CPBEN2",
       "Subject":"Benefits",
       "Title":"Jobseeker support by ethnicity - work ready",
