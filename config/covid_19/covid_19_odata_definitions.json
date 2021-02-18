@@ -18,7 +18,11 @@
       "Description":"Daily Chorus broadband usage",
       "Source":"Chorus",
       "Modified":"2021-02-14T11:00:00Z",
-      "Frequency":"Daily"
+      "Frequency":"Daily",
+      "Duration":"",
+      "Unit":"",
+      "Measure":"",
+      "Multiplier":""
    },
    {
       "ResourceID":"CPACT2",
@@ -28,7 +32,11 @@
       "Source":"Dairy Companies Association of New Zealand",
       "SourceURL":"https://www.dcanz.com/about-the-nz-dairy-industry/",
       "Modified":"2021-01-21T11:00:00Z",
-      "Frequency":"Monthly"
+      "Frequency":"Monthly",
+      "Duration":"",
+      "Unit":"",
+      "Measure":"",
+      "Multiplier":""
    },
    {
       "ResourceID":"CPACT3",
@@ -38,7 +46,11 @@
       "Source":"Retail NZ",
       "SourceURL":"https://www.retail.kiwi/advice/benchmarking-data",
       "Modified":"2021-01-31T11:00:00Z",
-      "Frequency":"Monthly"
+      "Frequency":"Monthly",
+      "Duration":"",
+      "Unit":"",
+      "Measure":"",
+      "Multiplier":""
    },
    {
       "ResourceID":"CPBEN1",
@@ -50,7 +62,11 @@
       "Modified":"2021-02-14T11:00:00Z",
       "Frequency":"Weekly",
       "Var1":"Support type",
-      "Var2":"Treatment"
+      "Var2":"Treatment",
+      "Duration":"",
+      "Unit":"",
+      "Measure":"",
+      "Multiplier":""
    },
    {
       "ResourceID":"CPBEN2",
@@ -62,7 +78,13 @@
       "Modified":"2021-02-10T11:00:00Z",
       "Frequency":"Monthly",
       "Var1":"Ethnicity",
-      "Var2":"Treatment"
+      "Var2":"Treatment",
+      "Duration":"",
+      "Label1":"",
+      "Label2":"",
+      "Unit":"",
+      "Measure":"",
+      "Multiplier":""
    },
    {
       "ResourceID":"CPCON1",
@@ -72,7 +94,11 @@
       "Source":"gdeltproject & C. Ball",
       "SourceURL":"https://www.gdeltproject.org/",
       "Modified":"2021-01-26T11:00:00Z",
-      "Frequency":"Weekly"
+      "Frequency":"Weekly",
+      "Duration":"",
+      "Unit":"",
+      "Measure":"",
+      "Multiplier":""
    },
    {
       "ResourceID":"CPEMP1",
@@ -82,7 +108,11 @@
       "Source":"Ministry of Business, Innovation and Employment",
       "SourceURL":"https://www.mbie.govt.nz/business-and-employment/employment-and-skills/labour-market-reports-data-and-analysis/jobs-online/",
       "Modified":"2021-02-11T11:00:00Z",
-      "Frequency":"Monthly"
+      "Frequency":"Monthly",
+      "Duration":"",
+      "Unit":"",
+      "Measure":"",
+      "Multiplier":""
    },
    {
       "ResourceID":"CPEMP2",
@@ -93,7 +123,10 @@
       "SourceURL":"https://www.mbie.govt.nz/business-and-employment/employment-and-skills/labour-market-reports-data-and-analysis/jobs-online/",
       "Modified":"2021-02-11T11:00:00Z",
       "Frequency":"Monthly",
-      "Var1":"Industry"
+      "Duration":"",
+      "Unit":"",
+      "Measure":"",
+      "Multiplier":""
    },
    {
       "ResourceID":"CPFIN1",
@@ -103,7 +136,11 @@
       "Source":"Reserve Bank of New Zealand",
       "SourceURL":"https://www.rbnz.govt.nz/statistics/b1",
       "Modified":"2021-02-14T11:00:00Z",
-      "Frequency":"Week days"
+      "Frequency":"Week days",
+      "Duration":"",
+      "Unit":"",
+      "Measure":"",
+      "Multiplier":""
    },
    {
       "ResourceID":"CPHAR1",
@@ -114,7 +151,11 @@
       "SourceURL":"https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
       "Modified":"2021-02-14T11:00:00Z",
       "Frequency":"Weekly",
-      "Var1":"Treatment"
+      "Var1":"Treatment",
+      "Duration":"",
+      "Unit":"",
+      "Measure":"",
+      "Multiplier":""
    },
    {
       "ResourceID":"CPINC1",
@@ -126,7 +167,11 @@
       "Modified":"2021-02-14T11:00:00Z",
       "Frequency":"Monthly",
       "Var1":"Age group",
-      "Var2":"Treatment"
+      "Var2":"Treatment",
+      "Duration":"",
+      "Unit":"",
+      "Measure":"",
+      "Multiplier":""
    },
    {
       "ResourceID":"CPINC2",
@@ -138,7 +183,11 @@
       "Modified":"2021-02-14T11:00:00Z",
       "Frequency":"Monthly",
       "Var1":"Ethnicity",
-      "Var2":"Treatment"
+      "Var2":"Treatment",
+      "Duration":"",
+      "Unit":"",
+      "Measure":"",
+      "Multiplier":""
    },
    {
       "ResourceID":"CPINC3",
@@ -150,7 +199,11 @@
       "Modified":"2021-02-14T11:00:00Z",
       "Frequency":"Monthly",
       "Var1":"Gender",
-      "Var2":"Treatment"
+      "Var2":"Treatment",
+      "Duration":"",
+      "Unit":"",
+      "Measure":"",
+      "Multiplier":""
    },
    {
       "ResourceID":"CPINC4",
@@ -162,7 +215,11 @@
       "Modified":"2021-02-14T11:00:00Z",
       "Frequency":"Monthly",
       "Var1":"Relationship",
-      "Var2":"Treatment"
+      "Var2":"Treatment",
+      "Duration":"",
+      "Unit":"",
+      "Measure":"",
+      "Multiplier":""
    },
    {
       "ResourceID":"CPSUP1",
@@ -173,7 +230,11 @@
       "SourceURL":"https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
       "Modified":"2021-02-14T11:00:00Z",
       "Frequency":"Weekly",
-      "Var1":"Treatment"
+      "Var1":"Treatment",
+      "Duration":"",
+      "Unit":"",
+      "Measure":"",
+      "Multiplier":""
    },
    {
       "ResourceID":"CPSUP2",
@@ -184,7 +245,11 @@
       "SourceURL":"https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
       "Modified":"2021-02-14T11:00:00Z",
       "Frequency":"Weekly",
-      "Var1":"Treatment"
+      "Var1":"Treatment",
+      "Duration":"",
+      "Unit":"",
+      "Measure":"",
+      "Multiplier":""
    },
    {
       "ResourceID":"CPTRA1",
@@ -195,7 +260,11 @@
       "Modified":"2021-02-15T11:00:00Z",
       "Frequency":"Daily",
       "Var1":"Citizenship",
-      "Var2":"Treatment"
+      "Var2":"Treatment",
+      "Duration":"",
+      "Unit":"",
+      "Measure":"",
+      "Multiplier":""
    },
    {
       "ResourceID":"CPTRA2",
@@ -206,7 +275,11 @@
       "Modified":"2021-02-15T11:00:00Z",
       "Frequency":"Daily",
       "Var1":"Citizenship",
-      "Var2":"Treatment"
+      "Var2":"Treatment",
+      "Duration":"",
+      "Unit":"",
+      "Measure":"",
+      "Multiplier":""
    },
    {
       "ResourceID":"CPTRN1",
@@ -217,7 +290,11 @@
       "SourceURL":"https://corporate.aucklandairport.co.nz/news/publications/monthly-traffic-updates",
       "Modified":"2021-01-27T11:00:00Z",
       "Frequency":"Monthly",
-      "Var1":"Aircraft destination"
+      "Var1":"Aircraft destination",
+      "Duration":"",
+      "Unit":"",
+      "Measure":"",
+      "Multiplier":""
    },
    {
       "ResourceID":"CPVIS1",
@@ -229,7 +306,11 @@
       "Modified":"2021-01-25T11:00:00Z",
       "Frequency":"Monthly",
       "Var1":"Student visa type",
-      "Var2":"Treatment"
+      "Var2":"Treatment",
+      "Duration":"",
+      "Unit":"",
+      "Measure":"",
+      "Multiplier":""
    },
    {
       "ResourceID":"CPVIS2",
@@ -241,7 +322,11 @@
       "Modified":"2021-01-25T11:00:00Z",
       "Frequency":"Monthly",
       "Var1":"Work visa type",
-      "Var2":"Treatment"
+      "Var2":"Treatment",
+      "Duration":"",
+      "Unit":"",
+      "Measure":"",
+      "Multiplier":""
    },
    {
       "ResourceID":"CPWAG1",
@@ -252,7 +337,11 @@
       "SourceURL":"https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
       "Modified":"2021-02-14T11:00:00Z",
       "Frequency":"Weekly",
-      "Var1":"Treatment"
+      "Var1":"Treatment",
+      "Duration":"",
+      "Unit":"",
+      "Measure":"",
+      "Multiplier":""
    },
    {
       "ResourceID":"CPWAG2",
@@ -263,7 +352,11 @@
       "SourceURL":"https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
       "Modified":"2021-02-14T11:00:00Z",
       "Frequency":"Weekly",
-      "Var1":"Treatment"
+      "Var1":"Treatment",
+      "Duration":"",
+      "Unit":"",
+      "Measure":"",
+      "Multiplier":""
    },
    {
       "ResourceID":"CPWAG3",
@@ -275,7 +368,11 @@
       "Modified":"2021-02-14T11:00:00Z",
       "Frequency":"Weekly",
       "Var1":"Application status",
-      "Var2":"Treatment"
+      "Var2":"Treatment",
+      "Duration":"",
+      "Unit":"",
+      "Measure":"",
+      "Multiplier":""
    },
    {
       "ResourceID":"CPWAG4",
@@ -287,7 +384,11 @@
       "Modified":"2021-02-14T11:00:00Z",
       "Frequency":"Weekly",
       "Var1":"Employment type",
-      "Var2":"Treatment"
+      "Var2":"Treatment",
+      "Duration":"",
+      "Unit":"",
+      "Measure":"",
+      "Multiplier":""
    },
    {
       "ResourceID":"CPWAG5",
@@ -298,7 +399,11 @@
       "SourceURL":"https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
       "Modified":"2021-02-14T11:00:00Z",
       "Frequency":"Weekly",
-      "Var1":"Treatment"
+      "Var1":"Treatment",
+      "Duration":"",
+      "Unit":"",
+      "Measure":"",
+      "Multiplier":""
    },
    {
       "ResourceID":"CPWAG6",
@@ -309,7 +414,11 @@
       "SourceURL":"https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
       "Modified":"2021-02-14T11:00:00Z",
       "Frequency":"Weekly",
-      "Var1":"Treatment"
+      "Var1":"Treatment",
+      "Duration":"",
+      "Unit":"",
+      "Measure":"",
+      "Multiplier":""
    },
    {
       "ResourceID":"CPWAG7",
@@ -320,6 +429,10 @@
       "SourceURL":"https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
       "Modified":"2021-02-14T11:00:00Z",
       "Frequency":"Weekly",
-      "Var1":"Treatment"
+      "Var1":"Treatment",
+      "Duration":"",
+      "Unit":"",
+      "Measure":"",
+      "Multiplier":""
    }
 ]
