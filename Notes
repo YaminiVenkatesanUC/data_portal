@@ -7,3 +7,5 @@ All configuration updates should be done in config/covid_19_odata and config/cov
 
 Question: How to handel when the API is using a different name than the source? config/covid_19_odata contains a name to be kept track in the portal and a seprate name that can be the same or different from teh API.
 
+To do: configs need to be indexed by name rather than numerically. Currently we dont know which indicator in the list is which.
+
