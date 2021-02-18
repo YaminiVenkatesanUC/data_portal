@@ -3,7 +3,7 @@ API Notes:
 When removing indicator fomr data defintions the visualization for that indicator will still work in the app becuase it is not being pulled from the API.
 Question: Do we want to remove indicator from DATA_STORE once visualised by API?
 
-All configuration updates should be done in config/covid_19_odata and config/covid_19_data. How should we control when these two configs become out of sync? Developers will have to remember to update the indicator names of both.
+All configuration updates should be done in config/covid_19_odata and config/covid_19_data. How should we control when these two configs become out of sync? Developers will have to remember to update the indicator names of both. (i.e. class, indicator_name, type)
 
 Question: How to handel when the API is using a different name than the source? config/covid_19_odata contains a name to be kept track in the portal and a seprate name that can be the same or different from teh API.
 

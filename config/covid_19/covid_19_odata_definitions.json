@@ -25,6 +25,9 @@
       "Multiplier":0
    },
    {
+      "class": "Economic",
+      "indicator_name": "Milk production",
+      "type": "Activity",
       "ResourceID":"CPACT2",
       "Subject":"Activity",
       "Title":"Milk production",
