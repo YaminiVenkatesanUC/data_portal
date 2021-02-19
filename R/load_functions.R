@@ -37,12 +37,6 @@ read_from_csv <- function(config, directory) {
   if (is.null(config$order_parameter) || config$order_parameter) {
     data <- data %>% arrange(Parameter)
   }
-
-  if(any(config$indicator_name %in% odata_definitions$indicator_name)){
-    print("Adding data to API")
-    #data_frame_to_api_helper
-    return(NULL)
-  }
   return(data_frame_to_data_object_helper(
     directory,
     config,
@@ -87,7 +81,6 @@ read_from_excel <- function(config, directory) {
   if (is.null(config$order_parameter) || config$order_parameter) {
     data <- data %>% arrange(Parameter)
   }
-
   return(data_frame_to_data_object_helper(
     directory,
     config,

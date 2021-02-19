@@ -25,24 +25,23 @@ add_to_data_service <- function(data_definition, odata_definitions, data_store, 
   data <- load_functions[[data_definition$load_function]](data_definition, config$data_directory)
   update_date <- as.Date(file.info(paste0(config$data_directory, data_definition$filename))$mtime)
 
-  #If data is added to API
-  if(!is.null(data)){
-    #for (group_name in unique(data_definition$group_names)) {
-    for (group_name in names(data)) {
-      #print(paste(data_definition$class, data_definition$indicator_name, group_name))
+  #for (group_name in unique(data_definition$group_names)) {
+  for (group_name in names(data)) {
+    print(paste(data_definition$class, data_definition$indicator_name, group_name))
 
-      key <- paste(
-        data_definition$class,
-        data_definition$type,
-        data_definition$indicator_name,
-        sep = "_"
-      )
+    key <- paste(
+      data_definition$class,
+      data_definition$type,
+      data_definition$indicator_name,
+      group_name,
+      sep = "_"
+    )
 
-      if (key %in% names(data_store)) {
-        data_store[[key]] <- data_store[[key]] + data[[group_name]]
-      } else {
-        data_store[[key]] <- data[[group_name]]
-      }
+    if (key %in% names(data_store)) {
+      data_store[[key]] <- data_store[[key]] + data[[group_name]]
+    } else {
+      data_store[[key]] <- data[[group_name]]
+
     }
   }
 
