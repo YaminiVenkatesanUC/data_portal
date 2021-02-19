@@ -13,7 +13,7 @@ to_observations <- function(config, metadata, data){
   print(rep(metadata$Duration, nrow(data)))
   Observations <- tibble("ResourceID" = rep(metadata$ResourceID, nrow(data)),
                         "Geo" = rep(check_null(metadata$Geo), nrow(data)),
-                        "GeoUnit" = rep(check_null(metadata$GeoUnit), nrow(data)),,
+                        "GeoUnit" = rep(check_null(metadata$GeoUnit), nrow(data)),
                         "Duration" = rep(check_null(metadata$Duration), nrow(data)),
                         "Peroid" = data$parameter,
                         "Label1" = "",
