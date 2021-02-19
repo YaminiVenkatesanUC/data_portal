@@ -1,4 +1,4 @@
-read_from_csv <- function(config, odata_definitions, directory) {
+read_from_csv <- function(config, directory) {
 
   if (!is.null(config$parameter_transform)) {
     parameter_transform <- eval(parse(text = config$parameter_transform))
