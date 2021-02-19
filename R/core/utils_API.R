@@ -10,7 +10,6 @@ data_frame_to_json_helper <- function(directory, config, odata_definitions, data
 to_observations <- function(config, metadata, data){
   names(data) <- c("parameter", config$value_names)
   data <- reshape2::melt(data,  id.vars = "parameter") #%>% toJSON(na ="null")
-  print(rep(metadata$Duration, nrow(data)))
   Observations <- tibble("ResourceID" = rep(metadata$ResourceID, nrow(data)),
                         "Geo" = rep(check_null(metadata$Geo), nrow(data)),
                         "GeoUnit" = rep(check_null(metadata$GeoUnit), nrow(data)),

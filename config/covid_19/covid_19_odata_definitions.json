@@ -67,12 +67,12 @@
       "Frequency":"Monthly",
       "Var1":"Ethnicity",
       "Var2":"Treatment",
-      "Duration":"",
-      "Label1":"",
-      "Label2":"",
-      "Unit":"",
-      "Measure":"",
-      "Multiplier":""
+      "Duration":"P1M",
+      "Label1":"Total - work ready",
+      "Label2":"Actual",
+      "Unit":"Number",
+      "Measure":"People receiving jobseeker support benefit - work ready",
+      "Multiplier":0
    },
    {
       "ResourceID":"CPCON1",
@@ -83,10 +83,10 @@
       "SourceURL":"https://www.gdeltproject.org/",
       "Modified":"2021-01-26T11:00:00Z",
       "Frequency":"Weekly",
-      "Duration":"",
-      "Unit":"",
-      "Measure":"",
-      "Multiplier":""
+      "Duration":"P7D",
+      "Unit":"Index",
+      "Measure":"Economic sentiment",
+      "Multiplier":0
    },
    {
       "ResourceID":"CPEMP1",
@@ -97,10 +97,10 @@
       "SourceURL":"https://www.mbie.govt.nz/business-and-employment/employment-and-skills/labour-market-reports-data-and-analysis/jobs-online/",
       "Modified":"2021-02-11T11:00:00Z",
       "Frequency":"Monthly",
-      "Duration":"",
-      "Unit":"",
-      "Measure":"",
-      "Multiplier":""
+      "Duration":"P1M",
+      "Unit":"Index",
+      "Measure":"Online job advertisements index",
+      "Multiplier":0
    },
    {
       "ResourceID":"CPEMP2",
