@@ -49,7 +49,7 @@ read_from_excel <- function(config, odata_definitions, directory) {
   #error when there is not a match or indicator removed
   if(any(config$api_resource_id %in% odata_definitions$ResourceID)){
     print("Adding data to API")
-    data_frame_to_json_helper(
+    data_frame_to_api_helper(
       directory,
       config,
       odata_definitions,

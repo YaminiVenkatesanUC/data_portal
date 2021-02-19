@@ -159,7 +159,7 @@
       "Var2":"Treatment",
       "Duration":"P1M",
       "Unit":"Number",
-      "Measure":"Recipients of CIRP	",
+      "Measure":"Recipients of CIRP",
       "Multiplier":0
    },
    {
@@ -175,7 +175,7 @@
       "Var2":"Treatment",
       "Duration":"P1M",
       "Unit":"Number",
-      "Measure":"Recipients of CIRP	",
+      "Measure":"Recipients of CIRP",
       "Multiplier":0
    },
    {
@@ -237,7 +237,7 @@
       "Var1":"Treatment",
       "Duration":"P7D",
       "Unit":"Number",
-      "Measure":"Recipients of temporary additional support and special benefit	",
+      "Measure":"Recipients of temporary additional support and special benefit",
       "Multiplier":0
    },
    {

@@ -40,7 +40,7 @@ read_from_csv <- function(config, odata_definitions, directory) {
 
   if(any(config$indicator_name %in% odata_definitions$indicator_name)){
     print("Adding data to API")
-    #data_frame_to_json_helper
+    #data_frame_to_api_helper
     return(NULL)
   }
   return(data_frame_to_data_object_helper(
