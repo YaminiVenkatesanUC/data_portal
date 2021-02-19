@@ -51,10 +51,10 @@
       "Frequency":"Weekly",
       "Var1":"Support type",
       "Var2":"Treatment",
-      "Duration":"",
-      "Unit":"",
-      "Measure":"",
-      "Multiplier":""
+      "Duration":"P7D",
+      "Unit":"Number",
+      "Measure":"People receiving jobseeker support benefit",
+      "Multiplier":0
    },
    {
       "ResourceID":"CPBEN2",

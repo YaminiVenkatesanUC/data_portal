@@ -9,3 +9,7 @@ Question: How to handel when the API is using a different name than the source? 
 
 To do: configs need to be indexed by name rather than numerically. Currently we dont know which indicator in the list is which.
 
+Need to double check that col values are labeled sequentially
+
+Check that resources are only in metaddata once
+
