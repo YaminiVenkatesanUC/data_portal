@@ -11,6 +11,7 @@ library(R6)
 library(httr)
 library(data.table)
 library(tibble)
+library(gtools)
 
 
 source("R/core/build_ui.R")

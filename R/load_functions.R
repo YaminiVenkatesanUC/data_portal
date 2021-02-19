@@ -1022,6 +1022,8 @@ read_hlfs_data <- function(config, directory) {
   data_all <- data.frame(colNames = colNames, values = values) %>%
     spread(key = colNames, value = values)
 
+  data_all <- data_all[,mixedsort(colNames)]
+
   if (config$group_names == "By region") {
     regions <- c("Northland",
                  "Auckland",
@@ -1092,12 +1094,18 @@ read_hlfs_data <- function(config, directory) {
         pivot_longer(cols = 2:ncol(data), names_to = "Parameter") %>%
         separate(col = value, into = c("value", "error"), sep = "_", convert = TRUE) %>%
         mutate(lower = value - error, upper = value + error)
+
       value_ind <- unlist(config$value_col[i])
+
       lower_ind <- unlist(config$lower_bound_col[i])
+
       upper_ind <- unlist(config$upper_bound_col[i])
       data_all[[value_ind]] <- data$value
       data_all[[lower_ind]] <- data$lower
       data_all[[upper_ind]] <- data$upper
+
+
+
     }  else if(config$group_names == "Total NZ Population"){
 
       data <- data %>% select(1,2,3)
