@@ -858,7 +858,7 @@
         "parameter_col": 1,
         "parameter_transform": "function(x) ymd(x)",
         "sheet_number": 1,
-        "value_col": 3,
+        "value_col": 2,
         "value_names": "New Zealand trade weighted index ",
         "filename": "COVID 19 - RBNZ Financial indicators.xlsx",
         "load_function": "read_from_excel",
@@ -1200,6 +1200,7 @@
         "value_col": 2,
         "value_names": "Accommodation supplement",
         "filename": "COVID-19 MSD Accommodation Supplement.xlsx",
+        "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": "Accommodation supplement"
@@ -1219,6 +1220,7 @@
         "Special needs grants for food"
         ],
         "filename": "COVID-19 MSD Special Needs Grants for Food.xlsx",
+        "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": [
@@ -1239,6 +1241,7 @@
         "value_col": 2,
         "value_names": "Temporary additional support and special benefit",
         "filename": "COVID-19 MSD Temporary Additional Support and Special Benefit.xlsx",
+        "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": "Temporary additional support and special benefit"
@@ -1261,6 +1264,7 @@
           "Emergency housing grants"
           ],
         "filename": "COVID-19 MSD Emergency Housing Grants.xlsx",
+        "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": [
@@ -1285,6 +1289,7 @@
           "All special needs grants"
           ],
         "filename": "COVID-19 MSD All Special Needs Grants.xlsx",
+        "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": [
@@ -1332,6 +1337,7 @@
         "Total"
         ],
         "filename": "COVID-19 MSD Jobseeker Support by MSD Region.xlsx",
+        "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": [
@@ -2063,6 +2069,7 @@
             "Total"
         ],
         "filename": "COVID-19 MSD Jobseeker Support By Region.xlsx",
+        "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries"
     },
@@ -2628,6 +2635,7 @@
         "value_col": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
         "value_names":["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"],
         "filename": "COVID 19 - MSD Jobseeker by region and Hardship grants.xlsx",
+        "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": ["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"]
@@ -2647,6 +2655,7 @@
         "value_col": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
         "value_names":["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"],
         "filename": "COVID 19 - MSD Jobseeker by region and Hardship grants.xlsx",
+        "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": ["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"]
@@ -2666,6 +2675,7 @@
         "value_col": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
         "value_names":["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"],
         "filename": "COVID 19 - MSD Jobseeker by region and Hardship grants.xlsx",
+        "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": ["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"]
@@ -2685,6 +2695,7 @@
         "value_col": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
         "value_names":["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"],
         "filename": "COVID 19 - MSD Jobseeker by region and Hardship grants.xlsx",
+        "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": ["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"]
@@ -2704,6 +2715,7 @@
         "value_col": [6, 2, 3, 4, 5],
         "value_names":["Total - work ready","Māori", "NZ European", "Pacific peoples", "All other ethnicities"],
         "filename": "COVID 19 - MSD Jobseeker by region and Hardship grants.xlsx",
+        "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": ["Total - work ready","Māori", "NZ European", "Pacific peoples", "All other ethnicities"]
@@ -2723,6 +2735,7 @@
         "value_col": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
         "value_names":["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"],
         "filename": "COVID 19 - MSD Jobseeker by region and Hardship grants.xlsx",
+        "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": ["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"]
@@ -3453,12 +3466,14 @@
         16,
         17,
         18,
-        19
+        19,
+        20
         ],
         "value_names": [
         "Auckland",
         "Bay of Plenty",
         "Canterbury",
+        "Chatham Islands",
         "Gisborne",
         "Hawke's Bay",
         "Manawatū-Whanganui",
@@ -3496,6 +3511,7 @@
             "Total"
         ],
         "filename": "COVID 19 - MSD Jobseeker by regional council.xlsx",
+        "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries"
     }
@@ -3571,6 +3587,7 @@
             "Total"
         ],
         "filename": "COVID 19 - MSD Jobseeker by regional council.xlsx",
+        "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries"
     } ,
@@ -3646,6 +3663,7 @@
             "Total"
         ],
         "filename": "COVID 19 - MSD Jobseeker by regional council.xlsx",
+        "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries"
     }
@@ -3722,6 +3740,7 @@
             "Total"
         ],
         "filename": "COVID 19 - MSD Jobseeker by regional council.xlsx",
+        "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries"
     }
@@ -3798,6 +3817,7 @@
             "Total"
         ],
         "filename": "COVID 19 - MSD Jobseeker by regional council.xlsx",
+        "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries"
     },
@@ -3873,6 +3893,7 @@
             "Total"
         ],
         "filename": "COVID 19 - MSD Jobseeker by regional council.xlsx",
+        "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries"
     },
@@ -4270,6 +4291,7 @@
   	],
   	"filename": "COVID-19 MSD Number of CIRP Recipients.xlsx",
   	"load_function": "read_from_excel",
+  	"drop_na": false,
   	"data_type": "TimeSeries",
   	"group_names": "undefined_name"
     },
@@ -4321,6 +4343,7 @@
       "Other/Unknown"
       ],
     "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "drop_na": false,
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
     "group_names": [
@@ -4358,6 +4381,7 @@
     "value_col": 2,
     "value_names": "Amount of wage subsidy refunds received",
     "filename": "COVID-19 MSD Amount of Wage Subsidy Refunds.xlsx",
+    "drop_na": false,
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
     "group_names": "undefined_name"
@@ -4376,6 +4400,7 @@
     "value_col": 6,
     "value_names": "Number of jobs supported by the wage subsidy extension",
     "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "drop_na": false,
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
     "group_names": "undefined_name"
@@ -4394,6 +4419,7 @@
     "value_col": 2,
     "value_names": "Number of wage subsidy refunds received",
     "filename": "COVID-19 MSD Number of Wage Subsidy Refunds.xlsx",
+    "drop_na": false,
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
     "group_names": "undefined_name"
@@ -4412,6 +4438,7 @@
     "value_col": 3,
     "value_names": "Number of jobs associated with a paid application",
     "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "drop_na": false,
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
     "group_names": "undefined_name"
@@ -4430,6 +4457,7 @@
     "value_col": 2,
     "value_names": "Amount of wage subsidy extension paid",
     "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "drop_na": false,
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
     "group_names": "undefined_name"
@@ -4456,6 +4484,7 @@
     "Health Condition and Disability"
     ],
     "filename": "COVID-19 MSD Jobseeker Support.xlsx",
+    "drop_na": false,
     "load_function": "read_from_excel",
     "frequency" : "Weekly",
     "var1" : "Support Type",
@@ -4478,6 +4507,7 @@
     "Percentage of the working-age population"
     ],
     "filename": "COVID-19 MSD Percentage of Population.xlsx",
+    "drop_na": false,
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
     "group_names": [
@@ -4508,6 +4538,7 @@
     "Declined"
     ],
     "filename": "COVID-19 MSD Number of Applications.xlsx",
+    "drop_na": false,
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
     "group_names": "undefined_name"
@@ -4534,6 +4565,7 @@
     "Self-employed"
     ],
     "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "drop_na": false,
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
     "group_names": "undefined_name"
@@ -4552,6 +4584,7 @@
     "value_col": 2,
     "value_names": "Amount paid out",
     "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "drop_na": false,
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
     "group_names": "undefined_name"
@@ -4594,6 +4627,7 @@
        "65+ years"
         ],
     "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "drop_na": false,
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
     "group_names": [
@@ -4634,6 +4668,7 @@
       "Total"
         ],
     "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "drop_na": false,
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
     "group_names": [
@@ -4668,6 +4703,7 @@
       "Total"
         ],
     "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "drop_na": false,
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
     "group_names": [
@@ -4702,6 +4738,7 @@
       "Total"
         ],
     "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "drop_na": false,
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
     "group_names": [
@@ -4734,6 +4771,7 @@
       "Number of jobs supported by the wage subsidy extension"
         ],
     "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "drop_na": false,
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
     "group_names": [
@@ -4759,6 +4797,7 @@
 
         ],
     "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "drop_na": false,
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
     "group_names": [
@@ -4782,6 +4821,7 @@
 
         ],
     "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "drop_na": false,
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
     "group_names": [
@@ -4939,6 +4979,7 @@
 		 "Total"
 		],
 	"filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+	"drop_na": false,
   "load_function": "read_from_excel",
   "data_type": "TimeSeries",
   "group_names": [
