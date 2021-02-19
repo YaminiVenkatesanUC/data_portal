@@ -111,10 +111,11 @@
       "SourceURL":"https://www.mbie.govt.nz/business-and-employment/employment-and-skills/labour-market-reports-data-and-analysis/jobs-online/",
       "Modified":"2021-02-11T11:00:00Z",
       "Frequency":"Monthly",
-      "Duration":"",
-      "Unit":"",
-      "Measure":"",
-      "Multiplier":""
+      "Var1":"Ethnicity",
+      "Duration":"P1M",
+      "Unit":"Index",
+      "Measure":"Online job advertisements index",
+      "Multiplier":0
    },
    {
       "ResourceID":"CPFIN1",
@@ -125,10 +126,10 @@
       "SourceURL":"https://www.rbnz.govt.nz/statistics/b1",
       "Modified":"2021-02-14T11:00:00Z",
       "Frequency":"Week days",
-      "Duration":"",
-      "Unit":"",
-      "Measure":"",
-      "Multiplier":""
+      "Duration":"P1D",
+      "Unit":"Index",
+      "Measure":"Trade weighted index",
+      "Multiplier":0
    },
    {
       "ResourceID":"CPHAR1",
@@ -140,10 +141,10 @@
       "Modified":"2021-02-14T11:00:00Z",
       "Frequency":"Weekly",
       "Var1":"Treatment",
-      "Duration":"",
-      "Unit":"",
-      "Measure":"",
-      "Multiplier":""
+      "Duration":"P7D",
+      "Unit":"Number",
+      "Measure":"Special needs grants approved",
+      "Multiplier":0
    },
    {
       "ResourceID":"CPINC1",
@@ -156,10 +157,10 @@
       "Frequency":"Monthly",
       "Var1":"Age group",
       "Var2":"Treatment",
-      "Duration":"",
-      "Unit":"",
-      "Measure":"",
-      "Multiplier":""
+      "Duration":"P1M",
+      "Unit":"Number",
+      "Measure":"Recipients of CIRP	",
+      "Multiplier":0
    },
    {
       "ResourceID":"CPINC2",
@@ -172,10 +173,10 @@
       "Frequency":"Monthly",
       "Var1":"Ethnicity",
       "Var2":"Treatment",
-      "Duration":"",
-      "Unit":"",
-      "Measure":"",
-      "Multiplier":""
+      "Duration":"P1M",
+      "Unit":"Number",
+      "Measure":"Recipients of CIRP	",
+      "Multiplier":0
    },
    {
       "ResourceID":"CPINC3",
@@ -188,10 +189,10 @@
       "Frequency":"Monthly",
       "Var1":"Gender",
       "Var2":"Treatment",
-      "Duration":"",
-      "Unit":"",
-      "Measure":"",
-      "Multiplier":""
+      "Duration":"P1M",
+      "Unit":"Number",
+      "Measure":"Recipients of CIRP",
+      "Multiplier":0
    },
    {
       "ResourceID":"CPINC4",
@@ -204,10 +205,10 @@
       "Frequency":"Monthly",
       "Var1":"Relationship",
       "Var2":"Treatment",
-      "Duration":"",
-      "Unit":"",
-      "Measure":"",
-      "Multiplier":""
+      "Duration":"P1M",
+      "Unit":"Number",
+      "Measure":"Recipients of CIRP",
+      "Multiplier":0
    },
    {
       "ResourceID":"CPSUP1",
@@ -219,10 +220,10 @@
       "Modified":"2021-02-14T11:00:00Z",
       "Frequency":"Weekly",
       "Var1":"Treatment",
-      "Duration":"",
-      "Unit":"",
-      "Measure":"",
-      "Multiplier":""
+      "Duration":"P7D",
+      "Unit":"Number",
+      "Measure":"Recipients of accommodation supplement",
+      "Multiplier":0
    },
    {
       "ResourceID":"CPSUP2",
@@ -234,10 +235,10 @@
       "Modified":"2021-02-14T11:00:00Z",
       "Frequency":"Weekly",
       "Var1":"Treatment",
-      "Duration":"",
-      "Unit":"",
-      "Measure":"",
-      "Multiplier":""
+      "Duration":"P7D",
+      "Unit":"Number",
+      "Measure":"Recipients of temporary additional support and special benefit	",
+      "Multiplier":0
    },
    {
       "ResourceID":"CPTRA1",
@@ -249,10 +250,10 @@
       "Frequency":"Daily",
       "Var1":"Citizenship",
       "Var2":"Treatment",
-      "Duration":"",
-      "Unit":"",
-      "Measure":"",
-      "Multiplier":""
+      "Duration":"P1D",
+      "Unit":"Number",
+      "Measure":"Border crossings - arrivals",
+      "Multiplier":0
    },
    {
       "ResourceID":"CPTRA2",
@@ -264,10 +265,10 @@
       "Frequency":"Daily",
       "Var1":"Citizenship",
       "Var2":"Treatment",
-      "Duration":"",
-      "Unit":"",
-      "Measure":"",
-      "Multiplier":""
+      "Duration":"P1D",
+      "Unit":"Number",
+      "Measure":"Border crossings - departures",
+      "Multiplier":0
    },
    {
       "ResourceID":"CPTRN1",
@@ -279,10 +280,10 @@
       "Modified":"2021-01-27T11:00:00Z",
       "Frequency":"Monthly",
       "Var1":"Aircraft destination",
-      "Duration":"",
-      "Unit":"",
-      "Measure":"",
-      "Multiplier":""
+      "Duration":"P1M",
+      "Unit":"Tonnes",
+      "Measure":"Aircraft takeoff weight",
+      "Multiplier":0
    },
    {
       "ResourceID":"CPVIS1",
@@ -295,10 +296,10 @@
       "Frequency":"Monthly",
       "Var1":"Student visa type",
       "Var2":"Treatment",
-      "Duration":"",
-      "Unit":"",
-      "Measure":"",
-      "Multiplier":""
+      "Duration":"P1M",
+      "Unit":"Number",
+      "Measure":"People on a student visa",
+      "Multiplier":0
    },
    {
       "ResourceID":"CPVIS2",
@@ -311,10 +312,10 @@
       "Frequency":"Monthly",
       "Var1":"Work visa type",
       "Var2":"Treatment",
-      "Duration":"",
-      "Unit":"",
-      "Measure":"",
-      "Multiplier":""
+      "Duration":"P1M",
+      "Unit":"Number",
+      "Measure":"People on a work visa",
+      "Multiplier":"0"
    },
    {
       "ResourceID":"CPWAG1",
@@ -326,10 +327,10 @@
       "Modified":"2021-02-14T11:00:00Z",
       "Frequency":"Weekly",
       "Var1":"Treatment",
-      "Duration":"",
-      "Unit":"",
-      "Measure":"",
-      "Multiplier":""
+      "Duration":"P7D",
+      "Unit":"NZD",
+      "Measure":"Wage subsidy paid out (cumulative)",
+      "Multiplier":0
    },
    {
       "ResourceID":"CPWAG2",
@@ -341,10 +342,10 @@
       "Modified":"2021-02-14T11:00:00Z",
       "Frequency":"Weekly",
       "Var1":"Treatment",
-      "Duration":"",
-      "Unit":"",
-      "Measure":"",
-      "Multiplier":""
+      "Duration":"P7D",
+      "Unit":"NZD",
+      "Measure":"Wage subsidy refunds received (cumulative)",
+      "Multiplier":0
    },
    {
       "ResourceID":"CPWAG3",
@@ -357,10 +358,10 @@
       "Frequency":"Weekly",
       "Var1":"Application status",
       "Var2":"Treatment",
-      "Duration":"",
-      "Unit":"",
-      "Measure":"",
-      "Multiplier":""
+      "Duration":"P7D",
+      "Unit":"Number",
+      "Measure":"Wage subsidy applications (cumulative)",
+      "Multiplier":0
    },
    {
       "ResourceID":"CPWAG4",
@@ -373,10 +374,10 @@
       "Frequency":"Weekly",
       "Var1":"Employment type",
       "Var2":"Treatment",
-      "Duration":"",
-      "Unit":"",
-      "Measure":"",
-      "Multiplier":""
+      "Duration":"P7D",
+      "Unit":"Number",
+      "Measure":"Jobs associated with paid out subsidy applications (cumulative)",
+      "Multiplier":0
    },
    {
       "ResourceID":"CPWAG5",
@@ -388,10 +389,10 @@
       "Modified":"2021-02-14T11:00:00Z",
       "Frequency":"Weekly",
       "Var1":"Treatment",
-      "Duration":"",
-      "Unit":"",
-      "Measure":"",
-      "Multiplier":""
+      "Duration":"P7D",
+      "Unit":"Number",
+      "Measure":"Wage subsidy refunds received (cumulative)",
+      "Multiplier":0
    },
    {
       "ResourceID":"CPWAG6",
@@ -403,10 +404,10 @@
       "Modified":"2021-02-14T11:00:00Z",
       "Frequency":"Weekly",
       "Var1":"Treatment",
-      "Duration":"",
-      "Unit":"",
-      "Measure":"",
-      "Multiplier":""
+      "Duration":"P7D",
+      "Unit":"NZD",
+      "Measure":"Wage subsidy extension paid (cumulative)",
+      "Multiplier":0
    },
    {
       "ResourceID":"CPWAG7",
@@ -418,9 +419,9 @@
       "Modified":"2021-02-14T11:00:00Z",
       "Frequency":"Weekly",
       "Var1":"Treatment",
-      "Duration":"",
-      "Unit":"",
-      "Measure":"",
-      "Multiplier":""
+      "Duration":"P7D",
+      "Unit":"Number",
+      "Measure":"Jobs associated with paid out subsidy applications (cumulative)",
+      "Multiplier":0
    }
 ]
