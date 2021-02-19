@@ -12,9 +12,9 @@ to_observations <- function(config, metadata, data){
   data <- reshape2::melt(data,  id.vars = "parameter") #%>% toJSON(na ="null")
   print(rep(metadata$Duration, nrow(data)))
   Observations <- tibble("ResourceID" = rep(metadata$ResourceID, nrow(data)),
-                        "Geo" = "",
-                        "GeoUnit" = "",
-                        "Duration" = rep(metadata$Duration, nrow(data)),
+                        "Geo" = rep(check_null(metadata$Geo), nrow(data)),
+                        "GeoUnit" = rep(check_null(metadata$GeoUnit), nrow(data)),,
+                        "Duration" = rep(check_null(metadata$Duration), nrow(data)),
                         "Peroid" = data$parameter,
                         "Label1" = "",
                         "Label2" = "",
@@ -23,11 +23,11 @@ to_observations <- function(config, metadata, data){
                         "Label5" = "",
                         "Label6" = "",
                         "Value" = data$value,
-                        "Unit" = rep(metadata$Unit, nrow(data)),
-                        "Mesasure" = rep(metadata$Measure, nrow(data)),
-                        "NullReason" = "",
-                        "Multiplier" = rep(metadata$Multiplier, nrow(data)),
-                        "Status" = "")
+                        "Unit" = rep(check_null(metadata$Unit), nrow(data)),
+                        "Mesasure" = rep(check_null(metadata$Measure), nrow(data)),
+                        "NullReason" = NA,
+                        "Multiplier" = rep(check_null(metadata$Multiplier), nrow(data)),
+                        "Status" = NA)
   print(Observations)
   return(Observations)
 }
@@ -36,12 +36,12 @@ to_resource <- function(config, metadata){
   Resource <- tibble("ResourceID" = metadata$ResourceID,
                      "Subject" = metadata$Subject,
                      "Title" = metadata$Title,
-                     "Description" = NA,
-                     "Notes" = NA,
-                     "Caveats" = NA,
-                     "Source" = NA,
-                     "SourceURL" = NA,
-                     "Modified" = NA,
+                     "Description" = check_null(metadata$Description),
+                     "Notes" = check_null(metadata$Notes),
+                     "Caveats" = check_null(metadata$Caveats),
+                     "Source" = check_null(metadata$Source),
+                     "SourceURL" = check_null(metadata$SourceURL),
+                     "Modified" = check_null(metadata$Modified),
                      "Frequency" = check_null(metadata$Frequency),
                      "Var1" = check_null(metadata$Var1),
                      "Var2" = check_null(metadata$Var2),
