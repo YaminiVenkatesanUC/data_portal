@@ -23,7 +23,6 @@
         15,
         16,
         17,
-        18
         ],
         "value_names": [
         "National",
@@ -576,6 +575,7 @@
         "class": "Economic",
         "indicator_name": "Economic sentiment",
         "type": "Confidence",
+        "ResourceID":"CPCON1",
         "parameter_col": 3,
         "parameter_transform": "function (x) ymd(x)",
         "sheet_number": 1,
@@ -589,7 +589,7 @@
     {
         "class": "Economic",
         "indicator_name": "Milk production",
-        "api_resource_id": "CPACT2",
+        "ResourceID": "CPACT2",
         "type": "Activity",
         "parameter_col": 1,
         "input_units": 1000,
@@ -647,6 +647,7 @@
         "class": "Economic",
         "indicator_name": "Daily border crossings - departures",
         "type": "Travel",
+        "ResourceID":"CPTRA2",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -676,6 +677,7 @@
         "class": "Economic",
         "indicator_name": "Daily border crossings - arrivals",
         "type": "Travel",
+        "ResourceID":"CPTRA1",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -744,7 +746,7 @@
         "class": "Economic",
         "indicator_name": "Broadband usage",
         "type": "Activity",
-        "api_resource_id": "CPACT1",
+        "ResourceID": "CPACT1",
         "parameter_col": 1,
         "value_col": [2],
         "value_names": ["Broadband usage"],
@@ -852,6 +854,7 @@
         "class": "Economic",
         "indicator_name": "Trade weighted index",
         "type": "Financial",
+        "ResourceID":"CPFIN1",
         "parameter_col": 1,
         "parameter_transform": "function(x) ymd(x)",
         "sheet_number": 1,
@@ -1226,6 +1229,7 @@
         "class": "Income support",
         "indicator_name": "Temporary additional support and special benefit",
         "type": "Supplementary support",
+        "ResourceID":"CPSUP2",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -1269,6 +1273,7 @@
         "class": "Income support",
         "indicator_name": "All special needs grants",
         "type": "Hardship assistance",
+        "ResourceID":"CPHAR1",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -1782,6 +1787,7 @@
         "class": "Economic",
         "indicator_name": "Aircraft takeoff weights",
         "type": "Transport",
+        "ResourceID":"CPTRN1",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -2063,7 +2069,7 @@
     {
         "class": "Economic",
         "indicator_name": "Retail sales index",
-        "api_resource_id": "CPACT3",
+        "ResourceID": "CPACT3",
         "input_units": 100,
         "type": "Activity",
         "parameter_col": 1,
@@ -2688,6 +2694,7 @@
         "class": "Income support",
         "indicator_name": "Jobseeker support by ethnicity - work ready",
         "type": "Benefits",
+        "ResourceID":"CPBEN2",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -2706,6 +2713,7 @@
         "class": "Income support",
         "indicator_name": "Accommodation supplement by MSD region",
         "type": "Supplementary support",
+        "ResourceID":"CPSUP1",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -3872,6 +3880,7 @@
   "class": "Economic",
   "indicator_name": "Student visa",
   "type": "Visa",
+  "ResourceID":"CPVIS1",
   "date_filter": "function(x) x > dmy(\"01-01-2015\")",
   "parameter_col": 1,
   "parameter_transform": [
@@ -3911,11 +3920,11 @@
   "class": "Economic",
   "indicator_name": "Work visa",
   "type": "Visa",
+  "ResourceID":"CPVIS2",
   "date_filter": "function(x) x > dmy(\"01-01-2015\")",
   "parameter_col": 1,
   "parameter_transform": [
     "function (x) dmy(x)"   ],
-
   "value_col": [
     2,
     3,
@@ -3923,7 +3932,6 @@
     5,
     6,
     7
-
     ],
   "value_names": [
     "Essential skills",
@@ -4134,6 +4142,7 @@
       "class": "Economic",
       "type": "Employment",
       "indicator_name": "Jobs online measure",
+      "ResourceID":"CPEMP1",
       "parameter_col": 1,
       "skip": 1,
       "value_col": [2],
@@ -4186,6 +4195,7 @@
      "class": "Economic",
      "type": "Employment",
      "indicator_name": "Jobs online measure by industry",
+     "ResourceID":"CPEMP2",
      "parameter_col": 1,
      "skip": 1,
      "value_col": [
@@ -4338,6 +4348,7 @@
     "class": "Income support",
     "indicator_name": "Amount of wage subsidy refunds received",
     "type": "Wage subsidy assistance",
+    "ResourceID":"CPWAG2",
     "parameter_col": 1,
     "parameter_transform": [
     "function (x) ",
@@ -4373,6 +4384,7 @@
     "class": "Income support",
     "indicator_name": "Number of wage subsidy refunds received",
     "type": "Wage subsidy assistance",
+    "ResourceID":"CPWAG5",
     "parameter_col": 1,
     "parameter_transform": [
     "function (x) ",
@@ -4390,6 +4402,7 @@
     "class": "Income support",
     "indicator_name": "Number of jobs associated with a paid application",
     "type": "Wage subsidy extension",
+    "ResourceID":"CPWAG7",
     "parameter_col": 1,
     "parameter_transform": [
     "function (x) ",
@@ -4407,6 +4420,7 @@
     "class": "Income support",
     "indicator_name": "Amount of wage subsidy extension paid",
     "type": "Wage subsidy extension",
+    "ResourceID":"CPWAG6",
     "parameter_col": 1,
     "parameter_transform": [
     "function (x) ",
@@ -4423,7 +4437,7 @@
 	 {
     "class": "Income support",
     "indicator_name": "Jobseeker support",
-    "api_resource_id": "CPBEN1",
+    "ResourceID": "CPBEN1",
     "type": "Benefits",
     "parameter_col": 1,
     "parameter_transform": [
@@ -4474,6 +4488,7 @@
     "class": "Income support",
     "indicator_name": "Number of applications",
     "type": "Wage subsidy assistance",
+    "ResourceID":"CPWAG3",
     "parameter_col": 1,
     "parameter_transform": [
     "function (x) ",
@@ -4501,6 +4516,7 @@
     "class": "Income support",
     "indicator_name": "Number of paid applications",
     "type": "Wage subsidy assistance",
+    "ResourceID":"CPWAG4",
     "parameter_col": 1,
     "parameter_transform": [
     "function (x) ",
@@ -4526,6 +4542,7 @@
     "class": "Income support",
     "indicator_name": "Amount of wage subsidy paid out",
     "type": "Wage subsidy assistance",
+    "ResourceID":"CPWAG1",
     "parameter_col": 1,
     "parameter_transform": [
     "function (x) ",
@@ -4543,6 +4560,7 @@
     "class": "Income support",
     "indicator_name": "Number of recipients of CIRP by age group",
     "type": "Income relief payment",
+    "ResourceID":"CPINC1",
     "parameter_col": 1,
     "parameter_transform": [
       "function (x) ymd(x)"
@@ -4597,6 +4615,7 @@
     "class": "Income support",
     "indicator_name": "Income relief payment by gender",
     "type": "Income relief payment",
+    "ResourceID":"CPINC3",
     "parameter_col": 1,
     "parameter_transform": [
       "function (x) ymd(x)"
@@ -4628,6 +4647,7 @@
     "class": "Income support",
     "indicator_name": "Income relief payment by ethnicity",
     "type": "Income relief payment",
+    "ResourceID":"CPINC2",
     "parameter_col": 1,
     "parameter_transform": [
       "function (x) ymd(x)"
@@ -4664,6 +4684,7 @@
     "class": "Income support",
     "indicator_name": "Income relief payment by relationship",
     "type": "Income relief payment",
+    "ResourceID":"CPINC4",
     "parameter_col": 1,
     "parameter_transform": [
       "function (x) ymd(x)"
