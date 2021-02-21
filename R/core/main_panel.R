@@ -92,6 +92,11 @@ top_panel_ui <- function(id, indicator_class) {
          selected = ""
         )
       )
+    ),
+    column(
+      12,
+      htmlOutput(ns("indicator_description")),
+      align = "center"
     )
   )
 }
@@ -365,5 +370,19 @@ main_plot_server <- function(
     } else {
       return(HTML(NULL))
     }
+  })
+
+  output$indicator_description <- renderUI({
+
+    group_definition <- get_group_definition()
+    indicator_definition <- get_indicator_definition()
+    description <- get_definition_parameter("description_html", indicator_definition, group_definition)
+
+    if (!is.null(description)) {
+      return(HTML(create_description_box(description, id = "description-text" ), sep = '<br/>'))
+    } else {
+      return(HTML(NULL))
+    }
+
   })
 }

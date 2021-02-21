@@ -263,6 +263,19 @@ create_caveat_box <- function(buttonText, id) {
   return(output)
 }
 
+create_description_box <- function(buttonText, id){
+  class <- paste0("class=\"", id, "\"")
+    output <- paste(
+      #paste0("<h1 class='indicator-hero-title'>", title, "</h1>"),
+      "<div",
+      class,
+      "><span style=\"color: black;font-weight:600;\"><p>",
+      buttonText,
+      "</p></span></div>"
+    )
+
+}
+
 # Similar to get_normalisation_factor below, but for a single
 #   value
 # TODO: These functions should be combined into one and improved
