@@ -1,4 +1,4 @@
-read_from_csv <- function(config, directory) {
+read_from_csv <- function(config, directory, odata_definitions=NULL) {
 
   if (!is.null(config$parameter_transform)) {
     parameter_transform <- eval(parse(text = config$parameter_transform))
@@ -37,6 +37,16 @@ read_from_csv <- function(config, directory) {
   if (is.null(config$order_parameter) || config$order_parameter) {
     data <- data %>% arrange(Parameter)
   }
+
+  if(any(config$ResourceID %in% odata_definitions$ResourceID)){
+    metadata <- odata_definitions[which(odata_definitions$ResourceID == config$ResourceID),]
+    resource <- data_frame_to_api_helper(directory, config, metadata, data)
+    print("Adding data to API")
+    print(config$indicator_name)
+    print(metadata)
+    print(resource)
+    return(NULL)
+  }
   return(data_frame_to_data_object_helper(
     directory,
     config,
@@ -44,7 +54,7 @@ read_from_csv <- function(config, directory) {
   ))
 }
 
-read_from_excel <- function(config, directory) {
+read_from_excel <- function(config, directory, odata_definitions=NULL) {
   if (!is.null(config$parameter_transform)) {
     parameter_transform <- eval(parse(text = config$parameter_transform))
   }
@@ -81,6 +91,17 @@ read_from_excel <- function(config, directory) {
   if (is.null(config$order_parameter) || config$order_parameter) {
     data <- data %>% arrange(Parameter)
   }
+
+  if(any(config$ResourceID %in% odata_definitions$ResourceID)){
+    metadata <- odata_definitions[which(odata_definitions$ResourceID == config$ResourceID),]
+    resource <- data_frame_to_api_helper(directory, config, metadata, data)
+    print("Adding data to API")
+    print(config$indicator_name)
+    print(metadata)
+    print(resource)
+    return(NULL)
+  }
+
   return(data_frame_to_data_object_helper(
     directory,
     config,
@@ -123,11 +144,11 @@ read_border_crossing_data <- function(config, directory, data_col = 4) {
   ))
 }
 
-read_border_crossing_data_daily <- function(config, directory) {
+read_border_crossing_data_daily <- function(config, directory, odata_definitions=NULL) {
   return(read_border_crossing_data(config, directory, data_col = 3))
 }
 
-read_monetary_policy_file <- function(config, directory) {
+read_monetary_policy_file <- function(config, directory, odata_definitions=NULL) {
   cols_to_read <- 1:2
   data <- as.data.frame(read_excel(
     paste0(directory, config$filename),
@@ -144,7 +165,7 @@ read_monetary_policy_file <- function(config, directory) {
 }
 
 
-read_traffic_data <- function(config, directory) {
+read_traffic_data <- function(config, directory, odata_definitions=NULL) {
   cols_to_read <- 1:5
   data <- as.data.frame(read_excel(
     paste0(directory, config$filename),
@@ -176,7 +197,7 @@ read_traffic_data <- function(config, directory) {
   ))
 }
 
-read_global_cases_file <- function(config, directory) {
+read_global_cases_file <- function(config, directory, odata_definitions=NULL) {
   cols_to_read <- 1:5
   data <- as.data.frame(read_excel(
     paste0(directory, config$filename),
@@ -210,7 +231,7 @@ read_global_cases_file <- function(config, directory) {
 }
 
 
-petrol_read_file <- function(config, directory) {
+petrol_read_file <- function(config, directory, odata_definitions=NULL) {
   filename <- config$filename
   data <- as.data.frame(read_excel(
     paste0(directory, filename),
@@ -244,7 +265,7 @@ petrol_read_file <- function(config, directory) {
   ))
 }
 
-petrol_read_file_month <- function(config, directory) {
+petrol_read_file_month <- function(config, directory, odata_definitions=NULL) {
   filename <- config$filename
   data <- as.data.frame(read_excel(
     paste0(directory, filename),
@@ -279,7 +300,7 @@ petrol_read_file_month <- function(config, directory) {
   ))
 }
 
-read_trade_data <- function(config, directory) {
+read_trade_data <- function(config, directory, odata_definitions=NULL) {
   load_parameters <- config$load_parameters
   data <- read.csv(
     paste0(directory, config$filename),
@@ -318,10 +339,10 @@ read_trade_data <- function(config, directory) {
   return(output_group)
 }
 
-chorus_load_function <- function(config, directory) {
+chorus_load_function <- function(config, directory, odata_definitions=NULL) {
   input_files <- list.files(paste0(directory, config$filename))
   data <- foreach(i = 1:length(input_files), .combine = rbind) %do% {
-    print(paste0(directory, config$filename, "/", input_files[[i]]))
+    #print(paste0(directory, config$filename, "/", input_files[[i]]))
     output <- as.data.frame(read_excel(
       paste0(directory, config$filename, "/", input_files[[i]]),
       sheet = 1,
@@ -378,7 +399,7 @@ example_web_service_load_function <- function(data, indicator, group_name) {
   return(data_object)
 }
 
-read_employment_data <- function(config, directory) {
+read_employment_data <- function(config, directory, odata_definitions=NULL) {
   load_parameters <- config$load_parameters
   data <- read.csv(
     paste0(directory, config$filename),
@@ -416,8 +437,8 @@ read_employment_data <- function(config, directory) {
   return(output_group)
 }
 
-read_filled_jobs_by_gender <- function(config, directory) {
-  print(paste0(directory, config$filename))
+read_filled_jobs_by_gender <- function(config, directory, odata_definitions=NULL) {
+  #print(paste0(directory, config$filename))
   load_parameters <- config$load_parameters
   data <- read.csv(
     paste0(directory, config$filename),
@@ -450,8 +471,8 @@ read_filled_jobs_by_gender <- function(config, directory) {
 }
 
 
-read_filled_jobs_by_age <- function(config, directory) {
-  print(paste0(directory, config$filename))
+read_filled_jobs_by_age <- function(config, directory, odata_definitions=NULL) {
+  #print(paste0(directory, config$filename))
   load_parameters <- config$load_parameters
   data <- read.csv(
     paste0(directory, config$filename),
@@ -488,7 +509,7 @@ read_filled_jobs_by_age <- function(config, directory) {
 }
 
 
-read_filled_jobs_by_industry_or_region <- function(config, directory) {
+read_filled_jobs_by_industry_or_region <- function(config, directory, odata_definitions=NULL) {
   load_parameters <- config$load_parameters
   data <- read.csv(
     paste0(directory, config$filename),
@@ -521,7 +542,7 @@ read_filled_jobs_by_industry_or_region <- function(config, directory) {
   return(output_group)
 }
 
-read_employment_paid_jobs_data <- function(config, directory) {
+read_employment_paid_jobs_data <- function(config, directory, odata_definitions=NULL) {
   cols_to_read <- 1:4
   data <- as.data.frame(read.csv(
     paste0(directory, config$filename),
@@ -558,7 +579,7 @@ read_employment_paid_jobs_data <- function(config, directory) {
 }
 
 
-read_from_csv_error <- function(config, directory) {
+read_from_csv_error <- function(config, directory, odata_definitions=NULL) {
   if (!is.null(config$parameter_transform)) {
     parameter_transform <- eval(parse(text = config$parameter_transform))
   }
@@ -636,7 +657,7 @@ read_from_csv_error <- function(config, directory) {
 
 
 
-read_from_excel_error <- function(config, directory) {
+read_from_excel_error <- function(config, directory, odata_definitions=NULL) {
   if (!is.null(config$parameter_transform)) {
     parameter_transform <- eval(parse(text = config$parameter_transform))
   }
@@ -726,7 +747,7 @@ read_from_excel_error <- function(config, directory) {
 
 
 
-electricity_grid_by_region_data <- function(config, directory) {
+electricity_grid_by_region_data <- function(config, directory, odata_definitions=NULL) {
   electricity_data <- as.data.frame(read_excel(
     paste0(directory, config$filename),
     sheet = config$sheet_number
@@ -753,7 +774,7 @@ electricity_grid_by_region_data <- function(config, directory) {
 
 }
 
-read_chorus_regional_data <- function(config, directory) {
+read_chorus_regional_data <- function(config, directory, odata_definitions=NULL) {
   dates <- ymd(c(
     "2020/04/29",
     "2020/05/14",
@@ -786,7 +807,7 @@ read_chorus_regional_data <- function(config, directory) {
   ))
 }
 
-gas_use_data <- function(config, directory) {
+gas_use_data <- function(config, directory, odata_definitions=NULL) {
   data <- as.data.frame(read_excel(
     paste0(directory, config$filename),
     sheet = config$sheet_number,
@@ -838,7 +859,7 @@ gas_use_data <- function(config, directory) {
 # This function should not be here, it is not simply a load function but it is also
 # caching data. This logic needs to be split up into a another step for caching.
 # There is also too much hard coding of things that should be handled by configuration.
-get_john_hopkins_data <- function(config, directory) {
+get_john_hopkins_data <- function(config, directory, odata_definitions=NULL) {
   file_path <- directory
   files <- list.files(
     path = file_path,
@@ -947,7 +968,7 @@ get_john_hopkins_data <- function(config, directory) {
     check_for_negative <- function(data) {
       negative_active_cases <- which(data["Active"] < 0)
       if (!is.null(negative_active_cases)) {
-        print(paste0("Negative Active cases present"))
+        #print(paste0("Negative Active cases present"))
         data[negative_active_cases, ] <- data[negative_active_cases - 1, ]
       }
       return(data)
@@ -976,7 +997,7 @@ get_john_hopkins_data <- function(config, directory) {
   ))
 }
 
-read_managed_isolotion_data <- function(config, directory) {
+read_managed_isolotion_data <- function(config, directory, odata_definitions=NULL) {
   data_object <- read_from_excel(config, directory)
 
   data <- as.data.frame(read_excel(
@@ -1002,7 +1023,7 @@ read_managed_isolotion_data <- function(config, directory) {
   return(data_object)
 }
 
-read_hlfs_data <- function(config, directory) {
+read_hlfs_data <- function(config, directory, odata_definitions=NULL) {
   if (!is.null(config$parameter_transform)) {
     parameter_transform <- eval(parse(text = config$parameter_transform, ))
   }
@@ -1154,7 +1175,7 @@ read_hlfs_data <- function(config, directory) {
 }
 
 
-petrol_read_file_month <- function(config, directory) {
+petrol_read_file_month <- function(config, directory, odata_definitions=NULL) {
   filename <- config$filename
   data <- as.data.frame(read_excel(
     paste0(directory, filename),
@@ -1189,7 +1210,7 @@ petrol_read_file_month <- function(config, directory) {
   ))
 }
 
-read_MBIE_rental <- function(config, directory) {
+read_MBIE_rental <- function(config, directory, odata_definitions=NULL) {
   if (!is.null(config$parameter_transform)) {
     parameter_transform <- eval(parse(text = config$parameter_transform))
   }

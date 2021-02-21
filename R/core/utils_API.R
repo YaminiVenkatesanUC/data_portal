@@ -1,10 +1,10 @@
 
-data_frame_to_api_helper <- function(directory, config, odata_definitions, data){
+data_frame_to_api_helper <- function(directory, config, metadata, data){
   #error when there is not a match or indicator removed
-  metadata <- odata_definitions[which(odata_definitions$ResourceID == config$api_resource_id),]
   resource <- to_resource(config, metadata)
-  print(resource)
-  observations <- to_observations(config, metadata, data)
+  return(resource)
+  #print(resource)
+  #observations <- to_observations(config, metadata, data)
 }
 
 to_observations <- function(config, metadata, data){

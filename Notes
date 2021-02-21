@@ -14,3 +14,8 @@ Need to double check that col values are labeled sequentially
 Check that resources are only in metaddata once
 
 Adding check for paging
+
+To Do next week:
+- call API utils to make sure there are no errors for all API indicators
+- fix configuration call in load functions
+- handle Variables in Observations
