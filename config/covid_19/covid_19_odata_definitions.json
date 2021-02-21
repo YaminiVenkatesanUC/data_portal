@@ -52,6 +52,8 @@
       "Var1":"Support type",
       "Var2":"Treatment",
       "Duration":"P7D",
+      "Label1":"variable",
+      "Label2":"Actual",
       "Unit":"Number",
       "Measure":"People receiving jobseeker support benefit",
       "Multiplier":0
@@ -68,7 +70,7 @@
       "Var1":"Ethnicity",
       "Var2":"Treatment",
       "Duration":"P1M",
-      "Label1":"Total - work ready",
+      "Label1":"variable",
       "Label2":"Actual",
       "Unit":"Number",
       "Measure":"People receiving jobseeker support benefit - work ready",
@@ -113,6 +115,7 @@
       "Frequency":"Monthly",
       "Var1":"Ethnicity",
       "Duration":"P1M",
+      "Label1":"variable",
       "Unit":"Index",
       "Measure":"Online job advertisements index",
       "Multiplier":0
@@ -142,6 +145,7 @@
       "Frequency":"Weekly",
       "Var1":"Treatment",
       "Duration":"P7D",
+      "Label1":"Actual",
       "Unit":"Number",
       "Measure":"Special needs grants approved",
       "Multiplier":0

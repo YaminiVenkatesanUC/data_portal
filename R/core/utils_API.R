@@ -2,9 +2,9 @@
 data_frame_to_api_helper <- function(directory, config, metadata, data){
   #error when there is not a match or indicator removed
   resource <- to_resource(config, metadata)
-  return(resource)
-  #print(resource)
-  #observations <- to_observations(config, metadata, data)
+  observations <- to_observations(config, metadata, data)
+
+  return(observations)
 }
 
 to_observations <- function(config, metadata, data){
@@ -27,7 +27,6 @@ to_observations <- function(config, metadata, data){
                         "NullReason" = NA,
                         "Multiplier" = rep(check_null(metadata$Multiplier), nrow(data)),
                         "Status" = NA)
-  print(Observations)
   return(Observations)
 }
 
@@ -49,6 +48,14 @@ to_resource <- function(config, metadata){
                      "Var5" = check_null(metadata$Var5),
                      "Var6" = check_null(metadata$Var6)) #%>% toJSON(na ="null")
   return(Resource)
+}
+
+get_label <- function(label){
+  if (label == "variable"){
+    return(label)
+  } else {
+    return(rep(check_null(label), nrow(data)))
+  }
 }
 
 check_null <- function(value){
