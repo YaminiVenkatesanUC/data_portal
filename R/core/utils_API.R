@@ -3,30 +3,29 @@ data_frame_to_api_helper <- function(directory, config, metadata, data){
   #error when there is not a match or indicator removed
   resource <- to_resource(config, metadata)
   observations <- to_observations(config, metadata, data)
-
   return(observations)
 }
 
 to_observations <- function(config, metadata, data){
   names(data) <- c("parameter", config$value_names)
-  data <- reshape2::melt(data,  id.vars = "parameter") #%>% toJSON(na ="null")
+  data <- reshape2::melt(data,  id.vars = "parameter")
   Observations <- tibble("ResourceID" = rep(metadata$ResourceID, nrow(data)),
                         "Geo" = rep(check_null(metadata$Geo), nrow(data)),
                         "GeoUnit" = rep(check_null(metadata$GeoUnit), nrow(data)),
                         "Duration" = rep(check_null(metadata$Duration), nrow(data)),
                         "Peroid" = data$parameter,
-                        "Label1" = "",
-                        "Label2" = "",
-                        "Label3" = "",
-                        "Label4" = "",
-                        "Label5" = "",
-                        "Label6" = "",
+                        "Label1" = get_label(data, check_null(metadata$Label1), nrow(data)),
+                        "Label2" = get_label(data, check_null(metadata$Label2), nrow(data)),
+                        "Label3" = get_label(data, check_null(metadata$Label3), nrow(data)),
+                        "Label4" = get_label(data, check_null(metadata$Label4), nrow(data)),
+                        "Label5" = get_label(data, check_null(metadata$Label5), nrow(data)),
+                        "Label6" = get_label(data, check_null(metadata$Label6), nrow(data)),
                         "Value" = data$value,
                         "Unit" = rep(check_null(metadata$Unit), nrow(data)),
                         "Mesasure" = rep(check_null(metadata$Measure), nrow(data)),
                         "NullReason" = NA,
                         "Multiplier" = rep(check_null(metadata$Multiplier), nrow(data)),
-                        "Status" = NA)
+                        "Status" = NA) #%>% toJSON(na ="null")
   return(Observations)
 }
 
@@ -50,12 +49,11 @@ to_resource <- function(config, metadata){
   return(Resource)
 }
 
-get_label <- function(label){
-  if (label == "variable"){
-    return(label)
-  } else {
-    return(rep(check_null(label), nrow(data)))
+get_label <- function(data, label, len){
+  if (label == "variable" & !is.na(label) ){
+    return(data$variable)
   }
+  return(rep(label,len))
 }
 
 check_null <- function(value){

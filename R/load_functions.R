@@ -44,7 +44,7 @@ read_from_csv <- function(config, directory, odata_definitions=NULL) {
     print("Adding data to API")
     print(config$indicator_name)
     print(metadata)
-    print(resource)
+    print(head(resource))
     return(NULL)
   }
   return(data_frame_to_data_object_helper(
@@ -98,7 +98,7 @@ read_from_excel <- function(config, directory, odata_definitions=NULL) {
     print("Adding data to API")
     print(config$indicator_name)
     print(metadata)
-    print(resource)
+    print(head(resource))
     return(NULL)
   }
 
