@@ -162,6 +162,8 @@
       "Var1":"Age group",
       "Var2":"Treatment",
       "Duration":"P1M",
+      "Label1":"variable",
+      "Label2":"Actual",
       "Unit":"Number",
       "Measure":"Recipients of CIRP",
       "Multiplier":0
@@ -178,6 +180,8 @@
       "Var1":"Ethnicity",
       "Var2":"Treatment",
       "Duration":"P1M",
+      "Label1":"variable",
+      "Label2":"Actual",
       "Unit":"Number",
       "Measure":"Recipients of CIRP",
       "Multiplier":0
@@ -194,6 +198,8 @@
       "Var1":"Gender",
       "Var2":"Treatment",
       "Duration":"P1M",
+      "Label1":"variable",
+      "Label2":"Actual",
       "Unit":"Number",
       "Measure":"Recipients of CIRP",
       "Multiplier":0
@@ -210,6 +216,8 @@
       "Var1":"Relationship",
       "Var2":"Treatment",
       "Duration":"P1M",
+      "Label1":"variable",
+      "Label2":"Actual",
       "Unit":"Number",
       "Measure":"Recipients of CIRP",
       "Multiplier":0
@@ -225,6 +233,7 @@
       "Frequency":"Weekly",
       "Var1":"Treatment",
       "Duration":"P7D",
+      "Label1":"Actual",
       "Unit":"Number",
       "Measure":"Recipients of accommodation supplement",
       "Multiplier":0
@@ -240,6 +249,7 @@
       "Frequency":"Weekly",
       "Var1":"Treatment",
       "Duration":"P7D",
+      "Label1":"Actual",
       "Unit":"Number",
       "Measure":"Recipients of temporary additional support and special benefit",
       "Multiplier":0
@@ -255,6 +265,8 @@
       "Var1":"Citizenship",
       "Var2":"Treatment",
       "Duration":"P1D",
+      "Label1":"variable",
+      "Label2":"Actual",
       "Unit":"Number",
       "Measure":"Border crossings - arrivals",
       "Multiplier":0
@@ -270,6 +282,8 @@
       "Var1":"Citizenship",
       "Var2":"Treatment",
       "Duration":"P1D",
+      "Label1":"variable",
+      "Label2":"Actual",
       "Unit":"Number",
       "Measure":"Border crossings - departures",
       "Multiplier":0
@@ -285,6 +299,7 @@
       "Frequency":"Monthly",
       "Var1":"Aircraft destination",
       "Duration":"P1M",
+      "Label1":"variable",
       "Unit":"Tonnes",
       "Measure":"Aircraft takeoff weight",
       "Multiplier":0
@@ -301,6 +316,8 @@
       "Var1":"Student visa type",
       "Var2":"Treatment",
       "Duration":"P1M",
+      "Label1":"variable",
+      "Label2":"Actual",
       "Unit":"Number",
       "Measure":"People on a student visa",
       "Multiplier":0
@@ -317,6 +334,8 @@
       "Var1":"Work visa type",
       "Var2":"Treatment",
       "Duration":"P1M",
+      "Label1":"variable",
+      "Label2":"Actual",
       "Unit":"Number",
       "Measure":"People on a work visa",
       "Multiplier":"0"
@@ -332,6 +351,7 @@
       "Frequency":"Weekly",
       "Var1":"Treatment",
       "Duration":"P7D",
+      "Label1":"Actual",
       "Unit":"NZD",
       "Measure":"Wage subsidy paid out (cumulative)",
       "Multiplier":0
@@ -347,6 +367,7 @@
       "Frequency":"Weekly",
       "Var1":"Treatment",
       "Duration":"P7D",
+      "Label1":"Actual",
       "Unit":"NZD",
       "Measure":"Wage subsidy refunds received (cumulative)",
       "Multiplier":0
@@ -363,6 +384,8 @@
       "Var1":"Application status",
       "Var2":"Treatment",
       "Duration":"P7D",
+      "Label1":"variable",
+      "Label2":"Actual",
       "Unit":"Number",
       "Measure":"Wage subsidy applications (cumulative)",
       "Multiplier":0
@@ -379,6 +402,8 @@
       "Var1":"Employment type",
       "Var2":"Treatment",
       "Duration":"P7D",
+      "Label1":"variable",
+      "Label2":"Actual",
       "Unit":"Number",
       "Measure":"Jobs associated with paid out subsidy applications (cumulative)",
       "Multiplier":0
@@ -394,6 +419,7 @@
       "Frequency":"Weekly",
       "Var1":"Treatment",
       "Duration":"P7D",
+      "Label1":"Actual",
       "Unit":"Number",
       "Measure":"Wage subsidy refunds received (cumulative)",
       "Multiplier":0
@@ -409,6 +435,7 @@
       "Frequency":"Weekly",
       "Var1":"Treatment",
       "Duration":"P7D",
+      "Label1":"Actual",
       "Unit":"NZD",
       "Measure":"Wage subsidy extension paid (cumulative)",
       "Multiplier":0
@@ -424,6 +451,7 @@
       "Frequency":"Weekly",
       "Var1":"Treatment",
       "Duration":"P7D",
+      "Label1":"Actual",
       "Unit":"Number",
       "Measure":"Jobs associated with paid out subsidy applications (cumulative)",
       "Multiplier":0
