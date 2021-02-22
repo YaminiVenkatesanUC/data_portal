@@ -11,11 +11,17 @@ To do: configs need to be indexed by name rather than numerically. Currently we 
 
 Need to double check that col values are labeled sequentially
 
-Check that resources are only in metaddata once
+Check that resources are only in metadata once
 
 Adding check for paging
 
-To Do next week:
-- call API utils to make sure there are no errors for all API indicators
-- fix configuration call in load functions
-- handle Variables in Observations
+passing all definitions to load functions - modfiy to pass only single definitions
+
+how to combine all dataframes to then be pushed to the API
+
+is multiplier really 0?
+
+definition configuration should be indexed in a way that isnt numeric
+
+to turn off API comment out load of configuration file
+
