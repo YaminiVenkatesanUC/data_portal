@@ -416,7 +416,7 @@
         "type": "COVID-19",
         "parameter_col": 2,
         "value_col": [3, 4, 5, 6, 7],
-        "value_names": ["Imported", "Import-related", "Locally acquired, linked", "Locally acquired, unknown source", "Under investigation"],
+        "value_names": ["Import-related", "Imported", "Locally acquired, unknown source", "Locally acquired, linked", "Under investigation"],
         "group_names": ["Source", "Source", "Source", "Source", "Source"],
         "sheet_number": 2,
         "filename": "COVID 19 - MoH COVID-19 DHB insights.xlsx",
