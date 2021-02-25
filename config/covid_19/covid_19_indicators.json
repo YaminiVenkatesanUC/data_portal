@@ -654,7 +654,6 @@
     "international": false,
     "include_date_slider": true,
     "default_lower_range": "2019-01-01",
-    "caveats":"Note: February 2021 data is provisional.",
     "source_url": "https://www.anz.co.nz/about-us/economic-markets-research/business-outlook/",
     "download": false,
     "groups": [
@@ -718,7 +717,6 @@
     "international": false,
     "include_date_slider": true,
     "default_lower_range": "2019-01-01",
-    "caveats":"Note: February 2021 data is provisional.",
     "source_url": "https://www.anz.co.nz/about-us/economic-markets-research/business-outlook/",
     "download": false,
     "groups": [
@@ -5111,7 +5109,7 @@
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
-    "caveats":"<p> *Number of grants include suspensions and cancellations</p><p> **Transfers to CIRP from Jobseeker Support are cumulative counts of people granted CIRP, who were recently in receipt (or a partner of a primary recipient) of Jobseeker Support.</p>" ,
+    "caveats":"<p> *Number of grants include suspensions and cancellations</p><p> **Transfers to CIRP from Jobseeker Support are cumulative counts of people granted CIRP, who were recently in receipt (or a partner of a primary recipient) of Jobseeker Support.</p><p>*** The last CIRP payments were on the week ending 5 February 2021, this payment has now finished.</p>" ,
     "groups": [
       {
         "name": "undefined_name",
