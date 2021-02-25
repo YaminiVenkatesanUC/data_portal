@@ -7784,34 +7784,20 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
-  {
+   {
 
     "class":"Environment",
     "type":"Greenhouse gas emissions (GHG)",
-    "indicator_name":"Industry group",
+    "indicator_name":"Total all industries & households - Quarterly",
     "order_parameter":true,
     "skip":null,
     "parameter_col":1,
-    "value_col":[2,3,4,5,6,11,8,7],
+    "value_col":[14],
     "value_names":[
-          "Agriculture, forestry and fishing",
-          "Mining",
-          "Manufacturing",
-          "Electricity, gas, water, and waste",
-          "Construction",
-          "Services excluding transport, postal, and warehousing",
-          "Transport, postal, and warehousing",
-          "Households"
+          "Total all industries & households"
         ],
     "group_names":[
-          "Agriculture, forestry and fishing",
-          "Mining",
-          "Manufacturing",
-          "Electricity, gas, water, and waste",
-          "Construction",
-          "Services excluding transport, postal, and warehousing",
-          "Transport, postal, and warehousing",
-          "Households"
+          "undefined_name"
     ],
     "filename":["COVID-19 Greenhouse Emissions.csv"],
     "parameter_transform":"function(x) ymd(x)",
@@ -7822,18 +7808,50 @@
 
     "class":"Environment",
     "type":"Greenhouse gas emissions (GHG)",
-    "indicator_name":"Total emissions",
+    "indicator_name":"Industry - Quarterly",
     "order_parameter":true,
     "skip":null,
     "parameter_col":1,
-    "value_col":[13,14],
+    "value_col":[13,2,3,4,5,6,11,8],
     "value_names":[
-          "Total industry",
-          "Total emissions (industry & household)"
+          "Total all industries",
+          "Agriculture, forestry and fishing",
+          "Mining",
+          "Manufacturing",
+          "Electricity, gas, water, and waste services",
+          "Construction",
+          "Services excluding transport, postal, and warehousing",
+          "Transport, postal, and warehousing"
         ],
     "group_names":[
-          "Total industry",
-          "Total emissions (industry & household)"
+          "Total all industries",
+          "Agriculture, forestry and fishing",
+          "Mining",
+          "Manufacturing",
+          "Electricity, gas, water, and waste services",
+          "Construction",
+          "Services excluding transport, postal, and warehousing",
+          "Transport, postal, and warehousing"
+    ],
+    "filename":["COVID-19 Greenhouse Emissions.csv"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_from_csv",
+    "data_type":"TimeSeries"
+  },
+  {
+
+    "class":"Environment",
+    "type":"Greenhouse gas emissions (GHG)",
+    "indicator_name":"Total Households - Quarterly",
+    "order_parameter":true,
+    "skip":null,
+    "parameter_col":1,
+    "value_col":[7],
+    "value_names":[
+          "Total households"
+        ],
+    "group_names":[
+          "undefined_name"
     ],
     "filename":["COVID-19 Greenhouse Emissions.csv"],
     "parameter_transform":"function(x) ymd(x)",
@@ -7844,19 +7862,19 @@
 
     "class":"Environment",
     "type":"Greenhouse gas emissions (GHG)",
-    "indicator_name":"Broad industry group",
+    "indicator_name":"Broad industry group - Quarterly",
     "order_parameter":true,
     "skip":null,
     "parameter_col":1,
-    "value_col":[9,10,12],
+    "value_col":[10,9,12],
     "value_names":[
-      "Goods-producing industries",
       "Primary industries",
+      "Goods-producing industries",
       "Service industries"
     ],
     "group_names":[
-      "Goods-producing industries",
       "Primary industries",
+      "Goods-producing industries",
       "Service industries"
     ],
     "filename":["COVID-19 Greenhouse Emissions.csv"],
