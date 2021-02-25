@@ -7379,7 +7379,109 @@
 	   }
 	  ]
 
-}
+},
 
+  {
+    "class": "Economic",
+   "indicator_name": "New Zealand Regional Activity Indices (RAI)",
+    "type": "Activity",
+    "source": "Treasury, Stats NZ, Reserve Bank & various",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "disabled": false,
+    "include_date_slider": true,
+    "download": true,
+    "source_url": "https://treasury.govt.nz/publications/research-and-commentary/new-zealand-activity-index",
+    "caveats":"<p> 1) Electricity grid demand - A comparable indicator based on electricity generation has been utilised in the compilation of the NZAC.<p/>",
+    "groups": [
+        {
+            "name": "Northland",
+            "title": "Regional Activity Indices for Northland - monthly",
+            "units": ["Index"],
+             "visible": [ "Regional Activity Index (RAI)"]
+        },
+
+         {
+            "name": "Auckland",
+            "title": "Regional Activity Indices for Auckland - monthly",
+            "units": ["Index"],
+            "visible": [ "Regional Activity Index (RAI)"]
+        }
+        ,
+        {
+            "name": "Waikato",
+            "title": "Regional Activity Indices for Waikato - monthly",
+            "units": ["Index"],
+            "visible": [ "Regional Activity Index (RAI)"]
+        },
+        {
+            "name": "Bay of Plenty",
+            "title": "Regional Activity Indices for Bay of Plenty - monthly",
+            "units": ["Index"],
+            "visible": [ "Regional Activity Index (RAI)"]
+        },
+        {
+            "name": "Gisborne",
+            "title": "Regional Activity Indices for Gisborne - monthly",
+            "units": ["Index"],
+            "visible": [ "Regional Activity Index (RAI)"]
+        },
+
+        {
+            "name": "Hawke's Bay",
+            "title": "Regional Activity Indices for Hawke's Bay - monthly",
+            "units": ["Index"],
+            "visible": [ "Regional Activity Index (RAI)"]
+        },
+        {
+            "name": "Taranaki",
+            "title": "Regional Activity Indices for Taranaki - monthly",
+            "units": ["Index"],
+            "visible": [ "Regional Activity Index (RAI)"]
+        },
+        {
+            "name": "Manawatū-Whanganui",
+            "title": "Regional Activity Indices for Manawatū-Whanganui - monthly",
+            "units": ["Index"],
+            "visible": [ "Regional Activity Index (RAI)"]
+        },
+         {
+            "name": "Wellington",
+            "title": "Regional Activity Indices for Wellington - monthly",
+            "units": ["Index"],
+            "visible": [ "Regional Activity Index (RAI)"]
+        },
+        {
+            "name": "Tasman/ Nelson/ Marlborough",
+            "title": "Regional Activity Indices for Nelson/ Tasman/ Marlborough - monthly",
+            "units": ["Index"],
+            "visible": [ "Regional Activity Index (RAI)"]
+        },
+        {
+            "name": "Canterbury",
+            "title": "Regional Activity Indices for Canterbury - monthly",
+            "units": ["Index"],
+            "visible": [ "Regional Activity Index (RAI)"]
+        },
+        {
+            "name": "West Coast",
+            "title": "Regional Activity Indices for West Coast - monthly",
+            "units": ["Index"],
+            "visible": [ "Regional Activity Index (RAI)"]
+        },
+        {
+            "name": "Otago",
+            "title": "Regional Activity Indices for Otago - monthly",
+            "units": ["Index"],
+            "visible": [ "Regional Activity Index (RAI)"]
+        },
+        {
+            "name": "Southland",
+            "title": "Regional Activity Indices for Southland - monthly",
+            "units": ["Index"],
+            "visible": [ "Regional Activity Index (RAI)"]
+        }
+    ]
+  }
 
 ]
