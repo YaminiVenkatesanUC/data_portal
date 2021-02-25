@@ -7794,16 +7794,16 @@
         [2,
         3,
          4,
-         5,
+
          6,
          7,
          8
          ],
         "value_names": [
        "Regional Activity Index (RAI)",
-          "RAI component - Card transaction spend",
+          "RAI component - Consumer card spend",
           "RAI component - Electricity grid demand",
-          "RAI component - New jobs posted onlne",
+
           "RAI component - MSD jobs",
           "RAI component - Traffic index (light)",
           "RAI component - Traffic index (heavy)"
@@ -7811,7 +7811,7 @@
 
         ],
         "sheet_number": 1,
-        "filename": "regional_activity_index_2020_12_for_covid_portal_mockup.xlsx",
+        "filename": "RAI portal data.xlsx",
         "parameter_transform": "function (x) ymd(x)",
         "load_function": "read_from_excel",
         "group_names": [
@@ -7832,16 +7832,16 @@
         [2,
         3,
          4,
-         5,
+
          6,
          7,
          8
          ],
         "value_names": [
         "Regional Activity Index (RAI)",
-          "RAI component - Card transaction spend",
+          "RAI component - Consumer card spend",
           "RAI component - Electricity grid demand",
-          "RAI component - New jobs posted onlne",
+
           "RAI component - MSD jobs",
           "RAI component - Traffic index (light)",
           "RAI component - Traffic index (heavy)"
@@ -7850,7 +7850,7 @@
 
         ],
         "sheet_number": 2,
-        "filename": "regional_activity_index_2020_12_for_covid_portal_mockup.xlsx",
+        "filename": "RAI portal data.xlsx",
         "parameter_transform": "function (x) ymd(x)",
         "load_function": "read_from_excel",
         "group_names": [
@@ -7870,16 +7870,16 @@
         [2,
          3,
          4,
-         5,
+
          6,
          7,
          8
          ],
         "value_names": [
         "Regional Activity Index (RAI)",
-          "RAI component - Card transaction spend",
+          "RAI component - Consumer card spend",
           "RAI component - Electricity grid demand",
-          "RAI component - New jobs posted onlne",
+
           "RAI component - MSD jobs",
           "RAI component - Traffic index (light)",
           "RAI component - Traffic index (heavy)"
@@ -7888,7 +7888,7 @@
 
         ],
         "sheet_number": 3,
-        "filename": "regional_activity_index_2020_12_for_covid_portal_mockup.xlsx",
+        "filename": "RAI portal data.xlsx",
         "parameter_transform": "function (x) ymd(x)",
         "load_function": "read_from_excel",
         "group_names": [
@@ -7908,16 +7908,16 @@
         [2,
          3,
          4,
-         5,
+
          6,
          7,
          8
          ],
         "value_names": [
          "Regional Activity Index (RAI)",
-          "RAI component - Card transaction spend",
+          "RAI component - Consumer card spend",
           "RAI component - Electricity grid demand",
-          "RAI component - New jobs posted onlne",
+
           "RAI component - MSD jobs",
           "RAI component - Traffic index (light)",
           "RAI component - Traffic index (heavy)"
@@ -7926,7 +7926,7 @@
 
         ],
         "sheet_number": 4,
-        "filename": "regional_activity_index_2020_12_for_covid_portal_mockup.xlsx",
+        "filename": "RAI portal data.xlsx",
         "parameter_transform": "function (x) ymd(x)",
         "load_function": "read_from_excel",
         "group_names": [
@@ -7946,16 +7946,16 @@
         [2,
          3,
          4,
-         5,
+
          6,
          7,
          8
          ],
         "value_names": [
         "Regional Activity Index (RAI)",
-          "RAI component - Card transaction spend",
+          "RAI component - Consumer card spend",
           "RAI component - Electricity grid demand",
-          "RAI component - New jobs posted onlne",
+
           "RAI component - MSD jobs",
           "RAI component - Traffic index (light)",
           "RAI component - Traffic index (heavy)"
@@ -7964,7 +7964,7 @@
 
         ],
         "sheet_number": 5,
-        "filename": "regional_activity_index_2020_12_for_covid_portal_mockup.xlsx",
+        "filename": "RAI portal data.xlsx",
         "parameter_transform": "function (x) ymd(x)",
         "load_function": "read_from_excel",
         "group_names": [
@@ -7984,16 +7984,16 @@
         [2,
          3,
          4,
-         5,
+
          6,
          7,
          8
          ],
         "value_names": [
        "Regional Activity Index (RAI)",
-          "RAI component - Card transaction spend",
+          "RAI component - Consumer card spend",
           "RAI component - Electricity grid demand",
-          "RAI component - New jobs posted onlne",
+
           "RAI component - MSD jobs",
           "RAI component - Traffic index (light)",
           "RAI component - Traffic index (heavy)"
@@ -8002,7 +8002,7 @@
 
         ],
         "sheet_number": 6,
-        "filename": "regional_activity_index_2020_12_for_covid_portal_mockup.xlsx",
+        "filename": "RAI portal data.xlsx",
         "parameter_transform": "function (x) ymd(x)",
         "load_function": "read_from_excel",
         "group_names": [
@@ -8022,16 +8022,16 @@
         [2,
          3,
          4,
-         5,
+
          6,
          7,
          8
          ],
         "value_names": [
          "Regional Activity Index (RAI)",
-          "RAI component - Card transaction spend",
+          "RAI component - Consumer card spend",
           "RAI component - Electricity grid demand",
-          "RAI component - New jobs posted onlne",
+
           "RAI component - MSD jobs",
           "RAI component - Traffic index (light)",
           "RAI component - Traffic index (heavy)"
@@ -8040,7 +8040,7 @@
 
         ],
         "sheet_number": 7,
-        "filename": "regional_activity_index_2020_12_for_covid_portal_mockup.xlsx",
+        "filename": "RAI portal data.xlsx",
         "parameter_transform": "function (x) ymd(x)",
         "load_function": "read_from_excel",
         "group_names": [
@@ -8060,16 +8060,16 @@
         [2,
          3,
          4,
-         5,
+
          6,
          7,
          8
          ],
         "value_names": [
        "Regional Activity Index (RAI)",
-          "RAI component - Card transaction spend",
+          "RAI component - Consumer card spend",
           "RAI component - Electricity grid demand",
-          "RAI component - New jobs posted onlne",
+
           "RAI component - MSD jobs",
           "RAI component - Traffic index (light)",
           "RAI component - Traffic index (heavy)"
@@ -8078,7 +8078,7 @@
 
         ],
         "sheet_number": 8,
-        "filename": "regional_activity_index_2020_12_for_covid_portal_mockup.xlsx",
+        "filename": "RAI portal data.xlsx",
         "parameter_transform": "function (x) ymd(x)",
         "load_function": "read_from_excel",
         "group_names": [
@@ -8098,16 +8098,16 @@
         [2,
         3,
          4,
-         5,
+
          6,
          7,
          8
          ],
         "value_names": [
           "Regional Activity Index (RAI)",
-          "RAI component - Card transaction spend",
+          "RAI component - Consumer card spend",
           "RAI component - Electricity grid demand",
-          "RAI component - New jobs posted onlne",
+
           "RAI component - MSD jobs",
           "RAI component - Traffic index (light)",
           "RAI component - Traffic index (heavy)"
@@ -8116,7 +8116,7 @@
 
         ],
         "sheet_number": 9,
-        "filename": "regional_activity_index_2020_12_for_covid_portal_mockup.xlsx",
+        "filename": "RAI portal data.xlsx",
         "parameter_transform": "function (x) ymd(x)",
         "load_function": "read_from_excel",
         "group_names": [
@@ -8136,16 +8136,16 @@
         [2,
         3,
          4,
-         5,
+
          6,
          7,
          8
          ],
         "value_names": [
           "Regional Activity Index (RAI)",
-          "RAI component - Card transaction spend",
+          "RAI component - Consumer card spend",
           "RAI component - Electricity grid demand",
-          "RAI component - New jobs posted onlne",
+
           "RAI component - MSD jobs",
           "RAI component - Traffic index (light)",
           "RAI component - Traffic index (heavy)"
@@ -8154,7 +8154,7 @@
 
         ],
         "sheet_number": 10,
-        "filename": "regional_activity_index_2020_12_for_covid_portal_mockup.xlsx",
+        "filename": "RAI portal data.xlsx",
         "parameter_transform": "function (x) ymd(x)",
         "load_function": "read_from_excel",
         "group_names": [
@@ -8174,16 +8174,16 @@
         [2,
         3,
          4,
-         5,
+
          6,
          7,
          8
          ],
         "value_names": [
          "Regional Activity Index (RAI)",
-          "RAI component - Card transaction spend",
+          "RAI component - Consumer card spend",
           "RAI component - Electricity grid demand",
-          "RAI component - New jobs posted onlne",
+
           "RAI component - MSD jobs",
           "RAI component - Traffic index (light)",
           "RAI component - Traffic index (heavy)"
@@ -8192,7 +8192,7 @@
 
         ],
         "sheet_number": 11,
-        "filename": "regional_activity_index_2020_12_for_covid_portal_mockup.xlsx",
+        "filename": "RAI portal data.xlsx",
         "parameter_transform": "function (x) ymd(x)",
         "load_function": "read_from_excel",
         "group_names": [
@@ -8212,16 +8212,16 @@
         [2,
         3,
          4,
-         5,
+
          6,
          7,
          8
          ],
         "value_names": [
          "Regional Activity Index (RAI)",
-          "RAI component - Card transaction spend",
+          "RAI component - Consumer card spend",
           "RAI component - Electricity grid demand",
-          "RAI component - New jobs posted onlne",
+
           "RAI component - MSD jobs",
           "RAI component - Traffic index (light)",
           "RAI component - Traffic index (heavy)"
@@ -8230,7 +8230,7 @@
 
         ],
         "sheet_number": 12,
-        "filename": "regional_activity_index_2020_12_for_covid_portal_mockup.xlsx",
+        "filename": "RAI portal data.xlsx",
         "parameter_transform": "function (x) ymd(x)",
         "load_function": "read_from_excel",
         "group_names": [
@@ -8250,16 +8250,16 @@
         [2,
         3,
          4,
-         5,
+
          6,
          7,
          8
          ],
         "value_names": [
        "Regional Activity Index (RAI)",
-          "RAI component - Card transaction spend",
+          "RAI component - Consumer card spend",
           "RAI component - Electricity grid demand",
-          "RAI component - New jobs posted onlne",
+
           "RAI component - MSD jobs",
           "RAI component - Traffic index (light)",
           "RAI component - Traffic index (heavy)"
@@ -8268,7 +8268,7 @@
 
         ],
         "sheet_number": 13,
-        "filename": "regional_activity_index_2020_12_for_covid_portal_mockup.xlsx",
+        "filename": "RAI portal data.xlsx",
         "parameter_transform": "function (x) ymd(x)",
         "load_function": "read_from_excel",
         "group_names": [
@@ -8288,16 +8288,16 @@
         [2,
         3,
          4,
-         5,
+
          6,
          7,
          8
          ],
         "value_names": [
           "Regional Activity Index (RAI)",
-          "RAI component - Card transaction spend",
+          "RAI component - Consumer card spend",
           "RAI component - Electricity grid demand",
-          "RAI component - New jobs posted onlne",
+
           "RAI component - MSD jobs",
           "RAI component - Traffic index (light)",
           "RAI component - Traffic index (heavy)"
@@ -8305,7 +8305,7 @@
 
         ],
         "sheet_number": 14,
-        "filename": "regional_activity_index_2020_12_for_covid_portal_mockup.xlsx",
+        "filename": "RAI portal data.xlsx",
         "parameter_transform": "function (x) ymd(x)",
         "load_function": "read_from_excel",
         "group_names": [
