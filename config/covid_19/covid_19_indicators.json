@@ -3985,7 +3985,7 @@
     "include_date_slider": true,
     "download": true,
     "source_url": "https://treasury.govt.nz/publications/research-and-commentary/new-zealand-activity-index",
-    "caveats":"<p> 1) Card transaction spend -  A modified version of this series has been utilised in the compilation of the NZAC.</p><p> 2) Electricity grid demand - A comparable indicator based on electricity generation has been utilised in the compilation of the NZAC.<p/><p> 3) New jobs posted online - A modified version of this series has been utilised in the compilation of the NZAC.</p>",
+    "caveats":"<p> 1) Card transaction spend -  A modified version of this series has been utilised in the compilation of the NZAC.</p><p> 2) Electricity grid demand – Based on the reconciled demand series sourced from the Electricity Authority.<p/><p> 3) New jobs posted online - A modified version of this series has been utilised in the compilation of the NZAC.</p>",
     "groups": [
         {
             "name": "New Zealand Activity Index (NZAC)",
