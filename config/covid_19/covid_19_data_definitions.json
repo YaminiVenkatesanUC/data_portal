@@ -7788,13 +7788,13 @@
 
     "class":"Environment",
     "type":"Greenhouse gas emissions (GHG)",
-    "indicator_name":"Total all industries & households - Quarterly",
+    "indicator_name":"All industries & households (total) – Quarterly",
     "order_parameter":true,
     "skip":null,
     "parameter_col":1,
     "value_col":[14],
     "value_names":[
-          "Total all industries & households"
+          "All industries & households (total)"
         ],
     "group_names":[
           "undefined_name"
@@ -7842,7 +7842,7 @@
 
     "class":"Environment",
     "type":"Greenhouse gas emissions (GHG)",
-    "indicator_name":"Total Households - Quarterly",
+    "indicator_name":"Total households – Quarterly",
     "order_parameter":true,
     "skip":null,
     "parameter_col":1,
