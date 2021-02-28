@@ -654,7 +654,6 @@
     "international": false,
     "include_date_slider": true,
     "default_lower_range": "2019-01-01",
-    "caveats":"Note: February 2021 data is provisional.",
     "source_url": "https://www.anz.co.nz/about-us/economic-markets-research/business-outlook/",
     "download": false,
     "groups": [
@@ -3988,7 +3987,7 @@
     "include_date_slider": true,
     "download": true,
     "source_url": "https://treasury.govt.nz/publications/research-and-commentary/new-zealand-activity-index",
-    "caveats":"<p> 1) Card transaction spend - Note the NZAC normally uses seasonally adjusted data on electronic card transactions as a measure of spending activity. However, spending did not follow typical seasonal patterns for much of 2020 due to the effects of COVID-19. Consequently, it is not appropriate to apply the usual seasonal adjustment methods on the card spending series over this period. Therefore, we have replaced the seasonally adjusted series with the non-seasonally adjusted version for the December NZAC update. This has made little difference to the overall index, and we will continue this approach until an appropriate method of adjustment is determined.</p><p> 2) Electricity grid demand - A comparable indicator based on electricity generation has been utilised in the compilation of the NZAC.<p/><p> 3) New jobs posted online - A modified version of this series has been utilised in the compilation of the NZAC.</p>",
+    "caveats":"<p> 1) Card transaction spend -  A modified version of this series has been utilised in the compilation of the NZAC.</p><p> 2) Electricity grid demand – Based on the reconciled demand series sourced from the Electricity Authority.<p/><p> 3) New jobs posted online - A modified version of this series has been utilised in the compilation of the NZAC.</p>",
     "groups": [
         {
             "name": "New Zealand Activity Index (NZAC)",
@@ -3998,7 +3997,7 @@
 
          {
             "name": "NZAC component - Card transaction spend",
-            "title": "Annual percentage change electronic card transaction activity - seasonally adjusted",
+            "title": "Annual percentage change electronic card transaction activity - actual",
             "units": ["Annual % change"]
         }
         ,
@@ -5112,7 +5111,7 @@
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
-    "caveats":"<p> *Number of grants include suspensions and cancellations</p><p> **Transfers to CIRP from Jobseeker Support are cumulative counts of people granted CIRP, who were recently in receipt (or a partner of a primary recipient) of Jobseeker Support.</p>" ,
+    "caveats":"<p> *Number of grants include suspensions and cancellations</p><p> **Transfers to CIRP from Jobseeker Support are cumulative counts of people granted CIRP, who were recently in receipt (or a partner of a primary recipient) of Jobseeker Support.</p><p>*** The last CIRP payments were on the week ending 5 February 2021, this payment has now finished.</p>" ,
     "groups": [
       {
         "name": "undefined_name",
@@ -5232,6 +5231,7 @@
     "type": "Wage subsidy assistance",
     "source": "Ministry of Social Development",
     "plot_function": "get_time_series_plot",
+    "caveats":"Note: Due to a processing error, the number of applications received for the Leave Payment were not loaded on the weeks ending 29 January 2021 and 5 February 2021.",
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
@@ -7377,7 +7377,109 @@
 	   }
 	  ]
 
-}
+},
 
+  {
+    "class": "Economic",
+   "indicator_name": "New Zealand Regional Activity Indices (RAI)",
+    "type": "Activity",
+    "source": "Treasury, Stats NZ, Reserve Bank & various",
+    "plot_function": "get_time_series_plot",
+    "international": false,
+    "disabled": false,
+    "include_date_slider": true,
+    "download": true,
+    "source_url": "http://www.treasury.govt.nz/publications/research-and-commentary/regional-activity-indices",
+    "caveats":"<p> 1) The Regional Activity Index (RAI) represents year-on-year activity growth for that region. A positive reading means that many of the underlying input indicators are growing at above-average rates, and vice versa for a negative reading. For interpretation guidance see <a href=\" http://www.treasury.govt.nz/publications/rai/regional-activity-indices-rais-interpretation-guidance\" target=\"_blank\">RAI documentation<a/>. <p/><p> 2) All RAI components are presented in terms of annual percentage changes, standardised to have mean = 0 and standard deviation = 1. For technical details see  <a href=\"http://www.treasury.govt.nz/publications/rai/regional-activity-indices-rais-technical-note\" target=\"_blank\">RAI documentation<a/>.<p/><p> 3) As the benefit system has changed over time, the MSD jobseekers data contains modelled estimates of the number of claimants that would have been eligible under the current benefit system pre-2013.<p/><p> 4) We reverse the sign of the RAI component for Jobseeker growth, so that these deviations move in the same direction as other economic variables (i.e. dips in a contraction). <p/><p> 5) Consumer card spend is based on Paymark card expenditure.<p/><p> 6) Electricity grid demand is sourced from the Electricity Authority's reconciled demand series. It has been allocated to each region using a concordance developed by Stats NZ.<p/> ",
+    "groups": [
+        {
+            "name": "Northland",
+            "title": "Regional Activity Index for Northland - monthly",
+            "units": ["Index"],
+             "visible": [ "Regional Activity Index (RAI)"]
+        },
+
+         {
+            "name": "Auckland",
+            "title": "Regional Activity Index for Auckland - monthly",
+            "units": ["Index"],
+            "visible": [ "Regional Activity Index (RAI)"]
+        }
+        ,
+        {
+            "name": "Waikato",
+            "title": "Regional Activity Index for Waikato - monthly",
+            "units": ["Index"],
+            "visible": [ "Regional Activity Index (RAI)"]
+        },
+        {
+            "name": "Bay of Plenty",
+            "title": "Regional Activity Index for Bay of Plenty - monthly",
+            "units": ["Index"],
+            "visible": [ "Regional Activity Index (RAI)"]
+        },
+        {
+            "name": "Gisborne",
+            "title": "Regional Activity Index for Gisborne - monthly",
+            "units": ["Index"],
+            "visible": [ "Regional Activity Index (RAI)"]
+        },
+
+        {
+            "name": "Hawke's Bay",
+            "title": "Regional Activity Index for Hawke's Bay - monthly",
+            "units": ["Index"],
+            "visible": [ "Regional Activity Index (RAI)"]
+        },
+        {
+            "name": "Taranaki",
+            "title": "Regional Activity Index for Taranaki - monthly",
+            "units": ["Index"],
+            "visible": [ "Regional Activity Index (RAI)"]
+        },
+        {
+            "name": "Manawatū-Whanganui",
+            "title": "Regional Activity Index for Manawatū-Whanganui - monthly",
+            "units": ["Index"],
+            "visible": [ "Regional Activity Index (RAI)"]
+        },
+         {
+            "name": "Wellington",
+            "title": "Regional Activity Index for Wellington - monthly",
+            "units": ["Index"],
+            "visible": [ "Regional Activity Index (RAI)"]
+        },
+        {
+            "name": "Tasman/ Nelson/ Marlborough",
+            "title": "Regional Activity Index for Tasman/ Nelson/ Marlborough - monthly",
+            "units": ["Index"],
+            "visible": [ "Regional Activity Index (RAI)"]
+        },
+        {
+            "name": "Canterbury",
+            "title": "Regional Activity Index for Canterbury - monthly",
+            "units": ["Index"],
+            "visible": [ "Regional Activity Index (RAI)"]
+        },
+        {
+            "name": "West Coast",
+            "title": "Regional Activity Index for West Coast - monthly",
+            "units": ["Index"],
+            "visible": [ "Regional Activity Index (RAI)"]
+        },
+        {
+            "name": "Otago",
+            "title": "Regional Activity Index for Otago - monthly",
+            "units": ["Index"],
+            "visible": [ "Regional Activity Index (RAI)"]
+        },
+        {
+            "name": "Southland",
+            "title": "Regional Activity Index for Southland - monthly",
+            "units": ["Index"],
+            "visible": [ "Regional Activity Index (RAI)"]
+        }
+    ]
+  }
 
 ]

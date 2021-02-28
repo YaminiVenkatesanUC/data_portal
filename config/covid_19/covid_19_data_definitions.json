@@ -416,7 +416,7 @@
         "type": "COVID-19",
         "parameter_col": 2,
         "value_col": [3, 4, 5, 6, 7],
-        "value_names": ["Imported", "Import-related", "Locally acquired, linked", "Locally acquired, unknown source", "Under investigation"],
+        "value_names": ["Import-related", "Imported", "Locally acquired, unknown source", "Locally acquired, linked", "Under investigation"],
         "group_names": ["Source", "Source", "Source", "Source", "Source"],
         "sheet_number": 2,
         "filename": "COVID 19 - MoH COVID-19 DHB insights.xlsx",
@@ -800,7 +800,7 @@
 
         ],
         "filename": "COVID 19 - Chorus regional broadband.xlsx",
-        "load_function": "read_chorus_regional_data",
+        "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": [
           "Total",
@@ -818,7 +818,8 @@
          "Waikato",
          "Wellington",
          "West Coast"
-        ]
+        ],
+        "drop_na":false
    },
     {
         "class": "Economic",
@@ -7783,5 +7784,536 @@
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
-  }
+  },
+
+  {
+        "class": "Economic",
+         "indicator_name": "New Zealand Regional Activity Indices (RAI)",
+        "type": "Activity",
+        "parameter_col": 1,
+        "value_col":
+        [2,
+        3,
+         4,
+
+         6,
+         7,
+         8
+         ],
+        "value_names": [
+       "Regional Activity Index (RAI)",
+          "RAI component - Consumer card spend",
+          "RAI component - Electricity grid demand",
+
+          "RAI component - MSD jobseekers",
+          "RAI component - Traffic index (light)",
+          "RAI component - Traffic index (heavy)"
+
+
+        ],
+        "sheet_number": 1,
+        "filename": "RAI portal data.xlsx",
+        "parameter_transform": "function (x) ymd(x)",
+        "load_function": "read_from_excel",
+        "group_names": [
+            "Northland"
+
+        ],
+        "drop_na": false,
+        "data_type": "TimeSeries"
+      }
+      ,
+
+  {
+        "class": "Economic",
+       "indicator_name": "New Zealand Regional Activity Indices (RAI)",
+        "type": "Activity",
+        "parameter_col": 1,
+        "value_col":
+        [2,
+        3,
+         4,
+
+         6,
+         7,
+         8
+         ],
+        "value_names": [
+        "Regional Activity Index (RAI)",
+          "RAI component - Consumer card spend",
+          "RAI component - Electricity grid demand",
+
+          "RAI component - MSD jobseekers",
+          "RAI component - Traffic index (light)",
+          "RAI component - Traffic index (heavy)"
+
+
+
+        ],
+        "sheet_number": 2,
+        "filename": "RAI portal data.xlsx",
+        "parameter_transform": "function (x) ymd(x)",
+        "load_function": "read_from_excel",
+        "group_names": [
+            "Auckland"
+
+        ],
+        "drop_na": false,
+        "data_type": "TimeSeries"
+      } ,
+
+  {
+        "class": "Economic",
+         "indicator_name": "New Zealand Regional Activity Indices (RAI)",
+        "type": "Activity",
+        "parameter_col": 1,
+        "value_col":
+        [2,
+         3,
+         4,
+
+         6,
+         7,
+         8
+         ],
+        "value_names": [
+        "Regional Activity Index (RAI)",
+          "RAI component - Consumer card spend",
+          "RAI component - Electricity grid demand",
+
+          "RAI component - MSD jobseekers",
+          "RAI component - Traffic index (light)",
+          "RAI component - Traffic index (heavy)"
+
+
+
+        ],
+        "sheet_number": 3,
+        "filename": "RAI portal data.xlsx",
+        "parameter_transform": "function (x) ymd(x)",
+        "load_function": "read_from_excel",
+        "group_names": [
+            "Waikato"
+
+        ],
+        "drop_na": false,
+        "data_type": "TimeSeries"
+      },
+
+  {
+        "class": "Economic",
+        "indicator_name": "New Zealand Regional Activity Indices (RAI)",
+        "type": "Activity",
+        "parameter_col": 1,
+        "value_col":
+        [2,
+         3,
+         4,
+
+         6,
+         7,
+         8
+         ],
+        "value_names": [
+         "Regional Activity Index (RAI)",
+          "RAI component - Consumer card spend",
+          "RAI component - Electricity grid demand",
+
+          "RAI component - MSD jobseekers",
+          "RAI component - Traffic index (light)",
+          "RAI component - Traffic index (heavy)"
+
+
+
+        ],
+        "sheet_number": 4,
+        "filename": "RAI portal data.xlsx",
+        "parameter_transform": "function (x) ymd(x)",
+        "load_function": "read_from_excel",
+        "group_names": [
+            "Bay of Plenty"
+
+        ],
+        "drop_na": false,
+        "data_type": "TimeSeries"
+      },
+
+  {
+        "class": "Economic",
+        "indicator_name": "New Zealand Regional Activity Indices (RAI)",
+        "type": "Activity",
+        "parameter_col": 1,
+        "value_col":
+        [2,
+         3,
+         4,
+
+         6,
+         7,
+         8
+         ],
+        "value_names": [
+        "Regional Activity Index (RAI)",
+          "RAI component - Consumer card spend",
+          "RAI component - Electricity grid demand",
+
+          "RAI component - MSD jobseekers",
+          "RAI component - Traffic index (light)",
+          "RAI component - Traffic index (heavy)"
+
+
+
+        ],
+        "sheet_number": 5,
+        "filename": "RAI portal data.xlsx",
+        "parameter_transform": "function (x) ymd(x)",
+        "load_function": "read_from_excel",
+        "group_names": [
+            "Gisborne"
+
+        ],
+        "drop_na": false,
+        "data_type": "TimeSeries"
+      },
+
+  {
+        "class": "Economic",
+        "indicator_name": "New Zealand Regional Activity Indices (RAI)",
+        "type": "Activity",
+        "parameter_col": 1,
+        "value_col":
+        [2,
+         3,
+         4,
+
+         6,
+         7,
+         8
+         ],
+        "value_names": [
+       "Regional Activity Index (RAI)",
+          "RAI component - Consumer card spend",
+          "RAI component - Electricity grid demand",
+
+          "RAI component - MSD jobseekers",
+          "RAI component - Traffic index (light)",
+          "RAI component - Traffic index (heavy)"
+
+
+
+        ],
+        "sheet_number": 6,
+        "filename": "RAI portal data.xlsx",
+        "parameter_transform": "function (x) ymd(x)",
+        "load_function": "read_from_excel",
+        "group_names": [
+            "Hawke's Bay"
+
+        ],
+        "drop_na": false,
+        "data_type": "TimeSeries"
+      },
+
+  {
+        "class": "Economic",
+        "indicator_name": "New Zealand Regional Activity Indices (RAI)",
+        "type": "Activity",
+        "parameter_col": 1,
+        "value_col":
+        [2,
+         3,
+         4,
+
+         6,
+         7,
+         8
+         ],
+        "value_names": [
+         "Regional Activity Index (RAI)",
+          "RAI component - Consumer card spend",
+          "RAI component - Electricity grid demand",
+
+          "RAI component - MSD jobseekers",
+          "RAI component - Traffic index (light)",
+          "RAI component - Traffic index (heavy)"
+
+
+
+        ],
+        "sheet_number": 7,
+        "filename": "RAI portal data.xlsx",
+        "parameter_transform": "function (x) ymd(x)",
+        "load_function": "read_from_excel",
+        "group_names": [
+            "Taranaki"
+
+        ],
+        "drop_na": false,
+        "data_type": "TimeSeries"
+      },
+
+  {
+        "class": "Economic",
+         "indicator_name": "New Zealand Regional Activity Indices (RAI)",
+        "type": "Activity",
+        "parameter_col": 1,
+        "value_col":
+        [2,
+         3,
+         4,
+
+         6,
+         7,
+         8
+         ],
+        "value_names": [
+       "Regional Activity Index (RAI)",
+          "RAI component - Consumer card spend",
+          "RAI component - Electricity grid demand",
+
+          "RAI component - MSD jobseekers",
+          "RAI component - Traffic index (light)",
+          "RAI component - Traffic index (heavy)"
+
+
+
+        ],
+        "sheet_number": 8,
+        "filename": "RAI portal data.xlsx",
+        "parameter_transform": "function (x) ymd(x)",
+        "load_function": "read_from_excel",
+        "group_names": [
+            "Manawatū-Whanganui"
+
+        ],
+        "drop_na": false,
+        "data_type": "TimeSeries"
+      },
+
+  {
+        "class": "Economic",
+        "indicator_name": "New Zealand Regional Activity Indices (RAI)",
+        "type": "Activity",
+        "parameter_col": 1,
+        "value_col":
+        [2,
+        3,
+         4,
+
+         6,
+         7,
+         8
+         ],
+        "value_names": [
+          "Regional Activity Index (RAI)",
+          "RAI component - Consumer card spend",
+          "RAI component - Electricity grid demand",
+
+          "RAI component - MSD jobseekers",
+          "RAI component - Traffic index (light)",
+          "RAI component - Traffic index (heavy)"
+
+
+
+        ],
+        "sheet_number": 9,
+        "filename": "RAI portal data.xlsx",
+        "parameter_transform": "function (x) ymd(x)",
+        "load_function": "read_from_excel",
+        "group_names": [
+            "Wellington"
+
+        ],
+        "drop_na": false,
+        "data_type": "TimeSeries"
+      },
+
+  {
+        "class": "Economic",
+      "indicator_name": "New Zealand Regional Activity Indices (RAI)",
+        "type": "Activity",
+        "parameter_col": 1,
+        "value_col":
+        [2,
+        3,
+         4,
+
+         6,
+         7,
+         8
+         ],
+        "value_names": [
+          "Regional Activity Index (RAI)",
+          "RAI component - Consumer card spend",
+          "RAI component - Electricity grid demand",
+
+          "RAI component - MSD jobseekers",
+          "RAI component - Traffic index (light)",
+          "RAI component - Traffic index (heavy)"
+
+
+
+        ],
+        "sheet_number": 10,
+        "filename": "RAI portal data.xlsx",
+        "parameter_transform": "function (x) ymd(x)",
+        "load_function": "read_from_excel",
+        "group_names": [
+            "Tasman/ Nelson/ Marlborough"
+
+        ],
+        "drop_na": false,
+        "data_type": "TimeSeries"
+      },
+
+  {
+        "class": "Economic",
+       "indicator_name": "New Zealand Regional Activity Indices (RAI)",
+        "type": "Activity",
+        "parameter_col": 1,
+        "value_col":
+        [2,
+        3,
+         4,
+
+         6,
+         7,
+         8
+         ],
+        "value_names": [
+         "Regional Activity Index (RAI)",
+          "RAI component - Consumer card spend",
+          "RAI component - Electricity grid demand",
+
+          "RAI component - MSD jobseekers",
+          "RAI component - Traffic index (light)",
+          "RAI component - Traffic index (heavy)"
+
+
+
+        ],
+        "sheet_number": 11,
+        "filename": "RAI portal data.xlsx",
+        "parameter_transform": "function (x) ymd(x)",
+        "load_function": "read_from_excel",
+        "group_names": [
+            "Canterbury"
+
+        ],
+        "drop_na": false,
+        "data_type": "TimeSeries"
+      },
+
+  {
+        "class": "Economic",
+        "indicator_name": "New Zealand Regional Activity Indices (RAI)",
+        "type": "Activity",
+        "parameter_col": 1,
+        "value_col":
+        [2,
+        3,
+         4,
+
+         6,
+         7,
+         8
+         ],
+        "value_names": [
+         "Regional Activity Index (RAI)",
+          "RAI component - Consumer card spend",
+          "RAI component - Electricity grid demand",
+
+          "RAI component - MSD jobseekers",
+          "RAI component - Traffic index (light)",
+          "RAI component - Traffic index (heavy)"
+
+
+
+        ],
+        "sheet_number": 12,
+        "filename": "RAI portal data.xlsx",
+        "parameter_transform": "function (x) ymd(x)",
+        "load_function": "read_from_excel",
+        "group_names": [
+            "West Coast"
+
+        ],
+        "drop_na": false,
+        "data_type": "TimeSeries"
+      },
+
+  {
+        "class": "Economic",
+        "indicator_name": "New Zealand Regional Activity Indices (RAI)",
+        "type": "Activity",
+        "parameter_col": 1,
+        "value_col":
+        [2,
+        3,
+         4,
+
+         6,
+         7,
+         8
+         ],
+        "value_names": [
+       "Regional Activity Index (RAI)",
+          "RAI component - Consumer card spend",
+          "RAI component - Electricity grid demand",
+
+          "RAI component - MSD jobseekers",
+          "RAI component - Traffic index (light)",
+          "RAI component - Traffic index (heavy)"
+
+
+
+        ],
+        "sheet_number": 13,
+        "filename": "RAI portal data.xlsx",
+        "parameter_transform": "function (x) ymd(x)",
+        "load_function": "read_from_excel",
+        "group_names": [
+            "Otago"
+
+        ],
+        "drop_na": false,
+        "data_type": "TimeSeries"
+      },
+
+  {
+        "class": "Economic",
+       "indicator_name": "New Zealand Regional Activity Indices (RAI)",
+        "type": "Activity",
+        "parameter_col": 1,
+        "value_col":
+        [2,
+        3,
+         4,
+
+         6,
+         7,
+         8
+         ],
+        "value_names": [
+          "Regional Activity Index (RAI)",
+          "RAI component - Consumer card spend",
+          "RAI component - Electricity grid demand",
+
+          "RAI component - MSD jobseekers",
+          "RAI component - Traffic index (light)",
+          "RAI component - Traffic index (heavy)"
+
+
+        ],
+        "sheet_number": 14,
+        "filename": "RAI portal data.xlsx",
+        "parameter_transform": "function (x) ymd(x)",
+        "load_function": "read_from_excel",
+        "group_names": [
+            "Southland"
+
+        ],
+        "drop_na": false,
+        "data_type": "TimeSeries"
+      }
 ]
