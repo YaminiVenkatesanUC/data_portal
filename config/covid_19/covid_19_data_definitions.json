@@ -800,7 +800,7 @@
 
         ],
         "filename": "COVID 19 - Chorus regional broadband.xlsx",
-        "load_function": "read_chorus_regional_data",
+        "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": [
           "Total",
@@ -818,7 +818,8 @@
          "Waikato",
          "Wellington",
          "West Coast"
-        ]
+        ],
+        "drop_na":false
    },
     {
         "class": "Economic",
