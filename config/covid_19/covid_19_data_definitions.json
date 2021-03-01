@@ -289,7 +289,7 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly filled jobs (by industry)",
-      "filename": "employment-indicators-december-2020-csv-tables.csv",
+      "filename": "employment-indicators-january-2021-tables.csv",
       "load_function": "read_filled_jobs_by_industry_or_region",
       "data_type": "TimeSeries",
       "load_parameters": {
@@ -303,7 +303,7 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly filled jobs (by region)",
-      "filename": "employment-indicators-december-2020-csv-tables.csv",
+      "filename": "employment-indicators-january-2021-tables.csv",
       "load_function": "read_filled_jobs_by_industry_or_region",
       "data_type": "TimeSeries",
       "load_parameters": {
@@ -317,7 +317,7 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly filled jobs (by gender)",
-      "filename": "employment-indicators-december-2020-csv-tables.csv",
+      "filename": "employment-indicators-january-2021-tables.csv",
       "load_function": "read_filled_jobs_by_gender",
       "data_type": "TimeSeries",
       "load_parameters": {
@@ -331,7 +331,7 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly filled jobs (by age)",
-      "filename": "employment-indicators-december-2020-csv-tables.csv",
+      "filename": "employment-indicators-january-2021-tables.csv",
       "load_function": "read_filled_jobs_by_age",
       "data_type": "TimeSeries",
       "load_parameters": {
@@ -345,7 +345,7 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly filled jobs",
-      "filename": "employment-indicators-december-2020-csv-tables.csv",
+      "filename": "employment-indicators-january-2021-tables.csv",
       "load_function": "read_employment_data",
       "data_type": "TimeSeries",
       "load_parameters": {
@@ -359,7 +359,7 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly earnings",
-      "filename": "employment-indicators-december-2020-csv-tables.csv",
+      "filename": "employment-indicators-january-2021-tables.csv",
       "load_function": "read_employment_data",
       "data_type": "TimeSeries",
       "load_parameters": {
