@@ -3,7 +3,7 @@ data_frame_to_api_helper <- function(directory, config, metadata, data){
   #error when there is not a match or indicator removed
   resource <- to_resource(config, metadata)
   observations <- to_observations(config, metadata, data)
-  return(observations)
+  writeDatastore(observations,location = list(collection = "PDS", instance = "Covid-19", table = "Observation_test"), version = 9, server = "uat")
 }
 
 to_observations <- function(config, metadata, data){
@@ -13,7 +13,7 @@ to_observations <- function(config, metadata, data){
                         "Geo" = rep(check_null(metadata$Geo), nrow(data)),
                         "GeoUnit" = rep(check_null(metadata$GeoUnit), nrow(data)),
                         "Duration" = rep(check_null(metadata$Duration), nrow(data)),
-                        "Peroid" = data$parameter,
+                        "Period" = data$parameter,
                         "Label1" = get_label(data, check_null(metadata$Label1), nrow(data)),
                         "Label2" = get_label(data, check_null(metadata$Label2), nrow(data)),
                         "Label3" = get_label(data, check_null(metadata$Label3), nrow(data)),
@@ -22,7 +22,7 @@ to_observations <- function(config, metadata, data){
                         "Label6" = get_label(data, check_null(metadata$Label6), nrow(data)),
                         "Value" = data$value,
                         "Unit" = rep(check_null(metadata$Unit), nrow(data)),
-                        "Mesasure" = rep(check_null(metadata$Measure), nrow(data)),
+                        "Measure" = rep(check_null(metadata$Measure), nrow(data)),
                         "NullReason" = NA,
                         "Multiplier" = rep(check_null(metadata$Multiplier), nrow(data)),
                         "Status" = NA) #%>% toJSON(na ="null")
@@ -30,7 +30,8 @@ to_observations <- function(config, metadata, data){
 }
 
 to_resource <- function(config, metadata){
-  Resource <- tibble("ResourceID" = metadata$ResourceID,
+  Resource <- tibble("LatestDataTable" = "",
+                     "ResourceID" = metadata$ResourceID,
                      "Subject" = metadata$Subject,
                      "Title" = metadata$Title,
                      "Description" = check_null(metadata$Description),
@@ -38,7 +39,7 @@ to_resource <- function(config, metadata){
                      "Caveats" = check_null(metadata$Caveats),
                      "Source" = check_null(metadata$Source),
                      "SourceURL" = check_null(metadata$SourceURL),
-                     "Modified" = check_null(metadata$Modified),
+                     #"Modified" = check_null(metadata$Modified),
                      "Frequency" = check_null(metadata$Frequency),
                      "Var1" = check_null(metadata$Var1),
                      "Var2" = check_null(metadata$Var2),

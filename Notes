@@ -21,7 +21,5 @@ how to combine all dataframes to then be pushed to the API
 
 is multiplier really 0?
 
-definition configuration should be indexed in a way that isnt numeric
-
 to turn off API comment out load of configuration file
 

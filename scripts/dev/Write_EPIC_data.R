@@ -1,5 +1,5 @@
 ' @title Write to datastore
-#' @description This does a simple write to datastore, only good if data is small...
+#' #@description This does a simple write to datastore, only good if data is small...
 #'
 #' @param data       The data to be written
 #' @param location   The datastore location, a list with collecton, instance and table
@@ -13,7 +13,7 @@ observation <- tibble("ResourceID" = "CPWAG1",
                    "Geo" = "",
                    "GeoUnit" = "",
                    "Duration" = "P7D",
-                   "Peroid" = "2020-03-20",
+                   "Period" = "2020-03-20",
                    "Label1" = "",
                    "Label2" = "",
                    "Label3" = "",
@@ -22,7 +22,7 @@ observation <- tibble("ResourceID" = "CPWAG1",
                    "Label6" = "",
                    "Value" = 3,
                    "Unit" = "NZD",
-                   "Mesasure" = "Wage subsidy paid out (cumulative)",
+                   "Measure" = "Wage subsidy paid out (cumulative)",
                    "NullReason" = "",
                    "Multiplier" = 0,
                    "Status" = "") #%>% toJSON(na ="null")

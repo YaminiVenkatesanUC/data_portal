@@ -39,12 +39,11 @@ read_from_csv <- function(config, directory, odata_definitions=NULL) {
   }
 
   if(any(config$ResourceID %in% odata_definitions$ResourceID)){
-    metadata <- odata_definitions[which(odata_definitions$ResourceID == config$ResourceID),]
-    resource <- data_frame_to_api_helper(directory, config, metadata, data)
     print("Adding data to API")
     print(config$indicator_name)
     print(metadata)
-    print(head(resource))
+    metadata <- odata_definitions[which(odata_definitions$ResourceID == config$ResourceID),]
+    data_frame_to_api_helper(directory, config, metadata, data)
     return(NULL)
   }
   return(data_frame_to_data_object_helper(
@@ -93,12 +92,11 @@ read_from_excel <- function(config, directory, odata_definitions=NULL) {
   }
 
   if(any(config$ResourceID %in% odata_definitions$ResourceID)){
-    metadata <- odata_definitions[which(odata_definitions$ResourceID == config$ResourceID),]
-    resource <- data_frame_to_api_helper(directory, config, metadata, data)
     print("Adding data to API")
     print(config$indicator_name)
     print(metadata)
-    print(head(resource))
+    metadata <- odata_definitions[which(odata_definitions$ResourceID == config$ResourceID),]
+    data_frame_to_api_helper(directory, config, metadata, data)
     return(NULL)
   }
 
