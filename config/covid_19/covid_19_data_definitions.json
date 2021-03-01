@@ -416,7 +416,7 @@
         "type": "COVID-19",
         "parameter_col": 2,
         "value_col": [3, 4, 5, 6, 7],
-        "value_names": ["Imported", "Import-related", "Locally acquired, linked", "Locally acquired, unknown source", "Under investigation"],
+        "value_names": ["Import-related", "Imported", "Locally acquired, unknown source", "Locally acquired, linked", "Under investigation"],
         "group_names": ["Source", "Source", "Source", "Source", "Source"],
         "sheet_number": 2,
         "filename": "COVID 19 - MoH COVID-19 DHB insights.xlsx",
@@ -800,7 +800,7 @@
 
         ],
         "filename": "COVID 19 - Chorus regional broadband.xlsx",
-        "load_function": "read_chorus_regional_data",
+        "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": [
           "Total",
@@ -818,7 +818,8 @@
          "Waikato",
          "Wellington",
          "West Coast"
-        ]
+        ],
+        "drop_na":false
    },
     {
         "class": "Economic",
@@ -1193,6 +1194,7 @@
         "value_col": 2,
         "value_names": "Accommodation supplement",
         "filename": "COVID-19 MSD Accommodation Supplement.xlsx",
+        "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": "Accommodation supplement"
@@ -1212,6 +1214,7 @@
         "Special needs grants for food"
         ],
         "filename": "COVID-19 MSD Special Needs Grants for Food.xlsx",
+        "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": [
@@ -1231,6 +1234,7 @@
         "value_col": 2,
         "value_names": "Temporary additional support and special benefit",
         "filename": "COVID-19 MSD Temporary Additional Support and Special Benefit.xlsx",
+        "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": "Temporary additional support and special benefit"
@@ -1253,6 +1257,7 @@
           "Emergency housing grants"
           ],
         "filename": "COVID-19 MSD Emergency Housing Grants.xlsx",
+        "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": [
@@ -1276,6 +1281,7 @@
           "All special needs grants"
           ],
         "filename": "COVID-19 MSD All Special Needs Grants.xlsx",
+        "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": [
@@ -1323,6 +1329,7 @@
         "Total"
         ],
         "filename": "COVID-19 MSD Jobseeker Support by MSD Region.xlsx",
+        "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": [
@@ -2053,6 +2060,7 @@
             "Total"
         ],
         "filename": "COVID-19 MSD Jobseeker Support By Region.xlsx",
+        "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries"
     },
@@ -2616,6 +2624,7 @@
         "value_col": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
         "value_names":["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"],
         "filename": "COVID 19 - MSD Jobseeker by region and Hardship grants.xlsx",
+        "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": ["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"]
@@ -2635,6 +2644,7 @@
         "value_col": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
         "value_names":["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"],
         "filename": "COVID 19 - MSD Jobseeker by region and Hardship grants.xlsx",
+        "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": ["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"]
@@ -2654,6 +2664,7 @@
         "value_col": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
         "value_names":["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"],
         "filename": "COVID 19 - MSD Jobseeker by region and Hardship grants.xlsx",
+        "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": ["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"]
@@ -2673,6 +2684,7 @@
         "value_col": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
         "value_names":["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"],
         "filename": "COVID 19 - MSD Jobseeker by region and Hardship grants.xlsx",
+        "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": ["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"]
@@ -2691,6 +2703,7 @@
         "value_col": [6, 2, 3, 4, 5],
         "value_names":["Total - work ready","Māori", "NZ European", "Pacific peoples", "All other ethnicities"],
         "filename": "COVID 19 - MSD Jobseeker by region and Hardship grants.xlsx",
+        "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": ["Total - work ready","Māori", "NZ European", "Pacific peoples", "All other ethnicities"]
@@ -2709,6 +2722,7 @@
         "value_col": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13],
         "value_names":["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"],
         "filename": "COVID 19 - MSD Jobseeker by region and Hardship grants.xlsx",
+        "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": ["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"]
@@ -3439,12 +3453,14 @@
         16,
         17,
         18,
-        19
+        19,
+        20
         ],
         "value_names": [
         "Auckland",
         "Bay of Plenty",
         "Canterbury",
+        "Chatham Islands",
         "Gisborne",
         "Hawke's Bay",
         "Manawatū-Whanganui",
@@ -3482,6 +3498,7 @@
             "Total"
         ],
         "filename": "COVID 19 - MSD Jobseeker by regional council.xlsx",
+        "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries"
     }
@@ -3557,6 +3574,7 @@
             "Total"
         ],
         "filename": "COVID 19 - MSD Jobseeker by regional council.xlsx",
+        "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries"
     } ,
@@ -3632,6 +3650,7 @@
             "Total"
         ],
         "filename": "COVID 19 - MSD Jobseeker by regional council.xlsx",
+        "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries"
     }
@@ -3708,6 +3727,7 @@
             "Total"
         ],
         "filename": "COVID 19 - MSD Jobseeker by regional council.xlsx",
+        "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries"
     }
@@ -3784,6 +3804,7 @@
             "Total"
         ],
         "filename": "COVID 19 - MSD Jobseeker by regional council.xlsx",
+        "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries"
     },
@@ -3859,6 +3880,7 @@
             "Total"
         ],
         "filename": "COVID 19 - MSD Jobseeker by regional council.xlsx",
+        "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries"
     },
@@ -4254,6 +4276,7 @@
   	],
   	"filename": "COVID-19 MSD Number of CIRP Recipients.xlsx",
   	"load_function": "read_from_excel",
+  	"drop_na": false,
   	"data_type": "TimeSeries",
   	"group_names": "undefined_name"
     },
@@ -4305,6 +4328,7 @@
       "Other/Unknown"
       ],
     "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "drop_na": false,
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
     "group_names": [
@@ -4341,6 +4365,7 @@
     "value_col": 2,
     "value_names": "Amount of wage subsidy refunds received",
     "filename": "COVID-19 MSD Amount of Wage Subsidy Refunds.xlsx",
+    "drop_na": false,
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
     "group_names": "undefined_name"
@@ -4359,6 +4384,7 @@
     "value_col": 6,
     "value_names": "Number of jobs supported by the wage subsidy extension",
     "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "drop_na": false,
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
     "group_names": "undefined_name"
@@ -4376,6 +4402,7 @@
     "value_col": 2,
     "value_names": "Number of wage subsidy refunds received",
     "filename": "COVID-19 MSD Number of Wage Subsidy Refunds.xlsx",
+    "drop_na": false,
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
     "group_names": "undefined_name"
@@ -4393,6 +4420,7 @@
     "value_col": 3,
     "value_names": "Number of jobs associated with a paid application",
     "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "drop_na": false,
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
     "group_names": "undefined_name"
@@ -4410,6 +4438,7 @@
     "value_col": 2,
     "value_names": "Amount of wage subsidy extension paid",
     "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "drop_na": false,
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
     "group_names": "undefined_name"
@@ -4435,6 +4464,7 @@
     "Health Condition and Disability"
     ],
     "filename": "COVID-19 MSD Jobseeker Support.xlsx",
+    "drop_na": false,
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
     "group_names": "undefined_name"
@@ -4454,6 +4484,7 @@
     "Percentage of the working-age population"
     ],
     "filename": "COVID-19 MSD Percentage of Population.xlsx",
+    "drop_na": false,
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
     "group_names": [
@@ -4483,6 +4514,7 @@
     "Declined"
     ],
     "filename": "COVID-19 MSD Number of Applications.xlsx",
+    "drop_na": false,
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
     "group_names": "undefined_name"
@@ -4508,6 +4540,7 @@
     "Self-employed"
     ],
     "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "drop_na": false,
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
     "group_names": "undefined_name"
@@ -4525,6 +4558,7 @@
     "value_col": 2,
     "value_names": "Amount paid out",
     "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "drop_na": false,
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
     "group_names": "undefined_name"
@@ -4566,6 +4600,7 @@
        "65+ years"
         ],
     "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "drop_na": false,
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
     "group_names": [
@@ -4605,6 +4640,7 @@
       "Total"
         ],
     "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "drop_na": false,
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
     "group_names": [
@@ -4638,6 +4674,7 @@
       "Total"
         ],
     "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "drop_na": false,
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
     "group_names": [
@@ -4671,6 +4708,7 @@
       "Total"
         ],
     "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "drop_na": false,
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
     "group_names": [
@@ -4703,6 +4741,7 @@
       "Number of jobs supported by the wage subsidy extension"
         ],
     "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "drop_na": false,
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
     "group_names": [
@@ -4728,6 +4767,7 @@
 
         ],
     "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "drop_na": false,
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
     "group_names": [
@@ -4751,6 +4791,7 @@
 
         ],
     "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+    "drop_na": false,
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
     "group_names": [
@@ -4908,6 +4949,7 @@
 		 "Total"
 		],
 	"filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
+	"drop_na": false,
   "load_function": "read_from_excel",
   "data_type": "TimeSeries",
   "group_names": [
@@ -5445,7 +5487,7 @@
     "group_names":[
       "Total NZ Population"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -5471,7 +5513,7 @@
     "group_names":[
       "By sex"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -5502,7 +5544,7 @@
     "group_names":[
       "By age"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -5530,7 +5572,7 @@
     "group_names":[
       "By ethnicity"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -5544,15 +5586,15 @@
     "n_rows":2,
     "keyword":"7 to 10",
     "parameter_col":1,
-    "value_col":[2, 5],
-    "lower_bound_col":[3, 6],
-    "upper_bound_col":[4, 7],
+    "value_col":[2, 5, 8],
+    "lower_bound_col":[3, 6, 9],
+    "upper_bound_col":[4, 7, 10],
     "sheet_number":4,
-    "value_names":["Jun-2020", "Sep-2020"],
+    "value_names":["Jun-2020", "Sep-2020","Dec-2020"],
     "group_names":[
       "By region"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -5582,7 +5624,7 @@
     "group_names":[
       "By parent status"
     ],
-    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx", "Raw data/SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -5611,7 +5653,7 @@
     "group_names":[
       "By disability status"
     ],
-    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -5636,7 +5678,7 @@
     "group_names":[
       "Total NZ Population"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -5663,7 +5705,7 @@
     "group_names":[
       "By sex"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -5694,7 +5736,7 @@
     "group_names":[
       "By age"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -5722,7 +5764,7 @@
     "group_names":[
       "By ethnicity"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -5736,15 +5778,15 @@
     "n_rows":2,
     "keyword":"7 to 10",
     "parameter_col":1,
-    "value_col":[2, 5],
-    "lower_bound_col":[3, 6],
-    "upper_bound_col":[4, 7],
+    "value_col":[2, 5 , 8],
+    "lower_bound_col":[3, 6, 9],
+    "upper_bound_col":[4, 7, 10],
     "sheet_number":4,
-    "value_names":["Jun-2020", "Sep-2020"],
+    "value_names":["Jun-2020", "Sep-2020", "Dec-2020"],
     "group_names":[
       "By region"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -5774,7 +5816,7 @@
     "group_names":[
       "By parent status"
     ],
-    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx", "Raw data/SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -5802,7 +5844,7 @@
     "group_names":[
       "By disability status"
     ],
-    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -5857,7 +5899,7 @@
     "group_names":[
       "Total NZ Population"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -5884,7 +5926,7 @@
     "group_names":[
       "By sex"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -5915,7 +5957,7 @@
     "group_names":[
       "By age"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -5943,7 +5985,7 @@
     "group_names":[
       "By ethnicity"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -5957,15 +5999,15 @@
     "skip":5,
     "n_rows":3,
     "parameter_col":1,
-    "value_col":[2, 5],
-    "lower_bound_col":[3, 6],
-    "upper_bound_col":[4, 7],
+    "value_col":[2, 5, 8],
+    "lower_bound_col":[3, 6, 9],
+    "upper_bound_col":[4, 7, 10],
     "sheet_number":4,
-    "value_names":["Jun-2020", "Sep-2020"],
+    "value_names":["Jun-2020", "Sep-2020", "Dec-2020"],
     "group_names":[
       "By region"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -5995,7 +6037,7 @@
     "group_names":[
       "By parent status"
     ],
-    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx", "Raw data/SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6023,7 +6065,7 @@
     "group_names":[
       "By disability status"
     ],
-    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6048,7 +6090,7 @@
     "group_names":[
      "Total NZ Population"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6074,7 +6116,7 @@
     "group_names":[
       "By sex"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6105,7 +6147,7 @@
     "group_names":[
       "By age"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6133,7 +6175,7 @@
     "group_names":[
       "By ethnicity"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6147,15 +6189,15 @@
     "skip":5,
     "n_rows":2,
     "parameter_col":1,
-    "value_col":[2, 5],
-    "lower_bound_col":[3, 6],
-    "upper_bound_col":[4, 7],
+    "value_col":[2, 5, 8],
+    "lower_bound_col":[3, 6, 9],
+    "upper_bound_col":[4, 7, 10],
     "sheet_number":4,
-    "value_names":["Jun-2020", "Sep-2020"],
+    "value_names":["Jun-2020", "Sep-2020", "Dec-2020"],
     "group_names":[
       "By region"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6185,7 +6227,7 @@
     "group_names":[
       "By parent status"
     ],
-    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx", "Raw data/SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6213,7 +6255,7 @@
     "group_names":[
       "By disability status"
     ],
-    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6239,7 +6281,7 @@
     "group_names":[
       "Total NZ Population"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6266,7 +6308,7 @@
     "group_names":[
       "By sex"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6297,7 +6339,7 @@
     "group_names":[
       "By age"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6325,7 +6367,7 @@
     "group_names":[
       "By ethnicity"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6339,15 +6381,15 @@
     "skip":5,
     "n_rows":2,
     "parameter_col":1,
-    "value_col":[2, 5],
-    "lower_bound_col":[3, 6],
-    "upper_bound_col":[4, 7],
+    "value_col":[2, 5, 8],
+    "lower_bound_col":[3, 6, 9],
+    "upper_bound_col":[4, 7, 10],
     "sheet_number":4,
-    "value_names":["Jun-2020", "Sep-2020"],
+    "value_names":["Jun-2020", "Sep-2020", "Dec-2020"],
     "group_names":[
       "By region"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6375,7 +6417,7 @@
     "group_names":[
       "By parent status"
     ],
-    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx", "Raw data/SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6403,7 +6445,7 @@
     "group_names":[
       "By disability status"
     ],
-    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6428,7 +6470,7 @@
     "group_names":[
      "Total NZ Population"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6455,7 +6497,7 @@
     "group_names":[
       "By sex"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6486,7 +6528,7 @@
     "group_names":[
       "By age"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6514,7 +6556,7 @@
     "group_names":[
       "By ethnicity"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6528,15 +6570,15 @@
     "skip":5,
     "n_rows":2,
     "parameter_col":1,
-    "value_col":[2, 5],
-    "lower_bound_col":[3, 6],
-    "upper_bound_col":[4, 7],
+    "value_col":[2, 5, 8],
+    "lower_bound_col":[3, 6, 9],
+    "upper_bound_col":[4, 7, 10],
     "sheet_number":4,
-    "value_names":["Jun-2020", "Sep-2020"],
+    "value_names":["Jun-2020", "Sep-2020", "Dec-2020"],
     "group_names":[
       "By region"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6566,7 +6608,7 @@
     "group_names":[
       "By parent status"
     ],
-    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx", "Raw data/SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6595,7 +6637,7 @@
     "group_names":[
       "By disability status"
     ],
-    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6620,7 +6662,7 @@
     "group_names":[
       "Total NZ Population"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6646,7 +6688,7 @@
     "group_names":[
       "By sex"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6677,7 +6719,7 @@
     "group_names":[
       "By age"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6705,7 +6747,7 @@
     "group_names":[
       "By ethnicity"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6719,15 +6761,15 @@
     "skip":5,
     "n_rows":2,
     "parameter_col":1,
-    "value_col":[2, 5],
-    "lower_bound_col":[3, 6],
-    "upper_bound_col":[4, 7],
+    "value_col":[2, 5, 8],
+    "lower_bound_col":[3, 6, 9],
+    "upper_bound_col":[4, 7, 10],
     "sheet_number":4,
-    "value_names":["Jun-2020", "Sep-2020"],
+    "value_names":["Jun-2020", "Sep-2020", "Dec-2020"],
     "group_names":[
       "By region"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6757,7 +6799,7 @@
     "group_names":[
       "By parent status"
     ],
-    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx", "Raw data/SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6785,7 +6827,7 @@
     "group_names":[
       "By disability status"
     ],
-    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6810,7 +6852,7 @@
     "group_names":[
      "Total NZ Population"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6836,7 +6878,7 @@
     "group_names":[
       "By sex"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6867,7 +6909,7 @@
     "group_names":[
       "By age"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6895,7 +6937,7 @@
     "group_names":[
       "By ethnicity"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6909,15 +6951,15 @@
     "skip":5,
     "n_rows":2,
     "parameter_col":1,
-    "value_col":[2, 5],
-    "lower_bound_col":[3, 6],
-    "upper_bound_col":[4, 7],
+    "value_col":[2, 5, 8],
+    "lower_bound_col":[3, 6, 9],
+    "upper_bound_col":[4, 7, 10],
     "sheet_number":4,
-    "value_names":["Jun-2020", "Sep-2020"],
+    "value_names":["Jun-2020", "Sep-2020", "Dec-2020"],
     "group_names":[
       "By region"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6947,7 +6989,7 @@
     "group_names":[
       "By parent status"
     ],
-    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx", "Raw data/SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -6975,7 +7017,7 @@
     "group_names":[
       "By disability status"
     ],
-    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -7000,7 +7042,7 @@
     "group_names":[
      "Total NZ Population"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -7027,7 +7069,7 @@
     "group_names":[
       "By sex"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -7058,7 +7100,7 @@
     "group_names":[
       "By age"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -7086,7 +7128,7 @@
     "group_names":[
       "By ethnicity"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -7100,15 +7142,15 @@
     "skip":5,
     "n_rows":3,
     "parameter_col":1,
-    "value_col":[2, 5],
-    "lower_bound_col":[3, 6],
-    "upper_bound_col":[4, 7],
+    "value_col":[2, 5, 8],
+    "lower_bound_col":[3, 6, 9],
+    "upper_bound_col":[4, 7, 10],
     "sheet_number":4,
-    "value_names":["Jun-2020", "Sep-2020"],
+    "value_names":["Jun-2020", "Sep-2020", "Dec-2020"],
     "group_names":[
       "By region"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -7138,7 +7180,7 @@
     "group_names":[
       "By parent status"
     ],
-    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx", "Raw data/SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -7166,7 +7208,7 @@
     "group_names":[
       "By disability status"
     ],
-    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -7191,7 +7233,7 @@
     "group_names":[
       "Total NZ Population"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -7218,7 +7260,7 @@
     "group_names":[
       "By sex"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -7249,7 +7291,7 @@
     "group_names":[
       "By age"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -7277,7 +7319,7 @@
     "group_names":[
       "By ethnicity"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -7291,15 +7333,15 @@
     "skip":5,
     "n_rows":3,
     "parameter_col":1,
-    "value_col":[2, 5],
-    "lower_bound_col":[3, 6],
-    "upper_bound_col":[4, 7],
+    "value_col":[2, 5, 8],
+    "lower_bound_col":[3, 6, 9],
+    "upper_bound_col":[4, 7, 10],
     "sheet_number":4,
-    "value_names":["Jun-2020", "Sep-2020"],
+    "value_names":["Jun-2020", "Sep-2020", "Dec-2020"],
     "group_names":[
       "By region"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -7328,7 +7370,7 @@
     "group_names":[
       "By parent status"
     ],
-    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx", "Raw data/SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -7356,7 +7398,7 @@
     "group_names":[
       "By disability status"
     ],
-    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -7381,7 +7423,7 @@
     "group_names":[
       "Total NZ Population"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -7407,7 +7449,7 @@
     "group_names":[
       "By sex"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -7438,7 +7480,7 @@
     "group_names":[
       "By age"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -7466,7 +7508,7 @@
     "group_names":[
       "By ethnicity"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -7480,15 +7522,15 @@
     "n_rows":2,
     "parameter_col":1,
 	  "keyword":"7 to 10",
-    "value_col":[2, 5],
-    "lower_bound_col":[3, 6],
-    "upper_bound_col":[4, 7],
+    "value_col":[2, 5, 8],
+    "lower_bound_col":[3, 6, 9],
+    "upper_bound_col":[4, 7, 10],
     "sheet_number":4,
-    "value_names":["Jun-2020", "Sep-2020"],
+    "value_names":["Jun-2020", "Sep-2020", "Dec-2020"],
     "group_names":[
       "By region"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -7518,7 +7560,7 @@
     "group_names":[
       "By parent status"
     ],
-    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx", "Raw data/SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -7546,7 +7588,7 @@
     "group_names":[
       "By disability status"
     ],
-    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -7572,7 +7614,7 @@
     "group_names":[
       "Total NZ Population"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -7598,7 +7640,7 @@
     "group_names":[
       "By sex"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -7629,7 +7671,7 @@
     "group_names":[
       "By age"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -7657,7 +7699,7 @@
     "group_names":[
       "By ethnicity"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -7671,15 +7713,15 @@
     "n_rows":1,
     "parameter_col":1,
 	  "keyword":"Experienced discrimination in last 12 months",
-    "value_col":[2, 5],
-    "lower_bound_col":[3, 6],
-    "upper_bound_col":[4, 7],
+    "value_col":[2, 5, 8],
+    "lower_bound_col":[3, 6, 9],
+    "upper_bound_col":[4, 7, 10],
     "sheet_number":4,
-    "value_names":["Jun-2020", "Sep-2020"],
+    "value_names":["Jun-2020", "Sep-2020", "Dec-2020"],
     "group_names":[
       "By region"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -7709,7 +7751,7 @@
     "group_names":[
       "By parent status"
     ],
-    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx", "Raw data/SeptQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
@@ -7738,9 +7780,540 @@
     "group_names":[
       "By disability status"
     ],
-    "filename":["Raw data/JuneQtr_WSTabs_DP.xlsx"],
+    "filename":["JuneQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
-  }
+  },
+
+  {
+        "class": "Economic",
+         "indicator_name": "New Zealand Regional Activity Indices (RAI)",
+        "type": "Activity",
+        "parameter_col": 1,
+        "value_col":
+        [2,
+        3,
+         4,
+
+         6,
+         7,
+         8
+         ],
+        "value_names": [
+       "Regional Activity Index (RAI)",
+          "RAI component - Consumer card spend",
+          "RAI component - Electricity grid demand",
+
+          "RAI component - MSD jobseekers",
+          "RAI component - Traffic index (light)",
+          "RAI component - Traffic index (heavy)"
+
+
+        ],
+        "sheet_number": 1,
+        "filename": "RAI portal data.xlsx",
+        "parameter_transform": "function (x) ymd(x)",
+        "load_function": "read_from_excel",
+        "group_names": [
+            "Northland"
+
+        ],
+        "drop_na": false,
+        "data_type": "TimeSeries"
+      }
+      ,
+
+  {
+        "class": "Economic",
+       "indicator_name": "New Zealand Regional Activity Indices (RAI)",
+        "type": "Activity",
+        "parameter_col": 1,
+        "value_col":
+        [2,
+        3,
+         4,
+
+         6,
+         7,
+         8
+         ],
+        "value_names": [
+        "Regional Activity Index (RAI)",
+          "RAI component - Consumer card spend",
+          "RAI component - Electricity grid demand",
+
+          "RAI component - MSD jobseekers",
+          "RAI component - Traffic index (light)",
+          "RAI component - Traffic index (heavy)"
+
+
+
+        ],
+        "sheet_number": 2,
+        "filename": "RAI portal data.xlsx",
+        "parameter_transform": "function (x) ymd(x)",
+        "load_function": "read_from_excel",
+        "group_names": [
+            "Auckland"
+
+        ],
+        "drop_na": false,
+        "data_type": "TimeSeries"
+      } ,
+
+  {
+        "class": "Economic",
+         "indicator_name": "New Zealand Regional Activity Indices (RAI)",
+        "type": "Activity",
+        "parameter_col": 1,
+        "value_col":
+        [2,
+         3,
+         4,
+
+         6,
+         7,
+         8
+         ],
+        "value_names": [
+        "Regional Activity Index (RAI)",
+          "RAI component - Consumer card spend",
+          "RAI component - Electricity grid demand",
+
+          "RAI component - MSD jobseekers",
+          "RAI component - Traffic index (light)",
+          "RAI component - Traffic index (heavy)"
+
+
+
+        ],
+        "sheet_number": 3,
+        "filename": "RAI portal data.xlsx",
+        "parameter_transform": "function (x) ymd(x)",
+        "load_function": "read_from_excel",
+        "group_names": [
+            "Waikato"
+
+        ],
+        "drop_na": false,
+        "data_type": "TimeSeries"
+      },
+
+  {
+        "class": "Economic",
+        "indicator_name": "New Zealand Regional Activity Indices (RAI)",
+        "type": "Activity",
+        "parameter_col": 1,
+        "value_col":
+        [2,
+         3,
+         4,
+
+         6,
+         7,
+         8
+         ],
+        "value_names": [
+         "Regional Activity Index (RAI)",
+          "RAI component - Consumer card spend",
+          "RAI component - Electricity grid demand",
+
+          "RAI component - MSD jobseekers",
+          "RAI component - Traffic index (light)",
+          "RAI component - Traffic index (heavy)"
+
+
+
+        ],
+        "sheet_number": 4,
+        "filename": "RAI portal data.xlsx",
+        "parameter_transform": "function (x) ymd(x)",
+        "load_function": "read_from_excel",
+        "group_names": [
+            "Bay of Plenty"
+
+        ],
+        "drop_na": false,
+        "data_type": "TimeSeries"
+      },
+
+  {
+        "class": "Economic",
+        "indicator_name": "New Zealand Regional Activity Indices (RAI)",
+        "type": "Activity",
+        "parameter_col": 1,
+        "value_col":
+        [2,
+         3,
+         4,
+
+         6,
+         7,
+         8
+         ],
+        "value_names": [
+        "Regional Activity Index (RAI)",
+          "RAI component - Consumer card spend",
+          "RAI component - Electricity grid demand",
+
+          "RAI component - MSD jobseekers",
+          "RAI component - Traffic index (light)",
+          "RAI component - Traffic index (heavy)"
+
+
+
+        ],
+        "sheet_number": 5,
+        "filename": "RAI portal data.xlsx",
+        "parameter_transform": "function (x) ymd(x)",
+        "load_function": "read_from_excel",
+        "group_names": [
+            "Gisborne"
+
+        ],
+        "drop_na": false,
+        "data_type": "TimeSeries"
+      },
+
+  {
+        "class": "Economic",
+        "indicator_name": "New Zealand Regional Activity Indices (RAI)",
+        "type": "Activity",
+        "parameter_col": 1,
+        "value_col":
+        [2,
+         3,
+         4,
+
+         6,
+         7,
+         8
+         ],
+        "value_names": [
+       "Regional Activity Index (RAI)",
+          "RAI component - Consumer card spend",
+          "RAI component - Electricity grid demand",
+
+          "RAI component - MSD jobseekers",
+          "RAI component - Traffic index (light)",
+          "RAI component - Traffic index (heavy)"
+
+
+
+        ],
+        "sheet_number": 6,
+        "filename": "RAI portal data.xlsx",
+        "parameter_transform": "function (x) ymd(x)",
+        "load_function": "read_from_excel",
+        "group_names": [
+            "Hawke's Bay"
+
+        ],
+        "drop_na": false,
+        "data_type": "TimeSeries"
+      },
+
+  {
+        "class": "Economic",
+        "indicator_name": "New Zealand Regional Activity Indices (RAI)",
+        "type": "Activity",
+        "parameter_col": 1,
+        "value_col":
+        [2,
+         3,
+         4,
+
+         6,
+         7,
+         8
+         ],
+        "value_names": [
+         "Regional Activity Index (RAI)",
+          "RAI component - Consumer card spend",
+          "RAI component - Electricity grid demand",
+
+          "RAI component - MSD jobseekers",
+          "RAI component - Traffic index (light)",
+          "RAI component - Traffic index (heavy)"
+
+
+
+        ],
+        "sheet_number": 7,
+        "filename": "RAI portal data.xlsx",
+        "parameter_transform": "function (x) ymd(x)",
+        "load_function": "read_from_excel",
+        "group_names": [
+            "Taranaki"
+
+        ],
+        "drop_na": false,
+        "data_type": "TimeSeries"
+      },
+
+  {
+        "class": "Economic",
+         "indicator_name": "New Zealand Regional Activity Indices (RAI)",
+        "type": "Activity",
+        "parameter_col": 1,
+        "value_col":
+        [2,
+         3,
+         4,
+
+         6,
+         7,
+         8
+         ],
+        "value_names": [
+       "Regional Activity Index (RAI)",
+          "RAI component - Consumer card spend",
+          "RAI component - Electricity grid demand",
+
+          "RAI component - MSD jobseekers",
+          "RAI component - Traffic index (light)",
+          "RAI component - Traffic index (heavy)"
+
+
+
+        ],
+        "sheet_number": 8,
+        "filename": "RAI portal data.xlsx",
+        "parameter_transform": "function (x) ymd(x)",
+        "load_function": "read_from_excel",
+        "group_names": [
+            "Manawatū-Whanganui"
+
+        ],
+        "drop_na": false,
+        "data_type": "TimeSeries"
+      },
+
+  {
+        "class": "Economic",
+        "indicator_name": "New Zealand Regional Activity Indices (RAI)",
+        "type": "Activity",
+        "parameter_col": 1,
+        "value_col":
+        [2,
+        3,
+         4,
+
+         6,
+         7,
+         8
+         ],
+        "value_names": [
+          "Regional Activity Index (RAI)",
+          "RAI component - Consumer card spend",
+          "RAI component - Electricity grid demand",
+
+          "RAI component - MSD jobseekers",
+          "RAI component - Traffic index (light)",
+          "RAI component - Traffic index (heavy)"
+
+
+
+        ],
+        "sheet_number": 9,
+        "filename": "RAI portal data.xlsx",
+        "parameter_transform": "function (x) ymd(x)",
+        "load_function": "read_from_excel",
+        "group_names": [
+            "Wellington"
+
+        ],
+        "drop_na": false,
+        "data_type": "TimeSeries"
+      },
+
+  {
+        "class": "Economic",
+      "indicator_name": "New Zealand Regional Activity Indices (RAI)",
+        "type": "Activity",
+        "parameter_col": 1,
+        "value_col":
+        [2,
+        3,
+         4,
+
+         6,
+         7,
+         8
+         ],
+        "value_names": [
+          "Regional Activity Index (RAI)",
+          "RAI component - Consumer card spend",
+          "RAI component - Electricity grid demand",
+
+          "RAI component - MSD jobseekers",
+          "RAI component - Traffic index (light)",
+          "RAI component - Traffic index (heavy)"
+
+
+
+        ],
+        "sheet_number": 10,
+        "filename": "RAI portal data.xlsx",
+        "parameter_transform": "function (x) ymd(x)",
+        "load_function": "read_from_excel",
+        "group_names": [
+            "Tasman/ Nelson/ Marlborough"
+
+        ],
+        "drop_na": false,
+        "data_type": "TimeSeries"
+      },
+
+  {
+        "class": "Economic",
+       "indicator_name": "New Zealand Regional Activity Indices (RAI)",
+        "type": "Activity",
+        "parameter_col": 1,
+        "value_col":
+        [2,
+        3,
+         4,
+
+         6,
+         7,
+         8
+         ],
+        "value_names": [
+         "Regional Activity Index (RAI)",
+          "RAI component - Consumer card spend",
+          "RAI component - Electricity grid demand",
+
+          "RAI component - MSD jobseekers",
+          "RAI component - Traffic index (light)",
+          "RAI component - Traffic index (heavy)"
+
+
+
+        ],
+        "sheet_number": 11,
+        "filename": "RAI portal data.xlsx",
+        "parameter_transform": "function (x) ymd(x)",
+        "load_function": "read_from_excel",
+        "group_names": [
+            "Canterbury"
+
+        ],
+        "drop_na": false,
+        "data_type": "TimeSeries"
+      },
+
+  {
+        "class": "Economic",
+        "indicator_name": "New Zealand Regional Activity Indices (RAI)",
+        "type": "Activity",
+        "parameter_col": 1,
+        "value_col":
+        [2,
+        3,
+         4,
+
+         6,
+         7,
+         8
+         ],
+        "value_names": [
+         "Regional Activity Index (RAI)",
+          "RAI component - Consumer card spend",
+          "RAI component - Electricity grid demand",
+
+          "RAI component - MSD jobseekers",
+          "RAI component - Traffic index (light)",
+          "RAI component - Traffic index (heavy)"
+
+
+
+        ],
+        "sheet_number": 12,
+        "filename": "RAI portal data.xlsx",
+        "parameter_transform": "function (x) ymd(x)",
+        "load_function": "read_from_excel",
+        "group_names": [
+            "West Coast"
+
+        ],
+        "drop_na": false,
+        "data_type": "TimeSeries"
+      },
+
+  {
+        "class": "Economic",
+        "indicator_name": "New Zealand Regional Activity Indices (RAI)",
+        "type": "Activity",
+        "parameter_col": 1,
+        "value_col":
+        [2,
+        3,
+         4,
+
+         6,
+         7,
+         8
+         ],
+        "value_names": [
+       "Regional Activity Index (RAI)",
+          "RAI component - Consumer card spend",
+          "RAI component - Electricity grid demand",
+
+          "RAI component - MSD jobseekers",
+          "RAI component - Traffic index (light)",
+          "RAI component - Traffic index (heavy)"
+
+
+
+        ],
+        "sheet_number": 13,
+        "filename": "RAI portal data.xlsx",
+        "parameter_transform": "function (x) ymd(x)",
+        "load_function": "read_from_excel",
+        "group_names": [
+            "Otago"
+
+        ],
+        "drop_na": false,
+        "data_type": "TimeSeries"
+      },
+
+  {
+        "class": "Economic",
+       "indicator_name": "New Zealand Regional Activity Indices (RAI)",
+        "type": "Activity",
+        "parameter_col": 1,
+        "value_col":
+        [2,
+        3,
+         4,
+
+         6,
+         7,
+         8
+         ],
+        "value_names": [
+          "Regional Activity Index (RAI)",
+          "RAI component - Consumer card spend",
+          "RAI component - Electricity grid demand",
+
+          "RAI component - MSD jobseekers",
+          "RAI component - Traffic index (light)",
+          "RAI component - Traffic index (heavy)"
+
+
+        ],
+        "sheet_number": 14,
+        "filename": "RAI portal data.xlsx",
+        "parameter_transform": "function (x) ymd(x)",
+        "load_function": "read_from_excel",
+        "group_names": [
+            "Southland"
+
+        ],
+        "drop_na": false,
+        "data_type": "TimeSeries"
+      }
 ]
