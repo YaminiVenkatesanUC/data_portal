@@ -410,7 +410,7 @@
     "international": false,
     "include_date_slider": true,
     "default_lower_range": "2017-02-01",
-    "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-june-2020",
+    "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-january-2021",
     "download": true,
     "groups": [
       {
@@ -464,7 +464,7 @@
     "include_date_slider": true,
     "default_lower_range": "2017-02-01",
     "international": false,
-    "source_url":"https://www.stats.govt.nz/information-releases/employment-indicators-june-2020",
+    "source_url":"https://www.stats.govt.nz/information-releases/employment-indicators-january-2021",
     "download": true,
     "groups": [
         {
@@ -718,7 +718,6 @@
     "include_date_slider": true,
     "default_lower_range": "2019-01-01",
     "caveats":"Note: February 2021 data is provisional.",
-    "description_html":"Measures the current business conditions in New Zealand.",
     "source_url": "https://www.anz.co.nz/about-us/economic-markets-research/business-outlook/",
     "download": false,
     "groups": [
@@ -1931,43 +1930,43 @@
             "name": "All",
             "units": "$",
             "title": "Value of total goods exports to all countries (cumulative) - provisional",
-            "visible": ["2021","2020", "2019", "2018"]
+            "visible": ["2021","2020"]
         },
         {
             "name": "Australia",
             "units": "$",
             "title": "Value of goods exports to Australia (cumulative) - provisional",
-            "visible": ["2021","2020", "2019", "2018"]
+            "visible": ["2021","2020"]
         },
         {
             "name": "China",
             "units": "$",
             "title": "Value of goods exports to China (cumulative) - provisional",
-            "visible": ["2021","2020", "2019", "2018"]
+            "visible": ["2021","2020"]
         },
         {
             "name": "United States",
             "units": "$",
             "title": "Value goods exports to United States (cumulative) - provisional",
-            "visible": ["2021","2020", "2019", "2018"]
+            "visible": ["2021","2020"]
         },
         {
             "name": "Japan",
             "units": "$",
             "title": "Value of goods exports to Japan (cumulative) - provisional",
-            "visible": ["2021","2020", "2019", "2018"]
+            "visible": ["2021","2020"]
         },
         {
             "name": "United Kingdom",
             "units": "$",
             "title": "Value of goods exports to United Kingdom (cumulative) - provisional",
-            "visible": ["2021","2020", "2019", "2018"]
+            "visible": ["2021","2020"]
         },
         {
             "name": "European Union (27)",
             "units": "$",
             "title": "Value of goods exports to European Union (27) (cumulative) - provisional",
-            "visible": ["2020", "2019", "2018"]
+            "visible": ["2021","2020"]
         }
     ]
   },
@@ -1986,25 +1985,25 @@
             "name": "All",
             "units": "$",
             "title": "Value of total goods imports from all countries (cumulative) - provisional",
-            "visible": ["2021","2020", "2019", "2018"]
+            "visible": ["2021","2020"]
         },
         {
             "name": "Australia",
             "units": "$",
             "title": "Value of goods imports from Australia (cumulative) - provisional",
-            "visible": ["2021","2020", "2019", "2018"]
+            "visible": ["2021","2020"]
         },
         {
             "name": "China",
             "units": "$",
             "title": "Value of goods imports from China (cumulative) - provisional",
-            "visible": ["2021","2020", "2019", "2018"]
+            "visible": ["2021","2020"]
         },
         {
             "name": "United Kingdom",
             "units": "$",
             "title": "Value of goods imports from United Kingdom (cumulative) - provisional",
-            "visible": ["2021","2020", "2019", "2018"]
+            "visible": ["2021","2020"]
         }
     ]
   },
@@ -2023,38 +2022,38 @@
             "name": "Milk powder, butter, and cheese",
             "units": "$",
             "title": "Value of milk powder, butter, and cheese exports (cumulative) - provisional",
-            "visible": ["2021","2020", "2019", "2018"]
+            "visible": ["2021","2020"]
         },
         {
             "name": "Meat and edible offal",
             "units": "$",
             "title": "Value of meat and edible offal exports (cumulative) - provisional",
-            "visible": ["2021","2020", "2019", "2018"]
+            "visible": ["2021","2020"]
         },
         {
             "name": "Fish, crustaceans, and molluscs",
             "units": "$",
             "title": "Value of fish, crustaceans, and molluscs exports (cumulative) - provisional",
-            "visible": ["2021","2020", "2019", "2018"]
+            "visible": ["2021","2020"]
         },
         {
             "name": "Logs, wood, and wood articles",
             "units": "$",
             "title": "Value of logs, wood, and wood articles exports (cumulative) - provisional",
-            "visible": ["2021","2020", "2019", "2018"]
+            "visible": ["2021","2020"]
         },
         {
             "name": "Fruit",
             "units": "$",
             "title": "Value of fruit exports (cumulative) - provisional",
-            "visible": ["2021","2020", "2019", "2018"],
+            "visible": ["2021","2020"],
             "caveats": "Note that fruit exports are seasonal with kiwifruit and apple exports picking up in March each year."
         },
         {
             "name": "Non-food manufactured goods",
             "units": "$",
             "title": "Value of non-food manufactured goods exports (cumulative) - provisional",
-            "visible": ["2021","2020", "2019", "2018"]
+            "visible": ["2021","2020"]
         }
     ]
   },
@@ -2073,19 +2072,19 @@
             "name": "Non-food manufactured goods",
             "units": "$",
             "title": "Value of non-food manufactured goods imports (cumulative) - provisional",
-            "visible": ["2021","2020", "2019", "2018"]
+            "visible": ["2021","2020"]
         },
         {
             "name": "Mechanical machinery and equip",
             "units": "$",
             "title": "Value of mechanical machinery and equip imports (cumulative) - provisional",
-            "visible": ["2021","2020", "2019", "2018"]
+            "visible": ["2021","2020"]
         },
           {
             "name": "Electrical machinery and equip",
             "units": "$",
             "title": "Value of electrical machinery and equip imports (cumulative) - provisional",
-            "visible": ["2021","2020", "2019", "2018"]
+            "visible": ["2021","2020"]
         }
     ]
   },
