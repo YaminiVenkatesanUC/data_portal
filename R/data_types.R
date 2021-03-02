@@ -31,6 +31,39 @@ TimeSeries <- R6Class("TimeSeries", list(
   }
 ))
 
+TimeSeriesStacked <- R6Class("TimeSeriesStacked", list(
+  categories = NULL,
+  values = NULL,
+  value_names = NULL,
+  update_date = NULL,
+  initialize = function(...) {
+    arguments <- list(...)
+    if (nargs() == 3) {
+      self$initialize_from_args(...)
+    }
+  },
+  initialize_from_args = function(data, value_names, update_date) {
+    self$categories <- data$Parameter
+    self$values <- as.data.table((data[colnames(data) != "Parameter"]))
+    self$value_names <- value_names
+    self$update_date <- update_date
+  },
+  get_csv_content = function(date_range = NULL) {
+    output <- cbind(self$categories, self$values)
+    names(output) <- c("parameter", self$value_names)
+    if (!is.null(date_range)) {
+      output <- output[parameter >= date_range[[1]] & parameter <= date_range[[2]]]
+    }
+    result <- melt(
+      output,
+      measure = 2:ncol(output),
+      value.name = c("value"),
+      variable.name = "sub_series_name"
+    )
+    return(result)
+  }
+))
+
 TimeSeriesError <- R6Class("TimeSeriesError", list(
   dates = NULL,
   values = NULL,
@@ -161,5 +194,6 @@ DATA_TYPES <- list(
   "TimeSeries" = TimeSeries,
   "TimeSeriesError" = TimeSeriesError,
   "BarChart" = BarChart,
-  "BarChartError" = BarChartError
+  "BarChartError" = BarChartError,
+  "TimeSeriesStacked" = TimeSeriesStacked
 )

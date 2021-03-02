@@ -198,6 +198,144 @@ get_time_series_plot <- function(
   return(plot)
 }
 
+get_stacked_time_series_plot <- function(
+  data_object,
+  input,
+  indicator_definition,
+  type = "line",
+  stacking = "normal"
+) {
+  group_index <- which(sapply(
+    indicator_definition$groups,
+    function(x) x$name) == input$line_selector
+  )
+  if (length(group_index) == 0) {
+    return(NULL)
+  }
+  group_definition <- indicator_definition$groups[[group_index]]
+
+  data <- cbind(data_object$categories, data_object$values)
+  names(data) <- c("categories", data_object$value_names)
+
+  plot <- highchart()
+  plot <- hc_exporting(
+    plot,
+    enabled = TRUE,
+    filename = paste0(input$indicator_selector),
+    buttons = list(
+      contextButton = list(
+        menuItems = list('downloadPNG', 'downloadPDF')
+      )
+    )
+  )
+
+  categories <- data_object$categories
+  year_label <- ""
+
+  norm_factor_and_unit <- get_normalisation_factor(data_object$values)
+
+  if (!is.null(group_definition$visible)) {
+    visible <- data_object$value_names %in% group_definition$visible
+  } else {
+    visible <- rep(TRUE, length(data_object$value_names))
+  }
+
+  for (i in 1:length(data_object$value_names)) {
+    if ("data.table" %in% class(data_object$values)) {
+      time_series_data <- (data_object$values[, ..i][[1]])
+    } else {
+      time_series_data <- data_object$values[, i]
+    }
+
+    plot <- plot %>% hc_add_series(
+      data = round(time_series_data / norm_factor_and_unit$factor, norm_factor_and_unit$digits),
+      name = data_object$value_names[[i]],
+      showInLegend = TRUE,
+      type = type,
+      visible = visible[[i]]
+    )
+  }
+
+
+  title <- group_definition$title
+
+  plot <- plot %>% hc_title(
+    text = render_title(title),
+    style = list( color = "black", fontWeight = "bold", fontFamily = "Source Sans Pro")
+  )
+
+  y_label <- group_definition$units
+
+  plot <- hc_xAxis(
+    plot,
+    categories = categories,
+    title = list(
+      text = year_label,
+      style = list(fontSize = "20px", color = "black", fontFamily = "Source Sans Pro")
+    ),
+    labels = list(style = list(fontSize = "20px", color = "black", fontFamily = "Source Sans Pro")),
+    tickInterval = ceiling(length(categories) / 8)
+  )
+
+  tool_tip <- get_tool_tip(group_definition$units)
+  plot <- plot %>%
+    hc_yAxis(
+      title = list(
+        text = paste(y_label, norm_factor_and_unit$unit),
+        style = list(
+          fontSize = "20px",
+          color = "black",
+          fontFamily = "Source Sans Pro"
+        )
+      ),
+      labels = list(
+        style = list(
+          fontSize = "20px",
+          color = "black",
+          fontFamily = "Source Sans Pro"
+        )
+      )
+    ) %>%
+    hc_add_theme(
+      hc_theme(
+        chart = list(animation = FALSE, zoomType = "xy")
+      )
+    ) %>%
+    hc_plotOptions(
+      bar = list(
+        dataLabels = list(enabled = FALSE),
+        enableMouseTracking = TRUE,
+        animation = FALSE
+      ),
+      line = list(animation = FALSE),
+      column = list(
+        dataLabels = list(enabled = FALSE),
+        stacking = stacking,
+        animation = FALSE,
+        enableMouseTracking = TRUE),
+      style = list(fontSize = "30px")
+    ) %>%
+    hc_tooltip(
+      table = TRUE,
+      sort = TRUE,
+      pointFormat = paste0(
+        '<br> <span style="color:{point.color}">\u25CF</span>',
+        " {series.name}: ",
+        tool_tip$prefix,
+        "{point.y} ",
+        norm_factor_and_unit$unit,
+        tool_tip$suffix
+      ),
+      headerFormat = '<span style="font-size: 13px">{point.key}</span>'
+    ) %>%
+    hc_colors(get_brand_colours("graph", 1:9))
+
+  if (!is.null(indicator_definition$show_zero) && indicator_definition$show_zero) {
+    plot <- hc_yAxis(plot, min = 0)
+  }
+  return(plot)
+}
+
 get_stacked_bar_chart <- function(data, input, indicator_definition) {
   get_time_series_plot(data, input, indicator_definition, type = "column")
 }
@@ -887,5 +1025,6 @@ plot_functions <- list(
   get_unstacked_vertical_bar = get_unstacked_vertical_bar,
   get_map_plot = get_map_plot,
   get_unstacked_vertical_bar_with_errors = get_unstacked_vertical_bar_with_errors,
-  get_bar_chart_with_errors = get_bar_chart_with_errors
+  get_bar_chart_with_errors = get_bar_chart_with_errors,
+  get_stacked_time_series_plot = get_stacked_time_series_plot
 )
