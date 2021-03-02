@@ -1,5 +1,73 @@
 [
     {
+  "class": "Economic",
+  "indicator_name": "Student visa",
+  "type": "Visa",
+  "date_filter": "function(x) x > ymd(\"2015-01-01\")",
+  "parameter_col": 1,
+  "parameter_transform": "function (x) ymd(x)",
+  "value_col": [
+    2,
+    3,
+    4,
+    5,
+    6
+    ],
+  "value_names": [
+    "Dependant",
+      "Exchange student",
+      "Fee paying",
+      "Other",
+      "Total"
+    ],
+  "filename": "COVID-19 MBIE Student visa.csv",
+  "load_function": "read_from_csv",
+  "data_type": "TimeSeries",
+  "group_names":
+    [
+      "Dependant",
+      "Exchange student",
+      "Fee paying",
+      "Other",
+      "Total"
+      ]
+},
+{
+  "class": "Economic",
+  "indicator_name": "Work visa",
+  "type": "Visa",
+  "date_filter": "function(x) x > ymd(\"2015-01-01\")",
+  "parameter_col": 1,
+  "parameter_transform": "function (x) ymd(x)",
+  "value_col": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7],
+  "value_names": [
+    "Essential skills",
+    "Family",
+    "Recognised seasonal employer",
+    "Other",
+    "Working holiday scheme",
+    "Total"
+    ],
+  "filename": "COVID-19 MBIE Work visa.csv",
+  "load_function": "read_from_csv",
+  "data_type": "TimeSeries",
+  "group_names":
+    [
+     "Essential skills",
+    "Family",
+    "Recognised seasonal employer",
+    "Other",
+    "Working holiday scheme",
+    "Total"
+    ]
+ },
+    {
         "class": "Economic",
         "indicator_name": "Exports by country (values)",
         "type": "Trade",
@@ -373,7 +441,7 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly filled jobs (by industry)",
-      "filename": "employment-indicators-december-2020-csv-tables.csv",
+      "filename": "employment-indicators-january-2021-tables.csv",
       "load_function": "read_filled_jobs_by_industry_or_region",
       "data_type": "TimeSeries",
       "load_parameters": {
@@ -387,7 +455,7 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly filled jobs (by region)",
-      "filename": "employment-indicators-december-2020-csv-tables.csv",
+      "filename": "employment-indicators-january-2021-tables.csv",
       "load_function": "read_filled_jobs_by_industry_or_region",
       "data_type": "TimeSeries",
       "load_parameters": {
@@ -401,7 +469,7 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly filled jobs (by gender)",
-      "filename": "employment-indicators-december-2020-csv-tables.csv",
+      "filename": "employment-indicators-january-2021-tables.csv",
       "load_function": "read_filled_jobs_by_gender",
       "data_type": "TimeSeries",
       "load_parameters": {
@@ -415,7 +483,7 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly filled jobs (by age)",
-      "filename": "employment-indicators-december-2020-csv-tables.csv",
+      "filename": "employment-indicators-january-2021-tables.csv",
       "load_function": "read_filled_jobs_by_age",
       "data_type": "TimeSeries",
       "load_parameters": {
@@ -429,7 +497,7 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly filled jobs",
-      "filename": "employment-indicators-december-2020-csv-tables.csv",
+      "filename": "employment-indicators-january-2021-tables.csv",
       "load_function": "read_employment_data",
       "data_type": "TimeSeries",
       "load_parameters": {
@@ -443,7 +511,7 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly earnings",
-      "filename": "employment-indicators-december-2020-csv-tables.csv",
+      "filename": "employment-indicators-january-2021-tables.csv",
       "load_function": "read_employment_data",
       "data_type": "TimeSeries",
       "load_parameters": {
@@ -3888,86 +3956,6 @@
         "load_function": "read_from_excel",
         "data_type": "TimeSeries"
     },
-    {
-  "class": "Economic",
-  "indicator_name": "Student visa",
-  "type": "Visa",
-  "date_filter": "function(x) x > dmy(\"01-01-2015\")",
-  "parameter_col": 1,
-  "parameter_transform": [
-    "function (x) dmy(x)"   ],
-
-  "value_col": [
-
-    2,
-    3,
-    4,
-    5,
-    6
-
-
-    ],
-  "value_names": [
-    "Dependant",
-      "Exchange student",
-      "Fee paying",
-      "Other",
-      "Total"
-    ],
-  "filename": "Population_by_Visa_Type_and_Application_Substream_Students.csv",
-  "load_function": "read_from_csv",
-  "data_type": "TimeSeries",
-  "group_names":
-    [
-      "Dependant",
-      "Exchange student",
-      "Fee paying",
-      "Other",
-      "Total"
-
-      ]
-},
-{
-  "class": "Economic",
-  "indicator_name": "Work visa",
-  "type": "Visa",
-  "date_filter": "function(x) x > dmy(\"01-01-2015\")",
-  "parameter_col": 1,
-  "parameter_transform": [
-    "function (x) dmy(x)"   ],
-
-  "value_col": [
-    2,
-    3,
-    4,
-    5,
-    6,
-    7
-
-    ],
-  "value_names": [
-    "Essential skills",
-    "Family",
-    "Recognised seasonal employer",
-    "Other",
-    "Working holiday scheme",
-    "Total"
-
-    ],
-  "filename": "Population_by_Visa_Type_and_Application_Substream_Work.csv",
-  "load_function": "read_from_csv",
-  "data_type": "TimeSeries",
-  "group_names":
-    [
-     "Essential skills",
-    "Family",
-    "Recognised seasonal employer",
-    "Other",
-    "Working holiday scheme",
-    "Total"
-
-      ]
- },
  {
     "class": "Economic",
     "indicator_name": "Daily border crossings (by port) - departures",
