@@ -293,9 +293,12 @@ read_trade_data <- function(config, directory) {
         Measure %in% load_parameters$measure &
         Direction %in% load_parameters$direction &
         Transport_Mode %in% load_parameters$transport_mode
-    ) %>%
+    )
+  data$Date <- dmy(data$Date)
+  data <- data %>% arrange(Date)
+  data <- data %>%
     mutate(
-      Parameter = dmy(portal_match)
+      Parameter = format(data$Date, "%d-%m")
     ) %>%
     select("Parameter", "Year", load_parameters$group_col, "Cumulative")
 
@@ -305,16 +308,18 @@ read_trade_data <- function(config, directory) {
   update_date <- as.Date(file.info(paste0(directory, config$filename))$mtime, tz = "NZ")
 
   for (group_name in unique(config$group_names)) {
-    data_group <- data %>% filter(group_col == group_name) %>% select(-c("group_col"))
-    output <- data.frame(
-      Parameter = unique(data_group$Parameter),
-      stringsAsFactors = FALSE
-    ) %>% arrange()
+    data_group <- data %>% filter(group_col == group_name) %>%
+      select(-c("group_col"))
+
+#adding extra row for non-leap years
+    data_group <- data_group %>%
+      tibble::add_row(Parameter = "29-02", Year = 2015, Cumulative = NA, .before = 60)
 
     output <- data_group %>%
-      pivot_wider(names_from = Year, values_from = c("Cumulative")) %>%
-      arrange(Parameter)
-    output_group[[group_name]] <- TimeSeries$new(output, unique(data_group$Year), update_date)
+      pivot_wider(names_from = Year, values_from = c("Cumulative"))
+
+    data_type <- get_indicator_parameter("data_type", config)
+    output_group[[group_name]] <- DATA_TYPES[[data_type]]$new(output, unique(data_group$Year), update_date)
   }
 
   return(output_group)
@@ -518,8 +523,6 @@ read_filled_jobs_by_industry_or_region <- function(config, directory) {
     output_group[[group_name]] <- TimeSeries$new(data_group, group_name, update_date)
   }
 
- # print(head(output_group))
-
   return(output_group)
 }
 
@@ -551,7 +554,6 @@ read_employment_paid_jobs_data <- function(config, directory) {
     "please enter a filter for visa type or employment"
   }
 
-  #print(head(data))
   return(data_frame_to_data_object_helper(
     directory,
     config,
