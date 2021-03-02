@@ -216,16 +216,6 @@ get_stacked_time_series_plot <- function(
 
   data <- cbind(data_object$categories, data_object$values)
   names(data) <- c("categories", data_object$value_names)
-  if (
-    !is.null(indicator_definition$include_date_slider) &&
-    indicator_definition$include_date_slider
-  ) {
-    range <- input$range_selector
-    time_range_index <- which(data_object$dates <= range[2] & data_object$dates >= range[1])
-  }
-  # else {
-  #   time_range_index <- 1:length(data_object$dates)
-  # }
 
   plot <- highchart()
   plot <- hc_exporting(
@@ -239,46 +229,10 @@ get_stacked_time_series_plot <- function(
     )
   )
 
-  #dates <- data_object$dates[time_range_index]
   categories <- data_object$categories
   year_label <- ""
-  # if (length(dates) == 0) {
-  #   return(NULL)
-  # }
 
-  # duration <- abs(as.numeric(difftime(
-  #   dates[[1]],
-  #   dates[[length(dates)]],
-  #   units = c("days")
-  # )))
-  #
-  #
-  # if (duration < 7 & length(dates) > 7) {
-  #   categories <- format(dates, "%d-%b %H:%M")
-  # } else if (length(unique(year(dates))) == 1) {
-  #   year_label <- paste0("(", year(dates)[[1]], ")")
-  #   categories <- format(dates, "%d-%b")
-  # } else if (duration < 360) {
-  #   categories <- format(dates, "%d-%b-%y")
-  # } else {
-  #   categories <- format(dates, "%b-%y")
-  # }
-  #
-  # if (!is.null(indicator_definition$frequency)) {
-  #   if (indicator_definition$frequency == "monthly" || indicator_definition$frequency == "quarterly") {
-  #     categories <- format(dates, "%b")
-  #   }
-  # }
-  #
-  # if (all(data_object$value_names %in% 2010:2030)) {
-  #   year_label <- ""
-  #   categories <- format(dates, "%d-%b")
-  # }
-
-
-
-#print(str(data_object))
-  #norm_factor_and_unit <- get_normalisation_factor(data_object$values)
+  norm_factor_and_unit <- get_normalisation_factor(data_object$values)
 
   if (!is.null(group_definition$visible)) {
     visible <- data_object$value_names %in% group_definition$visible
@@ -286,19 +240,15 @@ get_stacked_time_series_plot <- function(
     visible <- rep(TRUE, length(data_object$value_names))
   }
 
-
-
-
   for (i in 1:length(data_object$value_names)) {
     if ("data.table" %in% class(data_object$values)) {
-      print(str(data_object$values))
       time_series_data <- (data_object$values[, ..i][[1]])
     } else {
       time_series_data <- data_object$values[, i]
     }
 
-    plot <- plot %>% hc_add_series(data = time_series_data,
-      #round(time_series_data / norm_factor_and_unit$factor, norm_factor_and_unit$digits),
+    plot <- plot %>% hc_add_series(
+      data = round(time_series_data / norm_factor_and_unit$factor, norm_factor_and_unit$digits),
       name = data_object$value_names[[i]],
       showInLegend = TRUE,
       type = type,
@@ -331,7 +281,7 @@ get_stacked_time_series_plot <- function(
   plot <- plot %>%
     hc_yAxis(
       title = list(
-        text = paste(y_label, group_definition$units),
+        text = paste(y_label, norm_factor_and_unit$unit),
         style = list(
           fontSize = "20px",
           color = "black",
@@ -373,7 +323,7 @@ get_stacked_time_series_plot <- function(
         " {series.name}: ",
         tool_tip$prefix,
         "{point.y} ",
-        group_definition$units,
+        norm_factor_and_unit$unit,
         tool_tip$suffix
       ),
       headerFormat = '<span style="font-size: 13px">{point.key}</span>'

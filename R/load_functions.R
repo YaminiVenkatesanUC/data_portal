@@ -298,7 +298,7 @@ read_trade_data <- function(config, directory) {
   data <- data %>% arrange(Date)
   data <- data %>%
     mutate(
-      Parameter = format(data$Date, "%d-%m")
+      Parameter = format(data$Date, "%d-%b")
     ) %>%
     select("Parameter", "Year", load_parameters$group_col, "Cumulative")
 
@@ -313,7 +313,7 @@ read_trade_data <- function(config, directory) {
 
 #adding extra row for non-leap years
     data_group <- data_group %>%
-      tibble::add_row(Parameter = "29-02", Year = 2015, Cumulative = NA, .before = 60)
+      tibble::add_row(Parameter = "29-Feb", Year = 2015, Cumulative = NA, .before = 60)
 
     output <- data_group %>%
       pivot_wider(names_from = Year, values_from = c("Cumulative"))
