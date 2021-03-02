@@ -718,7 +718,6 @@
     "include_date_slider": true,
     "default_lower_range": "2019-01-01",
     "caveats":"Note: February 2021 data is provisional.",
-    "description_html":"Measures the current business conditions in New Zealand.",
     "source_url": "https://www.anz.co.nz/about-us/economic-markets-research/business-outlook/",
     "download": false,
     "groups": [
