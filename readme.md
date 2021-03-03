@@ -225,6 +225,18 @@ Data definition example below.  This block of JSON tells the application how to 
         "data_type": "TimeSeries"
       }
 ```
+### Open Data API 
+
+In addition the the DATA_STORE object, the portal is designined to ingest and load data from other services. The Open Data service, in particlaur, will be used to supply data from our portal directly to customers, as opposed to supplying data in a downloaded csv from the site. 
+
+In order to integrate the Open Data service with the API there are a few modifcations that will need to be made to the portal's configuration files, load process, and data serivce functions. 
+
+#### Open Data API Configuration 
+
+#### Open Data API Load 
+
+#### Open Data API Data Service Function 
+
 
 ## Custom functions
 
