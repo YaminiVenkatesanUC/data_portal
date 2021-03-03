@@ -4677,7 +4677,7 @@
       "units": "Number"
     },  {
       "name": "Fee paying",
-      "title": "Number of people on fee paying students visa",
+      "title": "Number of people on fee paying student visa",
       "units": "Number"
     },  {
       "name": "Other",
