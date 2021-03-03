@@ -48,13 +48,17 @@ add_to_data_service <- function(data_definition, odata_definitions, data_store, 
   return(data_store)
 }
 
-load_data <- function(config) {
+load_data <- function(config, odata_load_flag) {
   data_store <- list()
   data_definitions <- read_json(config$data_definitions)
-  odata_definitions <- fromJSON(config$odata_definitions)
+
+  if(odata_load_flag == TRUE){
+    odata_definitions <- fromJSON(config$odata_definitions)
+  } else {
+    odata_definitions <- NULL
+  }
 
   for (data_definition in data_definitions) {
-    #print(data_definition)
     data_store <- add_to_data_service(data_definition, odata_definitions, data_store, config)
     #break
   }
