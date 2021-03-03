@@ -1,6 +1,90 @@
 [
     {
         "class": "Economic",
+        "indicator_name": "Exports by country (values)",
+        "type": "Trade",
+        "parameter_col": 1,
+        "parameter_transform": "",
+        "value_names": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (27)", "East Asia (excluding China)", "Total (excluding China)"],
+        "filename": "Weekly_Trade_Portal.csv",
+        "load_function": "read_trade_data",
+        "order_parameter": false,
+        "data_type": "TimeSeriesStacked",
+        "group_names": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (27)", "East Asia (excluding China)", "Total (excluding China)"],
+        "load_parameters": {
+            "country": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (27)", "East Asia (excluding China)", "Total (excluding China)"],
+            "transport_mode": "All",
+            "commodity": "All",
+            "measure": "$",
+            "direction": "Exports",
+            "group_col": "Country"
+        }
+    },
+    {
+        "class": "Economic",
+        "indicator_name": "Imports by country (values)",
+        "type": "Trade",
+        "parameter_col": 1,
+        "parameter_transform": "",
+        "order_parameter": false,
+        "value_names": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (27)", "East Asia (excluding China)", "Total (excluding China)"],
+        "filename": "Weekly_Trade_Portal.csv",
+        "load_function": "read_trade_data",
+        "data_type": "TimeSeriesStacked",
+        "group_names": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (27)", "East Asia (excluding China)", "Total (excluding China)"],
+        "load_parameters": {
+            "country": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (27)", "East Asia (excluding China)", "Total (excluding China)"],
+            "transport_mode": "All",
+            "commodity": "All",
+            "measure": "$",
+            "direction": "Imports",
+            "group_col": "Country"
+        }
+    },
+    {
+        "class": "Economic",
+        "indicator_name": "Imports by commodity (values)",
+        "type": "Trade",
+        "parameter_col": 1,
+        "parameter_transform": "",
+        "order_parameter": false,
+        "value_names": ["All", "Non-food manufactured goods", "Mechanical machinery and equip", "Electrical machinery and equip"],
+        "filename": "Weekly_Trade_Portal.csv",
+        "load_function": "read_trade_data",
+        "data_type": "TimeSeriesStacked",
+        "group_names": ["All", "Non-food manufactured goods", "Mechanical machinery and equip", "Electrical machinery and equip"],
+        "load_parameters": {
+            "country": ["All"],
+            "transport_mode": "All",
+            "commodity": ["All", "Non-food manufactured goods", "Mechanical machinery and equip", "Electrical machinery and equip"],
+            "measure": "$",
+            "direction": "Imports",
+            "group_col": "Commodity"
+        }
+    },
+    {
+        "class": "Economic",
+        "indicator_name": "Exports by commodity (values)",
+        "type": "Trade",
+        "parameter_col": 1,
+        "parameter_transform": "",
+        "order_parameter": false,
+        "value_names": ["All", "Milk powder, butter, and cheese", "Meat and edible offal", "Fish, crustaceans, and molluscs", "Logs, wood, and wood articles", "Fruit", "Non-food manufactured goods"],
+        "filename": "Weekly_Trade_Portal.csv",
+        "load_function": "read_trade_data",
+        "data_type": "TimeSeriesStacked",
+        "group_names": ["All", "Milk powder, butter, and cheese", "Meat and edible offal", "Fish, crustaceans, and molluscs", "Logs, wood, and wood articles", "Fruit", "Non-food manufactured goods"],
+        "load_parameters": {
+            "country": ["All"],
+            "transport_mode": "All",
+            "commodity": ["All", "Milk powder, butter, and cheese", "Meat and edible offal", "Fish, crustaceans, and molluscs", "Logs, wood, and wood articles", "Fruit", "Non-food manufactured goods"],
+            "measure": "$",
+            "direction": "Exports",
+            "group_col": "Commodity"
+        }
+    },
+    {
+        "class": "Economic",
         "indicator_name": "Rental bonds by region - active",
         "type": "Activity",
         "parameter_col": 1,
@@ -289,7 +373,7 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly filled jobs (by industry)",
-      "filename": "employment-indicators-december-2020-csv-tables.csv",
+      "filename": "employment-indicators-january-2021-tables.csv",
       "load_function": "read_filled_jobs_by_industry_or_region",
       "data_type": "TimeSeries",
       "load_parameters": {
@@ -303,7 +387,7 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly filled jobs (by region)",
-      "filename": "employment-indicators-december-2020-csv-tables.csv",
+      "filename": "employment-indicators-january-2021-tables.csv",
       "load_function": "read_filled_jobs_by_industry_or_region",
       "data_type": "TimeSeries",
       "load_parameters": {
@@ -317,7 +401,7 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly filled jobs (by gender)",
-      "filename": "employment-indicators-december-2020-csv-tables.csv",
+      "filename": "employment-indicators-january-2021-tables.csv",
       "load_function": "read_filled_jobs_by_gender",
       "data_type": "TimeSeries",
       "load_parameters": {
@@ -331,7 +415,7 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly filled jobs (by age)",
-      "filename": "employment-indicators-december-2020-csv-tables.csv",
+      "filename": "employment-indicators-january-2021-tables.csv",
       "load_function": "read_filled_jobs_by_age",
       "data_type": "TimeSeries",
       "load_parameters": {
@@ -345,7 +429,7 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly filled jobs",
-      "filename": "employment-indicators-december-2020-csv-tables.csv",
+      "filename": "employment-indicators-january-2021-tables.csv",
       "load_function": "read_employment_data",
       "data_type": "TimeSeries",
       "load_parameters": {
@@ -359,7 +443,7 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly earnings",
-      "filename": "employment-indicators-december-2020-csv-tables.csv",
+      "filename": "employment-indicators-january-2021-tables.csv",
       "load_function": "read_employment_data",
       "data_type": "TimeSeries",
       "load_parameters": {
@@ -416,7 +500,7 @@
         "type": "COVID-19",
         "parameter_col": 2,
         "value_col": [3, 4, 5, 6, 7],
-        "value_names": ["Imported", "Import-related", "Locally acquired, linked", "Locally acquired, unknown source", "Under investigation"],
+        "value_names": ["Import-related", "Imported", "Locally acquired, unknown source", "Locally acquired, linked", "Under investigation"],
         "group_names": ["Source", "Source", "Source", "Source", "Source"],
         "sheet_number": 2,
         "filename": "COVID 19 - MoH COVID-19 DHB insights.xlsx",
@@ -807,7 +891,7 @@
 
         ],
         "filename": "COVID 19 - Chorus regional broadband.xlsx",
-        "load_function": "read_chorus_regional_data",
+        "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "group_names": [
           "Total",
@@ -825,7 +909,8 @@
          "Waikato",
          "Wellington",
          "West Coast"
-        ]
+        ],
+        "drop_na":false
    },
     {
         "class": "Economic",
@@ -2090,86 +2175,6 @@
         "data_type": "TimeSeries",
         "group_names": "undefined_name",
         "frequency" : "Monthly"
-    },
-    {
-        "class": "Economic",
-        "indicator_name": "Exports by country (values)",
-        "type": "Trade",
-        "parameter_col": 1,
-        "parameter_transform": "",
-        "value_names": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (27)", "East Asia (excluding China)", "Total (excluding China)"],
-        "filename": "Weekly_Trade_Portal.csv",
-        "load_function": "read_trade_data",
-        "data_type": "TimeSeriesTradeData",
-        "group_names": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (27)", "East Asia (excluding China)", "Total (excluding China)"],
-        "load_parameters": {
-            "country": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (27)", "East Asia (excluding China)", "Total (excluding China)"],
-            "transport_mode": "All",
-            "commodity": "All",
-            "measure": "$",
-            "direction": "Exports",
-            "group_col": "Country"
-        }
-    },
-    {
-        "class": "Economic",
-        "indicator_name": "Imports by country (values)",
-        "type": "Trade",
-        "parameter_col": 1,
-        "parameter_transform": "",
-        "value_names": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (27)", "East Asia (excluding China)", "Total (excluding China)"],
-        "filename": "Weekly_Trade_Portal.csv",
-        "load_function": "read_trade_data",
-        "data_type": "TimeSeriesTradeData",
-        "group_names": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (27)", "East Asia (excluding China)", "Total (excluding China)"],
-        "load_parameters": {
-            "country": ["All" ,"China", "Australia", "United States", "Japan", "United Kingdom", "European Union (27)", "East Asia (excluding China)", "Total (excluding China)"],
-            "transport_mode": "All",
-            "commodity": "All",
-            "measure": "$",
-            "direction": "Imports",
-            "group_col": "Country"
-        }
-    },
-    {
-        "class": "Economic",
-        "indicator_name": "Imports by commodity (values)",
-        "type": "Trade",
-        "parameter_col": 1,
-        "parameter_transform": "",
-        "value_names": ["All", "Non-food manufactured goods", "Mechanical machinery and equip", "Electrical machinery and equip"],
-        "filename": "Weekly_Trade_Portal.csv",
-        "load_function": "read_trade_data",
-        "data_type": "TimeSeriesTradeData",
-        "group_names": ["All", "Non-food manufactured goods", "Mechanical machinery and equip", "Electrical machinery and equip"],
-        "load_parameters": {
-            "country": ["All"],
-            "transport_mode": "All",
-            "commodity": ["All", "Non-food manufactured goods", "Mechanical machinery and equip", "Electrical machinery and equip"],
-            "measure": "$",
-            "direction": "Imports",
-            "group_col": "Commodity"
-        }
-    },
-    {
-        "class": "Economic",
-        "indicator_name": "Exports by commodity (values)",
-        "type": "Trade",
-        "parameter_col": 1,
-        "parameter_transform": "",
-        "value_names": ["All", "Milk powder, butter, and cheese", "Meat and edible offal", "Fish, crustaceans, and molluscs", "Logs, wood, and wood articles", "Fruit", "Non-food manufactured goods"],
-        "filename": "Weekly_Trade_Portal.csv",
-        "load_function": "read_trade_data",
-        "data_type": "TimeSeriesTradeData",
-        "group_names": ["All", "Milk powder, butter, and cheese", "Meat and edible offal", "Fish, crustaceans, and molluscs", "Logs, wood, and wood articles", "Fruit", "Non-food manufactured goods"],
-        "load_parameters": {
-            "country": ["All"],
-            "transport_mode": "All",
-            "commodity": ["All", "Milk powder, butter, and cheese", "Meat and edible offal", "Fish, crustaceans, and molluscs", "Logs, wood, and wood articles", "Fruit", "Non-food manufactured goods"],
-            "measure": "$",
-            "direction": "Exports",
-            "group_col": "Commodity"
-        }
     },
     {
         "class": "Health",
@@ -7815,5 +7820,536 @@
     "parameter_transform":"function(x) ymd(x)",
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
-  }
+  },
+
+  {
+        "class": "Economic",
+         "indicator_name": "New Zealand Regional Activity Indices (RAI)",
+        "type": "Activity",
+        "parameter_col": 1,
+        "value_col":
+        [2,
+        3,
+         4,
+
+         6,
+         7,
+         8
+         ],
+        "value_names": [
+       "Regional Activity Index (RAI)",
+          "RAI component - Consumer card spend",
+          "RAI component - Electricity grid demand",
+
+          "RAI component - MSD jobseekers",
+          "RAI component - Traffic index (light)",
+          "RAI component - Traffic index (heavy)"
+
+
+        ],
+        "sheet_number": 1,
+        "filename": "RAI portal data.xlsx",
+        "parameter_transform": "function (x) ymd(x)",
+        "load_function": "read_from_excel",
+        "group_names": [
+            "Northland"
+
+        ],
+        "drop_na": false,
+        "data_type": "TimeSeries"
+      }
+      ,
+
+  {
+        "class": "Economic",
+       "indicator_name": "New Zealand Regional Activity Indices (RAI)",
+        "type": "Activity",
+        "parameter_col": 1,
+        "value_col":
+        [2,
+        3,
+         4,
+
+         6,
+         7,
+         8
+         ],
+        "value_names": [
+        "Regional Activity Index (RAI)",
+          "RAI component - Consumer card spend",
+          "RAI component - Electricity grid demand",
+
+          "RAI component - MSD jobseekers",
+          "RAI component - Traffic index (light)",
+          "RAI component - Traffic index (heavy)"
+
+
+
+        ],
+        "sheet_number": 2,
+        "filename": "RAI portal data.xlsx",
+        "parameter_transform": "function (x) ymd(x)",
+        "load_function": "read_from_excel",
+        "group_names": [
+            "Auckland"
+
+        ],
+        "drop_na": false,
+        "data_type": "TimeSeries"
+      } ,
+
+  {
+        "class": "Economic",
+         "indicator_name": "New Zealand Regional Activity Indices (RAI)",
+        "type": "Activity",
+        "parameter_col": 1,
+        "value_col":
+        [2,
+         3,
+         4,
+
+         6,
+         7,
+         8
+         ],
+        "value_names": [
+        "Regional Activity Index (RAI)",
+          "RAI component - Consumer card spend",
+          "RAI component - Electricity grid demand",
+
+          "RAI component - MSD jobseekers",
+          "RAI component - Traffic index (light)",
+          "RAI component - Traffic index (heavy)"
+
+
+
+        ],
+        "sheet_number": 3,
+        "filename": "RAI portal data.xlsx",
+        "parameter_transform": "function (x) ymd(x)",
+        "load_function": "read_from_excel",
+        "group_names": [
+            "Waikato"
+
+        ],
+        "drop_na": false,
+        "data_type": "TimeSeries"
+      },
+
+  {
+        "class": "Economic",
+        "indicator_name": "New Zealand Regional Activity Indices (RAI)",
+        "type": "Activity",
+        "parameter_col": 1,
+        "value_col":
+        [2,
+         3,
+         4,
+
+         6,
+         7,
+         8
+         ],
+        "value_names": [
+         "Regional Activity Index (RAI)",
+          "RAI component - Consumer card spend",
+          "RAI component - Electricity grid demand",
+
+          "RAI component - MSD jobseekers",
+          "RAI component - Traffic index (light)",
+          "RAI component - Traffic index (heavy)"
+
+
+
+        ],
+        "sheet_number": 4,
+        "filename": "RAI portal data.xlsx",
+        "parameter_transform": "function (x) ymd(x)",
+        "load_function": "read_from_excel",
+        "group_names": [
+            "Bay of Plenty"
+
+        ],
+        "drop_na": false,
+        "data_type": "TimeSeries"
+      },
+
+  {
+        "class": "Economic",
+        "indicator_name": "New Zealand Regional Activity Indices (RAI)",
+        "type": "Activity",
+        "parameter_col": 1,
+        "value_col":
+        [2,
+         3,
+         4,
+
+         6,
+         7,
+         8
+         ],
+        "value_names": [
+        "Regional Activity Index (RAI)",
+          "RAI component - Consumer card spend",
+          "RAI component - Electricity grid demand",
+
+          "RAI component - MSD jobseekers",
+          "RAI component - Traffic index (light)",
+          "RAI component - Traffic index (heavy)"
+
+
+
+        ],
+        "sheet_number": 5,
+        "filename": "RAI portal data.xlsx",
+        "parameter_transform": "function (x) ymd(x)",
+        "load_function": "read_from_excel",
+        "group_names": [
+            "Gisborne"
+
+        ],
+        "drop_na": false,
+        "data_type": "TimeSeries"
+      },
+
+  {
+        "class": "Economic",
+        "indicator_name": "New Zealand Regional Activity Indices (RAI)",
+        "type": "Activity",
+        "parameter_col": 1,
+        "value_col":
+        [2,
+         3,
+         4,
+
+         6,
+         7,
+         8
+         ],
+        "value_names": [
+       "Regional Activity Index (RAI)",
+          "RAI component - Consumer card spend",
+          "RAI component - Electricity grid demand",
+
+          "RAI component - MSD jobseekers",
+          "RAI component - Traffic index (light)",
+          "RAI component - Traffic index (heavy)"
+
+
+
+        ],
+        "sheet_number": 6,
+        "filename": "RAI portal data.xlsx",
+        "parameter_transform": "function (x) ymd(x)",
+        "load_function": "read_from_excel",
+        "group_names": [
+            "Hawke's Bay"
+
+        ],
+        "drop_na": false,
+        "data_type": "TimeSeries"
+      },
+
+  {
+        "class": "Economic",
+        "indicator_name": "New Zealand Regional Activity Indices (RAI)",
+        "type": "Activity",
+        "parameter_col": 1,
+        "value_col":
+        [2,
+         3,
+         4,
+
+         6,
+         7,
+         8
+         ],
+        "value_names": [
+         "Regional Activity Index (RAI)",
+          "RAI component - Consumer card spend",
+          "RAI component - Electricity grid demand",
+
+          "RAI component - MSD jobseekers",
+          "RAI component - Traffic index (light)",
+          "RAI component - Traffic index (heavy)"
+
+
+
+        ],
+        "sheet_number": 7,
+        "filename": "RAI portal data.xlsx",
+        "parameter_transform": "function (x) ymd(x)",
+        "load_function": "read_from_excel",
+        "group_names": [
+            "Taranaki"
+
+        ],
+        "drop_na": false,
+        "data_type": "TimeSeries"
+      },
+
+  {
+        "class": "Economic",
+         "indicator_name": "New Zealand Regional Activity Indices (RAI)",
+        "type": "Activity",
+        "parameter_col": 1,
+        "value_col":
+        [2,
+         3,
+         4,
+
+         6,
+         7,
+         8
+         ],
+        "value_names": [
+       "Regional Activity Index (RAI)",
+          "RAI component - Consumer card spend",
+          "RAI component - Electricity grid demand",
+
+          "RAI component - MSD jobseekers",
+          "RAI component - Traffic index (light)",
+          "RAI component - Traffic index (heavy)"
+
+
+
+        ],
+        "sheet_number": 8,
+        "filename": "RAI portal data.xlsx",
+        "parameter_transform": "function (x) ymd(x)",
+        "load_function": "read_from_excel",
+        "group_names": [
+            "Manawatū-Whanganui"
+
+        ],
+        "drop_na": false,
+        "data_type": "TimeSeries"
+      },
+
+  {
+        "class": "Economic",
+        "indicator_name": "New Zealand Regional Activity Indices (RAI)",
+        "type": "Activity",
+        "parameter_col": 1,
+        "value_col":
+        [2,
+        3,
+         4,
+
+         6,
+         7,
+         8
+         ],
+        "value_names": [
+          "Regional Activity Index (RAI)",
+          "RAI component - Consumer card spend",
+          "RAI component - Electricity grid demand",
+
+          "RAI component - MSD jobseekers",
+          "RAI component - Traffic index (light)",
+          "RAI component - Traffic index (heavy)"
+
+
+
+        ],
+        "sheet_number": 9,
+        "filename": "RAI portal data.xlsx",
+        "parameter_transform": "function (x) ymd(x)",
+        "load_function": "read_from_excel",
+        "group_names": [
+            "Wellington"
+
+        ],
+        "drop_na": false,
+        "data_type": "TimeSeries"
+      },
+
+  {
+        "class": "Economic",
+      "indicator_name": "New Zealand Regional Activity Indices (RAI)",
+        "type": "Activity",
+        "parameter_col": 1,
+        "value_col":
+        [2,
+        3,
+         4,
+
+         6,
+         7,
+         8
+         ],
+        "value_names": [
+          "Regional Activity Index (RAI)",
+          "RAI component - Consumer card spend",
+          "RAI component - Electricity grid demand",
+
+          "RAI component - MSD jobseekers",
+          "RAI component - Traffic index (light)",
+          "RAI component - Traffic index (heavy)"
+
+
+
+        ],
+        "sheet_number": 10,
+        "filename": "RAI portal data.xlsx",
+        "parameter_transform": "function (x) ymd(x)",
+        "load_function": "read_from_excel",
+        "group_names": [
+            "Tasman/ Nelson/ Marlborough"
+
+        ],
+        "drop_na": false,
+        "data_type": "TimeSeries"
+      },
+
+  {
+        "class": "Economic",
+       "indicator_name": "New Zealand Regional Activity Indices (RAI)",
+        "type": "Activity",
+        "parameter_col": 1,
+        "value_col":
+        [2,
+        3,
+         4,
+
+         6,
+         7,
+         8
+         ],
+        "value_names": [
+         "Regional Activity Index (RAI)",
+          "RAI component - Consumer card spend",
+          "RAI component - Electricity grid demand",
+
+          "RAI component - MSD jobseekers",
+          "RAI component - Traffic index (light)",
+          "RAI component - Traffic index (heavy)"
+
+
+
+        ],
+        "sheet_number": 11,
+        "filename": "RAI portal data.xlsx",
+        "parameter_transform": "function (x) ymd(x)",
+        "load_function": "read_from_excel",
+        "group_names": [
+            "Canterbury"
+
+        ],
+        "drop_na": false,
+        "data_type": "TimeSeries"
+      },
+
+  {
+        "class": "Economic",
+        "indicator_name": "New Zealand Regional Activity Indices (RAI)",
+        "type": "Activity",
+        "parameter_col": 1,
+        "value_col":
+        [2,
+        3,
+         4,
+
+         6,
+         7,
+         8
+         ],
+        "value_names": [
+         "Regional Activity Index (RAI)",
+          "RAI component - Consumer card spend",
+          "RAI component - Electricity grid demand",
+
+          "RAI component - MSD jobseekers",
+          "RAI component - Traffic index (light)",
+          "RAI component - Traffic index (heavy)"
+
+
+
+        ],
+        "sheet_number": 12,
+        "filename": "RAI portal data.xlsx",
+        "parameter_transform": "function (x) ymd(x)",
+        "load_function": "read_from_excel",
+        "group_names": [
+            "West Coast"
+
+        ],
+        "drop_na": false,
+        "data_type": "TimeSeries"
+      },
+
+  {
+        "class": "Economic",
+        "indicator_name": "New Zealand Regional Activity Indices (RAI)",
+        "type": "Activity",
+        "parameter_col": 1,
+        "value_col":
+        [2,
+        3,
+         4,
+
+         6,
+         7,
+         8
+         ],
+        "value_names": [
+       "Regional Activity Index (RAI)",
+          "RAI component - Consumer card spend",
+          "RAI component - Electricity grid demand",
+
+          "RAI component - MSD jobseekers",
+          "RAI component - Traffic index (light)",
+          "RAI component - Traffic index (heavy)"
+
+
+
+        ],
+        "sheet_number": 13,
+        "filename": "RAI portal data.xlsx",
+        "parameter_transform": "function (x) ymd(x)",
+        "load_function": "read_from_excel",
+        "group_names": [
+            "Otago"
+
+        ],
+        "drop_na": false,
+        "data_type": "TimeSeries"
+      },
+
+  {
+        "class": "Economic",
+       "indicator_name": "New Zealand Regional Activity Indices (RAI)",
+        "type": "Activity",
+        "parameter_col": 1,
+        "value_col":
+        [2,
+        3,
+         4,
+
+         6,
+         7,
+         8
+         ],
+        "value_names": [
+          "Regional Activity Index (RAI)",
+          "RAI component - Consumer card spend",
+          "RAI component - Electricity grid demand",
+
+          "RAI component - MSD jobseekers",
+          "RAI component - Traffic index (light)",
+          "RAI component - Traffic index (heavy)"
+
+
+        ],
+        "sheet_number": 14,
+        "filename": "RAI portal data.xlsx",
+        "parameter_transform": "function (x) ymd(x)",
+        "load_function": "read_from_excel",
+        "group_names": [
+            "Southland"
+
+        ],
+        "drop_na": false,
+        "data_type": "TimeSeries"
+      }
 ]
