@@ -4378,7 +4378,7 @@
     {
     "class": "Income support",
     "indicator_name": "Number of jobs supported by the wage subsidy extension",
-    "type": "Wage subsidy assistance",
+    "type": "Wage subsidy extension",
     "parameter_col": 1,
     "parameter_transform": [
     "function (x) ",

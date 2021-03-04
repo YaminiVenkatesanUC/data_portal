@@ -5242,7 +5242,7 @@
   {
     "class": "Income support",
     "indicator_name": "Number of jobs supported by the wage subsidy extension",
-    "type": "Wage subsidy assistance",
+    "type": "Wage subsidy extension",
     "source": "Ministry of Social Development",
     "plot_function": "get_time_series_plot",
     "international": false,
