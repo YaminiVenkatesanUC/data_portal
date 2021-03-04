@@ -5353,7 +5353,6 @@
     "indicator_name": "Number of applications",
     "type": "Wage subsidy assistance",
     "source": "Ministry of Social Development",
-    "caveats":"Note: The number of applications received for a Wage Subsidy or Leave Payment was last updated on 22 January 2021. Due to a processing error these more recent applications cannot currently be loaded.",
     "plot_function": "get_time_series_plot",
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
