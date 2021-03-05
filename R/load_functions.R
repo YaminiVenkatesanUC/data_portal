@@ -54,6 +54,8 @@ read_from_csv <- function(config, directory, odata_definitions=NULL) {
 }
 
 read_from_excel <- function(config, directory, odata_definitions=NULL) {
+
+  print(config)
   if (!is.null(config$parameter_transform)) {
     parameter_transform <- eval(parse(text = config$parameter_transform))
   }
@@ -91,15 +93,16 @@ read_from_excel <- function(config, directory, odata_definitions=NULL) {
     data <- data %>% arrange(Parameter)
   }
 
-  if(any(config$ResourceID %in% odata_definitions$ResourceID)){
-    metadata <- odata_definitions[which(odata_definitions$ResourceID == config$ResourceID),]
-    print("Adding data to API")
-    print(config$indicator_name)
-    print(metadata)
-    data_frame_to_api_helper(directory, config, metadata, data)
-    return(NULL)
-  }
+  # if(any(config$ResourceID %in% odata_definitions$ResourceID)){
+  #   metadata <- odata_definitions[which(odata_definitions$ResourceID == config$ResourceID),]
+  #   print("Adding data to API")
+  #   print(config$indicator_name)
+  #   print(metadata)
+  #   data_frame_to_api_helper(directory, config, metadata, data)
+  #   return(NULL)
+  # }
 
+  print(data)
   return(data_frame_to_data_object_helper(
     directory,
     config,
