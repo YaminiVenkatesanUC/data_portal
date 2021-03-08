@@ -2283,6 +2283,7 @@
         "class": "Economic",
         "indicator_name": "Flight departures by main airports",
         "type": "Transport",
+        "drop_na":false,
         "parameter_col": 1,
         "parameter_transform": "function(x) ymd(x)",
         "sheet_number": 1,
