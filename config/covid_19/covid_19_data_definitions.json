@@ -8307,5 +8307,18 @@
         ],
         "drop_na": false,
         "data_type": "TimeSeries"
-      }
+      },
+      {
+  "class":"Social",
+      "type":"Community Support",
+      "indicator_name":"Food parcel distribution (Salvation Army)",
+      "parameter_col":1,
+      "parameter_transform":"function (x) ymd(x)",
+      "value_col":2,
+      "value_names":"Total food parcels",
+      "filename":"COVID 19 - Food parcel distribution.xlsx",
+      "load_function":"read_from_excel",
+      "data_type":"TimeSeries",
+      "group_names": "undefined_name"
+    }
 ]
