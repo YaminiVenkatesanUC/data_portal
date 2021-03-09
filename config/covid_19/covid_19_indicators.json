@@ -654,6 +654,7 @@
     "international": false,
     "include_date_slider": true,
     "default_lower_range": "2019-01-01",
+    "caveats":"Note: March 2021 data is provisional.",
     "source_url": "https://www.anz.co.nz/about-us/economic-markets-research/business-outlook/",
     "download": false,
     "groups": [
@@ -717,7 +718,7 @@
     "international": false,
     "include_date_slider": true,
     "default_lower_range": "2019-01-01",
-    "caveats":"Note: February 2021 data is provisional.",
+    "caveats":"Note: March 2021 data is provisional.",
     "source_url": "https://www.anz.co.nz/about-us/economic-markets-research/business-outlook/",
     "download": false,
     "groups": [
