@@ -7492,7 +7492,7 @@
       "name": "undefined_name",
       "units":"Number of food parcels",
       "title":"Number of Salvation Army national weekly food parcels distributed",
-      "x_axis_label":"Week ending"
+      "x_axis_label":" (week ending)"
     }]
   }
 
