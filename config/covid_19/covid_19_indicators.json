@@ -7475,6 +7475,25 @@
             "visible": [ "Regional Activity Index (RAI)"]
         }
     ]
+  },
+  {
+    "class":"Social",
+    "type":"Community Support",
+    "indicator_name":"Food parcel distribution (Salvation Army)",
+    "source":"Salvation Army",
+    "plot_function":"get_time_series_plot",
+    "international":false,
+    "source_url":"https://www.salvationarmy.org.nz/article/sppu-covid-19-social-impact-dashboard-report-6",
+    "download":true,
+    "frequency":"Weekly",
+    "caveats":"This data does not include food parcels distributed by any other charitable organisation such as city missions and is therefore not an indicator of all food parcel distribution.",
+    "measure":"The total national weekly food parcel distribution by the Salvation Army since early March 2020 (therefore showing changes since before and after the key lockdown period).",
+    "groups":[{
+      "name": "undefined_name",
+      "units":"Number of food parcels",
+      "title":"Number of Salvation Army national weekly food parcels distributed",
+      "x_axis_label":" (week ending)"
+    }]
   }
 
 ]
