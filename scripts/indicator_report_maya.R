@@ -16,9 +16,11 @@ for (ethnicity in filter_ethnicity) {
 
 definitions$filter <- definitions$ethnic | definitions$European | definitions$Pacific | definitions$Māori
 
+definitions <- unnest(data = definitions, cols = group_names)
+
 definitions <- definitions %>%
-  select(class, type, indicator_name, filter) %>%
-  arrange(filter, class, type, indicator_name) %>%
+  select(class, type, indicator_name, group_names, filter) %>%
+  arrange(filter, class, type, indicator_name, group_names) %>%
   unique()
 
 
