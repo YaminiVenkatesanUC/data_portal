@@ -4501,13 +4501,11 @@
     "value_col": [
     2,
     3,
-    4,
-    5
+    4
     ],
     "value_names": [
     "Received",
     "Approved",
-    "Closed",
     "Declined"
     ],
     "filename": "COVID-19 MSD Number of Applications.xlsx",
