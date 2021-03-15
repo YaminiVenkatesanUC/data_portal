@@ -366,4 +366,5 @@ main_plot_server <- function(
       return(HTML(NULL))
     }
   })
+
 }

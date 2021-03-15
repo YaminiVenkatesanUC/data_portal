@@ -263,6 +263,7 @@ create_caveat_box <- function(buttonText, id) {
   return(output)
 }
 
+
 # Similar to get_normalisation_factor below, but for a single
 #   value
 # TODO: These functions should be combined into one and improved
