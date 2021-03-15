@@ -157,6 +157,7 @@
         "type": "Activity",
         "parameter_col": 1,
         "input_units": 1000,
+        "drop_na":false,
         "sub_series":"Active Bonds",
         "value_col": [
         2,
@@ -196,7 +197,7 @@
         "Nelson",
         "Marlborough"
         ],
-        "filename": "Raw data/Development/COVID-19 MBIE Rental Active Bonds.csv",
+        "filename": "COVID-19 MBIE Rental Active Bonds.csv",
         "load_function": "read_from_csv",
         "parameter_transform":"function (x) ymd(x)",
         "order_parameter": false,
@@ -228,6 +229,7 @@
         "type": "Activity",
         "parameter_col": 1,
         "input_units": 1000,
+        "drop_na":false,
         "sub_series":"Closed Bonds",
         "value_col": [
         2,
@@ -267,7 +269,7 @@
         "Nelson",
         "Marlborough"
         ],
-        "filename": "Raw data/Development/COVID-19 MBIE Rental Closed Bonds.csv",
+        "filename": "COVID-19 MBIE Rental Closed Bonds.csv",
         "load_function": "read_from_csv",
         "parameter_transform":"function (x) ymd(x)",
         "data_type": "TimeSeries",
@@ -299,6 +301,7 @@
         "type": "Activity",
         "parameter_col": 1,
         "input_units": 1000,
+        "drop_na":false,
         "sub_series":"Lodged Bonds",
         "value_col": [
         2,
@@ -339,7 +342,7 @@
         "Marlborough"
 
         ],
-        "filename": "Raw data/Development/COVID-19 MBIE Rental Lodged Bonds.csv",
+        "filename": "COVID-19 MBIE Rental Lodged Bonds.csv",
         "load_function": "read_from_csv",
         "parameter_transform":"function (x) ymd(x)",
         "order_parameter": false,
@@ -370,6 +373,7 @@
         "indicator_name": "Weekly mean rent by region",
         "type": "Activity",
         "parameter_col": 1,
+        "drop_na":false,
         "sub_series":"Average Weekly Rent",
         "value_col": [
         9,
@@ -409,7 +413,7 @@
         "Nelson",
         "Marlborough"
         ],
-        "filename": "Raw data/Development/COVID-19 MBIE Rental Average Weekly Rent.csv",
+        "filename": "COVID-19 MBIE Rental Average Weekly Rent.csv",
         "load_function": "read_from_csv",
         "parameter_transform":"function (x) ymd(x)",
         "data_type": "TimeSeries",
@@ -4497,13 +4501,11 @@
     "value_col": [
     2,
     3,
-    4,
-    5
+    4
     ],
     "value_names": [
     "Received",
     "Approved",
-    "Closed",
     "Declined"
     ],
     "filename": "COVID-19 MSD Number of Applications.xlsx",
@@ -5026,7 +5028,7 @@
       "value_names": ["Wave 1", "Wave 2"],
       "group_names": ["undefined_name"],
       "sheet_number": 1,
-      "filename": "Raw data/Development/CFFC_output.xlsx",
+      "filename": "COVID 19 - CFFC Financial Wellbeing.xlsx",
       "parameter_transform": "function (x) x",
       "load_function": "read_from_excel",
       "data_type": "BarChart"
@@ -5042,7 +5044,7 @@
       "value_names": ["Wave 1", "Wave 2"],
       "group_names": ["undefined_name"],
       "sheet_number": 2,
-      "filename": "Raw data/Development/CFFC_output.xlsx",
+      "filename": "COVID 19 - CFFC Financial Wellbeing.xlsx",
       "parameter_transform": "function (x) x",
       "load_function": "read_from_excel",
       "data_type": "BarChart"
@@ -5057,7 +5059,7 @@
       "value_names": ["Wave 1", "Wave 2"],
       "group_names": ["undefined_name"],
       "sheet_number": 3,
-      "filename": "Raw data/Development/CFFC_output.xlsx",
+      "filename": "COVID 19 - CFFC Financial Wellbeing.xlsx",
       "parameter_transform": "function (x) x",
       "load_function": "read_from_excel",
       "data_type": "BarChart"
@@ -5072,7 +5074,7 @@
     "value_names": ["Wave 1", "Wave 2"],
     "group_names": ["undefined_name"],
     "sheet_number": 4,
-    "filename": "Raw data/Development/CFFC_output.xlsx",
+    "filename": "COVID 19 - CFFC Financial Wellbeing.xlsx",
     "parameter_transform": "function (x) x",
     "load_function": "read_from_excel",
     "data_type": "BarChart"
@@ -5087,7 +5089,7 @@
     "value_names": ["Wave 1", "Wave 2"],
     "group_names": ["undefined_name"],
     "sheet_number": 5,
-    "filename": "Raw data/Development/CFFC_output.xlsx",
+    "filename": "COVID 19 - CFFC Financial Wellbeing.xlsx",
     "parameter_transform": "function (x) x",
     "load_function": "read_from_excel",
     "data_type": "BarChart"
@@ -5102,7 +5104,7 @@
     "value_names": ["Wave 1", "Wave 2"],
     "group_names": ["undefined_name"],
     "sheet_number": 6,
-    "filename": "Raw data/Development/CFFC_output.xlsx",
+    "filename": "COVID 19 - CFFC Financial Wellbeing.xlsx",
     "parameter_transform": "function (x) x",
     "load_function": "read_from_excel",
     "data_type": "BarChart"
@@ -5117,7 +5119,7 @@
     "value_names": ["Wave 1", "Wave 2"],
     "group_names": ["undefined_name"],
     "sheet_number": 7,
-    "filename": "Raw data/Development/CFFC_output.xlsx",
+    "filename": "COVID 19 - CFFC Financial Wellbeing.xlsx",
     "parameter_transform": "function (x) x",
     "load_function": "read_from_excel",
     "data_type": "BarChart"

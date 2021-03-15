@@ -5356,6 +5356,7 @@
     "source": "Ministry of Social Development",
     "plot_function": "get_time_series_plot",
     "international": false,
+    "caveats":"Note: As of March 2021, the number of applications includes the Leave Support, Essential Workers, Leave Payment, Wage Subsidies (original, extension, resurgence, March 2021), and the Short-Term Absence Payment Scheme.",
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
     "groups": [
