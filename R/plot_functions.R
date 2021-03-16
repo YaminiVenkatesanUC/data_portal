@@ -132,6 +132,14 @@ get_time_series_plot <- function(
 
   y_label <- group_definition$units
 
+  if(!is.null(group_definition$x_axis_label)){
+    year_label <- group_definition$x_axis_label
+  }
+  else{
+    year_label <- NULL
+  }
+
+
   plot <- hc_xAxis(
     plot,
     categories = categories,
@@ -627,8 +635,11 @@ get_time_series_plot_with_errors <- function(
     if (indicator_definition$frequency == "monthly" || indicator_definition$frequency == "Quarterly") {
       categories <- format(dates, "%b-%Y")
       categories <- rep(categories,2)
-      if(indicator_definition$frequency == "Quarterly"){
-        year_label <- "Quarter"
+      if(!is.null(group_definition$x_axis_label)){
+        year_label <- group_definition$x_axis_label
+      }
+      else{
+        year_label <- NULL
       }
 
     }
