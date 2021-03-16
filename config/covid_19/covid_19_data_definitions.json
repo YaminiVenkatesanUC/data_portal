@@ -5844,22 +5844,6 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
-
-{
-  "class": "Economic",
-  "indicator_name": "Fuel supply volumes - monthly",
-  "type": "Activity",
-  "parameter_col": 1,
-  "skip":0,
-  "value_names": ["Z Network diesel", "Z Network retail fuel (91 & 95)", "Caltex diesel", "Caltex retail fuel (91 & 95)", "Other domestic retail supply (petrol)", "Other domestic retail supply (diesel)"],
-  "group_names": ["Retail", "Retail", "Retail", "Retail", "Retail", "Retail"],
-  "sheet_number": 2,
-  "filename": "COVID 19 - Z Energy weekly volume data.xlsx",
-  "company_name": ["Z Network (inc. Foodstuffs)", "Z Network (inc. Foodstuffs)", "Caltex Retail Fuel", "Caltex Retail Fuel", "Other domestic retail supply", "Other domestic retail supply"],
-  "fuel_type": ["Z Retail diesel", "Z Retail petrol", "Caltex Retail diesel", "Caltex Retail petrol", "Domestic petrol", "Domestic diesel"],
-  "load_function": "petrol_read_file_month"
-},
-
 {
   "class": "Economic",
   "indicator_name": "Fuel supply volumes - monthly",
