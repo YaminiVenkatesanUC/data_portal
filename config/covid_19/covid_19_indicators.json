@@ -7639,6 +7639,27 @@
       "title":"Number of Salvation Army national weekly food parcels distributed",
       "x_axis_label":" (week ending)"
     }]
+  },
+  {
+    "class":"Contextual",
+    "type":"Business",
+    "indicator_name":"Enterprise counts",
+    "source":"Stats NZ",
+    "plot_function":"get_time_series_plot",
+    "international":false,
+    "include_date_slider":true,
+    "source_url":"https://www.stats.govt.nz/information-releases/employment-indicators-january-2021",
+    "download":true,
+    "frequency":"Monthly",
+    "measure":null,
+    "caveats":"<p>(1) Enterprises: A business or service entity operating in New Zealand. It can be a company, partnership, trust, estate, incorporated society, producer board, local or central government organisation, voluntary organisation or self-employed individual.</p><p>(2) Enterprise entry: Enterprises which are in the current reference period but not in the previous reference period. This includes new enterprise registrations, reactivations of cancelled enterprises, and enterprises that have recommenced remitting GST. Also include enterprises becoming significant in the current reference period.</p><p>(3) Enterprise exit: Enterprises which are not in the current reference period but in the previous reference period. This includes enterprise that have ceased and cancelled their GST registration, enterprise that have ceased remitting GST for an extended period of time, and enterprise that have been involved in mergers and acquisitions where the GST number has changed. Also include enterprises becoming insignificant in the current reference period.</p>",
+    "groups": [
+      {
+        "name":"undefined_name",
+        "units":"Number",
+        "title":"Monthly enterprise counts"
+      }
+    ]
   }
 
 

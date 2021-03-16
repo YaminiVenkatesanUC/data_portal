@@ -1,5 +1,5 @@
 [
-    {
+   {
   "class": "Economic",
   "indicator_name": "Student visa",
   "type": "Visa",
@@ -8421,6 +8421,27 @@
       "load_function":"read_from_excel",
       "data_type":"TimeSeries",
       "group_names": "undefined_name"
+    },
+     {
+      "class":"Contextual",
+      "type":"Business",
+      "indicator_name":"Enterprise counts",
+      "parameter_col":1,
+      "parameter_transform":"function (x) as.Date(x, \"%B %Y\")",
+      "value_col": [
+        2,
+        3,
+        4
+      ],
+      "value_names":[
+        "Enterprises",
+        "Enterprise entries",
+        "Enterprise exits"
+      ],
+      "filename":"COVID 19 - Business enterprise counts.xlsx",
+      "data_type":"TimeSeries",
+      "group_names":"undefined_name",
+      "load_function":"read_from_excel"
     }
 
 ]
