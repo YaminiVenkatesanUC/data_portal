@@ -94,10 +94,13 @@ get_time_series_plot <- function(
     }
 
   if (!is.null(indicator_definition$frequency)) {
-      if (indicator_definition$frequency == "monthly" || indicator_definition$frequency == "quarterly") {
+      if (indicator_definition$frequency == "Monthly"){
+        year_label <- ""
+        categories <- format(dates, "%b-%Y")
+      } else if (indicator_definition$frequency == "Quarterly") {
         categories <- format(dates, "%b")
       }
-    }
+  }
 
   if (!is.null(group_definition$x_axis_label)){
     year_label <- paste0(year_label, group_definition$x_axis_label)
@@ -632,7 +635,7 @@ get_time_series_plot_with_errors <- function(
   }
 
   if (!is.null(indicator_definition$frequency)) {
-    if (indicator_definition$frequency == "monthly" || indicator_definition$frequency == "Quarterly") {
+    if (indicator_definition$frequency == "Monthly" || indicator_definition$frequency == "Quarterly") {
       categories <- format(dates, "%b-%Y")
       categories <- rep(categories,2)
       if(!is.null(group_definition$x_axis_label)){

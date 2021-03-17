@@ -538,25 +538,31 @@
   {
     "class": "Economic",
     "title": "Z Energy weekly fuel supply volumes",
-    "indicator_name": "Fuel supply volumes - weekly",
+    "indicator_name": "Fuel supply volumes",
     "type": "Activity",
     "source": "Z Energy",
+    "frequency":"Monthly",
     "plot_function": "get_stacked_bar_chart",
     "international": false,
     "download": true,
     "source_url":"https://www.nzx.com/companies/ZEL/announcements",
     "groups": [
         {
-            "name": "Retail",
+            "name": "Petrol",
             "units": "Litres",
-            "title": "Z Energy weekly fuel supply volumes - retail",
-            "caveats": "<p>(1) Truckstops include Z and Caltex branded Truckstops, private Truckstops and Mini-Tankers.</p><p>(2) Other includes General Aviation and Lubricants.</p><p>(3) The values for the 22nd of March are the average weekly volumes for the preceding four weeks (24/02/20-22/03/20).  The subsequent values are weekly totals.</p><p>(4) Week ended data includes all fuel volumes for the prior week up to 11.59pm on Sunday.</p>"
+            "title": "Z Energy monthly fuel supply volumes - petrol"
         },
         {
-            "name": "Other",
+            "name": "Diesel",
             "units": "Litres",
-            "title": "Z Energy weekly fuel supply volumes - other",
-            "caveats": "<p>(1) Z volumes will be retail fuel sales volumes including the Foodstuffs network.</p><p>(2) Domestic retail supply volume is the total bulk fuel delivered to distributor customers.</p><p>(3) The values for the 22nd of March are the average weekly volumes for the preceding four weeks (24/02/20-22/03/20). The subsequent values are weekly totals.</p><p>(4) Week ended data includes all fuel volumes for the prior week up to 11.59pm on Sunday.</p>"
+            "title": "Z Energy monthly fuel supply volumes - diesel",
+            "caveats": "<p>Diesel commercial includes Z and Caltex branded Truckstops, private Truckstops, Mini-Tankers and Marine diesel.</p>"
+
+        },
+        {
+          "name":"Other commercial fuels",
+          "units":"Litres",
+          "title":"Z Energy monthly fuel supply volumes - other commercial fuels"
         }
     ]
   },
