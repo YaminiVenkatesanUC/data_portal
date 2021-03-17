@@ -8440,7 +8440,11 @@
       ],
       "filename":"COVID 19 - Business enterprise counts.xlsx",
       "data_type":"TimeSeries",
-      "group_names":"undefined_name",
+      "group_names":[
+        "Enterprises",
+        "Enterprise entries",
+        "Enterprise exits"
+      ],
       "load_function":"read_from_excel"
     }
 
