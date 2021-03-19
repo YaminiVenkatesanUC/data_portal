@@ -1,5 +1,41 @@
 [
-    {
+   {
+  "class": "Economic",
+  "indicator_name": "Fuel supply volumes",
+  "type": "Activity",
+  "parameter_col": 1,
+  "parameter_transform":"function (x) ymd(x)",
+  "skip":1,
+  "value_col":[
+    2, 3, 4, 5, 6, 7, 8, 9, 10
+  ],
+  "value_names": [
+    "Z Retail - petrol",
+    "Caltex Retail - petrol",
+    "Z Retail - diesel",
+    "Caltex Retail - diesel",
+    "Commercial - diesel",
+    "Jet",
+    "Marine fuel oil",
+    "Bitumen",
+    "Other commercial fuel"
+    ],
+  "group_names": [
+    "Petrol",
+    "Petrol",
+    "Diesel",
+    "Diesel",
+    "Diesel",
+    "Other commercial fuels",
+    "Other commercial fuels",
+    "Other commercial fuels",
+    "Other commercial fuels"],
+  "sheet_number": 1,
+  "filename": "COVID-19 Z Energy monthly volume.xlsx",
+  "load_function": "read_from_excel",
+  "data_type":"TimeSeries"
+},
+   {
   "class": "Economic",
   "indicator_name": "Student visa",
   "type": "Visa",
@@ -536,35 +572,6 @@
         "parameter_transform": "function (x) as.Date(x, format = \"%d-%m-%Y\")",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries"
-      },
-      {
-        "class": "Economic",
-        "indicator_name": "Fuel supply volumes - weekly",
-        "type": "Activity",
-        "parameter_col": 1,
-        "skip":1,
-        "value_names": ["Z Network diesel", "Z Network retail fuel (91 & 95)", "Caltex diesel", "Caltex retail fuel (91 & 95)", "Other domestic retail supply"],
-        "group_names": ["Retail", "Retail", "Retail", "Retail", "Retail"],
-        "sheet_number": 1,
-
-        "filename": "COVID 19 - Z Energy weekly volume data.xlsx",
-        "company_name": ["Z Network (inc. Foodstuffs)", "Z Network (inc. Foodstuffs)", "Caltex Retail Fuel", "Caltex Retail Fuel", "Other domestic retail supply"],
-        "fuel_type": ["Diesel", "Z Energy", "Diesel", "Retail fuel (91 & 95)", "Other domestic retail supply"],
-        "load_function": "petrol_read_file"
-      },
-      {
-        "class": "Economic",
-        "indicator_name": "Fuel supply volumes - weekly",
-        "type": "Activity",
-        "parameter_col": 1,
-        "skip":1,
-        "value_names": ["Truckstops", "Other commercial fuels - Jet", "Other commercial fuels - Marine", "Other commercial fuels - Other"],
-        "group_names": ["Other", "Other", "Other", "Other"],
-        "sheet_number": 1,
-        "filename": "COVID 19 - Z Energy weekly volume data.xlsx",
-        "company_name": ["Truckstops", "Jet", "Marine", "Other"],
-        "fuel_type": ["Truckstops", "Jet", "Marine", "Other"],
-        "load_function": "petrol_read_file"
       },
       {
         "class": "Health",
@@ -5844,6 +5851,7 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
+
 {
   "class": "Economic",
   "indicator_name": "Fuel supply volumes - monthly",
@@ -5858,6 +5866,7 @@
   "fuel_type": ["Truckstops", "Jet", "Marine fuel oil", "Bitumen", "Other"],
   "load_function": "petrol_read_file_month"
 },
+
  {
     "class":"Social",
     "type":"Household finances",
@@ -8405,6 +8414,31 @@
       "load_function":"read_from_excel",
       "data_type":"TimeSeries",
       "group_names": "undefined_name"
+    },
+     {
+      "class":"Contextual",
+      "type":"Business",
+      "indicator_name":"Enterprise counts",
+      "parameter_col":1,
+      "parameter_transform":"function (x) as.Date(x, \"%B %Y\")",
+      "value_col": [
+        2,
+        3,
+        4
+      ],
+      "value_names":[
+        "Enterprises",
+        "Enterprise entries",
+        "Enterprise exits"
+      ],
+      "filename":"COVID 19 - Business enterprise counts.xlsx",
+      "data_type":"TimeSeries",
+      "group_names":[
+        "Enterprises",
+        "Enterprise entries",
+        "Enterprise exits"
+      ],
+      "load_function":"read_from_excel"
     }
 
 ]
