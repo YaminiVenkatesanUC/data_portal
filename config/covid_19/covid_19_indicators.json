@@ -545,7 +545,7 @@
     "plot_function": "get_stacked_bar_chart",
     "international": false,
     "download": true,
-    "source_url":"https://www.nzx.com/companies/ZEL/announcements",
+    "source_url":"https://investors.z.co.nz/announcements/nzx-announcements",
     "groups": [
         {
             "name": "Petrol",
@@ -7669,13 +7669,13 @@
       {
         "name":"Enterprise entries",
         "units":"Number",
-        "title":"Monthly enterprise counts",
+        "title":"Monthly enterprise counts - entries",
         "caveats":"Enterprise entry: Enterprises which are in the current reference period but not in the previous reference period. This includes new enterprise registrations, reactivations of cancelled enterprises, and enterprises that have recommenced remitting GST. Also include enterprises becoming significant in the current reference period."
       },
       {
         "name":"Enterprise exits",
         "units":"Number",
-        "title":"Monthly enterprise counts",
+        "title":"Monthly enterprise counts - exits",
         "caveats":"Enterprise exit: Enterprises which are not in the current reference period but in the previous reference period. This includes enterprise that have ceased and cancelled their GST registration, enterprise that have ceased remitting GST for an extended period of time, and enterprise that have been involved in mergers and acquisitions where the GST number has changed. Also include enterprises becoming insignificant in the current reference period."
       }
     ]
