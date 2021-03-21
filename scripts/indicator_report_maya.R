@@ -43,5 +43,6 @@ compare <- full_join(definitions, previous)
 if (sum(is.na(compare)) > 0) {
   print("Indicator list changed...")
   print(compare[which(is.na(compare)), ])
+  write_xlsx(x = definitions, path = paste0("example_data/COVID-19 report.xlsx"))
 }
-write_xlsx(x = definitions, path = paste0("example_data/COVID-19 report.xlsx"))
+
