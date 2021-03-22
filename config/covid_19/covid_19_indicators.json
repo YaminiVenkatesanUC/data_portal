@@ -783,7 +783,7 @@
     "international": false,
     "include_date_slider": true,
     "default_lower_range": "2017-01-01",
-    "source_url": " https://www.stats.govt.nz/news/retail-card-spending-resurgence-in-june",
+    "source_url": "https://www.stats.govt.nz/information-releases/electronic-card-transactions-february-2021",
     "download": true,
     "groups": [
       {
@@ -870,7 +870,7 @@
     "default_lower_range": "2017-01-01",
     "international": false,
     "include_date_slider": true,
-    "source_url": " https://www.stats.govt.nz/news/retail-card-spending-resurgence-in-june",
+    "source_url": "https://www.stats.govt.nz/information-releases/electronic-card-transactions-february-2021",
     "download": true,
     "groups": [
       {
@@ -3226,7 +3226,7 @@
   "source": "Inland Revenue",
   "plot_function": "get_time_series_plot",
   "international": false,
-  "caveats": "Note data specific to the 'Total loan amount disbursed' chart differs from that featured prior to July 9.",
+  "caveats": "Note: Data specific to the 'Total loan amount disbursed' chart differs from that featured prior to July 9.",
   "download": true,
   "groups":[
       {
@@ -6005,7 +6005,8 @@
   {
    "class": "Social",
    "type": "Household finances",
-    "indicator_name": "Ability to meet bills",  "source": "Commission for Financial Capability",
+    "indicator_name": "Ability to meet bills",
+    "source": "Commission for Financial Capability",
     "plot_function": "get_unstacked_horizontal_bar",
     "international": false,
     "source_url":"https://cffc.govt.nz/reviews-and-reports/research-and-reports/",
@@ -6118,12 +6119,8 @@
     "plot_function": "get_time_series_plot",
       "international": false,
     "include_date_slider": true,
-
     "caveats":"<p> 1. Only includes traffic on the Chorus network (excludes traffic for other local fibre companies, cable and fixed wireless networks).</p><p> 2. Regional traffic is based on the location where the traffic is handed over to the service provider.</p><p> 3. The sum of regional totals may not exactly match the daily national usage.</p><p> 4. Tasman encompasses the Tasman, Nelson and Marlborough regions.</p><p> 5. In some date instances across regions, data will not feature due to collection issues.</p>",
-
-
-
-    "download": false,
+    "download": true,
     "groups": [
 
       {
