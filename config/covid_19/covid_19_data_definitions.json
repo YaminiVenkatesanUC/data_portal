@@ -1,4 +1,109 @@
 [
+   {
+  "class": "Economic",
+  "indicator_name": "Fuel supply volumes",
+  "type": "Activity",
+  "parameter_col": 1,
+  "parameter_transform":"function (x) ymd(x)",
+  "skip":1,
+  "input_units":1000000,
+  "value_col":[
+    2, 3, 4, 5, 6, 7, 8, 9, 10
+  ],
+  "value_names": [
+    "Z Retail - petrol",
+    "Caltex Retail - petrol",
+    "Z Retail - diesel",
+    "Caltex Retail - diesel",
+    "Commercial - diesel",
+    "Jet",
+    "Marine fuel oil",
+    "Bitumen",
+    "Other commercial fuel"
+    ],
+  "group_names": [
+    "Petrol",
+    "Petrol",
+    "Diesel",
+    "Diesel",
+    "Diesel",
+    "Other commercial fuels",
+    "Other commercial fuels",
+    "Other commercial fuels",
+    "Other commercial fuels"],
+  "sheet_number": 1,
+  "filename": "COVID-19 Z Energy monthly volume.xlsx",
+  "load_function": "read_from_excel",
+  "data_type":"TimeSeries"
+},
+   {
+  "class": "Economic",
+  "indicator_name": "Student visa",
+  "type": "Visa",
+  "date_filter": "function(x) x > ymd(\"2015-01-01\")",
+  "parameter_col": 1,
+  "parameter_transform": "function (x) ymd(x)",
+  "value_col": [
+    2,
+    3,
+    4,
+    5,
+    6
+    ],
+  "value_names": [
+    "Dependant",
+      "Exchange student",
+      "Fee paying",
+      "Other",
+      "Total"
+    ],
+  "filename": "COVID-19 MBIE Student visa.csv",
+  "load_function": "read_from_csv",
+  "data_type": "TimeSeries",
+  "group_names":
+    [
+      "Dependant",
+      "Exchange student",
+      "Fee paying",
+      "Other",
+      "Total"
+      ]
+},
+{
+  "class": "Economic",
+  "indicator_name": "Work visa",
+  "type": "Visa",
+  "date_filter": "function(x) x > ymd(\"2015-01-01\")",
+  "parameter_col": 1,
+  "parameter_transform": "function (x) ymd(x)",
+  "value_col": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7],
+  "value_names": [
+    "Essential skills",
+    "Family",
+    "Recognised seasonal employer",
+    "Other",
+    "Working holiday scheme",
+    "Total"
+    ],
+  "filename": "COVID-19 MBIE Work visa.csv",
+  "load_function": "read_from_csv",
+  "data_type": "TimeSeries",
+  "group_names":
+    [
+     "Essential skills",
+    "Family",
+    "Recognised seasonal employer",
+    "Other",
+    "Working holiday scheme",
+    "Total"
+    ]
+ },
     {
         "class": "Economic",
         "indicator_name": "Exports by country (values)",
@@ -89,6 +194,7 @@
         "type": "Activity",
         "parameter_col": 1,
         "input_units": 1000,
+        "drop_na":false,
         "sub_series":"Active Bonds",
         "value_col": [
         2,
@@ -128,7 +234,7 @@
         "Nelson",
         "Marlborough"
         ],
-        "filename": "Raw data/Development/COVID-19 MBIE Rental Active Bonds.csv",
+        "filename": "COVID-19 MBIE Rental Active Bonds.csv",
         "load_function": "read_from_csv",
         "parameter_transform":"function (x) ymd(x)",
         "order_parameter": false,
@@ -160,6 +266,7 @@
         "type": "Activity",
         "parameter_col": 1,
         "input_units": 1000,
+        "drop_na":false,
         "sub_series":"Closed Bonds",
         "value_col": [
         2,
@@ -199,7 +306,7 @@
         "Nelson",
         "Marlborough"
         ],
-        "filename": "Raw data/Development/COVID-19 MBIE Rental Closed Bonds.csv",
+        "filename": "COVID-19 MBIE Rental Closed Bonds.csv",
         "load_function": "read_from_csv",
         "parameter_transform":"function (x) ymd(x)",
         "data_type": "TimeSeries",
@@ -231,6 +338,7 @@
         "type": "Activity",
         "parameter_col": 1,
         "input_units": 1000,
+        "drop_na":false,
         "sub_series":"Lodged Bonds",
         "value_col": [
         2,
@@ -271,7 +379,7 @@
         "Marlborough"
 
         ],
-        "filename": "Raw data/Development/COVID-19 MBIE Rental Lodged Bonds.csv",
+        "filename": "COVID-19 MBIE Rental Lodged Bonds.csv",
         "load_function": "read_from_csv",
         "parameter_transform":"function (x) ymd(x)",
         "order_parameter": false,
@@ -302,6 +410,7 @@
         "indicator_name": "Weekly mean rent by region",
         "type": "Activity",
         "parameter_col": 1,
+        "drop_na":false,
         "sub_series":"Average Weekly Rent",
         "value_col": [
         9,
@@ -341,7 +450,7 @@
         "Nelson",
         "Marlborough"
         ],
-        "filename": "Raw data/Development/COVID-19 MBIE Rental Average Weekly Rent.csv",
+        "filename": "COVID-19 MBIE Rental Average Weekly Rent.csv",
         "load_function": "read_from_csv",
         "parameter_transform":"function (x) ymd(x)",
         "data_type": "TimeSeries",
@@ -466,35 +575,6 @@
         "data_type": "TimeSeries"
       },
       {
-        "class": "Economic",
-        "indicator_name": "Fuel supply volumes - weekly",
-        "type": "Activity",
-        "parameter_col": 1,
-        "skip":1,
-        "value_names": ["Z Network diesel", "Z Network retail fuel (91 & 95)", "Caltex diesel", "Caltex retail fuel (91 & 95)", "Other domestic retail supply"],
-        "group_names": ["Retail", "Retail", "Retail", "Retail", "Retail"],
-        "sheet_number": 1,
-
-        "filename": "COVID 19 - Z Energy weekly volume data.xlsx",
-        "company_name": ["Z Network (inc. Foodstuffs)", "Z Network (inc. Foodstuffs)", "Caltex Retail Fuel", "Caltex Retail Fuel", "Other domestic retail supply"],
-        "fuel_type": ["Diesel", "Z Energy", "Diesel", "Retail fuel (91 & 95)", "Other domestic retail supply"],
-        "load_function": "petrol_read_file"
-      },
-      {
-        "class": "Economic",
-        "indicator_name": "Fuel supply volumes - weekly",
-        "type": "Activity",
-        "parameter_col": 1,
-        "skip":1,
-        "value_names": ["Truckstops", "Other commercial fuels - Jet", "Other commercial fuels - Marine", "Other commercial fuels - Other"],
-        "group_names": ["Other", "Other", "Other", "Other"],
-        "sheet_number": 1,
-        "filename": "COVID 19 - Z Energy weekly volume data.xlsx",
-        "company_name": ["Truckstops", "Jet", "Marine", "Other"],
-        "fuel_type": ["Truckstops", "Jet", "Marine", "Other"],
-        "load_function": "petrol_read_file"
-      },
-      {
         "class": "Health",
         "indicator_name": "Source of cases",
         "type": "COVID-19",
@@ -535,19 +615,13 @@
         "parameter_transform": "function (x) x",
         "date_filter": "function(x) x != \"Total\"",
         "sheet_number": 3,
-        "value_col": [
-        3
-        ],
-        "value_names": [
-        "Cases by gender"
-        ],
+        "value_col": [3, 4, 5],
+        "value_names": ["Active", "Recovered", "Deceased"],
         "drop_na": false,
         "filename": "COVID 19 - MoH COVID-19 cases.xlsx",
         "load_function": "read_from_excel",
         "data_type": "BarChart",
-        "group_names": [
-        "Cases by gender"
-        ]
+        "group_names": ["Cases by gender"]
     },
     {
         "class": "Health",
@@ -557,13 +631,13 @@
         "parameter_transform": "function (x) x",
         "date_filter": "function(x) x != \"Total\"",
         "sheet_number": 2,
-        "value_col": [5, 3, 4],
-        "value_names": ["Deceased", "Active","Recovered"],
+        "value_col": [3, 4, 5],
+        "value_names": ["Active", "Recovered", "Deceased"],
         "drop_na": false,
         "filename": "COVID 19 - MoH COVID-19 cases.xlsx",
         "load_function": "read_from_excel",
         "data_type": "BarChart",
-        "group_names": ["Cases by age", "Cases by age", "Cases by age"]
+        "group_names": ["Cases by age"]
     },
     {
         "class": "Health",
@@ -573,19 +647,13 @@
         "parameter_transform": "function (x) x",
         "date_filter": "function(x) x != \"Total\"",
         "sheet_number": 4,
-        "value_col": [
-        3
-        ],
-        "value_names": [
-        "Cases by ethnicity"
-        ],
+        "value_col": [3, 4, 5],
+        "value_names": ["Active", "Recovered", "Deceased"],
         "drop_na": false,
         "filename": "COVID 19 - MoH COVID-19 cases.xlsx",
         "load_function": "read_from_excel",
         "data_type": "BarChart",
-        "group_names": [
-        "Cases by ethnicity"
-        ]
+        "group_names": ["Cases by ethnicity"]
     },
     {
         "class": "Economic",
@@ -2296,6 +2364,7 @@
         "class": "Economic",
         "indicator_name": "Flight departures by main airports",
         "type": "Transport",
+        "drop_na":false,
         "parameter_col": 1,
         "parameter_transform": "function(x) ymd(x)",
         "sheet_number": 1,
@@ -4396,7 +4465,7 @@
     {
     "class": "Income support",
     "indicator_name": "Number of jobs supported by the wage subsidy extension",
-    "type": "Wage subsidy assistance",
+    "type": "Wage subsidy extension",
     "parameter_col": 1,
     "parameter_transform": [
     "function (x) ",
@@ -4534,13 +4603,11 @@
     "value_col": [
     2,
     3,
-    4,
-    5
+    4
     ],
     "value_names": [
     "Received",
     "Approved",
-    "Closed",
     "Declined"
     ],
     "filename": "COVID-19 MSD Number of Applications.xlsx",
@@ -5069,7 +5136,7 @@
       "value_names": ["Wave 1", "Wave 2"],
       "group_names": ["undefined_name"],
       "sheet_number": 1,
-      "filename": "Raw data/Development/CFFC_output.xlsx",
+      "filename": "COVID 19 - CFFC Financial Wellbeing.xlsx",
       "parameter_transform": "function (x) x",
       "load_function": "read_from_excel",
       "data_type": "BarChart"
@@ -5085,7 +5152,7 @@
       "value_names": ["Wave 1", "Wave 2"],
       "group_names": ["undefined_name"],
       "sheet_number": 2,
-      "filename": "Raw data/Development/CFFC_output.xlsx",
+      "filename": "COVID 19 - CFFC Financial Wellbeing.xlsx",
       "parameter_transform": "function (x) x",
       "load_function": "read_from_excel",
       "data_type": "BarChart"
@@ -5100,7 +5167,7 @@
       "value_names": ["Wave 1", "Wave 2"],
       "group_names": ["undefined_name"],
       "sheet_number": 3,
-      "filename": "Raw data/Development/CFFC_output.xlsx",
+      "filename": "COVID 19 - CFFC Financial Wellbeing.xlsx",
       "parameter_transform": "function (x) x",
       "load_function": "read_from_excel",
       "data_type": "BarChart"
@@ -5115,7 +5182,7 @@
     "value_names": ["Wave 1", "Wave 2"],
     "group_names": ["undefined_name"],
     "sheet_number": 4,
-    "filename": "Raw data/Development/CFFC_output.xlsx",
+    "filename": "COVID 19 - CFFC Financial Wellbeing.xlsx",
     "parameter_transform": "function (x) x",
     "load_function": "read_from_excel",
     "data_type": "BarChart"
@@ -5130,7 +5197,7 @@
     "value_names": ["Wave 1", "Wave 2"],
     "group_names": ["undefined_name"],
     "sheet_number": 5,
-    "filename": "Raw data/Development/CFFC_output.xlsx",
+    "filename": "COVID 19 - CFFC Financial Wellbeing.xlsx",
     "parameter_transform": "function (x) x",
     "load_function": "read_from_excel",
     "data_type": "BarChart"
@@ -5145,7 +5212,7 @@
     "value_names": ["Wave 1", "Wave 2"],
     "group_names": ["undefined_name"],
     "sheet_number": 6,
-    "filename": "Raw data/Development/CFFC_output.xlsx",
+    "filename": "COVID 19 - CFFC Financial Wellbeing.xlsx",
     "parameter_transform": "function (x) x",
     "load_function": "read_from_excel",
     "data_type": "BarChart"
@@ -5160,7 +5227,7 @@
     "value_names": ["Wave 1", "Wave 2"],
     "group_names": ["undefined_name"],
     "sheet_number": 7,
-    "filename": "Raw data/Development/CFFC_output.xlsx",
+    "filename": "COVID 19 - CFFC Financial Wellbeing.xlsx",
     "parameter_transform": "function (x) x",
     "load_function": "read_from_excel",
     "data_type": "BarChart"
@@ -5886,35 +5953,6 @@
     "data_type":"TimeSeriesError"
   },
 
-{
-  "class": "Economic",
-  "indicator_name": "Fuel supply volumes - monthly",
-  "type": "Activity",
-  "parameter_col": 1,
-  "skip":0,
-  "value_names": ["Z Network diesel", "Z Network retail fuel (91 & 95)", "Caltex diesel", "Caltex retail fuel (91 & 95)", "Other domestic retail supply (petrol)", "Other domestic retail supply (diesel)"],
-  "group_names": ["Retail", "Retail", "Retail", "Retail", "Retail", "Retail"],
-  "sheet_number": 2,
-  "filename": "COVID 19 - Z Energy weekly volume data.xlsx",
-  "company_name": ["Z Network (inc. Foodstuffs)", "Z Network (inc. Foodstuffs)", "Caltex Retail Fuel", "Caltex Retail Fuel", "Other domestic retail supply", "Other domestic retail supply"],
-  "fuel_type": ["Z Retail diesel", "Z Retail petrol", "Caltex Retail diesel", "Caltex Retail petrol", "Domestic petrol", "Domestic diesel"],
-  "load_function": "petrol_read_file_month"
-},
-
-{
-  "class": "Economic",
-  "indicator_name": "Fuel supply volumes - monthly",
-  "type": "Activity",
-  "parameter_col": 1,
-  "skip":0,
-  "value_names": ["Truckstops", "Other commercial fuels - Jet", "Other commercial fuels - Marine", "Other commercial fuels - Bitumen", "Other commercial fuels - Other"],
-  "group_names": ["Other", "Other", "Other", "Other", "Other"],
-  "sheet_number": 2,
-  "filename": "COVID 19 - Z Energy weekly volume data.xlsx",
-  "company_name": ["Truckstops", "Jet", "Marine", "Bitumen", "Other"],
-  "fuel_type": ["Truckstops", "Jet", "Marine fuel oil", "Bitumen", "Other"],
-  "load_function": "petrol_read_file_month"
-},
  {
     "class":"Social",
     "type":"Household finances",
@@ -7821,6 +7859,104 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
+   {
+
+    "class":"Economic",
+    "type":"Greenhouse gas emissions (GHG)",
+    "indicator_name":"All industries & households (total) – Quarterly",
+    "order_parameter":true,
+    "skip":null,
+    "parameter_col":1,
+    "value_col":[14],
+    "value_names":[
+          "All industries & households (total)"
+        ],
+    "group_names":[
+          "undefined_name"
+    ],
+    "filename":["COVID-19 Greenhouse Emissions.csv"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_from_csv",
+    "data_type":"TimeSeries"
+  },
+  {
+
+    "class":"Economic",
+    "type":"Greenhouse gas emissions (GHG)",
+    "indicator_name":"Industry - Quarterly",
+    "order_parameter":true,
+    "skip":null,
+    "parameter_col":1,
+    "value_col":[13,2,3,4,5,6,11,8],
+    "value_names":[
+          "Total all industries",
+          "Agriculture, forestry and fishing",
+          "Mining",
+          "Manufacturing",
+          "Electricity, gas, water, and waste services",
+          "Construction",
+          "Services excluding transport, postal, and warehousing",
+          "Transport, postal, and warehousing"
+        ],
+    "group_names":[
+          "Total all industries",
+          "Agriculture, forestry and fishing",
+          "Mining",
+          "Manufacturing",
+          "Electricity, gas, water, and waste services",
+          "Construction",
+          "Services excluding transport, postal, and warehousing",
+          "Transport, postal, and warehousing"
+    ],
+    "filename":["COVID-19 Greenhouse Emissions.csv"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_from_csv",
+    "data_type":"TimeSeries"
+  },
+  {
+
+    "class":"Economic",
+    "type":"Greenhouse gas emissions (GHG)",
+    "indicator_name":"Total households – Quarterly",
+    "order_parameter":true,
+    "skip":null,
+    "parameter_col":1,
+    "value_col":[7],
+    "value_names":[
+          "Total households"
+        ],
+    "group_names":[
+          "undefined_name"
+    ],
+    "filename":["COVID-19 Greenhouse Emissions.csv"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_from_csv",
+    "data_type":"TimeSeries"
+  },
+    {
+
+    "class":"Economic",
+    "type":"Greenhouse gas emissions (GHG)",
+    "indicator_name":"Broad industry group - Quarterly",
+    "order_parameter":true,
+    "skip":null,
+    "parameter_col":1,
+    "value_col":[10,9,12],
+    "value_names":[
+      "Primary industries",
+      "Goods-producing industries",
+      "Service industries"
+    ],
+    "group_names":[
+      "Primary industries",
+      "Goods-producing industries",
+      "Service industries"
+    ],
+    "filename":["COVID-19 Greenhouse Emissions.csv"],
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_from_csv",
+    "data_type":"TimeSeries"
+  },
 
   {
         "class": "Economic",
@@ -8351,5 +8487,44 @@
         ],
         "drop_na": false,
         "data_type": "TimeSeries"
-      }
+      },
+      {
+      "class":"Social",
+      "type":"Community Support",
+      "indicator_name":"Food parcel distribution (Salvation Army)",
+      "parameter_col":1,
+      "parameter_transform":"function (x) ymd(x)",
+      "value_col":2,
+      "value_names":"Total food parcels",
+      "filename":"COVID 19 - Food parcel distribution.xlsx",
+      "load_function":"read_from_excel",
+      "data_type":"TimeSeries",
+      "group_names": "undefined_name"
+    },
+     {
+      "class":"Contextual",
+      "type":"Business",
+      "indicator_name":"Enterprise counts",
+      "parameter_col":1,
+      "parameter_transform":"function (x) as.Date(x, \"%B %Y\")",
+      "value_col": [
+        2,
+        3,
+        4
+      ],
+      "value_names":[
+        "Enterprises",
+        "Enterprise entries",
+        "Enterprise exits"
+      ],
+      "filename":"COVID 19 - Business enterprise counts.xlsx",
+      "data_type":"TimeSeries",
+      "group_names":[
+        "Enterprises",
+        "Enterprise entries",
+        "Enterprise exits"
+      ],
+      "load_function":"read_from_excel"
+    }
+
 ]

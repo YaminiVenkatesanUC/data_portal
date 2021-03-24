@@ -3,8 +3,10 @@ path <- paste0(directory, "chorus regional/")
 master <- read_excel(paste0(path, "COVID 19 - Chorus regional broadband master.xlsx"))
 files <- file.info(list.files(path, full.names = T))
 update <- read.csv(rownames(files)[which.max(files$mtime)])
+regions <- c("Auckland", "Bay of Plenty", "Canterbury", "Gisborne", "Hawkes Bay", "Manawatu", "Northland", "Otago", "Southland", "Taranaki", "Tasman", "Waikato", "Wellington", "Westland")
 update <- update %>%
   select(-weekday) %>%
+  filter(`Region.Name` %in% regions) %>%
   dplyr::rename(Date = `Day.of.timecapturednzst5min`) %>%
   dplyr::rename(`Measure Names` = `Measure.Names`) %>%
   dplyr::rename(`Region Name` = `Region.Name`) %>%

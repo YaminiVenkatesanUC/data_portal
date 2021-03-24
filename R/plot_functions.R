@@ -88,15 +88,22 @@ get_time_series_plot <- function(
     categories <- format(dates, "%b-%y")
   }
 
-  if (!is.null(indicator_definition$frequency)) {
-      if (indicator_definition$frequency == "monthly" || indicator_definition$frequency == "quarterly") {
-        categories <- format(dates, "%b")
-      }
+    if (all(data_object$value_names %in% 2010:2030)) {
+      year_label <- ""
+      categories <- format(dates, "%d-%b")
     }
 
-  if (all(data_object$value_names %in% 2010:2030)) {
-    year_label <- ""
-    categories <- format(dates, "%d-%b")
+  if (!is.null(indicator_definition$frequency)) {
+      if (indicator_definition$frequency == "Monthly"){
+        year_label <- ""
+        categories <- format(dates, "%b-%Y")
+      } else if (indicator_definition$frequency == "Quarterly") {
+        categories <- format(dates, "%b")
+      }
+  }
+
+  if (!is.null(group_definition$x_axis_label)){
+    year_label <- paste0(year_label, group_definition$x_axis_label)
   }
 
   norm_factor_and_unit <- get_normalisation_factor(data_object$values)
@@ -127,6 +134,14 @@ get_time_series_plot <- function(
   )
 
   y_label <- group_definition$units
+
+  if(!is.null(group_definition$x_axis_label)){
+    year_label <- group_definition$x_axis_label
+  }
+  else{
+    year_label <- NULL
+  }
+
 
   plot <- hc_xAxis(
     plot,
@@ -620,11 +635,14 @@ get_time_series_plot_with_errors <- function(
   }
 
   if (!is.null(indicator_definition$frequency)) {
-    if (indicator_definition$frequency == "monthly" || indicator_definition$frequency == "Quarterly") {
+    if (indicator_definition$frequency == "Monthly" || indicator_definition$frequency == "Quarterly") {
       categories <- format(dates, "%b-%Y")
       categories <- rep(categories,2)
-      if(indicator_definition$frequency == "Quarterly"){
-        year_label <- "Quarter"
+      if(!is.null(group_definition$x_axis_label)){
+        year_label <- group_definition$x_axis_label
+      }
+      else{
+        year_label <- NULL
       }
 
     }

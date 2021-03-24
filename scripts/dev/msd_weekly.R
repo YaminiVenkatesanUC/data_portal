@@ -47,16 +47,16 @@ percentPop_rows <- 15
 
 #NUMBER_OF_APPLICATIONS----------------------------
 numAppls <- read_msd(raw_prev = raw_prev, raw_update = raw_update, sheet = 4,
-                     range_start = c(9, 4), range_end = c(13, NA), col_types = "numeric", col_names = TRUE)
+                     range_start = c(57, 4), range_end = c(60, NA), col_types = "numeric", col_names = TRUE)
 numAppls_series <- c("Applications received", "Applications approved", "Applications closed", "Applications declined")
 numAppls_rows <- c(1:4)
 
-#NUMBER_OF_CIRP_RECIPIENTS-------------------------
+#STOPPED ---- NUMBER_OF_CIRP_RECIPIENTS-------------------------
 numCIRP_1<- read_msd(raw_prev = raw_prev, raw_update = raw_update, sheet = 2,
                      range_start = c(60, 4), range_end = c(64, NA), col_types = "numeric", col_names = TRUE)
 
 numCIRP_2<- read_msd(raw_prev = raw_prev, raw_update = raw_update, sheet = 5,
-                     range_start = c(44, 4), range_end = c(46, NA), col_names = TRUE, col_types = "numeric")
+                     range_start = c(76, 4), range_end = c(78, NA), col_names = TRUE, col_types = "numeric")
 names(numCIRP_1) <- names(numCIRP_2)
 numCIRP <- rbind(numCIRP_1, numCIRP_2)
 numCIRP_series <- c("Total number of recipients of CIRP",
@@ -69,7 +69,7 @@ numCIRP_rows <- c(1:6)
 
 #NUMBER_OF_WAGE_SUBSIDY_REFUNDS+++AMOUNT--------------------
 wageSubsRefunds <- read_msd(raw_prev = raw_prev, raw_update = raw_update, sheet = 4,
-                            range_start = c(15, 4), range_end = c(17, NA), col_types = "text", col_names = TRUE)
+                            range_start = c(69, 4), range_end = c(71, NA), col_types = "text", col_names = TRUE)
 wageSubsRefunds[2, ] <- lapply(wageSubsRefunds[2, ], str_remove, pattern = " million")
 wageSubsRefunds[2, ] <- lapply(wageSubsRefunds[2, ], str_remove, pattern = "\\$")
 wageSubsRefunds <- as.data.frame(apply(wageSubsRefunds, 2, as.numeric))
