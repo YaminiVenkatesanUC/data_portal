@@ -13,7 +13,8 @@ for (region in regions) {
     select(-Weekday_Flag, -SiteName) %>%
     filter(Region == region) %>%
     select(-Region) %>%
-    pivot_wider(names_from = Type, values_from = TrafficCount)
+    pivot_wider(names_from = Type, values_from = TrafficCount) %>%
+    select(Day, `Light Vehicles`, `Heavy Vehicles`)
 
   file.rename(from = paste0(directory, "/COVID-19 - Weekly traffic count - ", region, ".xlsx"),
               to = paste0(directory, "/Previous/COVID-19 - Weekly traffic count - ", region, ".xlsx"))
