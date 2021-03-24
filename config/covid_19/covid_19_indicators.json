@@ -1141,7 +1141,7 @@
       },
       {
         "name": "Copper",
-        "title": "Price per metric tonne of copper (USD)",
+        "title": "Price per metric ton of copper (USD)",
         "units": "$"
       }
     ]
@@ -1235,7 +1235,7 @@
       {
         "name": "undefined_name",
         "title": "China daily coal consumption of six power plants",
-        "units": "Ton"
+        "units": "Tonnes"
       }
     ]
   },
