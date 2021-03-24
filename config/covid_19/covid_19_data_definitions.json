@@ -6,7 +6,6 @@
   "parameter_col": 1,
   "parameter_transform":"function (x) ymd(x)",
   "skip":1,
-  "input_units":1000000,
   "value_col":[
     2, 3, 4, 5, 6, 7, 8, 9, 10
   ],
@@ -615,13 +614,19 @@
         "parameter_transform": "function (x) x",
         "date_filter": "function(x) x != \"Total\"",
         "sheet_number": 3,
-        "value_col": [3, 4, 5],
-        "value_names": ["Active", "Recovered", "Deceased"],
+        "value_col": [
+        3
+        ],
+        "value_names": [
+        "Cases by gender"
+        ],
         "drop_na": false,
         "filename": "COVID 19 - MoH COVID-19 cases.xlsx",
         "load_function": "read_from_excel",
         "data_type": "BarChart",
-        "group_names": ["Cases by gender"]
+        "group_names": [
+        "Cases by gender"
+        ]
     },
     {
         "class": "Health",
@@ -631,13 +636,13 @@
         "parameter_transform": "function (x) x",
         "date_filter": "function(x) x != \"Total\"",
         "sheet_number": 2,
-        "value_col": [3, 4, 5],
-        "value_names": ["Active", "Recovered", "Deceased"],
+        "value_col": [5, 3, 4],
+        "value_names": ["Deceased", "Active","Recovered"],
         "drop_na": false,
         "filename": "COVID 19 - MoH COVID-19 cases.xlsx",
         "load_function": "read_from_excel",
         "data_type": "BarChart",
-        "group_names": ["Cases by age"]
+        "group_names": ["Cases by age", "Cases by age", "Cases by age"]
     },
     {
         "class": "Health",
@@ -647,13 +652,19 @@
         "parameter_transform": "function (x) x",
         "date_filter": "function(x) x != \"Total\"",
         "sheet_number": 4,
-        "value_col": [3, 4, 5],
-        "value_names": ["Active", "Recovered", "Deceased"],
+        "value_col": [
+        3
+        ],
+        "value_names": [
+        "Cases by ethnicity"
+        ],
         "drop_na": false,
         "filename": "COVID 19 - MoH COVID-19 cases.xlsx",
         "load_function": "read_from_excel",
         "data_type": "BarChart",
-        "group_names": ["Cases by ethnicity"]
+        "group_names": [
+        "Cases by ethnicity"
+        ]
     },
     {
         "class": "Economic",
@@ -1787,125 +1798,80 @@
         "indicator_name": "Weekly traffic count",
         "type": "Transport",
         "parameter_col": 1,
-        "parameter_transform": "function (x) dmy(x)",
-        "sheet_number": 1,
-        "value_col": [
-        3,
-        4
-        ],
+        "parameter_transform": "function (x) ymd(x)",
+        "value_col": [2, 3],
         "value_names": [
-        "Auckland - Heavy vehicles",
-        "Auckland - Light vehicles"
+          "Light vehicles",
+          "Heavy vehicles"
         ],
-        "filename": "COVID 19 - tms-data weekly.xlsx",
-        "load_function": "read_traffic_data",
-        "skip": 1,
-        "region": "Auckland",
+        "filename": "COVID-19 - Weekly traffic count - Auckland.xlsx",
+        "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": [
-        "Auckland - Heavy vehicles",
-        "Auckland - Light vehicles"
-        ]
+        "group_names": ["Auckland"]
     },
     {
         "class": "Economic",
         "indicator_name": "Weekly traffic count",
         "type": "Transport",
         "parameter_col": 1,
-        "parameter_transform": "function(x) as.Date(dmy(x))",
-        "sheet_number": 1,
-        "value_col": [
-        3,
-        4
-        ],
+        "parameter_transform": "function(x) ymd(x)",
+        "value_col": [2, 3],
         "value_names": [
-        "Christchurch - Heavy vehicles",
-        "Christchurch - Light vehicles"
+          "Light vehicles",
+          "Heavy vehicles"
         ],
-        "filename": "COVID 19 - tms-data weekly.xlsx",
-        "load_function": "read_traffic_data",
-        "skip": 1,
-        "region": "Christchurch",
+        "filename": "COVID-19 - Weekly traffic count - Christchurch.xlsx",
+        "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": [
-        "Christchurch - Heavy vehicles",
-        "Christchurch - Light vehicles"
-        ]
+        "group_names": ["Christchurch"]
     },
     {
         "class": "Economic",
         "indicator_name": "Weekly traffic count",
         "type": "Transport",
         "parameter_col": 1,
-        "parameter_transform": "function (x) dmy(x)",
-        "sheet_number": 1,
-        "value_col": [
-        3,
-        4
-        ],
+        "parameter_transform": "function (x) ymd(x)",
+        "value_col": [2, 3],
         "value_names": [
-        "Dunedin - Heavy vehicles",
-        "Dunedin - Light vehicles"
+          "Light vehicles",
+          "Heavy vehicles"
         ],
-        "filename": "COVID 19 - tms-data weekly.xlsx",
-        "load_function": "read_traffic_data",
-        "skip": 1,
-        "region": "Dunedin",
+        "filename": "COVID-19 - Weekly traffic count - Dunedin.xlsx",
+        "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": [
-        "Dunedin - Heavy vehicles",
-        "Dunedin - Light vehicles"
-        ]
+        "group_names": ["Dunedin"]
     },
     {
         "class": "Economic",
         "indicator_name": "Weekly traffic count",
         "type": "Transport",
         "parameter_col": 1,
-        "parameter_transform": "function (x) dmy(x)",
-        "sheet_number": 1,
-        "value_col": [
-        3,
-        4
-        ],
+        "parameter_transform": "function (x) ymd(x)",
+        "value_col": [2, 3],
         "value_names": [
-        "Hamilton- Heavy vehicles",
-        "Hamilton - Light vehicles"
+          "Light vehicles",
+          "Heavy vehicles"
         ],
-        "filename": "COVID 19 - tms-data weekly.xlsx",
-        "load_function": "read_traffic_data",
-        "skip": 1,
-        "region": "Hamilton",
+        "filename": "COVID-19 - Weekly traffic count - Hamilton.xlsx",
+        "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": [
-        "Hamilton - Heavy vehicles",
-        "Hamilton - Light vehicles"
-        ]
+        "group_names": ["Hamilton"]
     },
     {
         "class": "Economic",
         "indicator_name": "Weekly traffic count",
         "type": "Transport",
         "parameter_col": 1,
-        "parameter_transform": "function (x) dmy(x)",
-        "sheet_number": 1,
-        "value_col": [
-        3,
-        4
-        ],
+        "parameter_transform": "function (x) ymd(x)",
+        "value_col": [2, 3],
         "value_names": [
-        "Wellington - Heavy vehicles",
-        "Wellington - Light vehicles"
-        ],
-        "filename": "COVID 19 - tms-data weekly.xlsx",
-        "load_function": "read_traffic_data",
-        "skip": 1,
-        "region": "Wellington",
+          "Light vehicles",
+          "Heavy vehicles"
+          ],
+        "filename": "COVID-19 - Weekly traffic count - Wellington.xlsx",
+        "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": [
-        "Wellington - Heavy vehicles",
-        "Wellington - Light vehicles"
-        ]
+        "group_names": ["Wellington"]
     },
     {
         "class": "Economic",
@@ -5840,7 +5806,6 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError"
   },
-
  {
     "class":"Social",
     "type":"Household finances",

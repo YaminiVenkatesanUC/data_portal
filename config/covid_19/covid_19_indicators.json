@@ -1604,52 +1604,27 @@
     "download": true,
     "groups": [
       {
-        "name": "Auckland - Heavy vehicles",
+        "name": "Auckland",
         "title": "Auckland weekly traffic - selected site 5 day average (excluding weekends)",
         "units": "Traffic count"
       },
       {
-        "name": "Auckland - Light vehicles",
-        "title": "Auckland weekly traffic - selected site 5 day average (excluding weekends)",
-        "units": "Traffic count"
-      },
-      {
-        "name": "Christchurch - Heavy vehicles",
+        "name": "Christchurch",
         "title": "Christchurch weekly traffic - selected site 5 day average (excluding weekends)",
         "units": "Traffic count"
       },
       {
-        "name": "Christchurch - Light vehicles",
-        "title": "Christchurch weekly traffic - selected site 5 day average (excluding weekends)",
-        "units": "Traffic count"
-      },
-      {
-        "name": "Dunedin - Heavy vehicles",
+        "name": "Dunedin",
         "title": "Dunedin weekly traffic - selected site 5 day average (excluding weekends)",
         "units": "Traffic count"
       },
       {
-        "name": "Dunedin - Light vehicles",
-        "title": "Dunedin weekly traffic - selected site 5 day average (excluding weekends)",
-        "units": "Traffic count"
-      },
-      {
-        "name": "Hamilton - Heavy vehicles",
+        "name": "Hamilton",
         "title": "Hamilton weekly traffic - selected site 5 day average (excluding weekends)",
         "units": "Traffic count"
       },
       {
-        "name": "Hamilton - Light vehicles",
-        "title": "Hamilton weekly traffic - selected site 5 day average (excluding weekends)",
-        "units": "Traffic count"
-      },
-      {
-        "name": "Wellington - Heavy vehicles",
-        "title": "Wellington weekly traffic - selected site 5 day average (excluding weekends)",
-        "units": "Traffic count"
-      },
-      {
-        "name": "Wellington - Light vehicles",
+        "name": "Wellington",
         "title": "Wellington weekly traffic - selected site 5 day average (excluding weekends)",
         "units": "Traffic count"
       }
