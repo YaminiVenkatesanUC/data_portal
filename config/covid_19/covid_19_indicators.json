@@ -1335,7 +1335,7 @@
     "download": true,
     "groups": [
       {
-        "name":  "Emergency housing grants",
+        "name":  "undefined_name",
         "title":  "Emergency housing grants",
         "units": "Number"
       }
@@ -7601,7 +7601,7 @@
   },
   {
     "class":"Social",
-    "type":"Community Support",
+    "type":"Community support",
     "indicator_name":"Food parcel distribution (Salvation Army)",
     "source":"Salvation Army",
     "plot_function":"get_time_series_plot",

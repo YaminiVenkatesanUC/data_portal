@@ -1423,10 +1423,7 @@
         "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": [
-
-        "Emergency housing grants"
-        ]
+        "group_names": "undefined_name"
     },
 
     {
@@ -8343,7 +8340,7 @@
       },
       {
       "class":"Social",
-      "type":"Community Support",
+      "type":"Community support",
       "indicator_name":"Food parcel distribution (Salvation Army)",
       "parameter_col":1,
       "parameter_transform":"function (x) ymd(x)",
