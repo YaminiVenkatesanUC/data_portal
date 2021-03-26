@@ -3132,15 +3132,11 @@
                 "parameter_transform": [
         "function (x) ymd(x)"
         ],
-
         "value_col": [
-
         2,
         3,
         4,
         5
-
-
         ],
         "value_names": [
          "Total",
