@@ -2,8 +2,11 @@
 data_frame_to_api_helper <- function(directory, config, metadata, data){
   #error when there is not a match or indicator removed
   resource <- to_resource(config, metadata)
+  write.table(resource, "dump.txt", append = TRUE)
   observations <- to_observations(config, metadata, data)
-  writeDatastore(observations,location = list(collection = "PDS", instance = "Covid-19", table = "Observation_test"), version = 9, server = "uat")
+  write.table(observations, "dump.txt", append = TRUE)
+
+  #writeDatastore(observations,location = list(collection = "PDS", instance = "Covid-19", table = "Observation_test"), version = 9, server = "uat")
 }
 
 to_observations <- function(config, metadata, data){

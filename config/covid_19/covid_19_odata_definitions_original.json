@@ -455,39 +455,5 @@
       "Unit":"Number",
       "Measure":"Jobs associated with paid out subsidy applications (cumulative)",
       "Multiplier":0
-   },
-   {
-      "ResourceID":"CPWEE1",
-      "Subject":"Weekly deaths",
-      "Title":"Weekly deaths",
-      "Description":"Deaths by age (week ended)",
-      "Caveats":"<p>(1) Weekly deaths data are based on Date of Death and differ from other deaths statistics based on date of registration. These data are provisional and subject to revision during the full process of producing death statistics.</p><p>(2) Totals are by Date of Death. Week ending Sunday.</p><p>(3) Weekly totals will differ from those in the death registrations time series as deaths are registered at the time of burial or cremation of the body. </p><p>(4) An average of 5% of Deaths are registered 2 weeks or more after Date of Death therefore weekly totals are expected to increase over time as Death Registrations are submitted and processed.</p><p>(5) Overseas addresses or where location could not be determined and records where the persons sex is missing or not in Male or Female have been excluded as these numbers are too low to publish a weekly total. </p><p>(6) The accuracy of any administrative data, which includes but is not limited to address information is subject to human error.</p><p>(7) The data provided has been collated to the best of our ability and may have a small variance to any alternative publications.</p>",
-      "Source":"Department of Internal Affairs",
-      "SourceURL":"https://www.dia.govt.nz/",
-      "Modified":"",
-      "Frequency":"Weekly",
-      "Var1":"Age group",
-      "Duration":"P7D",
-      "Label1":"variable",
-      "Unit":"Number",
-      "Measure":"Registered deaths",
-      "Multiplier":0
-   },
-   {
-      "ResourceID":"CPWEE2",
-      "Subject":"Weekly deaths",
-      "Title":"(Deaths) by age and sex",
-      "Description":"Deaths by age and sex (week ended)",
-      "Caveats":"<p>(1) Weekly deaths data are based on Date of Death and differ from other deaths statistics based on date of registration. These data are provisional and subject to revision during the full process of producing death statistics.</p><p>(2) Totals are by Date of Death. Week ending Sunday.</p><p>(3) Weekly totals will differ from those in the death registrations time series as deaths are registered at the time of burial or cremation of the body. </p><p>(4) An average of 5% of Deaths are registered 2 weeks or more after Date of Death therefore weekly totals are expected to increase over time as Death Registrations are submitted and processed.</p><p>(5) Overseas addresses or where location could not be determined and records where the persons sex is missing or not in Male or Female have been excluded as these numbers are too low to publish a weekly total. </p><p>(6) The accuracy of any administrative data, which includes but is not limited to address information is subject to human error.</p><p>(7) The data provided has been collated to the best of our ability and may have a small variance to any alternative publications.</p>",
-      "Source":"Department of Internal Affairs",
-      "SourceURL":"https://www.dia.govt.nz/",
-      "Modified":"",
-      "Frequency":"Weekly",
-      "Var1":"Sex and age group",
-      "Duration":"P7D",
-      "Label1":"variable",
-      "Unit":"Number",
-      "Measure":"Registered deaths",
-      "Multiplier":0
    }
 ]

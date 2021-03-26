@@ -17,13 +17,13 @@ library(gtools)
 source("R/data_types.R")
 source("R/core/type_checks.R")
 source("R/core/utils.R")
+source("R/core/utils_API.R")
 source("R/core/consts.R")
 source("R/load_functions.R")
 
 add_to_data_service <- function(data_definition, odata_definitions, data_store, config) {
   check_data_definition(data_definition)
   data_definition <- expand_data_definition_group_names(data_definition)
-  print(data_definition)
   data <- load_functions[[data_definition$load_function]](data_definition, config$data_directory, odata_definitions)
   update_date <- as.Date(file.info(paste0(config$data_directory, data_definition$filename))$mtime)
 
@@ -63,7 +63,7 @@ load_data <- function(config, odata_load_flag) {
 
   for (data_definition in data_definitions) {
     data_store <- add_to_data_service(data_definition, odata_definitions, data_store, config)
-    break
+    #break
   }
   saveRDS(data_store, config$data_store_filename)
   return(data_store)
