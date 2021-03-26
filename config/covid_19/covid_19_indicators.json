@@ -1147,7 +1147,7 @@
       },
       {
         "name": "Copper",
-        "title": "Price per metric tonne of copper (USD)",
+        "title": "Price per metric ton of copper (USD)",
         "units": "$"
       }
     ]
@@ -1241,7 +1241,7 @@
       {
         "name": "undefined_name",
         "title": "China daily coal consumption of six power plants",
-        "units": "Ton"
+        "units": "Tonnes"
       }
     ]
   },
@@ -1341,7 +1341,7 @@
     "download": true,
     "groups": [
       {
-        "name":  "Emergency housing grants",
+        "name":  "undefined_name",
         "title":  "Emergency housing grants",
         "units": "Number"
       }
@@ -1610,52 +1610,27 @@
     "download": true,
     "groups": [
       {
-        "name": "Auckland - Heavy vehicles",
+        "name": "Auckland",
         "title": "Auckland weekly traffic - selected site 5 day average (excluding weekends)",
         "units": "Traffic count"
       },
       {
-        "name": "Auckland - Light vehicles",
-        "title": "Auckland weekly traffic - selected site 5 day average (excluding weekends)",
-        "units": "Traffic count"
-      },
-      {
-        "name": "Christchurch - Heavy vehicles",
+        "name": "Christchurch",
         "title": "Christchurch weekly traffic - selected site 5 day average (excluding weekends)",
         "units": "Traffic count"
       },
       {
-        "name": "Christchurch - Light vehicles",
-        "title": "Christchurch weekly traffic - selected site 5 day average (excluding weekends)",
-        "units": "Traffic count"
-      },
-      {
-        "name": "Dunedin - Heavy vehicles",
+        "name": "Dunedin",
         "title": "Dunedin weekly traffic - selected site 5 day average (excluding weekends)",
         "units": "Traffic count"
       },
       {
-        "name": "Dunedin - Light vehicles",
-        "title": "Dunedin weekly traffic - selected site 5 day average (excluding weekends)",
-        "units": "Traffic count"
-      },
-      {
-        "name": "Hamilton - Heavy vehicles",
+        "name": "Hamilton",
         "title": "Hamilton weekly traffic - selected site 5 day average (excluding weekends)",
         "units": "Traffic count"
       },
       {
-        "name": "Hamilton - Light vehicles",
-        "title": "Hamilton weekly traffic - selected site 5 day average (excluding weekends)",
-        "units": "Traffic count"
-      },
-      {
-        "name": "Wellington - Heavy vehicles",
-        "title": "Wellington weekly traffic - selected site 5 day average (excluding weekends)",
-        "units": "Traffic count"
-      },
-      {
-        "name": "Wellington - Light vehicles",
+        "name": "Wellington",
         "title": "Wellington weekly traffic - selected site 5 day average (excluding weekends)",
         "units": "Traffic count"
       }
@@ -6445,7 +6420,7 @@
     "groups": [
       {
         "name": "undefined_name",
-        "title": "Respondents who said they slept for the recommended time - provisional ",
+        "title": "Respondents who said they slept for the recommended time - provisional",
         "units": "%",
         "caveats": "<p> 1) Percentage of respondents who, over the past 7 days, said they have on average slept for the recommended number of hours in a 24-hour period, including all naps and sleeps. The Ministry of Health‘s sleep recommendations are adapted from the National Sleep Foundation. Recommended hours of sleep vary from 7-10 hours depending on age. </p> <p> 2) This survey samples people who have previously taken part in the New Zealand Health Survey and agreed to be contacted about future research. As a result, there could be bias associated with the respondents and thus the findings of this survey. </p> <p> 3) Data are for the week ended Sunday.  </p> <p> 4) Approximately 300 people (aged 15+ years) are interviewed each day. </p> <p> 5) There are some limitations to the sample used, such as small numbers of Asian and Pacific respondents. </p>"
       }
@@ -7397,6 +7372,7 @@
     "indicator_name":"Industry - Quarterly",
     "plot_function":"get_time_series_plot",
     "download":true,
+    "include_date_slider": true,
     "source":"Stats NZ, System of Environmental-Economic Accounting",
     "frequency":"Quarterly",
     "source_url":"https://www.stats.govt.nz/experimental/greenhouse-gas-emissions-industry-and-household-september-2020-quarter",
@@ -7463,6 +7439,7 @@
     "plot_function":"get_time_series_plot",
     "download":true,
     "source":"Stats NZ, System of Environmental-Economic Accounting",
+    "include_date_slider": true,
     "frequency":"Quarterly",
     "source_url":"https://www.stats.govt.nz/experimental/greenhouse-gas-emissions-industry-and-household-september-2020-quarter",
     "caveats":"<p><ol><li>CO₂-e is carbon dioxide equivalent.</li><li>This experimental production-based emissions data is done within the System of Environmental-Economic Accounting (SEEA) framework.</li><li>Production of greenhouse gases by Australian and New Zealand Standard Industrial Classification 2006 (ANZSIC06), and households are on a residence basis. The national accounts' residence principle means that emissions by resident economic units are included even if these occur outside the territory (for example, resident airlines and shipping companies operating in the rest of the world).</li><li>Industry and household emissions are based on the range of direct emissions produced by an industry or household which can span Greenhouse Gas Inventory sectors.</li><li>Emissions are expressed in carbon dioxide equivalents, which are the emissions of greenhouse gases weighted by their 100-year global warming potential (GWP). The GWPs are based on those from the Intergovernmental Panel on Climate Change, Fourth Assessment Report, 2007.</li><li>Seasonally adjusted emissions values are not additive.</li><ol></p>",
@@ -7485,6 +7462,7 @@
     "indicator_name":"Broad industry group - Quarterly",
     "plot_function":"get_time_series_plot",
     "download":true,
+    "include_date_slider": true,
     "source":"Stats NZ, System of Environmental-Economic Accounting",
     "frequency":"Quarterly",
     "source_url":"https://www.stats.govt.nz/experimental/greenhouse-gas-emissions-industry-and-household-september-2020-quarter",
@@ -7519,6 +7497,7 @@
     "indicator_name":"All industries & households (total) – Quarterly",
     "plot_function":"get_time_series_plot",
     "download":true,
+    "include_date_slider": true,
     "source":"Stats NZ, System of Environmental-Economic Accounting",
     "frequency":"Quarterly",
     "source_url":"https://www.stats.govt.nz/experimental/greenhouse-gas-emissions-industry-and-household-september-2020-quarter",
@@ -7640,7 +7619,7 @@
   },
   {
     "class":"Social",
-    "type":"Community Support",
+    "type":"Community support",
     "indicator_name":"Food parcel distribution (Salvation Army)",
     "source":"Salvation Army",
     "plot_function":"get_time_series_plot",

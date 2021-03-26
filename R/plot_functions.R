@@ -42,8 +42,7 @@ get_time_series_plot <- function(
 
   data <- cbind(data_object$dates, data_object$values)
   names(data) <- c("date", data_object$value_names)
-  if (
-    !is.null(indicator_definition$include_date_slider) &&
+  if (!is.null(indicator_definition$include_date_slider) &&
       indicator_definition$include_date_slider
   ) {
     range <- input$range_selector
@@ -93,14 +92,17 @@ get_time_series_plot <- function(
       categories <- format(dates, "%d-%b")
     }
 
-  if (!is.null(indicator_definition$frequency)) {
-      if (indicator_definition$frequency == "Monthly"){
-        year_label <- ""
+    if (!is.null(indicator_definition$frequency)) {
+      if (indicator_definition$frequency == "Monthly" || indicator_definition$frequency == "Quarterly"){
         categories <- format(dates, "%b-%Y")
-      } else if (indicator_definition$frequency == "Quarterly") {
-        categories <- format(dates, "%b")
+        if(!is.null(group_definition$x_axis_label)){
+          year_label <- group_definition$x_axis_label
+        }
+        else{
+          year_label <- NULL
+        }
       }
-  }
+    }
 
   if (!is.null(group_definition$x_axis_label)){
     year_label <- paste0(year_label, group_definition$x_axis_label)
