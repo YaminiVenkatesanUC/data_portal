@@ -3,6 +3,7 @@
   "class": "Economic",
   "indicator_name": "Fuel supply volumes",
   "type": "Activity",
+  "ResourceID":"CPACT6",
   "parameter_col": 1,
   "parameter_transform":"function (x) ymd(x)",
   "skip":1,
@@ -2671,6 +2672,7 @@
         "class": "Income support",
         "indicator_name": "Jobseeker support by MSD region - Other ethnicities",
         "type": "Benefits",
+        "ResourceID":"CPBEN4",
         "parameter_col": 1,
         "skip":1,
         "parameter_transform": [
@@ -2691,6 +2693,7 @@
         "class": "Income support",
         "indicator_name": "Jobseeker support by MSD region - Pacific peoples",
         "type": "Benefits",
+        "ResourceID":"CPBEN5",
         "parameter_col": 1,
         "skip":1,
         "parameter_transform": [
@@ -3637,6 +3640,7 @@
         "class": "Income support",
         "indicator_name": "Jobseeker support by region - Maori",
         "type": "Benefits",
+        "ResourceID":"CPBEN3",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",

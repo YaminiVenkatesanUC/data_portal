@@ -2,13 +2,10 @@ source("R/core/utils_API.R")
 source("R/load_functions.R")
 
 CONFIG <- read_config_file()
-indicator_name <- "Source of cases"
+indicator_name <- "New residential mortgage lending (greater than 80% LVR)"
 directory <- CONFIG$data_directory
 odata_definitions <- fromJSON(CONFIG$odata_definitions)
-data_definitions <- fromJSON(CONFIG$data_definitions)
-data_definitions_to_load <- read_json(CONFIG$data_definitions)
-
-
+config <- get_config(CONFIG$data_definitions, indicator_name)
 
 data <- load_functions[[config$load_function]](config, directory, odata_definitions)
 
