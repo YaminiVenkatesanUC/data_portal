@@ -604,5 +604,34 @@
       "Unit":"NZD",
       "Measure":"Free on Board (FOB) value (cumulative)",
       "Multiplier":0
+   },
+   {
+      "ResourceID":"CPCOM1",
+      "Subject":"Community support",
+      "Title":"Food parcel distribution (Salvation Army)",
+      "Description":"Number of Salvation Army national weekly food parcels distributed",
+      "Caveats":"This data does not include food parcels distributed by any other charitable organisation such as city missions and is therefore not an indicator of all food parcel distribution.",
+      "Source":"Salvation Army",
+      "SourceURL":"https://www.salvationarmy.org.nz/article/sppu-covid-19-social-impact-dashboard-report-6",
+      "Modified":"",
+      "Frequency":"Ad-hoc",
+      "Duration":"P1W",
+      "Unit":"Number",
+      "Measure":"Food parcels",
+      "Multiplier":0
+   },
+   {
+      "ResourceID":"CPFIN1",
+      "Subject":"Financial",
+      "Title":"New Zealand dollar exchange rate  (NZD/USD)",
+      "Source":"Reserve Bank of New Zealand",
+      "SourceURL":"https://www.rbnz.govt.nz/statistics/b1",
+      "Modified":"",
+      "Frequency":"Week days",
+      "Var1":"Foreign exchange",
+      "Duration":"P1D",
+      "Unit":"NZD/USD",
+      "Measure":"Exchange rate",
+      "Multiplier":0
    }
 ]
