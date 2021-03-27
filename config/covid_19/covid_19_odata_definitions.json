@@ -763,5 +763,23 @@
       "Unit":"NZD",
       "Measure":"Value of new residential mortgage lending to investors",
       "Multiplier":0
+   },
+   {
+      "ResourceID":"CPACT7",
+      "Subject":"Activity",
+      "Title":"New Zealand Regional Activity Indices (RAI)",
+      "Description":"Regional Activity Index - monthly",
+      "Caveats":"The Regional Activity Index (RAI) represents year-on-year activity growth for that region. A positive reading means that many of the underlying input indicators are growing at above-average rates, and vice versa for a negative reading. All RAI components are presented in terms of annual percentage changes, standardised to have mean = 0 and standard deviation = 1. As the benefit system has changed over time, the MSD jobseekers data contains modelled estimates of the number of claimants that would have been eligible under the current benefit system pre-2013. We reverse the sign of the RAI component for Jobseeker growth, so that these deviations move in the same direction as other economic variables (i.e. dips in a contraction). Consumer card spend is based on Paymark card expenditure. Electricity grid demand is sourced from the Electricity Authority's reconciled demand series. It has been allocated to each region using a concordance developed by Stats NZ.",
+      "Source":"Treasury, Stats NZ, Reserve Bank",
+      "SourceURL":"https://www.treasury.govt.nz/publications/research-and-commentary/regional-activity-indices",
+      "Geo":"variable",
+      "GeoUnit":"RC",
+      "Var1":"RAI component",
+      "Label1":"variable",
+      "Frequency":"Monthly",
+      "Duration":"P1D",
+      "Unit":"Index",
+      "Measure":"RAI",
+      "Multiplier":0
    }
 ]

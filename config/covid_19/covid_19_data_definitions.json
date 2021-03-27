@@ -7936,7 +7936,8 @@
 
   {
         "class": "Economic",
-         "indicator_name": "New Zealand Regional Activity Indices (RAI)",
+        "indicator_name": "New Zealand Regional Activity Indices (RAI)",
+        "ResourceID":"CPACT7",
         "type": "Activity",
         "parameter_col": 1,
         "value_col":
