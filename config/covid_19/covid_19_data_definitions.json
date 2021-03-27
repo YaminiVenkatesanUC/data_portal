@@ -780,6 +780,7 @@
         "class": "Economic",
         "indicator_name": "Card transaction total spend",
         "type": "Activity",
+        "ResourceID":"CPACT4",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -925,6 +926,7 @@
         "class": "Economic",
         "indicator_name": "Broadband usage by region",
         "type": "Activity",
+      "ResourceID":"CPACT5",
        "parameter_col": 1,
 
        "parameter_transform": [
@@ -4017,6 +4019,7 @@
     "class": "Economic",
     "indicator_name": "Daily border crossings (by port) - departures",
     "type": "Travel",
+    "ResourceID":"CPTRA4",
     "parameter_col": 1,
     "parameter_transform": [
     "function (x) ",
@@ -4052,6 +4055,7 @@
     "class": "Economic",
     "indicator_name": "Daily border crossings (by port) - arrivals",
     "type": "Travel",
+    "ResourceID":"CPTRA3",
     "parameter_col": 1,
     "parameter_transform": [
     "function (x) ",

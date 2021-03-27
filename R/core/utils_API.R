@@ -13,7 +13,7 @@ to_observations <- function(config, metadata, data){
   names(data) <- c("parameter", config$value_names)
   data <- reshape2::melt(data,  id.vars = "parameter")
   Observations <- tibble("ResourceID" = rep(metadata$ResourceID, nrow(data)),
-                        "Geo" = rep(check_null(metadata$Geo), nrow(data)),
+                        "Geo" = get_label(data, check_null(metadata$Geo), nrow(data)),
                         "GeoUnit" = rep(check_null(metadata$GeoUnit), nrow(data)),
                         "Duration" = rep(check_null(metadata$Duration), nrow(data)),
                         "Period" = data$parameter,
