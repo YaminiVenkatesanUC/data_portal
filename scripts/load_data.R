@@ -24,7 +24,6 @@ source("R/load_functions.R")
 add_to_data_service <- function(data_definition, odata_definitions, data_store, config) {
   check_data_definition(data_definition)
   data_definition <- expand_data_definition_group_names(data_definition)
-  print(data_definition)
   data <- load_functions[[data_definition$load_function]](data_definition, config$data_directory, odata_definitions)
   update_date <- as.Date(file.info(paste0(config$data_directory, data_definition$filename))$mtime)
 

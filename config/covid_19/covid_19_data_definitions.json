@@ -1082,7 +1082,7 @@
         "class": "Economic",
         "indicator_name": "Foreign exchange",
         "type": "Financial",
-        "ResourceID":"CPFIN1",
+        "ResourceID":"CPFIN2",
         "parameter_col": 1,
         "parameter_transform": "function(x) dmy(x)",
         "sheet_number": 1,
@@ -2849,6 +2849,7 @@
         "class": "Economic",
         "indicator_name": "New residential mortgage lending by borrower type",
         "type": "Financial",
+        "ResourceID":"CPFIN5",
         "parameter_col": 1,
                 "parameter_transform": [
         "function (x) ",
@@ -2879,6 +2880,7 @@
         "class": "Economic",
         "indicator_name": "New residential mortgage lending (greater than 80% LVR)",
         "type": "Financial",
+        "ResourceID":"CPFIN3",
         "parameter_col": 1,
                 "parameter_transform": [
         "function (x) ",
@@ -2908,6 +2910,7 @@
         "class": "Economic",
         "indicator_name": "New residential mortgage lending (less than or equal to 80% LVR)",
         "type": "Financial",
+        "ResourceID":"CPFIN4",
         "parameter_col": 1,
                 "parameter_transform": [
         "function (x) ",
@@ -2937,6 +2940,7 @@
         "class": "Economic",
         "indicator_name": "New residential mortgage lending to investors",
         "type": "Financial",
+        "ResourceID":"CPFIN6",
         "parameter_col": 1,
                 "parameter_transform": [
         "function (x) ",

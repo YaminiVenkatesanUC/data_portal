@@ -621,7 +621,7 @@
       "Multiplier":0
    },
    {
-      "ResourceID":"CPFIN1",
+      "ResourceID":"CPFIN2",
       "Subject":"Financial",
       "Title":"Foreign exchange",
       "Description":"New Zealand dollar exchange rate  (NZD/USD)",
@@ -632,6 +632,7 @@
       "Var1":"Foreign exchange",
       "Duration":"P1D",
       "Unit":"NZD/USD",
+      "Label1":"variable",
       "Measure":"Exchange rate",
       "Multiplier":0
    },
@@ -696,6 +697,71 @@
       "Duration":"P1M",
       "Unit":"Number",
       "Measure":"People receiving jobseeker support benefit - Pacific peoples",
+      "Multiplier":0
+   },
+   {
+      "ResourceID":"CPFIN3",
+      "Subject":"Financial",
+      "Title":"New residential mortgage lending (greater than 80% LVR)",
+      "Description":"New residential mortgage lending - greater than 80% LVR",
+      "Caveats":"Individual figures may not sum to the totals due to rounding. Percentage changes are calculated on unrounded numbers.",
+      "Source":"Reserve Bank of New Zealand",
+      "SourceURL":"https://www.rbnz.govt.nz/statistics",
+      "Modified":"",
+      "Frequency":"Monthly",
+      "Var1":"Borrower type",
+      "Label1":"variable",
+      "Duration":"P1M",
+      "Unit":"NZD",
+      "Measure":"Value of new residential mortgage lending > 80% LVR",
+      "Multiplier":0
+   },
+   {
+      "ResourceID":"CPFIN4",
+      "Subject":"Financial",
+      "Title":"New residential mortgage lending (less than or equal to 80% LVR)",
+      "Description":"New residential mortgage lending - less than or equal to 80% LVR",
+      "Source":"Reserve Bank of New Zealand",
+      "SourceURL":"https://www.rbnz.govt.nz/statistics",
+      "Modified":"",
+      "Frequency":"Monthly",
+      "Var1":"Borrower type",
+      "Label1":"variable",
+      "Duration":"P1M",
+      "Unit":"NZD",
+      "Measure":"Value of new residential mortgage lending <= 80% LVR",
+      "Multiplier":0
+   },
+   {
+      "ResourceID":"CPFIN5",
+      "Subject":"Financial",
+      "Title":"New residential mortgage lending by borrower type",
+      "Description":"New residential mortgage lending by borrower type",
+      "Source":"Reserve Bank of New Zealand",
+      "SourceURL":"https://www.rbnz.govt.nz/statistics",
+      "Modified":"",
+      "Frequency":"Monthly",
+      "Var1":"Borrower type",
+      "Label1":"variable",
+      "Duration":"P1M",
+      "Unit":"NZD",
+      "Measure":"Value of new residential mortgage lending",
+      "Multiplier":0
+   },
+   {
+      "ResourceID":"CPFIN6",
+      "Subject":"Financial",
+      "Title":"New residential mortgage lending to investors",
+      "Description":"New residential mortgage lending to investors",
+      "Source":"Reserve Bank of New Zealand",
+      "SourceURL":"https://www.rbnz.govt.nz/statistics",
+      "Modified":"",
+      "Frequency":"Monthly",
+      "Var1":"LVR Percentage",
+      "Label1":"variable",
+      "Duration":"P1M",
+      "Unit":"NZD",
+      "Measure":"Value of new residential mortgage lending to investors",
       "Multiplier":0
    }
 ]
