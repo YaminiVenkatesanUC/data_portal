@@ -1417,6 +1417,7 @@
         "class": "Income support",
         "indicator_name": "Emergency housing grants",
         "type": "Hardship assistance",
+        "ResourceID":"CPHAR2",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",

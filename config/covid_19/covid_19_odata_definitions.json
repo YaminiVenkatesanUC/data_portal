@@ -558,5 +558,51 @@
       "Unit":"Number",
       "Measure":"Border crossings - arrivals",
       "Multiplier":0
+   },
+   {
+      "ResourceID":"CPHAR2",
+      "Subject":"Hardship assistance",
+      "Title":"Emergency housing grants",
+      "Description":"Number of people receiving emergency housing grants",
+      "Source":"Ministry of Social Development",
+      "SourceURL":"https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+      "Modified":"",
+      "Frequency":"Weekly",
+      "Duration":"P1W",
+      "Unit":"Number",
+      "Measure":"People receiving emergency housing grants",
+      "Multiplier":0
+   },
+   {
+      "ResourceID":"CPTRD1",
+      "Subject":"Trade",
+      "Title":"Exports by commodity (values)",
+      "Description":"Value of exports by commodity (cumulative) - provisional",
+      "Source":"Stats NZ",
+      "SourceURL":"https://www.stats.govt.nz/publications?filters=Information%20releases%2CCOVID-19",
+      "Modified":"",
+      "Frequency":"Weekly",
+      "Var1":"Commodity",
+      "Duration":"P1D",
+      "Label1":"variable",
+      "Unit":"NZD",
+      "Measure":"Free on Board (FOB) value (cumulative)",
+      "Multiplier":0
+   },
+   {
+      "ResourceID":"CPTRD2",
+      "Subject":"Trade",
+      "Title":"Exports by country (values)",
+      "Description":"Value of total goods exports by countries (cumulative) - provisional",
+      "Source":"Stats NZ",
+      "SourceURL":"https://www.stats.govt.nz/publications?filters=Information%20releases%2CCOVID-19",
+      "Modified":"",
+      "Frequency":"Weekly",
+      "Var1":"Country",
+      "Duration":"P1D",
+      "Label1":"variable",
+      "Unit":"NZD",
+      "Measure":"Free on Board (FOB) value (cumulative)",
+      "Multiplier":0
    }
 ]
