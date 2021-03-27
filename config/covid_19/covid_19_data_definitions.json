@@ -2966,6 +2966,7 @@
         "class": "Economic",
         "indicator_name": "Number of new residential mortgage lending",
         "type": "Financial",
+        "ResourceID":"CPFIN9",
         "parameter_col": 1,
                 "parameter_transform": [
         "function (x) ",
@@ -2994,6 +2995,7 @@
         "class": "Economic",
         "indicator_name": "Number of new residential mortgage (greater than 80% LVR)",
         "type": "Financial",
+        "ResourceID":"CPFIN7",
         "parameter_col": 1,
                 "parameter_transform": [
         "function (x) ",
@@ -3022,6 +3024,7 @@
         "class": "Economic",
         "indicator_name": "Number of new residential mortgage (less than or equal to 80% LVR)",
         "type": "Financial",
+        "ResourceID":"CPFIN8",
         "parameter_col": 1,
                 "parameter_transform": [
         "function (x) ",
@@ -3050,6 +3053,7 @@
         "class": "Economic",
         "indicator_name": "Number of new residential mortgage lending to investors",
         "type": "Financial",
+        "ResourceID":"CPFIN10",
         "parameter_col": 1,
                 "parameter_transform": [
         "function (x) ",
