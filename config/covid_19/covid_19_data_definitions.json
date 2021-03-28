@@ -1533,6 +1533,7 @@
         "class": "Health",
         "indicator_name": "Number of cases",
         "type": "COVID-19",
+        "ResourceID":"CPCOV2",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",

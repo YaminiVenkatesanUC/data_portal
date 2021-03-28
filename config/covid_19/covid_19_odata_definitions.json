@@ -1054,5 +1054,20 @@
       "Unit":"Number",
       "Measure":"People receiving jobseeker support benefit",
       "Multiplier":0
+   },
+   {
+      "ResourceID":"CPCOV2",
+      "Subject":"COVID-19",
+      "Title":"Number of Cases",
+      "Description":"COVID-19 cases in New Zealand (cumulative)",
+      "Source":"Ministry of Health",
+      "SourceURL":"https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-data-and-statistics/testing-covid-19",
+      "Frequency":"Daily",
+      "Var1":"Case status",
+      "Label1":"variable",
+      "Duration":"P1D",
+      "Unit":"Number",
+      "Measure":"COVID-19 cases",
+      "Multiplier":0
    }
 ]
