@@ -1085,4 +1085,49 @@
       "Measure":"Recipients of CIRP",
       "Multiplier":0
    },
+   {
+      "ResourceID":"CPACT8",
+      "Subject":"Activity",
+      "Title":"Rental bonds by region - active",
+      "Description":"Amount of rental bonds registered per month in NZ dollars grouped by the status of bond application",
+      "Source":"Ministry of Business, Innovation and Employment",
+      "SourceURL":"https://www.tenancy.govt.nz/about-tenancy-services/data-and-statistics/rental-bond-data/",
+      "Frequency":"Monthly",
+      "Geo":"RC",
+      "Duration":"P1M",
+      "GeoUnit":"variable",
+      "Unit":"NZD",
+      "Measure":"Amount of rental bonds",
+      "Multiplier":0
+   },
+   {
+      "ResourceID":"CPACT9",
+      "Subject":"Activity",
+      "Title":"Rental bonds by region - closed",
+      "Description":"Amount of rental bonds registered per month in NZ dollars grouped by the status of bond application",
+      "Source":"Ministry of Business, Innovation and Employment",
+      "SourceURL":"https://www.tenancy.govt.nz/about-tenancy-services/data-and-statistics/rental-bond-data/",
+      "Frequency":"Monthly",
+      "Geo":"RC",
+      "Duration":"P1M",
+      "GeoUnit":"variable",
+      "Unit":"NZD",
+      "Measure":"Amount of rental bonds",
+      "Multiplier":0
+   },
+   {
+      "ResourceID":"CPACT10",
+      "Subject":"Activity",
+      "Title":"Rental bonds by region - lodged",
+      "Description":"Amount of rental bonds registered per month in NZ dollars grouped by the status of bond application",
+      "Source":"Ministry of Business, Innovation and Employment",
+      "SourceURL":"https://www.tenancy.govt.nz/about-tenancy-services/data-and-statistics/rental-bond-data/",
+      "Frequency":"Monthly",
+      "Geo":"RC",
+      "Duration":"P1M",
+      "GeoUnit":"variable",
+      "Unit":"NZD",
+      "Measure":"Amount of rental bonds",
+      "Multiplier":0
+   }
 ]
