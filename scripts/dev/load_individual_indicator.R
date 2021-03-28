@@ -2,7 +2,7 @@ source("R/core/utils_API.R")
 source("R/load_functions.R")
 
 CONFIG <- read_config_file()
-indicator_name <- "New residential mortgage lending (greater than 80% LVR)"
+indicator_name <- "New Zealand Regional Activity Indices (RAI)"
 directory <- CONFIG$data_directory
 odata_definitions <- fromJSON(CONFIG$odata_definitions)
 config <- get_config(CONFIG$data_definitions, indicator_name)
