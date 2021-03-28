@@ -1363,6 +1363,7 @@
         "class": "Income support",
         "indicator_name": "Accommodation supplement",
         "type": "Supplementary support",
+        "ResourceID":"CPSUP1",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -1471,6 +1472,7 @@
         "class": "Income support",
         "indicator_name": "Jobseeker support by MSD region",
         "type": "Benefits",
+        "ResourceID":"CPBEN7",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -2717,6 +2719,7 @@
         "class": "Income support",
         "indicator_name": "Jobseeker support by MSD region - NZ European",
         "type": "Benefits",
+       "ResourceID":"CPBEN8",
         "parameter_col": 1,
         "skip":1,
         "parameter_transform": [
@@ -2777,7 +2780,7 @@
         "class": "Income support",
         "indicator_name": "Accommodation supplement by MSD region",
         "type": "Supplementary support",
-        "ResourceID":"CPSUP1",
+        "ResourceID":"CPSUP3",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -4241,6 +4244,7 @@
       "class": "Economic",
       "type": "Employment",
       "indicator_name": "Jobs online measure by region",
+      "ResourceID":"CPEMP5",
       "parameter_col": 1,
       "skip": 1,
       "value_col": [

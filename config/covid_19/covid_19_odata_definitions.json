@@ -964,4 +964,66 @@
       "Measure":"Registered deaths",
       "Multiplier":0
    },
+   {
+      "ResourceID":"CPSUP3",
+      "Subject":"Supplementary support",
+      "Title":"Accommodation supplement by MSD region",
+      "Description":"Number on accommodation supplement by MSD region",
+      "Source":"Ministry of Social Development",
+      "SourceURL":"https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+      "Modified":"2021-02-14T11:00:00Z",
+      "Frequency":"Monthly",
+      "GeoUnit":"MSD Region",
+      "Duration":"P1M",
+      "Geo":"variable",
+      "Unit":"Number",
+      "Measure":"People receiving acommodation supplement",
+      "Multiplier":0
+   },
+   {
+      "ResourceID":"CPEMP5",
+      "Subject":"Employment",
+      "Title":"Jobs online measure by region",
+      "Description":"Monthly online job advertisements index by region",
+      "Source":"Ministry of Business, Innovation and Employment",
+      "SourceURL":"https://www.mbie.govt.nz/business-and-employment/employment-and-skills/labour-market-reports-data-and-analysis/jobs-online/",
+      "Frequency":"Monthly",
+      "GeoUnit":"Region",
+      "Duration":"P1M",
+      "Geo":"variable",
+      "Unit":"Index",
+      "Measure":"Online job advertisements index",
+      "Multiplier":0
+   },
+   {
+      "ResourceID":"CPBEN7",
+      "Subject":"Benefits",
+      "Title":"Jobseeker support by MSD region",
+      "Description":"Number of people on jobseeker support benefit by MSD region - monthly",
+      "Source":"Ministry of Social Development",
+      "SourceURL":"https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+      "Geo":"variable",
+      "GeoUnit":"MSD region",
+      "Frequency":"Weekly",
+      "Duration":"P7D",
+      "Unit":"Number",
+      "Measure":"People receiving jobseeker support benefit",
+      "Multiplier":0
+   },
+   {
+      "ResourceID":"CPBEN8",
+      "Subject":"Benefits",
+      "Title":"Jobseeker support by MSD region - NZ European",
+      "Description":"Number of NZ European people on jobseeker support benefit by MSD region - monthly",
+      "Source":"Ministry of Social Development",
+      "SourceURL":"https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+      "Geo":"variable",
+      "GeoUnit":"MSD region",
+      "Frequency":"Monthly",
+      "Duration":"P1M",
+      "Unit":"Number",
+      "Measure":"People receiving jobseeker support benefit - NZ European",
+      "Multiplier":0
+   }
+
 ]
