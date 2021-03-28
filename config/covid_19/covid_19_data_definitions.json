@@ -2220,6 +2220,7 @@
         "class": "Health",
         "indicator_name": "By region",
         "type": "Weekly deaths",
+        "ResourceID":"CPWEE3",
         "parameter_col": 1,
         "parameter_transform": "function(x) ymd(x) + 6",
         "sheet_number": 1,
