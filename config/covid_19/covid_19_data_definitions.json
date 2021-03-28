@@ -4901,6 +4901,7 @@
     "class": "Income support",
     "indicator_name": "Number of recipients of CIRP by territorial authority",
     "type": "Income relief payment",
+    "ResourceID":"CPINC6",
     "parameter_col": 1,
     "parameter_transform":
     "function (x) ymd(x)",

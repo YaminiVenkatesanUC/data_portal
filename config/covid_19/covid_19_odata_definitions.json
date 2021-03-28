@@ -1069,5 +1069,20 @@
       "Unit":"Number",
       "Measure":"COVID-19 cases",
       "Multiplier":0
-   }
+   },
+   {
+      "ResourceID":"CPINC6",
+      "Subject":"Income relief payment",
+      "Title":"Number of recipients of CIRP by territorial authority",
+      "Description":"Number of recipients of COVID-19 Income Relief Payments by territorial authority",
+      "Source":"Ministry of Social Development",
+      "SourceURL":"https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+      "Frequency":"Monthly",
+      "Geo":"TLA",
+      "Duration":"P1M",
+      "GeoUnit":"variable",
+      "Unit":"Number",
+      "Measure":"Recipients of CIRP",
+      "Multiplier":0
+   },
 ]
