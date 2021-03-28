@@ -1129,5 +1129,38 @@
       "Unit":"NZD",
       "Measure":"Amount of rental bonds",
       "Multiplier":0
+   },
+   {
+      "ResourceID":"CPCOV3",
+      "Subject":"COVID-19",
+      "Title":"Source of cases",
+      "Source":"Ministry of Health",
+      "SourceURL":"https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-data-and-statistics/testing-covid-19",
+      "Frequency":"Daily",
+      "Var1":"Source of cases",
+      "Geo":"RC",
+      "Label1":"variable",
+      "GeoUnit":"variable",
+      "Duration":"P1D",
+      "Unit":"Number",
+      "Measure":"COVID-19 cases",
+      "Multiplier":0
+   },
+   {
+      "ResourceID":"CPCOV4",
+      "Subject":"COVID-19",
+      "Title":"Status of cases",
+      "Description":"Case status by DHB",
+      "Source":"Ministry of Health",
+      "SourceURL":"https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-data-and-statistics/testing-covid-19",
+      "Frequency":"Daily",
+      "Var1":"Status",
+      "Geo":"DHB",
+      "Label1":"variable",
+      "GeoUnit":"variable",
+      "Duration":"P1D",
+      "Unit":"Number",
+      "Measure":"COVID-19 cases",
+      "Multiplier":0
    }
 ]
