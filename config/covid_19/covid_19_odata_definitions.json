@@ -1024,6 +1024,35 @@
       "Unit":"Number",
       "Measure":"People receiving jobseeker support benefit - NZ European",
       "Multiplier":0
+   },
+   {
+      "ResourceID":"CPBEN9",
+      "Subject":"Benefits",
+      "Title":"Jobseeker support by region - weekly",
+      "Description":"Number of people on jobseeker support benefit by region - weekly",
+      "Source":"Ministry of Social Development",
+      "SourceURL":"https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+      "Geo":"variable",
+      "GeoUnit":"RC",
+      "Frequency":"Weekly",
+      "Duration":"P7D",
+      "Unit":"Number",
+      "Measure":"People receiving jobseeker support benefit (weekly)",
+      "Multiplier":0
+   },
+   {
+      "ResourceID":"CPBEN10",
+      "Subject":"Benefits",
+      "Title":"Jobseeker support by territorial authority",
+      "Description":"Number of people on jobseeker support benefit by territorial authority - monthly",
+      "Source":"Ministry of Social Development",
+      "SourceURL":"https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+      "Geo":"variable",
+      "GeoUnit":"TLA",
+      "Frequency":"Monthly",
+      "Duration":"P1M",
+      "Unit":"Number",
+      "Measure":"People receiving jobseeker support benefit",
+      "Multiplier":0
    }
-
 ]
