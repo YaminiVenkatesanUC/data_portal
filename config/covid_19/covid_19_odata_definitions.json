@@ -1162,5 +1162,35 @@
       "Unit":"Number",
       "Measure":"COVID-19 cases",
       "Multiplier":0
+   },
+   {
+      "ResourceID":"CPHAR4",
+      "Subject":"Hardship assistance",
+      "Title":"Special needs grants for food by region",
+      "Description":"Number of special needs grants for food by region",
+      "Source":"Ministry of Social Development",
+      "SourceURL":"https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+      "Frequency":"Monthly",
+      "Geo":"RC",
+      "GeoUnit":"variable",
+      "Duration":"P1M",
+      "Unit":"Number",
+      "Measure":"People receiving special needs grants for food ",
+      "Multiplier":0
+   },
+   {
+      "ResourceID":"CPACT11",
+      "Subject":"Activity",
+      "Title":"Weekly mean rent by region",
+      "Description":"Weekly mean rent",
+      "Source":"Ministry of Business, Innovation and Employment",
+      "SourceURL":"https://www.tenancy.govt.nz/about-tenancy-services/data-and-statistics/rental-bond-data/",
+      "Frequency":"Monthly",
+      "Geo":"RC",
+      "Duration":"P1M",
+      "GeoUnit":"variable",
+      "Unit":"NZD",
+      "Measure":"Weekly mean rent",
+      "Multiplier":0
    }
 ]
