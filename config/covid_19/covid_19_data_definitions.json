@@ -5233,7 +5233,9 @@
       "filename": "COVID 19 - MoH Health and Wellbeing Survey.xlsx",
       "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%Y\")",
       "load_function": "read_from_excel_error",
-      "data_type": "TimeSeriesError"
+      "data_type": "TimeSeriesError",
+      "owner":"Carolyn Bugler",
+      "frequency":"Ad-hoc"
     },
     {
       "class": "Health",
@@ -5249,7 +5251,9 @@
       "filename": "COVID 19 - MoH Health and Wellbeing Survey.xlsx",
       "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%Y\")",
       "load_function": "read_from_excel_error",
-      "data_type": "TimeSeriesError"
+      "data_type": "TimeSeriesError",
+      "owner":"Carolyn Bugler",
+      "frequency":"Ad-hoc"
     },
      {
       "class": "Social",
@@ -5265,7 +5269,9 @@
       "filename": "COVID 19 - MoH Health and Wellbeing Survey.xlsx",
       "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%Y\")",
       "load_function": "read_from_excel_error",
-      "data_type": "TimeSeriesError"
+      "data_type": "TimeSeriesError",
+      "owner":"Carolyn Bugler",
+      "frequency":"Ad-hoc"
     },
     {
       "class": "Social",
@@ -5281,7 +5287,9 @@
       "filename": "COVID 19 - MoH Health and Wellbeing Survey.xlsx",
       "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%Y\")",
       "load_function": "read_from_excel_error",
-      "data_type": "TimeSeriesError"
+      "data_type": "TimeSeriesError",
+      "owner":"Carolyn Bugler",
+      "frequency":"Ad-hoc"
     },
     {
       "class": "Social",
@@ -5297,7 +5305,9 @@
       "filename": "COVID 19 - MoH Health and Wellbeing Survey.xlsx",
       "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%Y\")",
       "load_function": "read_from_excel_error",
-      "data_type": "TimeSeriesError"
+      "data_type": "TimeSeriesError",
+      "owner":"Carolyn Bugler",
+      "frequency":"Ad-hoc"
     },
     {
       "class": "Health",
@@ -5314,7 +5324,9 @@
       "filename": "COVID 19 - MoH Health and Wellbeing Survey.xlsx",
       "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%Y\")",
       "load_function": "read_from_excel_error",
-      "data_type": "TimeSeriesError"
+      "data_type": "TimeSeriesError",
+      "owner":"Carolyn Bugler",
+      "frequency":"Ad-hoc"
     },
     {
       "class": "Health",
@@ -5330,7 +5342,9 @@
       "filename": "COVID 19 - MoH Health and Wellbeing Survey.xlsx",
       "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%Y\")",
       "load_function": "read_from_excel_error",
-      "data_type": "TimeSeriesError"
+      "data_type": "TimeSeriesError",
+      "owner":"Carolyn Bugler",
+      "frequency":"Ad-hoc"
     },
     {
       "class": "Health",
@@ -5346,7 +5360,9 @@
       "filename": "COVID 19 - MoH Health and Wellbeing Survey.xlsx",
       "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%Y\")",
       "load_function": "read_from_excel_error",
-      "data_type": "TimeSeriesError"
+      "data_type": "TimeSeriesError",
+      "owner":"Carolyn Bugler",
+      "frequency":"Ad-hoc"
     },
     {
       "class": "Health",
@@ -5362,7 +5378,9 @@
       "filename": "COVID 19 - MoH Health and Wellbeing Survey.xlsx",
       "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%Y\")",
       "load_function": "read_from_excel_error",
-      "data_type": "TimeSeriesError"
+      "data_type": "TimeSeriesError",
+      "owner":"Carolyn Bugler",
+      "frequency":"Ad-hoc"
     },
     {
       "class": "Health",
@@ -5378,7 +5396,9 @@
       "filename": "COVID 19 - MoH Health and Wellbeing Survey.xlsx",
       "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%Y\")",
       "load_function": "read_from_excel_error",
-      "data_type": "TimeSeriesError"
+      "data_type": "TimeSeriesError",
+      "owner":"Carolyn Bugler",
+      "frequency":"Ad-hoc"
     }
     ,
 
