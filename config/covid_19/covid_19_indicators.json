@@ -1809,6 +1809,11 @@
             "units": "Number"
         },
         {
+            "name": "Chatham Islands",
+            "title": "Number on jobseeker support benefit - Chatham Islands Council",
+            "units": "Number"
+        },
+        {
             "name": "Gisborne",
             "title": "Number on jobseeker support benefit - Gisborne Council",
             "units": "Number"
