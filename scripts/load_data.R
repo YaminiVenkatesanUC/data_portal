@@ -13,6 +13,7 @@ library(foreach)
 library(data.table)
 library(tibble)
 library(gtools)
+library(httr)
 
 source("R/data_types.R")
 source("R/core/type_checks.R")

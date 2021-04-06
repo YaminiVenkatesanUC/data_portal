@@ -1,12 +1,16 @@
 
 data_frame_to_api_helper <- function(directory, config, metadata, data){
   #error when there is not a match or indicator removed
+
   resource <- to_resource(config, metadata)
   write.table(resource, "dump.txt", append = TRUE)
   observations <- to_observations(config, metadata, data)
+
+  #for testing
   write.table(observations, "dump.txt", append = TRUE)
 
-  #writeDatastore(observations,location = list(collection = "PDS", instance = "Covid-19", table = "Observation_test"), version = 9, server = "uat")
+  version_obs <- getLatestVersion(location= list(collection = "PDS", instance = "Covid-19", table = "Observation_test"), server = "uat")
+  writeDatastore(observation,location = list(collection = "PDS", instance = "Covid-19", table = "Observation_test"), version = version_obs, server = "uat")
 }
 
 to_observations <- function(config, metadata, data){
@@ -65,4 +69,84 @@ check_null <- function(value){
     return(NA)
   }
   return(value)
+}
+
+writeDatastore <- function(data, location, version = NULL, server = "uat") {
+  if (server == "uat"){
+    baseURL <- "https://epl-uat/statsnz-epl-data/api/v1/collections/"
+  }
+  else{
+    baseURL <- "https://epl-prd/statsnz-epl-data/api/v1/collections/"
+  }
+  #POST /api/v1/collections/{collectionCode}/{collectionInstanceCode}/datasets/{tableName}
+  if(is.null(version)){
+    theUrl <- paste0( baseURL,
+                      location$collection,
+                      "/",
+                      location$instance,
+                      "/datasets/",
+                      location$table)
+  }else{
+    # add versions.
+    theUrl <- paste0( baseURL,
+                      location$collection,
+                      "/",
+                      location$instance,
+                      "/datasets/",
+                      location$table,
+                      "/versions/",
+                      version)
+  }
+  result <- httr::POST( url = theUrl, httr::use_proxy(""), httr::config(http_version = 2L), httr::config(ssl_verifypeer = 0L),
+                        httr::authenticate("","", type ="gssnegotiate"),
+                        httr::content_type_json(),
+                        body = jsonlite::toJSON(data), encode = "raw" )
+  # boolean success code
+  if(http_error(result))
+  {
+    errorMessage <- httr::content(result, "text", encoding = "UTF-8")
+    message(errorMessage)
+  }else{
+    errorMessage <- "success"
+  }
+  errorMessage
+}
+
+
+#' @title Get latest version
+#' @description Gets the latest version of a datastore table and adds one
+#'
+#' @param location   The datastore location, a list with collecton, instance and table
+#' @param server     prd or uat
+#'
+#' @return version   version number
+#'
+#' @export
+getLatestVersion <- function(location, server = "uat") {
+  # set-up version to write to
+  # GET statsnz-epl-metadata/api/v1/collections/{collection}/{collectionInstance}/tables/{tableName}/versions
+  if (server == "uat"){
+    baseURL <- "https://epl-uat/statsnz-epl-metadata/api/v1/collections/"
+  }
+  else{
+    baseURL <- "https://epl-prd/statsnz-epl-metadata/api/v1/collections/"
+  }
+  theUrl <- paste0( baseURL,
+                    location$collection,
+                    "/",
+                    location$instance,
+                    "/tables/",
+                    location$table,
+                    "/versions")
+  # get current version
+  result <- httr::GET(url = theUrl, httr::use_proxy(""), httr::config(http_version = 2L), httr::config(ssl_verifypeer = 0L),
+                      httr::authenticate("","", type ="gssnegotiate"))
+
+  version <- jsonlite::fromJSON(httr::content(result, "text", encoding = "UTF-8"))
+  if (length(version) > 0){
+    version <- version$VersionNumber[1]
+  } else{
+    version <- 0
+  }
+  version
 }
