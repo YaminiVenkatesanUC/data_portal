@@ -34,7 +34,7 @@
   "filename": "COVID-19 Z Energy monthly volume.xlsx",
   "load_function": "read_from_excel",
   "data_type":"TimeSeries",
-  "date_added":"01/01/2020",
+  "date_added":"22/04/2020",
   "date_dropped":null
 },
    {
@@ -68,9 +68,11 @@
       "Fee paying",
       "Other",
       "Total"
-      ]
+      ],
+  "date_added":"14/07/2020",
+  "date_dropped":null
 },
-{
+  {
   "class": "Economic",
   "indicator_name": "Work visa",
   "type": "Visa",
@@ -103,7 +105,9 @@
     "Other",
     "Working holiday scheme",
     "Total"
-    ]
+    ],
+  "date_added":"14/07/2020",
+  "date_dropped":null
  },
     {
         "class": "Economic",
@@ -123,7 +127,9 @@
             "commodity": "All",
             "measure": "$",
             "direction": "Exports",
-            "group_col": "Country"
+            "group_col": "Country",
+            "date_added":"03/06/2020",
+            "date_dropped":null
         }
     },
     {
@@ -144,7 +150,9 @@
             "commodity": "All",
             "measure": "$",
             "direction": "Imports",
-            "group_col": "Country"
+            "group_col": "Country",
+            "date_added":"03/06/2020",
+            "date_dropped":null
         }
     },
     {
@@ -165,7 +173,9 @@
             "commodity": ["All", "Non-food manufactured goods", "Mechanical machinery and equip", "Electrical machinery and equip"],
             "measure": "$",
             "direction": "Imports",
-            "group_col": "Commodity"
+            "group_col": "Commodity",
+            "date_added":"03/06/2020",
+            "date_dropped":null
         }
     },
     {
@@ -186,7 +196,9 @@
             "commodity": ["All", "Milk powder, butter, and cheese", "Meat and edible offal", "Fish, crustaceans, and molluscs", "Logs, wood, and wood articles", "Fruit", "Non-food manufactured goods"],
             "measure": "$",
             "direction": "Exports",
-            "group_col": "Commodity"
+            "group_col": "Commodity",
+            "date_added":"03/06/2020",
+            "date_dropped":null
         }
     },
     {
@@ -260,7 +272,7 @@
         "Nelson",
         "Marlborough"
         ],
-        "date_added":"01/01/2020",
+        "date_added":"18/06/2020",
         "date_dropped":null
     },
 {
@@ -334,7 +346,7 @@
         "Nelson",
         "Marlborough"
         ],
-        "date_added":"01/01/2020",
+        "date_added":"18/06/2020",
         "date_dropped":null
     },
 {
@@ -408,7 +420,7 @@
         "Nelson",
         "Marlborough"
         ],
-        "date_added":"01/01/2020",
+        "date_added":"18/06/2020",
         "date_dropped":null
     },
 {
@@ -480,7 +492,9 @@
         "Tasman",
         "Nelson",
         "Marlborough"
-        ]
+        ],
+        "date_added":"18/06/2020",
+        "date_dropped":null
     },
     {
       "class": "Economic",
@@ -494,7 +508,9 @@
       "load_parameters": {
         "group_type": "Series_title_2",
         "keyword": "Industry by variable"
-      }
+      },
+      "date_added":"21/06/2020",
+      "date_dropped":null
     },
     {
       "class": "Economic",
@@ -508,7 +524,9 @@
       "load_parameters": {
         "group_type": "Series_title_2",
         "keyword": "Region by variable"
-      }
+      },
+      "date_added":"21/06/2020",
+      "date_dropped":null
     },
     {
       "class": "Economic",
@@ -522,7 +540,9 @@
       "load_parameters": {
         "group_type": "Series_title_3",
         "keyword": "Sex and Region by variable"
-      }
+      },
+      "date_added":"21/06/2020",
+      "date_dropped":null
     },
         {
       "class": "Economic",
@@ -536,7 +556,9 @@
       "load_parameters": {
         "group_type": "Series_title_3",
         "keyword": "Age and Region by variable"
-      }
+      },
+      "date_added":"21/06/2020",
+      "date_dropped":null
     },
     {
       "class": "Economic",
@@ -550,7 +572,9 @@
       "load_parameters": {
         "Series_title_1": "Filled jobs",
         "keyword": "High level industry by variable"
-      }
+      },
+      "date_added":"21/06/2020",
+      "date_dropped":null
     },
         {
       "class": "Economic",
@@ -564,7 +588,9 @@
       "load_parameters": {
         "Series_title_1": "Total earnings",
         "keyword": "High level industry by variable"
-      }
+      },
+      "date_added":"21/06/2020",
+      "date_dropped":null
     },
     {
         "class": "Economic",
@@ -578,7 +604,9 @@
         "filename": "COVID 19 - ANZ insights.xlsx",
         "parameter_transform": "function (x) as.Date(x, format = \"%d-%m-%Y\")",
         "load_function": "read_from_excel",
-        "data_type": "TimeSeries"
+        "data_type": "TimeSeries",
+        "date_added":"20/04/2020",
+        "date_dropped":null
       },
       {
         "class": "Health",
@@ -594,7 +622,9 @@
         "date_filter": "function(x) x != \"Total\"",
         "load_function": "read_from_excel",
         "drop_na": false,
-        "data_type": "BarChart"
+        "data_type": "BarChart",
+        "date_added":"12/05/2020",
+        "date_dropped":null
       },
 
       {
@@ -611,7 +641,9 @@
         "load_function": "read_from_excel",
         "group_names": "Status of cases",
         "drop_na": false,
-        "data_type": "BarChart"
+        "data_type": "BarChart",
+        "date_added":"12/05/2020",
+        "date_dropped":null
       },
     {
         "class": "Health",
@@ -634,7 +666,7 @@
         "group_names": [
         "Cases by gender"
         ],
-        "date_added":"01/01/2020",
+        "date_added":"20/04/2020",
         "date_dropped":null
     },
     {
@@ -652,7 +684,7 @@
         "load_function": "read_from_excel",
         "data_type": "BarChart",
         "group_names": ["Cases by age", "Cases by age", "Cases by age"],
-        "date_added":"01/01/2020",
+        "date_added":"20/04/2020",
         "date_dropped":null
     },
     {
@@ -676,7 +708,7 @@
         "group_names": [
         "Cases by ethnicity"
         ],
-        "date_added":"01/01/2020",
+        "date_added":"20/04/2020",
         "date_dropped":null
     },
     {
@@ -694,7 +726,9 @@
         "filename": "COVID 19 - ANZ insights.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": "undefined_name"
+        "group_names": "undefined_name",
+        "date_added":"20/04/2020",
+        "date_dropped":null
     },
     {
         "class": "Economic",
@@ -729,7 +763,9 @@
         "New orders",
         "Finished stocks",
         "Deliveries"
-        ]
+        ],
+        "date_added":"20/04/2020",
+        "date_dropped":null
     },
     {
         "class": "Economic",
@@ -746,7 +782,9 @@
         "filename": "COVID 19 - ANZ insights.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": "undefined_name"
+        "group_names": "undefined_name",
+        "date_added":"20/04/2020",
+        "date_dropped":null
     },
     {
         "class": "Economic",
@@ -760,7 +798,9 @@
         "filename": "COVID 19 - RBNZ weekly sentiment plot.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": "undefined_name"
+        "group_names": "undefined_name",
+        "date_added":"20/04/2020",
+        "date_dropped":null
     },
     {
         "class": "Economic",
@@ -785,7 +825,7 @@
         "group_names": [
         "undefined_name"
         ],
-        "date_added":"01/01/2020",
+        "date_added":"20/04/2020",
         "date_dropped":null
     },
     {
@@ -818,7 +858,7 @@
         "Spend (seasonally adjusted)",
         "Transactions (count)"
         ],
-        "date_added":"01/01/2020",
+        "date_added":"20/04/2020",
         "date_dropped":null
     },
     {
@@ -848,7 +888,9 @@
           "Total",
         "New Zealand passport",
         "Other passports"
-        ]
+        ],
+        "date_added":"20/06/2020",
+        "date_dropped":null
     },
     {
         "class": "Economic",
@@ -877,7 +919,9 @@
           "Total",
         "New Zealand passport",
         "Other passports"
-        ]
+        ],
+        "date_added":"20/06/2020",
+        "date_dropped":null
     },
     {
         "class": "Economic",
@@ -916,7 +960,7 @@
         "Services (seasonally adjusted)",
         "Non-retail (seasonally adjusted)"
         ],
-        "date_added":"01/01/2020",
+        "date_added":"20/04/2020",
         "date_dropped":null
     },
     {
@@ -931,7 +975,7 @@
         "filename": "/Chorus data/",
         "parameter_transform": ["function (x) ymd(x)"],
         "load_function": "chorus_load_function",
-        "date_added":"01/01/2020",
+        "date_added":"26/08/2020",
         "date_dropped":null
       },
     {
@@ -998,7 +1042,7 @@
          "West Coast"
         ],
         "drop_na":false,
-        "date_added":"01/01/2020",
+        "date_added":"26/08/2020",
         "date_dropped":null
    },
     {
@@ -1023,8 +1067,10 @@
         "filename": "COVID 19 - ASB commodity price index.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": "undefined_name"
-    },
+        "group_names": "undefined_name",
+        "date_added":"20/04/2020",
+        "date_dropped":null
+        },
     {
         "class": "Economic",
         "indicator_name": "Trade weighted index",
@@ -1037,7 +1083,9 @@
         "filename": "COVID 19 - RBNZ Financial indicators.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": "New Zealand trade weighted index "
+        "group_names": "New Zealand trade weighted index ",
+        "date_added":"20/04/2020",
+        "date_dropped":null
     },
     {
         "class": "Economic",
@@ -1058,7 +1106,9 @@
         "data_type": "TimeSeries",
         "group_names": [
         "NZX - all index"
-        ]
+        ],
+        "date_added":"20/04/2020",
+        "date_dropped":null
     },
     {
         "class": "Economic",
@@ -1080,7 +1130,9 @@
         "data_type": "TimeSeries",
         "group_names": [
         "New Zealand bank bill yields - 90-days"
-        ]
+        ],
+        "date_added":"20/04/2020",
+        "date_dropped":null
     },
     {
         "class": "Economic",
@@ -1101,7 +1153,9 @@
         "data_type": "TimeSeries",
         "group_names": [
         "NZD/USD"
-        ]
+        ],
+        "date_added":"20/04/2020",
+        "date_dropped":null
     },
     {
         "class": "Economic",
@@ -1136,8 +1190,8 @@
             "Upper South Island",
             "Lower South Island"
             ],
-            "date_added":"01/01/2020",
-            "date_dropped":null
+        "date_added":"20/04/2020",
+        "date_dropped":null
     },
     {
         "class": "Economic",
@@ -1157,7 +1211,9 @@
         "filename": "COVID 19 - Haver sourced indicators.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": "undefined_name"
+        "group_names": "undefined_name",
+        "date_added":"20/04/2020",
+        "date_dropped":null
     },
     {
         "class": "Economic",
@@ -1176,7 +1232,9 @@
         "data_type": "TimeSeries",
         "group_names": [
         "US jobless claims (initial)"
-        ]
+        ],
+        "date_added":"20/04/2020",
+        "date_dropped":null
     },
     {
         "class": "Economic",
@@ -1195,7 +1253,9 @@
         "data_type": "TimeSeries",
         "group_names": [
         "US weekly economic index"
-        ]
+        ],
+        "date_added":"20/04/2020",
+        "date_dropped":null
     },
     {
         "class": "Economic",
@@ -1209,7 +1269,9 @@
         "filename": "COVID 19 - Haver sourced indicators.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": "Sentiment index"
+        "group_names": "Sentiment index",
+        "date_added":"20/04/2020",
+        "date_dropped":null
     },
     {
         "class": "Economic",
@@ -1236,7 +1298,9 @@
         "Crude oil",
         "Coal",
         "Copper"
-        ]
+        ],
+        "date_added":"20/04/2020",
+        "date_dropped":null
     },
     {
         "class": "Economic",
@@ -1263,7 +1327,9 @@
         "Australia All Ordinaries",
         "China Securities Index 300",
         "S&P Global 1200 Index"
-        ]
+        ],
+        "date_added":"20/04/2020",
+        "date_dropped":null
     },
     {
         "class": "Economic",
@@ -1278,7 +1344,9 @@
         "load_function": "read_from_excel",
         "skip": 2,
         "data_type": "TimeSeries",
-        "group_names": "Market volatility index"
+        "group_names": "Market volatility index",
+        "date_added":"20/04/2020",
+        "date_dropped":null
     },
     {
         "class": "Economic",
@@ -1293,7 +1361,9 @@
         "load_function": "read_from_excel",
         "skip": 2,
         "data_type": "TimeSeries",
-        "group_names": "Baltic dry index"
+        "group_names": "Baltic dry index",
+        "date_added":"20/04/2020",
+        "date_dropped":null
     },
     {
         "class": "Economic",
@@ -1308,7 +1378,9 @@
         "load_function": "read_from_excel",
         "skip": 2,
         "data_type": "TimeSeries",
-        "group_names": "Global dairy trade price index"
+        "group_names": "Global dairy trade price index",
+        "date_added":"20/04/2020",
+        "date_dropped":null
     },
     {
         "class": "Economic",
@@ -1334,7 +1406,9 @@
         "load_function": "read_from_excel",
         "skip": 1,
         "data_type": "TimeSeries",
-        "group_names": "undefined_name"
+        "group_names": "undefined_name",
+        "date_added":"20/04/2020",
+        "date_dropped":null
     },
     {
         "class": "Economic",
@@ -1361,7 +1435,9 @@
         "load_function": "read_from_excel",
         "skip": 1,
         "data_type": "TimeSeries",
-        "group_names": "undefined_name"
+        "group_names": "undefined_name",
+        "date_added":"20/04/2020",
+        "date_dropped":null
     },
     {
         "class": "Income support",
@@ -1379,7 +1455,9 @@
         "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": "Accommodation supplement"
+        "group_names": "Accommodation supplement",
+        "date_added":"26/05/2020",
+        "date_dropped":null
     },
     {
         "class": "Income support",
@@ -1401,7 +1479,9 @@
         "data_type": "TimeSeries",
         "group_names": [
         "Special needs grants for food"
-        ]
+        ],
+        "date_added":"26/05/2020",
+        "date_dropped":null
     },
     {
         "class": "Income support",
@@ -1419,7 +1499,9 @@
         "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": "Temporary additional support and special benefit"
+        "group_names": "Temporary additional support and special benefit",
+        "date_added":"26/05/2020",
+        "date_dropped":null
     },
     {
         "class": "Income support",
@@ -1442,7 +1524,9 @@
         "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": "undefined_name"
+        "group_names": "undefined_name",
+        "date_added":"26/05/2020",
+        "date_dropped":null
     },
 
     {
@@ -1465,7 +1549,9 @@
         "data_type": "TimeSeries",
         "group_names": [
           "All special needs grants"
-        ]
+        ],
+        "date_added":"26/05/2020",
+        "date_dropped":null
     },
     {
         "class": "Income support",
@@ -1525,7 +1611,9 @@
         "Wellington",
         "Other region",
         "Total"
-        ]
+        ],
+        "date_added":"26/05/2020",
+        "date_dropped":null
     },
     {
         "class": "Health",
@@ -1550,8 +1638,10 @@
         "filename": "COVID 19 - MoH COVID-19 cases.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": "New Zealand"
-    },
+        "group_names": "New Zealand",
+        "date_added":"20/04/2020",
+        "date_dropped":null
+        },
     {
         "class": "Health",
         "indicator_name": "Number of cases (other countries)",
@@ -1576,7 +1666,9 @@
         "load_function": "get_john_hopkins_data",
         "country_filter": "China",
         "data_type": "TimeSeries",
-        "group_names": "China"
+        "group_names": "China",
+        "date_added":"22/04/2020",
+        "date_dropped":null
     },
     {
         "class": "Health",
@@ -1602,7 +1694,9 @@
         "load_function": "read_global_cases_file",
         "country_filter": "Australia",
         "data_type": "TimeSeries",
-        "group_names": "Australia"
+        "group_names": "Australia",
+        "date_added":"22/04/2020",
+        "date_dropped":null
     },
     {
         "class": "Health",
@@ -1628,7 +1722,9 @@
         "load_function": "read_global_cases_file",
         "country_filter": "Canada",
         "data_type": "TimeSeries",
-        "group_names": "Canada"
+        "group_names": "Canada",
+        "date_added":"22/04/2020",
+        "date_dropped":null
     },
     {
         "class": "Health",
@@ -1654,7 +1750,9 @@
         "load_function": "read_global_cases_file",
         "country_filter": "Singapore",
         "data_type": "TimeSeries",
-        "group_names": "Singapore"
+        "group_names": "Singapore",
+        "date_added":"22/04/2020",
+        "date_dropped":null
     },
     {
         "class": "Health",
@@ -1680,7 +1778,9 @@
         "load_function": "read_global_cases_file",
         "country_filter": "Italy",
         "data_type": "TimeSeries",
-        "group_names": "Italy"
+        "group_names": "Italy",
+        "date_added":"22/04/2020",
+        "date_dropped":null
     },
     {
         "class": "Health",
@@ -1706,7 +1806,9 @@
         "load_function": "read_global_cases_file",
         "country_filter": "Spain",
         "data_type": "TimeSeries",
-        "group_names": "Spain"
+        "group_names": "Spain",
+        "date_added":"22/04/2020",
+        "date_dropped":null
     },
     {
         "class": "Health",
@@ -1732,7 +1834,9 @@
         "load_function": "read_global_cases_file",
         "country_filter": "United Kingdom",
         "data_type": "TimeSeries",
-        "group_names": "United Kingdom"
+        "group_names": "United Kingdom",
+        "date_added":"22/04/2020",
+        "date_dropped":null
     },
     {
         "class": "Health",
@@ -1758,7 +1862,9 @@
         "load_function": "read_global_cases_file",
         "country_filter": "US",
         "data_type": "TimeSeries",
-        "group_names": "United States"
+        "group_names": "United States",
+        "date_added":"22/04/2020",
+        "date_dropped":null
     },
     {
         "class": "Health",
@@ -1784,7 +1890,9 @@
         "load_function": "read_global_cases_file",
         "country_filter": "Rest of the world",
         "data_type": "TimeSeries",
-        "group_names": "Rest of world"
+        "group_names": "Rest of world",
+        "date_added":"22/04/2020",
+        "date_dropped":null
     },
     {
         "class": "Economic",
@@ -1807,7 +1915,9 @@
         "group_names": [
         "Heavy traffic index",
         "Light traffic index"
-        ]
+        ],
+        "date_added":"20/04/2020",
+        "date_dropped":null
     },
     {
         "class": "Economic",
@@ -1823,8 +1933,10 @@
         "filename": "COVID-19 - Weekly traffic count - Auckland.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": ["Auckland"]
-    },
+        "group_names": ["Auckland"],
+        "date_added":"05/06/2020",
+        "date_dropped":null
+        },
     {
         "class": "Economic",
         "indicator_name": "Weekly traffic count",
@@ -1839,7 +1951,9 @@
         "filename": "COVID-19 - Weekly traffic count - Christchurch.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": ["Christchurch"]
+        "group_names": ["Christchurch"],
+        "date_added":"05/06/2020",
+        "date_dropped":null
     },
     {
         "class": "Economic",
@@ -1855,7 +1969,9 @@
         "filename": "COVID-19 - Weekly traffic count - Dunedin.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": ["Dunedin"]
+        "group_names": ["Dunedin"],
+        "date_added":"05/06/2020",
+        "date_dropped":null
     },
     {
         "class": "Economic",
@@ -1871,7 +1987,9 @@
         "filename": "COVID-19 - Weekly traffic count - Hamilton.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": ["Hamilton"]
+        "group_names": ["Hamilton"],
+        "date_added":"05/06/2020",
+        "date_dropped":null
     },
     {
         "class": "Economic",
@@ -1887,7 +2005,9 @@
         "filename": "COVID-19 - Weekly traffic count - Wellington.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": ["Wellington"]
+        "group_names": ["Wellington"],
+        "date_added":"05/06/2020",
+        "date_dropped":null
     },
     {
         "class": "Economic",
@@ -1913,7 +2033,9 @@
         "group_names": [
         "International aircraft - Auckland",
         "Domestic aircraft - Auckland"
-        ]
+        ],
+        "date_added":"23/04/2020",
+        "date_dropped":null
     },
     {
         "class": "Economic",
@@ -1939,7 +2061,9 @@
         "group_names": [
         "International MCTOW",
         "Domestic MCTOW"
-        ]
+        ],
+        "date_added":"23/04/2020",
+        "date_dropped":null
     },
     {
         "class": "Economic",
@@ -1965,7 +2089,9 @@
         "group_names": [
             "Export gross weight - Auckland",
             "Import gross weight - Auckland"
-        ]
+        ],
+        "date_added":"23/04/2020",
+        "date_dropped":null
     },
     {
         "class": "Economic",
@@ -1991,7 +2117,9 @@
         "group_names": [
             "Export gross weight - Christchurch",
             "Import gross weight - Christchurch"
-        ]
+        ],
+        "date_added":"23/04/2020",
+        "date_dropped":null
     },
     {
         "class": "Economic",
@@ -2018,7 +2146,9 @@
         "group_names": [
             "Export FOB - Auckland",
             "Import CIF - Auckland"
-        ]
+        ],
+        "date_added":"23/04/2020",
+        "date_dropped":null
     },
     {
         "class": "Economic",
@@ -2045,7 +2175,9 @@
         "group_names": [
         "Export FOB - Christchurch",
         "Import CIF - Christchurch"
-        ]
+        ],
+        "date_added":"23/04/2020",
+        "date_dropped":null
     },
     {
         "class": "Economic",
@@ -2072,7 +2204,9 @@
         "load_function": "read_from_excel",
         "skip": 1,
         "data_type": "TimeSeries",
-        "group_names": "undefined_name"
+        "group_names": "undefined_name",
+        "date_added":"20/04/2020",
+        "date_dropped":null
     },
     {
         "class": "Economic",
@@ -2093,7 +2227,9 @@
         "load_function": "read_from_excel",
         "skip": 1,
         "data_type": "TimeSeries",
-        "group_names": "undefined_name"
+        "group_names": "undefined_name",
+        "date_added":"22/04/2020",
+        "date_dropped":null
     },
     {
         "class": "Economic",
@@ -2120,7 +2256,9 @@
         "group_names": [
         "Domestic aircraft - Queenstown",
         "International aircraft - Queenstown"
-        ]
+        ],
+        "date_added":"23/04/2020",
+        "date_dropped":null
     },
     {
         "class": "Income support",
@@ -2199,7 +2337,9 @@
         "filename": "COVID-19 MSD Jobseeker Support By Region.xlsx",
         "drop_na": false,
         "load_function": "read_from_excel",
-        "data_type": "TimeSeries"
+        "data_type": "TimeSeries",
+        "date_added":"26/05/2020",
+        "date_dropped":null
     },
     {
         "class": "Economic",
@@ -2214,7 +2354,9 @@
         "filename": "COVID 19 - Retail NZ Sales Index month on month comparison.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": "undefined_name"
+        "group_names": "undefined_name",
+        "date_added":"12/05/2020",
+        "date_dropped":null
     },
     {
         "class": "Health",
@@ -2246,7 +2388,9 @@
             "Canterbury",
             "Other North Island regions",
             "Other South Island regions"
-          ]
+          ],
+          "date_added":"30/03/2020",
+          "date_dropped":null
       },
       {
         "class": "Health",
@@ -2256,7 +2400,6 @@
         "parameter_transform": "function(x) ymd(x) + 6",
         "sheet_number": 2,
         "value_col": [
-
           2,
           3,
           4,
@@ -2269,7 +2412,6 @@
           11
         ],
         "value_names": [
-
           "Female under 64",
           "Female 65 and 79",
           "Female 80 and over",
@@ -2280,10 +2422,8 @@
           "Total 65 and 79",
           "Total 80 and over",
           "Total"
-
         ],
         "group_names": [
-
            "Female under 64",
           "Female 65 and 79",
           "Female 80 and over",
@@ -2297,9 +2437,10 @@
           ],
         "filename": "COVID 19 - DIA Preliminary Death Data.xlsx",
         "load_function": "read_from_excel",
-        "data_type": "TimeSeries"
+        "data_type": "TimeSeries",
+        "date_added":"30/03/2020",
+          "date_dropped":null
       },
-
       {
         "class": "Health",
         "indicator_name": "By age",
@@ -2330,7 +2471,9 @@
           ],
         "filename": "COVID 19 - DIA Preliminary Death Data.xlsx",
         "load_function": "read_from_excel",
-        "data_type": "TimeSeries"
+        "data_type": "TimeSeries",
+        "date_added":"30/03/2020",
+          "date_dropped":null
       },
       {
         "class": "Economic",
@@ -2363,7 +2506,9 @@
           "Christchurch Airport",
           "Queenstown Airport",
           "Dunedin Airport"
-        ]
+        ],
+        "date_added":"18/05/2020",
+        "date_dropped":null
       },
     {
         "class": "Economic",
@@ -2387,7 +2532,9 @@
         "group_names": [
             "Export FOB (Auckland)",
             "Import CIF (Auckland)"
-        ]
+        ],
+        "date_added":"20/05/2020",
+        "date_dropped":null
     },
      {
         "class": "Economic",
@@ -2410,7 +2557,9 @@
         "group_names": [
         "Export gross weight - Auckland",
         "Import gross weight - Auckland"
-        ]
+        ],
+        "date_added":"20/05/2020",
+        "date_dropped":null
     },
     {
         "class": "Economic",
@@ -2434,7 +2583,9 @@
         "group_names": [
          "Export FOB (Napier)",
           "Import CIF (Napier)"
-        ]
+        ],
+        "date_added":"20/05/2020",
+        "date_dropped":null
     },
     {
         "class": "Economic",
@@ -2460,7 +2611,9 @@
         "group_names": [
         "Export gross weight - Napier",
         "Import gross weight - Napier"
-        ]
+        ],
+        "date_added":"20/05/2020",
+        "date_dropped":null
     }
     ,
     {
@@ -2485,7 +2638,9 @@
         "group_names": [
          "Export FOB (Lyttelton)",
           "Import CIF (Lyttelton)"
-        ]
+        ],
+        "date_added":"20/05/2020",
+        "date_dropped":null
     },
     {
         "class": "Economic",
@@ -2508,7 +2663,9 @@
         "group_names": [
         "Export gross weight - Lyttelton",
         "Import gross weight - Lyttelton"
-        ]
+        ],
+        "date_added":"20/05/2020",
+        "date_dropped":null
     },
     {
         "class": "Economic",
@@ -2532,7 +2689,9 @@
         "group_names": [
          "Export FOB (Port Chalmers)",
           "Import CIF (Port Chalmers)"
-        ]
+        ],
+        "date_added":"20/05/2020",
+        "date_dropped":null
     },
     {
         "class": "Economic",
@@ -2555,7 +2714,9 @@
         "group_names": [
         "Export gross weight - Port Chalmers",
         "Import gross weight - Port Chalmers"
-        ]
+        ],
+        "date_added":"20/05/2020",
+        "date_dropped":null
     },
     {
         "class": "Economic",
@@ -2579,7 +2740,9 @@
         "group_names": [
          "Export FOB (Wellington)",
           "Import CIF (Wellington)"
-        ]
+        ],
+        "date_added":"20/05/2020",
+        "date_dropped":null
     },
     {
         "class": "Economic",
@@ -2602,7 +2765,9 @@
         "group_names": [
         "Export gross weight - Wellington",
         "Import gross weight - Wellington"
-        ]
+        ],
+        "date_added":"20/05/2020",
+        "date_dropped":null
     },
     {
         "class": "Economic",
@@ -2626,7 +2791,9 @@
         "group_names": [
          "Export FOB (Tauranga)",
           "Import CIF (Tauranga)"
-        ]
+        ],
+        "date_added":"20/05/2020",
+        "date_dropped":null
     },
     {
         "class": "Economic",
@@ -2649,7 +2816,9 @@
         "group_names": [
         "Export gross weight - Tauranga",
         "Import gross weight - Tauranga"
-        ]
+        ],
+        "date_added":"20/05/2020",
+        "date_dropped":null
     },
     {
         "class": "Economic",
@@ -2666,7 +2835,9 @@
         "group_names": [
           "Index",
           "Trend"
-          ]
+          ],
+        "date_added":"14/07/2020",
+        "date_dropped":null
     },
     {
         "class": "Income support",
@@ -2685,8 +2856,9 @@
         "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": ["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"]
-
+        "group_names": ["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"],
+        "date_added":"26/05/2020",
+        "date_dropped":null
     },
     {
         "class": "Income support",
@@ -2705,8 +2877,9 @@
         "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": ["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"]
-
+        "group_names": ["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"],
+        "date_added":"26/05/2020",
+        "date_dropped":null
     },
     {
         "class": "Income support",
@@ -2725,8 +2898,9 @@
         "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": ["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"]
-
+        "group_names": ["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"],
+        "date_added":"26/05/2020",
+        "date_dropped":null
     },
     {
         "class": "Income support",
@@ -2745,8 +2919,9 @@
         "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": ["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"]
-
+        "group_names": ["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"],
+        "date_added":"26/05/2020",
+        "date_dropped":null
     },
     {
         "class": "Income support",
@@ -2764,8 +2939,9 @@
         "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": ["Total - work ready","Māori", "NZ European", "Pacific peoples", "All other ethnicities"]
-
+        "group_names": ["Total - work ready","Māori", "NZ European", "Pacific peoples", "All other ethnicities"],
+        "date_added":"26/05/2020",
+        "date_dropped":null
     },
     {
         "class": "Income support",
@@ -2783,8 +2959,9 @@
         "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": ["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"]
-
+        "group_names": ["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"],
+        "date_added":"26/05/2020",
+        "date_dropped":null
     },
     {
         "class": "Health",
@@ -2802,7 +2979,9 @@
         ],
         "load_function": "read_from_excel",
         "drop_na": false,
-        "data_type": "TimeSeries"
+        "data_type": "TimeSeries",
+        "date_added":"20/04/2020",
+        "date_dropped":null
       },
     {
         "class": "Income support",
@@ -2820,7 +2999,9 @@
         ],
         "load_function": "read_from_excel",
         "drop_na": false,
-        "data_type": "TimeSeries"
+        "data_type": "TimeSeries",
+        "date_added":"26/05/2020",
+        "date_dropped":null
       },
 {
   "class": "Economic",
@@ -2838,8 +3019,9 @@
   "filename": "COVID 19 - IRD lending data.xlsx",
   "load_function": "read_from_excel",
   "data_type": "TimeSeries",
-  "group_names": [ "Total loan applications received (cumulative)", "Total loan amount disbursed"]
-
+  "group_names": [ "Total loan applications received (cumulative)", "Total loan amount disbursed"],
+  "date_added":"03/06/2020",
+  "date_dropped":null
 },
 {
         "class": "Economic",
@@ -2852,7 +3034,6 @@
         ],
         "sheet_number": 1,
         "input_units":1000000,
-
         "skip":3,
         "value_col": [
         3,
