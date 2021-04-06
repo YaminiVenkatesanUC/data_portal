@@ -3050,7 +3050,9 @@
         "filename": "COVID 19 - RBNZ lending data.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": "undefined_name"
+        "group_names": "undefined_name",
+        "date_added":"10/06/2020",
+        "date_dropped":null
     },
 {
         "class": "Economic",
@@ -3079,7 +3081,9 @@
         "filename": "COVID 19 - RBNZ lending data.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": "undefined_name"
+        "group_names": "undefined_name",
+        "date_added":"10/06/2020",
+        "date_dropped":null
     },
 {
         "class": "Economic",
@@ -3108,7 +3112,9 @@
         "filename": "COVID 19 - RBNZ lending data.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": "undefined_name"
+        "group_names": "undefined_name",
+        "date_added":"10/06/2020",
+        "date_dropped":null
     },
 {
         "class": "Economic",
@@ -3133,7 +3139,9 @@
         "filename": "COVID 19 - RBNZ lending data.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": "undefined_name"
+        "group_names": "undefined_name",
+        "date_added":"10/06/2020",
+        "date_dropped":null
     },
 {
         "class": "Economic",
@@ -3161,7 +3169,9 @@
         "filename": "COVID 19 - RBNZ lending data.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": "undefined_name"
+        "group_names": "undefined_name",
+        "date_added":"10/06/2020",
+        "date_dropped":null
     },
 {
         "class": "Economic",
@@ -3189,7 +3199,9 @@
         "filename": "COVID 19 - RBNZ lending data.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": "undefined_name"
+        "group_names": "undefined_name",
+        "date_added":"10/06/2020",
+        "date_dropped":null
     },
 {
         "class": "Economic",
@@ -3217,7 +3229,9 @@
         "filename": "COVID 19 - RBNZ lending data.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": "undefined_name"
+        "group_names": "undefined_name",
+        "date_added":"10/06/2020",
+        "date_dropped":null
     },
 {
         "class": "Economic",
@@ -3241,9 +3255,10 @@
         "filename": "COVID 19 - RBNZ lending data.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": "undefined_name"
+        "group_names": "undefined_name",
+        "date_added":"10/06/2020",
+        "date_dropped":null
     },
-
 {
         "class": "Economic",
         "indicator_name": "Gas consumption by largest users",
@@ -3275,15 +3290,15 @@
         "data_type": "TimeSeries",
         "group_names":
         [
-
        "Methanex Waitara Valley",
         "Huntly power station",
         "Stratford peaker power station",
         "Taranaki combined cycle power station",
         "Te Rapa cogeneration plant",
         "Methanex Motunui"
-
-        ]
+        ],
+        "date_added":"11/09/2020",
+        "date_dropped":null
     },
 {
         "class": "Economic",
@@ -3296,7 +3311,6 @@
         ],
         "sheet_number": 1,
         "skip":1,
-
         "value_col": [
         2,
         3,
@@ -3310,7 +3324,6 @@
         "Glenbrook steel mill",
         "Kinleith pulp and paper mill",
         "Marsden Point oil refinery"
-
         ],
         "filename": "COVID 19 - Industrial Gas use.xlsx",
         "load_function": "gas_use_data",
@@ -3318,13 +3331,14 @@
         "data_type": "TimeSeries",
         "group_names":
         [
-
       "Fonterra - (selected sites)",
         "Ballance Agri-Nutrients",
         "Glenbrook steel mill",
         "Kinleith pulp and paper mill",
         "Marsden Point oil refinery"
-        ]
+        ],
+        "date_added":"11/09/2020",
+        "date_dropped":null
     },
 {
         "class": "Economic",
@@ -3356,10 +3370,11 @@
         "Primary",
         "Goods Producing",
         "Services"
-
-        ]
+        ],
+        "date_added":"21/06/2020",
+        "date_dropped":null
     },
-      {
+{
         "class": "Health",
         "indicator_name": "Quarantine and managed isolation figures",
         "type": "COVID-19",
@@ -3372,9 +3387,11 @@
         "load_function": "read_managed_isolotion_data",
         "group_names": "Occupancy",
         "drop_na": false,
-        "data_type": "BarChart"
+        "data_type": "BarChart",
+        "date_added":"23/06/2020",
+        "date_dropped":null
       },
-      {
+{
         "class": "Health",
         "indicator_name": "Quarantine and managed isolation figures",
         "type": "COVID-19",
@@ -3388,10 +3405,11 @@
         "load_function": "read_managed_isolotion_data",
         "group_names": "Occupancy rate",
         "drop_na": false,
-        "data_type": "BarChart"
+        "data_type": "BarChart",
+        "date_added":"23/06/2020",
+        "date_dropped":null
       },
-
-      {
+{
         "class": "Health",
         "indicator_name": "Quarantine and managed isolation figures",
         "type": "COVID-19",
@@ -3404,11 +3422,11 @@
         "load_function": "read_from_excel",
         "group_names": "Projected occupacy rate",
         "drop_na": false,
-        "data_type": "TimeSeries"
+        "data_type": "TimeSeries",
+        "date_added":"23/06/2020",
+        "date_dropped":null
       },
-
-
-      {
+{
         "class": "Economic",
         "indicator_name": "New Zealand Activity Index (NZAC)",
         "type": "Activity",
@@ -3446,10 +3464,10 @@
         ],
         "drop_na": false,
         "data_type": "TimeSeries",
-        "date_added":"01/01/2020",
+        "date_added":"29/06/2020",
         "date_dropped":null
       },
-    {
+{
         "class": "Health",
         "indicator_name": "Number of cases (other countries)",
         "type": "COVID-19",
@@ -3473,9 +3491,11 @@
         "load_function": "read_global_cases_file",
         "country_filter": "Australia - Australian Capital Territory",
         "data_type": "TimeSeries",
-        "group_names": "Australia - ACT"
+        "group_names": "Australia - ACT",
+        "date_added":"22/04/2020",
+        "date_dropped":null
     },
-    {
+{
         "class": "Health",
         "indicator_name": "Number of cases (other countries)",
         "type": "COVID-19",
@@ -3499,9 +3519,11 @@
         "load_function": "read_global_cases_file",
         "country_filter": "Australia - New South Wales",
         "data_type": "TimeSeries",
-        "group_names": "Australia - New South Wales"
+        "group_names": "Australia - New South Wales",
+        "date_added":"22/04/2020",
+        "date_dropped":null
     },
-    {
+{
         "class": "Health",
         "indicator_name": "Number of cases (other countries)",
         "type": "COVID-19",
@@ -3525,9 +3547,11 @@
         "load_function": "read_global_cases_file",
         "country_filter": "Australia - Northern Territory",
         "data_type": "TimeSeries",
-        "group_names": "Australia - Northern Territory"
+        "group_names": "Australia - Northern Territory",
+        "date_added":"22/04/2020",
+        "date_dropped":null
     },
-    {
+{
         "class": "Health",
         "indicator_name": "Number of cases (other countries)",
         "type": "COVID-19",
@@ -3551,10 +3575,11 @@
         "load_function": "read_global_cases_file",
         "country_filter": "Australia - Queensland",
         "data_type": "TimeSeries",
-        "group_names": "Australia - Queensland"
-    }
-     ,
-    {
+        "group_names": "Australia - Queensland",
+        "date_added":"22/04/2020",
+        "date_dropped":null
+    },
+{
         "class": "Health",
         "indicator_name": "Number of cases (other countries)",
         "type": "COVID-19",
@@ -3578,10 +3603,11 @@
         "load_function": "read_global_cases_file",
         "country_filter": "Australia - South Australia",
         "data_type": "TimeSeries",
-        "group_names": "Australia - South Australia"
-    }
-    ,
-    {
+        "group_names": "Australia - South Australia",
+        "date_added":"22/04/2020",
+        "date_dropped":null
+    },
+{
         "class": "Health",
         "indicator_name": "Number of cases (other countries)",
         "type": "COVID-19",
@@ -3605,10 +3631,11 @@
         "load_function": "read_global_cases_file",
         "country_filter": "Australia - Tasmania",
         "data_type": "TimeSeries",
-        "group_names": "Australia - Tasmania"
-    }
-     ,
-    {
+        "group_names": "Australia - Tasmania",
+        "date_added":"22/04/2020",
+        "date_dropped":null
+    },
+{
         "class": "Health",
         "indicator_name": "Number of cases (other countries)",
         "type": "COVID-19",
@@ -3632,9 +3659,11 @@
         "load_function": "read_global_cases_file",
         "country_filter": "Australia - Victoria",
         "data_type": "TimeSeries",
-        "group_names": "Australia - Victoria"
-    } ,
-    {
+        "group_names": "Australia - Victoria",
+        "date_added":"22/04/2020",
+        "date_dropped":null
+    },
+{
         "class": "Health",
         "indicator_name": "Number of cases (other countries)",
         "type": "COVID-19",
@@ -3658,9 +3687,11 @@
         "load_function": "read_global_cases_file",
         "country_filter": "Australia - Western Australia",
         "data_type": "TimeSeries",
-        "group_names": "Australia - Western Australia"
+        "group_names": "Australia - Western Australia",
+        "date_added":"22/04/2020",
+        "date_dropped":null
     },
-    {
+{
         "class": "Income support",
         "indicator_name": "Special needs grants for food by region",
         "type": "Hardship assistance",
@@ -3735,10 +3766,11 @@
         "filename": "COVID 19 - MSD Jobseeker by regional council.xlsx",
         "drop_na": false,
         "load_function": "read_from_excel",
-        "data_type": "TimeSeries"
-    }
-   ,
-     {
+        "data_type": "TimeSeries",
+        "date_added":"08/05/2020",
+        "date_dropped":null
+    },
+{
         "class": "Income support",
         "indicator_name": "Jobseeker support by region - (monthly)",
         "type": "Benefits",
@@ -3811,9 +3843,11 @@
         "filename": "COVID 19 - MSD Jobseeker by regional council.xlsx",
         "drop_na": false,
         "load_function": "read_from_excel",
-        "data_type": "TimeSeries"
-    } ,
-     {
+        "data_type": "TimeSeries",
+        "date_added":"08/05/2020",
+        "date_dropped":null
+    },
+{
         "class": "Income support",
         "indicator_name": "Jobseeker support by region - Maori",
         "type": "Benefits",
@@ -3887,10 +3921,11 @@
         "filename": "COVID 19 - MSD Jobseeker by regional council.xlsx",
         "drop_na": false,
         "load_function": "read_from_excel",
-        "data_type": "TimeSeries"
-    }
-    ,
-     {
+        "data_type": "TimeSeries",
+        "date_added":"08/05/2020",
+        "date_dropped":null
+    },
+{
         "class": "Income support",
         "indicator_name": "Jobseeker support by region - NZ European",
         "type": "Benefits",
@@ -3964,10 +3999,11 @@
         "filename": "COVID 19 - MSD Jobseeker by regional council.xlsx",
         "drop_na": false,
         "load_function": "read_from_excel",
-        "data_type": "TimeSeries"
-    }
-    ,
-     {
+        "data_type": "TimeSeries",
+        "date_added":"08/05/2020",
+        "date_dropped":null
+    },
+{
         "class": "Income support",
         "indicator_name": "Jobseeker support by region - Pacific peoples",
         "type": "Benefits",
@@ -4041,9 +4077,11 @@
         "filename": "COVID 19 - MSD Jobseeker by regional council.xlsx",
         "drop_na": false,
         "load_function": "read_from_excel",
-        "data_type": "TimeSeries"
+        "data_type": "TimeSeries",
+        "date_added":"08/05/2020",
+        "date_dropped":null
     },
-     {
+{
         "class": "Income support",
         "indicator_name": "Jobseeker support by region - Other ethnicities",
         "type": "Benefits",
@@ -4117,7 +4155,9 @@
         "filename": "COVID 19 - MSD Jobseeker by regional council.xlsx",
         "drop_na": false,
         "load_function": "read_from_excel",
-        "data_type": "TimeSeries"
+        "data_type": "TimeSeries",
+        "date_added":"08/05/2020",
+        "date_dropped":null
     },
  {
     "class": "Economic",
@@ -5598,9 +5638,7 @@
   "parameter_transform": [
     "function (x) ymd(x)"
     ],
-
   "value_col": [
-
     2,
     3,
     4,
@@ -5621,8 +5659,9 @@
       "Primary",
       "Goods Producing",
       "Services"
-
-      ]
+      ],
+    "date_added":"21/06/2020",
+    "date_dropped":null
 },
 {
     "class":"Social",
