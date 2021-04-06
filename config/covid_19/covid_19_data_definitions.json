@@ -488,7 +488,7 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly filled jobs (by industry)",
-      "filename": "employment-indicators-january-2021-tables.csv",
+      "filename": "employment-indicators-monthly.csv",
       "load_function": "read_filled_jobs_by_industry_or_region",
       "data_type": "TimeSeries",
       "load_parameters": {
@@ -502,7 +502,7 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly filled jobs (by region)",
-      "filename": "employment-indicators-january-2021-tables.csv",
+      "filename": "employment-indicators-monthly.csv",
       "load_function": "read_filled_jobs_by_industry_or_region",
       "data_type": "TimeSeries",
       "load_parameters": {
@@ -516,7 +516,7 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly filled jobs (by gender)",
-      "filename": "employment-indicators-january-2021-tables.csv",
+      "filename": "employment-indicators-monthly.csv",
       "load_function": "read_filled_jobs_by_gender",
       "data_type": "TimeSeries",
       "load_parameters": {
@@ -530,7 +530,7 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly filled jobs (by age)",
-      "filename": "employment-indicators-january-2021-tables.csv",
+      "filename": "employment-indicators-monthly.csv",
       "load_function": "read_filled_jobs_by_age",
       "data_type": "TimeSeries",
       "load_parameters": {
@@ -544,7 +544,7 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly filled jobs",
-      "filename": "employment-indicators-january-2021-tables.csv",
+      "filename": "employment-indicators-monthly.csv",
       "load_function": "read_employment_data",
       "data_type": "TimeSeries",
       "load_parameters": {
@@ -558,7 +558,7 @@
       "group_names": null,
       "value_names": null,
       "indicator_name": "Monthly earnings",
-      "filename": "employment-indicators-january-2021-tables.csv",
+      "filename": "employment-indicators-monthly.csv",
       "load_function": "read_employment_data",
       "data_type": "TimeSeries",
       "load_parameters": {
@@ -2162,12 +2162,14 @@
         16,
         17,
         18,
-        19
+        19,
+        20
         ],
         "value_names": [
         "Auckland",
         "Bay of Plenty",
         "Canterbury",
+        "Chatham Islands",
         "Gisborne",
         "Hawke's Bay",
         "Manawatū-Whanganui",
@@ -2188,6 +2190,7 @@
             "Auckland",
             "Bay of Plenty",
             "Canterbury",
+            "Chatham Islands",
             "Gisborne",
             "Hawke's Bay",
             "Manawatū-Whanganui",
@@ -2831,7 +2834,7 @@
         "value_col":  [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68],
         "value_names":  ["Ashburton District","Auckland Super City", "Buller District","Carterton District", "Central Hawke's Bay District",	"Central Otago District", "Christchurch City", "Clutha District", "Dunedin City",	"Far North District",	"Gisborne District", "Gore District", "Grey District", "Hamilton City","Hastings District", "Hauraki District","Horowhenua District", "Hurunui District","Invercargill City", "Kaikoura District", "Kaipara District",	"Kapiti Coast District","Kawerau District", "Lower Hutt City","Mackenzie District", "Manawatu District",	"Marlborough District", "Masterton District",	"Matamata-Piako District", "Napier City", "Nelson City",	"New Plymouth District", "Opotiki District","Otorohanga District", 	"Palmerston North City", 	"Porirua City", "Queenstown-Lakes District", "Rangitikei District", 	"Rotorua District", 	"Ruapehu District", 	"Selwyn District", 	"South Taranaki District", 	"South Waikato District", 	"South Wairarapa District", 	"Southland District", 	"Stratford District", 	"Tararua District", 	"Tasman District", 	"Taupo District", 	"Tauranga City", 	"Thames-Coromandel District", 	"Timaru District", 	"Upper Hutt City", 	"Waikato District", "Waimakariri District", "Waimate District", 	"Waipa District", "Wairoa District", 	"Waitaki District", "Waitomo District", "Wellington City", 	"Western Bay Of Plenty District", 	"Westland District", 	"Whakatane District", 	"Whanganui District", "Whangarei District", "Unknown/Other*"],
         "group_names":  ["Ashburton District","Auckland Super City", "Buller District","Carterton District", "Central Hawke's Bay District",	"Central Otago District", "Christchurch City", "Clutha District", "Dunedin City",	"Far North District",	"Gisborne District", "Gore District", "Grey District", "Hamilton City","Hastings District", "Hauraki District","Horowhenua District", "Hurunui District","Invercargill City", "Kaikoura District", "Kaipara District",	"Kapiti Coast District","Kawerau District", "Lower Hutt City","Mackenzie District", "Manawatu District",	"Marlborough District", "Masterton District",	"Matamata-Piako District", "Napier City", "Nelson City",	"New Plymouth District", "Opotiki District","Otorohanga District", 	"Palmerston North City", 	"Porirua City", "Queenstown-Lakes District", "Rangitikei District", 	"Rotorua District", 	"Ruapehu District", 	"Selwyn District", 	"South Taranaki District", 	"South Waikato District", 	"South Wairarapa District", 	"Southland District", 	"Stratford District", 	"Tararua District", 	"Tasman District", 	"Taupo District", 	"Tauranga City", 	"Thames-Coromandel District", 	"Timaru District", 	"Upper Hutt City", 	"Waikato District", "Waimakariri District", "Waimate District", 	"Waipa District", "Wairoa District", 	"Waitaki District", "Waitomo District", "Wellington City", 	"Western Bay Of Plenty District", 	"Westland District", 	"Whakatane District", 	"Whanganui District", "Whangarei District", "Unknown/Other*"],
-        "sheet_number": 2,
+        "sheet_number": 1,
         "filename": "COVID 19 - MSD Jobseeker and Accom supplement by TA.xlsx",
         "parameter_transform": [
         "function (x) ",
