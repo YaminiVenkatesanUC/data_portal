@@ -5232,6 +5232,7 @@
       "sheet_number": 1,
       "filename": "COVID-19 MoH - Health status.xlsx",
       "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%Y\")",
+      "drop_na":false,
       "load_function": "read_from_excel_error",
       "data_type": "TimeSeriesError",
       "owner":"Carolyn Bugler",
@@ -5251,6 +5252,7 @@
       "filename": "COVID-19 MoH - Sleep quantity.xlsx",
       "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%Y\")",
       "load_function": "read_from_excel_error",
+      "drop_na":false,
       "data_type": "TimeSeriesError",
       "owner":"Carolyn Bugler",
       "frequency":"Ad-hoc"
@@ -5269,6 +5271,7 @@
       "filename": "COVID-19 MoH - Life satisfaction – MoH.xlsx",
       "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%Y\")",
       "load_function": "read_from_excel_error",
+      "drop_na":false,
       "data_type": "TimeSeriesError",
       "owner":"Carolyn Bugler",
       "frequency":"Ad-hoc"
@@ -5287,6 +5290,7 @@
       "filename": "COVID-19 MoH - Loneliness – past 7 days.xlsx",
       "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%Y\")",
       "load_function": "read_from_excel_error",
+      "drop_na":false,
       "data_type": "TimeSeriesError",
       "owner":"Carolyn Bugler",
       "frequency":"Ad-hoc"
@@ -5305,6 +5309,7 @@
       "filename": "COVID-19 MoH - Overall wellbeing.xlsx",
       "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%Y\")",
       "load_function": "read_from_excel_error",
+      "drop_na":false,
       "data_type": "TimeSeriesError",
       "owner":"Carolyn Bugler",
       "frequency":"Ad-hoc"
@@ -5323,6 +5328,7 @@
       "filename": "COVID-19 MoH - Calmness.xlsx",
       "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%Y\")",
       "load_function": "read_from_excel_error",
+      "drop_na":false,
       "data_type": "TimeSeriesError",
       "owner":"Carolyn Bugler",
       "frequency":"Ad-hoc"
@@ -5341,6 +5347,7 @@
       "filename": "COVID-19 MoH - Nervousness.xlsx",
       "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%Y\")",
       "load_function": "read_from_excel_error",
+      "drop_na":false,
       "data_type": "TimeSeriesError",
       "owner":"Carolyn Bugler",
       "frequency":"Ad-hoc"
@@ -5359,6 +5366,7 @@
       "filename": "COVID-19 MoH - Worry about family health.xlsx",
       "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%Y\")",
       "load_function": "read_from_excel_error",
+      "drop_na":false,
       "data_type": "TimeSeriesError",
       "owner":"Carolyn Bugler",
       "frequency":"Ad-hoc"
@@ -5377,6 +5385,7 @@
       "filename": "COVID-19 MoH - Depression and Anxiety.xlsx",
       "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%Y\")",
       "load_function": "read_from_excel_error",
+      "drop_na":false,
       "data_type": "TimeSeriesError",
       "owner":"Carolyn Bugler",
       "frequency":"Ad-hoc"
@@ -5395,6 +5404,7 @@
       "filename": "COVID-19 MoH - Stress about leaving home.xlsx",
       "parameter_transform": "function (x) as.Date(x, format = \"%d/%m/%Y\")",
       "load_function": "read_from_excel_error",
+      "drop_na":false,
       "data_type": "TimeSeriesError",
       "owner":"Carolyn Bugler",
       "frequency":"Ad-hoc"
