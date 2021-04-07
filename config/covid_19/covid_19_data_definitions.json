@@ -5082,7 +5082,7 @@
    ,
 
    {
-    "class": "Contextual",
+    "class": "Economic",
     "type": "Business",
     "indicator_name": "Number of employees by region",
     "parameter_col": 1,
@@ -5151,7 +5151,7 @@
     "data_type": "BarChart"
   },
   {
-    "class": "Contextual",
+    "class": "Economic",
     "type": "Business",
     "indicator_name": "Number of businesses by region",
     "parameter_col": 1,
@@ -7736,7 +7736,7 @@
   },
    {
 
-    "class":"Economic",
+    "class":"Environmental",
     "type":"Greenhouse gas emissions (GHG)",
     "indicator_name":"All industries & households (total) – Quarterly",
     "order_parameter":true,
@@ -7756,7 +7756,7 @@
   },
   {
 
-    "class":"Economic",
+    "class":"Environmental",
     "type":"Greenhouse gas emissions (GHG)",
     "indicator_name":"Industry - Quarterly",
     "order_parameter":true,
@@ -7790,7 +7790,7 @@
   },
   {
 
-    "class":"Economic",
+    "class":"Environmental",
     "type":"Greenhouse gas emissions (GHG)",
     "indicator_name":"Total households – Quarterly",
     "order_parameter":true,
@@ -7810,7 +7810,7 @@
   },
     {
 
-    "class":"Economic",
+    "class":"Environmental",
     "type":"Greenhouse gas emissions (GHG)",
     "indicator_name":"Broad industry group - Quarterly",
     "order_parameter":true,
@@ -8377,7 +8377,7 @@
       "group_names": "undefined_name"
     },
      {
-      "class":"Contextual",
+      "class":"Economic",
       "type":"Business",
       "indicator_name":"Enterprise counts",
       "parameter_col":1,
