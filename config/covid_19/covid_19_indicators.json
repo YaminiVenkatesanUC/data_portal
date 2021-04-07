@@ -7655,46 +7655,7 @@
         "caveats":"Enterprise exit: Enterprises which are not in the current reference period but in the previous reference period. This includes enterprise that have ceased and cancelled their GST registration, enterprise that have ceased remitting GST for an extended period of time, and enterprise that have been involved in mergers and acquisitions where the GST number has changed. Also include enterprises becoming insignificant in the current reference period."
       }
     ]
-  },
-
-   {
-   "class": "Social",
-   "type": "General wellbeing",
-    "indicator_name": "Drinking behaviour since lockdown",
-    "source": "Health Promotion Agency, The impact of lockdown on health risk behaviours",
-    "plot_function": "get_unstacked_horizontal_bar",
-    "international": false,
-    "source_url":"https://www.hpa.org.nz/research-library/research-publications/the-impact-of-lockdown-on-health-risk-behaviours (Wave 1)",
-    "download": true,
-    "groups": [
-        {
-            "name": "Overall",
-            "units": "%",
-            "title": "Percentage of respondents who drank more, less or the same amount since level 4 lockdown*",
-            "caveats": "<p>Wave 2 reserach by HPA can be accessed here:<a href= \"https://www.hpa.org.nz/research-library/research-publications/post-lockdown-survey-the-impact-on-health-risk-behaviours\">post-lockdown survey - the impact on health risk behaviors</a>. Data collected for wave 1 between 7-13 April 2020 (which corresponded with Alert Level 4 lockdown days 13 – 19). Data collected for wave 2 between 10-19 June 2020 (which corresponded with Alert Level 1 days 2 – 11). </p><p> For new respondents in wave 2 – At any time in the last 2 weeks </p><p>This survey uses an opt-in online panel sample, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population. </p>"
-        }
-    ]
-  },
-   {
-   "class": "Social",
-   "type": "General wellbeing",
-    "indicator_name": "Worry about own drinking",
-    "source": "Health Promotion Agency, The impact of lockdown on health risk behaviours",
-    "plot_function": "get_unstacked_horizontal_bar",
-    "international": false,
-    "source_url":"https://www.hpa.org.nz/research-library/research-publications/the-impact-of-lockdown-on-health-risk-behaviours (Wave 1)",
-    "download": true,
-    "groups": [
-        {
-            "name": "Overall",
-            "units": "%",
-            "title": ": Percentage of respondents who have started to worry about their own drinking since level 4 lockdown",
-            "caveats": "<p>Wave 2 reserach by HPA can be accessed here: <a href= \"https://www.hpa.org.nz/research-library/research-publications/post-lockdown-survey-the-impact-on-health-risk-behaviours\">post-lockdown survey - the impact on health risk behaviors</a>. Data collected for wave 1 between 7-13 April 2020 (which corresponded with Alert Level 4 lockdown days 13 – 19). Data collected for wave 2 between 10-19 June 2020 (which corresponded with Alert Level 1 days 2 – 11). </p><p> For new respondents in wave 2 – At any time in the last 2 weeks </p><p>This survey uses an opt-in online panel sample, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population. </p>"
-        }
-    ]
   }
-
-
 
 
 ]
