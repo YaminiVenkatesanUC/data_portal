@@ -10,6 +10,7 @@
     "default_lower_range": "2017-02-01",
     "source_url": "https://www.stats.govt.nz/methods/about-new-employment-indicator-series",
     "download": true,
+    "frequency":"Monthly",
     "visible": ["15 - 19", "20 - 24", "25 - 29", "30 - 34", "35 - 39", "40 - 44", "45 - 49", "50 - 54", "55 - 59", "60 - 64"],
     "groups": [
      {
@@ -99,7 +100,7 @@
       }
     ]
   },
-    {
+  {
     "class": "Economic",
     "indicator_name": "Monthly filled jobs (by gender)",
     "type": "Employment",
@@ -110,6 +111,7 @@
     "default_lower_range": "2017-02-01",
     "source_url": "https://www.stats.govt.nz/methods/about-new-employment-indicator-series",
     "download": true,
+    "frequency":"Monthly",
     "groups": [
      {
         "name": "Total NZ",
@@ -209,6 +211,7 @@
     "default_lower_range": "2017-02-01",
     "source_url": "https://www.stats.govt.nz/methods/about-new-employment-indicator-series",
     "download": true,
+    "frequency":"Monthly",
     "groups": [
       {
         "name": "Northland",
@@ -303,6 +306,7 @@
     "default_lower_range": "2017-02-01",
     "source_url": "https://www.stats.govt.nz/methods/about-new-employment-indicator-series",
     "download": true,
+    "frequency":"Monthly",
     "groups": [
       {
         "name": "Agriculture, Forestry and Fishing",
@@ -412,6 +416,7 @@
     "default_lower_range": "2017-02-01",
     "source_url": "https://www.stats.govt.nz/information-releases/employment-indicators-january-2021",
     "download": true,
+    "frequency":"Monthly",
     "groups": [
       {
         "name": "All industries (actual)",
@@ -466,6 +471,7 @@
     "international": false,
     "source_url":"https://www.stats.govt.nz/information-releases/employment-indicators-january-2021",
     "download": true,
+    "frequency":"Monthly",
     "groups": [
         {
             "name": "All industries (actual)",
@@ -522,6 +528,7 @@
     "default_lower_range": "2019-01-01",
     "source_url":"https://www.anz.co.nz/about-us/economic-markets-research/consumer-confidence/",
     "download": false,
+    "frequency":"Monthly",
     "groups": [
         {
             "name": "Consumer confidence index",
@@ -575,6 +582,7 @@
     "international": false,
     "source_url":"https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation/covid-19-current-cases",
     "download": true,
+    "frequency":"Daily",
     "groups": [
         {
             "name": "Source",
@@ -595,6 +603,7 @@
     "default_lower_range": "2020-02-29",
     "show_zero": true,
     "download": true,
+    "frequency":"Daily",
     "groups": [
         {
             "name": "undefined_name",
@@ -614,6 +623,7 @@
     "include_date_slider": false,
     "source_url":"https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation/covid-19-current-cases",
     "download": true,
+    "frequency":"Daily",
     "groups": [
         {
             "name": "Status of cases",
@@ -622,7 +632,6 @@
         }
     ]
   },
-
   {
     "class": "Health",
     "indicator_name": "Case demographics",
@@ -633,6 +642,7 @@
     "include_date_slider": false,
     "source_url": "https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation/covid-19-current-cases",
     "download": true,
+    "frequency":"Daily",
     "groups": [
       {
         "name": "Cases by gender",
@@ -663,6 +673,7 @@
     "caveats":"Note: March 2021 data is provisional.",
     "source_url": "https://www.anz.co.nz/about-us/economic-markets-research/business-outlook/",
     "download": false,
+    "frequency":"Fortnightly",
     "groups": [
       {
         "name": "undefined_name",
@@ -682,6 +693,7 @@
     "default_lower_range": "2017-03-01",
     "source_url": "https://www.businessnz.org.nz/resources/surveys-and-statistics/pmi",
     "download": true,
+    "frequency":"Monthly",
     "groups": [
       {
         "name": "Performance of manufacturing (overall index)",
@@ -727,6 +739,7 @@
     "caveats":"Note: March 2021 data is provisional.",
     "source_url": "https://www.anz.co.nz/about-us/economic-markets-research/business-outlook/",
     "download": false,
+    "frequency":"Fortnightly",
     "groups": [
       {
         "name": "undefined_name",
@@ -746,6 +759,7 @@
     "default_lower_range": "2019-07-01",
     "source_url": "https://www.gdeltproject.org/",
     "download": true,
+    "frequency":"Weekly",
     "caveats" : "<p>Please note - there are progressively more missing files in the source GDELT data set from August 2020. This is contributing to volatility in this measure and may lead to significant revisions if the missing files become available.</p>",
     "groups": [
       {
@@ -766,6 +780,7 @@
     "default_lower_range": "2017-01-01",
     "source_url": "https://www.dcanz.com/about-the-nz-dairy-industry/",
     "download": true,
+    "frequency":"Monthly",
     "groups": [
       {
         "name": "undefined_name",
@@ -785,6 +800,7 @@
     "default_lower_range": "2017-01-01",
     "source_url": "https://www.stats.govt.nz/information-releases/electronic-card-transactions-february-2021",
     "download": true,
+    "frequency":"Monthly",
     "groups": [
       {
         "name": "Spend (actual)",
@@ -813,6 +829,7 @@
     "include_date_slider": true,
     "default_lower_range": "2019-01-01",
     "download": true,
+    "frequency":"Daily",
     "caveats": "Daily arrivals and departures data are based solely on border-crossings into and out of New Zealand, and do not incorporate arrival card information. These data are provisional and subject to revision during the full process of producing international travel statistics.",
     "groups": [
        {
@@ -842,6 +859,7 @@
     "include_date_slider": true,
     "default_lower_range": "2019-01-01",
     "download": true,
+    "frequency":"Daily",
     "caveats": "Daily arrivals and departures data are based solely on border-crossings into and out of New Zealand, and do not incorporate arrival card information. These data are provisional and subject to revision during the full process of producing international travel statistics.",
     "groups": [
       {
@@ -872,6 +890,7 @@
     "include_date_slider": true,
     "source_url": "https://www.stats.govt.nz/information-releases/electronic-card-transactions-february-2021",
     "download": true,
+    "frequency":"Montly",
     "groups": [
       {
         "name": "Retail (actual)",
@@ -916,6 +935,7 @@
     "default_lower_range": "2017-01-01",
     "source_url": "https://www.asb.co.nz/documents/economic-research/commodities-weekly.html",
     "download": true,
+    "frequency":"Weekly",
     "groups": [
       {
         "name": "undefined_name",
