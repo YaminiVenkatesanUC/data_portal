@@ -1,5 +1,5 @@
 [
-   {
+  {
   "class": "Economic",
   "indicator_name": "Fuel supply volumes",
   "type": "Activity",
@@ -5380,8 +5380,9 @@
     "date_added":"25/08/2020",
       "date_dropped":null
    },
-{
-    "class": "Contextual",
+
+   {
+    "class": "Economic",
     "type": "Business",
     "indicator_name": "Number of employees by region",
     "parameter_col": 1,
@@ -5451,8 +5452,9 @@
     "date_added":"04/09/2020",
     "date_dropped":null
   },
-{
-    "class": "Contextual",
+
+  {
+    "class": "Economic",
     "type": "Business",
     "indicator_name": "Number of businesses by region",
     "parameter_col": 1,
@@ -8179,8 +8181,10 @@
     "date_added":"29/10/2020",
     "date_dropped":null
   },
-  {
-    "class":"Economic",
+
+   {
+
+    "class":"Environmental",
     "type":"Greenhouse gas emissions (GHG)",
     "indicator_name":"All industries & households (total) – Quarterly",
     "order_parameter":true,
@@ -8201,7 +8205,8 @@
     "date_dropped":null
   },
   {
-    "class":"Economic",
+
+    "class":"Environmental",
     "type":"Greenhouse gas emissions (GHG)",
     "indicator_name":"Industry - Quarterly",
     "order_parameter":true,
@@ -8236,7 +8241,8 @@
     "date_dropped":null
   },
   {
-    "class":"Economic",
+
+    "class":"Environmental",
     "type":"Greenhouse gas emissions (GHG)",
     "indicator_name":"Total households – Quarterly",
     "order_parameter":true,
@@ -8256,8 +8262,10 @@
     "date_added":"26/02/2021",
     "date_dropped":null
   },
-  {
-    "class":"Economic",
+
+    {
+
+    "class":"Environmental",
     "type":"Greenhouse gas emissions (GHG)",
     "indicator_name":"Broad industry group - Quarterly",
     "order_parameter":true,
@@ -8759,7 +8767,7 @@
       "date_dropped":null
     },
      {
-      "class":"Contextual",
+      "class":"Economic",
       "type":"Business",
       "indicator_name":"Enterprise counts",
       "parameter_col":1,
@@ -8785,4 +8793,5 @@
       "date_added":"08/03/2021",
       "date_dropped":null
     }
+
 ]

@@ -1236,6 +1236,7 @@ read_MBIE_rental <- function(config, directory) {
   ))
 }
 
+
 load_functions <- list(
   read_from_csv = read_from_csv,
   read_from_excel = read_from_excel,
