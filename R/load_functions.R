@@ -1236,6 +1236,54 @@ read_MBIE_rental <- function(config, directory) {
   ))
 }
 
+read_hpa_drinking_data <- function(config,directory) {
+
+  data <-
+    read_excel(
+      "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/Raw data/Development/210310 HPA request selected tables Impact of COVID-19.xlsx",
+      sheet = 2,
+      col_names = paste0("col_",1:10),
+      range = cell_limits(c(29,2),c(38,11)),
+      .name_repair = "minimal"
+    )
+  data <- as.data.frame(t(data))
+  data <- data[colSums(!is.na(data)) > 0]
+
+  data <- data[-2,]
+
+  names(data) <- c("Age","Wave","Total","Less than you usually did before lockdown","About the same as you usually did before lockdown","More than you usually did before lockdown")
+
+  data <- data[-1,] %>% select(-Total)
+
+  data <- as.data.frame(data %>% pivot_longer(cols = 3:ncol(data),names_to = "Parameter"),stringAsFactors = FALSE)
+
+  data <- as.data.frame(data %>% pivot_wider(names_from = Wave,values_from = value))
+
+  data$`Wave 1` <- as.numeric(as.character(data$`Wave 1`))
+
+  data$`Wave 2` <- as.numeric(as.character(data$`Wave 2`))
+
+
+  output_group <- list()
+  update_date <- as.Date(file.info(paste0(directory, config$filename))$mtime, tz = "NZ")
+
+
+  for (val in unique(data$Age)) {
+    data_group <- data %>%
+      filter(
+        Age == val
+      ) %>%
+      select(-Age)
+    #group_name <- val
+    print(head(data_group))
+    #output_group[[group_name]] <- BarChart$new(data_group, group_name, update_date)
+  }
+
+  return(output_group)
+
+
+}
+
 load_functions <- list(
   read_from_csv = read_from_csv,
   read_from_excel = read_from_excel,
@@ -1262,5 +1310,6 @@ load_functions <- list(
   get_john_hopkins_data = get_john_hopkins_data,
   read_managed_isolotion_data = read_managed_isolotion_data,
   read_hlfs_data = read_hlfs_data,
-  read_MBIE_rental = read_MBIE_rental
+  read_MBIE_rental = read_MBIE_rental,
+  read_hpa_drinking_data = read_hpa_drinking_data
 )

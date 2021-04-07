@@ -7678,7 +7678,7 @@
    {
    "class": "Social",
    "type": "General wellbeing",
-    "indicator_name": "Drinking since lockdown",
+    "indicator_name": "Drinking since lockdown - by age",
     "source": "Health Promotion Agency, The impact of lockdown on health risk behaviours",
     "plot_function": "get_unstacked_horizontal_bar",
     "international": false,
@@ -7687,6 +7687,24 @@
     "groups": [
         {
             "name": "18-24",
+            "units": "%",
+            "title": "Percentage of respondents who drank more, less or the same amount since level 4 lockdown*, by Age Group",
+            "caveats": "<p>Wave 2 reserach by HPA can be accessed here:<a href= \"https://www.hpa.org.nz/research-library/research-publications/post-lockdown-survey-the-impact-on-health-risk-behaviours\">post-lockdown survey - the impact on health risk behaviors</a>. Data collected for wave 1 between 7-13 April 2020 (which corresponded with Alert Level 4 lockdown days 13 – 19). Data collected for wave 2 between 10-19 June 2020 (which corresponded with Alert Level 1 days 2 – 11). </p><p> For new respondents in wave 2 – At any time in the last 2 weeks </p><p>This survey uses an opt-in online panel sample, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population. </p>"
+        },
+         {
+            "name": "25-49",
+            "units": "%",
+            "title": "Percentage of respondents who drank more, less or the same amount since level 4 lockdown*, by Age Group",
+            "caveats": "<p>Wave 2 reserach by HPA can be accessed here:<a href= \"https://www.hpa.org.nz/research-library/research-publications/post-lockdown-survey-the-impact-on-health-risk-behaviours\">post-lockdown survey - the impact on health risk behaviors</a>. Data collected for wave 1 between 7-13 April 2020 (which corresponded with Alert Level 4 lockdown days 13 – 19). Data collected for wave 2 between 10-19 June 2020 (which corresponded with Alert Level 1 days 2 – 11). </p><p> For new respondents in wave 2 – At any time in the last 2 weeks </p><p>This survey uses an opt-in online panel sample, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population. </p>"
+        },
+         {
+            "name": "50-65",
+            "units": "%",
+            "title": "Percentage of respondents who drank more, less or the same amount since level 4 lockdown*, by Age Group",
+            "caveats": "<p>Wave 2 reserach by HPA can be accessed here:<a href= \"https://www.hpa.org.nz/research-library/research-publications/post-lockdown-survey-the-impact-on-health-risk-behaviours\">post-lockdown survey - the impact on health risk behaviors</a>. Data collected for wave 1 between 7-13 April 2020 (which corresponded with Alert Level 4 lockdown days 13 – 19). Data collected for wave 2 between 10-19 June 2020 (which corresponded with Alert Level 1 days 2 – 11). </p><p> For new respondents in wave 2 – At any time in the last 2 weeks </p><p>This survey uses an opt-in online panel sample, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population. </p>"
+        },
+         {
+            "name": "65+",
             "units": "%",
             "title": "Percentage of respondents who drank more, less or the same amount since level 4 lockdown*, by Age Group",
             "caveats": "<p>Wave 2 reserach by HPA can be accessed here:<a href= \"https://www.hpa.org.nz/research-library/research-publications/post-lockdown-survey-the-impact-on-health-risk-behaviours\">post-lockdown survey - the impact on health risk behaviors</a>. Data collected for wave 1 between 7-13 April 2020 (which corresponded with Alert Level 4 lockdown days 13 – 19). Data collected for wave 2 between 10-19 June 2020 (which corresponded with Alert Level 1 days 2 – 11). </p><p> For new respondents in wave 2 – At any time in the last 2 weeks </p><p>This survey uses an opt-in online panel sample, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population. </p>"
