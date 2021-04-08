@@ -7384,14 +7384,14 @@
 {
     "class":"Environmental",
     "type":"Greenhouse gas emissions (GHG)",
-    "indicator_name":"Industry - Quarterly",
+    "indicator_name":"Industry – Quarterly",
     "plot_function":"get_time_series_plot",
     "download":true,
     "include_date_slider": true,
-    "source":"Stats NZ, System of Environmental-Economic Accounting",
+    "source":"Stats NZ, System of Environmental – Economic Accounting",
     "frequency":"Quarterly",
     "source_url":"https://www.stats.govt.nz/news/transport-drives-down-total-greenhouse-gas-emissions-in-2020",
-    "caveats":"<p><ol><li>CO₂-e is carbon dioxide equivalent.</li><li>This experimental production-based emissions data is done within the System of Environmental-Economic Accounting (SEEA) framework</li><li>Production of greenhouse gases by Australian and New Zealand Standard Industrial Classification 2006 (ANZSIC06), and households are on a residence basis. The national accounts' residence principle means that emissions by resident economic units are included even if these occur outside the territory (for example, resident airlines and shipping companies operating in the rest of the world).</li><li>Industry and household emissions are based on the range of direct emissions produced by an industry or household which can span Greenhouse Gas Inventory sectors.</li><li>Emissions are expressed in carbon dioxide equivalents, which are the emissions of greenhouse gases weighted by their 100-year global warming potential (GWP). The GWPs are based on those from the Intergovernmental Panel on Climate Change, Fourth Assessment Report, 2007.</li><li>Seasonally adjusted emissions values are not additive.</li><ol></p>",
+    "caveats":"<p><ol><li>CO₂-e is carbon dioxide equivalent.</li><li>This experimental production-based emissions data is done within the System of Environmental – Economic Accounting (SEEA) framework</li><li>Production of greenhouse gases by Australian and New Zealand Standard Industrial Classification 2006 (ANZSIC06), and households are on a residence basis. The national accounts' residence principle means that emissions by resident economic units are included even if these occur outside the territory (for example, resident airlines and shipping companies operating in the rest of the world).</li><li>Industry and household emissions are based on the range of direct emissions produced by an industry or household which can span Greenhouse Gas Inventory sectors.</li><li>Emissions are expressed in carbon dioxide equivalents, which are the emissions of greenhouse gases weighted by their 100-year global warming potential (GWP). The GWPs are based on those from the Intergovernmental Panel on Climate Change, Fourth Assessment Report, 2007.</li><li>Seasonally adjusted emissions values are not additive.</li><ol></p>",
     "measure":"This is a measure of the GHG emissions produced by various industry groups in NZ, shown in Kilotonnes of carbon dioxide equivalent",
     "international":false,
     "agency":"Stats NZ",
@@ -7399,49 +7399,49 @@
         {
         "name":"Total all industries",
         "units":"Kilotonnes (CO₂-e)",
-        "title":"NZ GHG emissions from total all industries, seasonally adjusted – provisional",
+        "title":"New Zealand GHG emissions from total all industries, seasonally adjusted – provisional",
         "x_axis_label":"Quarters"
       },
        {
         "name":"Agriculture, forestry and fishing",
         "units":"Kilotonnes (CO₂-e)",
-        "title":"NZ GHG emissions from agriculture, forestry, and fishing, seasonally adjusted - provisional",
+        "title":"New Zealand GHG emissions from agriculture, forestry, and fishing, seasonally adjusted - provisional",
         "x_axis_label":"Quarters"
       },
       {
         "name":"Mining",
         "units":"Kilotonnes (CO₂-e)",
-        "title":"NZ GHG emissions from mining, seasonally adjusted - provisional",
+        "title":"New Zealand GHG emissions from mining, seasonally adjusted - provisional",
         "x_axis_label":"Quarters"
       },
       {
         "name":"Manufacturing",
         "units":"Kilotonnes (CO₂-e)",
-        "title":"NZ GHG emissions from manufacturing, seasonally adjusted - provisional",
+        "title":"New Zealand GHG emissions from manufacturing, seasonally adjusted - provisional",
         "x_axis_label":"Quarters"
       },
       {
         "name":"Electricity, gas, water, and waste services",
         "units":"Kilotonnes (CO₂-e)",
-        "title":"NZ GHG emissions from electricity, gas, water, and waste services, seasonally adjusted - provisional",
+        "title":"New Zealand GHG emissions from electricity, gas, water, and waste services, seasonally adjusted - provisional",
         "x_axis_label":"Quarters"
       },
       {
         "name":"Construction",
         "units":"Kilotonnes (CO₂-e)",
-        "title":"NZ GHG emissions from construction, seasonally adjusted - provisional",
+        "title":"New Zealand GHG emissions from construction, seasonally adjusted - provisional",
         "x_axis_label":"Quarters"
       },
       {
         "name":"Services excluding transport, postal, and warehousing",
         "units":"Kilotonnes (CO₂-e)",
-        "title":"NZ GHG emissions from services excluding transport, postal, and warehousing, seasonally adjusted - provisional",
+        "title":"New Zealand GHG emissions from services excluding transport, postal, and warehousing, seasonally adjusted - provisional",
         "x_axis_label":"Quarters"
       },
       {
         "name":"Transport, postal, and warehousing",
         "units":"Kilotonnes (CO₂-e)",
-        "title":"NZ GHG emissions from transport, postal, and warehousing, seasonally adjusted - provisional",
+        "title":"New Zealand GHG emissions from transport, postal, and warehousing, seasonally adjusted - provisional",
         "x_axis_label":"Quarters"
       }
       ]
@@ -7453,11 +7453,11 @@
     "indicator_name":"Total households – Quarterly",
     "plot_function":"get_time_series_plot",
     "download":true,
-    "source":"Stats NZ, System of Environmental-Economic Accounting",
+    "source":"Stats NZ, System of Environmental – Economic Accounting",
     "include_date_slider": true,
     "frequency":"Quarterly",
     "source_url":"https://www.stats.govt.nz/news/transport-drives-down-total-greenhouse-gas-emissions-in-2020",
-    "caveats":"<p><ol><li>CO₂-e is carbon dioxide equivalent.</li><li>This experimental production-based emissions data is done within the System of Environmental-Economic Accounting (SEEA) framework.</li><li>Production of greenhouse gases by Australian and New Zealand Standard Industrial Classification 2006 (ANZSIC06), and households are on a residence basis. The national accounts' residence principle means that emissions by resident economic units are included even if these occur outside the territory (for example, resident airlines and shipping companies operating in the rest of the world).</li><li>Industry and household emissions are based on the range of direct emissions produced by an industry or household which can span Greenhouse Gas Inventory sectors.</li><li>Emissions are expressed in carbon dioxide equivalents, which are the emissions of greenhouse gases weighted by their 100-year global warming potential (GWP). The GWPs are based on those from the Intergovernmental Panel on Climate Change, Fourth Assessment Report, 2007.</li><li>Seasonally adjusted emissions values are not additive.</li><ol></p>",
+    "caveats":"<p><ol><li>CO₂-e is carbon dioxide equivalent.</li><li>This experimental production-based emissions data is done within the System of Environmental – Economic Accounting (SEEA) framework.</li><li>Production of greenhouse gases by Australian and New Zealand Standard Industrial Classification 2006 (ANZSIC06), and households are on a residence basis. The national accounts' residence principle means that emissions by resident economic units are included even if these occur outside the territory (for example, resident airlines and shipping companies operating in the rest of the world).</li><li>Industry and household emissions are based on the range of direct emissions produced by an industry or household which can span Greenhouse Gas Inventory sectors.</li><li>Emissions are expressed in carbon dioxide equivalents, which are the emissions of greenhouse gases weighted by their 100-year global warming potential (GWP). The GWPs are based on those from the Intergovernmental Panel on Climate Change, Fourth Assessment Report, 2007.</li><li>Seasonally adjusted emissions values are not additive.</li><ol></p>",
     "measure":null,
     "international":false,
     "agency":"Stats NZ",
@@ -7465,7 +7465,7 @@
         {
         "name":"undefined_name",
         "units":"Kilotonnes (CO₂-e)",
-        "title":"NZ GHG emissions from households, seasonally adjusted – provisional",
+        "title":"New Zealand GHG emissions from households, seasonally adjusted – provisional",
         "x_axis_label":"Quarters"
       }
       ]
@@ -7474,11 +7474,11 @@
 {
     "class":"Environmental",
     "type":"Greenhouse gas emissions (GHG)",
-    "indicator_name":"Broad industry group - Quarterly",
+    "indicator_name":"Broad industry group – Quarterly",
     "plot_function":"get_time_series_plot",
     "download":true,
     "include_date_slider": true,
-    "source":"Stats NZ, System of Environmental-Economic Accounting",
+    "source":"Stats NZ, System of Environmental – Economic Accounting",
     "frequency":"Quarterly",
     "source_url":"https://www.stats.govt.nz/news/transport-drives-down-total-greenhouse-gas-emissions-in-2020",
     "caveats":"<p><ol><li>CO₂-e is carbon dioxide equivalent.</li><li>This experimental production-based emissions data is done within the System of Environmental-Economic Accounting (SEEA) framework.</li><li>Production of greenhouse gases by Australian and New Zealand Standard Industrial Classification 2006 (ANZSIC06), and households are on a residence basis. The national accounts' residence principle means that emissions by resident economic units are included even if these occur outside the territory (for example, resident airlines and shipping companies operating in the rest of the world).</li><li>Industry and household emissions are based on the range of direct emissions produced by an industry or household which can span Greenhouse Gas Inventory sectors.</li><li>Emissions are expressed in carbon dioxide equivalents, which are the emissions of greenhouse gases weighted by their 100-year global warming potential (GWP). The GWPs are based on those from the Intergovernmental Panel on Climate Change, Fourth Assessment Report, 2007.</li><li>Seasonally adjusted emissions values are not additive.</li><ol></p>",
@@ -7489,19 +7489,19 @@
       {
         "name":"Primary industries",
         "units":"Kilotonnes (CO₂-e)",
-        "title":"NZ GHG emissions from primary industries, seasonally adjusted - provisional",
+        "title":"New Zealand GHG emissions from primary industries, seasonally adjusted - provisional",
         "x_axis_label":"Quarters"
       },
        {
         "name":"Goods-producing industries",
         "units":"Kilotonnes (CO₂-e)",
-        "title":"NZ GHG Emissions from goods-producing industries, seasonally adjusted - provisional",
+        "title":"New Zealand GHG emissions from goods-producing industries, seasonally adjusted - provisional",
         "x_axis_label":"Quarters"
       },
        {
         "name":"Service industries",
         "units":"Kilotonnes (CO₂-e)",
-        "title":"NZ GHG emissions from service industries, seasonally adjusted - provisional",
+        "title":"New Zealand GHG emissions from service industries, seasonally adjusted - provisional",
         "x_axis_label":"Quarters"
       }
       ]
@@ -7513,17 +7513,17 @@
     "plot_function":"get_time_series_plot",
     "download":true,
     "include_date_slider": true,
-    "source":"Stats NZ, System of Environmental-Economic Accounting",
+    "source":"Stats NZ, System of Environmental – Economic Accounting",
     "frequency":"Quarterly",
     "source_url":"https://www.stats.govt.nz/news/transport-drives-down-total-greenhouse-gas-emissions-in-2020",
-    "caveats":"<p><ol><li>CO₂-e is carbon dioxide equivalent.</li><li>This experimental production-based emissions data is done within the System of Environmental-Economic Accounting (SEEA) framework.</li><li>Production of greenhouse gases by Australian and New Zealand Standard Industrial Classification 2006 (ANZSIC06), and households are on a residence basis. The national accounts' residence principle means that emissions by resident economic units are included even if these occur outside the territory (for example, resident airlines and shipping companies operating in the rest of the world).</li><li>Industry and household emissions are based on the range of direct emissions produced by an industry or household which can span Greenhouse Gas Inventory sectors.</li><li>Emissions are expressed in carbon dioxide equivalents, which are the emissions of greenhouse gases weighted by their 100-year global warming potential (GWP). The GWPs are based on those from the Intergovernmental Panel on Climate Change, Fourth Assessment Report, 2007.</li><li>Seasonally adjusted emissions values are not additive.</li><ol></p>",
+    "caveats":"<p><ol><li>CO₂-e is carbon dioxide equivalent.</li><li>This experimental production-based emissions data is done within the System of Environmental – Economic Accounting (SEEA) framework.</li><li>Production of greenhouse gases by Australian and New Zealand Standard Industrial Classification 2006 (ANZSIC06), and households are on a residence basis. The national accounts' residence principle means that emissions by resident economic units are included even if these occur outside the territory (for example, resident airlines and shipping companies operating in the rest of the world).</li><li>Industry and household emissions are based on the range of direct emissions produced by an industry or household which can span Greenhouse Gas Inventory sectors.</li><li>Emissions are expressed in carbon dioxide equivalents, which are the emissions of greenhouse gases weighted by their 100-year global warming potential (GWP). The GWPs are based on those from the Intergovernmental Panel on Climate Change, Fourth Assessment Report, 2007.</li><li>Seasonally adjusted emissions values are not additive.</li><ol></p>",
     "measure":null,
     "international":false,
     "agency":"Stats NZ",
     "groups":[
         {
         "name": "undefined_name",
-        "title": "NZ Total emissions all industries & households, seasonally adjusted – provisional",
+        "title": "New Zealand's total emissions all industries & households, seasonally adjusted – provisional",
         "units": "Kilotonnes (CO₂-e)",
         "x_axis_label": "Quarters"
       }

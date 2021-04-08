@@ -8208,7 +8208,7 @@
 
     "class":"Environmental",
     "type":"Greenhouse gas emissions (GHG)",
-    "indicator_name":"Industry - Quarterly",
+    "indicator_name":"Industry – Quarterly",
     "order_parameter":true,
     "skip":null,
     "parameter_col":1,
@@ -8267,7 +8267,7 @@
 
     "class":"Environmental",
     "type":"Greenhouse gas emissions (GHG)",
-    "indicator_name":"Broad industry group - Quarterly",
+    "indicator_name":"Broad industry group – Quarterly",
     "order_parameter":true,
     "skip":null,
     "parameter_col":1,
