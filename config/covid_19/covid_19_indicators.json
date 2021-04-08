@@ -954,6 +954,7 @@
     "include_date_slider": true,
     "source_url": "https://www.rbnz.govt.nz/statistics/b1",
     "download": true,
+    "frequency":"Daily",
     "groups": [
       {
         "name": "New Zealand trade weighted index ",
@@ -972,6 +973,7 @@
     "include_date_slider": true,
     "source_url": "https://www.nzx.com/markets/indices",
     "download": false,
+    "frequency":"Daily",
     "groups": [
       {
         "name": "NZX - all index",
@@ -990,6 +992,7 @@
     "include_date_slider": true,
     "source_url": "https://www.rbnz.govt.nz/statistics/b2",
     "download": true,
+    "frequency":"Daily",
     "groups": [
       {
         "name": "New Zealand bank bill yields - 90-days",
@@ -1008,6 +1011,7 @@
     "include_date_slider": true,
     "source_url": "https://www.rbnz.govt.nz/statistics/b1",
     "download": true,
+    "frequency":"Daily",
     "groups": [
       {
         "name": "NZD/USD",
@@ -1027,6 +1031,7 @@
     "default_lower_range": "2020-01-01",
     "source_url": "https://www.emi.ea.govt.nz/",
     "download": false,
+    "frequency":"Daily",
     "groups": [
       {
         "name": "New Zealand",
@@ -1078,6 +1083,7 @@
     "plot_function": "get_time_series_plot",
     "international": true,
     "download": false,
+    "frequency":"Monthly",
     "groups": [
       {
         "name": "undefined_name",
@@ -1096,6 +1102,7 @@
     "include_date_slider": true,
     "source_url": "https://www.dol.gov/",
     "download": true,
+    "frequency":"Weekly",
     "groups": [
       {
         "name": "US jobless claims (initial)",
@@ -1115,6 +1122,7 @@
     "include_date_slider": true,
     "source_url": "https://www.newyorkfed.org/research/policy/weekly-economic-index",
     "download": false,
+    "frequency":"Weekly",
     "groups": [
       {
         "name": "US weekly economic index",
@@ -1131,6 +1139,7 @@
     "plot_function": "get_time_series_plot",
     "international": true,
     "download": false,
+    "frequency":"Monthly",
     "groups": [
       {
         "name": "Sentiment index",
@@ -1148,6 +1157,7 @@
     "international": true,
     "include_date_slider": true,
     "download": false,
+    "frequency":"Weekly",
     "groups": [
       {
         "name": "Crude oil",
@@ -1175,6 +1185,7 @@
     "international": true,
     "include_date_slider": true,
     "download": false,
+    "frequency":"Weekly",
     "groups": [
       {
         "name": "Australia All Ordinaries",
@@ -1202,6 +1213,7 @@
     "international": true,
     "include_date_slider": true,
     "download": false,
+    "frequency":"Weekly",
     "groups": [
       {
         "name": "Market volatility index",
@@ -1219,6 +1231,7 @@
     "international": true,
     "include_date_slider": true,
     "download": false,
+    "frequency":"Weekly",
     "groups": [
       {
         "name": "Baltic dry index",
@@ -1235,6 +1248,7 @@
     "plot_function": "get_time_series_plot",
     "international": true,
     "download": false,
+    "frequency":"Weekly",
     "groups": [
       {
         "name": "Global dairy trade price index",
@@ -1251,6 +1265,7 @@
     "plot_function": "get_time_series_plot",
     "international": true,
     "download": false,
+    "frequency":"Weekly",s
     "groups": [
       {
         "name": "undefined_name",
@@ -1267,6 +1282,7 @@
     "plot_function": "get_time_series_plot",
     "international": true,
     "download": false,
+    "frequency":"Weekly",
     "groups": [
       {
         "name": "undefined_name",
@@ -1284,6 +1300,7 @@
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
+    "frequency":"Weekly",
     "groups": [
       {
         "name": "Accommodation supplement",
@@ -1301,6 +1318,7 @@
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
+    "frequency":"Weekly",
     "groups": [
       {
         "name": "Special needs grants for food",
@@ -1318,6 +1336,7 @@
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
+    "frequency":"Weekly",
     "groups": [
       {
         "name": "Temporary additional support and special benefit",
@@ -1335,6 +1354,7 @@
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
+    "frequency":"Weekly",
     "groups": [
       {
         "name": "All special needs grants",
@@ -1343,7 +1363,6 @@
       }
     ]
   },
-
   {
     "class": "Income support",
     "indicator_name":  "Emergency housing grants",
@@ -1353,6 +1372,7 @@
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
+    "frequency":"Weekly",
     "groups": [
       {
         "name":  "undefined_name",
@@ -1370,6 +1390,7 @@
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
+    "frequency":"Weekly",
     "groups": [
       {
         "name": "Auckland metro",
@@ -1438,7 +1459,6 @@
       }
     ]
   },
-
   {
     "class": "Health",
     "indicator_name": "Number of cases",
@@ -1447,6 +1467,7 @@
     "plot_function": "get_stacked_bar_chart",
     "international": false,
     "download": true,
+    "frequency":"Daily",
     "groups": [
       {
         "name": "New Zealand",
@@ -1454,8 +1475,7 @@
         "units": "Number",
         "source_url": "https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation/covid-19-current-cases"
       }]
-  }
-      ,
+  },
   {
     "class": "Health",
     "indicator_name": "Number of cases (other countries)",
@@ -1464,6 +1484,7 @@
     "plot_function": "get_stacked_bar_chart",
     "international": false,
     "download": true,
+    "frequency":"Daily",
     "groups": [
 
       {
@@ -1599,6 +1620,7 @@
     "international": false,
     "source_url": "https://www.anz.co.nz/about-us/economic-markets-research/truckometer/",
     "download": false,
+    "frequency":"Monthly",
     "groups": [
       {
         "name": "Heavy traffic index",
@@ -1622,6 +1644,7 @@
     "include_date_slider": true,
     "source_url": "https://www.nzta.govt.nz/about-us/coronavirus-disease-covid-19-services-update/weekly-traffic-count-information/",
     "download": true,
+    "frequency":"Weekly",
     "groups": [
       {
         "name": "Auckland",
@@ -1660,6 +1683,7 @@
     "include_date_slider": true,
     "source_url": "https://corporate.aucklandairport.co.nz/news/publications/monthly-traffic-updates",
     "download": true,
+    "frequency":"Monthly",
     "groups": [
       {
         "name": "International MCTOW",
@@ -1682,6 +1706,7 @@
     "international": false,
     "include_date_slider": true,
     "download": true,
+    "frequency":"Monthly",
     "groups": [
       {
         "name": "Export FOB - Auckland",
@@ -1733,6 +1758,7 @@
     "plot_function": "get_time_series_plot",
     "international": true,
     "download": false,
+    "frequency":"Weekly",
     "groups": [
       {
         "name": "undefined_name",
@@ -1751,6 +1777,7 @@
     "include_date_slider": false,
     "source_url": "https://www.flightradar24.com/data/statistics",
     "download": false,
+    "frequency":"Daily",
     "groups": [
       {
         "name": "undefined_name",
@@ -1767,6 +1794,7 @@
     "international": false,
     "include_date_slider": true,
     "download": true,
+    "frequency":"Monthly",
     "groups": [
         {
             "name": "Domestic aircraft - Auckland",
@@ -1807,6 +1835,7 @@
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
+    "frequency":"Weekly",
     "groups": [
         {
             "name": "Total",
@@ -1914,6 +1943,7 @@
     "international": false,
     "source_url": "https://www.retail.kiwi/advice/benchmarking-data",
     "download": true,
+    "frequency":"Monthly",
     "groups": [
       {
         "name": "undefined_name",
@@ -1930,6 +1960,7 @@
     "plot_function": "get_stacked_time_series_plot",
     "international": false,
     "download": true,
+    "frequency":"Weekly",
     "description": "For metadata and details on methodology used to produce these statistics see <a href=\"http://datainfoplus.stats.govt.nz/Item/nz.govt.stats/6ed114da-3571-40d4-a89f-932068a4c753?_ga=2.27617916.1122878806.1587330040-1991109144.1583875067#/nz.govt.stats/6c3485b0-4330-4bd7-b10f-7e9f4580797c/7\" target=\"_blank\">DataInfo+</a>.",
     "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-at-31-march-2021-provisional",
     "groups": [
@@ -1985,6 +2016,7 @@
     "plot_function": "get_stacked_time_series_plot",
     "international": false,
     "download": true,
+    "frequency":"Weekly",
     "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-at-31-march-2021-provisional",
     "description": "For metadata and details on methodology used to produce these statistics see <a href=\"http://datainfoplus.stats.govt.nz/Item/nz.govt.stats/6ed114da-3571-40d4-a89f-932068a4c753?_ga=2.27617916.1122878806.1587330040-1991109144.1583875067#/nz.govt.stats/6c3485b0-4330-4bd7-b10f-7e9f4580797c/7\" target=\"_blank\">DataInfo+</a>.",
     "groups": [
@@ -2022,6 +2054,7 @@
     "plot_function": "get_stacked_time_series_plot",
     "international": false,
     "download": true,
+    "frequency":"Weekly",
     "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-at-31-march-2021-provisional",
     "description": "For metadata and details on methodology used to produce these statistics see <a href=\"http://datainfoplus.stats.govt.nz/Item/nz.govt.stats/6ed114da-3571-40d4-a89f-932068a4c753?_ga=2.27617916.1122878806.1587330040-1991109144.1583875067#/nz.govt.stats/6c3485b0-4330-4bd7-b10f-7e9f4580797c/7\" target=\"_blank\">DataInfo+</a>.",
     "groups": [
@@ -2072,6 +2105,7 @@
     "plot_function": "get_stacked_time_series_plot",
     "international": false,
     "download": true,
+    "frequency":"Weekly",
     "description": "For metadata and details on methodology used to produce these statistics see <a href=\"http://datainfoplus.stats.govt.nz/Item/nz.govt.stats/6ed114da-3571-40d4-a89f-932068a4c753?_ga=2.27617916.1122878806.1587330040-1991109144.1583875067#/nz.govt.stats/6c3485b0-4330-4bd7-b10f-7e9f4580797c/7\" target=\"_blank\">DataInfo+</a>.",
     "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-at-31-march-2021-provisional",
     "groups": [
@@ -2105,6 +2139,7 @@
     "include_date_slider": true,
     "default_lower_range": "2020-02-01",
     "download": true,
+    "frequency":"Weekly",
     "caveats": "<p>(1) Weekly deaths data are based on Date of Death and differ from other deaths statistics based on date of registration. These data are provisional and subject to revision during the full process of producing death statistics.</p><p>(2) Totals are by Date of Death. Week ending Sunday.</p><p>(3) Weekly totals will differ from those in the death registrations time series as deaths are registered at the time of burial or cremation of the body. </p><p>(4) An average of 5% of Deaths are registered 2 weeks or more after Date of Death therefore weekly totals are expected to increase over time as Death Registrations are submitted and processed.</p><p>(5) Overseas addresses or where location could not be determined and records where the persons sex is missing or not in Male or Female have been excluded as these numbers are too low to publish a weekly total. </p><p>(6) The accuracy of any administrative data, which includes but is not limited to address information is subject to human error.</p><p>(7) The data provided has been collated to the best of our ability and may have a small variance to any alternative publications.</p>",
     "groups": [
         {
@@ -2144,6 +2179,7 @@
     "include_date_slider": true,
     "default_lower_range": "2020-02-01",
     "download": true,
+    "frequency":"Weekly",
     "caveats": "<p>(1) Weekly deaths data are based on Date of Death and differ from other deaths statistics based on date of registration. These data are provisional and subject to revision during the full process of producing death statistics.</p><p>(2) Totals are by Date of Death. Week ending Sunday.</p><p>(3) Weekly totals will differ from those in the death registrations time series as deaths are registered at the time of burial or cremation of the body. </p><p>(4) An average of 5% of Deaths are registered 2 weeks or more after Date of Death therefore weekly totals are expected to increase over time as Death Registrations are submitted and processed.</p><p>(5) Overseas addresses or where location could not be determined and records where the persons sex is missing or not in Male or Female have been excluded as these numbers are too low to publish a weekly total. </p><p>(6) The accuracy of any administrative data, which includes but is not limited to address information is subject to human error.</p><p>(7) The data provided has been collated to the best of our ability and may have a small variance to any alternative publications.</p>",
     "groups": [
       {
@@ -2201,7 +2237,6 @@
       }
     ]
   },
-
   {
     "class": "Health",
     "indicator_name": "By age",
@@ -2212,6 +2247,7 @@
     "include_date_slider": true,
     "default_lower_range": "2020-02-01",
     "download": true,
+    "frequency":"Weekly",
     "caveats": "<p>(1) Weekly deaths data are based on Date of Death and differ from other deaths statistics based on date of registration. These data are provisional and subject to revision during the full process of producing death statistics.</p><p>(2) Totals are by Date of Death. Week ending Sunday.</p><p>(3) Weekly totals will differ from those in the death registrations time series as deaths are registered at the time of burial or cremation of the body. </p><p>(4) An average of 5% of Deaths are registered 2 weeks or more after Date of Death therefore weekly totals are expected to increase over time as Death Registrations are submitted and processed.</p><p>(5) Overseas addresses or where location could not be determined and records where the persons sex is missing or not in Male or Female have been excluded as these numbers are too low to publish a weekly total. </p><p>(6) The accuracy of any administrative data, which includes but is not limited to address information is subject to human error.</p><p>(7) The data provided has been collated to the best of our ability and may have a small variance to any alternative publications.</p>",
     "groups": [
       {
@@ -2250,6 +2286,7 @@
     "international": false,
     "source_url": "https://www.flightradar24.com/data/statistics",
     "download": false,
+    "frequency":"Daily",
     "groups": [
       {
         "name": "Auckland Airport",
@@ -2287,6 +2324,7 @@
     "international": false,
     "include_date_slider": true,
     "download": true,
+    "frequency":"Monthly",
     "groups": [
       {
         "name": "Export FOB (Auckland)",
@@ -2424,6 +2462,7 @@
     "default_lower_range": "2019-01-30",
     "source_url": "https://www.seek.co.nz/about/news/august-employment-report",
     "download": false,
+    "frequency":"Monthly",
     "groups": [
       {
         "name": "Index",
@@ -2445,6 +2484,7 @@
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
+    "frequency":"Monthly",
     "groups":[
        {
         "name": "Auckland Metro",
@@ -2519,6 +2559,7 @@
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
+    "frequency":"Monthly",
     "groups":[
        {
         "name": "Auckland Metro",
@@ -2592,6 +2633,7 @@
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
+    "frequency":"Monthly",
     "groups":[
        {
         "name": "Auckland Metro",
@@ -2657,7 +2699,6 @@
     ]
 
   },
-
   {
   "class": "Income support",
     "indicator_name": "Jobseeker support by MSD region - NZ European",
@@ -2667,6 +2708,7 @@
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
+    "frequency":"Monthly",
     "groups":[
        {
         "name": "Auckland Metro",
@@ -2741,6 +2783,7 @@
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
+    "frequency":"Monthly",
     "groups":[
       {
         "name": "Total - work ready",
@@ -2780,6 +2823,7 @@
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
+    "frequency":"Monthly",
     "groups":[
        {
         "name": "Auckland Metro",
@@ -2854,6 +2898,7 @@
     "international": false,
     "source_url":"https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation/covid-19-current-cases",
     "download": true,
+    "frequency":"Daily",
     "groups": [
         {
             "name": "Tests by day",
@@ -2876,6 +2921,7 @@
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
+    "frequency":"Monthly",
     "groups":[
        {
         "name": "Ashburton District",
