@@ -1238,45 +1238,32 @@ read_MBIE_rental <- function(config, directory) {
 
 read_hpa_drinking_data <- function(config,directory) {
 
-  data <-
-    read_excel(
-      "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/Raw data/Development/210310 HPA request selected tables Impact of COVID-19.xlsx",
-      sheet = 2,
-      col_names = paste0("col_",1:10),
-      range = cell_limits(c(29,2),c(38,11)),
-      .name_repair = "minimal"
-    )
-  data <- as.data.frame(t(data))
-  data <- data[colSums(!is.na(data)) > 0]
+  if (!is.null(config$parameter_transform)) {
+    parameter_transform <- eval(parse(text = config$parameter_transform))
+  }
+  skip <- 0
+  if (!is.null(config$skip)) {
+    skip <- config$skip
+  }
+  data <- as.data.frame(read_excel(paste0(directory, config$filename))) %>%
+    select(Parameter,config$series,unlist(config$value_names))
 
-  data <- data[-2,]
-
-  names(data) <- c("Age","Wave","Total","Less than you usually did before lockdown","About the same as you usually did before lockdown","More than you usually did before lockdown")
-
-  data <- data[-1,] %>% select(-Total)
-
-  data <- as.data.frame(data %>% pivot_longer(cols = 3:ncol(data),names_to = "Parameter"),stringAsFactors = FALSE)
-
-  data <- as.data.frame(data %>% pivot_wider(names_from = Wave,values_from = value))
-
-  data$`Wave 1` <- as.numeric(as.character(data$`Wave 1`))
-
-  data$`Wave 2` <- as.numeric(as.character(data$`Wave 2`))
-
+  names(data)[[2]] <- "series"
 
   output_group <- list()
   update_date <- as.Date(file.info(paste0(directory, config$filename))$mtime, tz = "NZ")
 
+  print(head(data))
 
-  for (val in unique(data$Age)) {
+  for (val in unique(data$series)) {
     data_group <- data %>%
       filter(
-        Age == val
+        series == val
       ) %>%
-      select(-Age)
-    #group_name <- val
-    print(head(data_group))
-    #output_group[[group_name]] <- BarChart$new(data_group, group_name, update_date)
+      select(-series)
+    group_name <- val
+
+    output_group[[group_name]] <- BarChart$new(data_group, names(data_group)[2:3], update_date)
   }
 
   return(output_group)
