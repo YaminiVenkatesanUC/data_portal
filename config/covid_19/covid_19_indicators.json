@@ -1265,7 +1265,7 @@
     "plot_function": "get_time_series_plot",
     "international": true,
     "download": false,
-    "frequency":"Weekly",s
+    "frequency":"Weekly",
     "groups": [
       {
         "name": "undefined_name",
@@ -3260,8 +3260,6 @@
         "title": "Jobseeker support by territorial authority - Unknown/Other*",
         "units": "Number"
       }
-
-
     ]
 
   },
@@ -3274,23 +3272,18 @@
   "international": false,
   "caveats": "Note: Data specific to the 'Total loan amount disbursed' chart differs from that featured prior to July 9.",
   "download": true,
+  "frequency":"Fortnightly",
   "groups":[
       {
       "name": "Total loan amount disbursed",
       "title": "Total loan amount disbursed (cumulative)",
       "units": "$"
     },
-
-
     {
       "name": "Total loan applications received (cumulative)",
       "title": "Total loan applications received (cumulative)",
       "units": "Number"
     }
-
-
-
-
     ]
 },
 {
@@ -3304,6 +3297,7 @@
     "caveats":"<p>1) Individual figures may not sum to the totals due to rounding.</p><p>2) Percentage changes are calculated on unrounded numbers.</p>",
     "source_url": "https://www.rbnz.govt.nz/statistics",
     "download": true,
+    "frequency":"Monthly",
     "groups": [
       {
         "name": "undefined_name",
@@ -3323,6 +3317,7 @@
     "caveats":"<p>1) Individual figures may not sum to the totals due to rounding.</p><p>2) Percentage changes are calculated on unrounded numbers.</p>",
     "source_url": "https://www.rbnz.govt.nz/statistics",
     "download": true,
+    "frequency":"Monthly",
     "groups": [
       {
         "name": "undefined_name",
@@ -3342,6 +3337,7 @@
     "caveats":"<p>1) Individual figures may not sum to the totals due to rounding.</p><p>2) Percentage changes are calculated on unrounded numbers.</p>",
     "source_url": "https://www.rbnz.govt.nz/statistics",
     "download": true,
+    "frequency":"Monthly",
     "groups": [
       {
         "name": "undefined_name",
@@ -3361,6 +3357,7 @@
     "caveats":"<p>1) Individual figures may not sum to the totals due to rounding.</p><p>2) Percentage changes are calculated on unrounded numbers.</p>",
     "source_url": "https://www.rbnz.govt.nz/statistics",
     "download": true,
+    "frequency":"Monthly",
     "groups": [
       {
         "name": "undefined_name",
@@ -3379,6 +3376,7 @@
     "include_date_slider": true,
     "source_url": "https://www.rbnz.govt.nz/statistics",
     "download": true,
+    "frequency":"Monthly",
     "caveats":"<p>1) Individual figures may not sum to the totals due to rounding</p><p>2) Percentage changes are calculated on unrounded numbers.</p>",
     "groups": [
       {
@@ -3396,9 +3394,9 @@
     "plot_function": "get_time_series_plot",
     "international": false,
     "include_date_slider": true,
-
     "source_url": "https://www.rbnz.govt.nz/statistics",
     "download": true,
+    "frequency":"Monthly",
     "caveats":"<p>1) Individual figures may not sum to the totals due to rounding.</p><p>2) Percentage changes are calculated on unrounded numbers.</p>",
     "groups": [
       {
@@ -3416,9 +3414,9 @@
     "plot_function": "get_time_series_plot",
     "international": false,
     "include_date_slider": true,
-
     "source_url": "https://www.rbnz.govt.nz/statistics",
     "download": true,
+    "frequency":"Monthly",
     "caveats":"<p>1) Individual figures may not sum to the totals due to rounding.</p><p>2) Percentage changes are calculated on unrounded numbers.</p><p>",
     "groups": [
       {
@@ -3439,6 +3437,7 @@
     "caveats":"<p>1) Individual figures may not sum to the totals due to rounding.</p><p>2) Percentage changes are calculated on unrounded numbers.</p>",
     "source_url": "https://www.rbnz.govt.nz/statistics",
     "download": true,
+    "frequency":"Monthly",
     "groups": [
       {
         "name": "undefined_name",
@@ -3456,9 +3455,9 @@
     "international": false,
     "include_date_slider": true,
     "default_lower_range":"2019-09-01",
-
     "source_url": "https://www.firstgas.co.nz",
     "download": false,
+    "frequency":"Fortnightly",
      "caveats":"<p>1) Please note that these charts are Stats NZ's interpretation of publicly available data specific to several large gas users as sourced from First Gas.</p><p>2) It is not designed to be a comprehensive representation of all gas use in New Zealand, nor is all data publicly available due to some gas being transported through private pipelines.</p><p>3) Gas consumption patterns are inclusive of planned and unplanned production outages.</p>",
     "groups": [
       {
@@ -3491,7 +3490,6 @@
         "title": "Daily gas consumption - Te Rapa cogeneration plant",
         "units": "Gigajoules"
       }
-
     ]
 },
 {
@@ -3503,13 +3501,11 @@
     "international": false,
     "include_date_slider": true,
     "default_lower_range":"2019-09-01",
-
     "source_url": "https://www.firstgas.co.nz",
     "download": false,
+    "frequency":"Fortnightly",
     "caveats":"<p>1) Please note that these charts are Stats NZ's interpretation of publicly available data specific to several large gas users as sourced from First Gas.</p><p>2) It is not designed to be a comprehensive representation of all gas use in New Zealand, nor is all data publicly available due to some gas being transported through private pipelines.</p><p>3) Gas consumption patterns are inclusive of planned and unplanned production outages.</p>",
     "groups": [
-
-
       {
         "name": "Ballance Agri-Nutrients",
         "title": "Daily gas consumption - Ballance Agri-Nutrients",
@@ -3535,8 +3531,6 @@
         "title": "Daily gas consumption - Marsden Point oil refinery",
         "units": "Gigajoules"
       }
-
-
     ]
 },
 {
@@ -3548,12 +3542,10 @@
     "international": false,
     "include_date_slider": true,
     "default_lower_range":"2018-01-01",
-
     "source_url": "https://www.mbie.govt.nz/building-and-energy/tenancy-and-housing/rental-bond-data/",
     "download": true,
+    "frequency":"Monthly",
     "groups": [
-
-
       {
         "name": "National",
         "title": "Active bonds - National",
@@ -3568,80 +3560,77 @@
         "name": "Bay of Plenty",
         "title": "Active bonds by region - Bay of Plenty",
         "units": "$"
-      }
-      ,
+      },
        {
         "name": "Canterbury",
         "title": "Active bonds by region - Canterbury",
         "units": "$"
-      }
-      ,
+      },
        {
         "name": "Gisborne",
         "title": "Active bonds by region - Gisborne",
         "units": "$"
-      } ,
+      },
        {
         "name": "Hawke's Bay",
         "title": "Active bonds by region - Hawke's Bay",
         "units": "$"
-      } ,
+      },
        {
         "name": "Manawatū-Whanganui",
         "title": "Active bonds by region - Manawatū-Whanganui",
         "units": "$"
-      } ,
+      },
        {
         "name": "Marlborough",
         "title": "Active bonds by region - Marlborough",
         "units": "$"
-      } ,
+      },
        {
         "name": "Nelson",
         "title": "Active bonds by region - Nelson",
         "units": "$"
-      } ,
+      },
        {
         "name": "Northland",
         "title": "Active bonds by region - Northland",
         "units": "$"
-      } ,
+      },
        {
         "name": "Otago",
         "title": "Active bonds by region - Otago",
         "units": "$"
-      } ,
+      },
        {
         "name": "Southland",
         "title": "Active bonds by region - Southland",
         "units": "$"
-      } ,
+      },
        {
         "name": "Taranaki",
         "title": "Active bonds by region - Taranaki",
         "units": "$"
-      } ,
+      },
        {
         "name": "Tasman",
         "title": "Active bonds by region - Tasman",
         "units": "$"
-      } ,
+      },
        {
         "name": "Waikato",
         "title": "Active bonds by region - Waikato",
         "units": "$"
-      } ,
+      },
        {
         "name": "Wellington",
         "title": "Active bonds by region - Wellington",
         "units": "$"
-      } ,
+      },
        {
         "name": "West Coast",
         "title": "Active bonds by region - West Coast",
         "units": "$"
       }
-
     ]
 },
 {
@@ -3653,12 +3642,10 @@
     "international": false,
     "include_date_slider": true,
     "default_lower_range":"2018-01-01",
-
     "source_url": "https://www.mbie.govt.nz/building-and-energy/tenancy-and-housing/rental-bond-data/",
     "download": true,
+    "frequency":"Monthly",
     "groups": [
-
-
       {
         "name": "National",
         "title": "Closed bonds - National",
@@ -3673,80 +3660,77 @@
         "name": "Bay of Plenty",
         "title": "Closed bonds by region - Bay of Plenty",
         "units": "$"
-      }
-      ,
+      },
        {
         "name": "Canterbury",
         "title": "Closed bonds by region - Canterbury",
         "units": "$"
-      }
-      ,
+      },
        {
         "name": "Gisborne",
         "title": "Closed bonds by region - Gisborne",
         "units": "$"
-      } ,
+      },
        {
         "name": "Hawke's Bay",
         "title": "Closed bonds by region - Hawke's Bay",
         "units": "$"
-      } ,
+      },
        {
         "name": "Manawatū-Whanganui",
         "title": "Closed bonds by region - Manawatū-Whanganui",
         "units": "$"
-      } ,
+      },
        {
         "name": "Marlborough",
         "title": "Closed bonds by region - Marlborough",
         "units": "$"
-      } ,
+      },
        {
         "name": "Nelson",
         "title": "Closed bonds by region - Nelson",
         "units": "$"
-      } ,
+      },
        {
         "name": "Northland",
         "title": "Closed bonds by region - Northland",
         "units": "$"
-      } ,
+      },
        {
         "name": "Otago",
         "title": "Closed bonds by region - Otago",
         "units": "$"
-      } ,
+      },
        {
         "name": "Southland",
         "title": "Closed bonds by region - Southland",
         "units": "$"
-      } ,
+      },
        {
         "name": "Taranaki",
         "title": "Closed bonds by region - Taranaki",
         "units": "$"
-      } ,
+      },
        {
         "name": "Tasman",
         "title": "Closed bonds by region - Tasman",
         "units": "$"
-      } ,
+      },
        {
         "name": "Waikato",
         "title": "Closed bonds by region - Waikato",
         "units": "$"
-      } ,
+      },
        {
         "name": "Wellington",
         "title": "Closed bonds by region - Wellington",
         "units": "$"
-      } ,
+      },
        {
         "name": "West Coast",
         "title": "Closed bonds by region - West Coast",
         "units": "$"
       }
-
     ]
 },
 {
@@ -3758,12 +3742,10 @@
     "international": false,
     "include_date_slider": true,
     "default_lower_range":"2018-01-01",
-
     "source_url": "https://www.mbie.govt.nz/building-and-energy/tenancy-and-housing/rental-bond-data/",
     "download": true,
+    "frequency":"Monthly",
     "groups": [
-
-
       {
         "name": "National",
         "title": "Lodged bonds - National",
@@ -3778,80 +3760,77 @@
         "name": "Bay of Plenty",
         "title": "Lodged bonds by region - Bay of Plenty",
         "units": "$"
-      }
-      ,
+      },
        {
         "name": "Canterbury",
         "title": "Lodged bonds by region - Canterbury",
         "units": "$"
-      }
-      ,
+      },
        {
         "name": "Gisborne",
         "title": "Lodged bonds by region - Gisborne",
         "units": "$"
-      } ,
+      },
        {
         "name": "Hawke's Bay",
         "title": "Lodged bonds by region - Hawke's Bay",
         "units": "$"
-      } ,
+      },
        {
         "name": "Manawatū-Whanganui",
         "title": "Lodged bonds by region - Manawatū-Whanganui",
         "units": "$"
-      } ,
+      },
        {
         "name": "Marlborough",
         "title": "Lodged bonds by region - Marlborough",
         "units": "$"
-      } ,
+      },
        {
         "name": "Nelson",
         "title": "Lodged bonds by region - Nelson",
         "units": "$"
-      } ,
+      },
        {
         "name": "Northland",
         "title": "Lodged bonds by region - Northland",
         "units": "$"
-      } ,
+      },
        {
         "name": "Otago",
         "title": "Lodged bonds by region - Otago",
         "units": "$"
-      } ,
+      },
        {
         "name": "Southland",
         "title": "Lodged bonds by region - Southland",
         "units": "$"
-      } ,
+      },
        {
         "name": "Taranaki",
         "title": "Lodged bonds by region - Taranaki",
         "units": "$"
-      } ,
+      },
        {
         "name": "Tasman",
         "title": "Lodged bonds by region - Tasman",
         "units": "$"
-      } ,
+      },
        {
         "name": "Waikato",
         "title": "Lodged bonds by region - Waikato",
         "units": "$"
-      } ,
+      },
        {
         "name": "Wellington",
         "title": "Lodged bonds by region - Wellington",
         "units": "$"
-      } ,
+      },
        {
         "name": "West Coast",
         "title": "Lodged bonds by region - West Coast",
         "units": "$"
       }
-
     ]
 },
 {
@@ -3863,12 +3842,10 @@
     "international": false,
     "include_date_slider": true,
     "default_lower_range":"2018-01-01",
-
     "source_url": "https://www.mbie.govt.nz/building-and-energy/tenancy-and-housing/rental-bond-data/",
     "download": true,
+    "frequency":"Monthly",
     "groups": [
-
-
       {
         "name": "National",
         "title": "Weekly mean rent - National",
@@ -3883,64 +3860,62 @@
         "name": "Bay of Plenty",
         "title": "Weekly mean rent - Bay of Plenty",
         "units": "$"
-      }
-      ,
+      },
        {
         "name": "Canterbury",
         "title": "Weekly mean rent - Canterbury",
         "units": "$"
-      }
-      ,
+      },
        {
         "name": "Gisborne",
         "title": "Weekly mean rent - Gisborne",
         "units": "$"
-      } ,
+      },
        {
         "name": "Hawke's Bay",
         "title": "Weekly mean rent - Hawke's Bay",
         "units": "$"
-      } ,
+      },
        {
         "name": "Manawatū-Whanganui",
         "title": "Weekly mean rent - Manawatū-Whanganui",
         "units": "$"
-      } ,
+      },
        {
         "name": "Marlborough",
         "title": "Weekly mean rent - Marlborough",
         "units": "$"
-      } ,
+      },
        {
         "name": "Nelson",
         "title": "Weekly mean rent - Nelson",
         "units": "$"
-      } ,
+      },
        {
         "name": "Northland",
         "title": "Weekly mean rent - Northland",
         "units": "$"
-      } ,
+      },
        {
         "name": "Otago",
         "title": "Weekly mean rent - Otago",
         "units": "$"
-      } ,
+      },
        {
         "name": "Southland",
         "title": "Weekly mean rent - Southland",
         "units": "$"
-      } ,
+      },
        {
         "name": "Taranaki",
         "title": "Weekly mean rent - Taranaki",
         "units": "$"
-      } ,
+      },
        {
         "name": "Tasman",
         "title": "Weekly mean rent - Tasman",
         "units": "$"
-      } ,
+      },
        {
         "name": "Waikato",
         "title": "Weekly mean rent - Waikato",
@@ -3956,7 +3931,6 @@
         "title": "Weekly mean rent - West Coast",
         "units": "$"
       }
-
     ]
 },
 {
@@ -3969,7 +3943,7 @@
     "include_date_slider": true,
     "source_url": "https://www.stats.govt.nz/publications?filters=Employment%20indicators%2CInformation%20releases",
     "download": true,
-
+    "frequency":"Weekly",
     "groups": [
       {
         "name": "Total",
@@ -3992,7 +3966,6 @@
 
     ]
 },
-
   {
     "class": "Health",
     "indicator_name": "Quarantine and managed isolation figures",
@@ -4004,6 +3977,7 @@
     "include_date_slider": false,
     "source_url":"https://www.mbie.govt.nz/business-and-employment/economic-development/covid-19-data-resources/managed-isolation-and-quarantine-data/",
     "download": true,
+    "frequency":"Daily",
     "groups": [
         {
             "name": "Occupancy",
@@ -4034,6 +4008,7 @@
     "disabled": false,
     "include_date_slider": true,
     "download": true,
+    "frequency":"Monthly",
     "source_url": "https://treasury.govt.nz/publications/research-and-commentary/new-zealand-activity-index",
     "caveats":"<p> 1) Card transaction spend -  A modified version of this series has been utilised in the compilation of the NZAC.</p><p> 2) Electricity grid demand – Based on the reconciled demand series sourced from the Electricity Authority.<p/><p> 3) New jobs posted online - A modified version of this series has been utilised in the compilation of the NZAC.</p>",
     "groups": [
@@ -4086,6 +4061,7 @@
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
+    "frequency":"Monthly",
     "groups": [
        {
         "name": "Total",
@@ -4179,8 +4155,7 @@
       }
 
     ]
-  }
-  ,
+  },
   {
     "class": "Income support",
     "indicator_name": "Jobseeker support by region - (monthly)",
@@ -4190,6 +4165,7 @@
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
+    "frequency":"Monthly",
     "groups": [
        {
         "name": "Total",
@@ -4283,8 +4259,7 @@
       }
 
     ]
-  }
-  ,
+  },
   {
     "class": "Income support",
     "indicator_name": "Jobseeker support by region - Maori",
@@ -4294,6 +4269,7 @@
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
+    "frequency":"Monthly",
     "groups": [
       {
         "name": "Total",
@@ -4387,8 +4363,7 @@
       }
 
     ]
-  }
-  ,
+  },
   {
     "class": "Income support",
     "indicator_name": "Jobseeker support by region - NZ European",
@@ -4398,6 +4373,7 @@
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
+    "frequency":"Monthly",
     "groups": [
       {
         "name": "Total",
@@ -4501,6 +4477,7 @@
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
+    "frequency":"Monthly",
     "groups": [
 
        {
@@ -4594,8 +4571,7 @@
         "units": "Number"
       }
     ]
-  }
-   ,
+  },
   {
     "class": "Income support",
     "indicator_name": "Jobseeker support by region - Other ethnicities",
@@ -4605,6 +4581,7 @@
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
+    "frequency":"Monthly",
     "groups": [
       {
         "name": "Total",
@@ -4699,8 +4676,6 @@
 
     ]
   },
-
-
 {
   "class": "Economic",
   "indicator_name": "Student visa",
@@ -4712,7 +4687,7 @@
   "default_lower_range": "2018-02-01",
   "source_url": "https://mbienz.shinyapps.io/migration_data_explorer/",
   "download": true,
-
+  "frequency":"Monthly",
   "groups": [
     {
       "name": "Total",
@@ -4739,8 +4714,7 @@
     }
 
     ]
-}
-,
+},
 {
   "class": "Economic",
   "indicator_name": "Work visa",
@@ -4752,7 +4726,7 @@
   "default_lower_range": "2018-02-01",
   "source_url": "https://mbienz.shinyapps.io/migration_data_explorer/",
   "download": true,
-
+  "frequency":"Monthly",
   "groups": [
      {
       "name": "Total",
@@ -4789,7 +4763,6 @@
 
     ]
 },
-
     {
     "class": "Economic",
     "indicator_name": "Daily border crossings (by port) - departures",
@@ -4800,6 +4773,7 @@
     "include_date_slider": true,
     "default_lower_range": "2019-01-01",
     "download": true,
+    "frequency":"Daily",
     "caveats": "Daily arrivals and departures data are based solely on border-crossings into and out of New Zealand, and do not incorporate arrival card information. These data are provisional and subject to revision during the full process of producing international travel statistics.",
     "groups": [
        {
@@ -4840,6 +4814,7 @@
     "include_date_slider": true,
     "default_lower_range": "2019-01-01",
     "download": true,
+    "frequency":"Daily",
     "caveats": "Daily arrivals and departures data are based solely on border-crossings into and out of New Zealand, and do not incorporate arrival card information. These data are provisional and subject to revision during the full process of producing international travel statistics.",
     "groups": [
        {
@@ -4869,8 +4844,7 @@
         "units": "Number"
       }
     ]
-  }
-  ,
+  },
   {
     "class": "Economic",
     "indicator_name": "Electricity grid demand by region",
@@ -4883,6 +4857,7 @@
     "source_url": "https://www.emi.ea.govt.nz/Wholesale/Reports/W_GD_C?DateFrom=20200326&DateTo=20200401&RegionType=POC&TimeScale=DAY&_rsdr=W1&_cw0=20200319&_si=_dr_DateFrom|20190814,_dr_DateTo|20200813,_dr_RegionType|POC,_dr_TimeScale|DAY,_dr__rsdr|L364D,v|4",
     "caveats":"<p>1) Please note that these charts feature Stats NZ's mapping and interpretation of publicly available data as sourced from the Electricity Authority to 15 Regional Councils.</p> <p> 2) In some limited instances, a node associated with a region based network can fall outside of the regional council geographic boundary to which it has been attributed to in these charts.</p>",
     "download": false,
+    "frequency":"Daily",
     "groups": [
       {
         "name": "Auckland",
@@ -4979,6 +4954,7 @@
   	"international": false,
   	"source_url":"https://www.justice.govt.nz/justice-sector-policy/research-data/covid-19-justice-sector-survey/",
   	"download": true,
+  	"frequency":"Ad-hoc",
   	"groups": [
   	   {
   		 "name": "undefined_name",
@@ -4998,6 +4974,7 @@
 	  "international": false,
 	  "source_url":"https://www.justice.govt.nz/justice-sector-policy/research-data/covid-19-justice-sector-survey/",
 	  "download": true,
+	  "frequency":"Ad-hoc",
 	  "groups": [
 		   {
 		    "name": "undefined_name",
@@ -5017,6 +4994,7 @@
 	  "international": false,
 	  "source_url":"https://www.justice.govt.nz/justice-sector-policy/research-data/covid-19-justice-sector-survey/",
 	  "download": true,
+	  "frequency":"Ad-hoc",
 	  "groups": [
 	     {
 		    "name": "undefined_name",
@@ -5038,6 +5016,7 @@
 	  "international": false,
 	  "source_url":"https://www.mbie.govt.nz/business-and-employment/employment-and-skills/labour-market-reports-data-and-analysis/jobs-online/",
 	  "download": true,
+	  "frequency":"Monthly",
 	  "groups": [
 	   	{
 		    "name": "undefined_name",
@@ -5057,6 +5036,7 @@
     "international": false,
     "source_url":"https://www.mbie.govt.nz/business-and-employment/employment-and-skills/labour-market-reports-data-and-analysis/jobs-online/",
     "download": true,
+    "frequency":"Monthly",
     "groups": [
        {
         "name": "Auckland",
@@ -5096,6 +5076,7 @@
     "international": false,
     "source_url":"https://www.mbie.govt.nz/business-and-employment/employment-and-skills/labour-market-reports-data-and-analysis/jobs-online/",
     "download": true,
+    "frequency":"Monthly",
     "groups": [
        {
         "name": "Accounting, HR, legal and admin",
@@ -5149,7 +5130,6 @@
       }
     ]
   },
-
 	{
     "class": "Income support",
     "indicator_name": "Number of recipients of CIRP",
@@ -5159,6 +5139,7 @@
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
+    "frequency":"Weekly",
     "caveats":"<p> *Number of grants include suspensions and cancellations</p><p> **Transfers to CIRP from Jobseeker Support are cumulative counts of people granted CIRP, who were recently in receipt (or a partner of a primary recipient) of Jobseeker Support.</p><p>*** The last CIRP payments were on the week ending 5 February 2021, this payment has now finished.</p>" ,
     "groups": [
       {
@@ -5168,8 +5149,6 @@
       }
     ]
   },
-
-
    {
     "class": "Income support",
     "indicator_name": "Number of recipients of CIRP by region",
@@ -5179,7 +5158,7 @@
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
-
+    "frequency":"Monthly",
     "groups": [
       {
         "name": "Total",
@@ -5272,7 +5251,7 @@
         "units": "Number"
       }
     ]
-  } ,
+  },
   {
     "class": "Income support",
     "indicator_name": "Amount of wage subsidy refunds received",
@@ -5283,6 +5262,7 @@
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
+    "frequency":"Weekly",
     "groups": [
       {
         "name": "undefined_name",
@@ -5290,8 +5270,7 @@
         "units": "$"
       }
     ]
-  }
-  ,
+  },
   {
     "class": "Income support",
     "indicator_name": "Number of jobs supported by the wage subsidy extension",
@@ -5301,6 +5280,7 @@
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
+    "frequency":"Weekly",
     "groups": [
       {
         "name": "undefined_name",
@@ -5308,8 +5288,7 @@
         "units": "Number"
       }
     ]
-  }
-  ,
+  },
   {
     "class": "Income support",
     "indicator_name": "Number of wage subsidy refunds received",
@@ -5319,6 +5298,7 @@
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
+    "frequency":"Weekly",
     "groups": [
       {
         "name": "undefined_name",
@@ -5326,8 +5306,7 @@
         "units": "Number"
       }
     ]
-  }
-  ,
+  },
   {
     "class": "Income support",
     "indicator_name": "Amount of wage subsidy extension paid",
@@ -5337,6 +5316,7 @@
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
+    "frequency":"Weekly",
     "groups": [
       {
         "name": "undefined_name",
@@ -5344,8 +5324,7 @@
         "units": "$"
       }
     ]
-  }
-  ,
+  },
   {
     "class": "Income support",
     "indicator_name": "Number of jobs associated with a paid application",
@@ -5355,6 +5334,7 @@
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
+    "frequency":"Weekly",
     "groups": [
       {
         "name": "undefined_name",
@@ -5363,8 +5343,6 @@
       }
     ]
   },
-
-
   {
     "class": "Income support",
     "indicator_name": "Jobseeker support",
@@ -5374,6 +5352,7 @@
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
+    "frequency":"Weekly",
     "groups": [
       {
         "name": "undefined_name",
@@ -5382,8 +5361,6 @@
       }
     ]
   },
-
-
    {
     "class": "Income support",
     "indicator_name": "Percentage of population",
@@ -5393,6 +5370,7 @@
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
+    "frequency":"Weekly",
     "groups": [
       {
         "name": "undefined_name",
@@ -5411,6 +5389,7 @@
     "caveats":"Note: As of March 2021, the number of applications includes the Leave Support, Essential Workers, Leave Payment, Wage Subsidies (original, extension, resurgence, March 2021), and the Short-Term Absence Payment Scheme.",
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
+    "frequency":"Weekly",
     "groups": [
       {
         "name": "undefined_name",
@@ -5428,6 +5407,7 @@
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
+    "frequency":"Weekly",
     "groups": [
       {
         "name": "undefined_name",
@@ -5445,6 +5425,7 @@
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
+    "frequency":"Weekly",
     "groups": [
       {
         "name": "undefined_name",
@@ -5453,7 +5434,6 @@
       }
     ]
   },
-
   {
     "class": "Income support",
     "indicator_name": "Income relief payment by gender",
@@ -5463,6 +5443,7 @@
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
+    "frequency":"Monthly",
     "groups": [
       {
         "name": "Total",
@@ -5486,7 +5467,6 @@
       }
     ]
   },
-
   {
     "class": "Income support",
     "indicator_name": "Income relief payment by relationship",
@@ -5496,6 +5476,7 @@
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
+    "frequency":"Monthly",
     "groups": [
       {
         "name": "Total",
@@ -5515,8 +5496,6 @@
 
     ]
   },
-
-
   {
     "class": "Income support",
    "indicator_name": "Number of jobs supported",
@@ -5526,6 +5505,7 @@
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
+    "frequency":"Weekly",
     "groups": [
       {
         "name": "Total",
@@ -5542,19 +5522,18 @@
         "title": "Number of jobs supported by the wage subsidy extension",
         "units": "Number"
       }
-
     ]
   },
-
   {
     "class": "Income support",
-     "indicator_name": "Resurgence wage subsidy",
+    "indicator_name": "Resurgence wage subsidy",
     "type": "Resurgence wage subsidy",
     "source": "Ministry of Social Development",
     "plot_function": "get_stacked_bar_chart",
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
+    "frequency":"Weekly",
     "groups": [
       {
         "name": "Amount of applications paid",
@@ -5567,10 +5546,8 @@
          "plot_function": "get_stacked_bar_chart",
         "units": "Number"
       }
-
     ]
   },
-
 	 {
     "class": "Income support",
     "indicator_name": "Income relief payment by ethnicity",
@@ -5580,6 +5557,7 @@
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
+    "frequency":"Monthly",
     "groups": [
       {
         "name": "Total",
@@ -5608,9 +5586,6 @@
       }
     ]
   },
-
-
-
   {
     "class": "Income support",
     "indicator_name": "Number of recipients of CIRP by age group",
@@ -5620,6 +5595,7 @@
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
+    "frequency":"Monthly",
     "groups": [
       {
         "name": "19 years and under",
@@ -5687,6 +5663,7 @@
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
+    "frequency":"Monthly",
 	"groups": [
 		{
 		 "name": "Total",
@@ -6039,6 +6016,7 @@
     "international": false,
     "source_url":"https://cffc.govt.nz/reviews-and-reports/research-and-reports/",
     "download": true,
+    "frequency":"Ad-hoc",
     "groups": [
         {
           "name": "undefined_name",
@@ -6057,6 +6035,7 @@
     "international": false,
     "source_url":"https://cffc.govt.nz/reviews-and-reports/research-and-reports/",
     "download": true,
+    "frequency":"Ad-hoc",
     "groups": [
         {
             "name": "undefined_name",
@@ -6075,6 +6054,7 @@
     "international": false,
     "source_url":"https://cffc.govt.nz/reviews-and-reports/research-and-reports/",
     "download": true,
+    "frequency":"Ad-hoc",
     "groups": [
         {
             "name": "undefined_name",
@@ -6093,6 +6073,7 @@
     "international": false,
     "source_url":"https://cffc.govt.nz/reviews-and-reports/research-and-reports/",
     "download": true,
+    "frequency":"Ad-hoc",
     "groups": [
         {
             "name": "undefined_name",
@@ -6111,6 +6092,7 @@
     "international": false,
     "source_url":"https://cffc.govt.nz/reviews-and-reports/research-and-reports/",
     "download": true,
+    "frequency":"Ad-hoc",
     "groups": [
         {
             "name": "undefined_name",
@@ -6129,6 +6111,7 @@
     "international": false,
     "source_url":"https://cffc.govt.nz/reviews-and-reports/research-and-reports/",
     "download": true,
+    "frequency":"Ad-hoc",
     "groups": [
         {
           "name": "undefined_name",
@@ -6147,6 +6130,7 @@
     "international": false,
     "source_url":"https://cffc.govt.nz/reviews-and-reports/research-and-reports/",
     "download": true,
+    "frequency":"Ad-hoc",
     "groups": [
         {
             "name": "undefined_name",
@@ -6155,8 +6139,7 @@
             "caveats": "<p> 1)* Includes self-employed income. <p></p> 2) Wave 1 data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3).  Wave 2 data collected between 30 September and 22 October 2020. </p><p> 3) This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population.  </p>"
         }
     ]
-  } ,
-
+  },
   {
     "class": "Economic",
     "indicator_name": "Broadband usage by region",
@@ -6167,6 +6150,7 @@
     "include_date_slider": true,
     "caveats":"<p> 1. Only includes traffic on the Chorus network (excludes traffic for other local fibre companies, cable and fixed wireless networks).</p><p> 2. Regional traffic is based on the location where the traffic is handed over to the service provider.</p><p> 3. The sum of regional totals may not exactly match the daily national usage.</p><p> 4. Tasman encompasses the Tasman, Nelson and Marlborough regions.</p><p> 5. In some date instances across regions, data will not feature due to collection issues.</p>",
     "download": true,
+    "frequency":"Weekly",
     "groups": [
 
       {
@@ -6261,6 +6245,7 @@
   	"source_url":"http://nzdotstat.stats.govt.nz/wbos/Index.aspx?DataSetCode=TABLECODE7602",
   	"caveats": "<p> 1) Industries classified in line with the Australian and New Zealand Standard Industrial Classification: <a href=\"http://archive.stats.govt.nz/methods/classifications-and-standards/classification-related-stats-standards/industrial-classification.aspx#gsc.tab=0\">Industrial classification</a>. </p> <p> 2) Employee count is a head count of all salary and wage earners.</p><p> 3) Due to rounding, individual figures may not always sum to the stated total(s). </p>",
   	"download": true,
+  	"frequency":"Annual",
   	"groups": [
   	   {
   		 "name": "Total New Zealand",
@@ -6358,6 +6343,7 @@
   	"international": false,
   	"source_url":"http://nzdotstat.stats.govt.nz/wbos/Index.aspx?DataSetCode=TABLECODE7602",
   	"download": true,
+  	"frequency":"Annual",
   	"caveats": "<p>1) Industries classified in line with the Australian and New Zealand Standard Industrial Classification: <a href=\"http://archive.stats.govt.nz/methods/classifications-and-standards/classification-related-stats-standards/industrial-classification.aspx#gsc.tab=0\">Industrial classification</a>.<br> </p><p> 2) Business unit: A separate operating unit engaged in New Zealand in one, or predominately one, kind of economic activity from a single physical location or base.</p><p> 3) Due to rounding, individual figures may not always sum to the stated total(s). </p>",
   	"groups": [
   	   {
@@ -6456,6 +6442,7 @@
     "international": false,
     "source_url": "https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-resources-and-tools/covid-19-health-and-wellbeing-survey",
     "download": true,
+    "frequency":"Ad-hoc",
     "groups": [
       {
         "name": "undefined_name",
@@ -6475,6 +6462,7 @@
     "international": false,
     "source_url": "https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-resources-and-tools/covid-19-health-and-wellbeing-survey",
     "download": true,
+    "frequency":"Ad-hoc",
     "groups": [
       {
         "name": "undefined_name",
@@ -6493,6 +6481,7 @@
     "international": false,
     "source_url": "https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-resources-and-tools/covid-19-health-and-wellbeing-survey",
     "download": true,
+    "frequency":"Ad-hoc",
     "groups": [
       {
         "name": "undefined_name",
@@ -6512,6 +6501,7 @@
     "international": false,
     "source_url": "https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-resources-and-tools/covid-19-health-and-wellbeing-survey",
     "download": true,
+    "frequency":"Ad-hoc",
     "groups": [
       {
         "name": "undefined_name",
@@ -6530,6 +6520,7 @@
     "international": false,
     "source_url": "https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-resources-and-tools/covid-19-health-and-wellbeing-survey",
     "download": true,
+    "frequency":"Ad-hoc",
     "groups": [
       {
         "name": "undefined_name",
@@ -6549,6 +6540,7 @@
     "international": false,
     "source_url": "https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-resources-and-tools/covid-19-health-and-wellbeing-survey",
     "download": true,
+    "frequency":"Ad-hoc",
     "groups": [
       {
         "name": "undefined_name",
@@ -6567,6 +6559,7 @@
     "international": false,
     "source_url": "https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-resources-and-tools/covid-19-health-and-wellbeing-survey",
     "download": true,
+    "frequency":"Ad-hoc",
     "groups": [
       {
         "name": "undefined_name",
@@ -6585,6 +6578,7 @@
     "international": false,
     "source_url": "https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-resources-and-tools/covid-19-health-and-wellbeing-survey",
     "download": true,
+    "frequency":"Ad-hoc",
     "groups": [
       {
         "name": "undefined_name",
@@ -6603,6 +6597,7 @@
     "international": false,
     "source_url": "https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-resources-and-tools/covid-19-health-and-wellbeing-survey",
     "download": true,
+    "frequency":"Ad-hoc",
     "groups": [
       {
         "name": "undefined_name",
@@ -6621,18 +6616,16 @@
     "international": false,
     "source_url": "https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-resources-and-tools/covid-19-health-and-wellbeing-survey",
     "download": true,
+    "frequency":"Ad-hoc",
     "groups": [
       {
         "name": "undefined_name",
         "title": "Respondents who said the statement \"I am worried about the health of my family members\" either strongly or somewhat applies to them right now - provisional",
         "units": "%",
         "caveats": "<p> 1) Insufficient data was collected for week ending August 9, 2020.</p> <p> 2) This survey samples people who have previously taken part in the New Zealand Health Survey and agreed to be contacted about future research. As a result, there could be bias associated with the respondents and thus the findings of this survey. </p> <p> 3) Data are for the week ended Sunday.  </p> <p> 4) Approximately 300 people (aged 15+ years) are interviewed each day. </p> <p> 5) There are some limitations to the sample used, such as small numbers of Asian and Pacific respondents. </p>"
-
-
       }
     ]
-	}
-	,
+	},
 {
   "class": "Economic",
   "indicator_name": "Weekly median earnings (34 days)",
@@ -6643,7 +6636,7 @@
   "include_date_slider": true,
   "source_url": "https://www.stats.govt.nz/publications?filters=Employment%20indicators%2CInformation%20releases",
   "download": true,
-
+  "frequency":"Weekly",
   "groups": [
     {
       "name": "Total",
@@ -6666,7 +6659,6 @@
 
     ]
 },
-
 {
     "class":"Social",
     "type":"General wellbeing",
@@ -6730,7 +6722,6 @@
 	   }
     ]
 },
-
 {
     "class":"Social",
     "type":"General wellbeing",
@@ -6793,7 +6784,6 @@
 	   }
     ]
 },
-
 {
     "class":"Social",
     "type":"Household finances",
@@ -6856,7 +6846,6 @@
 	   }
     ]
 },
-
 {
     "class":"Social",
     "type":"Personal finances",
@@ -6919,7 +6908,6 @@
 	   }
     ]
 },
-
 {
     "class":"Social",
     "type":"Life satisfaction",
@@ -7107,7 +7095,6 @@
 	   }
 	  ]
 },
-
 {
     "class":"Social",
     "type":"Trust",
@@ -7234,7 +7221,6 @@
 	   }
 	  ]
 },
-
 {
     "class":"Social",
     "type":"Trust",
@@ -7298,7 +7284,6 @@
 	   }
 	  ]
 },
-
 {
     "class":"Social",
     "type":"Crime and safety",
@@ -7362,7 +7347,6 @@
 	   }
 	  ]
 },
-
 {
     "class":"Social",
     "type":"Social connection",
@@ -7492,7 +7476,6 @@
       }
       ]
 },
-
 {
     "class":"Environmental",
     "type":"Greenhouse gas emissions (GHG)",
@@ -7516,7 +7499,6 @@
       }
       ]
 },
-
 {
     "class":"Environmental",
     "type":"Greenhouse gas emissions (GHG)",
@@ -7575,7 +7557,6 @@
       }
       ]
 },
-
   {
     "class": "Economic",
    "indicator_name": "New Zealand Regional Activity Indices (RAI)",
@@ -7586,6 +7567,7 @@
     "disabled": false,
     "include_date_slider": true,
     "download": true,
+    "frequency":"Monthly",
     "source_url": "http://www.treasury.govt.nz/publications/research-and-commentary/regional-activity-indices",
     "caveats":"<p> 1) The Regional Activity Index (RAI) represents year-on-year activity growth for that region. A positive reading means that many of the underlying input indicators are growing at above-average rates, and vice versa for a negative reading. For interpretation guidance see <a href=\" http://www.treasury.govt.nz/publications/rai/regional-activity-indices-rais-interpretation-guidance\" target=\"_blank\">RAI documentation</a>. </p><p> 2) All RAI components are presented in terms of annual percentage changes, standardised to have mean = 0 and standard deviation = 1. For technical details see  <a href=\"http://www.treasury.govt.nz/publications/rai/regional-activity-indices-rais-technical-note\" target=\"_blank\">RAI documentation</a>.</p><p> 3) As the benefit system has changed over time, the MSD jobseekers data contains modelled estimates of the number of claimants that would have been eligible under the current benefit system pre-2013.</p><p> 4) We reverse the sign of the RAI component for Jobseeker growth, so that these deviations move in the same direction as other economic variables (i.e. dips in a contraction). </p><p> 5) Consumer card spend is based on Paymark card expenditure.</p><p> 6) Electricity grid demand is sourced from the Electricity Authority's reconciled demand series. It has been allocated to each region using a concordance developed by Stats NZ.</p> ",
     "groups": [
@@ -7687,7 +7669,7 @@
     "international":false,
     "source_url":"https://www.salvationarmy.org.nz/article/sppu-covid-19-social-impact-dashboard-report-6",
     "download":true,
-    "frequency":"Weekly",
+    "frequency":"Ad-hoc",
     "caveats":"This data does not include food parcels distributed by any other charitable organisation such as city missions and is therefore not an indicator of all food parcel distribution.",
     "measure":"The total national weekly food parcel distribution by the Salvation Army since early March 2020 (therefore showing changes since before and after the key lockdown period).",
     "groups":[{
@@ -7731,6 +7713,4 @@
       }
     ]
   }
-
-
 ]
