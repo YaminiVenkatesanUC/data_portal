@@ -646,12 +646,12 @@
     "groups": [
       {
         "name": "Cases by gender",
-        "title": "Cases by gender",
+        "title": "Active cases by gender",
         "units": "Number"
       },
       {
         "name": "Cases by ethnicity",
-        "title": "Cases by ethnicity",
+        "title": "Active cases by ethnicity",
         "units": "Number"
       },
       {
