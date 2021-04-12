@@ -8486,7 +8486,7 @@
      {
       "class": "Social",
       "type": "General wellbeing",
-      "indicator_name": "Smoking behaviour since lockdown",
+      "indicator_name": "Smoking since lockdown",
       "parameter_col": 1,
       "skip": null,
       "order_parameter": false,
