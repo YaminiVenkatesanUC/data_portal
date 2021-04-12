@@ -1253,6 +1253,9 @@ read_hpa_drinking_data <- function(config,directory) {
   output_group <- list()
   update_date <- as.Date(file.info(paste0(directory, config$filename))$mtime, tz = "NZ")
 
+  data$series <- paste0("Age group ",gsub("-"," – ",data$series))
+
+
   for (val in unique(data$series)) {
     data_group <- data %>%
       filter(
