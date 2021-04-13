@@ -62,6 +62,12 @@ latest_views <- monthly_views$count[monthly_views$reporting_period == latest_rep
 previous_views <- monthly_views$count[monthly_views$reporting_period == latest_report_date %m-% months(1)]
 perc_change <- round(latest_views / previous_views * 100 - 100, 1)
 
+#Total number of downloads this month-------------------------------------------------
+#download Shiny app events 01-03-2020 to 31-03-2021 // Google analytics
+events <- read.csv("scripts/dev/reports/COVID-19 Data portal analytics_Stats NZ web page dashboard_events.csv")
+downloads <- events %>%
+  filter(Event.Category == "Data Downloaded")
+
 #Most visited indicators this month----------------------------------------------------
 #download Unique page views over time 01-03-2020 to 31-03-2021 // Google analytics
 #visualize as histogram +++ list???
@@ -84,5 +90,14 @@ not_visited <- definitions %>%
   filter(is.na(count)) %>%
   unique()
 
-
+#Data granularity---------------------------------------------------------------------
+series <- definitions %>%
+  select(indicator_name, group_names)
+series_vec <- c("region", "gender", "age", "ethnic", "sex", "industry")
+for (vec in series_vec) {
+  series[[vec]] <- str_detect(series$indicator_name, vec) | str_detect(series$group_names, vec)
+}
+series$gender <- series$gender | series$sex
+series <- select(series, - sex)
+series$other <- series$group_names != "undefined_name" & !(series$region | series$gender | series$age | series$ethnic | series$industry)
 
