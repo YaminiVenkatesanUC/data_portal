@@ -8409,13 +8409,14 @@
       "parameter_col": 1,
       "skip": null,
       "order_parameter": false,
-      "value_col": [2, 3],
+      "value_col": ["Wave 1", "Wave 2"],
       "value_names": ["Wave 1", "Wave 2"],
-      "group_names": ["undefined_name"],
+      "group_names": ["Total"],
       "sheet_number": 1,
-      "filename": "COVID 19 - HPA Overall Drinking.xlsx",
+      "series":"Age",
+      "filename": "COVID-19 - HPA Drinking data.xlsx",
       "parameter_transform": "function (x) x",
-      "load_function": "read_from_excel",
+      "load_function": "read_hpa_drinking_data",
       "data_type": "BarChart"
      },
 
@@ -8535,8 +8536,8 @@
       {
       "class": "Social",
       "type": "General wellbeing",
-      "indicator_name": "Drinking behaviours (by age group)",
-      "parameter_col": 2,
+      "indicator_name": "Drinking behaviours",
+      "parameter_col": 1,
       "skip": null,
       "order_parameter": false,
       "value_col": ["Wave 1", "Wave 2"],
@@ -8544,7 +8545,7 @@
       "series": "Age",
       "group_names": ["Age group 18 – 24"],
       "sheet_number": 1,
-      "filename": "COVID-19 - HPA Drinking By Age.xlsx",
+      "filename": "COVID-19 - HPA Drinking data.xlsx",
       "parameter_transform": "function (x) x",
       "load_function": "read_hpa_drinking_data",
       "data_type": "BarChart"
@@ -8552,7 +8553,7 @@
       {
       "class": "Social",
       "type": "General wellbeing",
-      "indicator_name": "Drinking behaviours (by age group)",
+      "indicator_name": "Drinking behaviours",
       "parameter_col": 2,
       "skip": null,
       "order_parameter": false,
@@ -8561,7 +8562,7 @@
       "series": "Age",
       "group_names": ["Age group 25 – 49"],
       "sheet_number": 1,
-      "filename": "Raw data/Development/COVID 19 HPA drinking age data.xlsx",
+      "filename": "COVID-19 - HPA Drinking data.xlsx",
       "parameter_transform": "function (x) x",
       "load_function": "read_hpa_drinking_data",
       "data_type": "BarChart"
@@ -8569,7 +8570,7 @@
       {
       "class": "Social",
       "type": "General wellbeing",
-      "indicator_name": "Drinking behaviours (by age group)",
+      "indicator_name": "Drinking behaviours",
       "parameter_col": 2,
       "skip": null,
       "order_parameter": false,
@@ -8578,7 +8579,7 @@
       "series": "Age",
       "group_names": ["Age group 50 – 64"],
       "sheet_number": 1,
-      "filename": "Raw data/Development/COVID 19 HPA drinking age data.xlsx",
+      "filename": "COVID-19 - HPA Drinking data.xlsx",
       "parameter_transform": "function (x) x",
       "load_function": "read_hpa_drinking_data",
       "data_type": "BarChart"
@@ -8586,7 +8587,7 @@
       {
       "class": "Social",
       "type": "General wellbeing",
-      "indicator_name": "Drinking behaviours (by age group)",
+      "indicator_name": "Drinking behaviours",
       "parameter_col": 2,
       "skip": null,
       "order_parameter": false,
@@ -8595,7 +8596,7 @@
       "series": "Age",
       "group_names": ["Age group 65+"],
       "sheet_number": 1,
-      "filename": "Raw data/Development/COVID 19 HPA drinking age data.xlsx",
+      "filename": "COVID-19 - HPA Drinking data.xlsx",
       "parameter_transform": "function (x) x",
       "load_function": "read_hpa_drinking_data",
       "data_type": "BarChart"

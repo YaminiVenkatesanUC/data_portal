@@ -86,7 +86,8 @@ overall_drinking <-
     categories = categories
   )
 
-write_hpa_data(overall_drinking,output_file = paste0(output_file_path,"COVID 19 - HPA Overall Drinking.xlsx"))
+
+#write_hpa_data(overall_drinking,output_file = paste0(output_file_path,"COVID 19 - HPA Overall Drinking.xlsx"))
 
 ## Drinking behaviour since lockdown by age
 
@@ -100,7 +101,15 @@ drinking_by_age <-
     categories = age_categories
   )
 
-write_hpa_data(drinking_by_age,output_file = paste0(output_file_path,"COVID-19 - HPA Drinking By Age.xlsx"))
+## Combine overall and drinking by age together
+
+overall_drinking <- overall_drinking %>% mutate(Age = "Total")
+drinking_data <- rbind(overall_drinking,drinking_by_age)
+
+
+#write_hpa_data(drinking_by_age,output_file = paste0(output_file_path,"COVID-19 - HPA Drinking By Age.xlsx"))
+
+write_hpa_data(drinking_data,output_file = paste0(output_file_path,"COVID-19 - HPA Drinking data.xlsx"))
 
 ## worrying about own drinking
 
@@ -146,6 +155,9 @@ harm_own_drinking <-
     categories = harm_categories
   )
 
+harm_own_drinking$Parameter <- gsub(pattern = " \\(Net)","",gsub("Experience","Experienced",harm_own_drinking$Parameter))
+
+
 ## Experienced harm due to someone else's drinking
 
 
@@ -157,6 +169,8 @@ harm_others_drinking <-
     range_end = c(168, 5),
     categories = harm_categories
   )
+
+harm_others_drinking$Parameter <- gsub(pattern = " \\(Net)","",gsub("Experience","Experienced",harm_others_drinking$Parameter))
 
 files_to_write <- list(harm_own_drinking = harm_own_drinking,harm_others_drinking = harm_others_drinking)
 
