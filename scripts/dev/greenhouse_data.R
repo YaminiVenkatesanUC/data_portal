@@ -1,6 +1,6 @@
 library(readr)
 
-data <- read.csv("~/Network-Shares/J-Drive-WLG-Shared/Indicators_aotearoa/Covid-19/Portal Data Supply/SEEA GHG Emissions/Covid-portal-ghg-emissions-sept-20-V2.csv")
+data <- read.csv("~/Network-Shares/J-Drive-WLG-Shared/Indicators_aotearoa/Covid-19/Portal Data Supply/SEEA GHG Emissions/Dec-2020-data-for-portal.csv")
 
 data <-
   data %>% mutate(quarter = gsub("\\d{4}", "", as.character(data$YearQ)))  %>% mutate(year = substr(data$YearQ, 1, 4)) %>% mutate(
