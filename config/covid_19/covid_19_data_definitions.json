@@ -611,7 +611,7 @@
       {
         "class": "Health",
         "indicator_name": "Source of cases",
-        "type": "COVID-19",
+        "type": "COVID-19 cases",
         "parameter_col": 2,
         "value_col": [3, 4, 5, 6, 7],
         "value_names": ["Import-related", "Imported", "Locally acquired, unknown source", "Locally acquired, linked", "Under investigation"],
@@ -630,7 +630,7 @@
       {
         "class": "Health",
         "indicator_name": "Status of cases",
-        "type": "COVID-19",
+        "type": "COVID-19 cases",
         "parameter_col": 2,
         "value_col": [5, 3, 4],
         "value_names": ["Deceased", "Active","Recovered"],
@@ -648,7 +648,7 @@
     {
         "class": "Health",
         "indicator_name": "Case demographics",
-        "type": "COVID-19",
+        "type": "COVID-19 cases",
         "parameter_col": 2,
         "parameter_transform": "function (x) x",
         "date_filter": "function(x) x != \"Total\"",
@@ -670,7 +670,7 @@
     {
         "class": "Health",
         "indicator_name": "Case demographics",
-        "type": "COVID-19",
+        "type": "COVID-19 cases",
         "parameter_col": 2,
         "parameter_transform": "function (x) x",
         "date_filter": "function(x) x != \"Total\"",
@@ -688,7 +688,7 @@
     {
         "class": "Health",
         "indicator_name": "Case demographics",
-        "type": "COVID-19",
+        "type": "COVID-19 cases",
         "parameter_col": 2,
         "parameter_transform": "function (x) x",
         "date_filter": "function(x) x != \"Total\"",
@@ -1614,7 +1614,7 @@
     {
         "class": "Health",
         "indicator_name": "Number of cases",
-        "type": "COVID-19",
+        "type": "COVID-19 cases",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -1641,7 +1641,7 @@
     {
         "class": "Health",
         "indicator_name": "Number of cases (other countries)",
-        "type": "COVID-19",
+        "type": "COVID-19 cases",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -1669,7 +1669,7 @@
     {
         "class": "Health",
         "indicator_name": "Number of cases (other countries)",
-        "type": "COVID-19",
+        "type": "COVID-19 cases",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -1697,7 +1697,7 @@
     {
         "class": "Health",
         "indicator_name": "Number of cases (other countries)",
-        "type": "COVID-19",
+        "type": "COVID-19 cases",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -1725,7 +1725,7 @@
     {
         "class": "Health",
         "indicator_name": "Number of cases (other countries)",
-        "type": "COVID-19",
+        "type": "COVID-19 cases",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -1753,7 +1753,7 @@
     {
         "class": "Health",
         "indicator_name": "Number of cases (other countries)",
-        "type": "COVID-19",
+        "type": "COVID-19 cases",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -1781,7 +1781,7 @@
     {
         "class": "Health",
         "indicator_name": "Number of cases (other countries)",
-        "type": "COVID-19",
+        "type": "COVID-19 cases",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -1809,7 +1809,7 @@
     {
         "class": "Health",
         "indicator_name": "Number of cases (other countries)",
-        "type": "COVID-19",
+        "type": "COVID-19 cases",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -1837,7 +1837,7 @@
     {
         "class": "Health",
         "indicator_name": "Number of cases (other countries)",
-        "type": "COVID-19",
+        "type": "COVID-19 cases",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -1865,7 +1865,7 @@
     {
         "class": "Health",
         "indicator_name": "Number of cases (other countries)",
-        "type": "COVID-19",
+        "type": "COVID-19 cases",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -2962,7 +2962,7 @@
     {
         "class": "Health",
         "indicator_name": "Tests per day",
-        "type": "COVID-19",
+        "type": "COVID-19 testing",
         "parameter_col": 1,
         "value_col": [2, 3],
         "value_names": ["Tests by day", "Total tests (cumulative)"],
@@ -3373,7 +3373,7 @@
 {
         "class": "Health",
         "indicator_name": "Quarantine and managed isolation figures",
-        "type": "COVID-19",
+        "type": "Managed Isolation",
         "parameter_col": 1,
         "value_col": [2],
         "value_names": ["Current - 21 October 2020"],
@@ -3390,7 +3390,7 @@
 {
         "class": "Health",
         "indicator_name": "Quarantine and managed isolation figures",
-        "type": "COVID-19",
+        "type": "Managed Isolation",
         "parameter_col": 1,
         "value_col": [3],
         "value_names": ["Current - 21 October 2020"],
@@ -3408,7 +3408,7 @@
 {
         "class": "Health",
         "indicator_name": "Quarantine and managed isolation figures",
-        "type": "COVID-19",
+        "type": "Managed Isolation",
         "parameter_col": 1,
         "value_col": [2],
         "value_names": ["Projected occupancy rate"],
@@ -3466,7 +3466,7 @@
 {
         "class": "Health",
         "indicator_name": "Number of cases (other countries)",
-        "type": "COVID-19",
+        "type": "COVID-19 cases",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -3494,7 +3494,7 @@
 {
         "class": "Health",
         "indicator_name": "Number of cases (other countries)",
-        "type": "COVID-19",
+        "type": "COVID-19 cases",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -3522,7 +3522,7 @@
 {
         "class": "Health",
         "indicator_name": "Number of cases (other countries)",
-        "type": "COVID-19",
+        "type": "COVID-19 cases",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -3550,7 +3550,7 @@
 {
         "class": "Health",
         "indicator_name": "Number of cases (other countries)",
-        "type": "COVID-19",
+        "type": "COVID-19 cases",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -3578,7 +3578,7 @@
 {
         "class": "Health",
         "indicator_name": "Number of cases (other countries)",
-        "type": "COVID-19",
+        "type": "COVID-19 cases",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -3606,7 +3606,7 @@
 {
         "class": "Health",
         "indicator_name": "Number of cases (other countries)",
-        "type": "COVID-19",
+        "type": "COVID-19 cases",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -3634,7 +3634,7 @@
 {
         "class": "Health",
         "indicator_name": "Number of cases (other countries)",
-        "type": "COVID-19",
+        "type": "COVID-19 cases",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -3662,7 +3662,7 @@
 {
         "class": "Health",
         "indicator_name": "Number of cases (other countries)",
-        "type": "COVID-19",
+        "type": "COVID-19 cases",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",

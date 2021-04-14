@@ -576,7 +576,7 @@
   {
     "class": "Health",
     "indicator_name": "Source of cases",
-    "type": "COVID-19",
+    "type": "COVID-19 cases",
     "source": "Ministry of Health",
     "plot_function": "get_vertical_bar",
     "international": false,
@@ -615,7 +615,7 @@
   {
     "class": "Health",
     "indicator_name": "Status of cases",
-    "type": "COVID-19",
+    "type": "COVID-19 cases",
     "source": "Ministry of Health",
     "plot_function": "get_vertical_bar",
     "international": false,
@@ -635,7 +635,7 @@
   {
     "class": "Health",
     "indicator_name": "Case demographics",
-    "type": "COVID-19",
+    "type": "COVID-19 cases",
     "source": "Ministry of Health",
     "plot_function": "get_horizontal_bar",
     "international": false,
@@ -1462,7 +1462,7 @@
   {
     "class": "Health",
     "indicator_name": "Number of cases",
-    "type": "COVID-19",
+    "type": "COVID-19 cases",
     "source": "Ministry of Health",
     "plot_function": "get_stacked_bar_chart",
     "international": false,
@@ -1479,7 +1479,7 @@
   {
     "class": "Health",
     "indicator_name": "Number of cases (other countries)",
-    "type": "COVID-19",
+    "type": "COVID-19 cases",
     "source": "Ministry of Health",
     "plot_function": "get_stacked_bar_chart",
     "international": false,
@@ -2892,7 +2892,7 @@
     {
     "class": "Health",
     "indicator_name": "Tests per day",
-    "type": "COVID-19",
+    "type": "COVID-19 testing",
     "source": "Ministry of Health",
     "plot_function": "get_stacked_bar_chart",
     "international": false,
@@ -3969,7 +3969,7 @@
   {
     "class": "Health",
     "indicator_name": "Quarantine and managed isolation figures",
-    "type": "COVID-19",
+    "type": "Managed Isolation",
     "source": "Ministry of Business, Innovation and Employment",
     "plot_function": "get_horizontal_bar",
     "international": false,
