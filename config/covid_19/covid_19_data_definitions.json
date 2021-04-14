@@ -653,11 +653,9 @@
         "parameter_transform": "function (x) x",
         "date_filter": "function(x) x != \"Total\"",
         "sheet_number": 3,
-        "value_col": [
-        3
-        ],
+        "value_col": [3, 4, 5],
         "value_names": [
-        "Cases by gender"
+        "Active", "Recovered", "Deceased"
         ],
         "drop_na": false,
         "filename": "COVID 19 - MoH COVID-19 cases.xlsx",
@@ -677,8 +675,8 @@
         "parameter_transform": "function (x) x",
         "date_filter": "function(x) x != \"Total\"",
         "sheet_number": 2,
-        "value_col": [5, 3, 4],
-        "value_names": ["Deceased", "Active","Recovered"],
+        "value_col": [3, 4, 5],
+        "value_names": ["Active","Recovered", "Deceased"],
         "drop_na": false,
         "filename": "COVID 19 - MoH COVID-19 cases.xlsx",
         "load_function": "read_from_excel",
@@ -695,11 +693,9 @@
         "parameter_transform": "function (x) x",
         "date_filter": "function(x) x != \"Total\"",
         "sheet_number": 4,
-        "value_col": [
-        3
-        ],
+        "value_col": [3, 4, 5],
         "value_names": [
-        "Cases by ethnicity"
+        "Active","Recovered", "Deceased"
         ],
         "drop_na": false,
         "filename": "COVID 19 - MoH COVID-19 cases.xlsx",
