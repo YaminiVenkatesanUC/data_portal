@@ -1,7 +1,7 @@
 library(readxl)
 
 directory <- "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard"
-path <- paste0(directory, "/TSM")
+path <- paste0(directory, "/TMS")
 files <- file.info(list.files(path, full.names = TRUE))
 update <- read_excel(rownames(files)[which.max(files$mtime)], sheet = "Sumated_Data")
 update$Day <- ymd(update$Day)
