@@ -101,7 +101,6 @@ read_from_excel <- function(config, directory, odata_definitions=NULL) {
     return(NULL)
   }
 
-  write.table(data, "Jobseeker support by territorial authority.txt")
   return(data_frame_to_data_object_helper(
     directory,
     config,
@@ -1062,7 +1061,7 @@ read_hlfs_data <- function(config, directory, odata_definitions=NULL) {
 
 
   for (i in 1:length(config$filename)) {
-    data <- as.data.frame(read_excel(paste0(directory, config$filename[i]), sheet = config$sheet_number, col_names = TRUE, skip = skip, .name_repair = "unique"))
+    data <- as.data.frame(supressMessages(read_excel(paste0(directory, config$filename[i]), sheet = config$sheet_number, col_names = TRUE, skip = skip, .name_repair = "unique")))
 
     data <- data %>% select(-2,-6)
     start_row <- grep(pattern = config$description, x = data[[1]])+1
@@ -1081,7 +1080,7 @@ read_hlfs_data <- function(config, directory, odata_definitions=NULL) {
     not_any_na <- function(x) all(!is.na(x))
     data <- data %>% select_if(not_any_na)
 
-    quarter <- as.data.frame(read_excel(paste0(directory, config$filename[i]), sheet = config$sheet_number, range = "A4", col_names = FALSE))
+    quarter <- as.data.frame(supressMessages(read_excel(paste0(directory, config$filename[i]), sheet = config$sheet_number, range = "A4", col_names = FALSE)))
     data$Parameter <- quarter[[1]]
     data$Parameter <- stringr::str_replace(data$Parameter, "quarter", replacement = "01")
     data$Parameter <- as.Date(data$Parameter, format = "%B %Y %d")

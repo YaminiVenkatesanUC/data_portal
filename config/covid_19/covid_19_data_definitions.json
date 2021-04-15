@@ -42,6 +42,7 @@
   "class": "Economic",
   "indicator_name": "Student visa",
   "type": "Visa",
+  "ResourceID":"CPVIS1",
   "date_filter": "function(x) x > ymd(\"2015-01-01\")",
   "parameter_col": 1,
   "parameter_transform": "function (x) ymd(x)",
@@ -77,6 +78,7 @@
   "class": "Economic",
   "indicator_name": "Work visa",
   "type": "Visa",
+  "ResourceID":"CPVIS2",
   "date_filter": "function(x) x > ymd(\"2015-01-01\")",
   "parameter_col": 1,
   "parameter_transform": "function (x) ymd(x)",
@@ -4204,86 +4206,6 @@
         "date_added":"08/05/2020",
         "date_dropped":null
     },
-    {
-  "class": "Economic",
-  "indicator_name": "Student visa",
-  "type": "Visa",
-  "ResourceID":"CPVIS1",
-  "date_filter": "function(x) x > dmy(\"01-01-2015\")",
-  "parameter_col": 1,
-  "parameter_transform": [
-    "function (x) dmy(x)"   ],
-
-  "value_col": [
-
-    2,
-    3,
-    4,
-    5,
-    6
-
-
-    ],
-  "value_names": [
-    "Dependant",
-      "Exchange student",
-      "Fee paying",
-      "Other",
-      "Total"
-    ],
-  "filename": "Population_by_Visa_Type_and_Application_Substream_Students.csv",
-  "load_function": "read_from_csv",
-  "data_type": "TimeSeries",
-  "group_names":
-    [
-      "Dependant",
-      "Exchange student",
-      "Fee paying",
-      "Other",
-      "Total"
-
-      ]
-},
-{
-  "class": "Economic",
-  "indicator_name": "Work visa",
-  "type": "Visa",
-  "ResourceID":"CPVIS2",
-  "date_filter": "function(x) x > dmy(\"01-01-2015\")",
-  "parameter_col": 1,
-  "parameter_transform": [
-    "function (x) dmy(x)"   ],
-  "value_col": [
-    2,
-    3,
-    4,
-    5,
-    6,
-    7
-    ],
-  "value_names": [
-    "Essential skills",
-    "Family",
-    "Recognised seasonal employer",
-    "Other",
-    "Working holiday scheme",
-    "Total"
-
-    ],
-  "filename": "Population_by_Visa_Type_and_Application_Substream_Work.csv",
-  "load_function": "read_from_csv",
-  "data_type": "TimeSeries",
-  "group_names":
-    [
-     "Essential skills",
-    "Family",
-    "Recognised seasonal employer",
-    "Other",
-    "Working holiday scheme",
-    "Total"
-
-      ]
- },
  {
     "class": "Economic",
     "indicator_name": "Daily border crossings (by port) - departures",

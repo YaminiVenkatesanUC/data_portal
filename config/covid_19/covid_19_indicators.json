@@ -603,12 +603,9 @@
     "default_lower_range": "2020-02-29",
     "show_zero": true,
     "download": true,
-<<<<<<< HEAD
     "data_service": "stats_odata_api",
     "api_resource_id": "CPACT1",
-=======
     "frequency":"Daily",
->>>>>>> master
     "groups": [
         {
             "name": "undefined_name",
@@ -1146,12 +1143,9 @@
     "plot_function": "get_time_series_plot",
     "international": true,
     "download": false,
-<<<<<<< HEAD
     "data_service": "stats_odata_api",
     "api_resource_id": "CPCON1",
-=======
     "frequency":"Monthly",
->>>>>>> master
     "groups": [
       {
         "name": "Sentiment index",
@@ -5368,12 +5362,9 @@
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
-<<<<<<< HEAD
     "data_service": "stats_odata_api",
     "api_resource_id": "CPBEN1",
-=======
     "frequency":"Weekly",
->>>>>>> master
     "groups": [
       {
         "name": "undefined_name",
@@ -5446,12 +5437,9 @@
     "international": false,
     "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
     "download": true,
-<<<<<<< HEAD
     "data_service": "stats_odata_api",
     "api_resource_id": "CPWAG1",
-=======
     "frequency":"Weekly",
->>>>>>> master
     "groups": [
       {
         "name": "undefined_name",
