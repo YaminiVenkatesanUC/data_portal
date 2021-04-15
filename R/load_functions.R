@@ -232,13 +232,13 @@ read_global_cases_file <- function(config, directory, odata_definitions=NULL) {
 
 petrol_read_file <- function(config, directory, odata_definitions=NULL) {
   filename <- config$filename
-  data <- as.data.frame(read_excel(
+  data <- as.data.frame(suppressMessages(read_excel(
     paste0(directory, filename),
     sheet = config$sheet_number,
     skip = config$skip,
     col_names = TRUE,
     .name_repair = "minimal"
-  ))
+  )))
 
   data <- data[names(data) != ""]
   names(data)[1:2] <- c("Company", "Type")
@@ -266,13 +266,13 @@ petrol_read_file <- function(config, directory, odata_definitions=NULL) {
 
 petrol_read_file_month <- function(config, directory, odata_definitions=NULL) {
   filename <- config$filename
-  data <- as.data.frame(read_excel(
+  data <- as.data.frame(suppressMessages(read_excel(
     paste0(directory, filename),
     sheet = config$sheet_number,
     skip = config$skip,
     col_names = TRUE,
     .name_repair = "minimal"
-  ))
+  )))
 
   data <- data[names(data) != ""]
   names(data)[1:2] <- c("Company", "Type")

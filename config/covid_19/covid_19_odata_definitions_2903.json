@@ -503,7 +503,7 @@
       "GeoUnit":"RC",
       "Geo":"variable",
       "Duration":"P1W",
-      "Unit":"Gigagbyte (million)",
+      "Unit":"Gigagbyte",
       "Measure":"Broadband use",
       "Multiplier":0
    },
@@ -1046,7 +1046,7 @@
       "GeoUnit":"variable",
       "Duration":"P1M",
       "Unit":"Number",
-      "Measure":"People receiving special needs grants for food ",
+      "Measure":"People receiving special needs grants for food",
       "Multiplier":0
    },
    {

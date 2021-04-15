@@ -1,16 +1,17 @@
 
 data_frame_to_api_helper <- function(directory, config, metadata, data){
   #error when there is not a match or indicator removed
+  print(paste(config$ResourceID, config$indicator_name))
 
   resource <- to_resource(config, metadata)
   write.table(resource, "dump.txt", append = TRUE)
   observations <- to_observations(config, metadata, data)
-
-  #for testing
   write.table(observations, "dump.txt", append = TRUE)
 
+  print(paste(resource$ResourceID, resource$Subject, resource$Title))
   version_obs <- getLatestVersion(location= list(collection = "PDS", instance = "Covid-19", table = "Observation_test"), server = "uat")
   writeDatastore(observations,location = list(collection = "PDS", instance = "Covid-19", table = "Observation_test"), version = version_obs, server = "uat")
+
 }
 
 to_observations <- function(config, metadata, data){
@@ -27,7 +28,7 @@ to_observations <- function(config, metadata, data){
                         "Label4" = get_label(data, check_null(metadata$Label4), nrow(data)),
                         "Label5" = get_label(data, check_null(metadata$Label5), nrow(data)),
                         "Label6" = get_label(data, check_null(metadata$Label6), nrow(data)),
-                        "Value" = data$value,
+                        "Value" = as.numeric(as.character(data$value)),
                         "Unit" = rep(check_null(metadata$Unit), nrow(data)),
                         "Measure" = rep(check_null(metadata$Measure), nrow(data)),
                         "NullReason" = NA,
