@@ -38,7 +38,7 @@ read_from_csv <- function(config, directory, odata_definitions=NULL) {
     data <- data %>% arrange(Parameter)
   }
 
-  if(any(config$ResourceID %in% odata_definitions$ResourceID)){
+    if(any(config$ResourceID %in% odata_definitions$ResourceID)){
     metadata <- odata_definitions[which(odata_definitions$ResourceID == config$ResourceID),]
     # print("Adding data to API")
     # print(config$indicator_name)
@@ -101,6 +101,7 @@ read_from_excel <- function(config, directory, odata_definitions=NULL) {
     return(NULL)
   }
 
+  write.table(data, "Jobseeker support by territorial authority.txt")
   return(data_frame_to_data_object_helper(
     directory,
     config,

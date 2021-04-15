@@ -27,7 +27,7 @@ observation <- tibble("ResourceID" = "CPWAG1",
                    "Multiplier" = 0,
                    "Status" = "") #%>% toJSON(na ="null")
 
-writeDatastore(observation,location = list(collection = "PDS", instance = "Covid-19", table = "Observation_test"), version = NULL, server = "uat")
+writeDatastore(observation,location = list(collection = "PDS", instance = "Covid-19", table = "Observation_test"), version = 20, server = "uat")
 
 
 writeDatastore <- function(data, location, version = NULL, server = "uat") {
