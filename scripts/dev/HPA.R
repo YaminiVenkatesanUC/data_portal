@@ -10,7 +10,7 @@ colnames <- c("Parameter","Total","Wave 1","Wave 2")
 drinking_categories <- c("Less than you usually did before lockdown","About the same as you usually did before lockdown","More than you usually did before lockdown")
 binary_categories <- c("Yes","No")
 harm_categories <- c("Experience harm (Net)","No Harm (Net)")
-smoking_categories <- categories <- c("Less than you usually did before lockdown","About the same as you usually did before lockdown","More than you usually did before lockdown","Not smoked at all")
+smoking_categories <- categories <- c("Less than you usually did before lockdown","About the same as you usually did before lockdown","More than you usually did before lockdown")
 age_categories <- c("18-24","25-49","50-64","65+")
 
 output_file_path <- "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/"
