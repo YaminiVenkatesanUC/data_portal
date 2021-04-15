@@ -2901,12 +2901,30 @@
     "frequency":"Daily",
     "groups": [
         {
-            "name": "Tests by day",
+            "name": "undefined_name",
             "units": "Number",
             "title": "Daily tests"
         },
           {
             "name": "Total tests (cumulative)",
+            "units": "Number",
+            "title": "Daily tests - cumulative"
+        }
+    ]
+  },
+  {
+    "class": "Health",
+    "indicator_name": "Total tests (cumulative)",
+    "type": "COVID-19 testing",
+    "source": "Ministry of Health",
+    "plot_function": "get_stacked_bar_chart",
+    "international": false,
+    "source_url":"https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation/covid-19-current-cases",
+    "download": true,
+    "frequency":"Daily",
+    "groups": [
+          {
+            "name": "undefined_name",
             "units": "Number",
             "title": "Daily tests - cumulative"
         }
@@ -7715,8 +7733,8 @@
   },
 
    {
-   "class": "Social",
-   "type": "General wellbeing",
+   "class": "Health",
+   "type": "General health",
     "indicator_name": "Drinking behaviours",
     "source": "Health Promotion Agency, The impact of lockdown on health risk behaviours",
     "plot_function": "get_unstacked_horizontal_bar",
@@ -7757,8 +7775,8 @@
     ]
   },
    {
-   "class": "Social",
-   "type": "General wellbeing",
+   "class": "Health",
+   "type": "Mental health",
     "indicator_name": "Worry about drinking",
     "source": "Health Promotion Agency, The impact of lockdown on health risk behaviours",
     "plot_function": "get_unstacked_horizontal_bar",
@@ -7782,8 +7800,8 @@
   },
 
    {
-   "class": "Social",
-   "type": "General wellbeing",
+   "class": "Health",
+   "type": "General health",
     "indicator_name": "Experienced harm due to drinking",
     "source": "Health Promotion Agency, The impact of lockdown on health risk behaviours",
     "plot_function": "get_unstacked_horizontal_bar",
@@ -7807,8 +7825,8 @@
   },
 
    {
-   "class": "Social",
-   "type": "General wellbeing",
+   "class": "Health",
+   "type": "General health",
     "indicator_name": "Smoking behaviours",
     "source": "Health Promotion Agency, The impact of lockdown on health risk behaviours",
     "plot_function": "get_unstacked_horizontal_bar",
@@ -7825,8 +7843,8 @@
     ]
   },
    {
-   "class": "Social",
-   "type": "General wellbeing",
+   "class": "Health",
+   "type": "Mental health",
     "indicator_name": "Worry about smoking",
     "source": "Health Promotion Agency, The impact of lockdown on health risk behaviours",
     "plot_function": "get_unstacked_horizontal_bar",

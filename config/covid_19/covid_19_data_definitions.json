@@ -2964,9 +2964,29 @@
         "indicator_name": "Tests per day",
         "type": "COVID-19 testing",
         "parameter_col": 1,
-        "value_col": [2, 3],
-        "value_names": ["Tests by day", "Total tests (cumulative)"],
-        "group_names": ["Tests by day", "Total tests (cumulative)"],
+        "value_col": [2],
+        "value_names": ["Tests by day"],
+        "group_names": ["undefined_name"],
+        "sheet_number": 5,
+        "filename": "COVID 19 - MoH COVID-19 cases.xlsx",
+       "parameter_transform": [
+        "function (x) ",
+        "as.Date(x, format = \"%d/%m/%Y\")"
+        ],
+        "load_function": "read_from_excel",
+        "drop_na": false,
+        "data_type": "TimeSeries",
+        "date_added":"20/04/2020",
+        "date_dropped":null
+      },
+      {
+        "class": "Health",
+        "indicator_name": "Total tests (cumulative)",
+        "type": "COVID-19 testing",
+        "parameter_col": 1,
+        "value_col": [3],
+        "value_names": ["Total tests (cumulative)"],
+        "group_names": ["undefined_name"],
         "sheet_number": 5,
         "filename": "COVID 19 - MoH COVID-19 cases.xlsx",
        "parameter_transform": [
@@ -8791,8 +8811,8 @@
     },
 
     {
-      "class": "Social",
-      "type": "General wellbeing",
+      "class": "Health",
+      "type": "General health",
       "indicator_name": "Drinking behaviours",
       "parameter_col": 1,
       "skip": null,
@@ -8809,8 +8829,8 @@
      },
 
       {
-      "class": "Social",
-      "type": "General wellbeing",
+      "class": "Health",
+      "type": "Mental health",
       "indicator_name": "Worry about drinking",
       "parameter_col": 1,
       "skip": null,
@@ -8825,8 +8845,8 @@
       "data_type": "BarChart"
      },
      {
-      "class": "Social",
-      "type": "General wellbeing",
+      "class": "Health",
+      "type": "Mental health",
       "indicator_name": "Worry about drinking",
       "parameter_col": 1,
       "skip": null,
@@ -8841,8 +8861,8 @@
       "data_type": "BarChart"
      },
      {
-      "class": "Social",
-      "type": "General wellbeing",
+      "class": "Health",
+      "type": "General health",
       "indicator_name": "Experienced harm due to drinking",
       "parameter_col": 1,
       "skip": null,
@@ -8857,8 +8877,8 @@
       "data_type": "BarChart"
      },
      {
-      "class": "Social",
-      "type": "General wellbeing",
+      "class": "Health",
+      "type": "General health",
       "indicator_name": "Experienced harm due to drinking",
       "parameter_col": 1,
       "skip": null,
@@ -8873,8 +8893,8 @@
       "data_type": "BarChart"
      },
      {
-      "class": "Social",
-      "type": "General wellbeing",
+      "class": "Health",
+      "type": "General health",
       "indicator_name": "Smoking behaviours",
       "parameter_col": 1,
       "skip": null,
@@ -8889,8 +8909,8 @@
       "data_type": "BarChart"
      },
      {
-      "class": "Social",
-      "type": "General wellbeing",
+      "class": "Health",
+      "type": "Mental health",
       "indicator_name": "Worry about smoking",
       "parameter_col": 1,
       "skip": null,
@@ -8905,8 +8925,8 @@
       "data_type": "BarChart"
      },
       {
-      "class": "Social",
-      "type": "General wellbeing",
+      "class": "Health",
+      "type": "Mental health",
       "indicator_name": "Worry about smoking",
       "parameter_col": 1,
       "skip": null,
@@ -8922,8 +8942,8 @@
       "data_type": "BarChart"
      },
       {
-      "class": "Social",
-      "type": "General wellbeing",
+      "class": "Health",
+      "type": "General health",
       "indicator_name": "Drinking behaviours",
       "parameter_col": 1,
       "skip": null,
@@ -8939,8 +8959,8 @@
       "data_type": "BarChart"
      },
       {
-      "class": "Social",
-      "type": "General wellbeing",
+      "class": "Health",
+      "type": "General health",
       "indicator_name": "Drinking behaviours",
       "parameter_col": 2,
       "skip": null,
@@ -8956,8 +8976,8 @@
       "data_type": "BarChart"
      },
       {
-      "class": "Social",
-      "type": "General wellbeing",
+      "class": "Health",
+      "type": "General health",
       "indicator_name": "Drinking behaviours",
       "parameter_col": 2,
       "skip": null,
@@ -8973,8 +8993,8 @@
       "data_type": "BarChart"
      },
       {
-      "class": "Social",
-      "type": "General wellbeing",
+      "class": "Health",
+      "type": "General health",
       "indicator_name": "Drinking behaviours",
       "parameter_col": 2,
       "skip": null,
