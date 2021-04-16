@@ -47,7 +47,7 @@ percentPop_rows <- 15
 
 #NUMBER_OF_APPLICATIONS----------------------------
 numAppls <- read_msd(raw_prev = raw_prev, raw_update = raw_update, sheet = 4,
-                     range_start = c(57, 4), range_end = c(60, NA), col_types = "numeric", col_names = TRUE)
+                     range_start = c(54, 4), range_end = c(60, NA), col_types = "numeric", col_names = TRUE)
 numAppls_series <- c("Applications received", "Applications approved", "Applications closed", "Applications declined")
 numAppls_rows <- c(1:4)
 
