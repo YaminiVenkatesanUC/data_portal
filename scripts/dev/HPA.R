@@ -10,7 +10,7 @@ colnames <- c("Parameter","Total","Wave 1","Wave 2")
 drinking_categories <- c("Less than you usually did before lockdown","About the same as you usually did before lockdown","More than you usually did before lockdown")
 binary_categories <- c("Yes","No")
 harm_categories <- c("Experience harm (Net)","No Harm (Net)")
-smoking_categories <- categories <- c("Less than you usually did before lockdown","About the same as you usually did before lockdown","More than you usually did before lockdown","Not smoked at all")
+smoking_categories <- categories <- c("Less than you usually did before lockdown","About the same as you usually did before lockdown","More than you usually did before lockdown")
 age_categories <- c("18-24","25-49","50-64","65+")
 
 output_file_path <- "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/"
@@ -86,6 +86,7 @@ overall_drinking <-
     categories = categories
   )
 
+overall_drinking$Parameter <- gsub(" you","",overall_drinking$Parameter)
 
 #write_hpa_data(overall_drinking,output_file = paste0(output_file_path,"COVID 19 - HPA Overall Drinking.xlsx"))
 
@@ -105,6 +106,8 @@ drinking_by_age <-
 
 overall_drinking <- overall_drinking %>% mutate(Age = "Total")
 drinking_data <- rbind(overall_drinking,drinking_by_age)
+
+drinking_data$Parameter <- gsub(" you","",drinking_data$Parameter)
 
 
 #write_hpa_data(drinking_by_age,output_file = paste0(output_file_path,"COVID-19 - HPA Drinking By Age.xlsx"))
@@ -187,6 +190,8 @@ smoking_data <-
     range_end = c(186, 5),
     categories = smoking_categories
   )
+
+smoking_data$Parameter <- gsub(" you","",smoking_data$Parameter)
 
 write_hpa_data(smoking_data,output_file = paste0(output_file_path,"COVID-19 - HPA Smoking.xlsx"))
 

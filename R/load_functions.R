@@ -1246,7 +1246,7 @@ read_hpa_drinking_data <- function(config,directory) {
     skip <- config$skip
   }
   data <- as.data.frame(read_excel(paste0(directory, config$filename))) %>%
-    select(Parameter,config$series,unlist(config$value_names))
+    select(Parameter,config$series,"Wave 1","Wave 2")
 
   names(data)[[2]] <- "series"
 
