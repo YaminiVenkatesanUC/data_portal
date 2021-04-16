@@ -2904,11 +2904,6 @@
             "name": "undefined_name",
             "units": "Number",
             "title": "Daily tests"
-        },
-          {
-            "name": "Total tests (cumulative)",
-            "units": "Number",
-            "title": "Daily tests - cumulative"
         }
     ]
   },
