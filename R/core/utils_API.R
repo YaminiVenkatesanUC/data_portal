@@ -3,10 +3,10 @@ data_frame_to_api_helper <- function(directory, config, metadata, data){
   #error when there is not a match or indicator removed
 
   resource <- to_resource(config, metadata)
-  #write.table(resource, "dump.txt", append = TRUE)
+  write.table(resource, "dump.txt", append = TRUE)
   observations <- to_observations(config, metadata, data)
   observations <- observations[!is.na(observations$Value),]
-  #write.table(observations, "dump.txt", append = TRUE)
+  write.table(observations, "dump.txt", append = TRUE)
 
   #print(paste(resource$ResourceID, resource$Subject, resource$Title))
   version_obs <- getLatestVersion(location= list(collection = "PDS", instance = "Covid-19", table = "Observation_test"), server = "uat")
@@ -19,8 +19,8 @@ to_observations <- function(config, metadata, data){
   names(data) <- c("parameter", config$value_names)
   data <- reshape2::melt(data,  id.vars = "parameter")
   Observations <- tibble("ResourceID" = rep(metadata$ResourceID, nrow(data)),
-                        "Geo" = get_label(data, check_null(metadata$Geo), nrow(data)),
-                        "GeoUnit" = rep(check_null(metadata$GeoUnit), nrow(data)),
+                        "Geo" = rep(check_null(metadata$Geo), nrow(data)),
+                        "GeoUnit" = get_label(data, check_null(metadata$GeoUnit), nrow(data)),
                         "Duration" = rep(check_null(metadata$Duration), nrow(data)),
                         "Period" = data$parameter,
                         "Label1" = get_label(data, check_null(metadata$Label1), nrow(data)),
@@ -35,6 +35,7 @@ to_observations <- function(config, metadata, data){
                         "NullReason" = NA,
                         "Multiplier" = rep(check_null(metadata$Multiplier), nrow(data)),
                         "Status" = NA) #%>% toJSON(na ="null")
+  View(Observations)
   return(Observations)
 }
 
@@ -63,6 +64,7 @@ get_label <- function(data, label, len){
   if (label == "variable" & !is.na(label) ){
     return(data$variable)
   }
+  print(label)
   return(rep(label,len))
 }
 
@@ -70,6 +72,7 @@ check_null <- function(value){
   if (is.null(value)){
     return(NA)
   }
+  print(value)
   return(value)
 }
 

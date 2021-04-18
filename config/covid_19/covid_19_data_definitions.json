@@ -2941,6 +2941,7 @@
         "class": "Income support",
         "indicator_name": "Jobseeker support by MSD region - Māori",
         "type": "Benefits",
+        "ResourceID":"CPBEN3",
         "parameter_col": 1,
         "skip":1,
         "parameter_transform": [
@@ -3742,6 +3743,7 @@
         "class": "Income support",
         "indicator_name": "Special needs grants for food by region",
         "type": "Hardship assistance",
+        "ResourceID":"CPHAR4",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -4646,6 +4648,7 @@
     "class": "Income support",
     "indicator_name": "Number of jobs supported by the wage subsidy extension",
     "type": "Wage subsidy extension",
+    "ResourceID":"CPWAG8",
     "parameter_col": 1,
     "parameter_transform": [
     "function (x) ",
