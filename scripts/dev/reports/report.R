@@ -8,6 +8,7 @@ latest_report_date <- floor_date(rollback(current_date), unit = "month")
 
 indicators <- read_json(path = "config/covid_19/covid_19_indicators.json", simplifyVector = TRUE)
 definitions <- read_json(path = "config/covid_19/covid_19_data_definitions.json", simplifyVector = TRUE)
+
 #download Unique page views over time 01-03-2020 to 31-03-2021 // Google analytics
 views_total <- read.csv("~/Network-Shares/J-Drive-WLG-Shared/Indicators_aotearoa/Maya/reports/total_views.csv")
 views_total$Date <- as.Date(views_total$Date, format = "%b %d, %Y")

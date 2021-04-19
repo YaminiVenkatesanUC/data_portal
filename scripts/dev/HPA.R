@@ -1,234 +1,228 @@
 library(dplyr)
 library(readxl)
+library(writexl)
 
+## Setting up config to read the fields from raw file
+raw_file <- "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/Raw data/Development/210310 HPA request selected tables Impact of COVID-19.xlsx"
 
-## Drinking behaviour since lockdown
-data <-
-  read_excel(
-    "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/Raw data/Development/210310 HPA request selected tables Impact of COVID-19.xlsx",
-    sheet = 2,
-  col_names = paste0("col_",2:5),
-  range = cell_limits(c(13,2),c(18,5))
-  ) %>% select(-col_3)
+colnames <- c("Parameter","Total","Wave 1","Wave 2")
 
+drinking_categories <- c("Less than you usually did before lockdown","About the same as you usually did before lockdown","More than you usually did before lockdown")
+binary_categories <- c("Yes","No")
+harm_categories <- c("Experience harm (Net)","No Harm (Net)")
+smoking_categories <- categories <- c("Less than you usually did before lockdown","About the same as you usually did before lockdown","More than you usually did before lockdown")
+age_categories <- c("18-24","25-49","50-64","65+")
 
-names(data) <- c("Parameter","Wave 1","Wave 2")
+output_file_path <- "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/"
 
-data <- data %>% na.omit()
+## Read HPA data
 
-write_file_excel("Overall drinking", data)
+read_hpa_data <- function(file,sheet,range_start,range_end,categories,output_file){
+  data <-
+    as.data.frame(read_excel(file,
+                             sheet = sheet,
+                             range = cell_limits(range_start, range_end),
+                             .name_repair = "minimal"))
 
-write.xlsx(data,"COVID 19 HPA data.xlsx", sheetName = "Overall drinking",append = TRUE)
+  names(data) <- colnames
 
+  data <- data %>% filter(Parameter %in% categories) %>% select(-Total)
 
-## Drinking behaviour since lockdown by age
+  data[,2:ncol(data)] <- sapply(data[,2:ncol(data)],as.numeric)
 
+  return(data)
+}
 
-data <-
-  read_excel(
-    "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/Raw data/Development/210310 HPA request selected tables Impact of COVID-19.xlsx",
-    sheet = 2,
-    col_names = paste0("col_",1:10),
-    range = cell_limits(c(29,2),c(38,11)),
-    .name_repair = "minimal"
-  )
+read_hpa_drinking_by_age <-
+  function(file,
+           sheet,
+           n_cols,
+           range_start,
+           range_end,
+           categories) {
 
-names(data) <- c("Parameter","Total","18-24 W1","18-24 W2","25-49 W1","25-49 W2","50-65 W1","50-65 W2","65+ W1","65+ W2")
-data <- data %>% na.omit()
-data <- data %>% select(-Total) %>% filter(Parameter != "Total (Weighted)")
+    data <-
+      read_excel(file,
+                 sheet = sheet,
+                 col_names = paste0("col_",1:n_cols),
+                 range = cell_limits(range_start, range_end),
+                 .name_repair = "minimal")
 
-data_long <- data %>% pivot_longer(data,cols = 2:ncol(data), names_to = "Age")
+    data <- as.data.frame(t(data),stringsAsFactors = FALSE)
+    data <- data[colSums(!is.na(data)) > 0]
 
-data_long %>% separate(data_long, c("Age","Wave"), sep = " ")
+    names(data) <- c("Age","Wave","Total","Less than you usually did before lockdown","About the same as you usually did before lockdown","More than you usually did before lockdown")
 
+    data <- data %>% filter( Age %in% categories) %>% select(-Total)
 
-#names(data) <- c("Parameter","Total","Wave 1","Wave 2")
+    data[3:ncol(data)] <- sapply(data[3:ncol(data)],as.numeric)
 
-data <- data %>% na.omit()
 
-# not_all_na <- function(x) any(!is.na(x))
-# data %>% select(where(not_all_na))
-#
-# data <- data[,colSums(is.na(data))<nrow(data)]
+    data <- as.data.frame(data %>% pivot_longer(cols = 3:ncol(data),names_to = "Parameter"),stringAsFactors = FALSE)
 
+    data <- as.data.frame(data %>% pivot_wider(names_from = Wave,values_from = value),stringAsFactors = FALSE)
 
-#write_file_excel("Drinking by age", data)
+    return(data)
+  }
 
-#openxlsx ::write.xlsx(data,"COVID 19 HPA data.xlsx", row.names = FALSE, sheetName = "Overall drinking")
-
-data <-
-  read_excel(
-    "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/Raw data/Development/210310 HPA request selected tables Impact of COVID-19.xlsx",
-    sheet = 2,
-    col_names = paste0("col_",1:10),
-    range = cell_limits(c(29,2),c(38,11)),
-    .name_repair = "minimal"
-  )
-data <- as.data.frame(t(data))
-data <- data[colSums(!is.na(data)) > 0]
-
-data <- data[-2,]
-
-names(data) <- c("Age","Wave","Total","Less than you usually did before lockdown","About the same as you usually did before lockdown","More than you usually did before lockdown")
-
-data <- data[-1,] %>% select(-Total)
-
-data <- as.data.frame(data %>% pivot_longer(cols = 3:ncol(data),names_to = "Parameter"),stringAsFactors = FALSE)
-
-data <- as.data.frame(data %>% pivot_wider(names_from = Wave,values_from = value))
-
-data$`Wave 1` <- as.numeric(as.character(data$`Wave 1`))
-
-data$`Wave 2` <- as.numeric(as.character(data$`Wave 2`))
-
-
-
-openxlsx::write.xlsx(data,"COVID 19 HPA drinking age data.xlsx",row.names= FALSE)
-## worrying about own drinking
-
-data <-
-  read_excel(
-    "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/Raw data/Development/210310 HPA request selected tables Impact of COVID-19.xlsx",
-    sheet = 2,
-    col_names = paste0("col_",2:5),
-    range = cell_limits(c(51,2),c(55,5))
-  ) %>% select(-col_3)
-
-
-data <- data %>% na.omit()
-names(data) <- c("Parameter","Wave 1","Wave 2")
-
-write_file_excel("Worry about own drinking", data)
-
-write.xlsx(data,"COVID 19 HPA data.xlsx", row.names = FALSE, sheetName = "Worry about own drinking",append = TRUE)
-
-
-## worry about someone else's drinking
-
-
-
-data <-
-  read_excel(
-    "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/Raw data/Development/210310 HPA request selected tables Impact of COVID-19.xlsx",
-    sheet = 2,
-    col_names = paste0("col_",2:5),
-    range = cell_limits(c(66,2),c(70,5))
-  ) %>% select(-col_3)
-
-
-data <- data %>% na.omit()
-
-#write_file_excel("Worry others drinking", data)
-names(data) <- c("Parameter","Wave 1","Wave 2")
-
-write.xlsx(data,"COVID 19 HPA data.xlsx", sheetName = "Worry about others drinking",append = TRUE)
-
-## Expereinced harm due to own drinking
-
-
-data <-
-  read_excel(
-    "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/Raw data/Development/210310 HPA request selected tables Impact of COVID-19.xlsx",
-    sheet = 2,
-    col_names = paste0("col_",2:5),
-    range = cell_limits(c(77,2),c(121,5))
-  ) %>% select(-col_3)
-
-
-data <- data %>% filter(col_2 == "Experience harm (Net)" | col_2 == "No Harm (Net)")
-names(data) <- c("Parameter","Wave 1","Wave 2")
-#write_file_excel("Exp harm - own drinking", data)
-
-write.xlsx(data,"COVID 19 HPA data.xlsx", sheetName = "Exp harm - own drinking",append = TRUE)
-
-## Experienced harm due to someone else's drinking
-
-
-data <-
-  read_excel(
-    "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/Raw data/Development/210310 HPA request selected tables Impact of COVID-19.xlsx",
-    sheet = 2,
-    col_names = paste0("col_",2:5),
-    range = cell_limits(c(128,2),c(168,5))
-  ) %>% select(-col_3)
-
-
-data <- data %>% filter(col_2 == "Experience harm (Net)" | col_2 == "No Harm (Net)")
-names(data) <- c("Parameter","Wave 1","Wave 2")
-write_file_excel("Exp harm - others drinking", data)
-write.xlsx(data,"COVID 19 HPA data.xlsx", sheetName = "Exp harm - others drinking",append = TRUE)
-
-## Somking behaviour since lockdown
-
-data <-
-  read_excel(
-    "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/Raw data/Development/210310 HPA request selected tables Impact of COVID-19.xlsx",
-    sheet = 2,
-    col_names = paste0("col_",2:5),
-    range = cell_limits(c(178,2),c(186,5))
-  ) %>% select(-col_3)
-
-
-data <- data %>% na.omit()
-names(data) <- c("Parameter","Wave 1","Wave 2")
-
-write_file_excel("Smoking behaviour", data)
-write.xlsx(data,"COVID 19 HPA data.xlsx", sheetName = "Smoking behaviour",append = TRUE)
-
-## Worry about own smoking
-
-
-
-data <-
-  read_excel(
-    "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/Raw data/Development/210310 HPA request selected tables Impact of COVID-19.xlsx",
-    sheet = 2,
-    col_names = paste0("col_",2:5),
-    range = cell_limits(c(199,2),c(203,5))
-  ) %>% select(-col_3)
-
-
-data <- data %>% na.omit()
-names(data) <- c("Parameter","Wave 1","Wave 2")
-
-write_file_excel("Worry about own smoking", data)
-write.xlsx(data,"COVID 19 HPA data.xlsx", sheetName = "Worry about own smoking",append = TRUE)
-## Worry about someone else's smoking
-
-
-data <-
-  read_excel(
-    "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/Raw data/Development/210310 HPA request selected tables Impact of COVID-19.xlsx",
-    sheet = 2,
-    col_names = paste0("col_",2:5),
-    range = cell_limits(c(215,2),c(219,5))
-  ) %>% select(-col_3)
-
-
-data <- data %>% na.omit()
-names(data) <- c("Parameter","Wave 1","Wave 2")
-write_file_excel("Worry about others smoking", data)
-write.xlsx(data,"COVID 19 HPA data.xlsx", sheetName = "Worry about others smoking",append = TRUE)
 
 
 ## Write to excel
 
-library(openxlsx)
+write_hpa_data <- function(data,output_file){
 
-write_file_excel <- function(sheetname, data){
-  wb <- createWorkbook()
-
-  ## Create the worksheets
-  addWorksheet(wb, sheetName = sheetname)
-  #addWorksheet(wb, sheetName = "Worry about others drinking")
-
-  ## Write the data
-  writeData(wb, sheetname, data)
-  #writeData(wb, "Worry about others drinking", data_2)
-
-  ## Save workbook to working directory
-  saveWorkbook(wb, file = paste("COVID 19- HPA",".xlsx", sep=""), overwrite = TRUE)
+  write_xlsx(x = data,path = output_file,col_names = TRUE)
 }
+
+
+## Drinking behaviour since lockdown
+
+overall_drinking <-
+  read_hpa_data(
+    file = raw_file,
+    sheet = 2,
+    range_start = c(10, 2),
+    range_end = c(18, 5),
+    categories = categories
+  )
+
+overall_drinking$Parameter <- gsub(" you","",overall_drinking$Parameter)
+
+#write_hpa_data(overall_drinking,output_file = paste0(output_file_path,"COVID 19 - HPA Overall Drinking.xlsx"))
+
+## Drinking behaviour since lockdown by age
+
+drinking_by_age <-
+  read_hpa_drinking_by_age(
+    file = raw_file,
+    sheet = 2,
+    n_cols = 10,
+    range_start = c(29, 2),
+    range_end = c(38, 11),
+    categories = age_categories
+  )
+
+## Combine overall and drinking by age together
+
+overall_drinking <- overall_drinking %>% mutate(Age = "Total")
+drinking_data <- rbind(overall_drinking,drinking_by_age)
+
+drinking_data$Parameter <- gsub(" you","",drinking_data$Parameter)
+
+
+#write_hpa_data(drinking_by_age,output_file = paste0(output_file_path,"COVID-19 - HPA Drinking By Age.xlsx"))
+
+write_hpa_data(drinking_data,output_file = paste0(output_file_path,"COVID-19 - HPA Drinking data.xlsx"))
+
+## worrying about own drinking
+
+worry_own_drinking <-
+  read_hpa_data(
+    file = raw_file,
+    sheet = 2,
+    range_start = c(49, 2),
+    range_end = c(54, 5),
+    categories = binary_categories,
+    output_file = "COVID-19 - HPA_Worry_Drinking.xlsx"
+  )
+
+## worry about someone else's drinking
+
+
+worry_others_drinking <-
+  read_hpa_data(
+    file = raw_file,
+    sheet = 2,
+    range_start = c(64, 2),
+    range_end = c(70, 5),
+    categories = binary_categories
+  )
+
+
+
+
+files_to_write <- list(Own_drinking = worry_own_drinking,Others_drinking = worry_others_drinking)
+
+write_hpa_data(files_to_write,output_file = paste0(output_file_path,"COVID-19 - HPA Worry Drinking.xlsx"))
+
+
+
+## Expereinced harm due to own drinking
+
+harm_own_drinking <-
+  read_hpa_data(
+    file = raw_file,
+    sheet = 2,
+    range_start = c(79, 2),
+    range_end = c(121, 5),
+    categories = harm_categories
+  )
+
+harm_own_drinking$Parameter <- gsub(pattern = " \\(Net)","",gsub("Experience","Experienced",harm_own_drinking$Parameter))
+
+
+## Experienced harm due to someone else's drinking
+
+
+harm_others_drinking <-
+  read_hpa_data(
+    file = raw_file,
+    sheet = 2,
+    range_start = c(128, 2),
+    range_end = c(168, 5),
+    categories = harm_categories
+  )
+
+harm_others_drinking$Parameter <- gsub(pattern = " \\(Net)","",gsub("Experience","Experienced",harm_others_drinking$Parameter))
+
+files_to_write <- list(harm_own_drinking = harm_own_drinking,harm_others_drinking = harm_others_drinking)
+
+write_hpa_data(files_to_write,output_file = paste0(output_file_path,"COVID-19 - HPA Exp Harm By Drinking.xlsx"))
+
+## Smoking behaviour since lockdown
+
+
+smoking_data <-
+  read_hpa_data(
+    file = raw_file,
+    sheet = 2,
+    range_start = c(176, 2),
+    range_end = c(186, 5),
+    categories = smoking_categories
+  )
+
+smoking_data$Parameter <- gsub(" you","",smoking_data$Parameter)
+
+write_hpa_data(smoking_data,output_file = paste0(output_file_path,"COVID-19 - HPA Smoking.xlsx"))
+
+## Worry about own smoking
+
+worry_own_smoking <-
+  read_hpa_data(
+    file = raw_file,
+    sheet = 2,
+    range_start = c(197, 2),
+    range_end = c(203, 5),
+    categories = binary_categories
+  )
+
+
+## Worry about someone else's smoking
+
+
+worry_others_smoking <-
+  read_hpa_data(
+    file = raw_file,
+    sheet = 2,
+    range_start = c(213, 2),
+    range_end = c(219, 5),
+    categories = binary_categories
+  )
+
+files_to_write <- list(worry_own_smoking = worry_own_smoking,worry_others_smoking = worry_others_smoking)
+
+write_hpa_data(files_to_write,output_file = paste0(output_file_path,"COVID-19 - HPA Worry Smoking.xlsx"))
+
 
 
 
