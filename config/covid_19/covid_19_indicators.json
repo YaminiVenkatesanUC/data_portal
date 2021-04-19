@@ -7873,28 +7873,29 @@
     [
       {
         "name":"Total",
-        "units":"Cumulative number of vaccination doses",
+        "units":"",
         "title":"Cumulative number of vaccines administered",
         "rotation":0
       },
       {
-        "name":"By DHB",
-        "units":"Cumulative number of vaccination doses",
-        "title":"Cumulative number of vaccines administered, by DHB"
+        "name":"By DHB of residence",
+        "units":"",
+        "title":"Cumulative number of vaccines administered, by DHB of residence",
+        "caveats":"<p>1) The DHB of residence is where the vaccinated person resides, which may differ from the DHB where they received their vaccination. The DHB of service is available in the spreadsheet at the bottom of the page.</p><p>2) In the Auckland region, most vaccinations to date are given in vaccination sites located in Counties Manukau DHB.</p>"
       },
       {
         "name":"By ethnicity",
-        "units":"Cumulative number of vaccination doses",
+        "units":"",
         "title":"Cumulative number of vaccines administered, by ethnicity"
       },
       {
         "name":"By age",
-        "units":"Cumulative number of vaccination doses",
+        "units":"",
         "title":"Cumulative number of vaccines administered, by age group"
       },
       {
         "name":"By sex",
-        "units":"Cumulative number of vaccination doses",
+        "units":"",
         "title":"Cumulative number of vaccines administered, by sex"
       }
     ]

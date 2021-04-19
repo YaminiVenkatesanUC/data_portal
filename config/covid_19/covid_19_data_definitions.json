@@ -8936,7 +8936,7 @@
     "type":"COVID-19 Vaccinations",
     "indicator_name":"Covid-19 Vaccines Administered – Cumulative",
     "filename":"COVID-19 MoH Vaccination - Cumulative.xlsx",
-    "group_names":["By DHB"],
+    "group_names":["By DHB of residence"],
     "sheet_number":"DHBofResidence",
     "parameter_col":1,
     "value_col":[2, 3],
