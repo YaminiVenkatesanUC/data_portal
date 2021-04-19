@@ -7881,7 +7881,7 @@
         "name":"By DHB of residence",
         "units":"",
         "title":"Cumulative number of vaccines administered, by DHB of residence",
-        "caveats":"<p>1) The DHB of residence is where the vaccinated person resides, which may differ from the DHB where they received their vaccination. The DHB of service is available in the spreadsheet at the bottom of the page.</p><p>2) In the Auckland region, most vaccinations to date are given in vaccination sites located in Counties Manukau DHB.</p>"
+        "caveats":"<p>1) The DHB of residence is where the vaccinated person resides, which may differ from the DHB where they received their vaccination. The DHB of service is available in the spreadsheet at the bottom of the page.</p><p>2) In the Auckland region, most vaccinations to date are given in vaccination sites located in Counties Manukau DHB.</p><p>3) Cumulative total: All vaccinations that have been administered and entered into the COVID-19 Immunisation Register up until midnight of the night before the data is published.</p>"
       },
       {
         "name":"By ethnicity",
@@ -7916,7 +7916,7 @@
     [
       {
         "name":"undefined_name",
-        "units":"Number of vaccines administered",
+        "units":"",
         "title":"Number of daily vaccines administered"
       }
     ]
