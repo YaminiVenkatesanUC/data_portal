@@ -12,6 +12,7 @@ library(httr)
 library(data.table)
 library(tibble)
 library(gtools)
+library(readr)
 
 
 source("R/core/build_ui.R")

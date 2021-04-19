@@ -585,7 +585,7 @@
     "frequency":"Daily",
     "groups": [
         {
-            "name": "Source",
+            "name": "undefined_name",
             "units": "Number",
             "title": "Source of cases by DHB"
         }
@@ -626,9 +626,9 @@
     "frequency":"Daily",
     "groups": [
         {
-            "name": "Status of cases",
+            "name": "undefined_name",
             "title": "Case status by DHB",
-            "units": ["Number"]
+            "units": "Number"
         }
     ]
   },
@@ -957,7 +957,7 @@
     "frequency":"Daily",
     "groups": [
       {
-        "name": "New Zealand trade weighted index ",
+        "name": "undefined_name",
         "title": "New Zealand trade weighted index",
         "units": "Index"
       }
@@ -976,7 +976,7 @@
     "frequency":"Daily",
     "groups": [
       {
-        "name": "NZX - all index",
+        "name": "undefined_name",
         "title": "New Zealand stock exchange - all index",
         "units": "Index"
       }
@@ -995,7 +995,7 @@
     "frequency":"Daily",
     "groups": [
       {
-        "name": "New Zealand bank bill yields - 90-days",
+        "name": "undefined_name",
         "title": "New Zealand bank bill yields - 90-days",
         "units": "% per annum"
       }
@@ -1014,7 +1014,7 @@
     "frequency":"Daily",
     "groups": [
       {
-        "name": "NZD/USD",
+        "name": "undefined_name",
         "title": "New Zealand dollar (NZD/USD)",
         "units": "$"
       }
@@ -1105,7 +1105,7 @@
     "frequency":"Weekly",
     "groups": [
       {
-        "name": "US jobless claims (initial)",
+        "name": "undefined_name",
         "title": "United States unemployment insurance weekly claims - seasonally adjusted",
         "units": "Number"
       }
@@ -1125,7 +1125,7 @@
     "frequency":"Weekly",
     "groups": [
       {
-        "name": "US weekly economic index",
+        "name": "undefined_name",
         "title": "United States weekly economic index",
         "units": "Index"
       }
@@ -1142,7 +1142,7 @@
     "frequency":"Monthly",
     "groups": [
       {
-        "name": "Sentiment index",
+        "name": "undefined_name",
         "title": "Global investor sentiment index",
         "units": "Index"
       }
@@ -1216,7 +1216,7 @@
     "frequency":"Weekly",
     "groups": [
       {
-        "name": "Market volatility index",
+        "name": "undefined_name",
         "title": "Market volatility index",
         "units": "Index"
       }
@@ -1234,7 +1234,7 @@
     "frequency":"Weekly",
     "groups": [
       {
-        "name": "Baltic dry index",
+        "name": "undefined_name",
         "title": "Baltic dry index",
         "units": "Index"
       }
@@ -1251,7 +1251,7 @@
     "frequency":"Weekly",
     "groups": [
       {
-        "name": "Global dairy trade price index",
+        "name": "undefined_name",
         "title": "Global dairy trade price index",
         "units": "Index"
       }
@@ -1303,7 +1303,7 @@
     "frequency":"Weekly",
     "groups": [
       {
-        "name": "Accommodation supplement",
+        "name": "undefined_name",
         "title": "Accommodation supplement",
         "units": "Number"
       }
@@ -1321,7 +1321,7 @@
     "frequency":"Weekly",
     "groups": [
       {
-        "name": "Special needs grants for food",
+        "name": "undefined_name",
         "title": "Special needs grants for food - (weekly)",
         "units": "Number"
       }
@@ -1339,7 +1339,7 @@
     "frequency":"Weekly",
     "groups": [
       {
-        "name": "Temporary additional support and special benefit",
+        "name": "undefined_name",
         "title": "Temporary additional support and special benefit",
         "units": "Number"
       }
@@ -1357,7 +1357,7 @@
     "frequency":"Weekly",
     "groups": [
       {
-        "name": "All special needs grants",
+        "name": "undefined_name",
         "title": "All special needs grants",
         "units": "Number"
       }
@@ -1470,7 +1470,7 @@
     "frequency":"Daily",
     "groups": [
       {
-        "name": "New Zealand",
+        "name": "undefined_name",
         "title": "COVID-19 cases in New Zealand (cumulative)",
         "units": "Number",
         "source_url": "https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation/covid-19-current-cases"
