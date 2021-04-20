@@ -1,0 +1,119 @@
+---
+title: "COVID-19 data portal -- monthly report"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: rows
+runtime: shiny
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+library(ggplot2)
+library(plotly)
+library(wordcloud2)
+setwd("~/data_portal")
+source("scripts/dev/reports/report.R")
+```
+Row
+-----------------------------------------
+### Total number of indicators
+
+```{r}
+totalInd <- df_events$ind_count_cum[length(df_events$ind_count_cum)]
+valueBox(value = paste0(totalInd), color = "primary")
+```
+
+
+### Change in visits
+```{r}
+latest_views <- df_events$views_count[df_events$month == latest_report_date]
+previous_views <- df_events$views_count[df_events$month == latest_report_date %m-% months(1)]
+perc_change <- round(latest_views / previous_views * 100 - 100, 1)
+valueBox(value = paste0(perc_change, "%"), 
+         color = ifelse(previous_views > latest_views, "warning", "primary"), 
+         icon = ifelse(previous_views > latest_views, "fa-angle-double-down", "fa-angle-double-up"))
+```
+
+### Percent downloaded
+```{r}
+perc_downloaded <- round(df_events$download_count[df_events$month == latest_report_date] / df_events$views_count[df_events$month == latest_report_date] * 100, 1)
+valueBox(value = paste0(perc_downloaded, "%"), caption = "of visits ended in download", color = "primary")
+```
+
+Row
+-----------------------------------------------------------------------
+
+### Number of indicators
+
+```{r}
+y_vis<- list(
+  tickfont = list(color = "red"),
+  overlaying = "y",
+  side = "right",
+  title = "Montly visits"
+)
+
+fig1 <- plot_ly(
+  x = df_events$month,
+  y = df_events$ind_count_cum,
+  type = "bar",
+  name = "Number of indicators"
+)
+
+fig1 <- fig1 %>% add_lines(x = df_events$month, y = df_events$views_count, name = "Monthly visits", yaxis = "y2")
+fig1 <- fig1 %>% add_lines(x = df_events$month, y = df_events$download_count, name = "Monthly downloads", yaxis = "y2")
+fig1 <- fig1 %>% layout(title = "Number of indicators overlayed wth monthly visits",
+                        yaxis2 = y_vis,
+                        xaxis = list(title = "Month"))
+
+fig1
+
+```
+
+Row {.sidebar}
+-----------------------------------------------------------------------
+
+### Indicator
+
+```{r}
+selectInput("indicator", label = "Select indicator:", choices = unique(df_indicators$indicator_name), selected = unique(df_indicators$indicator_name)[1])
+
+renderPlot({
+  hist(df_ind_views$ind_views[df_ind_views$indicator_name == input$indicator])
+})
+```
+
+
+
+
+Row {.tabset .tabset-fade}
+-----------------------------------------------------------------------
+### Wordcloud - most popular - over time
+
+```{r}
+ind_views_total <- df_ind_views %>% 
+  select(indicator_name, ind_views) %>% 
+  group_by(indicator_name) %>% 
+  summarise(count = sum(ind_views)) %>%
+  arrange(count)
+
+ind_views_total <- df_indicators %>% 
+  select(indicator_name) %>% 
+  unique() %>% 
+  left_join(ind_views_total) %>% 
+  arrange(count)
+
+ind_views_total$count <- ifelse(is.na(ind_views_total$count), 1, ind_views_total$count)
+
+col_vec <- rep(c("#9fb4ff", "#5976b4", "#070058", "#bfbfbf", "#002b74"), 5)
+#hwordcloud(text = ind_views_total$indicator_name, size = ind_views_total$count, width = "100%", )
+wordcloud2(data = tail(ind_views_total, 25), size = 0.4,minRotation = 0, maxRotation = 0, color = col_vec)
+```
+
+### Wordcloud - least popular - over time
+
+```{r}
+col_vec2 <- rep(c("#FFBABA", "#FF7B7B", "#FF5252", "#FF0000", "#A70000"), 5)
+#hwordcloud(text = ind_views_total$indicator_name, size = ind_views_total$count, width = "100%", )
+wordcloud2(data = head(ind_views_total, 25), size = 0.4,minRotation = 0, maxRotation = 0, color = col_vec2)
+```
