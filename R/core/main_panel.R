@@ -305,12 +305,12 @@ main_plot_server <- function(
 
   output$indicator_update_date <- renderText({
     indicator <- get_data_object()
-    # if(length(indicator$update_date) > 1){
-    #   update_date <- max(indicator$update_date)
-    # }
-    # else {
-    #   update_date <-indicator$update_date
-    # }
+    if(length(indicator$update_date) > 1){
+      update_date <- max(indicator$update_date)
+    }
+    else {
+      update_date <-indicator$update_date
+    }
 
     if (is.null(update_date)) {
         return("")
