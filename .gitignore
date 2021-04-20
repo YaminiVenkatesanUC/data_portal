@@ -9,3 +9,4 @@ config/config.yaml
 www/tag_manager.html
 *.csv
 *.xlsx
+config/covid_19/covid_19_odata_definitions*
