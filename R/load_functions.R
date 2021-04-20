@@ -1236,6 +1236,43 @@ read_MBIE_rental <- function(config, directory) {
   ))
 }
 
+read_hpa_drinking_data <- function(config,directory) {
+
+  if (!is.null(config$parameter_transform)) {
+    parameter_transform <- eval(parse(text = config$parameter_transform))
+  }
+  skip <- 0
+  if (!is.null(config$skip)) {
+    skip <- config$skip
+  }
+  data <- as.data.frame(read_excel(paste0(directory, config$filename))) %>%
+    select(Parameter,config$series,"Wave 1","Wave 2")
+
+  names(data)[[2]] <- "series"
+
+  output_group <- list()
+  update_date <- as.Date(file.info(paste0(directory, config$filename))$mtime, tz = "NZ")
+
+
+  data$series  <- ifelse(str_detect(data$series ,"Total"),"Total",paste0("Age group ",gsub("-"," – ",data$series )))
+
+
+  for (val in unique(data$series)) {
+    data_group <- data %>%
+      filter(
+        series == val
+      ) %>%
+      select(-series)
+    group_name <- val
+
+    output_group[[group_name]] <- BarChart$new(data_group, names(data_group)[2:3], update_date)
+  }
+
+  return(output_group)
+
+
+}
+
 
 load_functions <- list(
   read_from_csv = read_from_csv,
@@ -1263,5 +1300,6 @@ load_functions <- list(
   get_john_hopkins_data = get_john_hopkins_data,
   read_managed_isolotion_data = read_managed_isolotion_data,
   read_hlfs_data = read_hlfs_data,
-  read_MBIE_rental = read_MBIE_rental
+  read_MBIE_rental = read_MBIE_rental,
+  read_hpa_drinking_data = read_hpa_drinking_data
 )
