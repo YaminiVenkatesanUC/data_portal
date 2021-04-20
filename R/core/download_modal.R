@@ -123,7 +123,7 @@ download_data_server <- function(input, output, session, download_modal_vars) {
           )
           data <- apply(data, 2, as.character)
           enable(ns("downloadData"))
-          write.csv(data, file, row.names = FALSE)
+          write_excel_csv(as.data.frame(data), file)
         }
       )
     }

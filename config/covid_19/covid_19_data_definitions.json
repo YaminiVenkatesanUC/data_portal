@@ -131,10 +131,10 @@
             "commodity": "All",
             "measure": "$",
             "direction": "Exports",
-            "group_col": "Country",
-            "date_added":"03/06/2020",
+            "group_col": "Country"
+        },
+         "date_added":"03/06/2020",
             "date_dropped":null
-        }
     },
     {
         "class": "Economic",
@@ -154,10 +154,10 @@
             "commodity": "All",
             "measure": "$",
             "direction": "Imports",
-            "group_col": "Country",
-            "date_added":"03/06/2020",
+            "group_col": "Country"
+        },
+        "date_added":"03/06/2020",
             "date_dropped":null
-        }
     },
     {
         "class": "Economic",
@@ -177,10 +177,10 @@
             "commodity": ["All", "Non-food manufactured goods", "Mechanical machinery and equip", "Electrical machinery and equip"],
             "measure": "$",
             "direction": "Imports",
-            "group_col": "Commodity",
-            "date_added":"03/06/2020",
+            "group_col": "Commodity"
+        },
+        "date_added":"03/06/2020",
             "date_dropped":null
-        }
     },
     {
         "class": "Economic",
@@ -201,10 +201,10 @@
             "commodity": ["All", "Milk powder, butter, and cheese", "Meat and edible offal", "Fish, crustaceans, and molluscs", "Logs, wood, and wood articles", "Fruit", "Non-food manufactured goods"],
             "measure": "$",
             "direction": "Exports",
-            "group_col": "Commodity",
-            "date_added":"03/06/2020",
+            "group_col": "Commodity"
+        },
+        "date_added":"03/06/2020",
             "date_dropped":null
-        }
     },
     {
         "class": "Economic",
@@ -620,12 +620,12 @@
       {
         "class": "Health",
         "indicator_name": "Source of cases",
-        "type": "COVID-19",
         "ResourceID":"CPCOV3",
+        "type": "COVID-19 cases",
         "parameter_col": 2,
         "value_col": [3, 4, 5, 6, 7],
         "value_names": ["Import-related", "Imported", "Locally acquired, unknown source", "Locally acquired, linked", "Under investigation"],
-        "group_names": ["Source", "Source", "Source", "Source", "Source"],
+        "group_names": ["undefined_name"],
         "sheet_number": 2,
         "filename": "COVID 19 - MoH COVID-19 DHB insights.xlsx",
         "parameter_transform": "function (x) x",
@@ -640,8 +640,8 @@
       {
         "class": "Health",
         "indicator_name": "Status of cases",
-        "type": "COVID-19",
         "ResourceID":"CPCOV4",
+        "type": "COVID-19 cases",
         "parameter_col": 2,
         "value_col": [5, 3, 4],
         "value_names": ["Deceased", "Active","Recovered"],
@@ -650,7 +650,7 @@
         "parameter_transform": "function (x) x",
         "date_filter": "function(x) x != \"Total\"",
         "load_function": "read_from_excel",
-        "group_names": "Status of cases",
+        "group_names": "undefined_name",
         "drop_na": false,
         "data_type": "BarChart",
         "date_added":"12/05/2020",
@@ -659,7 +659,7 @@
     {
         "class": "Health",
         "indicator_name": "Case demographics",
-        "type": "COVID-19",
+        "type": "COVID-19 cases",
         "parameter_col": 2,
         "parameter_transform": "function (x) x",
         "date_filter": "function(x) x != \"Total\"",
@@ -681,7 +681,7 @@
     {
         "class": "Health",
         "indicator_name": "Case demographics",
-        "type": "COVID-19",
+        "type": "COVID-19 cases",
         "parameter_col": 2,
         "parameter_transform": "function (x) x",
         "date_filter": "function(x) x != \"Total\"",
@@ -699,7 +699,7 @@
     {
         "class": "Health",
         "indicator_name": "Case demographics",
-        "type": "COVID-19",
+        "type": "COVID-19 cases",
         "parameter_col": 2,
         "parameter_transform": "function (x) x",
         "date_filter": "function(x) x != \"Total\"",
@@ -1099,7 +1099,7 @@
         "filename": "COVID 19 - RBNZ Financial indicators.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": "New Zealand trade weighted index ",
+        "group_names": "undefined_name",
         "date_added":"20/04/2020",
         "date_dropped":null
     },
@@ -1120,9 +1120,7 @@
         "load_function": "read_from_excel",
         "skip": 2,
         "data_type": "TimeSeries",
-        "group_names": [
-        "NZX - all index"
-        ],
+        "group_names": ["undefined_name"],
         "date_added":"20/04/2020",
         "date_dropped":null
     },
@@ -1133,9 +1131,7 @@
         "parameter_col": 1,
         "parameter_transform": "function(x) dmy(x)",
         "sheet_number": 1,
-        "value_col": [
-        3
-        ],
+        "value_col": 3,
         "input_units": 100,
         "value_names": [
         "New Zealand bank bill yields - 90-days"
@@ -1144,9 +1140,7 @@
         "load_function": "read_from_excel",
         "skip": 2,
         "data_type": "TimeSeries",
-        "group_names": [
-        "New Zealand bank bill yields - 90-days"
-        ],
+        "group_names": ["undefined_name"],
         "date_added":"20/04/2020",
         "date_dropped":null
     },
@@ -1158,9 +1152,7 @@
         "parameter_col": 1,
         "parameter_transform": "function(x) dmy(x)",
         "sheet_number": 1,
-        "value_col": [
-        2
-        ],
+        "value_col": 2,
         "value_names": [
         "NZD/USD"
         ],
@@ -1168,9 +1160,7 @@
         "load_function": "read_from_excel",
         "skip": 2,
         "data_type": "TimeSeries",
-        "group_names": [
-        "NZD/USD"
-        ],
+        "group_names": ["undefined_name"],
         "date_added":"20/04/2020",
         "date_dropped":null
     },
@@ -1248,9 +1238,7 @@
         "filename": "COVID 19 - US jobless claims.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": [
-        "US jobless claims (initial)"
-        ],
+        "group_names": ["undefined_name"],
         "date_added":"20/04/2020",
         "date_dropped":null
     },
@@ -1263,15 +1251,11 @@
         "sheet_number": 1,
         "value_col": 2,
         "input_units": 1000,
-        "value_names": [
-        "US weekly economic index"
-        ],
+        "value_names": "US weekly economic index",
         "filename": "COVID 19 - US weekly economic index data.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": [
-        "US weekly economic index"
-        ],
+        "group_names": "undefined_name",
         "date_added":"20/04/2020",
         "date_dropped":null
     },
@@ -1287,7 +1271,7 @@
         "filename": "COVID 19 - Haver sourced indicators.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": "Sentiment index",
+        "group_names": "undefined_name",
         "date_added":"20/04/2020",
         "date_dropped":null
     },
@@ -1362,7 +1346,7 @@
         "load_function": "read_from_excel",
         "skip": 2,
         "data_type": "TimeSeries",
-        "group_names": "Market volatility index",
+        "group_names": "undefined_name",
         "date_added":"20/04/2020",
         "date_dropped":null
     },
@@ -1379,7 +1363,7 @@
         "load_function": "read_from_excel",
         "skip": 2,
         "data_type": "TimeSeries",
-        "group_names": "Baltic dry index",
+        "group_names": "undefined_name",
         "date_added":"20/04/2020",
         "date_dropped":null
     },
@@ -1396,7 +1380,7 @@
         "load_function": "read_from_excel",
         "skip": 2,
         "data_type": "TimeSeries",
-        "group_names": "Global dairy trade price index",
+        "group_names": "undefined_name",
         "date_added":"20/04/2020",
         "date_dropped":null
     },
@@ -1474,7 +1458,7 @@
         "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": "Accommodation supplement",
+        "group_names": "undefined_name",
         "date_added":"26/05/2020",
         "date_dropped":null
     },
@@ -1490,16 +1474,12 @@
         ],
         "sheet_number": 1,
         "value_col": 2,
-        "value_names": [
-        "Special needs grants for food"
-        ],
+        "value_names": "Special needs grants for food",
         "filename": "COVID-19 MSD Special Needs Grants for Food.xlsx",
         "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": [
-        "Special needs grants for food"
-        ],
+        "group_names": "undefined_name",
         "date_added":"26/05/2020",
         "date_dropped":null
     },
@@ -1520,7 +1500,7 @@
         "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": "Temporary additional support and special benefit",
+        "group_names": "undefined_name",
         "date_added":"26/05/2020",
         "date_dropped":null
     },
@@ -1563,16 +1543,12 @@
         ],
         "sheet_number": 1,
         "value_col": 2,
-        "value_names": [
-          "All special needs grants"
-          ],
+        "value_names": "All special needs grants",
         "filename": "COVID-19 MSD All Special Needs Grants.xlsx",
         "drop_na": false,
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": [
-          "All special needs grants"
-        ],
+        "group_names": "undefined_name",
         "date_added":"26/05/2020",
         "date_dropped":null
     },
@@ -1642,8 +1618,8 @@
     {
         "class": "Health",
         "indicator_name": "Number of cases",
-        "type": "COVID-19",
         "ResourceID":"CPCOV2",
+        "type": "COVID-19 cases",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -1663,14 +1639,14 @@
         "filename": "COVID 19 - MoH COVID-19 cases.xlsx",
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
-        "group_names": "New Zealand",
+        "group_names": "undefined_name",
         "date_added":"20/04/2020",
         "date_dropped":null
         },
     {
         "class": "Health",
         "indicator_name": "Number of cases (other countries)",
-        "type": "COVID-19",
+        "type": "COVID-19 cases",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -1698,7 +1674,7 @@
     {
         "class": "Health",
         "indicator_name": "Number of cases (other countries)",
-        "type": "COVID-19",
+        "type": "COVID-19 cases",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -1726,7 +1702,7 @@
     {
         "class": "Health",
         "indicator_name": "Number of cases (other countries)",
-        "type": "COVID-19",
+        "type": "COVID-19 cases",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -1754,7 +1730,7 @@
     {
         "class": "Health",
         "indicator_name": "Number of cases (other countries)",
-        "type": "COVID-19",
+        "type": "COVID-19 cases",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -1782,7 +1758,7 @@
     {
         "class": "Health",
         "indicator_name": "Number of cases (other countries)",
-        "type": "COVID-19",
+        "type": "COVID-19 cases",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -1810,7 +1786,7 @@
     {
         "class": "Health",
         "indicator_name": "Number of cases (other countries)",
-        "type": "COVID-19",
+        "type": "COVID-19 cases",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -1838,7 +1814,7 @@
     {
         "class": "Health",
         "indicator_name": "Number of cases (other countries)",
-        "type": "COVID-19",
+        "type": "COVID-19 cases",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -1866,7 +1842,7 @@
     {
         "class": "Health",
         "indicator_name": "Number of cases (other countries)",
-        "type": "COVID-19",
+        "type": "COVID-19 cases",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -1894,7 +1870,7 @@
     {
         "class": "Health",
         "indicator_name": "Number of cases (other countries)",
-        "type": "COVID-19",
+        "type": "COVID-19 cases",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -3004,11 +2980,31 @@
     {
         "class": "Health",
         "indicator_name": "Tests per day",
-        "type": "COVID-19",
+        "type": "COVID-19 testing",
         "parameter_col": 1,
-        "value_col": [2, 3],
-        "value_names": ["Tests by day", "Total tests (cumulative)"],
-        "group_names": ["Tests by day", "Total tests (cumulative)"],
+        "value_col": [2],
+        "value_names": ["Tests by day"],
+        "group_names": ["undefined_name"],
+        "sheet_number": 5,
+        "filename": "COVID 19 - MoH COVID-19 cases.xlsx",
+       "parameter_transform": [
+        "function (x) ",
+        "as.Date(x, format = \"%d/%m/%Y\")"
+        ],
+        "load_function": "read_from_excel",
+        "drop_na": false,
+        "data_type": "TimeSeries",
+        "date_added":"20/04/2020",
+        "date_dropped":null
+      },
+      {
+        "class": "Health",
+        "indicator_name": "Total tests (cumulative)",
+        "type": "COVID-19 testing",
+        "parameter_col": 1,
+        "value_col": [3],
+        "value_names": ["Total tests (cumulative)"],
+        "group_names": ["undefined_name"],
         "sheet_number": 5,
         "filename": "COVID 19 - MoH COVID-19 cases.xlsx",
        "parameter_transform": [
@@ -3425,7 +3421,7 @@
 {
         "class": "Health",
         "indicator_name": "Quarantine and managed isolation figures",
-        "type": "COVID-19",
+        "type": "Managed Isolation",
         "parameter_col": 1,
         "value_col": [2],
         "value_names": ["Current - 21 October 2020"],
@@ -3442,7 +3438,7 @@
 {
         "class": "Health",
         "indicator_name": "Quarantine and managed isolation figures",
-        "type": "COVID-19",
+        "type": "Managed Isolation",
         "parameter_col": 1,
         "value_col": [3],
         "value_names": ["Current - 21 October 2020"],
@@ -3460,7 +3456,7 @@
 {
         "class": "Health",
         "indicator_name": "Quarantine and managed isolation figures",
-        "type": "COVID-19",
+        "type": "Managed Isolation",
         "parameter_col": 1,
         "value_col": [2],
         "value_names": ["Projected occupancy rate"],
@@ -3518,7 +3514,7 @@
 {
         "class": "Health",
         "indicator_name": "Number of cases (other countries)",
-        "type": "COVID-19",
+        "type": "COVID-19 cases",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -3546,7 +3542,7 @@
 {
         "class": "Health",
         "indicator_name": "Number of cases (other countries)",
-        "type": "COVID-19",
+        "type": "COVID-19 cases",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -3574,7 +3570,7 @@
 {
         "class": "Health",
         "indicator_name": "Number of cases (other countries)",
-        "type": "COVID-19",
+        "type": "COVID-19 cases",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -3602,7 +3598,7 @@
 {
         "class": "Health",
         "indicator_name": "Number of cases (other countries)",
-        "type": "COVID-19",
+        "type": "COVID-19 cases",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -3630,7 +3626,7 @@
 {
         "class": "Health",
         "indicator_name": "Number of cases (other countries)",
-        "type": "COVID-19",
+        "type": "COVID-19 cases",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -3658,7 +3654,7 @@
 {
         "class": "Health",
         "indicator_name": "Number of cases (other countries)",
-        "type": "COVID-19",
+        "type": "COVID-19 cases",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -3686,7 +3682,7 @@
 {
         "class": "Health",
         "indicator_name": "Number of cases (other countries)",
-        "type": "COVID-19",
+        "type": "COVID-19 cases",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -3714,7 +3710,7 @@
 {
         "class": "Health",
         "indicator_name": "Number of cases (other countries)",
-        "type": "COVID-19",
+        "type": "COVID-19 cases",
         "parameter_col": 1,
         "parameter_transform": [
         "function (x) ",
@@ -4885,8 +4881,7 @@
          9,
          10,
          11,
-         12,
-         13
+         12
          ],
     "value_names": [
        "19 years and under",
@@ -8867,6 +8862,152 @@
       "load_function":"read_from_excel",
       "date_added":"08/03/2021",
       "date_dropped":null
-    }
+    },
+      {
+      "class": "Health",
+      "type": "Mental health",
+      "indicator_name": "Worry about drinking",
+      "parameter_col": 1,
+      "skip": null,
+      "order_parameter": false,
+      "value_col": [2, 3],
+      "value_names": ["Wave 1", "Wave 2"],
+      "group_names": ["Own drinking"],
+      "sheet_number": 1,
+      "filename": "COVID-19 - HPA Worry Drinking.xlsx",
+      "parameter_transform": "function (x) x",
+      "load_function": "read_from_excel",
+      "data_type": "BarChart",
+      "date_added":"19/04/2021",
+      "date_dropped":null
+     },
+     {
+      "class": "Health",
+      "type": "Mental health",
+      "indicator_name": "Worry about drinking",
+      "parameter_col": 1,
+      "skip": null,
+      "order_parameter": false,
+      "value_col": [2,3],
+      "value_names": ["Wave 1", "Wave 2"],
+      "group_names": ["Others’ Drinking"],
+      "sheet_number": 2,
+      "filename": "COVID-19 - HPA Worry Drinking.xlsx",
+      "parameter_transform": "function (x) x",
+      "load_function": "read_from_excel",
+      "data_type": "BarChart",
+      "date_added":"19/04/2021",
+      "date_dropped":null
+     },
+     {
+      "class": "Health",
+      "type": "General health",
+      "indicator_name": "Experienced harm due to drinking",
+      "parameter_col": 1,
+      "skip": null,
+      "order_parameter": false,
+      "value_col": [2, 3],
+      "value_names": ["Wave 1", "Wave 2"],
+      "group_names": ["Own drinking"],
+      "sheet_number": 1,
+      "filename": "COVID-19 - HPA Exp Harm By Drinking.xlsx",
+      "parameter_transform": "function (x) x",
+      "load_function": "read_from_excel",
+      "data_type": "BarChart",
+      "date_added":"19/04/2021",
+      "date_dropped":null
+     },
+     {
+      "class": "Health",
+      "type": "General health",
+      "indicator_name": "Experienced harm due to drinking",
+      "parameter_col": 1,
+      "skip": null,
+      "order_parameter": false,
+      "value_col": [2, 3],
+      "value_names": ["Wave 1", "Wave 2"],
+      "group_names": ["Others’ drinking"],
+      "sheet_number": 2,
+      "filename": "COVID-19 - HPA Exp Harm By Drinking.xlsx",
+      "parameter_transform": "function (x) x",
+      "load_function": "read_from_excel",
+      "data_type": "BarChart",
+      "date_added":"19/04/2021",
+      "date_dropped":null
+     },
+     {
+      "class": "Health",
+      "type": "General health",
+      "indicator_name": "Smoking behaviours",
+      "parameter_col": 1,
+      "skip": null,
+      "order_parameter": false,
+      "value_col": [2],
+      "value_names": ["Wave 1"],
+      "group_names": "undefined_name",
+      "sheet_number": 1,
+      "filename": "COVID-19 - HPA Smoking.xlsx",
+      "parameter_transform": "function (x) x",
+      "load_function": "read_from_excel",
+      "data_type": "BarChart",
+      "date_added":"19/04/2021",
+      "date_dropped":null
+     },
+     {
+      "class": "Health",
+      "type": "Mental health",
+      "indicator_name": "Worry about smoking",
+      "parameter_col": 1,
+      "skip": null,
+      "order_parameter": false,
+      "value_col": [2,3],
+      "value_names": ["Wave 1", "Wave 2"],
+      "group_names": ["Own smoking"],
+      "sheet_number": 1,
+      "filename": "COVID-19 - HPA Worry Smoking.xlsx",
+      "parameter_transform": "function (x) x",
+      "load_function": "read_from_excel",
+      "data_type": "BarChart",
+      "date_added":"19/04/2021",
+      "date_dropped":null
+     },
+      {
+      "class": "Health",
+      "type": "Mental health",
+      "indicator_name": "Worry about smoking",
+      "parameter_col": 1,
+      "skip": null,
+      "order_parameter": false,
+      "value_col": [2,3],
+      "value_names": ["Wave 1", "Wave 2"],
+      "group_names": ["Others’ smoking"],
+      "sheet_number": 2,
+      "sheet_name":"Worry about others smoking",
+      "filename": "COVID-19 - HPA Worry Smoking.xlsx",
+      "parameter_transform": "function (x) x",
+      "load_function": "read_from_excel",
+      "data_type": "BarChart",
+      "date_added":"19/04/2021",
+      "date_dropped":null
+     },
+      {
+      "class": "Health",
+      "type": "General health",
+      "indicator_name": "Drinking behaviours",
+      "parameter_col": 1,
+      "skip": null,
+      "order_parameter": false,
+      "value_col": [2,3],
+      "value_names": [null],
+      "group_names": [null],
+      "sheet_number": 1,
+      "series":"Age",
+      "filename": "COVID-19 - HPA Drinking data.xlsx",
+      "parameter_transform": "function (x) x",
+      "load_function": "read_hpa_drinking_data",
+      "data_type": "BarChart",
+      "date_added":"19/04/2021",
+      "date_dropped":null
+     }
 
 ]
