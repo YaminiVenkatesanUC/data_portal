@@ -970,7 +970,7 @@
         "sheet_number": 1,
         "filename": "COVID 19 - Chorus national broadband.csv",
         "parameter_transform": ["function (x) ymd(x)"],
-        "load_function": "read_from_csv",
+        "load_function": "chorus_load_function",
         "date_added":"26/08/2020",
         "date_dropped":null
       },
@@ -4808,8 +4808,7 @@
          9,
          10,
          11,
-         12,
-         13
+         12
          ],
     "value_names": [
        "19 years and under",
