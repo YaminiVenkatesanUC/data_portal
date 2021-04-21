@@ -1,4 +1,0 @@
-"0","selectInput(""indicator"", label = ""Select indicator:"", choices = unique(df_indicators$indicator_name), selected = unique(df_indicators$indicator_name)[1])"
-"2","Error in selectInput(""indicator"", label = ""Select indicator:"", choices = unique(df_indicators$indicator_name),  : 
-  could not find function ""selectInput""
-"

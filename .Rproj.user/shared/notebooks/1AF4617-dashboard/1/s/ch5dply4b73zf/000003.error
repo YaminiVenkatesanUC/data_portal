@@ -1,1 +1,0 @@
-{"frames":[],"message":"Error in selectInput(\"indicator\", label = \"Select indicator:\", choices = unique(df_indicators$indicator_name),  : \n  could not find function \"selectInput\"\n"}

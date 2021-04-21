@@ -1,2 +1,0 @@
-"0","totalInd <- df_events$ind_count_cum[length(df_events$ind_count_cum)]"
-"0","valueBox(value = totalInd, color = ""primary"", icon = ""fa-tag"")"

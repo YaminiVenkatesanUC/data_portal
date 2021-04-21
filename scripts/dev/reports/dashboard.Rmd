@@ -55,9 +55,9 @@ data <- df_indicators %>%
   summarise(count = n())
   
   
-fig <- data %>% plot_ly(labels = ~frequency, values = ~count)
+fig <- data %>% plot_ly(labels = ~frequency, values = ~count, textinfo='label+percent')
 fig <- fig %>% add_pie(hole = 0.6)
-fig <- fig %>% layout(title = "Number of indicators by frequency",  showlegend = F,
+fig <- fig %>% layout(title = "Number of indicators by frequency",  showlegend = FALSE,
                       xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
                       yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
 
