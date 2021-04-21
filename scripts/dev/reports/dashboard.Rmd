@@ -69,7 +69,7 @@ fig1 <- plot_ly(
   y = df_events$ind_count_cum,
   type = "bar",
   name = "Number of indicators",
-  marker = list(color = "#f6c653", line = list(color = "#ffa500")),
+  marker = list(color = "#838f9c", line = list(color = "#5a6776")),
   hoverinfo = 'text',
   text = ~paste0(format(x = df_events$month,  "%B"), ': ', df_events$ind_count_cum)
 )
@@ -127,7 +127,7 @@ fig <- data %>% plot_ly(labels = ~frequency, values = ~count,
                         text = ~paste0(frequency, ': ', count, ' indicators'),
                         marker = list(colors = cols))
 fig <- fig %>% add_pie(hole = 0.6)
-fig <- fig %>% layout(title = "Number of indicators by frequency",  showlegend = TRUE,
+fig <- fig %>% layout(title = "",  showlegend = TRUE,
                       xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
                       yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
 
@@ -147,7 +147,7 @@ fig <- plot_ly(
                         text = ~paste0(labs, ': ', vals, ' indicators'),
   marker = list(colors = cols))
 fig <- fig %>% add_pie(hole = 0.6)
-fig <- fig %>% layout(title = "Number of indicators by sub-series",  showlegend = TRUE,
+fig <- fig %>% layout(title = "",  showlegend = TRUE,
                       xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
                       yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
 
@@ -173,7 +173,7 @@ fig <- data %>% plot_ly(
   text = ~paste0(labs, ": ", vals, ' indicators'),
   marker = list(colors = cols))
 fig <- fig %>% add_pie(hole = 0.6)
-fig <- fig %>% layout(title = "Number of indicators by sub-series",  showlegend = TRUE,
+fig <- fig %>% layout(title = "",  showlegend = TRUE,
                       xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
                       yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
 
@@ -230,6 +230,20 @@ data <- df_indicators %>%
   summarize(count = n()) %>% 
   arrange(desc(count)) %>% 
   head(n = 10)
-knitr::kable(data, col.names = c("Supplier", "Number of indicators"))
+
+data_views <- df_ind_views %>% 
+  select(indicator_name, ind_views) %>% 
+  group_by(indicator_name) %>% 
+  summarise(total_views = sum(ind_views)) %>% 
+  left_join(df_indicators) %>% 
+  select(indicator_name, source, total_views) %>% 
+  group_by(source) %>% 
+  summarize(source_views = sum(total_views)) %>% 
+  right_join(data) %>% 
+  arrange(desc(count)) %>% 
+  select(source, count, source_views)
+  
+
+knitr::kable(data_views, col.names = c("Supplier", "Number of indicators", "Total views"))
 
 ```
