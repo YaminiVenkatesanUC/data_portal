@@ -3,6 +3,7 @@ title: "COVID-19 data portal -- monthly report"
 output: 
   flexdashboard::flex_dashboard:
     orientation: rows
+    theme: flatly
 ---
 
 ```{r setup, include=FALSE}
@@ -13,6 +14,7 @@ library(wordcloud2)
 #library(shiny)
 setwd("~/data_portal")
 source("scripts/dev/reports/report.R")
+cols <- c("f67453", "#4c8286", "#6dbbc0", "#8ca14b", "#b0ca5e", "#ffd500", "#edb335", "#e75b42", "#c2204d", "#de3765")
 ```
 
 Performance
@@ -20,13 +22,19 @@ Performance
 
 Row
 -----------------------------------------
-### Total number of indicators
+### Indicators in total
 
 ```{r}
 totalInd <- df_events$ind_count_cum[length(df_events$ind_count_cum)]
-valueBox(value = paste0(totalInd), color = "primary")
+valueBox(value = totalInd, color = "primary")
 ```
 
+### Indicators added last month
+```{r}
+valueBox(value = df_events$new_inds[length(df_events$new_inds)], 
+         color = ifelse(df_events$new_inds[length(df_events$new_inds)] > 0, "success", "warning"),
+         icon = ifelse(df_events$new_inds[length(df_events$new_inds)] > 0, "fa-angle-double-up", "fa-angle-double-down"))
+```
 
 ### Change in visits
 ```{r}
@@ -34,7 +42,7 @@ latest_views <- df_events$views_count[df_events$month == latest_report_date]
 previous_views <- df_events$views_count[df_events$month == latest_report_date %m-% months(1)]
 perc_change <- round(latest_views / previous_views * 100 - 100, 1)
 valueBox(value = paste0(perc_change, "%"), 
-         color = ifelse(previous_views > latest_views, "warning", "primary"), 
+         color = ifelse(previous_views > latest_views, "warning", "success"), 
          icon = ifelse(previous_views > latest_views, "fa-angle-double-down", "fa-angle-double-up"))
 ```
 
@@ -45,36 +53,37 @@ valueBox(value = paste0(perc_downloaded, "%"), caption = "of visits ended in dow
 ```
 
 Row
------------------------------------------
+----------------------------------------
+### Number of indicators
 
-### Frequency
 ```{r}
+y_vis<- list(
+  tickfont = list(color = "#de3765"),
+  overlaying = "y",
+  side = "right",
+  title = "Montly visits"
+)
 
-data <- df_indicators %>% 
-  group_by(frequency) %>% 
-  summarise(count = n())
-  
-  
-fig <- data %>% plot_ly(labels = ~frequency, values = ~count, textinfo='label+percent')
-fig <- fig %>% add_pie(hole = 0.6)
-fig <- fig %>% layout(title = "Number of indicators by frequency",  showlegend = FALSE,
-                      xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
-                      yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
+fig1 <- plot_ly(
+  x = df_events$month,
+  y = df_events$ind_count_cum,
+  type = "bar",
+  name = "Number of indicators",
+  marker = list(color = "#f6c653", line = list(color = "#ffa500")),
+  hoverinfo = 'text',
+  text = ~paste0(format(x = df_events$month,  "%B"), ': ', df_events$ind_count_cum)
+)
 
-fig
+fig1 <- fig1 %>% add_lines(x = df_events$month, y = df_events$views_count, name = "Monthly visits", yaxis = "y2", marker = list(color = "#de3765"))
+fig1 <- fig1 %>% add_lines(x = df_events$month, y = df_events$download_count, name = "Monthly downloads", yaxis = "y2", marker = list(color = "#4c8286"))
+fig1 <- fig1 %>% layout(title = "Number of indicators overlayed wth monthly visits",
+                        yaxis2 = y_vis,
+                        xaxis = list(title = "Month"))
+
+fig1
+
 ```
 
-### Sub-series
-```{r}
-```
-
-### Downloadable
-```{r}
-```
-
-### International
-```{r}
-```
 
 Row
 ------------------------------------------
@@ -98,76 +107,129 @@ gauge(automated, min = 0, max = totalInd, gaugeSectors(
 Summary
 ============================================================
 
-Row {data-height = 650}
+Row {data-height = 700}
+-----------------------------------------
+
+### Frequency
+```{r}
+
+data <- df_indicators %>% 
+  select(indicator_name, frequency) %>% 
+  unique() %>% 
+  group_by(frequency) %>% 
+  summarise(count = n())
+  
+  
+fig <- data %>% plot_ly(labels = ~frequency, values = ~count,
+                        textposition = 'inside',
+                        textinfo='percent', 
+                        hoverinfo = 'text',
+                        text = ~paste0(frequency, ': ', count, ' indicators'),
+                        marker = list(colors = cols))
+fig <- fig %>% add_pie(hole = 0.6)
+fig <- fig %>% layout(title = "Number of indicators by frequency",  showlegend = TRUE,
+                      xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
+                      yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
+
+fig
+```
+
+### Sub-series
+```{r}
+vals <- c(sum(df_indicators$region), sum(df_indicators$gender), sum(df_indicators$age), sum(df_indicators$ethnic), sum(df_indicators$industry), sum(df_indicators$other), sum(df_indicators$no_subseries))
+labs <- c("By region", "By sex/gender", "By age", "By ethnicity", "By industry", "Other sub-series", "No sub-series")
+fig <- plot_ly(
+  labels = labs, 
+  values = vals, 
+  textinfo='percent', 
+  textposition = 'inside',
+                        hoverinfo = 'text',
+                        text = ~paste0(labs, ': ', vals, ' indicators'),
+  marker = list(colors = cols))
+fig <- fig %>% add_pie(hole = 0.6)
+fig <- fig %>% layout(title = "Number of indicators by sub-series",  showlegend = TRUE,
+                      xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
+                      yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
+
+fig
+```
+
+### Downloadable
+```{r}
+data <- df_indicators %>% 
+  select(indicator_name, download) %>%
+  unique() %>% 
+  group_by(download) %>% 
+  summarise(count = n())
+
+vals <- c(data$count[data$download == TRUE], data$count[data$download == FALSE])
+labs <- c("Downloadable", "Non-downloadable")
+fig <- data %>% plot_ly(
+  labels = labs, 
+  values = vals, 
+  textinfo='percent', 
+  textposition = 'inside',
+  hoverinfo = 'text',
+  text = ~paste0(labs, ": ", vals, ' indicators'),
+  marker = list(colors = cols))
+fig <- fig %>% add_pie(hole = 0.6)
+fig <- fig %>% layout(title = "Number of indicators by sub-series",  showlegend = TRUE,
+                      xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
+                      yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
+
+fig
+```
+
+Row {.tabset .tabset-fade}
 -----------------------------------------------------------------------
-### Most popular indicators
-Bla-bla-bla
+
+### Most visited indicators
+
 ```{r}
 ind_views_total <- df_ind_views %>% 
   select(indicator_name, ind_views) %>% 
   group_by(indicator_name) %>% 
-  summarise(count = sum(ind_views)) %>%
-  arrange(count)
+  summarise(total_views = sum(ind_views))
 
 ind_views_total <- df_indicators %>% 
   select(indicator_name) %>% 
   unique() %>% 
-  left_join(ind_views_total) %>% 
-  arrange(count)
+  left_join(ind_views_total) 
 
-ind_views_total$count <- ifelse(is.na(ind_views_total$count), 1, ind_views_total$count)
+ind_views_total <- df_ind_views %>% 
+  filter(month == latest_report_date) %>% 
+  select(indicator_name, ind_views) %>% 
+  right_join(ind_views_total)
 
-col_vec <- rep(c("#9fb4ff", "#5976b4", "#070058", "#bfbfbf", "#002b74"), 5)
-#hwordcloud(text = ind_views_total$indicator_name, size = ind_views_total$count, width = "100%", )
-fig <- wordcloud2(data = tail(ind_views_total, 25), size = 0.4,minRotation = 0, maxRotation = 0, color = col_vec)
-fig
+most_viewed <- ind_views_total %>% 
+  select(indicator_name, total_views, ind_views) %>% 
+  filter(total_views > 999) %>% 
+  arrange(desc(total_views))
+
+least_viewed <- ind_views_total %>% 
+  select(indicator_name, total_views, ind_views) %>% 
+  filter(total_views < 10) %>% 
+  arrange(desc(total_views))
+least_viewed$ind_views <- ifelse(is.na(least_viewed$ind_views), 0, least_viewed$ind_views)
+
+knitr::kable(most_viewed, col.names = c("Indicator name", "Total views", "Views last month"))
 ```
 
 ### Least visited indicators
 
 ```{r}
-col_vec2 <- rep(c("#FFBABA", "#FF7B7B", "#FF5252", "#FF0000", "#A70000"), 5)
-#hwordcloud(text = ind_views_total$indicator_name, size = ind_views_total$count, width = "100%", )
-cloud2 <- wordcloud2(data = head(ind_views_total, 25), size = 0.4,minRotation = 0, maxRotation = 0, color = col_vec2)
-cloud2
+knitr::kable(least_viewed, col.names = c("Indicator name", "Total views", "Views last month"))
 ```
 
-
-Row {data-height = 350}
------------------------------------------------------------------------
-
-### Number of indicators
-
+### Top 10 largest suppliers
 ```{r}
-y_vis<- list(
-  tickfont = list(color = "red"),
-  overlaying = "y",
-  side = "right",
-  title = "Montly visits"
-)
-
-fig1 <- plot_ly(
-  x = df_events$month,
-  y = df_events$ind_count_cum,
-  type = "bar",
-  name = "Number of indicators"
-)
-
-fig1 <- fig1 %>% add_lines(x = df_events$month, y = df_events$views_count, name = "Monthly visits", yaxis = "y2")
-fig1 <- fig1 %>% add_lines(x = df_events$month, y = df_events$download_count, name = "Monthly downloads", yaxis = "y2")
-fig1 <- fig1 %>% layout(title = "Number of indicators overlayed wth monthly visits",
-                        yaxis2 = y_vis,
-                        xaxis = list(title = "Month"))
-
-fig1
+data <- df_indicators %>% 
+  select(indicator_name, source) %>% 
+  unique() %>% 
+  group_by(source) %>% 
+  summarize(count = n()) %>% 
+  arrange(desc(count)) %>% 
+  head(n = 10)
+knitr::kable(data, col.names = c("Supplier", "Number of indicators"))
 
 ```
-
-Indicators
-======================================================================
-
-Row {data-height = 650}
------------------------------------------------------------------------
-
-### Indicator
-

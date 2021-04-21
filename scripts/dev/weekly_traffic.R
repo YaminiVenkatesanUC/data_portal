@@ -10,8 +10,9 @@ regions <- unique(update$Region)
 
 for (region in regions) {
   data <- update %>%
-    select(Day, Type, Region, TrafficCount) %>%
+    select(Day, Type, Region, TrafficCount, Exclude_Calculations) %>%
     filter(Region == region) %>%
+    filter(Exclude_Calculations == 'N') %>%
     select(-Region) %>%
     pivot_wider(names_from = Type, values_from = TrafficCount) %>%
     select(Day, `Light Vehicles`, `Heavy Vehicles`)

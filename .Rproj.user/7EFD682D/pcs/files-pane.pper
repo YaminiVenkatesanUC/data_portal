@@ -1,5 +1,5 @@
 {
-    "path" : "~/data_portal",
+    "path" : "~/data_portal/scripts/dev/reports",
     "sortOrder" : [
         {
             "ascending" : false,

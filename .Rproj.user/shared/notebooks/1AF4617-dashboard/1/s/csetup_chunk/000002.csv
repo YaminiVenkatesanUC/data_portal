@@ -1,52 +1,11 @@
 "0","library(flexdashboard)"
 "0","library(ggplot2)"
 "0","library(plotly)"
-"2","
-Attaching package: ‘plotly’
-
-"
-"2","The following object is masked from ‘package:ggplot2’:
-
-    last_plot
-
-"
-"2","The following object is masked from ‘package:stats’:
-
-    filter
-
-"
-"2","The following object is masked from ‘package:graphics’:
-
-    layout
-
-"
 "0","library(wordcloud2)"
+"0","#library(shiny)"
 "0","setwd(""~/data_portal"")"
 "2","The working directory was changed to /home/STATSNZ/mgorbato/data_portal inside a notebook chunk. The working directory will be reset when the chunk is finished running. Use the knitr root.dir option in the setup chunk to change the working directory for notebook chunks."
 "0","source(""scripts/dev/reports/report.R"")"
-"2","
-Attaching package: ‘lubridate’
-
-"
-"2","The following objects are masked from ‘package:base’:
-
-    date, intersect, setdiff, union
-
-"
-"2","
-Attaching package: ‘dplyr’
-
-"
-"2","The following objects are masked from ‘package:stats’:
-
-    filter, lag
-
-"
-"2","The following objects are masked from ‘package:base’:
-
-    intersect, setdiff, setequal, union
-
-"
 "2","argument is not an atomic vector; coercing"
 "2","argument is not an atomic vector; coercing"
 "2","argument is not an atomic vector; coercing"
@@ -67,3 +26,4 @@ Attaching package: ‘dplyr’
 "2","Expected 4 pieces. Additional pieces discarded in 44 rows [2, 23, 33, 49, 62, 99, 107, 109, 164, 176, 177, 181, 236, 239, 277, 298, 305, 337, 339, 340, ...]."
 "2","Expected 4 pieces. Additional pieces discarded in 43 rows [75, 84, 121, 158, 176, 177, 186, 207, 225, 252, 259, 267, 278, 295, 304, 322, 335, 338, 358, 364, ...]."
 "2","Expected 4 pieces. Additional pieces discarded in 42 rows [39, 43, 80, 87, 100, 107, 127, 131, 142, 146, 148, 171, 185, 213, 253, 262, 279, 286, 288, 301, ...]."
+"0","cols <- c(""f67453"", ""#4c8286"", ""#6dbbc0"", ""#8ca14b"", ""#b0ca5e"", ""#ffd500"", ""#edb335"", ""#e75b42"", ""#c2204d"", ""#de3765"")"
