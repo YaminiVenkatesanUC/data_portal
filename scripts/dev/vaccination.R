@@ -20,8 +20,8 @@ sheet_daily <- "Date"
 file.rename(from = paste0(directory, "COVID-19 MoH Vaccination - Cumulative.xlsx"),
             to = paste0(directory, "Previous/COVID-19 MoH Vaccination - Cumulative.xlsx"))
 
-file.rename(from = paste0(directory, "COVID-19 MoH Vaccination - Daily.xlsx"),
-            to = paste0(directory, "Previous/COVID-19 MoH Vaccination - Daily.xlsx"))
+file.rename(from = paste0(directory, "COVID-19 MoH Vaccination - Daily.csv"),
+            to = paste0(directory, "Previous/COVID-19 MoH Vaccination - Daily.csv"))
 
 df_sum <- as.data.frame(read_excel(filename, sheet = sheet_sum)) %>%
   mutate(Date = date) %>%

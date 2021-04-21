@@ -8925,7 +8925,7 @@
     "parameter_col":1,
     "value_col":[2, 3],
     "value_names":["First dose administered", "Second dose administered"],
-    "parameter_transform":"function (x) x",
+    "parameter_transform":"function (x) paste0(\"As at \", x)",
     "load_function":"read_vaccination",
     "data_type":"BarChart",
     "date_added":"16/04/2020",
