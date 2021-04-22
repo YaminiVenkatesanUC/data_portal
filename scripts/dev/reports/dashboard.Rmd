@@ -14,7 +14,7 @@ library(wordcloud2)
 #library(shiny)
 setwd("~/data_portal")
 source("scripts/dev/reports/report.R")
-cols <- c("f67453", "#4c8286", "#6dbbc0", "#8ca14b", "#b0ca5e", "#ffd500", "#edb335", "#e75b42", "#c2204d", "#de3765")
+cols <- c("f67453", "#4c8286", "#6dbbc0", "#8ca14b", "#b0ca5e", "#ffd500", "#edb335", "#e75b42", "#c2204d", "#de3765", "#ddff99")
 ```
 
 Performance
@@ -63,6 +63,9 @@ y_vis<- list(
   side = "right",
   title = "Montly visits"
 )
+text_main <- ~paste0(format(x = df_events$month,  "%B"), ': ', df_events$ind_count_cum)
+text_views <- ~paste0(format(x = df_events$month,  "%B"), ': ', df_events$views_count)
+text_downloads <- ~paste0(format(x = df_events$month,  "%B"), ': ', df_events$download_count)
 
 fig1 <- plot_ly(
   x = df_events$month,
@@ -70,12 +73,12 @@ fig1 <- plot_ly(
   type = "bar",
   name = "Number of indicators",
   marker = list(color = "#838f9c", line = list(color = "#5a6776")),
-  hoverinfo = 'text',
-  text = ~paste0(format(x = df_events$month,  "%B"), ': ', df_events$ind_count_cum)
+  hoverinfo = 'text', 
+  text = text_main
 )
 
-fig1 <- fig1 %>% add_lines(x = df_events$month, y = df_events$views_count, name = "Monthly visits", yaxis = "y2", marker = list(color = "#de3765"))
-fig1 <- fig1 %>% add_lines(x = df_events$month, y = df_events$download_count, name = "Monthly downloads", yaxis = "y2", marker = list(color = "#4c8286"))
+fig1 <- fig1 %>% add_lines(x = df_events$month, y = df_events$views_count, name = "Monthly visits", yaxis = "y2", marker = list(color = "#de3765"), text = text_views)
+fig1 <- fig1 %>% add_lines(x = df_events$month, y = df_events$download_count, name = "Monthly downloads", yaxis = "y2", marker = list(color = "#4c8286"), text = text_downloads)
 fig1 <- fig1 %>% layout(title = "Number of indicators overlayed wth monthly visits",
                         yaxis2 = y_vis,
                         xaxis = list(title = "Month"))
@@ -136,17 +139,56 @@ fig
 
 ### Sub-series
 ```{r}
-vals <- c(sum(df_indicators$region), sum(df_indicators$gender), sum(df_indicators$age), sum(df_indicators$ethnic), sum(df_indicators$industry), sum(df_indicators$other), sum(df_indicators$no_subseries))
-labs <- c("By region", "By sex/gender", "By age", "By ethnicity", "By industry", "Other sub-series", "No sub-series")
+data <- df_indicators %>% 
+  select(indicator_name, no_subseries, region, gender, age, ethnic, industry, other) %>% 
+  unique() %>% 
+  mutate(sum = region + gender + age + ethnic + industry + other)
+no_sub <- sum(data$no_subseries)
+more_than_one <- data %>% 
+  filter(sum > 1) %>% 
+  summarise(count = n())
+series <- data %>% 
+  filter(sum <= 1)
+subs <- df_events$ind_count_cum[length(df_events$ind_count_cum)] - sum(data$no_subseries)
+vals <- c(no_sub,
+          subs,
+          more_than_one,
+          sum(series$region),
+          sum(series$gender),
+          sum(series$age),
+          sum(series$ethnic),
+          sum(series$industry),
+          sum(series$other))
+labs <- c("No sub-series",
+          "Sub-series",
+          "More than one sub-series",
+          "By region", 
+          "By sex/gender", 
+          "By age", 
+          "By ethnicity", 
+          "By industry", 
+          "Other sub-series")
+parents <- c("",
+             "",
+             "Sub-series",
+             "Sub-series",
+             "Sub-series",
+             "Sub-series",
+             "Sub-series",
+             "Sub-series",
+             "Sub-series")
 fig <- plot_ly(
   labels = labs, 
-  values = vals, 
-  textinfo='percent', 
-  textposition = 'inside',
-                        hoverinfo = 'text',
-                        text = ~paste0(labs, ': ', vals, ' indicators'),
+  values = vals,
+  parents = parents,
+  branchvalues = 'total',
+  type = "sunburst",
+  #textinfo='percent', 
+  #textposition = 'inside',
+  #                      hoverinfo = 'text',
+  #                      text = ~paste0(labs, ': ', vals, ' indicators'),
   marker = list(colors = cols))
-fig <- fig %>% add_pie(hole = 0.6)
+#fig <- fig %>% add_pie(hole = 0.6)
 fig <- fig %>% layout(title = "",  showlegend = TRUE,
                       xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
                       yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
@@ -219,6 +261,16 @@ knitr::kable(most_viewed, col.names = c("Indicator name", "Total views", "Views 
 
 ```{r}
 knitr::kable(least_viewed, col.names = c("Indicator name", "Total views", "Views last month"))
+```
+
+### New indicators added last month
+```{r}
+data <- df_indicators %>% 
+  filter(month == latest_report_date) %>% 
+  select(indicator_name, source, frequency) %>% 
+ left_join(df_ind_views) %>% 
+  select(-month)
+knitr::kable(data, col.names = c("Indicator name", "Source", "Frequency", "Views last month"))
 ```
 
 ### Top 10 largest suppliers
