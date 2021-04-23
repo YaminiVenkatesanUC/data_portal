@@ -139,56 +139,20 @@ fig
 
 ### Sub-series
 ```{r}
-data <- df_indicators %>% 
-  select(indicator_name, no_subseries, region, gender, age, ethnic, industry, other) %>% 
-  unique() %>% 
-  mutate(sum = region + gender + age + ethnic + industry + other)
-no_sub <- sum(data$no_subseries)
-more_than_one <- data %>% 
-  filter(sum > 1) %>% 
-  summarise(count = n())
-series <- data %>% 
-  filter(sum <= 1)
-subs <- df_events$ind_count_cum[length(df_events$ind_count_cum)] - sum(data$no_subseries)
+no_sub <- sum(df_indicators$no_subseries)
+subs <- df_events$ind_count_cum[length(df_events$ind_count_cum)] - no_sub
 vals <- c(no_sub,
-          subs,
-          more_than_one,
-          sum(series$region),
-          sum(series$gender),
-          sum(series$age),
-          sum(series$ethnic),
-          sum(series$industry),
-          sum(series$other))
+          subs)
 labs <- c("No sub-series",
-          "Sub-series",
-          "More than one sub-series",
-          "By region", 
-          "By sex/gender", 
-          "By age", 
-          "By ethnicity", 
-          "By industry", 
-          "Other sub-series")
-parents <- c("",
-             "",
-             "Sub-series",
-             "Sub-series",
-             "Sub-series",
-             "Sub-series",
-             "Sub-series",
-             "Sub-series",
-             "Sub-series")
-fig <- plot_ly(
-  labels = labs, 
-  values = vals,
-  parents = parents,
-  branchvalues = 'total',
-  type = "sunburst",
-  #textinfo='percent', 
-  #textposition = 'inside',
-  #                      hoverinfo = 'text',
-  #                      text = ~paste0(labs, ': ', vals, ' indicators'),
-  marker = list(colors = cols))
-#fig <- fig %>% add_pie(hole = 0.6)
+          "Sub-series")
+
+fig <- plot_ly(labels = labs, values = vals,
+                        textposition = 'inside',
+                        textinfo='percent', 
+                        hoverinfo = 'text',
+                        text = ~paste0(labs, ': ', vals, ' indicators'),
+                        marker = list(colors = c("#b0ca5e", "#6dbbc0")))
+fig <- fig %>% add_pie(hole = 0.6)
 fig <- fig %>% layout(title = "",  showlegend = TRUE,
                       xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
                       yaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE))
@@ -213,7 +177,7 @@ fig <- data %>% plot_ly(
   textposition = 'inside',
   hoverinfo = 'text',
   text = ~paste0(labs, ": ", vals, ' indicators'),
-  marker = list(colors = cols))
+  marker = list(colors = c("#edb335", "#de3765")))
 fig <- fig %>% add_pie(hole = 0.6)
 fig <- fig %>% layout(title = "",  showlegend = TRUE,
                       xaxis = list(showgrid = FALSE, zeroline = FALSE, showticklabels = FALSE),
@@ -225,7 +189,7 @@ fig
 Row {.tabset .tabset-fade}
 -----------------------------------------------------------------------
 
-### Most visited indicators
+### Most visited indicators (1000 and more total visits)
 
 ```{r}
 ind_views_total <- df_ind_views %>% 
@@ -251,13 +215,13 @@ most_viewed <- ind_views_total %>%
 least_viewed <- ind_views_total %>% 
   select(indicator_name, total_views, ind_views) %>% 
   filter(total_views < 10) %>% 
-  arrange(desc(total_views))
+  arrange(total_views)
 least_viewed$ind_views <- ifelse(is.na(least_viewed$ind_views), 0, least_viewed$ind_views)
 
 knitr::kable(most_viewed, col.names = c("Indicator name", "Total views", "Views last month"))
 ```
 
-### Least visited indicators
+### Least visited indicators (less than 10 total visits)
 
 ```{r}
 knitr::kable(least_viewed, col.names = c("Indicator name", "Total views", "Views last month"))
@@ -271,6 +235,44 @@ data <- df_indicators %>%
  left_join(df_ind_views) %>% 
   select(-month)
 knitr::kable(data, col.names = c("Indicator name", "Source", "Frequency", "Views last month"))
+```
+
+### Number of indicators by sub-series
+```{r}
+region <- df_indicators %>% 
+  filter(region) %>% 
+  select(indicator_name) %>% 
+  unique() %>% 
+  nrow()
+gender <- df_indicators %>% 
+  filter(gender) %>% 
+  select(indicator_name) %>% 
+  unique() %>% 
+  nrow()
+age <- df_indicators %>% 
+  filter(age) %>% 
+  select(indicator_name) %>% 
+  unique() %>% 
+  nrow()
+ethnic <- df_indicators %>% 
+  filter(ethnic) %>% 
+  select(indicator_name) %>% 
+  unique() %>% 
+  nrow()
+industry <- df_indicators %>% 
+  filter(industry) %>% 
+  select(indicator_name) %>% 
+  unique() %>% 
+  nrow()
+other <- df_indicators %>% 
+  filter(other) %>% 
+  select(indicator_name) %>% 
+  unique() %>% 
+  nrow()
+vals <- c(region, gender, age, ethnic, industry, other)
+labs <- c("By region", "By gender", "By age", "By ethnicity", "By industry", "Other sub-series")
+data <- data.frame(labs = labs, vals = vals) %>% arrange(desc(vals))
+knitr::kable(data, col.names = c("Series", "Number of indicators"))
 ```
 
 ### Top 10 largest suppliers
