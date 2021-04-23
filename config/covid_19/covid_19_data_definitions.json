@@ -8929,7 +8929,8 @@
     "load_function":"read_vaccination",
     "data_type":"BarChart",
     "date_added":"16/04/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "script":"vaccination.R"
   },
   {
     "class":"Health",
@@ -8945,7 +8946,8 @@
     "load_function":"read_vaccination",
     "data_type":"BarChart",
     "date_added":"16/04/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "script":"vaccination.R"
   },
   {
     "class":"Health",
@@ -8961,7 +8963,8 @@
     "load_function":"read_vaccination",
     "data_type":"BarChart",
     "date_added":"16/04/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "script":"vaccination.R"
   },
   {
     "class":"Health",
@@ -8977,7 +8980,8 @@
     "load_function":"read_vaccination",
     "data_type":"BarChart",
     "date_added":"16/04/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "script":"vaccination.R"
   },
   {
     "class":"Health",
@@ -8992,7 +8996,8 @@
     "load_function":"read_from_csv",
     "data_type":"TimeSeries",
     "date_added":"16/04/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "script":"vaccination.R"
   },
   {
     "class":"Health",
@@ -9008,7 +9013,8 @@
     "load_function":"read_vaccination",
     "data_type":"BarChart",
     "date_added":"16/04/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "script":"vaccination.R"
   }
 
 
