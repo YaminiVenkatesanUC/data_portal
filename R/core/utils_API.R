@@ -71,7 +71,8 @@ to_resource <- function(config, metadata){
 
 # If the indicator datatype is a bar chart there is no peroid
 get_peroid <- function(data, config, len){
-  if(config$data_type == "BarChart"){
+  data_type <- check_null(config$data_type)
+  if(data_type == "BarChart" & !is.na(data_type) ){
     return(rep(NA,len))
   }
   return(data$parameter)

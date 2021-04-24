@@ -1254,7 +1254,7 @@ read_MBIE_rental <- function(config, directory, odata_definitions=NULL) {
   ))
 }
 
-read_hpa_drinking_data <- function(config,directory) {
+read_hpa_drinking_data <- function(config,directory,odata_definitions=NULL) {
 
   if (!is.null(config$parameter_transform)) {
     parameter_transform <- eval(parse(text = config$parameter_transform))

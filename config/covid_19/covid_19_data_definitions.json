@@ -986,7 +986,7 @@
         "value_names": ["Broadband usage"],
         "group_names": ["undefined_name"],
         "sheet_number": 1,
-        "filename": "/Chorus data/",
+        "filename": "COVID 19 - Chorus national broadband.csv",
         "parameter_transform": ["function (x) ymd(x)"],
         "load_function": "read_from_csv",
         "date_added":"26/08/2020",
