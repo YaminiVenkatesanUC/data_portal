@@ -27,7 +27,7 @@ add_to_data_service <- function(data_definition, odata_definitions, data_store, 
   data_definition <- expand_data_definition_group_names(data_definition)
   data <- load_functions[[data_definition$load_function]](data_definition, config$data_directory, odata_definitions)
   update_date <- as.Date(file.info(paste0(config$data_directory, data_definition$filename))$mtime)
-
+  print(data_definition$indicator_name)
   #for (group_name in unique(data_definition$group_names)) {
   for (group_name in names(data)) {
     #print(paste(data_definition$class, data_definition$indicator_name, group_name))
@@ -58,6 +58,7 @@ load_data <- function(config, odata_load_flag) {
 
   if(odata_load_flag == TRUE){
     odata_definitions <- fromJSON(config$odata_definitions)
+    create_odata_version()
   } else {
     odata_definitions <- NULL
   }

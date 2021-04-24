@@ -15,6 +15,16 @@ data_frame_to_api_helper <- function(directory, config, metadata, data){
 
 }
 
+create_odata_version <- function(){
+  observation_dummy <- tibble("ResourceID" = "xxxx",
+                         "Period" = "1800-01-01",
+                         "Value" = 0,
+                         "Unit" = "xxxx",
+                         "Measure" = "xxxx",
+                         "Multiplier" = 0)
+  writeDatastore(observation_dummy,location = list(collection = "PDS", instance = "Covid-19", table = "Observation_test"), server = "uat")
+}
+
 to_observations <- function(config, metadata, data){
   names(data) <- c("parameter", config$value_names)
   data <- reshape2::melt(data,  id.vars = "parameter")
@@ -35,7 +45,6 @@ to_observations <- function(config, metadata, data){
                         "NullReason" = NA,
                         "Multiplier" = rep(check_null(metadata$Multiplier), nrow(data)),
                         "Status" = NA) #%>% toJSON(na ="null")
-  View(Observations)
   return(Observations)
 }
 

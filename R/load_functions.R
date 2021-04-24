@@ -38,7 +38,6 @@ read_from_csv <- function(config, directory, odata_definitions=NULL) {
     data <- data %>% arrange(Parameter)
   }
 
-  print(data)
   if(any(config$ResourceID %in% odata_definitions$ResourceID)){
     metadata <- odata_definitions[which(odata_definitions$ResourceID == config$ResourceID),]
     # print("Adding data to API")
@@ -93,7 +92,6 @@ read_from_excel <- function(config, directory, odata_definitions=NULL) {
     data <- data %>% arrange(Parameter)
   }
 
-  print(data)
   if(any(config$ResourceID %in% odata_definitions$ResourceID)){
     metadata <- odata_definitions[which(odata_definitions$ResourceID == config$ResourceID),]
     # print("Adding data to API")
