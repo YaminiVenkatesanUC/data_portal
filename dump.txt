@@ -6044,3 +6044,12 @@
 "16" "CPHOU4" NA NA NA NA "Wave 2" "Loan from home collected credit company (truck shop)" NA NA NA NA 1.1 "%" "People owning money on credit agreements" NA "0" NA
 "17" "CPHOU4" NA NA NA NA "Wave 2" "Car finance/car leasing" NA NA NA NA 3.1 "%" "People owning money on credit agreements" NA "0" NA
 "18" "CPHOU4" NA NA NA NA "Wave 2" "None of these" NA NA NA NA 82.3 "%" "People owning money on credit agreements" NA "0" NA
+"LatestDataTable" "ResourceID" "Subject" "Title" "Description" "Notes" "Caveats" "Source" "SourceURL" "Frequency" "Var1" "Var2" "Var3" "Var4" "Var5" "Var6"
+"1" "" "CPHOU5" "Household finances" "Use of money in savings" "Whether respondents used savings to help make ends meet during the last four weeks" NA "Wave 1 data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3). Wave 2 data collected between 30 September and 22 October 2020. 2) This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population." "Commission for Financial Capability" NA "Ad-hoc" "Wave" "Response" NA NA NA NA
+"ResourceID" "Geo" "GeoUnit" "Duration" "Period" "Label1" "Label2" "Label3" "Label4" "Label5" "Label6" "Value" "Unit" "Measure" "NullReason" "Multiplier" "Status"
+"1" "CPHOU5" NA NA NA NA "Wave 1" "Yes" NA NA NA NA 30.3 "%" "People using money in savings" NA "0" NA
+"2" "CPHOU5" NA NA NA NA "Wave 1" "No, have savings but not used them" NA NA NA NA 49.7 "%" "People using money in savings" NA "0" NA
+"3" "CPHOU5" NA NA NA NA "Wave 1" "No, have no savings" NA NA NA NA 20 "%" "People using money in savings" NA "0" NA
+"4" "CPHOU5" NA NA NA NA "Wave 2" "Yes" NA NA NA NA 36 "%" "People using money in savings" NA "0" NA
+"5" "CPHOU5" NA NA NA NA "Wave 2" "No, have savings but not used them" NA NA NA NA 42.9 "%" "People using money in savings" NA "0" NA
+"6" "CPHOU5" NA NA NA NA "Wave 2" "No, have no savings" NA NA NA NA 21.1 "%" "People using money in savings" NA "0" NA

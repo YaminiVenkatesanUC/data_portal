@@ -1293,5 +1293,21 @@
       "Unit":"%",
       "Measure":"People owning money on credit agreements",
       "Multiplier":0
+   },
+   {
+      "ResourceID":"CPHOU5",
+      "Subject":"Household finances",
+      "Title":"Use of money in savings",
+      "Description":"Whether respondents used savings to help make ends meet during the last four weeks",
+      "Caveats": "Wave 1 data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3). Wave 2 data collected between 30 September and 22 October 2020. 2) This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population.",
+      "Source":"Commission for Financial Capability",
+      "Frequency":"Ad-hoc",
+      "Label1": "variable",
+      "Label2": "parameter",
+      "Var1":"Wave",
+      "Var2":"Response",
+      "Unit":"%",
+      "Measure":"People using money in savings",
+      "Multiplier":0
    }
 ]
