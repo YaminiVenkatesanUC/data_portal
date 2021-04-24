@@ -2,7 +2,7 @@ source("R/core/utils_API.R")
 source("R/load_functions.R")
 
 CONFIG <- read_config_file()
-indicator_name <- "Rental bonds by region - lodged"
+indicator_name <- "Change in income"
 directory <- CONFIG$data_directory
 odata_definitions <- fromJSON(CONFIG$odata_definitions)
 config <- get_config(CONFIG$data_definitions, indicator_name)

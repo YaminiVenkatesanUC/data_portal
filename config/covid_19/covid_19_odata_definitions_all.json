@@ -645,6 +645,7 @@
       "SourceURL":"https://www.nzx.com/companies/ZEL/announcements",
       "Modified":"",
       "Var1":"Fuel type",
+      "Label1":"variable",
       "Frequency":"Monthly",
       "Duration":"P7D",
       "Unit":"Litres",

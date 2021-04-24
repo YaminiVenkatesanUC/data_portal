@@ -5384,6 +5384,7 @@
     "class": "Social",
     "type": "Household finances",
     "indicator_name": "Change in income",
+    "ResourceID":"CPHOU2",
     "parameter_col": 2,
     "order_parameter": false,
     "value_col": [3, 4],

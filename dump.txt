@@ -5794,3 +5794,197 @@
 "5791" "CPTRA1" NA NA "P1D" 2021-04-12 "Other passports" "Actual" NA NA NA NA 130 "Number" "Border crossings - arrivals" NA "0" NA
 "5792" "CPTRA1" NA NA "P1D" 2021-04-13 "Other passports" "Actual" NA NA NA NA 99 "Number" "Border crossings - arrivals" NA "0" NA
 "5793" "CPTRA1" NA NA "P1D" 2021-04-14 "Other passports" "Actual" NA NA NA NA 124 "Number" "Border crossings - arrivals" NA "0" NA
+"LatestDataTable" "ResourceID" "Subject" "Title" "Description" "Notes" "Caveats" "Source" "SourceURL" "Frequency" "Var1" "Var2" "Var3" "Var4" "Var5" "Var6"
+"1" "" "CPHOU2" "Household finances" "Change in income" "Way in which respondents' household income has changed since beginning of March 2020" NA "Income refers to total monthly net household income from all sources. Wave 1 data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3). Wave 2 data collected between 30 September and 22 October 2020.  This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population." "Commission for Financial Capability" "https://cffc.govt.nz/reviews-and-reports/research-and-reports/" "Ad-hoc" "Wave" "Response" NA NA NA NA
+"ResourceID" "Geo" "GeoUnit" "Duration" "Period" "Label1" "Label2" "Label3" "Label4" "Label5" "Label6" "Value" "Unit" "Measure" "NullReason" "Multiplier" "Status"
+"1" "CPHOU2" NA NA NA "Fallen substantially (i.e. by more than a third)" "Wave 1" "parameter" NA NA NA NA 13.5 "%" "Self-reported change in income" NA "0" NA
+"2" "CPHOU2" NA NA NA "Fallen but by less than a third" "Wave 1" "parameter" NA NA NA NA 25.2 "%" "Self-reported change in income" NA "0" NA
+"3" "CPHOU2" NA NA NA "Stayed more or less stable" "Wave 1" "parameter" NA NA NA NA 52.5 "%" "Self-reported change in income" NA "0" NA
+"4" "CPHOU2" NA NA NA "Increased" "Wave 1" "parameter" NA NA NA NA 8.9 "%" "Self-reported change in income" NA "0" NA
+"5" "CPHOU2" NA NA NA "Fallen substantially (i.e. by more than a third)" "Wave 2" "parameter" NA NA NA NA 11.3 "%" "Self-reported change in income" NA "0" NA
+"6" "CPHOU2" NA NA NA "Fallen but by less than a third" "Wave 2" "parameter" NA NA NA NA 21.8 "%" "Self-reported change in income" NA "0" NA
+"7" "CPHOU2" NA NA NA "Stayed more or less stable" "Wave 2" "parameter" NA NA NA NA 55.8 "%" "Self-reported change in income" NA "0" NA
+"8" "CPHOU2" NA NA NA "Increased" "Wave 2" "parameter" NA NA NA NA 11.1 "%" "Self-reported change in income" NA "0" NA
+"LatestDataTable" "ResourceID" "Subject" "Title" "Description" "Notes" "Caveats" "Source" "SourceURL" "Frequency" "Var1" "Var2" "Var3" "Var4" "Var5" "Var6"
+"1" "" "CPHOU2" "Household finances" "Change in income" "Way in which respondents' household income has changed since beginning of March 2020" NA "Income refers to total monthly net household income from all sources. Wave 1 data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3). Wave 2 data collected between 30 September and 22 October 2020.  This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population." "Commission for Financial Capability" "https://cffc.govt.nz/reviews-and-reports/research-and-reports/" "Ad-hoc" "Wave" "Response" NA NA NA NA
+"ResourceID" "Geo" "GeoUnit" "Duration" "Period" "Label1" "Label2" "Label3" "Label4" "Label5" "Label6" "Value" "Unit" "Measure" "NullReason" "Multiplier" "Status"
+"1" "CPHOU2" NA NA NA "Fallen substantially (i.e. by more than a third)" "Wave 1" "Wave 1" NA NA NA NA 13.5 "%" "Self-reported change in income" NA "0" NA
+"2" "CPHOU2" NA NA NA "Fallen but by less than a third" "Wave 1" "Wave 1" NA NA NA NA 25.2 "%" "Self-reported change in income" NA "0" NA
+"3" "CPHOU2" NA NA NA "Stayed more or less stable" "Wave 1" "Wave 1" NA NA NA NA 52.5 "%" "Self-reported change in income" NA "0" NA
+"4" "CPHOU2" NA NA NA "Increased" "Wave 1" "Wave 1" NA NA NA NA 8.9 "%" "Self-reported change in income" NA "0" NA
+"5" "CPHOU2" NA NA NA "Fallen substantially (i.e. by more than a third)" "Wave 2" "Wave 2" NA NA NA NA 11.3 "%" "Self-reported change in income" NA "0" NA
+"6" "CPHOU2" NA NA NA "Fallen but by less than a third" "Wave 2" "Wave 2" NA NA NA NA 21.8 "%" "Self-reported change in income" NA "0" NA
+"7" "CPHOU2" NA NA NA "Stayed more or less stable" "Wave 2" "Wave 2" NA NA NA NA 55.8 "%" "Self-reported change in income" NA "0" NA
+"8" "CPHOU2" NA NA NA "Increased" "Wave 2" "Wave 2" NA NA NA NA 11.1 "%" "Self-reported change in income" NA "0" NA
+"LatestDataTable" "ResourceID" "Subject" "Title" "Description" "Notes" "Caveats" "Source" "SourceURL" "Frequency" "Var1" "Var2" "Var3" "Var4" "Var5" "Var6"
+"1" "" "CPHOU2" "Household finances" "Change in income" "Way in which respondents' household income has changed since beginning of March 2020" NA "Income refers to total monthly net household income from all sources. Wave 1 data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3). Wave 2 data collected between 30 September and 22 October 2020.  This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population." "Commission for Financial Capability" "https://cffc.govt.nz/reviews-and-reports/research-and-reports/" "Ad-hoc" "Wave" "Response" NA NA NA NA
+"ResourceID" "Geo" "GeoUnit" "Duration" "Period" "Label1" "Label2" "Label3" "Label4" "Label5" "Label6" "Value" "Unit" "Measure" "NullReason" "Multiplier" "Status"
+"1" "CPHOU2" NA NA NA "Fallen substantially (i.e. by more than a third)" "Wave 1" "Fallen substantially (i.e. by more than a third)" NA NA NA NA 13.5 "%" "Self-reported change in income" NA "0" NA
+"2" "CPHOU2" NA NA NA "Fallen but by less than a third" "Wave 1" "Fallen but by less than a third" NA NA NA NA 25.2 "%" "Self-reported change in income" NA "0" NA
+"3" "CPHOU2" NA NA NA "Stayed more or less stable" "Wave 1" "Stayed more or less stable" NA NA NA NA 52.5 "%" "Self-reported change in income" NA "0" NA
+"4" "CPHOU2" NA NA NA "Increased" "Wave 1" "Increased" NA NA NA NA 8.9 "%" "Self-reported change in income" NA "0" NA
+"5" "CPHOU2" NA NA NA "Fallen substantially (i.e. by more than a third)" "Wave 2" "Fallen substantially (i.e. by more than a third)" NA NA NA NA 11.3 "%" "Self-reported change in income" NA "0" NA
+"6" "CPHOU2" NA NA NA "Fallen but by less than a third" "Wave 2" "Fallen but by less than a third" NA NA NA NA 21.8 "%" "Self-reported change in income" NA "0" NA
+"7" "CPHOU2" NA NA NA "Stayed more or less stable" "Wave 2" "Stayed more or less stable" NA NA NA NA 55.8 "%" "Self-reported change in income" NA "0" NA
+"8" "CPHOU2" NA NA NA "Increased" "Wave 2" "Increased" NA NA NA NA 11.1 "%" "Self-reported change in income" NA "0" NA
+"LatestDataTable" "ResourceID" "Subject" "Title" "Description" "Notes" "Caveats" "Source" "SourceURL" "Frequency" "Var1" "Var2" "Var3" "Var4" "Var5" "Var6"
+"1" "" "CPHOU2" "Household finances" "Change in income" "Way in which respondents' household income has changed since beginning of March 2020" NA "Income refers to total monthly net household income from all sources. Wave 1 data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3). Wave 2 data collected between 30 September and 22 October 2020.  This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population." "Commission for Financial Capability" "https://cffc.govt.nz/reviews-and-reports/research-and-reports/" "Ad-hoc" "Wave" "Response" NA NA NA NA
+"ResourceID" "Geo" "GeoUnit" "Duration" "Period" "Label1" "Label2" "Label3" "Label4" "Label5" "Label6" "Value" "Unit" "Measure" "NullReason" "Multiplier" "Status"
+"1" "CPHOU2" NA NA NA NA "Wave 1" "Fallen substantially (i.e. by more than a third)" NA NA NA NA 13.5 "%" "Self-reported change in income" NA "0" NA
+"2" "CPHOU2" NA NA NA NA "Wave 1" "Fallen but by less than a third" NA NA NA NA 25.2 "%" "Self-reported change in income" NA "0" NA
+"3" "CPHOU2" NA NA NA NA "Wave 1" "Stayed more or less stable" NA NA NA NA 52.5 "%" "Self-reported change in income" NA "0" NA
+"4" "CPHOU2" NA NA NA NA "Wave 1" "Increased" NA NA NA NA 8.9 "%" "Self-reported change in income" NA "0" NA
+"5" "CPHOU2" NA NA NA NA "Wave 2" "Fallen substantially (i.e. by more than a third)" NA NA NA NA 11.3 "%" "Self-reported change in income" NA "0" NA
+"6" "CPHOU2" NA NA NA NA "Wave 2" "Fallen but by less than a third" NA NA NA NA 21.8 "%" "Self-reported change in income" NA "0" NA
+"7" "CPHOU2" NA NA NA NA "Wave 2" "Stayed more or less stable" NA NA NA NA 55.8 "%" "Self-reported change in income" NA "0" NA
+"8" "CPHOU2" NA NA NA NA "Wave 2" "Increased" NA NA NA NA 11.1 "%" "Self-reported change in income" NA "0" NA
+"LatestDataTable" "ResourceID" "Subject" "Title" "Description" "Notes" "Caveats" "Source" "SourceURL" "Frequency" "Var1" "Var2" "Var3" "Var4" "Var5" "Var6"
+"1" "" "CPACT6" "Activity" "Fuel supply volumes" "Z Energy monthly fuel supply volumes" NA NA "Z Energy" "https://www.nzx.com/companies/ZEL/announcements" "Monthly" "Fuel type" NA NA NA NA NA
+"ResourceID" "Geo" "GeoUnit" "Duration" "Period" "Label1" "Label2" "Label3" "Label4" "Label5" "Label6" "Value" "Unit" "Measure" "NullReason" "Multiplier" "Status"
+"1" "CPACT6" NA NA "P7D" 2020-07-31 NA NA NA NA NA NA 62.215 "Litres" "Fuel supply volumes" NA "0" NA
+"2" "CPACT6" NA NA "P7D" 2020-08-31 NA NA NA NA NA NA 53.998 "Litres" "Fuel supply volumes" NA "0" NA
+"3" "CPACT6" NA NA "P7D" 2020-09-30 NA NA NA NA NA NA 60.325 "Litres" "Fuel supply volumes" NA "0" NA
+"4" "CPACT6" NA NA "P7D" 2020-10-31 NA NA NA NA NA NA 64.763 "Litres" "Fuel supply volumes" NA "0" NA
+"5" "CPACT6" NA NA "P7D" 2020-11-30 NA NA NA NA NA NA 62.682 "Litres" "Fuel supply volumes" NA "0" NA
+"6" "CPACT6" NA NA "P7D" 2020-12-31 NA NA NA NA NA NA 68.864 "Litres" "Fuel supply volumes" NA "0" NA
+"7" "CPACT6" NA NA "P7D" 2021-01-01 NA NA NA NA NA NA 60.432 "Litres" "Fuel supply volumes" NA "0" NA
+"8" "CPACT6" NA NA "P7D" 2021-02-01 NA NA NA NA NA NA 57.1 "Litres" "Fuel supply volumes" NA "0" NA
+"9" "CPACT6" NA NA "P7D" 2020-07-31 NA NA NA NA NA NA 25.995 "Litres" "Fuel supply volumes" NA "0" NA
+"10" "CPACT6" NA NA "P7D" 2020-08-31 NA NA NA NA NA NA 24.13 "Litres" "Fuel supply volumes" NA "0" NA
+"11" "CPACT6" NA NA "P7D" 2020-09-30 NA NA NA NA NA NA 26.053 "Litres" "Fuel supply volumes" NA "0" NA
+"12" "CPACT6" NA NA "P7D" 2020-10-31 NA NA NA NA NA NA 28.392 "Litres" "Fuel supply volumes" NA "0" NA
+"13" "CPACT6" NA NA "P7D" 2020-11-30 NA NA NA NA NA NA 28.202 "Litres" "Fuel supply volumes" NA "0" NA
+"14" "CPACT6" NA NA "P7D" 2020-12-31 NA NA NA NA NA NA 30.719 "Litres" "Fuel supply volumes" NA "0" NA
+"15" "CPACT6" NA NA "P7D" 2021-01-01 NA NA NA NA NA NA 27.655 "Litres" "Fuel supply volumes" NA "0" NA
+"16" "CPACT6" NA NA "P7D" 2021-02-01 NA NA NA NA NA NA 25.853 "Litres" "Fuel supply volumes" NA "0" NA
+"17" "CPACT6" NA NA "P7D" 2020-07-31 NA NA NA NA NA NA 26.89 "Litres" "Fuel supply volumes" NA "0" NA
+"18" "CPACT6" NA NA "P7D" 2020-08-31 NA NA NA NA NA NA 24.05 "Litres" "Fuel supply volumes" NA "0" NA
+"19" "CPACT6" NA NA "P7D" 2020-09-30 NA NA NA NA NA NA 26.256 "Litres" "Fuel supply volumes" NA "0" NA
+"20" "CPACT6" NA NA "P7D" 2020-10-31 NA NA NA NA NA NA 27.457 "Litres" "Fuel supply volumes" NA "0" NA
+"21" "CPACT6" NA NA "P7D" 2020-11-30 NA NA NA NA NA NA 26.707 "Litres" "Fuel supply volumes" NA "0" NA
+"22" "CPACT6" NA NA "P7D" 2020-12-31 NA NA NA NA NA NA 27.165 "Litres" "Fuel supply volumes" NA "0" NA
+"23" "CPACT6" NA NA "P7D" 2021-01-01 NA NA NA NA NA NA 24.452 "Litres" "Fuel supply volumes" NA "0" NA
+"24" "CPACT6" NA NA "P7D" 2021-02-01 NA NA NA NA NA NA 24.21 "Litres" "Fuel supply volumes" NA "0" NA
+"25" "CPACT6" NA NA "P7D" 2020-07-31 NA NA NA NA NA NA 12.105 "Litres" "Fuel supply volumes" NA "0" NA
+"26" "CPACT6" NA NA "P7D" 2020-08-31 NA NA NA NA NA NA 11.547 "Litres" "Fuel supply volumes" NA "0" NA
+"27" "CPACT6" NA NA "P7D" 2020-09-30 NA NA NA NA NA NA 12.105 "Litres" "Fuel supply volumes" NA "0" NA
+"28" "CPACT6" NA NA "P7D" 2020-10-31 NA NA NA NA NA NA 13.14 "Litres" "Fuel supply volumes" NA "0" NA
+"29" "CPACT6" NA NA "P7D" 2020-11-30 NA NA NA NA NA NA 12.9 "Litres" "Fuel supply volumes" NA "0" NA
+"30" "CPACT6" NA NA "P7D" 2020-12-31 NA NA NA NA NA NA 13.53 "Litres" "Fuel supply volumes" NA "0" NA
+"31" "CPACT6" NA NA "P7D" 2021-01-01 NA NA NA NA NA NA 11.894 "Litres" "Fuel supply volumes" NA "0" NA
+"32" "CPACT6" NA NA "P7D" 2021-02-01 NA NA NA NA NA NA 11.892 "Litres" "Fuel supply volumes" NA "0" NA
+"33" "CPACT6" NA NA "P7D" 2020-07-31 NA NA NA NA NA NA 63.608 "Litres" "Fuel supply volumes" NA "0" NA
+"34" "CPACT6" NA NA "P7D" 2020-08-31 NA NA NA NA NA NA 64.769 "Litres" "Fuel supply volumes" NA "0" NA
+"35" "CPACT6" NA NA "P7D" 2020-09-30 NA NA NA NA NA NA 70.385 "Litres" "Fuel supply volumes" NA "0" NA
+"36" "CPACT6" NA NA "P7D" 2020-10-31 NA NA NA NA NA NA 72.811 "Litres" "Fuel supply volumes" NA "0" NA
+"37" "CPACT6" NA NA "P7D" 2020-11-30 NA NA NA NA NA NA 69.709 "Litres" "Fuel supply volumes" NA "0" NA
+"38" "CPACT6" NA NA "P7D" 2020-12-31 NA NA NA NA NA NA 65.072 "Litres" "Fuel supply volumes" NA "0" NA
+"39" "CPACT6" NA NA "P7D" 2021-01-01 NA NA NA NA NA NA 61.461 "Litres" "Fuel supply volumes" NA "0" NA
+"40" "CPACT6" NA NA "P7D" 2021-02-01 NA NA NA NA NA NA 61.729 "Litres" "Fuel supply volumes" NA "0" NA
+"41" "CPACT6" NA NA "P7D" 2020-07-31 NA NA NA NA NA NA 19.635 "Litres" "Fuel supply volumes" NA "0" NA
+"42" "CPACT6" NA NA "P7D" 2020-08-31 NA NA NA NA NA NA 19.077 "Litres" "Fuel supply volumes" NA "0" NA
+"43" "CPACT6" NA NA "P7D" 2020-09-30 NA NA NA NA NA NA 22.032 "Litres" "Fuel supply volumes" NA "0" NA
+"44" "CPACT6" NA NA "P7D" 2020-10-31 NA NA NA NA NA NA 26.246 "Litres" "Fuel supply volumes" NA "0" NA
+"45" "CPACT6" NA NA "P7D" 2020-11-30 NA NA NA NA NA NA 24.463 "Litres" "Fuel supply volumes" NA "0" NA
+"46" "CPACT6" NA NA "P7D" 2020-12-31 NA NA NA NA NA NA 26.891 "Litres" "Fuel supply volumes" NA "0" NA
+"47" "CPACT6" NA NA "P7D" 2021-01-01 NA NA NA NA NA NA 26.616 "Litres" "Fuel supply volumes" NA "0" NA
+"48" "CPACT6" NA NA "P7D" 2021-02-01 NA NA NA NA NA NA 23.643 "Litres" "Fuel supply volumes" NA "0" NA
+"49" "CPACT6" NA NA "P7D" 2020-07-31 NA NA NA NA NA NA 2.133 "Litres" "Fuel supply volumes" NA "0" NA
+"50" "CPACT6" NA NA "P7D" 2020-08-31 NA NA NA NA NA NA 3.439 "Litres" "Fuel supply volumes" NA "0" NA
+"51" "CPACT6" NA NA "P7D" 2020-09-30 NA NA NA NA NA NA 1.476 "Litres" "Fuel supply volumes" NA "0" NA
+"52" "CPACT6" NA NA "P7D" 2020-10-31 NA NA NA NA NA NA 1.584 "Litres" "Fuel supply volumes" NA "0" NA
+"53" "CPACT6" NA NA "P7D" 2020-11-30 NA NA NA NA NA NA 1.231 "Litres" "Fuel supply volumes" NA "0" NA
+"54" "CPACT6" NA NA "P7D" 2020-12-31 NA NA NA NA NA NA 0.684 "Litres" "Fuel supply volumes" NA "0" NA
+"55" "CPACT6" NA NA "P7D" 2021-01-01 NA NA NA NA NA NA 0.355 "Litres" "Fuel supply volumes" NA "0" NA
+"56" "CPACT6" NA NA "P7D" 2021-02-01 NA NA NA NA NA NA 1.5 "Litres" "Fuel supply volumes" NA "0" NA
+"57" "CPACT6" NA NA "P7D" 2020-07-31 NA NA NA NA NA NA 7.535 "Litres" "Fuel supply volumes" NA "0" NA
+"58" "CPACT6" NA NA "P7D" 2020-08-31 NA NA NA NA NA NA 4.367 "Litres" "Fuel supply volumes" NA "0" NA
+"59" "CPACT6" NA NA "P7D" 2020-09-30 NA NA NA NA NA NA 8.914 "Litres" "Fuel supply volumes" NA "0" NA
+"60" "CPACT6" NA NA "P7D" 2020-10-31 NA NA NA NA NA NA 13.994 "Litres" "Fuel supply volumes" NA "0" NA
+"61" "CPACT6" NA NA "P7D" 2020-11-30 NA NA NA NA NA NA 14.491 "Litres" "Fuel supply volumes" NA "0" NA
+"62" "CPACT6" NA NA "P7D" 2020-12-31 NA NA NA NA NA NA 10.098 "Litres" "Fuel supply volumes" NA "0" NA
+"63" "CPACT6" NA NA "P7D" 2021-01-01 NA NA NA NA NA NA 8.245 "Litres" "Fuel supply volumes" NA "0" NA
+"64" "CPACT6" NA NA "P7D" 2021-02-01 NA NA NA NA NA NA 19.142 "Litres" "Fuel supply volumes" NA "0" NA
+"65" "CPACT6" NA NA "P7D" 2020-07-31 NA NA NA NA NA NA 1.191 "Litres" "Fuel supply volumes" NA "0" NA
+"66" "CPACT6" NA NA "P7D" 2020-08-31 NA NA NA NA NA NA 1.351 "Litres" "Fuel supply volumes" NA "0" NA
+"67" "CPACT6" NA NA "P7D" 2020-09-30 NA NA NA NA NA NA 1.56 "Litres" "Fuel supply volumes" NA "0" NA
+"68" "CPACT6" NA NA "P7D" 2020-10-31 NA NA NA NA NA NA 1.615 "Litres" "Fuel supply volumes" NA "0" NA
+"69" "CPACT6" NA NA "P7D" 2020-11-30 NA NA NA NA NA NA 1.783 "Litres" "Fuel supply volumes" NA "0" NA
+"70" "CPACT6" NA NA "P7D" 2020-12-31 NA NA NA NA NA NA 1.755 "Litres" "Fuel supply volumes" NA "0" NA
+"71" "CPACT6" NA NA "P7D" 2021-01-01 NA NA NA NA NA NA 1.57 "Litres" "Fuel supply volumes" NA "0" NA
+"72" "CPACT6" NA NA "P7D" 2021-02-01 NA NA NA NA NA NA 1.511 "Litres" "Fuel supply volumes" NA "0" NA
+"LatestDataTable" "ResourceID" "Subject" "Title" "Description" "Notes" "Caveats" "Source" "SourceURL" "Frequency" "Var1" "Var2" "Var3" "Var4" "Var5" "Var6"
+"1" "" "CPACT6" "Activity" "Fuel supply volumes" "Z Energy monthly fuel supply volumes" NA NA "Z Energy" "https://www.nzx.com/companies/ZEL/announcements" "Monthly" "Fuel type" NA NA NA NA NA
+"ResourceID" "Geo" "GeoUnit" "Duration" "Period" "Label1" "Label2" "Label3" "Label4" "Label5" "Label6" "Value" "Unit" "Measure" "NullReason" "Multiplier" "Status"
+"1" "CPACT6" NA NA "P7D" 2020-07-31 "Z Retail - petrol" NA NA NA NA NA 62.215 "Litres" "Fuel supply volumes" NA "0" NA
+"2" "CPACT6" NA NA "P7D" 2020-08-31 "Z Retail - petrol" NA NA NA NA NA 53.998 "Litres" "Fuel supply volumes" NA "0" NA
+"3" "CPACT6" NA NA "P7D" 2020-09-30 "Z Retail - petrol" NA NA NA NA NA 60.325 "Litres" "Fuel supply volumes" NA "0" NA
+"4" "CPACT6" NA NA "P7D" 2020-10-31 "Z Retail - petrol" NA NA NA NA NA 64.763 "Litres" "Fuel supply volumes" NA "0" NA
+"5" "CPACT6" NA NA "P7D" 2020-11-30 "Z Retail - petrol" NA NA NA NA NA 62.682 "Litres" "Fuel supply volumes" NA "0" NA
+"6" "CPACT6" NA NA "P7D" 2020-12-31 "Z Retail - petrol" NA NA NA NA NA 68.864 "Litres" "Fuel supply volumes" NA "0" NA
+"7" "CPACT6" NA NA "P7D" 2021-01-01 "Z Retail - petrol" NA NA NA NA NA 60.432 "Litres" "Fuel supply volumes" NA "0" NA
+"8" "CPACT6" NA NA "P7D" 2021-02-01 "Z Retail - petrol" NA NA NA NA NA 57.1 "Litres" "Fuel supply volumes" NA "0" NA
+"9" "CPACT6" NA NA "P7D" 2020-07-31 "Caltex Retail - petrol" NA NA NA NA NA 25.995 "Litres" "Fuel supply volumes" NA "0" NA
+"10" "CPACT6" NA NA "P7D" 2020-08-31 "Caltex Retail - petrol" NA NA NA NA NA 24.13 "Litres" "Fuel supply volumes" NA "0" NA
+"11" "CPACT6" NA NA "P7D" 2020-09-30 "Caltex Retail - petrol" NA NA NA NA NA 26.053 "Litres" "Fuel supply volumes" NA "0" NA
+"12" "CPACT6" NA NA "P7D" 2020-10-31 "Caltex Retail - petrol" NA NA NA NA NA 28.392 "Litres" "Fuel supply volumes" NA "0" NA
+"13" "CPACT6" NA NA "P7D" 2020-11-30 "Caltex Retail - petrol" NA NA NA NA NA 28.202 "Litres" "Fuel supply volumes" NA "0" NA
+"14" "CPACT6" NA NA "P7D" 2020-12-31 "Caltex Retail - petrol" NA NA NA NA NA 30.719 "Litres" "Fuel supply volumes" NA "0" NA
+"15" "CPACT6" NA NA "P7D" 2021-01-01 "Caltex Retail - petrol" NA NA NA NA NA 27.655 "Litres" "Fuel supply volumes" NA "0" NA
+"16" "CPACT6" NA NA "P7D" 2021-02-01 "Caltex Retail - petrol" NA NA NA NA NA 25.853 "Litres" "Fuel supply volumes" NA "0" NA
+"17" "CPACT6" NA NA "P7D" 2020-07-31 "Z Retail - diesel" NA NA NA NA NA 26.89 "Litres" "Fuel supply volumes" NA "0" NA
+"18" "CPACT6" NA NA "P7D" 2020-08-31 "Z Retail - diesel" NA NA NA NA NA 24.05 "Litres" "Fuel supply volumes" NA "0" NA
+"19" "CPACT6" NA NA "P7D" 2020-09-30 "Z Retail - diesel" NA NA NA NA NA 26.256 "Litres" "Fuel supply volumes" NA "0" NA
+"20" "CPACT6" NA NA "P7D" 2020-10-31 "Z Retail - diesel" NA NA NA NA NA 27.457 "Litres" "Fuel supply volumes" NA "0" NA
+"21" "CPACT6" NA NA "P7D" 2020-11-30 "Z Retail - diesel" NA NA NA NA NA 26.707 "Litres" "Fuel supply volumes" NA "0" NA
+"22" "CPACT6" NA NA "P7D" 2020-12-31 "Z Retail - diesel" NA NA NA NA NA 27.165 "Litres" "Fuel supply volumes" NA "0" NA
+"23" "CPACT6" NA NA "P7D" 2021-01-01 "Z Retail - diesel" NA NA NA NA NA 24.452 "Litres" "Fuel supply volumes" NA "0" NA
+"24" "CPACT6" NA NA "P7D" 2021-02-01 "Z Retail - diesel" NA NA NA NA NA 24.21 "Litres" "Fuel supply volumes" NA "0" NA
+"25" "CPACT6" NA NA "P7D" 2020-07-31 "Caltex Retail - diesel" NA NA NA NA NA 12.105 "Litres" "Fuel supply volumes" NA "0" NA
+"26" "CPACT6" NA NA "P7D" 2020-08-31 "Caltex Retail - diesel" NA NA NA NA NA 11.547 "Litres" "Fuel supply volumes" NA "0" NA
+"27" "CPACT6" NA NA "P7D" 2020-09-30 "Caltex Retail - diesel" NA NA NA NA NA 12.105 "Litres" "Fuel supply volumes" NA "0" NA
+"28" "CPACT6" NA NA "P7D" 2020-10-31 "Caltex Retail - diesel" NA NA NA NA NA 13.14 "Litres" "Fuel supply volumes" NA "0" NA
+"29" "CPACT6" NA NA "P7D" 2020-11-30 "Caltex Retail - diesel" NA NA NA NA NA 12.9 "Litres" "Fuel supply volumes" NA "0" NA
+"30" "CPACT6" NA NA "P7D" 2020-12-31 "Caltex Retail - diesel" NA NA NA NA NA 13.53 "Litres" "Fuel supply volumes" NA "0" NA
+"31" "CPACT6" NA NA "P7D" 2021-01-01 "Caltex Retail - diesel" NA NA NA NA NA 11.894 "Litres" "Fuel supply volumes" NA "0" NA
+"32" "CPACT6" NA NA "P7D" 2021-02-01 "Caltex Retail - diesel" NA NA NA NA NA 11.892 "Litres" "Fuel supply volumes" NA "0" NA
+"33" "CPACT6" NA NA "P7D" 2020-07-31 "Commercial - diesel" NA NA NA NA NA 63.608 "Litres" "Fuel supply volumes" NA "0" NA
+"34" "CPACT6" NA NA "P7D" 2020-08-31 "Commercial - diesel" NA NA NA NA NA 64.769 "Litres" "Fuel supply volumes" NA "0" NA
+"35" "CPACT6" NA NA "P7D" 2020-09-30 "Commercial - diesel" NA NA NA NA NA 70.385 "Litres" "Fuel supply volumes" NA "0" NA
+"36" "CPACT6" NA NA "P7D" 2020-10-31 "Commercial - diesel" NA NA NA NA NA 72.811 "Litres" "Fuel supply volumes" NA "0" NA
+"37" "CPACT6" NA NA "P7D" 2020-11-30 "Commercial - diesel" NA NA NA NA NA 69.709 "Litres" "Fuel supply volumes" NA "0" NA
+"38" "CPACT6" NA NA "P7D" 2020-12-31 "Commercial - diesel" NA NA NA NA NA 65.072 "Litres" "Fuel supply volumes" NA "0" NA
+"39" "CPACT6" NA NA "P7D" 2021-01-01 "Commercial - diesel" NA NA NA NA NA 61.461 "Litres" "Fuel supply volumes" NA "0" NA
+"40" "CPACT6" NA NA "P7D" 2021-02-01 "Commercial - diesel" NA NA NA NA NA 61.729 "Litres" "Fuel supply volumes" NA "0" NA
+"41" "CPACT6" NA NA "P7D" 2020-07-31 "Jet" NA NA NA NA NA 19.635 "Litres" "Fuel supply volumes" NA "0" NA
+"42" "CPACT6" NA NA "P7D" 2020-08-31 "Jet" NA NA NA NA NA 19.077 "Litres" "Fuel supply volumes" NA "0" NA
+"43" "CPACT6" NA NA "P7D" 2020-09-30 "Jet" NA NA NA NA NA 22.032 "Litres" "Fuel supply volumes" NA "0" NA
+"44" "CPACT6" NA NA "P7D" 2020-10-31 "Jet" NA NA NA NA NA 26.246 "Litres" "Fuel supply volumes" NA "0" NA
+"45" "CPACT6" NA NA "P7D" 2020-11-30 "Jet" NA NA NA NA NA 24.463 "Litres" "Fuel supply volumes" NA "0" NA
+"46" "CPACT6" NA NA "P7D" 2020-12-31 "Jet" NA NA NA NA NA 26.891 "Litres" "Fuel supply volumes" NA "0" NA
+"47" "CPACT6" NA NA "P7D" 2021-01-01 "Jet" NA NA NA NA NA 26.616 "Litres" "Fuel supply volumes" NA "0" NA
+"48" "CPACT6" NA NA "P7D" 2021-02-01 "Jet" NA NA NA NA NA 23.643 "Litres" "Fuel supply volumes" NA "0" NA
+"49" "CPACT6" NA NA "P7D" 2020-07-31 "Marine fuel oil" NA NA NA NA NA 2.133 "Litres" "Fuel supply volumes" NA "0" NA
+"50" "CPACT6" NA NA "P7D" 2020-08-31 "Marine fuel oil" NA NA NA NA NA 3.439 "Litres" "Fuel supply volumes" NA "0" NA
+"51" "CPACT6" NA NA "P7D" 2020-09-30 "Marine fuel oil" NA NA NA NA NA 1.476 "Litres" "Fuel supply volumes" NA "0" NA
+"52" "CPACT6" NA NA "P7D" 2020-10-31 "Marine fuel oil" NA NA NA NA NA 1.584 "Litres" "Fuel supply volumes" NA "0" NA
+"53" "CPACT6" NA NA "P7D" 2020-11-30 "Marine fuel oil" NA NA NA NA NA 1.231 "Litres" "Fuel supply volumes" NA "0" NA
+"54" "CPACT6" NA NA "P7D" 2020-12-31 "Marine fuel oil" NA NA NA NA NA 0.684 "Litres" "Fuel supply volumes" NA "0" NA
+"55" "CPACT6" NA NA "P7D" 2021-01-01 "Marine fuel oil" NA NA NA NA NA 0.355 "Litres" "Fuel supply volumes" NA "0" NA
+"56" "CPACT6" NA NA "P7D" 2021-02-01 "Marine fuel oil" NA NA NA NA NA 1.5 "Litres" "Fuel supply volumes" NA "0" NA
+"57" "CPACT6" NA NA "P7D" 2020-07-31 "Bitumen" NA NA NA NA NA 7.535 "Litres" "Fuel supply volumes" NA "0" NA
+"58" "CPACT6" NA NA "P7D" 2020-08-31 "Bitumen" NA NA NA NA NA 4.367 "Litres" "Fuel supply volumes" NA "0" NA
+"59" "CPACT6" NA NA "P7D" 2020-09-30 "Bitumen" NA NA NA NA NA 8.914 "Litres" "Fuel supply volumes" NA "0" NA
+"60" "CPACT6" NA NA "P7D" 2020-10-31 "Bitumen" NA NA NA NA NA 13.994 "Litres" "Fuel supply volumes" NA "0" NA
+"61" "CPACT6" NA NA "P7D" 2020-11-30 "Bitumen" NA NA NA NA NA 14.491 "Litres" "Fuel supply volumes" NA "0" NA
+"62" "CPACT6" NA NA "P7D" 2020-12-31 "Bitumen" NA NA NA NA NA 10.098 "Litres" "Fuel supply volumes" NA "0" NA
+"63" "CPACT6" NA NA "P7D" 2021-01-01 "Bitumen" NA NA NA NA NA 8.245 "Litres" "Fuel supply volumes" NA "0" NA
+"64" "CPACT6" NA NA "P7D" 2021-02-01 "Bitumen" NA NA NA NA NA 19.142 "Litres" "Fuel supply volumes" NA "0" NA
+"65" "CPACT6" NA NA "P7D" 2020-07-31 "Other commercial fuel" NA NA NA NA NA 1.191 "Litres" "Fuel supply volumes" NA "0" NA
+"66" "CPACT6" NA NA "P7D" 2020-08-31 "Other commercial fuel" NA NA NA NA NA 1.351 "Litres" "Fuel supply volumes" NA "0" NA
+"67" "CPACT6" NA NA "P7D" 2020-09-30 "Other commercial fuel" NA NA NA NA NA 1.56 "Litres" "Fuel supply volumes" NA "0" NA
+"68" "CPACT6" NA NA "P7D" 2020-10-31 "Other commercial fuel" NA NA NA NA NA 1.615 "Litres" "Fuel supply volumes" NA "0" NA
+"69" "CPACT6" NA NA "P7D" 2020-11-30 "Other commercial fuel" NA NA NA NA NA 1.783 "Litres" "Fuel supply volumes" NA "0" NA
+"70" "CPACT6" NA NA "P7D" 2020-12-31 "Other commercial fuel" NA NA NA NA NA 1.755 "Litres" "Fuel supply volumes" NA "0" NA
+"71" "CPACT6" NA NA "P7D" 2021-01-01 "Other commercial fuel" NA NA NA NA NA 1.57 "Litres" "Fuel supply volumes" NA "0" NA
+"72" "CPACT6" NA NA "P7D" 2021-02-01 "Other commercial fuel" NA NA NA NA NA 1.511 "Litres" "Fuel supply volumes" NA "0" NA

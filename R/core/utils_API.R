@@ -22,7 +22,7 @@ to_observations <- function(config, metadata, data){
                         "Geo" = rep(check_null(metadata$Geo), nrow(data)),
                         "GeoUnit" = get_label(data, check_null(metadata$GeoUnit), nrow(data)),
                         "Duration" = rep(check_null(metadata$Duration), nrow(data)),
-                        "Period" = data$parameter,
+                        "Period" = get_peroid(data, config, nrow(data)),
                         "Label1" = get_label(data, check_null(metadata$Label1), nrow(data)),
                         "Label2" = get_label(data, check_null(metadata$Label2), nrow(data)),
                         "Label3" = get_label(data, check_null(metadata$Label3), nrow(data)),
@@ -60,11 +60,24 @@ to_resource <- function(config, metadata){
   return(Resource)
 }
 
+# If the indicator datatype is a bar chart there is no peroid
+get_peroid <- function(data, config, len){
+  if(config$data_type == "BarChart"){
+    return(rep(NA,len))
+  }
+  return(data$parameter)
+}
+
+# If the indicator config specifies parameter then time sereis parameter is added as the label
+# If the indicator config specifies variable then variable dimension is added to the label
+# Else return the config label for all observations
 get_label <- function(data, label, len){
-  if (label == "variable" & !is.na(label) ){
+  if (label == "parameter" & !is.na(label) ){
+    return(data$parameter)
+  }
+  else if (label == "variable" & !is.na(label) ){
     return(data$variable)
   }
-  print(label)
   return(rep(label,len))
 }
 
@@ -72,7 +85,6 @@ check_null <- function(value){
   if (is.null(value)){
     return(NA)
   }
-  print(value)
   return(value)
 }
 
