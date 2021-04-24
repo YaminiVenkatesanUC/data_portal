@@ -1209,5 +1209,22 @@
       "Unit":"%",
       "Measure":"Self-reported ability to meet bills",
       "Multiplier":0
+   },
+   {
+      "ResourceID":"CPHOU2",
+      "Subject":"Household finances",
+      "Title":"Change in income",
+      "Description":"Way in which respondents' household income has changed since beginning of March 2020",
+      "Caveats": "Income refers to total monthly net household income from all sources. Wave 1 data collected over 14-28th April 2020. This mainly covers COVID-19 Alert Level 4 (except 28th April 2020 which was COVID-19 Alert Level 3). Wave 2 data collected between 30 September and 22 October 2020.  This survey uses an opt-in quota sampling method, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population.",
+      "Source":"Commission for Financial Capability",
+      "SourceURL":"https://cffc.govt.nz/reviews-and-reports/research-and-reports/",
+      "Frequency":"Ad-hoc",
+      "Label1": "variable",
+      "Label2": "parameter",
+      "Var1":"Wave",
+      "Var2":"Response",
+      "Unit":"%",
+      "Measure":"Self-reported change in income",
+      "Multiplier":0
    }
 ]
