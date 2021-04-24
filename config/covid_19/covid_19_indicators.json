@@ -894,7 +894,7 @@
     "include_date_slider": true,
     "source_url": "https://www.stats.govt.nz/news/march-card-spending-rebounds-despite-covid",
     "download": true,
-    "frequency":"Montly",
+    "frequency":"Monthly",
     "groups": [
       {
         "name": "Retail (actual)",
@@ -4056,7 +4056,7 @@
             "units": ["Index"]
         },
         {
-            "name": "NZAC component - New jobs posted onlne",
+            "name": "NZAC component - New jobs posted online",
             "title": "Annual percentage change SEEK new job advertisement index - seasonally adjusted",
             "units": ["Annual % change"]
         },

@@ -986,7 +986,7 @@
         "value_names": ["Broadband usage"],
         "group_names": ["undefined_name"],
         "sheet_number": 1,
-        "filename": "COVID 19 - Chorus national broadband.csv",
+        "filename": "/Chorus data/",
         "parameter_transform": ["function (x) ymd(x)"],
         "load_function": "read_from_csv",
         "date_added":"26/08/2020",
@@ -3489,7 +3489,7 @@
           "NZAC component - Card transaction spend",
            "NZAC component - Electricity grid demand",
            "NZAC component - Manufacturing index",
-           "NZAC component - New jobs posted onlne",
+           "NZAC component - New jobs posted online",
           "NZAC component - Traffic index (heavy)",
           "NZAC component - Traffic index (light)"
         ],
@@ -3502,7 +3502,7 @@
           "NZAC component - Card transaction spend",
            "NZAC component - Electricity grid demand",
            "NZAC component - Manufacturing index",
-           "NZAC component - New jobs posted onlne",
+           "NZAC component - New jobs posted online",
           "NZAC component - Traffic index (heavy)",
           "NZAC component - Traffic index (light)"
         ],
@@ -8834,7 +8834,8 @@
       "data_type":"TimeSeries",
       "group_names": "undefined_name",
       "date_added":"08/03/2021",
-      "date_dropped":null
+      "date_dropped":null,
+      "script":"salvation_army.R"
     },
      {
       "class":"Economic",
