@@ -556,19 +556,19 @@
     "groups": [
         {
             "name": "Petrol",
-            "units": "Litres",
+            "units": "Litres(millions)",
             "title": "Z Energy monthly fuel supply volumes - petrol"
         },
         {
             "name": "Diesel",
-            "units": "Litres",
+            "units": "Litres(millions)",
             "title": "Z Energy monthly fuel supply volumes - diesel",
             "caveats": "<p>Diesel commercial includes Z and Caltex branded Truckstops, private Truckstops, Mini-Tankers and Marine diesel.</p>"
 
         },
         {
           "name":"Other commercial fuels",
-          "units":"Litres",
+          "units":"Litres(millions)",
           "title":"Z Energy monthly fuel supply volumes - other commercial fuels"
         }
     ]
@@ -890,7 +890,7 @@
     "include_date_slider": true,
     "source_url": "https://www.stats.govt.nz/news/march-card-spending-rebounds-despite-covid",
     "download": true,
-    "frequency":"Montly",
+    "frequency":"Monthly",
     "groups": [
       {
         "name": "Retail (actual)",
@@ -4048,7 +4048,7 @@
             "units": ["Index"]
         },
         {
-            "name": "NZAC component - New jobs posted onlne",
+            "name": "NZAC component - New jobs posted online",
             "title": "Annual percentage change SEEK new job advertisement index - seasonally adjusted",
             "units": ["Annual % change"]
         },
@@ -6169,80 +6169,80 @@
       {
         "name": "Auckland",
         "title": "Daily Chorus broadband use - Auckland",
-        "units": "Gigagbyte (million)"
+        "units": "Gigabyte (million)"
       },
       {
         "name": "Bay of Plenty",
         "title": "Daily Chorus broadband use - Bay of Plenty",
-        "units": "Gigagbyte (million)"
+        "units": "Gigabyte (million)"
       },
       {
         "name": "Canterbury",
         "title": "Daily Chorus broadband use - Canterbury",
-        "units": "Gigagbyte (million)"
+        "units": "Gigabyte (million)"
       },
       {
         "name": "Gisborne",
         "title": "Daily Chorus broadband use - Gisborne",
-        "units": "Gigagbyte (million)"
+        "units": "Gigabyte (million)"
       },
 
       {
         "name": "Hawke's Bay",
         "title": "Daily Chorus broadband use- Hawke's Bay",
-        "units": "Gigagbyte (million)"
+        "units": "Gigabyte (million)"
       },
       {
         "name": "Manawatū-Whanganui",
         "title": "Daily Chorus broadband use- Manawatū-Whanganui",
-        "units": "Gigagbyte (million)"
+        "units": "Gigabyte (million)"
       }
       ,
 
       {
         "name": "Northland",
         "title": "Daily Chorus broadband use - Northland",
-        "units": "Gigagbyte (million)"
+        "units": "Gigabyte (million)"
       },
       {
         "name": "Otago",
         "title": "Daily Chorus broadband use - Otago",
-        "units": "Gigagbyte (million)"
+        "units": "Gigabyte (million)"
       }
       ,
       {
         "name": "Southland",
         "title": "Daily Chorus broadband use - Southland",
-        "units": "Gigagbyte (million)"
+        "units": "Gigabyte (million)"
       }
       ,
       {
         "name": "Taranaki",
         "title": "Daily Chorus broadband use - Taranaki",
-        "units": "Gigagbyte (million)"
+        "units": "Gigabyte (million)"
       }
       ,
       {
         "name": "Tasman",
         "title": "Daily Chorus broadband use - Tasman",
-        "units": "Gigagbyte (million)"
+        "units": "Gigabyte (million)"
       }
        ,
       {
         "name": "Waikato",
         "title": "Daily Chorus broadband use - Waikato",
-        "units": "Gigagbyte (million)"
+        "units": "Gigabyte (million)"
       }
       ,
       {
         "name": "Wellington",
         "title": "Daily Chorus broadband use - Wellington",
-        "units": "Gigagbyte (million)"
+        "units": "Gigabyte (million)"
       } ,
       {
         "name": "West Coast",
         "title": "Daily Chorus broadband use - West Coast",
-        "units": "Gigagbyte (million)"
+        "units": "Gigabyte (million)"
       }
 
 
