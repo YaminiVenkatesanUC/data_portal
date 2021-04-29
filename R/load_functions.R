@@ -990,11 +990,11 @@ read_managed_isolotion_data <- function(config, directory) {
     range = cell_limits(c(1, 1), c(1, 2))
   ))
   value_name <- data$header_date
-  value_name_transformed <- gsub(
-    "Quarantine and managed isolation figures as at ",
-    "Current - ",
-    value_name
-  )
+  # value_name_transformed <- gsub(
+  #   "Quarantine and managed isolation figures as at ",
+  #   "Current - ",
+  #   value_name
+  # )
   if(!is.null(config$occupancy_rate)){
 
     data_object[["Occupancy rate"]]$value_names <- value_name
@@ -1267,10 +1267,22 @@ read_hpa_drinking_data <- function(config,directory) {
 
     output_group[[group_name]] <- BarChart$new(data_group, names(data_group)[2:3], update_date)
   }
-
   return(output_group)
+}
 
+read_vaccination <- function(config, directory) {
+  data_object <- read_from_excel(config, directory)
+  group_name <- config$group_names[[1]]
+  data <- as.data.frame(read_excel(
+    paste0(directory, config$filename),
+    sheet = config$sheet_number
+  ))
 
+  value_names <- tail(colnames(data), 2)
+  if (group_name != "Total") {
+    data_object[[group_name]]$value_names <- as.list(value_names)
+  }
+  return(data_object)
 }
 
 
@@ -1301,5 +1313,6 @@ load_functions <- list(
   read_managed_isolotion_data = read_managed_isolotion_data,
   read_hlfs_data = read_hlfs_data,
   read_MBIE_rental = read_MBIE_rental,
-  read_hpa_drinking_data = read_hpa_drinking_data
+  read_hpa_drinking_data = read_hpa_drinking_data,
+  read_vaccination = read_vaccination
 )

@@ -391,6 +391,10 @@ get_bar_chart <- function(
   )
 
   categories <- data_object$categories
+  if (length(categories) == 1) {
+    categories <- rep(categories,2)
+  }
+
   label_suffix <- ""
 
   norm_factor_and_unit <- get_normalisation_factor(data_object$values)
@@ -415,10 +419,6 @@ get_bar_chart <- function(
       type = type,
       visible = visible[[i]]
     )
-
-
-
-
   }
 
   title <- group_definition$title
@@ -435,6 +435,8 @@ get_bar_chart <- function(
   } else {
     x_label <- NULL
   }
+
+
 
   categories <-
     if (label_suffix != "") {
@@ -547,12 +549,25 @@ get_vertical_bar <- function(data, input, indicator_definition) {
 
 
 get_unstacked_vertical_bar <- function(data, input, indicator_definition) {
+  group_index <- which(sapply(
+    indicator_definition$groups,
+    function(x) x$name) == input$line_selector
+  )
+  if (length(group_index) == 0) {
+    return(NULL)
+  }
+  group_definition <- indicator_definition$groups[[group_index]]
+  if (!is.null(group_definition$rotation)) {
+    rotation = group_definition$rotation
+  } else {
+    rotation = -45
+  }
   get_bar_chart(
     data,
     input,
     indicator_definition,
     type = "column",
-    rotation = -45,
+    rotation = rotation,
     stacking = NULL
   )
 }

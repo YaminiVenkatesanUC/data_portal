@@ -556,19 +556,19 @@
     "groups": [
         {
             "name": "Petrol",
-            "units": "Litres",
+            "units": "Litres(millions)",
             "title": "Z Energy monthly fuel supply volumes - petrol"
         },
         {
             "name": "Diesel",
-            "units": "Litres",
+            "units": "Litres(millions)",
             "title": "Z Energy monthly fuel supply volumes - diesel",
             "caveats": "<p>Diesel commercial includes Z and Caltex branded Truckstops, private Truckstops, Mini-Tankers and Marine diesel.</p>"
 
         },
         {
           "name":"Other commercial fuels",
-          "units":"Litres",
+          "units":"Litres(millions)",
           "title":"Z Energy monthly fuel supply volumes - other commercial fuels"
         }
     ]
@@ -6169,80 +6169,80 @@
       {
         "name": "Auckland",
         "title": "Daily Chorus broadband use - Auckland",
-        "units": "Gigagbyte (million)"
+        "units": "Gigabyte (million)"
       },
       {
         "name": "Bay of Plenty",
         "title": "Daily Chorus broadband use - Bay of Plenty",
-        "units": "Gigagbyte (million)"
+        "units": "Gigabyte (million)"
       },
       {
         "name": "Canterbury",
         "title": "Daily Chorus broadband use - Canterbury",
-        "units": "Gigagbyte (million)"
+        "units": "Gigabyte (million)"
       },
       {
         "name": "Gisborne",
         "title": "Daily Chorus broadband use - Gisborne",
-        "units": "Gigagbyte (million)"
+        "units": "Gigabyte (million)"
       },
 
       {
         "name": "Hawke's Bay",
         "title": "Daily Chorus broadband use- Hawke's Bay",
-        "units": "Gigagbyte (million)"
+        "units": "Gigabyte (million)"
       },
       {
         "name": "Manawatū-Whanganui",
         "title": "Daily Chorus broadband use- Manawatū-Whanganui",
-        "units": "Gigagbyte (million)"
+        "units": "Gigabyte (million)"
       }
       ,
 
       {
         "name": "Northland",
         "title": "Daily Chorus broadband use - Northland",
-        "units": "Gigagbyte (million)"
+        "units": "Gigabyte (million)"
       },
       {
         "name": "Otago",
         "title": "Daily Chorus broadband use - Otago",
-        "units": "Gigagbyte (million)"
+        "units": "Gigabyte (million)"
       }
       ,
       {
         "name": "Southland",
         "title": "Daily Chorus broadband use - Southland",
-        "units": "Gigagbyte (million)"
+        "units": "Gigabyte (million)"
       }
       ,
       {
         "name": "Taranaki",
         "title": "Daily Chorus broadband use - Taranaki",
-        "units": "Gigagbyte (million)"
+        "units": "Gigabyte (million)"
       }
       ,
       {
         "name": "Tasman",
         "title": "Daily Chorus broadband use - Tasman",
-        "units": "Gigagbyte (million)"
+        "units": "Gigabyte (million)"
       }
        ,
       {
         "name": "Waikato",
         "title": "Daily Chorus broadband use - Waikato",
-        "units": "Gigagbyte (million)"
+        "units": "Gigabyte (million)"
       }
       ,
       {
         "name": "Wellington",
         "title": "Daily Chorus broadband use - Wellington",
-        "units": "Gigagbyte (million)"
+        "units": "Gigabyte (million)"
       } ,
       {
         "name": "West Coast",
         "title": "Daily Chorus broadband use - West Coast",
-        "units": "Gigagbyte (million)"
+        "units": "Gigabyte (million)"
       }
 
 
@@ -7855,6 +7855,70 @@
             "title": "Percentage of respondents who have started to worry about someone else in their household’s smoking during level 4 lockdown (wave 1), or in                       the last 2 weeks (wave 2)*",
             "caveats": "<p>* Wave 1 respondents were asked to reference the time while in level 4 lockdown, while Wave 2 respondents were asked to reference the last 2 weeks.</p><p>Data collected for wave 1 between 7-13 April 2020 (which corresponded with Alert Level 4 lockdown days 13 – 19). Data collected for wave 2 between 10-19 June 2020 (which corresponded with Alert Level 1 days 2 – 11). Wave 2 includes people who completed the Wave 1 survey as well as new respondents. </p><p>Results from the wave 2 study can be found here: <a href = \"https://www.hpa.org.nz/research-library/research-publications/post-lockdown-survey-the-impact-on-health-risk-behaviours\"> Post lockdown survey - the impact on health risk behaviours</a>.</p><p>This survey uses an opt-in online panel sample, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population.</p>"
         }
+    ]
+  },
+  {
+    "class":"Health",
+    "type":"COVID-19 Vaccinations",
+    "indicator_name":"Covid-19 Vaccines Administered – Cumulative",
+    "source":"Ministry of Health, COVID-19: Vaccine data",
+    "plot_function":"get_unstacked_vertical_bar",
+    "international":false,
+    "include_date_slider":false,
+    "source_url":"https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-data-and-statistics/covid-19-vaccine-data",
+    "download":true,
+    "frequency":"Weekly",
+    "caveats":"Cumulative total: All vaccinations that have been administered and entered into the COVID-19 Immunisation Register up until midnight of the night before the data is published.",
+    "groups":
+    [
+      {
+        "name":"Total",
+        "units":"",
+        "title":"Cumulative number of vaccines administered",
+        "rotation":0
+      },
+      {
+        "name":"By DHB of residence",
+        "units":"",
+        "title":"Cumulative number of vaccines administered, by DHB of residence",
+        "caveats":"<p>1) The DHB of residence is where the vaccinated person resides, which may differ from the DHB where they received their vaccination. The DHB of service is available in the spreadsheet at the bottom of the page.</p><p>2) In the Auckland region, most vaccinations to date are given in vaccination sites located in Counties Manukau DHB.</p><p>3) Cumulative total: All vaccinations that have been administered and entered into the COVID-19 Immunisation Register up until midnight of the night before the data is published.</p>"
+      },
+      {
+        "name":"By ethnicity",
+        "units":"",
+        "title":"Cumulative number of vaccines administered, by ethnicity"
+      },
+      {
+        "name":"By age group",
+        "units":"",
+        "title":"Cumulative number of vaccines administered, by age group"
+      },
+      {
+        "name":"By sex",
+        "units":"",
+        "title":"Cumulative number of vaccines administered, by sex"
+      }
+    ]
+  },
+  {
+    "class":"Health",
+    "type":"COVID-19 Vaccinations",
+    "indicator_name":"Covid-19 Vaccines Administered – Daily total",
+    "source":"Ministry of Health, COVID-19: Vaccine data",
+    "plot_function":"get_time_series_plot",
+    "international":false,
+    "include_date_slider":true,
+    "source_url":"https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-data-and-statistics/covid-19-vaccine-data",
+    "download":true,
+    "frequency":"Weekly",
+    "caveats":"This chart shows the count of vaccinations administered on a given day from the COVID-19 Immunisation Register. Note some records are entered into the register later than when the immunisation was received. This means that the figures for a given date may move for some time afterwards.",
+    "groups":
+    [
+      {
+        "name":"undefined_name",
+        "units":"",
+        "title":"Number of daily vaccines administered"
+      }
     ]
   }
 ]
