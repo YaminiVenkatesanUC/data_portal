@@ -1,29 +1,50 @@
+library(readxl)
+library(xlsx)
+library(writexl)
+library(stringr)
+
+
 directory <- "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/"
 path <- paste0(directory, "MoH/Vaccination")
 files <- file.info(list.files(path, full.names = T))
 
+filename <- rownames(files)[which.max(files$ctime)]
+date <- str_extract(string = filename, pattern = "\\d\\d_\\d\\d_\\d\\d\\d\\d") %>%
+  dmy() %>%
+  format("%d %B %Y")
 
+sheet_sum <- "Summary"
+sheets_cum <- c("DHBofResidence", "Ethnicity", "Sex", "Age")
+sheet_daily <- "Date"
 
-update <- read.csv(rownames(files)[which.max(files$ctime)])
-regions <- c("Auckland", "Bay of Plenty", "Canterbury", "Gisborne", "Hawkes Bay", "Manawatu", "Northland", "Otago", "Southland", "Taranaki", "Tasman", "Waikato", "Wellington", "Westland")
-update <- update %>%
-  select(-weekday) %>%
-  filter(`Region.Name` %in% regions) %>%
-  dplyr::rename(Date = `Day.of.timecapturednzst5min`) %>%
-  dplyr::rename(`Measure Names` = `Measure.Names`) %>%
-  dplyr::rename(`Region Name` = `Region.Name`) %>%
-  dplyr::rename(`Measure Values` = `Measure.Values`)
-update$Date <- as.Date(update$Date, format = "%a, %B %d, %Y")
+file.rename(from = paste0(directory, "COVID-19 MoH Vaccination - Cumulative.xlsx"),
+            to = paste0(directory, "Previous/COVID-19 MoH Vaccination - Cumulative.xlsx"))
 
-master <- rbind(master, update)
+file.rename(from = paste0(directory, "COVID-19 MoH Vaccination - Daily.csv"),
+            to = paste0(directory, "Previous/COVID-19 MoH Vaccination - Daily.csv"))
 
-writexl::write_xlsx(x = master, path = paste0(path, "/COVID 19 - Chorus regional broadband master.xlsx"))
+df_sum <- as.data.frame(read_excel(filename, sheet = sheet_sum)) %>%
+  mutate(Date = date) %>%
+  select(Date, everything())
+write.xlsx(df_sum,
+           file = paste0(directory, "COVID-19 MoH Vaccination - Cumulative.xlsx"),
+           sheetName = sheet_sum,
+           append = TRUE,
+           showNA = FALSE,
+           col.names = TRUE,
+           row.names = FALSE)
 
-output <- master %>%
-  group_by(Date, `Region Name`) %>%
-  summarise_if(is.numeric, sum, na.rm = TRUE) %>%
-  ungroup() %>%
-  spread(`Region Name`, `Measure Values`)
+for (sheet in sheets_cum) {
+  df_cum <- as.data.frame(read_excel(filename, sheet = sheet))
+  colnames(df_cum) <- paste0(colnames(df_cum), ", as at ", date)
+  write.xlsx(df_cum,
+             file = paste0(directory, "COVID-19 MoH Vaccination - Cumulative.xlsx"),
+             sheetName = sheet,
+             append = TRUE,
+             showNA = FALSE,
+             col.names = TRUE,
+             row.names = FALSE)
+}
 
-file.rename(from = paste0(directory, "/COVID 19 - Chorus regional broadband.xlsx"), to = paste0(directory, "/Previous/COVID 19 - Chorus regional broadband.xlsx"))
-writexl::write_xlsx(x = output, path = paste0(directory, "COVID 19 - Chorus regional broadband.xlsx"))
+df_daily <- as.data.frame(read_excel(filename, sheet = sheet_daily))
+write.csv(df_daily, paste0(directory, "COVID-19 MoH Vaccination - Daily.csv"), row.names = FALSE)
