@@ -420,42 +420,22 @@
     "groups": [
       {
         "name": "All industries (actual)",
-        "title": "Monthly employment indicators - total earnings (actual)",
+        "title": "Monthly employment indicators - total cash earnings (actual)",
         "units": "$"
       },
       {
         "name": "Primary industries (actual)",
-        "title": "Monthly employment indicators - total earnings (actual)",
+        "title": "Monthly employment indicators - total cash earnings (actual)",
         "units": "$"
       },
       {
         "name": "Goods-producing industries (actual)",
-        "title": "Monthly employment indicators - total earnings (actual)",
+        "title": "Monthly employment indicators - total cash earnings (actual)",
         "units": "$"
       },
       {
         "name": "Service industries (actual)",
-        "title": "Monthly employment indicators - total earnings (actual)",
-        "units": "$"
-      },
-      {
-        "name": "All industries (trend)",
-        "title": "Monthly employment indicators - total earnings (trend)",
-        "units": "$"
-      },
-      {
-        "name": "Primary industries (trend)",
-        "title": "Monthly employment indicators - total earnings (trend)",
-        "units": "$"
-      },
-      {
-        "name": "Goods-producing industries (trend)",
-        "title": "Monthly employment indicators - total earnings (trend)",
-        "units": "$"
-      },
-      {
-        "name": "Service industries (trend)",
-        "title": "Monthly employment indicators - total earnings (trend)",
+        "title": "Monthly employment indicators - total cash earnings (actual)",
         "units": "$"
       }
     ]

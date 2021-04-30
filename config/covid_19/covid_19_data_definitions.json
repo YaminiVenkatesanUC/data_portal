@@ -586,12 +586,13 @@
       "load_function": "read_employment_data",
       "data_type": "TimeSeries",
       "load_parameters": {
-        "Series_title_1": "Total earnings",
+        "Series_title_1": "Earnings - cash",
         "keyword": "High level industry by variable"
       },
       "date_added":"21/06/2020",
       "date_dropped":null
     },
+
     {
         "class": "Economic",
         "indicator_name": "Consumer confidence",
