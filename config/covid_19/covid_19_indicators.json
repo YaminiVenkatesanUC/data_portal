@@ -407,7 +407,7 @@
   },
   {
     "class": "Economic",
-    "indicator_name": "Monthly cash earnings",
+    "indicator_name": "Monthly earnings",
     "type": "Employment",
     "source": "Stats NZ",
     "plot_function": "get_time_series_plot",
@@ -436,26 +436,6 @@
       {
         "name": "Service industries (actual)",
         "title": "Monthly employment indicators - total cash earnings (actual)",
-        "units": "$"
-      },
-      {
-        "name": "All industries (trend)",
-        "title": "Monthly employment indicators - total cash earnings (trend)",
-        "units": "$"
-      },
-      {
-        "name": "Primary industries (trend)",
-        "title": "Monthly employment indicators - total cash earnings (trend)",
-        "units": "$"
-      },
-      {
-        "name": "Goods-producing industries (trend)",
-        "title": "Monthly employment indicators - total cash earnings (trend)",
-        "units": "$"
-      },
-      {
-        "name": "Service industries (trend)",
-        "title": "Monthly employment indicators - total cash earnings (trend)",
         "units": "$"
       }
     ]
