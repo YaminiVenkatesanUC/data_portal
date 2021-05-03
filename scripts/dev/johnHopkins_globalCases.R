@@ -1,5 +1,6 @@
 # Number of cases (other countries)
 
+library(xlsx)
 
 countries <- c("Australia",
                "Australia - Australian Capital Territory",
