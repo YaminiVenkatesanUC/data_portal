@@ -90,66 +90,6 @@ read_from_excel <- function(config, directory) {
   ))
 }
 
-chorus_load_function <- function(config, directory) {
-  input_files <- list.files(paste0(directory, config$filename))
-  data <- foreach(i = 1:length(input_files), .combine = rbind) %do% {
-    print(paste0(directory, config$filename, "/", input_files[[i]]))
-    output <- as.data.frame(read_excel(
-      paste0(directory, config$filename, "/", input_files[[i]]),
-      sheet = 1,
-      skip = 4,
-      col_names = c("date", "time", "egress", "ingress", "total")
-    ), stringAsFactors = FALSE)
-
-    if (!all(!is.na(output$date))) {
-      output <- output %>%
-        filter(
-          !(date %in% c("Grand Total"))
-        ) %>%
-        mutate(
-          date_parsed = ifelse(
-            is.na(date),
-            as.Date(as.numeric(date[[1]]), origin = "1899-12-30"),
-            as.Date(as.numeric(date), origin = "1899-12-30")
-          )
-        ) %>%
-        select(-c("date"))
-
-      output$date <- as.Date(as.numeric(output$date_parsed),  origin = "1970-01-01")
-      output <- output %>% select(-c("date_parsed"))
-    }
-    output
-  }
-  data$hour <- substr(data$time, 1, 2)
-
-  data <- aggregate(total ~ date, data = data, FUN = sum)
-  data$Parameter <- ymd(paste0(data$date))
-  data <- data %>% arrange(Parameter) %>% select("Parameter", "total")
-
-  return(data_frame_to_data_object_helper(
-    directory,
-    config,
-    data
-  ))
-}
-
-example_web_service_load_function <- function(data, indicator, group_name) {
-  data_type <- get_indicator_parameter("data_type", indicator, group_name)
-
-  data_object <- DATA_TYPES[[data_type]]$new(
-    data %>%
-      filter(series_name == group_name) %>%
-      select(date, value) %>%
-      mutate(date = as.Date(date)) %>%
-      arrange(date) %>%
-      rename(Parameter = date),
-    group_name,
-    as.Date(now())
-  )
-
-  return(data_object)
-}
-
 read_employment_data <- function(config, directory) {
   load_parameters <- config$load_parameters
   data <- read.csv(
