@@ -233,7 +233,8 @@ data <- df_indicators %>%
   filter(month == latest_report_date) %>% 
   select(indicator_name, source, frequency) %>% 
  left_join(df_ind_views) %>% 
-  select(-month)
+  select(-month) %>% 
+  unique()
 knitr::kable(data, col.names = c("Indicator name", "Source", "Frequency", "Views last month"))
 ```
 
