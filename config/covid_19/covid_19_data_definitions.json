@@ -3670,7 +3670,6 @@
         "class": "Economic",
         "indicator_name": "Weekly filled jobs (34 days)",
         "type": "Employment",
-        "filter_paid_jobs":"Number of paid jobs - 34 days",
         "parameter_col": 1,
                 "parameter_transform": [
         "function (x) ymd(x)"
@@ -3687,8 +3686,8 @@
         "Goods Producing",
         "Services"
         ],
-        "filename": "Employment-indicators-weekly-paid-jobs-34-days.csv",
-        "load_function": "read_employment_paid_jobs_data",
+        "filename": "COVID - 19 Weekly_paid_jobs_34_days.csv",
+        "load_function": "read_from_csv",
         "data_type": "TimeSeries",
         "group_names":
         [
@@ -3698,7 +3697,8 @@
         "Services"
         ],
         "date_added":"21/06/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "script":"weekly_employment.R"
     },
 {
         "class": "Health",
@@ -6014,8 +6014,8 @@
     "Goods Producing",
     "Services"
     ],
-  "filename": "Employment-indicators-weekly-paid-jobs-34-days.csv",
-  "load_function": "read_employment_paid_jobs_data",
+  "filename": "COVID - 19 Weekly_median_earnings_34_days.csv",
+  "load_function": "read_from_csv",
   "data_type": "TimeSeries",
   "group_names":
     [
@@ -6025,7 +6025,8 @@
       "Services"
       ],
     "date_added":"21/06/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "script":"weekly_employment.R"
 },
 {
     "class":"Social",
