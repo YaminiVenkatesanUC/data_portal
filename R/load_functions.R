@@ -1288,7 +1288,7 @@ read_hpa_drinking_data <- function(config,directory,odata_definitions=NULL) {
   return(output_group)
 }
 
-read_vaccination <- function(config, directory, odata_definitions=NULL) {
+read_vaccination <- function(config, directory) {
   data_object <- read_from_excel(config, directory)
   group_name <- config$group_names[[1]]
   data <- as.data.frame(read_excel(
