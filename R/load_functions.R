@@ -90,147 +90,6 @@ read_from_excel <- function(config, directory) {
   ))
 }
 
-read_employment_data <- function(config, directory) {
-  load_parameters <- config$load_parameters
-  data <- read.csv(
-    paste0(directory, config$filename),
-    stringsAsFactors = FALSE
-  ) %>%
-    filter(Group == load_parameters$keyword) %>%
-    filter(
-      Series_title_1 %in% load_parameters$Series_title_1 &
-        substr(Series_reference, 4, 4) == "M"
-    ) %>%
-    mutate(
-      Parameter = ymd(paste0(str_pad(as.character(Period), 7, side = "right", pad = "0"), ".01")),
-      Data_value = Data_value * (10 ** Magnitude)
-    ) %>%
-    select("Parameter", "Series_title_2", "Series_title_3", "Data_value")
-
-  output_group <- list()
-  update_date <- as.Date(file.info(paste0(directory, config$filename))$mtime, tz = "NZ")
-
-  for (series_title_2 in unique(data$Series_title_2)) {
-    for (series_title_3 in unique(data$Series_title_3)) {
-      data_group <- data %>%
-        filter(
-          Series_title_2 == series_title_2 &
-            Series_title_3 == series_title_3
-        ) %>%
-        select(c("Parameter", "Data_value")) %>%
-        arrange(Parameter)
-
-      group_name <- paste0(series_title_2, " (", tolower(series_title_3), ")")
-      output_group[[group_name]] <- TimeSeries$new(data_group, group_name, update_date)
-    }
-  }
-
-  return(output_group)
-}
-
-read_filled_jobs_by_gender <- function(config, directory) {
-  print(paste0(directory, config$filename))
-  load_parameters <- config$load_parameters
-  data <- read.csv(
-    paste0(directory, config$filename),
-    stringsAsFactors = FALSE
-  ) %>%
-    mutate(
-      Parameter = ymd(paste0(str_pad(as.character(Period), 7, side = "right", pad = "0"), ".01")),
-      Value = as.numeric(Data_value)
-    ) %>%
-    filter(Group == load_parameters$keyword) %>%
-    select("Parameter", load_parameters$group_type, "Value", "Series_title_2")
-  names(data)[[2]] <- "group_column"
-  names(data)[[4]] <- "Sex"
-  output_group <- list()
-  update_date <- as.Date(file.info(paste0(directory, config$filename))$mtime, tz = "NZ")
-
-  for (industry_group in unique(data$group_column)) {
-    data_group <- data %>%
-      filter(
-        group_column == industry_group
-      ) %>%
-      select(c("Parameter", "Value", "Sex")) %>%
-      pivot_wider(names_from = Sex, values_from = c("Value"))
-
-    group_name <- industry_group
-    output_group[[group_name]] <- TimeSeries$new(data_group, names(data_group)[2:3], update_date)
-  }
-
-  return(output_group)
-}
-
-
-read_filled_jobs_by_age <- function(config, directory) {
-  print(paste0(directory, config$filename))
-  load_parameters <- config$load_parameters
-  data <- read.csv(
-    paste0(directory, config$filename),
-    stringsAsFactors = FALSE
-  ) %>%
-    mutate(
-      Parameter = ymd(paste0(str_pad(as.character(Period), 7, side = "right", pad = "0"), ".01")),
-      Value = as.numeric(Data_value)
-    ) %>%
-    filter(Group == load_parameters$keyword) %>%
-    select("Parameter", load_parameters$group_type, "Value", "Series_title_2")
-  names(data)[[2]] <- "group_column"
-  names(data)[[4]] <- "Age_group"
-  output_group <- list()
-  update_date <- as.Date(file.info(paste0(directory, config$filename))$mtime, tz = "NZ")
-
-  for (industry_group in unique(data$group_column)) {
-    data_group <- data %>%
-      filter(
-        group_column == industry_group
-      ) %>%
-      select(c("Parameter", "Value", "Age_group")) %>%
-      pivot_wider(names_from = Age_group, values_from = c("Value"))
-
-    group_name <- industry_group
-    output_group[[group_name]] <- TimeSeries$new(
-      data_group,
-      names(data_group)[2:ncol(data_group)],
-      update_date
-    )
-  }
-
-  return(output_group)
-}
-
-
-read_filled_jobs_by_industry_or_region <- function(config, directory) {
-  load_parameters <- config$load_parameters
-  data <- read.csv(
-    paste0(directory, config$filename),
-    stringsAsFactors = FALSE
-  ) %>%
-    mutate(
-      Parameter = ymd(paste0(str_pad(as.character(Period), 7, side = "right", pad = "0"), ".01")),
-      Value = Data_value * (10 ** Magnitude)
-    ) %>%
-    filter(Group == load_parameters$keyword) %>%
-    select("Parameter", load_parameters$group_type, "Value")
-
-  names(data)[[2]] <- "group_column"
-  output_group <- list()
-  update_date <- as.Date(file.info(paste0(directory, config$filename))$mtime, tz = "NZ")
-
-
-  for (industry_group in unique(data$group_column)) {
-    data_group <- data %>%
-      filter(
-        group_column == industry_group
-      ) %>%
-      select(c("Parameter", "Value"))
-    group_name <- industry_group
-    output_group[[group_name]] <- TimeSeries$new(data_group, group_name, update_date)
-  }
-
-  return(output_group)
-}
-
 read_employment_paid_jobs_data <- function(config, directory) {
   cols_to_read <- 1:4
   data <- as.data.frame(read.csv(
@@ -544,6 +403,147 @@ gas_use_data <- function(config, directory) {
   ))
 }
 
+# This function should not be here, it is not simply a load function but it is also
+# caching data. This logic needs to be split up into a another step for caching.
+# There is also too much hard coding of things that should be handled by configuration.
+get_john_hopkins_data <- function(config, directory) {
+  file_path <- directory
+  files <- list.files(
+    path = file_path,
+    pattern = "COVID 19 - Global cases.xlsx",
+    full.names = TRUE,
+    recursive = TRUE
+  )
+  details <- (file.info(files)$ctime)
+  current_date <- as.POSIXct(Sys.Date())
+  github_url <- paste0(
+    "https://raw.githubusercontent.com/CSSEGISandData/",
+    "COVID-19/master/csse_covid_19_data/"
+  )
+
+  if (details < current_date) {
+
+    country <- c(
+      "Spain",
+      "Italy",
+      "US",
+      "United Kingdom",
+      "Australia",
+      "Canada",
+      "Singapore",
+      "China"
+    )
+
+    dth <- RCurl::getURL(paste0(
+      github_url,
+      "csse_covid_19_time_series/time_series_covid19_deaths_global.csv")
+    )
+    deaths <- read.csv(text = dth)
+    cnf <- RCurl::getURL(paste0(
+      github_url,
+      "csse_covid_19_time_series/time_series_covid19_confirmed_global.csv")
+    )
+    confirmed <- read.csv(text = cnf)
+
+    rcv <- RCurl::getURL(paste0(
+      github_url,
+      "csse_covid_19_time_series/time_series_covid19_recovered_global.csv")
+    )
+    recovered <- read.csv(text = rcv)
+
+    jh_raw_data <- function(data, var) {
+      Country <- grep("Country", names(data))
+      Province <- grep("Province", names(data))
+      date <- grep("X", names(data))
+
+      colnames(data)[Country] <- "Country"
+      colnames(data)[Province] <- "Province"
+      new_data <- data[, c(Country, Province, date)]
+
+      output <- new_data %>%
+        gather(Date, var, -Country, -Province ) %>%
+        mutate(Date = as.Date(
+          str_replace_all(substr(Date, 2, nchar(Date)), "[X.]", "/"),
+          format = "%m/%d/%y"
+        )
+      )
+
+      colnames(output)[4] <- var
+
+      return(output)
+    }
+
+    death_new <- jh_raw_data(deaths, "Deceased")
+    recovered_new <- jh_raw_data(recovered, "Recovered")
+    confirmed_new <- jh_raw_data(confirmed, "Active")
+
+    all_data <- Reduce(
+      function(x, y) merge(x, y, all = TRUE),
+      list(death_new, recovered_new, confirmed_new)
+    )
+
+    all_data[is.na(all_data)] <- 0
+
+
+    cases_selected_countries <- all_data %>%
+      group_by(Date, Country ) %>%
+      summarise_if(is.numeric, sum, na.rm = TRUE) %>%
+      filter(Country %in% country)
+
+
+    cases_rest_of_world <- all_data %>%
+      filter(!Country %in% country) %>%
+      select(-Country) %>%
+      group_by(Date) %>%
+      summarise_if(is.numeric, sum, na.rm = TRUE) %>%
+      mutate(Country = "Rest of the world") %>%
+      select(Country, everything())
+
+    aus_provinces <- all_data %>%
+      filter(Country == 'Australia') %>%
+      mutate(Country = paste0(Country, " - ", Province)) %>%
+      select(-Province)
+
+    df_cases_all <- Reduce(
+      function(x, y) merge(x = x, y = y, all = TRUE),
+      list(cases_selected_countries, cases_rest_of_world, aus_provinces)
+      ) %>%
+        mutate(Active = Active - Recovered - Deceased) %>%
+        arrange(Country) %>%
+        replace(is.na(.), 0)
+
+    check_for_negative <- function(data) {
+      negative_active_cases <- which(data["Active"] < 0)
+      if (!is.null(negative_active_cases)) {
+        print(paste0("Negative Active cases present"))
+        data[negative_active_cases, ] <- data[negative_active_cases - 1, ]
+      }
+      return(data)
+    }
+
+    data <- check_for_negative(df_cases_all)
+    writexl::write_xlsx(data, paste0(file_path, "COVID 19 - Global cases.xlsx"))
+  } else {
+    cols_to_read <- 1:5
+    data <- as.data.frame(read_excel(
+      paste0(directory, config$filename),
+      sheet = config$sheet_number
+    ))
+  }
+
+  data <- data %>%
+    filter(Country == config$country_filter) %>%
+    mutate(Date = as.Date(ymd(Date))) %>%
+    select(-Country)
+
+  colnames(data) <- c("Parameter", paste0("col_", 2:ncol(data)))
+  return(data_frame_to_data_object_helper(
+    directory,
+    config,
+    data
+  ))
+}
+
 read_managed_isolotion_data <- function(config, directory) {
   data_object <- read_from_excel(config, directory)
 
@@ -554,11 +554,11 @@ read_managed_isolotion_data <- function(config, directory) {
     range = cell_limits(c(1, 1), c(1, 2))
   ))
   value_name <- data$header_date
-  value_name_transformed <- gsub(
-    "Quarantine and managed isolation figures as at ",
-    "Current - ",
-    value_name
-  )
+  # value_name_transformed <- gsub(
+  #   "Quarantine and managed isolation figures as at ",
+  #   "Current - ",
+  #   value_name
+  # )
   if(!is.null(config$occupancy_rate)){
 
     data_object[["Occupancy rate"]]$value_names <- value_name
@@ -831,31 +831,38 @@ read_hpa_drinking_data <- function(config,directory) {
 
     output_group[[group_name]] <- BarChart$new(data_group, names(data_group)[2:3], update_date)
   }
-
   return(output_group)
+}
 
+read_vaccination <- function(config, directory) {
+  data_object <- read_from_excel(config, directory)
+  group_name <- config$group_names[[1]]
+  data <- as.data.frame(read_excel(
+    paste0(directory, config$filename),
+    sheet = config$sheet_number
+  ))
 
+  value_names <- tail(colnames(data), 2)
+  if (group_name != "Total") {
+    data_object[[group_name]]$value_names <- as.list(value_names)
+  }
+  return(data_object)
 }
 
 
 load_functions <- list(
   read_from_csv = read_from_csv,
   read_from_excel = read_from_excel,
-  read_trade_data = read_trade_data,
-  chorus_load_function = chorus_load_function,
-  example_web_service_load_function = example_web_service_load_function,
-  read_employment_data = read_employment_data,
-  read_filled_jobs_by_industry_or_region = read_filled_jobs_by_industry_or_region,
   read_employment_paid_jobs_data = read_employment_paid_jobs_data,
-  read_filled_jobs_by_gender = read_filled_jobs_by_gender,
-  read_filled_jobs_by_age = read_filled_jobs_by_age,
   read_from_csv_error = read_from_csv_error,
   read_from_excel_error = read_from_excel_error,
   electricity_grid_by_region_data = electricity_grid_by_region_data,
   read_chorus_regional_data = read_chorus_regional_data,
   gas_use_data = gas_use_data,
+  get_john_hopkins_data = get_john_hopkins_data,
   read_managed_isolotion_data = read_managed_isolotion_data,
   read_hlfs_data = read_hlfs_data,
   read_MBIE_rental = read_MBIE_rental,
-  read_hpa_drinking_data = read_hpa_drinking_data
+  read_hpa_drinking_data = read_hpa_drinking_data,
+  read_vaccination = read_vaccination
 )

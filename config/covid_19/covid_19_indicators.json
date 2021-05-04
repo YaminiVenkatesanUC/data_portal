@@ -437,26 +437,6 @@
         "name": "Service industries (actual)",
         "title": "Monthly employment indicators - total earnings (actual)",
         "units": "$"
-      },
-      {
-        "name": "All industries (trend)",
-        "title": "Monthly employment indicators - total earnings (trend)",
-        "units": "$"
-      },
-      {
-        "name": "Primary industries (trend)",
-        "title": "Monthly employment indicators - total earnings (trend)",
-        "units": "$"
-      },
-      {
-        "name": "Goods-producing industries (trend)",
-        "title": "Monthly employment indicators - total earnings (trend)",
-        "units": "$"
-      },
-      {
-        "name": "Service industries (trend)",
-        "title": "Monthly employment indicators - total earnings (trend)",
-        "units": "$"
       }
     ]
   },
@@ -474,44 +454,24 @@
     "frequency":"Monthly",
     "groups": [
         {
-            "name": "All industries (actual)",
+            "name": "All industries",
             "units": "Number",
-            "title": "Monthly employment indicator - filled jobs (actual)"
+            "title": "Monthly employment indicator - filled jobs"
         },
         {
-            "name": "Primary industries (actual)",
+            "name": "Primary industries",
             "units": "Number",
-            "title": "Monthly employment indicator - filled jobs (actual)"
+            "title": "Monthly employment indicator - filled jobs"
         },
         {
-            "name": "Goods-producing industries (actual)",
+            "name": "Goods-producing industries",
             "units": "Number",
-            "title": "Monthly employment indicator - filled jobs (actual)"
+            "title": "Monthly employment indicator - filled jobs"
         },
         {
-            "name": "Service industries (actual)",
+            "name": "Service industries",
             "units": "Number",
-            "title": "Monthly employment indicator - filled jobs (actual)"
-        },
-        {
-            "name": "All industries (seasonally adjusted)",
-            "units": "Number",
-            "title": "Monthly employment indicator - filled jobs (seasonally adjusted)"
-        },
-        {
-            "name": "Primary industries (seasonally adjusted)",
-            "units": "Number",
-            "title": "Monthly employment indicator - filled jobs (seasonally adjusted)"
-        },
-        {
-            "name": "Goods-producing industries (seasonally adjusted)",
-            "units": "Number",
-            "title": "Monthly employment indicator - filled jobs (seasonally adjusted)"
-        },
-        {
-            "name": "Service industries (seasonally adjusted)",
-            "units": "Number",
-            "title": "Monthly employment indicator - filled jobs (seasonally adjusted)"
+            "title": "Monthly employment indicator - filled jobs"
         }
     ]
   },
