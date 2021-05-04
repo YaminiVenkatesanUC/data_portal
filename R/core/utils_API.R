@@ -9,9 +9,9 @@ data_frame_to_api_helper <- function(directory, config, metadata, data){
   write.table(observations, "dump.txt", append = TRUE)
 
   #print(paste(resource$ResourceID, resource$Subject, resource$Title))
-  version_obs <- getLatestVersion(location= list(collection = "PDS", instance = "Covid-19", table = "Observation_test"), server = "uat")
+  #version_obs <- getLatestVersion(location= list(collection = "PDS", instance = "Covid-19", table = "Observation_test"), server = "uat")
 
-  writeDatastore(observations,location = list(collection = "PDS", instance = "Covid-19", table = "Observation_test"), version = version_obs, server = "uat")
+  #writeDatastore(observations,location = list(collection = "PDS", instance = "Covid-19", table = "Observation_test"), version = version_obs, server = "uat")
 
 }
 
