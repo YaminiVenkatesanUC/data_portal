@@ -1,10 +1,9 @@
 
 data_frame_to_api_helper <- function(directory, config, metadata, data){
   #error when there is not a match or indicator removed
-
   resource <- to_resource(config, metadata)
   write.table(resource, "dump.txt", append = TRUE)
-  observations <- to_observations(config, metadata, data)
+  observations <- to_observations(config, metadata, directory, data)
   observations <- observations[!is.na(observations$Value),]
   write.table(observations, "dump.txt", append = TRUE)
 
@@ -24,14 +23,14 @@ create_odata_version <- function(){
   writeDatastore(observation_dummy,location = list(collection = "PDS", instance = "Covid-19", table = "Observation_test"), server = "uat")
 }
 
-to_observations <- function(config, metadata, data){
+to_observations <- function(config, metadata, directory, data){
   names(data) <- c("parameter", config$value_names)
   data <- reshape2::melt(data,  id.vars = "parameter")
   Observations <- tibble("ResourceID" = rep(metadata$ResourceID, nrow(data)),
-                        "Geo" = get_label(data, check_null(metadata$GeoUnit), nrow(data)),
-                        "GeoUnit" = rep(check_null(metadata$Geo), nrow(data)),
+                        "Geo" = get_label(data, check_null(metadata$Geo), nrow(data)),
+                        "GeoUnit" = rep(check_null(metadata$GeoUnit), nrow(data)),
                         "Duration" = rep(check_null(metadata$Duration), nrow(data)),
-                        "Period" = get_peroid(data, config, nrow(data)),
+                        "Period" = get_peroid(data, config, directory, nrow(data)),
                         "Label1" = get_label(data, check_null(metadata$Label1), nrow(data)),
                         "Label2" = get_label(data, check_null(metadata$Label2), nrow(data)),
                         "Label3" = get_label(data, check_null(metadata$Label3), nrow(data)),
@@ -69,10 +68,12 @@ to_resource <- function(config, metadata){
 }
 
 # If the indicator datatype is a bar chart there is no peroid
-get_peroid <- function(data, config, len){
+get_peroid <- function(data, config, directory, len){
   data_type <- check_null(config$data_type)
   if(data_type == "BarChart" & !is.na(data_type) ){
-    return(rep(NA,len))
+    update_date <- as.Date(file.info(paste0(directory, config$filename))$mtime, tz = "NZ")
+    print(update_date)
+    return(rep(update_date,len))
   }
   return(data$parameter)
 }
