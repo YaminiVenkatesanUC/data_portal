@@ -9,9 +9,8 @@ data_frame_to_api_helper <- function(directory, config, metadata, data){
   write.table(observations, "dump.txt", append = TRUE)
 
   #print(paste(resource$ResourceID, resource$Subject, resource$Title))
-  #version_obs <- getLatestVersion(location= list(collection = "PDS", instance = "Covid-19", table = "Observation_test"), server = "uat")
-
-  #writeDatastore(observations,location = list(collection = "PDS", instance = "Covid-19", table = "Observation_test"), version = version_obs, server = "uat")
+  version_obs <- getLatestVersion(location= list(collection = "PDS", instance = "Covid-19", table = "Observation_test"), server = "uat")
+  writeDatastore(observations,location = list(collection = "PDS", instance = "Covid-19", table = "Observation_test"), version = version_obs, server = "uat")
 
 }
 
@@ -29,8 +28,8 @@ to_observations <- function(config, metadata, data){
   names(data) <- c("parameter", config$value_names)
   data <- reshape2::melt(data,  id.vars = "parameter")
   Observations <- tibble("ResourceID" = rep(metadata$ResourceID, nrow(data)),
-                        "Geo" = rep(check_null(metadata$Geo), nrow(data)),
-                        "GeoUnit" = get_label(data, check_null(metadata$GeoUnit), nrow(data)),
+                        "Geo" = get_label(data, check_null(metadata$GeoUnit), nrow(data)),
+                        "GeoUnit" = rep(check_null(metadata$Geo), nrow(data)),
                         "Duration" = rep(check_null(metadata$Duration), nrow(data)),
                         "Period" = get_peroid(data, config, nrow(data)),
                         "Label1" = get_label(data, check_null(metadata$Label1), nrow(data)),
