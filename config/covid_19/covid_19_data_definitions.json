@@ -2854,8 +2854,6 @@
         "type": "Activity",
         "parameter_col": 1,
         "parameter_transform": "function(x) ymd(x)",
-        "date_filter": "function(x) x > ymd(\"2015-01-01\")",
-        "sheet_number": 2,
         "value_col": [4, 2, 3, 5, 6, 7, 8, 9],
         "value_names": [
             "New Zealand",
@@ -2867,9 +2865,8 @@
             "Upper South Island",
             "Lower South Island"
         ],
-        "filename": "COVID 19 - EMA Grid demand.xlsx",
-        "load_function": "read_from_excel",
-        "skip": 1,
+        "filename": "COVID 19 - EMA Grid demand.csv",
+        "load_function": "read_from_csv",
         "data_type": "TimeSeries",
         "group_names": [
             "New Zealand",
@@ -5864,11 +5861,7 @@
     "indicator_name": "Electricity grid demand by region",
     "type": "Activity",
     "parameter_col": 1,
-    "parameter_transform": [
-    "function (x) ",
-    "as.Date(x, format = \"%Y-%m-%d\")"
-    ],
-    "sheet_number": 1,
+    "parameter_transform": "function (x) ymd(x)",
     "value_col": [
         2,
         3,
