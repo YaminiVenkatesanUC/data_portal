@@ -8,13 +8,13 @@ codes <- read_excel(path = paste0(path, "codes.xlsx"), .name_repair = "universal
 
 # NZ / ISLAND / ZONE
 # !!!! transform the master only once in master branch !!! --------------------------------------------------
-# old_zones <- read_excel(path = paste0(config$data_directory, "COVID 19 - EMA Grid demand.xlsx"),
-#                            sheet = 2, .name_repair = "universal", skip = 1)
-# names(old_zones) <- str_remove(names(old_zones), ".demand.*")
-#
-# file.rename(from = paste0(config$data_directory, "COVID 19 - EMA Grid demand.xlsx"),
-#             to = paste0(config$data_directory, "Previous/COVID 19 - EMA Grid demand.xlsx"))
-# write.csv(x = old_zones, file = paste0(config$data_directory, "COVID 19 - EMA Grid demand.csv"), row.names = FALSE)
+old_zones <- read_excel(path = paste0(config$data_directory, "COVID 19 - EMA Grid demand.xlsx"),
+                           sheet = 2, .name_repair = "universal", skip = 1)
+names(old_zones) <- str_remove(names(old_zones), ".demand.*")
+
+file.rename(from = paste0(config$data_directory, "COVID 19 - EMA Grid demand.xlsx"),
+            to = paste0(config$data_directory, "Previous/COVID 19 - EMA Grid demand.xlsx"))
+write.csv(x = old_zones, file = paste0(config$data_directory, "COVID 19 - EMA Grid demand.csv"), row.names = FALSE)
 
 # append update to master_region-----------------------------------------------------------------------
 
@@ -49,20 +49,20 @@ write.csv(x = master_region, file = paste0(config$data_directory, "COVID 19 - EM
 # BY REGION ---------------------------------------
 
 # !!!! transform the master only once in master branch !!!
-# old_region <- read_excel(path = paste0(config$data_directory, "COVID 19 - EMA Grid demand by Region ID by Regional Council.xlsx"), sheet = 1, .name_repair = "universal")
-#
-# old_region <- old_region %>%
-#   left_join(codes, by = "Region.ID") %>%
-#   drop_na() %>%
-#   mutate(Period.start = ymd(Period.start)) %>%
-#   group_by(Regional.Council, Period.start) %>%
-#   summarise_if(is.numeric, sum, na.rm = TRUE) %>%
-#   spread(Regional.Council, Demand..GWh.)
-#
-#
-# file.rename(from = paste0(config$data_directory, "COVID 19 - EMA Grid demand by Region ID by Regional Council.xlsx"),
-#             to = paste0(config$data_directory, "Previous/COVID 19 - EMA Grid demand by Region ID by Regional Council.xlsx"))
-# write.csv(x = old_region, file = paste0(config$data_directory, "COVID 19 - EMA Grid demand by Region ID by Regional Council.csv"), row.names = FALSE)
+old_region <- read_excel(path = paste0(config$data_directory, "COVID 19 - EMA Grid demand by Region ID by Regional Council.xlsx"), sheet = 1, .name_repair = "universal")
+
+old_region <- old_region %>%
+  left_join(codes, by = "Region.ID") %>%
+  drop_na() %>%
+  mutate(Period.start = ymd(Period.start)) %>%
+  group_by(Regional.Council, Period.start) %>%
+  summarise_if(is.numeric, sum, na.rm = TRUE) %>%
+  spread(Regional.Council, Demand..GWh.)
+
+
+file.rename(from = paste0(config$data_directory, "COVID 19 - EMA Grid demand by Region ID by Regional Council.xlsx"),
+            to = paste0(config$data_directory, "Previous/COVID 19 - EMA Grid demand by Region ID by Regional Council.xlsx"))
+write.csv(x = old_region, file = paste0(config$data_directory, "COVID 19 - EMA Grid demand by Region ID by Regional Council.csv"), row.names = FALSE)
 
 # appned update to master_region-----------------------------------------------------------------------
 by_region <- node %>%

@@ -292,36 +292,6 @@ read_from_excel_error <- function(config, directory) {
   ))
 }
 
-
-
-electricity_grid_by_region_data <- function(config, directory) {
-  electricity_data <- as.data.frame(read_excel(
-    paste0(directory, config$filename),
-    sheet = config$sheet_number
-  ))
-
-  region_codes <- as.data.frame(read_excel(
-    paste0(directory, config$filename),
-    sheet = 2
-  ))
-
-  data <- left_join(electricity_data, region_codes, by = "Region ID") %>%
-    mutate(`Period start` = ymd(`Period start`)) %>%
-    group_by(`Regional Council`, `Period start`) %>%
-    summarise_if(is.numeric, sum, na.rm = TRUE) %>%
-    spread(`Regional Council`, `Demand (GWh)`)
-
-  colnames(data) <- c("Parameter", paste0("col_", 2:ncol(data)))
-
-  return(data_frame_to_data_object_helper(
-    directory,
-    config,
-    data
-  ))
-
-}
-
-
 gas_use_data <- function(config, directory) {
   data <- as.data.frame(read_excel(
     paste0(directory, config$filename),
@@ -683,8 +653,6 @@ load_functions <- list(
   read_employment_paid_jobs_data = read_employment_paid_jobs_data,
   read_from_csv_error = read_from_csv_error,
   read_from_excel_error = read_from_excel_error,
-  electricity_grid_by_region_data = electricity_grid_by_region_data,
-  read_chorus_regional_data = read_chorus_regional_data,
   gas_use_data = gas_use_data,
   get_john_hopkins_data = get_john_hopkins_data,
   read_managed_isolotion_data = read_managed_isolotion_data,
