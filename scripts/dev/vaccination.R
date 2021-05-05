@@ -14,7 +14,7 @@ date <- str_extract(string = filename, pattern = "\\d\\d_\\d\\d_\\d\\d\\d\\d") %
   format("%d %B %Y")
 
 sheet_sum <- "Summary"
-sheets_cum <- c("DHBofResidence", "Ethnicity", "Sex", "Age")
+sheets_cum <- c("DHBofResidence", "Ethnicity", "Gender", "Age")
 sheet_daily <- "Date"
 
 file.rename(from = paste0(directory, "COVID-19 MoH Vaccination - Cumulative.xlsx"),

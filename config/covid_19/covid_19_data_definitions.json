@@ -9109,7 +9109,7 @@
     "indicator_name":"Covid-19 Vaccines Administered – Cumulative",
     "filename":"COVID-19 MoH Vaccination - Cumulative.xlsx",
     "group_names":["By sex"],
-    "sheet_number":"Sex",
+    "sheet_number":"Gender",
     "parameter_col":1,
     "value_col":[2, 3],
     "value_names":["First dose", "Second dose"],
