@@ -5903,8 +5903,8 @@
        "Wellington",
        "West Coast"
         ],
-    "filename": "COVID 19 - EMA Grid demand by Region ID by Regional Council.xlsx",
-    "load_function": "electricity_grid_by_region_data",
+    "filename": "COVID 19 - EMA Grid demand by Region ID by Regional Council.csv",
+    "load_function": "read_from_csv",
     "data_type": "TimeSeries",
     "group_names": [
        "Auckland",

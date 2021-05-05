@@ -145,7 +145,6 @@ files <- list.files(
         filter(Country == country) %>%
         mutate(Date = as.Date(ymd(Date))) %>%
         select(-Country)
-      print(str(df))
 
       write.xlsx(x = df, file = paste0(file_path, "COVID 19 - Global cases.xlsx"), sheetName = country,
                  append = TRUE,
