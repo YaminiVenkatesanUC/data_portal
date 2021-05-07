@@ -1,26 +1,46 @@
 
 data_frame_to_api_helper <- function(directory, config, metadata, data){
   #error when there is not a match or indicator removed
-  resource <- to_resource(config, metadata)
+  resource <- to_resource(config, metadata, directory)
   write.table(resource, "dump.txt", append = TRUE)
+  version_res <- getLatestVersion(location= list(collection = "PDS", instance = "Covid-19", table = "Resource_Metadata_test"), server = "uat")
+  writeDatastore(resource,location = list(collection = "PDS", instance = "Covid-19", table = "Resource_Metadata_test"), version = version_res, server = "uat")
+
+
   observations <- to_observations(config, metadata, directory, data)
   observations <- observations[!is.na(observations$Value),]
   write.table(observations, "dump.txt", append = TRUE)
-
-  #print(paste(resource$ResourceID, resource$Subject, resource$Title))
   version_obs <- getLatestVersion(location= list(collection = "PDS", instance = "Covid-19", table = "Observation_test"), server = "uat")
   writeDatastore(observations,location = list(collection = "PDS", instance = "Covid-19", table = "Observation_test"), version = version_obs, server = "uat")
 
+  #print(paste(resource$ResourceID, resource$Subject, resource$Title))
 }
 
-create_odata_version <- function(){
+create_odata_obs_version <- function(){
   observation_dummy <- tibble("ResourceID" = "xxxx",
-                         "Period" = "1800-01-01",
-                         "Value" = 0,
-                         "Unit" = "xxxx",
-                         "Measure" = "xxxx",
-                         "Multiplier" = 0)
+                              "Period" = "1800-01-01",
+                              "Value" = 0,
+                              "Unit" = "xxxx",
+                              "Measure" = "xxxx",
+                              "Multiplier" = 0)
   writeDatastore(observation_dummy,location = list(collection = "PDS", instance = "Covid-19", table = "Observation_test"), server = "uat")
+}
+
+create_odata_res_version <- function(){
+  resource_dummy <- tibble("LatestDataTable" = "xxxx",
+                         "ResourceID" = "xxxx",
+                         "Subject" = "xxxx",
+                         "Title" = "xxxx",
+                         "Description" = "xxxx",
+                         "Frequency" = "xxxx",
+                         "Var1" = "xxxx",
+                         "Var2" = "xxxx",
+                         "Var3" = "xxxx",
+                         "Var4" = "xxxx",
+                         "Var5" = "xxxx",
+                         "Var6" = "xxxx",
+                         "Modified" = "1800-01-01")
+  writeDatastore(resource_dummy,location = list(collection = "PDS", instance = "Covid-19", table = "Resource_Metadata_test"), server = "uat")
 }
 
 to_observations <- function(config, metadata, directory, data){
@@ -46,7 +66,7 @@ to_observations <- function(config, metadata, directory, data){
   return(Observations)
 }
 
-to_resource <- function(config, metadata){
+to_resource <- function(config, metadata, directory){
   Resource <- tibble("LatestDataTable" = "",
                      "ResourceID" = metadata$ResourceID,
                      "Subject" = metadata$Subject,
@@ -56,7 +76,7 @@ to_resource <- function(config, metadata){
                      "Caveats" = check_null(metadata$Caveats),
                      "Source" = check_null(metadata$Source),
                      "SourceURL" = check_null(metadata$SourceURL),
-                     #"Modified" = check_null(metadata$Modified),
+                     "Modified" = as.Date(file.info(paste0(directory, config$filename))$mtime, tz = "NZ"),
                      "Frequency" = check_null(metadata$Frequency),
                      "Var1" = check_null(metadata$Var1),
                      "Var2" = check_null(metadata$Var2),

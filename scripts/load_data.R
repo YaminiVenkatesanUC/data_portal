@@ -58,7 +58,8 @@ load_data <- function(config, odata_load_flag) {
 
   if(odata_load_flag == TRUE){
     odata_definitions <- fromJSON(config$odata_definitions)
-    create_odata_version()
+    create_odata_obs_version()
+    create_odata_res_version()
   } else {
     odata_definitions <- NULL
   }
