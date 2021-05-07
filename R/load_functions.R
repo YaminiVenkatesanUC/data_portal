@@ -368,84 +368,6 @@ read_managed_isolotion_data <- function(config, directory) {
 }
 
 
-petrol_read_file_month <- function(config, directory) {
-  filename <- config$filename
-  data <- as.data.frame(read_excel(
-    paste0(directory, filename),
-    sheet = config$sheet_number,
-    skip = config$skip,
-    col_names = TRUE,
-    .name_repair = "minimal"
-  ))
-
-  data <- data[names(data) != ""]
-  names(data)[1:2] <- c("Company", "Type")
-  data$Type[data$Company == "Truckstops"] <- "Truckstops"
-
-  data <- data %>%
-    filter(!is.na(Company) & !is.na(Type)) %>%
-    pivot_longer(cols = 3:ncol(data), names_to = "date") %>%
-    mutate(Parameter = as.Date(as.numeric(date), origin = "1899-12-30"))
-
-  output <- data.frame(Parameter = unique(data$Parameter), stringsAsFactors = FALSE) %>% arrange()
-  for (i in 1:length(config$fuel_type)) {
-    output[[paste("col", i)]] <- (
-      data %>%
-        filter(Type == config$fuel_type[[i]] & Company == config$company_name[[i]]) %>%
-        arrange(Parameter)
-    )$value
-  }
-
-  return(data_frame_to_data_object_helper(
-    directory,
-    config,
-    output
-  ))
-}
-
-read_MBIE_rental <- function(config, directory) {
-  if (!is.null(config$parameter_transform)) {
-    parameter_transform <- eval(parse(text = config$parameter_transform))
-  }
-  skip <- 0
-  if (!is.null(config$skip)) {
-    skip <- config$skip
-  }
-  data <- as.data.frame(read_excel(paste0(directory, config$filename))) %>%
-    select(`Time Frame`, Location, `Lodged Bonds`, `Active Bonds`, `Closed Bonds`, `Average Weekly Rent`) %>%
-    filter(Location != "NA")
-
-  data$`Time Frame` <- as.Date(data$`Time Frame`, "%b %d %Y")
-  data$Location <- str_remove_all(data$Location, " Region")
-  data <- data %>%
-    filter(`Time Frame` > "2015-01-01") %>%
-    select(`Time Frame`, Location, config$sub_series) %>%
-    arrange(`Time Frame`) %>%
-    pivot_wider(names_from = Location, values_from = config$sub_series)
-
-  glimpse(data)
-  # %>%
-  #   select(`Time Frame`, ALL, everything())
-
-  names(data) <- c("Parameter", paste0("col_", config$value_col))
-
-  if (is.null(config$order_parameter) || config$order_parameter) {
-    data <- data %>% arrange(Parameter)
-  }
-
-  glimpse(data)
-
-  if (!is.null(config$input_units)) {
-    data[, 2:ncol(data)] <- mapply("*", data[, 2:ncol(data)], config$input_units)
-  }
-
-  return(data_frame_to_data_object_helper(
-    directory,
-    config,
-    data
-  ))
-}
-
 read_hpa_drinking_data <- function(config,directory) {
 
   if (!is.null(config$parameter_transform)) {
@@ -504,7 +426,6 @@ load_functions <- list(
   read_from_excel_error = read_from_excel_error,
   gas_use_data = gas_use_data,
   read_managed_isolotion_data = read_managed_isolotion_data,
-  read_MBIE_rental = read_MBIE_rental,
   read_hpa_drinking_data = read_hpa_drinking_data,
   read_vaccination = read_vaccination
 )
