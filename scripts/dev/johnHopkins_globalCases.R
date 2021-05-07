@@ -1,6 +1,6 @@
 # Number of cases (other countries)
 
-library(xlsx)
+library(openxlsx)
 
 countries <- c("Australia",
                "Australia - Australian Capital Territory",
@@ -140,14 +140,20 @@ files <- list.files(
 
     file.rename(from = paste0(file_path, "COVID 19 - Global cases.xlsx"),
                 to = paste0(file_path, "/Previous/COVID 19 - Global cases.xlsx"))
+    OUT <- createWorkbook()
     for (country in countries) {
       df <- data %>%
         filter(Country == country) %>%
         mutate(Date = as.Date(ymd(Date))) %>%
         select(-Country)
 
-      write.xlsx(x = df, file = paste0(file_path, "COVID 19 - Global cases.xlsx"), sheetName = country,
-                 append = TRUE,
-                 row.names = FALSE)
+      addWorksheet(OUT, country)
+      writeData(OUT, sheet = country, x = df)
+
+      # #append in this function is no longer behaving...
+      # write.xlsx(x = df, file = paste0(file_path, "COVID 19 - Global cases.xlsx"), sheetName = country,
+      #            append = TRUE,
+      #            row.names = FALSE)
     }
+    saveWorkbook(OUT, paste0(file_path, "COVID 19 - Global cases.xlsx"))
 

@@ -7364,25 +7364,21 @@
     "class":"Social",
     "type":"General wellbeing",
     "indicator_name":"Life worthwhile",
-    "description":"Life worthwhile",
-    "skip":5,
-    "n_rows":2,
-    "keyword":"7 to 10",
     "parameter_col":1,
     "value_col":[2],
     "lower_bound_col":[
       3],
     "upper_bound_col":[4],
-    "sheet_number":1,
+    "sheet_number":"TotalSex",
     "value_names":[
      "Total"
     ],
     "group_names":[
       "Total NZ Population"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Life_worthwhile.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -7391,16 +7387,11 @@
     "class":"Social",
     "type":"General wellbeing",
     "indicator_name":"Life worthwhile",
-    "description":"Life worthwhile",
-    "skip":5,
-    "n_rows":2,
-    "keyword":"7 to 10",
     "parameter_col":1,
-    "value_col":[2,5],
-    "lower_bound_col":[
-      3,6],
-    "upper_bound_col":[4,7],
-    "sheet_number":1,
+    "value_col":[5, 8],
+    "lower_bound_col":[6, 9],
+    "upper_bound_col":[7, 10],
+    "sheet_number":"TotalSex",
     "value_names":[
       "Male",
       "Female"
@@ -7408,9 +7399,9 @@
     "group_names":[
       "By sex"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Life_worthwhile.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -7419,16 +7410,11 @@
     "class":"Social",
     "type":"General wellbeing",
     "indicator_name":"Life worthwhile",
-    "description":"Life worthwhile",
-    "skip":5,
-    "n_rows":2,
     "parameter_col":1,
-	  "keyword":"7 to 10",
-    "value_col":[2,5,8,11,14,17,20],
-    "lower_bound_col":[
-      3,6,9,12,15,18,21],
-    "upper_bound_col":[4,7,10,13,16,19,22],
-    "sheet_number":2,
+    "value_col":[5,8,11,14,17,20, 23],
+    "lower_bound_col":[6,9,12,15,18,21,24],
+    "upper_bound_col":[7,10,13,16,19,22,25],
+    "sheet_number":"By_age",
     "value_names":[
       "18-24",
       "25-34",
@@ -7441,9 +7427,9 @@
     "group_names":[
       "By age"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Life_worthwhile.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -7452,16 +7438,11 @@
     "class":"Social",
     "type":"General wellbeing",
     "indicator_name":"Life worthwhile",
-    "description":"Life worthwhile",
-    "skip":5,
-    "n_rows":2,
     "parameter_col":1,
-	  "keyword":"7 to 10",
-    "value_col":[2,5,8,11],
-    "lower_bound_col":[
-      3,6,9,12],
-    "upper_bound_col":[4,7,10,13],
-    "sheet_number":3,
+    "value_col":[5,8,11,14],
+    "lower_bound_col":[6,9,12,15],
+    "upper_bound_col":[7,10,13,16],
+    "sheet_number":"By_ethnicity",
     "value_names":[
       "European",
       "Māori",
@@ -7471,9 +7452,9 @@
     "group_names":[
       "By ethnicity"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Life_worthwhile.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -7482,22 +7463,31 @@
     "class":"Social",
     "type":"General wellbeing",
     "indicator_name":"Life worthwhile",
-    "description":"Life worthwhile",
-    "skip":5,
-    "n_rows":2,
-    "keyword":"7 to 10",
     "parameter_col":1,
-    "value_col":[2, 5, 8],
-    "lower_bound_col":[3, 6, 9],
-    "upper_bound_col":[4, 7, 10],
-    "sheet_number":4,
-    "value_names":["Jun-2020", "Sep-2020","Dec-2020"],
+    "value_col":[5, 8, 11, 14, 17, 20, 23, 26, 29, 32, 35, 38],
+    "lower_bound_col":[6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39],
+    "upper_bound_col":[7, 10, 13, 16, 19, 22, 25, 28, 31, 34, 37, 40],
+    "sheet_number":"By_region",
+    "value_names":[
+      "Northland",
+      "Auckland",
+      "Waikato",
+      "Bay of Plenty",
+      "Gisborne/Hawke's Bay",
+      "Taranaki",
+      "Manawatu-Whanganui",
+      "Wellington",
+      "Nelson/Tasman/Marlborough/West Coast",
+      "Canterbury",
+      "Otago",
+      "Southland"
+],
     "group_names":[
       "By region"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Life_worthwhile.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -7506,16 +7496,11 @@
 	  "class":"Social",
     "type":"General wellbeing",
     "indicator_name":"Life worthwhile",
-    "description":"Life worthwhile",
-    "keyword":"7 to 10",
-    "skip":5,
-    "n_rows":2,
     "parameter_col":1,
-    "value_col":[2,5,8,11,14],
-    "lower_bound_col":[
-      3,6,9,12,15],
-    "upper_bound_col":[4,7,10,13,16],
-    "sheet_number":5,
+    "value_col":[5,8,11,14,17],
+    "lower_bound_col":[6,9,12,15,18],
+    "upper_bound_col":[7,10,13,16,19],
+    "sheet_number":"By_parent_status",
     "value_names":[
       "Sole Parent",
       "Mother in two-parent family",
@@ -7526,9 +7511,9 @@
     "group_names":[
       "By parent status"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Life_worthwhile.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -7537,16 +7522,11 @@
     "class":"Social",
     "type":"General wellbeing",
     "indicator_name":"Life worthwhile",
-    "description":"Life worthwhile",
-    "keyword":"7 to 10",
-    "skip":5,
-    "n_rows":2,
     "parameter_col":1,
-    "value_col":[2,5,8,11],
-    "lower_bound_col":[
-      3,6,9,12],
-    "upper_bound_col":[4,7,10,13],
-    "sheet_number": 6,
+    "value_col":[5,8,11,14],
+    "lower_bound_col":[6,9,12,15],
+    "upper_bound_col":[7,10,13,16],
+    "sheet_number": "By_disability",
     "value_names":[
       "Disabled aged 18 years and over",
       "Non–disabled aged 18 years and over",
@@ -7556,9 +7536,9 @@
     "group_names":[
       "By disability status"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Life_worthwhile.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -7567,25 +7547,16 @@
     "class":"Social",
     "type":"General wellbeing",
     "indicator_name":"Family wellbeing",
-    "description":"Family wellbeing",
-    "skip":5,
-    "n_rows":2,
-    "keyword":"7 to 10",
     "parameter_col":1,
     "value_col":[2],
-    "lower_bound_col":[
-      3],
+    "lower_bound_col":[3],
     "upper_bound_col":[4],
-    "sheet_number":1,
-    "value_names":[
-      "Total"
-    ],
-    "group_names":[
-      "Total NZ Population"
-    ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "sheet_number":"TotalSex",
+    "value_names":["Total"],
+    "group_names":["Total NZ Population"],
+    "filename":"COVID 19 - HLFS - Family_wellbeing.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -7594,16 +7565,11 @@
     "class":"Social",
     "type":"General wellbeing",
     "indicator_name":"Family wellbeing",
-    "description":"Family wellbeing",
-    "skip":5,
-    "n_rows":2,
-    "keyword":"7 to 10",
     "parameter_col":1,
-    "value_col":[2,5],
-    "lower_bound_col":[
-      3,6],
-    "upper_bound_col":[4,7],
-    "sheet_number":1,
+    "value_col":[5,8],
+    "lower_bound_col":[6,9],
+    "upper_bound_col":[7,10],
+    "sheet_number":"TotalSex",
     "value_names":[
       "Male",
       "Female"
@@ -7611,9 +7577,9 @@
     "group_names":[
       "By sex"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Family_wellbeing.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -7622,16 +7588,11 @@
     "class":"Social",
     "type":"General wellbeing",
     "indicator_name":"Family wellbeing",
-    "description":"Family wellbeing",
-    "skip":5,
-    "n_rows":2,
-    "keyword":"7 to 10",
     "parameter_col":1,
-    "value_col":[2,5,8,11,14,17,20],
-    "lower_bound_col":[
-      3,6,9,12,15,18,21],
-    "upper_bound_col":[4,7,10,13,16,19,22],
-    "sheet_number":2,
+    "value_col":[5,8,11,14,17,20,23],
+    "lower_bound_col":[6,9,12,15,18,21,24],
+    "upper_bound_col":[7,10,13,16,19,22,25],
+    "sheet_number":"By_age",
     "value_names":[
       "18-24",
       "25-34",
@@ -7644,9 +7605,9 @@
     "group_names":[
       "By age"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Family_wellbeing.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -7655,16 +7616,11 @@
     "class":"Social",
     "type":"General wellbeing",
     "indicator_name":"Family wellbeing",
-    "description":"Family wellbeing",
-    "skip":5,
-    "n_rows":2,
-    "keyword":"7 to 10",
     "parameter_col":1,
-    "value_col":[2,5,8,11],
-    "lower_bound_col":[
-      3,6,9,12],
-    "upper_bound_col":[4,7,10,13],
-    "sheet_number":3,
+    "value_col":[5,8,11,14],
+    "lower_bound_col":[6,9,12,15],
+    "upper_bound_col":[7,10,13,16],
+    "sheet_number":"By_ethnicity",
     "value_names":[
       "European",
       "Māori",
@@ -7674,9 +7630,9 @@
     "group_names":[
       "By ethnicity"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Family_wellbeing.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -7685,22 +7641,31 @@
     "class":"Social",
     "type":"General wellbeing",
     "indicator_name":"Family wellbeing",
-    "description":"Family wellbeing",
-    "skip":5,
-    "n_rows":2,
-    "keyword":"7 to 10",
     "parameter_col":1,
-    "value_col":[2, 5 , 8],
-    "lower_bound_col":[3, 6, 9],
-    "upper_bound_col":[4, 7, 10],
-    "sheet_number":4,
-    "value_names":["Jun-2020", "Sep-2020", "Dec-2020"],
+    "value_col":[5, 8, 11, 14, 17, 20, 23, 26, 29, 32, 35, 38],
+    "lower_bound_col":[6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39],
+    "upper_bound_col":[7, 10, 13, 16, 19, 22, 25, 28, 31, 34, 37, 40],
+    "sheet_number":"By_region",
+    "value_names":[
+      "Northland",
+      "Auckland",
+      "Waikato",
+      "Bay of Plenty",
+      "Gisborne/Hawke's Bay",
+      "Taranaki",
+      "Manawatu-Whanganui",
+      "Wellington",
+      "Nelson/Tasman/Marlborough/West Coast",
+      "Canterbury",
+      "Otago",
+      "Southland"
+],
     "group_names":[
       "By region"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Family_wellbeing.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -7710,16 +7675,11 @@
 	  "class":"Social",
     "type":"General wellbeing",
     "indicator_name":"Family wellbeing",
-    "description":"Family wellbeing",
-    "keyword":"7 to 10",
-    "skip":5,
-    "n_rows":2,
     "parameter_col":1,
-    "value_col":[2,5,8,11,14],
-    "lower_bound_col":[
-      3,6,9,12,15],
-    "upper_bound_col":[4,7,10,13,16],
-    "sheet_number":5,
+    "value_col":[5,8,11,14,17],
+    "lower_bound_col":[6,9,12,15,18],
+    "upper_bound_col":[7,10,13,16,19],
+    "sheet_number":"By_parent_status",
     "value_names":[
       "Sole Parent",
       "Mother in two-parent family",
@@ -7730,9 +7690,9 @@
     "group_names":[
       "By parent status"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Family_wellbeing.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -7741,16 +7701,11 @@
     "class":"Social",
     "type":"General wellbeing",
     "indicator_name":"Family wellbeing",
-    "description":"Family wellbeing",
-    "keyword":"7 to 10",
-    "skip":5,
-    "n_rows":2,
     "parameter_col":1,
-    "value_col":[2,5,8,11],
-    "lower_bound_col":[
-      3,6,9,12],
-    "upper_bound_col":[4,7,10,13],
-    "sheet_number": 6,
+    "value_col":[5,8,11,14],
+    "lower_bound_col":[6,9,12,15],
+    "upper_bound_col":[7,10,13,16],
+    "sheet_number": "By_disability",
     "value_names":[
       "Disabled aged 18 years and over",
       "Non–disabled aged 18 years and over",
@@ -7760,9 +7715,9 @@
     "group_names":[
       "By disability status"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Family_wellbeing.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -7771,25 +7726,18 @@
     "class":"Social",
     "type":"Household finances",
     "indicator_name":"Enough money for everyday needs",
-    "description":"Adequacy of income to meet everyday needs",
-    "keyword":"Enough money / more than enough money",
-    "skip":5,
-    "n_rows":3,
     "parameter_col":1,
     "value_col":[2],
-    "lower_bound_col":[
-      3],
+    "lower_bound_col":[3],
     "upper_bound_col":[4],
-    "sheet_number":1,
-    "value_names":[
-      "Total"
-    ],
+    "sheet_number":"TotalSex",
+    "value_names":["Total"],
     "group_names":[
       "Total NZ Population"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Enough_money_for_everyday_needs.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -7798,16 +7746,11 @@
     "class":"Social",
     "type":"Household finances",
     "indicator_name":"Enough money for everyday needs",
-    "description":"Adequacy of income to meet everyday needs",
-    "keyword":"Enough money / more than enough money",
-    "skip":5,
-    "n_rows":3,
     "parameter_col":1,
-    "value_col":[2,5],
-    "lower_bound_col":[
-      3,6],
-    "upper_bound_col":[4,7],
-    "sheet_number":1,
+    "value_col":[5,8],
+    "lower_bound_col":[6,9],
+    "upper_bound_col":[7,10],
+    "sheet_number":"TotalSex",
     "value_names":[
       "Male",
       "Female"
@@ -7815,9 +7758,9 @@
     "group_names":[
       "By sex"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Enough_money_for_everyday_needs.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -7826,16 +7769,11 @@
     "class":"Social",
     "type":"Household finances",
     "indicator_name":"Enough money for everyday needs",
-    "description":"Adequacy of income to meet everyday needs",
-    "keyword":"Enough money / more than enough money",
-    "skip":5,
-    "n_rows":3,
     "parameter_col":1,
-    "value_col":[2,5,8,11,14,17,20],
-    "lower_bound_col":[
-      3,6,9,12,15,18,21],
-    "upper_bound_col":[4,7,10,13,16,19,22],
-    "sheet_number":2,
+    "value_col":[5,8,11,14,17,20,23],
+    "lower_bound_col":[6,9,12,15,18,21,24],
+    "upper_bound_col":[7,10,13,16,19,22,25],
+    "sheet_number":"By_age",
     "value_names":[
       "18-24",
       "25-34",
@@ -7848,9 +7786,9 @@
     "group_names":[
       "By age"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Enough_money_for_everyday_needs.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -7859,16 +7797,11 @@
     "class":"Social",
     "type":"Household finances",
     "indicator_name":"Enough money for everyday needs",
-    "description":"Adequacy of income to meet everyday needs",
-    "keyword":"Enough money / more than enough money",
-    "skip":5,
-    "n_rows":3,
     "parameter_col":1,
-    "value_col":[2,5,8,11],
-    "lower_bound_col":[
-      3,6,9,12],
-    "upper_bound_col":[4,7,10,13],
-    "sheet_number":3,
+    "value_col":[5,8,11,14],
+    "lower_bound_col":[6,9,12,15],
+    "upper_bound_col":[7,10,13,16],
+    "sheet_number":"By_ethnicity",
     "value_names":[
       "European",
       "Māori",
@@ -7878,9 +7811,9 @@
     "group_names":[
       "By ethnicity"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Enough_money_for_everyday_needs.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -7889,22 +7822,31 @@
     "class":"Social",
     "type":"Household finances",
     "indicator_name":"Enough money for everyday needs",
-    "description":"Adequacy of income to meet everyday needs",
-    "keyword":"Enough money / more than enough money",
-    "skip":5,
-    "n_rows":3,
     "parameter_col":1,
-    "value_col":[2, 5, 8],
-    "lower_bound_col":[3, 6, 9],
-    "upper_bound_col":[4, 7, 10],
-    "sheet_number":4,
-    "value_names":["Jun-2020", "Sep-2020", "Dec-2020"],
+    "value_col":[5, 8, 11, 14, 17, 20, 23, 26, 29, 32, 35, 38],
+    "lower_bound_col":[6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39],
+    "upper_bound_col":[7, 10, 13, 16, 19, 22, 25, 28, 31, 34, 37, 40],
+    "sheet_number":"By_region",
+    "value_names":[
+      "Northland",
+      "Auckland",
+      "Waikato",
+      "Bay of Plenty",
+      "Gisborne/Hawke's Bay",
+      "Taranaki",
+      "Manawatu-Whanganui",
+      "Wellington",
+      "Nelson/Tasman/Marlborough/West Coast",
+      "Canterbury",
+      "Otago",
+      "Southland"
+    ],
     "group_names":[
       "By region"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Enough_money_for_everyday_needs.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -7913,16 +7855,11 @@
 	  "class":"Social",
     "type":"Household finances",
     "indicator_name":"Enough money for everyday needs",
-    "description":"Adequacy of income to meet everyday needs",
-    "keyword":"Enough money / more than enough money",
-    "skip":5,
-    "n_rows":3,
     "parameter_col":1,
-    "value_col":[2,5,8,11,14],
-    "lower_bound_col":[
-      3,6,9,12,15],
-    "upper_bound_col":[4,7,10,13,16],
-    "sheet_number":5,
+    "value_col":[5,8,11,14,17],
+    "lower_bound_col":[6,9,12,15,18],
+    "upper_bound_col":[7,10,13,16,19],
+    "sheet_number":"By_parent_status",
     "value_names":[
       "Sole Parent",
       "Mother in two-parent family",
@@ -7933,9 +7870,9 @@
     "group_names":[
       "By parent status"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Enough_money_for_everyday_needs.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -7944,16 +7881,11 @@
     "class":"Social",
     "type":"Household finances",
     "indicator_name":"Enough money for everyday needs",
-    "description":"Adequacy of income to meet everyday needs",
-    "keyword":"Enough money / more than enough money",
-    "skip":5,
-    "n_rows":3,
     "parameter_col":1,
-    "value_col":[2,5,8,11],
-    "lower_bound_col":[
-      3,6,9,12],
-    "upper_bound_col":[4,7,10,13],
-    "sheet_number": 6,
+    "value_col":[5,8,11,14],
+    "lower_bound_col":[6,9,12,15],
+    "upper_bound_col":[7,10,13,16],
+    "sheet_number": "By_disability",
     "value_names":[
       "Disabled aged 18 years and over",
       "Non–disabled aged 18 years and over",
@@ -7963,9 +7895,9 @@
     "group_names":[
       "By disability status"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Enough_money_for_everyday_needs.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -7974,25 +7906,18 @@
     "class":"Social",
     "type":"Personal finances",
     "indicator_name":"Help from welfare organisation",
-    "description":"Received help from organisation such as a church or foodbank in last 12 months",
-    "keyword":"At least once",
-    "skip":5,
-    "n_rows":2,
     "parameter_col":1,
     "value_col":[2],
-    "lower_bound_col":[
-      3],
+    "lower_bound_col":[3],
     "upper_bound_col":[4],
-    "sheet_number":1,
-    "value_names":[
-     "Total"
-    ],
+    "sheet_number":"TotalSex",
+    "value_names":["Total"],
     "group_names":[
      "Total NZ Population"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Help_from_welfare_organisation.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -8001,16 +7926,11 @@
     "class":"Social",
     "type":"Personal finances",
     "indicator_name":"Help from welfare organisation",
-    "description":"Received help from organisation such as a church or foodbank in last 12 months",
-    "keyword":"At least once",
-    "skip":5,
-    "n_rows":2,
     "parameter_col":1,
-    "value_col":[2,5],
-    "lower_bound_col":[
-      3,6],
-    "upper_bound_col":[4,7],
-    "sheet_number":1,
+    "value_col":[5,8],
+    "lower_bound_col":[6,9],
+    "upper_bound_col":[7,10],
+    "sheet_number":"TotalSex",
     "value_names":[
       "Male",
       "Female"
@@ -8018,9 +7938,9 @@
     "group_names":[
       "By sex"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Help_from_welfare_organisation.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -8029,16 +7949,11 @@
     "class":"Social",
     "type":"Personal finances",
     "indicator_name":"Help from welfare organisation",
-    "description":"Received help from organisation such as a church or foodbank in last 12 months",
-    "keyword":"At least once",
-    "skip":5,
-    "n_rows":2,
     "parameter_col":1,
-    "value_col":[2,5,8,11,14,17,20],
-    "lower_bound_col":[
-      3,6,9,12,15,18,21],
-    "upper_bound_col":[4,7,10,13,16,19,22],
-    "sheet_number":2,
+    "value_col":[5,8,11,14,17,20,23],
+    "lower_bound_col":[6,9,12,15,18,21,24],
+    "upper_bound_col":[7,10,13,16,19,22,25],
+    "sheet_number":"By_age",
     "value_names":[
       "18-24",
       "25-34",
@@ -8051,9 +7966,9 @@
     "group_names":[
       "By age"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Help_from_welfare_organisation.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -8062,16 +7977,11 @@
     "class":"Social",
     "type":"Personal finances",
     "indicator_name":"Help from welfare organisation",
-    "description":"Received help from organisation such as a church or foodbank in last 12 months",
-    "keyword":"At least once",
-    "skip":5,
-    "n_rows":2,
     "parameter_col":1,
-    "value_col":[2,5,8,11],
-    "lower_bound_col":[
-      3,6,9,12],
-    "upper_bound_col":[4,7,10,13],
-    "sheet_number":3,
+    "value_col":[5,8,11,14],
+    "lower_bound_col":[6,9,12,15],
+    "upper_bound_col":[7,10,13,16],
+    "sheet_number":"By_ethnicity",
     "value_names":[
       "European",
       "Māori",
@@ -8081,9 +7991,9 @@
     "group_names":[
       "By ethnicity"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Help_from_welfare_organisation.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -8092,22 +8002,31 @@
     "class":"Social",
     "type":"Personal finances",
     "indicator_name":"Help from welfare organisation",
-    "description":"Received help from organisation such as a church or foodbank in last 12 months",
-    "keyword":"At least once",
-    "skip":5,
-    "n_rows":2,
     "parameter_col":1,
-    "value_col":[2, 5, 8],
-    "lower_bound_col":[3, 6, 9],
-    "upper_bound_col":[4, 7, 10],
-    "sheet_number":4,
-    "value_names":["Jun-2020", "Sep-2020", "Dec-2020"],
+    "value_col":[5, 8, 11, 14, 17, 20, 23, 26, 29, 32, 35, 38],
+    "lower_bound_col":[6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39],
+    "upper_bound_col":[7, 10, 13, 16, 19, 22, 25, 28, 31, 34, 37, 40],
+    "sheet_number":"By_region",
+    "value_names":[
+      "Northland",
+      "Auckland",
+      "Waikato",
+      "Bay of Plenty",
+      "Gisborne/Hawke's Bay",
+      "Taranaki",
+      "Manawatu-Whanganui",
+      "Wellington",
+      "Nelson/Tasman/Marlborough/West Coast",
+      "Canterbury",
+      "Otago",
+      "Southland"
+    ],
     "group_names":[
       "By region"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Help_from_welfare_organisation.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -8117,16 +8036,11 @@
   	"class":"Social",
     "type":"Personal finances",
     "indicator_name":"Help from welfare organisation",
-    "description":"Received help from organisation such as a church or foodbank in last 12 months",
-    "keyword":"At least once",
-    "skip":5,
-    "n_rows":2,
     "parameter_col":1,
-    "value_col":[2,5,8,11,14],
-    "lower_bound_col":[
-      3,6,9,12,15],
-    "upper_bound_col":[4,7,10,13,16],
-    "sheet_number":5,
+    "value_col":[5,8,11,14,17],
+    "lower_bound_col":[6,9,12,15,18],
+    "upper_bound_col":[7,10,13,16,19],
+    "sheet_number":"By_parent_status",
     "value_names":[
       "Sole Parent",
       "Mother in two-parent family",
@@ -8137,9 +8051,9 @@
     "group_names":[
       "By parent status"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Help_from_welfare_organisation.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -8148,16 +8062,11 @@
     "class":"Social",
     "type":"Personal finances",
     "indicator_name":"Help from welfare organisation",
-    "description":"Received help from organisation such as a church or foodbank in last 12 months",
-    "keyword":"At least once",
-    "skip":5,
-    "n_rows":2,
     "parameter_col":1,
-    "value_col":[2,5,8,11],
-    "lower_bound_col":[
-      3,6,9,12],
-    "upper_bound_col":[4,7,10,13],
-    "sheet_number": 6,
+    "value_col":[5,8,11,14],
+    "lower_bound_col":[6,9,12,15],
+    "upper_bound_col":[7,10,13,16],
+    "sheet_number": "By_disability",
     "value_names":[
       "Disabled aged 18 years and over",
       "Non–disabled aged 18 years and over",
@@ -8167,9 +8076,9 @@
     "group_names":[
       "By disability status"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Help_from_welfare_organisation.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -8178,25 +8087,18 @@
     "class":"Social",
     "type":"Life satisfaction",
     "indicator_name":"Life satisfaction – HLFS quarterly",
-    "description":"Overall life satisfaction",
-    "keyword":"7 to 10",
-    "skip":5,
-    "n_rows":2,
     "parameter_col":1,
     "value_col":[2],
-    "lower_bound_col":[
-      3],
+    "lower_bound_col":[3],
     "upper_bound_col":[4],
-    "sheet_number":1,
-    "value_names":[
-      "Total"
-    ],
+    "sheet_number":"TotalSex",
+    "value_names":["Total"],
     "group_names":[
       "Total NZ Population"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Life_satisfaction_quarterly.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -8205,16 +8107,11 @@
     "class":"Social",
     "type":"Life satisfaction",
     "indicator_name":"Life satisfaction – HLFS quarterly",
-    "description":"Overall life satisfaction",
-    "keyword":"7 to 10",
-    "skip":5,
-    "n_rows":2,
     "parameter_col":1,
-    "value_col":[2,5],
-    "lower_bound_col":[
-      3,6],
-    "upper_bound_col":[4,7],
-    "sheet_number":1,
+    "value_col":[5,8],
+    "lower_bound_col":[6,9],
+    "upper_bound_col":[7,10],
+    "sheet_number":"TotalSex",
     "value_names":[
       "Male",
       "Female"
@@ -8222,9 +8119,9 @@
     "group_names":[
       "By sex"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Life_satisfaction_quarterly.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -8233,16 +8130,11 @@
     "class":"Social",
     "type":"Life satisfaction",
     "indicator_name":"Life satisfaction – HLFS quarterly",
-    "description":"Overall life satisfaction",
-    "keyword":"7 to 10",
-    "skip":5,
-    "n_rows":2,
     "parameter_col":1,
-    "value_col":[2,5,8,11,14,17,20],
-    "lower_bound_col":[
-      3,6,9,12,15,18,21],
-    "upper_bound_col":[4,7,10,13,16,19,22],
-    "sheet_number":2,
+    "value_col":[5,8,11,14,17,20,23],
+    "lower_bound_col":[6,9,12,15,18,21,24],
+    "upper_bound_col":[7,10,13,16,19,22,25],
+    "sheet_number":"By_age",
     "value_names":[
       "18-24",
       "25-34",
@@ -8255,9 +8147,9 @@
     "group_names":[
       "By age"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Life_satisfaction_quarterly.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -8266,16 +8158,11 @@
     "class":"Social",
     "type":"Life satisfaction",
     "indicator_name":"Life satisfaction – HLFS quarterly",
-    "description":"Overall life satisfaction",
-    "keyword":"7 to 10",
-    "skip":5,
-    "n_rows":2,
     "parameter_col":1,
-    "value_col":[2,5,8,11],
-    "lower_bound_col":[
-      3,6,9,12],
-    "upper_bound_col":[4,7,10,13],
-    "sheet_number":3,
+    "value_col":[5,8,11,14],
+    "lower_bound_col":[6,9,12,15],
+    "upper_bound_col":[7,10,13,16],
+    "sheet_number":"By_ethnicity",
     "value_names":[
       "European",
       "Māori",
@@ -8285,9 +8172,9 @@
     "group_names":[
       "By ethnicity"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Life_satisfaction_quarterly.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -8296,22 +8183,31 @@
     "class":"Social",
     "type":"Life satisfaction",
     "indicator_name":"Life satisfaction – HLFS quarterly",
-    "description":"Overall life satisfaction",
-    "keyword":"7 to 10",
-    "skip":5,
-    "n_rows":2,
     "parameter_col":1,
-    "value_col":[2, 5, 8],
-    "lower_bound_col":[3, 6, 9],
-    "upper_bound_col":[4, 7, 10],
-    "sheet_number":4,
-    "value_names":["Jun-2020", "Sep-2020", "Dec-2020"],
+    "value_col":[5, 8, 11, 14, 17, 20, 23, 26, 29, 32, 35, 38],
+    "lower_bound_col":[6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39],
+    "upper_bound_col":[7, 10, 13, 16, 19, 22, 25, 28, 31, 34, 37, 40],
+    "sheet_number":"By_region",
+    "value_names":[
+      "Northland",
+      "Auckland",
+      "Waikato",
+      "Bay of Plenty",
+      "Gisborne/Hawke's Bay",
+      "Taranaki",
+      "Manawatu-Whanganui",
+      "Wellington",
+      "Nelson/Tasman/Marlborough/West Coast",
+      "Canterbury",
+      "Otago",
+      "Southland"
+    ],
     "group_names":[
       "By region"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Life_satisfaction_quarterly.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null},
@@ -8319,16 +8215,11 @@
 	 "class":"Social",
     "type":"Life satisfaction",
     "indicator_name":"Life satisfaction – HLFS quarterly",
-    "description":"Overall life satisfaction",
-    "keyword":"7 to 10",
-    "skip":5,
-    "n_rows":2,
     "parameter_col":1,
-    "value_col":[2,5,8,11,14],
-    "lower_bound_col":[
-      3,6,9,12,15],
-    "upper_bound_col":[4,7,10,13,16],
-    "sheet_number":5,
+    "value_col":[5,8,11,14,17],
+    "lower_bound_col":[6,9,12,15,18],
+    "upper_bound_col":[7,10,13,16,19],
+    "sheet_number":"By_parent_status",
     "value_names":[
       "Sole Parent",
       "Mother in two-parent family",
@@ -8339,9 +8230,9 @@
     "group_names":[
       "By parent status"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Life_satisfaction_quarterly.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -8350,16 +8241,11 @@
      "class":"Social",
     "type":"Life satisfaction",
     "indicator_name":"Life satisfaction – HLFS quarterly",
-    "description":"Overall life satisfaction",
-    "keyword":"7 to 10",
-    "skip":5,
-    "n_rows":2,
     "parameter_col":1,
-    "value_col":[2,5,8,11],
-    "lower_bound_col":[
-      3,6,9,12],
-    "upper_bound_col":[4,7,10,13],
-    "sheet_number": 6,
+    "value_col":[5,8,11,14],
+    "lower_bound_col":[6,9,12,15],
+    "upper_bound_col":[7,10,13,16],
+    "sheet_number":"By_disability",
     "value_names":[
       "Disabled aged 18 years and over",
       "Non–disabled aged 18 years and over",
@@ -8369,9 +8255,9 @@
     "group_names":[
       "By disability status"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Life_satisfaction_quarterly.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -8380,25 +8266,18 @@
     "class":"Social",
     "type":"Trust",
     "indicator_name":"Trust for parliament",
-    "description":"Trust held for parliament",
-    "keyword":"7 to 10",
-    "skip":5,
-    "n_rows":2,
     "parameter_col":1,
     "value_col":[2],
-    "lower_bound_col":[
-      3],
+    "lower_bound_col":[3],
     "upper_bound_col":[4],
-    "sheet_number":1,
-    "value_names":[
-      "Total"
-    ],
+    "sheet_number":"TotalSex",
+    "value_names":["Total"],
     "group_names":[
      "Total NZ Population"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Trust_for_parliament.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -8407,16 +8286,11 @@
     "class":"Social",
     "type":"Trust",
     "indicator_name":"Trust for parliament",
-    "description":"Trust held for parliament",
-    "keyword":"7 to 10",
-    "skip":5,
-    "n_rows":2,
     "parameter_col":1,
-    "value_col":[2,5],
-    "lower_bound_col":[
-      3,6],
-    "upper_bound_col":[4,7],
-    "sheet_number":1,
+    "value_col":[5,8],
+    "lower_bound_col":[6,9],
+    "upper_bound_col":[7,10],
+    "sheet_number":"TotalSex",
     "value_names":[
       "Male",
       "Female"
@@ -8424,9 +8298,9 @@
     "group_names":[
       "By sex"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Trust_for_parliament.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -8435,16 +8309,11 @@
     "class":"Social",
     "type":"Trust",
     "indicator_name":"Trust for parliament",
-    "description":"Trust held for parliament",
-    "keyword":"7 to 10",
-    "skip":5,
-    "n_rows":2,
     "parameter_col":1,
-    "value_col":[2,5,8,11,14,17,20],
-    "lower_bound_col":[
-      3,6,9,12,15,18,21],
-    "upper_bound_col":[4,7,10,13,16,19,22],
-    "sheet_number":2,
+    "value_col":[5,8,11,14,17,20,23],
+    "lower_bound_col":[6,9,12,15,18,21,24],
+    "upper_bound_col":[7,10,13,16,19,22,25],
+    "sheet_number":"By_age",
     "value_names":[
       "18-24",
       "25-34",
@@ -8457,9 +8326,9 @@
     "group_names":[
       "By age"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Trust_for_parliament.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -8468,16 +8337,11 @@
     "class":"Social",
     "type":"Trust",
     "indicator_name":"Trust for parliament",
-    "description":"Trust held for parliament",
-    "keyword":"7 to 10",
-    "skip":5,
-    "n_rows":2,
     "parameter_col":1,
-    "value_col":[2,5,8,11],
-    "lower_bound_col":[
-      3,6,9,12],
-    "upper_bound_col":[4,7,10,13],
-    "sheet_number":3,
+    "value_col":[5,8,11,14],
+    "lower_bound_col":[6,9,12,15],
+    "upper_bound_col":[7,10,13,16],
+    "sheet_number":"By_ethnicity",
     "value_names":[
       "European",
       "Māori",
@@ -8487,9 +8351,9 @@
     "group_names":[
       "By ethnicity"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Trust_for_parliament.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -8498,22 +8362,31 @@
     "class":"Social",
     "type":"Trust",
     "indicator_name":"Trust for parliament",
-    "description":"Trust held for parliament",
-    "keyword":"7 to 10",
-    "skip":5,
-    "n_rows":2,
     "parameter_col":1,
-    "value_col":[2, 5, 8],
-    "lower_bound_col":[3, 6, 9],
-    "upper_bound_col":[4, 7, 10],
-    "sheet_number":4,
-    "value_names":["Jun-2020", "Sep-2020", "Dec-2020"],
+    "value_col":[5, 8, 11, 14, 17, 20, 23, 26, 29, 32, 35, 38],
+    "lower_bound_col":[6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39],
+    "upper_bound_col":[7, 10, 13, 16, 19, 22, 25, 28, 31, 34, 37, 40],
+    "sheet_number":"By_region",
+    "value_names":[
+      "Northland",
+      "Auckland",
+      "Waikato",
+      "Bay of Plenty",
+      "Gisborne/Hawke's Bay",
+      "Taranaki",
+      "Manawatu-Whanganui",
+      "Wellington",
+      "Nelson/Tasman/Marlborough/West Coast",
+      "Canterbury",
+      "Otago",
+      "Southland"
+    ],
     "group_names":[
       "By region"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Trust_for_parliament.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -8523,16 +8396,11 @@
 	  "class":"Social",
     "type":"Trust",
     "indicator_name":"Trust for parliament",
-    "description":"Trust held for parliament",
-    "keyword":"7 to 10",
-    "skip":5,
-    "n_rows":2,
     "parameter_col":1,
-    "value_col":[2,5,8,11,14],
-    "lower_bound_col":[
-      3,6,9,12,15],
-    "upper_bound_col":[4,7,10,13,16],
-    "sheet_number":5,
+    "value_col":[5,8,11,14,17],
+    "lower_bound_col":[6,9,12,15,18],
+    "upper_bound_col":[7,10,13,16,19],
+    "sheet_number":"By_parent_status",
     "value_names":[
       "Sole Parent",
       "Mother in two-parent family",
@@ -8543,9 +8411,9 @@
     "group_names":[
       "By parent status"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Trust_for_parliament.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -8554,16 +8422,11 @@
     "class":"Social",
     "type":"Trust",
     "indicator_name":"Trust for parliament",
-    "description":"Trust held for parliament",
-    "keyword":"7 to 10",
-    "skip":5,
-    "n_rows":2,
     "parameter_col":1,
-    "value_col":[2,5,8,11],
-    "lower_bound_col":[
-      3,6,9,12],
-    "upper_bound_col":[4,7,10,13],
-    "sheet_number": 6,
+    "value_col":[5,8,11,14],
+    "lower_bound_col":[6,9,12,15],
+    "upper_bound_col":[7,10,13,16],
+    "sheet_number": "By_disability",
     "value_names":[
       "Disabled aged 18 years and over",
       "Non–disabled aged 18 years and over",
@@ -8573,9 +8436,9 @@
     "group_names":[
       "By disability status"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Trust_for_parliament.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -8584,25 +8447,20 @@
     "class":"Social",
     "type":"Trust",
     "indicator_name":"Trust for police",
-    "description":"Trust held for police",
-    "keyword":"7 to 10",
-    "skip":5,
-    "n_rows":2,
     "parameter_col":1,
     "value_col":[2],
-    "lower_bound_col":[
-      3],
+    "lower_bound_col":[3],
     "upper_bound_col":[4],
-    "sheet_number":1,
+    "sheet_number":"TotalSex",
     "value_names":[
       "Total"
     ],
     "group_names":[
       "Total NZ Population"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Trust_for_police.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -8611,16 +8469,11 @@
     "class":"Social",
     "type":"Trust",
     "indicator_name":"Trust for police",
-    "description":"Trust held for police",
-    "keyword":"7 to 10",
-    "skip":5,
-    "n_rows":2,
     "parameter_col":1,
-    "value_col":[2,5],
-    "lower_bound_col":[
-      3,6],
-    "upper_bound_col":[4,7],
-    "sheet_number":1,
+    "value_col":[5,8],
+    "lower_bound_col":[6,9],
+    "upper_bound_col":[7,10],
+    "sheet_number":"TotalSex",
     "value_names":[
       "Male",
       "Female"
@@ -8628,9 +8481,9 @@
     "group_names":[
       "By sex"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Trust_for_police.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -8639,16 +8492,11 @@
     "class":"Social",
     "type":"Trust",
     "indicator_name":"Trust for police",
-    "description":"Trust held for police",
-    "keyword":"7 to 10",
-    "skip":5,
-    "n_rows":2,
     "parameter_col":1,
-    "value_col":[2,5,8,11,14,17,20],
-    "lower_bound_col":[
-      3,6,9,12,15,18,21],
-    "upper_bound_col":[4,7,10,13,16,19,22],
-    "sheet_number":2,
+    "value_col":[5,8,11,14,17,20,23],
+    "lower_bound_col":[6,9,12,15,18,21,24],
+    "upper_bound_col":[7,10,13,16,19,22,25],
+    "sheet_number":"By_age",
     "value_names":[
       "18-24",
       "25-34",
@@ -8661,9 +8509,9 @@
     "group_names":[
       "By age"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Trust_for_police.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -8672,16 +8520,11 @@
     "class":"Social",
     "type":"Trust",
     "indicator_name":"Trust for police",
-    "description":"Trust held for police",
-    "keyword":"7 to 10",
-    "skip":5,
-    "n_rows":2,
     "parameter_col":1,
-    "value_col":[2,5,8,11],
-    "lower_bound_col":[
-      3,6,9,12],
-    "upper_bound_col":[4,7,10,13],
-    "sheet_number":3,
+    "value_col":[5,8,11,14],
+    "lower_bound_col":[6,9,12,15],
+    "upper_bound_col":[7,10,13,16],
+    "sheet_number":"By_ethnicity",
     "value_names":[
       "European",
       "Māori",
@@ -8691,9 +8534,9 @@
     "group_names":[
       "By ethnicity"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Trust_for_police.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -8702,22 +8545,31 @@
     "class":"Social",
     "type":"Trust",
     "indicator_name":"Trust for police",
-    "description":"Trust held for police",
-    "keyword":"7 to 10",
-    "skip":5,
-    "n_rows":2,
     "parameter_col":1,
-    "value_col":[2, 5, 8],
-    "lower_bound_col":[3, 6, 9],
-    "upper_bound_col":[4, 7, 10],
-    "sheet_number":4,
-    "value_names":["Jun-2020", "Sep-2020", "Dec-2020"],
+    "value_col":[5, 8, 11, 14, 17, 20, 23, 26, 29, 32, 35, 38],
+    "lower_bound_col":[6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39],
+    "upper_bound_col":[7, 10, 13, 16, 19, 22, 25, 28, 31, 34, 37, 40],
+    "sheet_number":"By_region",
+    "value_names":[
+      "Northland",
+      "Auckland",
+      "Waikato",
+      "Bay of Plenty",
+      "Gisborne/Hawke's Bay",
+      "Taranaki",
+      "Manawatu-Whanganui",
+      "Wellington",
+      "Nelson/Tasman/Marlborough/West Coast",
+      "Canterbury",
+      "Otago",
+      "Southland"
+    ],
     "group_names":[
       "By region"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Trust_for_police.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -8726,16 +8578,11 @@
 	  "class":"Social",
     "type":"Trust",
     "indicator_name":"Trust for police",
-    "description":"Trust held for police",
-    "keyword":"7 to 10",
-    "skip":5,
-    "n_rows":2,
     "parameter_col":1,
-    "value_col":[2,5,8,11,14],
-    "lower_bound_col":[
-      3,6,9,12,15],
-    "upper_bound_col":[4,7,10,13,16],
-    "sheet_number":5,
+    "value_col":[5,8,11,14,17],
+    "lower_bound_col":[6,9,12,15,18],
+    "upper_bound_col":[7,10,13,16,19],
+    "sheet_number":"By_parent_status",
     "value_names":[
       "Sole Parent",
       "Mother in two-parent family",
@@ -8746,9 +8593,9 @@
     "group_names":[
       "By parent status"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Trust_for_police.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -8757,16 +8604,11 @@
     "class":"Social",
     "type":"Trust",
     "indicator_name":"Trust for police",
-    "description":"Trust held for police",
-    "keyword":"7 to 10",
-    "skip":5,
-    "n_rows":2,
     "parameter_col":1,
-    "value_col":[2,5,8,11],
-    "lower_bound_col":[
-      3,6,9,12],
-    "upper_bound_col":[4,7,10,13],
-    "sheet_number": 6,
+    "value_col":[5,8,11,14],
+    "lower_bound_col":[6,9,12,15],
+    "upper_bound_col":[7,10,13,16],
+    "sheet_number": "By_disability",
     "value_names":[
       "Disabled aged 18 years and over",
       "Non–disabled aged 18 years and over",
@@ -8776,9 +8618,9 @@
     "group_names":[
       "By disability status"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Trust_for_police.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -8787,43 +8629,213 @@
     "class":"Social",
     "type":"Trust",
     "indicator_name":"Trust for the media",
-    "description":"Trust held for media",
-    "keyword":"7 to 10",
-    "skip":5,
-    "n_rows":2,
     "parameter_col":1,
     "value_col":[2],
-    "lower_bound_col":[
-      3],
+    "lower_bound_col":[3],
     "upper_bound_col":[4],
-    "sheet_number":1,
+    "sheet_number":"TotalSex",
+    "value_names":["Total"],
+    "group_names":[
+     "Total NZ Population"
+    ],
+    "filename":"COVID 19 - HLFS - Trust_for_the_media.xlsx",
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_from_excel_error",
+    "data_type":"TimeSeriesError",
+    "date_added":"29/10/2020",
+    "date_dropped":null
+  },
+  {
+    "class":"Social",
+    "type":"Trust",
+    "indicator_name":"Trust for the media",
+    "parameter_col":1,
+    "value_col":[5,8],
+    "lower_bound_col":[6,9],
+    "upper_bound_col":[7,10],
+    "sheet_number":"TotalSex",
+    "value_names":[
+      "Male",
+      "Female"
+    ],
+    "group_names":[
+      "By sex"
+    ],
+    "filename":"COVID 19 - HLFS - Trust_for_the_media.xlsx",
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_from_excel_error",
+    "data_type":"TimeSeriesError",
+    "date_added":"29/10/2020",
+    "date_dropped":null
+  },
+  {
+    "class":"Social",
+    "type":"Trust",
+    "indicator_name":"Trust for the media",
+    "parameter_col":1,
+    "value_col":[5,8,11,14,17,20,23],
+    "lower_bound_col":[6,9,12,15,18,21,24],
+    "upper_bound_col":[7,10,13,16,19,22,25],
+    "sheet_number":"TotalSex",
+    "value_names":[
+      "18-24",
+      "25-34",
+      "35-44",
+      "45-54",
+      "55-64",
+      "65-74",
+      "75+"
+    ],
+    "group_names":[
+      "By age"
+    ],
+    "filename":"COVID 19 - HLFS - Trust_for_the_media.xlsx",
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_from_excel_error",
+    "data_type":"TimeSeriesError",
+    "date_added":"29/10/2020",
+    "date_dropped":null
+  },
+  {
+    "class":"Social",
+    "type":"Trust",
+    "indicator_name":"Trust for the media",
+    "parameter_col":1,
+    "value_col":[5,8,11,14],
+    "lower_bound_col":[6,9,12,15],
+    "upper_bound_col":[7,10,13,16],
+    "sheet_number":"By_ethnicity",
+    "value_names":[
+      "European",
+      "Māori",
+      "Pacific peoples",
+      "Asian"
+    ],
+    "group_names":[
+      "By ethnicity"
+    ],
+    "filename":"COVID 19 - HLFS - Trust_for_the_media.xlsx",
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_from_excel_error",
+    "data_type":"TimeSeriesError",
+    "date_added":"29/10/2020",
+    "date_dropped":null
+  },
+  {
+    "class":"Social",
+    "type":"Trust",
+    "indicator_name":"Trust for the media",
+    "parameter_col":1,
+    "value_col":[5, 8, 11, 14, 17, 20, 23, 26, 29, 32, 35, 38],
+    "lower_bound_col":[6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39],
+    "upper_bound_col":[7, 10, 13, 16, 19, 22, 25, 28, 31, 34, 37, 40],
+    "sheet_number":"By_region",
+    "value_names":[
+      "Northland",
+      "Auckland",
+      "Waikato",
+      "Bay of Plenty",
+      "Gisborne/Hawke's Bay",
+      "Taranaki",
+      "Manawatu-Whanganui",
+      "Wellington",
+      "Nelson/Tasman/Marlborough/West Coast",
+      "Canterbury",
+      "Otago",
+      "Southland"
+    ],
+    "group_names":[
+      "By region"
+    ],
+    "filename":"COVID 19 - HLFS - Trust_for_the_media.xlsx",
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_from_excel_error",
+    "data_type":"TimeSeriesError",
+    "date_added":"29/10/2020",
+    "date_dropped":null
+  },
+  {
+	  "class":"Social",
+    "type":"Trust",
+    "indicator_name":"Trust for the media",
+    "parameter_col":1,
+    "value_col":[5,8,11,14,17],
+    "lower_bound_col":[6,9,12,15,18],
+    "upper_bound_col":[7,10,13,16,19],
+    "sheet_number":"By_parent_status",
+    "value_names":[
+      "Sole Parent",
+      "Mother in two-parent family",
+      "Father in two-parent family",
+      "Not parent of dependent child, female",
+      "Not parent of dependent child, male"
+    ],
+    "group_names":[
+      "By parent status"
+    ],
+    "filename":"COVID 19 - HLFS - Trust_for_the_media.xlsx",
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_from_excel_error",
+    "data_type":"TimeSeriesError",
+    "date_added":"29/10/2020",
+    "date_dropped":null
+  },
+  {
+    "class":"Social",
+    "type":"Trust",
+    "indicator_name":"Trust for the media",
+    "parameter_col":1,
+    "value_col":[5,8,11,14],
+    "lower_bound_col":[6,9,12,15],
+    "upper_bound_col":[7,10,13,16],
+    "sheet_number": "By_disability",
+    "value_names":[
+      "Disabled aged 18 years and over",
+      "Non–disabled aged 18 years and over",
+      "Disabled aged 18–64 years",
+      "Non–disabled aged 18–64 years"
+    ],
+    "group_names":[
+      "By disability status"
+    ],
+    "filename":"COVID 19 - HLFS - Trust_for_the_media.xlsx",
+    "parameter_transform":"function(x) ymd(x)",
+    "load_function":"read_from_excel_error",
+    "data_type":"TimeSeriesError",
+    "date_added":"29/10/2020",
+    "date_dropped":null
+  },
+  {
+    "class":"Social",
+    "type":"Social connection",
+    "indicator_name":"Loneliness – past 4 weeks",
+    "parameter_col":1,
+    "value_col":[2],
+    "lower_bound_col":[3],
+    "upper_bound_col":[4],
+    "sheet_number":"TotalSex",
     "value_names":[
       "Total"
     ],
     "group_names":[
      "Total NZ Population"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Loneliness_past_4_weeks.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
   },
   {
     "class":"Social",
-    "type":"Trust",
-    "indicator_name":"Trust for the media",
-    "description":"Trust held for media",
-    "keyword":"7 to 10",
-    "skip":5,
-    "n_rows":2,
+    "type":"Social connection",
+    "indicator_name":"Loneliness – past 4 weeks",
     "parameter_col":1,
-    "value_col":[2,5],
-    "lower_bound_col":[
-      3,6],
-    "upper_bound_col":[4,7],
-    "sheet_number":1,
+    "value_col":[5,8],
+    "lower_bound_col":[6,9],
+    "upper_bound_col":[7,10],
+    "sheet_number":"TotalSex",
     "value_names":[
       "Male",
       "Female"
@@ -8831,27 +8843,22 @@
     "group_names":[
       "By sex"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Loneliness_past_4_weeks.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
   },
   {
     "class":"Social",
-    "type":"Trust",
-    "indicator_name":"Trust for the media",
-    "description":"Trust held for media",
-    "keyword":"7 to 10",
-    "skip":5,
-    "n_rows":2,
+    "type":"Social connection",
+    "indicator_name":"Loneliness – past 4 weeks",
     "parameter_col":1,
-    "value_col":[2,5,8,11,14,17,20],
-    "lower_bound_col":[
-      3,6,9,12,15,18,21],
-    "upper_bound_col":[4,7,10,13,16,19,22],
-    "sheet_number":2,
+    "value_col":[5,8,11,14,17,20,23],
+    "lower_bound_col":[6,9,12,15,18,21,24],
+    "upper_bound_col":[7,10,13,16,19,22,25],
+    "sheet_number":"By_age",
     "value_names":[
       "18-24",
       "25-34",
@@ -8864,27 +8871,22 @@
     "group_names":[
       "By age"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Loneliness_past_4_weeks.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
   },
   {
     "class":"Social",
-    "type":"Trust",
-    "indicator_name":"Trust for the media",
-    "description":"Trust held for media",
-    "keyword":"7 to 10",
-    "skip":5,
-    "n_rows":2,
+    "type":"Social connection",
+    "indicator_name":"Loneliness – past 4 weeks",
     "parameter_col":1,
-    "value_col":[2,5,8,11],
-    "lower_bound_col":[
-      3,6,9,12],
-    "upper_bound_col":[4,7,10,13],
-    "sheet_number":3,
+    "value_col":[5,8,11,14],
+    "lower_bound_col":[6,9,12,15],
+    "upper_bound_col":[7,10,13,16],
+    "sheet_number":"By_ethnicity",
     "value_names":[
       "European",
       "Māori",
@@ -8894,51 +8896,55 @@
     "group_names":[
       "By ethnicity"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Loneliness_past_4_weeks.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
   },
   {
     "class":"Social",
-    "type":"Trust",
-    "indicator_name":"Trust for the media",
-    "description":"Trust held for media",
-    "keyword":"7 to 10",
-    "skip":5,
-    "n_rows":2,
+    "type":"Social connection",
+    "indicator_name":"Loneliness – past 4 weeks",
     "parameter_col":1,
-    "value_col":[2, 5, 8],
-    "lower_bound_col":[3, 6, 9],
-    "upper_bound_col":[4, 7, 10],
-    "sheet_number":4,
-    "value_names":["Jun-2020", "Sep-2020", "Dec-2020"],
+    "value_col":[5, 8, 11, 14, 17, 20, 23, 26, 29, 32, 35, 38],
+    "lower_bound_col":[6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39],
+    "upper_bound_col":[7, 10, 13, 16, 19, 22, 25, 28, 31, 34, 37, 40],
+    "sheet_number":"By_region",
+    "value_names":[
+      "Northland",
+      "Auckland",
+      "Waikato",
+      "Bay of Plenty",
+      "Gisborne/Hawke's Bay",
+      "Taranaki",
+      "Manawatu-Whanganui",
+      "Wellington",
+      "Nelson/Tasman/Marlborough/West Coast",
+      "Canterbury",
+      "Otago",
+      "Southland"
+    ],
     "group_names":[
       "By region"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Loneliness_past_4_weeks.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
   },
   {
 	  "class":"Social",
-    "type":"Trust",
-    "indicator_name":"Trust for the media",
-    "description":"Trust held for media",
-    "keyword":"7 to 10",
-    "skip":5,
-    "n_rows":2,
+    "type":"Social connection",
+    "indicator_name":"Loneliness – past 4 weeks",
     "parameter_col":1,
-    "value_col":[2,5,8,11,14],
-    "lower_bound_col":[
-      3,6,9,12,15],
-    "upper_bound_col":[4,7,10,13,16],
-    "sheet_number":5,
+    "value_col":[5,8,11,14,17],
+    "lower_bound_col":[6,9,12,15,18],
+    "upper_bound_col":[7,10,13,16,19],
+    "sheet_number":"By_parent_status",
     "value_names":[
       "Sole Parent",
       "Mother in two-parent family",
@@ -8949,27 +8955,22 @@
     "group_names":[
       "By parent status"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Loneliness_past_4_weeks.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
   },
   {
     "class":"Social",
-    "type":"Trust",
-    "indicator_name":"Trust for the media",
-    "description":"Trust held for media",
-    "keyword":"7 to 10",
-    "skip":5,
-    "n_rows":2,
+    "type":"Social connection",
+    "indicator_name":"Loneliness – past 4 weeks",
     "parameter_col":1,
-    "value_col":[2,5,8,11],
-    "lower_bound_col":[
-      3,6,9,12],
-    "upper_bound_col":[4,7,10,13],
-    "sheet_number": 6,
+    "value_col":[5,8,11,14],
+    "lower_bound_col":[6,9,12,15],
+    "upper_bound_col":[7,10,13,16],
+    "sheet_number": "By_disability",
     "value_names":[
       "Disabled aged 18 years and over",
       "Non–disabled aged 18 years and over",
@@ -8979,212 +8980,9 @@
     "group_names":[
       "By disability status"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Loneliness_past_4_weeks.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
-    "data_type":"TimeSeriesError",
-    "date_added":"29/10/2020",
-    "date_dropped":null
-  },
-  {
-    "class":"Social",
-    "type":"Social connection",
-    "indicator_name":"Loneliness – past 4 weeks",
-    "description":"Felt lonely in last four weeks",
-	"keyword":"Some / most / all of the time",
-    "skip":5,
-    "n_rows":3,
-    "parameter_col":1,
-    "value_col":[2],
-    "lower_bound_col":[
-      3],
-    "upper_bound_col":[4],
-    "sheet_number":1,
-    "value_names":[
-      "Total"
-    ],
-    "group_names":[
-     "Total NZ Population"
-    ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
-    "data_type":"TimeSeriesError",
-    "date_added":"29/10/2020",
-    "date_dropped":null
-  },
-  {
-    "class":"Social",
-    "type":"Social connection",
-    "indicator_name":"Loneliness – past 4 weeks",
-    "description":"Felt lonely in last four weeks",
-	"keyword":"Some / most / all of the time",
-    "skip":5,
-    "n_rows":3,
-    "parameter_col":1,
-    "value_col":[2,5],
-    "lower_bound_col":[
-      3,6],
-    "upper_bound_col":[4,7],
-    "sheet_number":1,
-    "value_names":[
-      "Male",
-      "Female"
-    ],
-    "group_names":[
-      "By sex"
-    ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
-    "data_type":"TimeSeriesError",
-    "date_added":"29/10/2020",
-    "date_dropped":null
-  },
-  {
-    "class":"Social",
-    "type":"Social connection",
-    "indicator_name":"Loneliness – past 4 weeks",
-    "description":"Felt lonely in last four weeks",
-	 "keyword":"Some / most / all of the time",
-    "skip":5,
-    "n_rows":3,
-    "parameter_col":1,
-    "value_col":[2,5,8,11,14,17,20],
-    "lower_bound_col":[
-      3,6,9,12,15,18,21],
-    "upper_bound_col":[4,7,10,13,16,19,22],
-    "sheet_number":2,
-    "value_names":[
-      "18-24",
-      "25-34",
-      "35-44",
-      "45-54",
-      "55-64",
-      "65-74",
-      "75+"
-    ],
-    "group_names":[
-      "By age"
-    ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
-    "data_type":"TimeSeriesError",
-    "date_added":"29/10/2020",
-    "date_dropped":null
-  },
-  {
-    "class":"Social",
-    "type":"Social connection",
-    "indicator_name":"Loneliness – past 4 weeks",
-    "description":"Felt lonely in last four weeks",
-	"keyword":"Some / most / all of the time",
-    "skip":5,
-    "n_rows":3,
-    "parameter_col":1,
-    "value_col":[2,5,8,11],
-    "lower_bound_col":[
-      3,6,9,12],
-    "upper_bound_col":[4,7,10,13],
-    "sheet_number":3,
-    "value_names":[
-      "European",
-      "Māori",
-      "Pacific peoples",
-      "Asian"
-    ],
-    "group_names":[
-      "By ethnicity"
-    ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
-    "data_type":"TimeSeriesError",
-    "date_added":"29/10/2020",
-    "date_dropped":null
-  },
-  {
-    "class":"Social",
-    "type":"Social connection",
-    "indicator_name":"Loneliness – past 4 weeks",
-    "description":"Felt lonely in last four weeks",
-	  "keyword":"Some / most / all of the time",
-    "skip":5,
-    "n_rows":3,
-    "parameter_col":1,
-    "value_col":[2, 5, 8],
-    "lower_bound_col":[3, 6, 9],
-    "upper_bound_col":[4, 7, 10],
-    "sheet_number":4,
-    "value_names":["Jun-2020", "Sep-2020", "Dec-2020"],
-    "group_names":[
-      "By region"
-    ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
-    "data_type":"TimeSeriesError",
-    "date_added":"29/10/2020",
-    "date_dropped":null
-  },
-  {
-	  "class":"Social",
-    "type":"Social connection",
-    "indicator_name":"Loneliness – past 4 weeks",
-    "description":"Felt lonely in last four weeks",
-	"keyword":"Some / most / all of the time",
-    "skip":5,
-    "n_rows":3,
-    "parameter_col":1,
-    "value_col":[2,5,8,11,14],
-    "lower_bound_col":[
-      3,6,9,12,15],
-    "upper_bound_col":[4,7,10,13,16],
-    "sheet_number":5,
-    "value_names":[
-      "Sole Parent",
-      "Mother in two-parent family",
-      "Father in two-parent family",
-      "Not parent of dependent child, female",
-      "Not parent of dependent child, male"
-    ],
-    "group_names":[
-      "By parent status"
-    ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
-    "data_type":"TimeSeriesError",
-    "date_added":"29/10/2020",
-    "date_dropped":null
-  },
-  {
-    "class":"Social",
-    "type":"Social connection",
-    "indicator_name":"Loneliness – past 4 weeks",
-    "description":"Felt lonely in last four weeks",
-	"keyword":"Some / most / all of the time",
-    "skip":5,
-    "n_rows":3,
-    "parameter_col":1,
-    "value_col":[2,5,8,11],
-    "lower_bound_col":[
-      3,6,9,12],
-    "upper_bound_col":[4,7,10,13],
-    "sheet_number": 6,
-    "value_names":[
-      "Disabled aged 18 years and over",
-      "Non–disabled aged 18 years and over",
-      "Disabled aged 18–64 years",
-      "Non–disabled aged 18–64 years"
-    ],
-    "group_names":[
-      "By disability status"
-    ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
-    "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -9193,25 +8991,20 @@
     "class":"Social",
     "type":"Trust",
     "indicator_name":"Trust in other people",
-    "description":"Trust held for people in New Zealand",
-	  "keyword":"7 to 10",
-    "skip":5,
-    "n_rows":2,
     "parameter_col":1,
     "value_col":[2],
-    "lower_bound_col":[
-      3],
+    "lower_bound_col":[3],
     "upper_bound_col":[4],
-    "sheet_number":1,
+    "sheet_number":"TotalSex",
     "value_names":[
       "Total"
     ],
     "group_names":[
       "Total NZ Population"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Trust_in_other_people.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -9220,16 +9013,11 @@
     "class":"Social",
     "type":"Trust",
     "indicator_name":"Trust in other people",
-    "description":"Trust held for people in New Zealand",
-	  "keyword":"7 to 10",
-    "skip":5,
-    "n_rows":2,
     "parameter_col":1,
-    "value_col":[2,5],
-    "lower_bound_col":[
-      3,6],
-    "upper_bound_col":[4,7],
-    "sheet_number":1,
+    "value_col":[5,8],
+    "lower_bound_col":[6,9],
+    "upper_bound_col":[7,10],
+    "sheet_number":"TotalSex",
     "value_names":[
       "Male",
       "Female"
@@ -9237,9 +9025,9 @@
     "group_names":[
       "By sex"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Trust_in_other_people.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -9248,16 +9036,11 @@
     "class":"Social",
     "type":"Trust",
     "indicator_name":"Trust in other people",
-    "description":"Trust held for people in New Zealand",
-	  "keyword":"7 to 10",
-    "skip":5,
-    "n_rows":3,
     "parameter_col":1,
-    "value_col":[2,5,8,11,14,17,20],
-    "lower_bound_col":[
-      3,6,9,12,15,18,21],
-    "upper_bound_col":[4,7,10,13,16,19,22],
-    "sheet_number":2,
+    "value_col":[5,8,11,14,17,20,23],
+    "lower_bound_col":[6,9,12,15,18,21,24],
+    "upper_bound_col":[7,10,13,16,19,22,25],
+    "sheet_number":"By_age",
     "value_names":[
       "18-24",
       "25-34",
@@ -9270,9 +9053,9 @@
     "group_names":[
       "By age"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Trust_in_other_people.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -9281,16 +9064,11 @@
     "class":"Social",
     "type":"Trust",
     "indicator_name":"Trust in other people",
-    "description":"Trust held for people in New Zealand",
-	  "keyword":"7 to 10",
-    "skip":5,
-    "n_rows":3,
     "parameter_col":1,
-    "value_col":[2,5,8,11],
-    "lower_bound_col":[
-      3,6,9,12],
-    "upper_bound_col":[4,7,10,13],
-    "sheet_number":3,
+    "value_col":[5,8,11,14],
+    "lower_bound_col":[6,9,12,15],
+    "upper_bound_col":[7,10,13,16],
+    "sheet_number":"By_ethnicity",
     "value_names":[
       "European",
       "Māori",
@@ -9300,9 +9078,9 @@
     "group_names":[
       "By ethnicity"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Trust_in_other_people.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -9311,22 +9089,29 @@
     "class":"Social",
     "type":"Trust",
     "indicator_name":"Trust in other people",
-    "description":"Trust held for people in New Zealand",
-	  "keyword":"7 to 10",
-    "skip":5,
-    "n_rows":3,
     "parameter_col":1,
-    "value_col":[2, 5, 8],
-    "lower_bound_col":[3, 6, 9],
-    "upper_bound_col":[4, 7, 10],
-    "sheet_number":4,
-    "value_names":["Jun-2020", "Sep-2020", "Dec-2020"],
-    "group_names":[
-      "By region"
+    "value_col":[5, 8, 11, 14, 17, 20, 23, 26, 29, 32, 35, 38],
+    "lower_bound_col":[6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39],
+    "upper_bound_col":[7, 10, 13, 16, 19, 22, 25, 28, 31, 34, 37, 40],
+    "sheet_number":"By_region",
+    "value_names":[
+      "Northland",
+      "Auckland",
+      "Waikato",
+      "Bay of Plenty",
+      "Gisborne/Hawke's Bay",
+      "Taranaki",
+      "Manawatu-Whanganui",
+      "Wellington",
+      "Nelson/Tasman/Marlborough/West Coast",
+      "Canterbury",
+      "Otago",
+      "Southland"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "group_names":"By region",
+    "filename":"COVID 19 - HLFS - Trust_in_other_people.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -9335,16 +9120,11 @@
 	"class":"Social",
     "type":"Trust",
     "indicator_name":"Trust in other people",
-    "description":"Trust held for people in New Zealand",
-	  "keyword":"7 to 10",
-    "skip":5,
-    "n_rows":2,
     "parameter_col":1,
-    "value_col":[2,5,8,11,14],
-    "lower_bound_col":[
-      3,6,9,12,15],
-    "upper_bound_col":[4,7,10,13,16],
-    "sheet_number":5,
+    "value_col":[5,8,11,14,17],
+    "lower_bound_col":[6,9,12,15,18],
+    "upper_bound_col":[7,10,13,16,19],
+    "sheet_number":"By_parent_status",
     "value_names":[
       "Sole Parent",
       "Mother in two-parent family",
@@ -9355,9 +9135,9 @@
     "group_names":[
       "By parent status"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Trust_in_other_people.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -9366,16 +9146,11 @@
     "class":"Social",
     "type":"Trust",
     "indicator_name":"Trust in other people",
-    "description":"Trust held for people in New Zealand",
-	  "keyword":"7 to 10",
-    "skip":5,
-    "n_rows":2,
     "parameter_col":1,
-    "value_col":[2,5,8,11],
-    "lower_bound_col":[
-      3,6,9,12],
-    "upper_bound_col":[4,7,10,13],
-    "sheet_number": 6,
+    "value_col":[5,8,11,14],
+    "lower_bound_col":[6,9,12,15],
+    "upper_bound_col":[7,10,13,16],
+    "sheet_number": "By_disability",
     "value_names":[
       "Disabled aged 18 years and over",
       "Non–disabled aged 18 years and over",
@@ -9385,9 +9160,9 @@
     "group_names":[
       "By disability status"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Trust_in_other_people.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -9396,25 +9171,20 @@
     "class":"Social",
     "type":"Trust",
     "indicator_name":"Trust for health system",
-    "description":"Trust held for health system",
-    "skip":5,
-    "n_rows":2,
     "parameter_col":1,
-	  "keyword":"7 to 10",
     "value_col":[2],
-    "lower_bound_col":[
-      3],
+    "lower_bound_col":[3],
     "upper_bound_col":[4],
-    "sheet_number":1,
+    "sheet_number":"TotalSex",
     "value_names":[
       "Total"
     ],
     "group_names":[
       "Total NZ Population"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Trust_for_health_system.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -9423,16 +9193,11 @@
     "class":"Social",
     "type":"Trust",
     "indicator_name":"Trust for health system",
-    "description":"Trust held for health system",
-    "skip":5,
-    "n_rows":2,
     "parameter_col":1,
-	  "keyword":"7 to 10",
-    "value_col":[2,5],
-    "lower_bound_col":[
-      3,6],
-    "upper_bound_col":[4,7],
-    "sheet_number":1,
+	  "value_col":[5,8],
+    "lower_bound_col":[6,9],
+    "upper_bound_col":[7,10],
+    "sheet_number":"TotalSex",
     "value_names":[
       "Male",
       "Female"
@@ -9440,9 +9205,9 @@
     "group_names":[
       "By sex"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Trust_for_health_system.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -9451,16 +9216,11 @@
     "class":"Social",
     "type":"Trust",
     "indicator_name":"Trust for health system",
-    "description":"Trust held for health system",
-    "skip":5,
-    "n_rows":2,
     "parameter_col":1,
-	  "keyword":"7 to 10",
-    "value_col":[2,5,8,11,14,17,20],
-    "lower_bound_col":[
-      3,6,9,12,15,18,21],
-    "upper_bound_col":[4,7,10,13,16,19,22],
-    "sheet_number":2,
+	  "value_col":[5,8,11,14,17,20,23],
+    "lower_bound_col":[6,9,12,15,18,21,24],
+    "upper_bound_col":[7,10,13,16,19,22,25],
+    "sheet_number":"By_age",
     "value_names":[
       "18-24",
       "25-34",
@@ -9473,9 +9233,9 @@
     "group_names":[
       "By age"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Trust_for_health_system.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -9484,16 +9244,11 @@
     "class":"Social",
     "type":"Trust",
     "indicator_name":"Trust for health system",
-    "description":"Trust held for health system",
-    "skip":5,
-    "n_rows":2,
     "parameter_col":1,
-	  "keyword":"7 to 10",
-    "value_col":[2,5,8,11],
-    "lower_bound_col":[
-      3,6,9,12],
-    "upper_bound_col":[4,7,10,13],
-    "sheet_number":3,
+	  "value_col":[5,8,11,14],
+    "lower_bound_col":[6,9,12,15],
+    "upper_bound_col":[7,10,13,16],
+    "sheet_number":"By_ethnicity",
     "value_names":[
       "European",
       "Māori",
@@ -9503,9 +9258,9 @@
     "group_names":[
       "By ethnicity"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Trust_for_health_system.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -9514,22 +9269,31 @@
     "class":"Social",
     "type":"Trust",
     "indicator_name":"Trust for health system",
-    "description":"Trust held for health system",
-    "skip":5,
-    "n_rows":2,
     "parameter_col":1,
-	  "keyword":"7 to 10",
-    "value_col":[2, 5, 8],
-    "lower_bound_col":[3, 6, 9],
-    "upper_bound_col":[4, 7, 10],
-    "sheet_number":4,
-    "value_names":["Jun-2020", "Sep-2020", "Dec-2020"],
+	  "value_col":[5, 8, 11, 14, 17, 20, 23, 26, 29, 32, 35, 38],
+    "lower_bound_col":[6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39],
+    "upper_bound_col":[7, 10, 13, 16, 19, 22, 25, 28, 31, 34, 37, 40],
+    "sheet_number":"By_region",
+    "value_names":[
+      "Northland",
+      "Auckland",
+      "Waikato",
+      "Bay of Plenty",
+      "Gisborne/Hawke's Bay",
+      "Taranaki",
+      "Manawatu-Whanganui",
+      "Wellington",
+      "Nelson/Tasman/Marlborough/West Coast",
+      "Canterbury",
+      "Otago",
+      "Southland"
+    ],
     "group_names":[
       "By region"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Trust_for_health_system.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -9539,16 +9303,11 @@
 	  "class":"Social",
     "type":"Trust",
     "indicator_name":"Trust for health system",
-    "description":"Trust held for health system",
-	"keyword":"7 to 10",
-    "skip":5,
-    "n_rows":2,
     "parameter_col":1,
-    "value_col":[2,5,8,11,14],
-    "lower_bound_col":[
-      3,6,9,12,15],
-    "upper_bound_col":[4,7,10,13,16],
-    "sheet_number":5,
+    "value_col":[5,8,11,14,17],
+    "lower_bound_col":[6,9,12,15,18],
+    "upper_bound_col":[7,10,13,16,19],
+    "sheet_number":"By_parent_status",
     "value_names":[
       "Sole Parent",
       "Mother in two-parent family",
@@ -9559,9 +9318,9 @@
     "group_names":[
       "By parent status"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Trust_for_health_system.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -9570,16 +9329,11 @@
     "class":"Social",
     "type":"Trust",
     "indicator_name":"Trust for health system",
-    "description":"Trust held for health system",
-	"keyword":"7 to 10",
-    "skip":5,
-    "n_rows":2,
     "parameter_col":1,
-    "value_col":[2,5,8,11],
-    "lower_bound_col":[
-      3,6,9,12],
-    "upper_bound_col":[4,7,10,13],
-    "sheet_number": 6,
+    "value_col":[5,8,11,14],
+    "lower_bound_col":[6,9,12,15],
+    "upper_bound_col":[7,10,13,16],
+    "sheet_number": "By_disability",
     "value_names":[
       "Disabled aged 18 years and over",
       "Non–disabled aged 18 years and over",
@@ -9589,9 +9343,9 @@
     "group_names":[
       "By disability status"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Trust_for_health_system.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -9600,25 +9354,20 @@
     "class":"Social",
     "type":"Crime and safety",
     "indicator_name":"Experienced discrimination",
-    "description":"Discrimination",
-    "skip":5,
-    "n_rows":1,
     "parameter_col":1,
-	  "keyword":"Experienced discrimination in last 12 months",
-    "value_col":[2],
-    "lower_bound_col":[
-      3],
+	  "value_col":[2],
+    "lower_bound_col":[3],
     "upper_bound_col":[4],
-    "sheet_number":1,
+    "sheet_number":"TotalSex",
     "value_names":[
       "Total"
     ],
     "group_names":[
       "Total NZ Population"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Experienced_discrimination.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -9627,16 +9376,11 @@
     "class":"Social",
     "type":"Crime and safety",
     "indicator_name":"Experienced discrimination",
-    "description":"Discrimination",
-    "skip":5,
-    "n_rows":1,
     "parameter_col":1,
-	  "keyword":"Experienced discrimination in last 12 months",
-    "value_col":[2,5],
-    "lower_bound_col":[
-      3,6],
-    "upper_bound_col":[4,7],
-    "sheet_number":1,
+	  "value_col":[5,8],
+    "lower_bound_col":[6,9],
+    "upper_bound_col":[7,10],
+    "sheet_number":"TotalSex",
     "value_names":[
       "Male",
       "Female"
@@ -9644,9 +9388,9 @@
     "group_names":[
       "By sex"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Experienced_discrimination.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -9655,16 +9399,11 @@
     "class":"Social",
     "type":"Crime and safety",
     "indicator_name":"Experienced discrimination",
-    "description":"Discrimination",
-    "skip":5,
-    "n_rows":1,
     "parameter_col":1,
-	  "keyword":"Experienced discrimination in last 12 months",
-    "value_col":[2,5,8,11,14,17,20],
-    "lower_bound_col":[
-      3,6,9,12,15,18,21],
-    "upper_bound_col":[4,7,10,13,16,19,22],
-    "sheet_number":2,
+	  "value_col":[5,8,11,14,17,20,23],
+    "lower_bound_col":[6,9,12,15,18,21,24],
+    "upper_bound_col":[7,10,13,16,19,22,25],
+    "sheet_number":"By_age",
     "value_names":[
       "18-24",
       "25-34",
@@ -9677,9 +9416,9 @@
     "group_names":[
       "By age"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Experienced_discrimination.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -9688,16 +9427,11 @@
     "class":"Social",
     "type":"Crime and safety",
     "indicator_name":"Experienced discrimination",
-    "description":"Discrimination",
-    "skip":5,
-    "n_rows":1,
     "parameter_col":1,
-	  "keyword":"Experienced discrimination in last 12 months",
-    "value_col":[2,5,8,11],
-    "lower_bound_col":[
-      3,6,9,12],
-    "upper_bound_col":[4,7,10,13],
-    "sheet_number":3,
+	  "value_col":[5,8,11,14],
+    "lower_bound_col":[6,9,12,15],
+    "upper_bound_col":[7,10,13,16],
+    "sheet_number":"By_ethnicity",
     "value_names":[
       "European",
       "Māori",
@@ -9707,9 +9441,9 @@
     "group_names":[
       "By ethnicity"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Experienced_discrimination.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -9718,22 +9452,31 @@
     "class":"Social",
     "type":"Crime and safety",
     "indicator_name":"Experienced discrimination",
-    "description":"Discrimination",
-    "skip":5,
-    "n_rows":1,
     "parameter_col":1,
-	  "keyword":"Experienced discrimination in last 12 months",
-    "value_col":[2, 5, 8],
-    "lower_bound_col":[3, 6, 9],
-    "upper_bound_col":[4, 7, 10],
-    "sheet_number":4,
-    "value_names":["Jun-2020", "Sep-2020", "Dec-2020"],
+	  "value_col":[5, 8, 11, 14, 17, 20, 23, 26, 29, 32, 35, 38],
+    "lower_bound_col":[6, 9, 12, 15, 18, 21, 24, 27, 30, 33, 36, 39],
+    "upper_bound_col":[7, 10, 13, 16, 19, 22, 25, 28, 31, 34, 37, 40],
+    "sheet_number":"By_region",
+    "value_names":[
+      "Northland",
+      "Auckland",
+      "Waikato",
+      "Bay of Plenty",
+      "Gisborne/Hawke's Bay",
+      "Taranaki",
+      "Manawatu-Whanganui",
+      "Wellington",
+      "Nelson/Tasman/Marlborough/West Coast",
+      "Canterbury",
+      "Otago",
+      "Southland"
+    ],
     "group_names":[
       "By region"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Experienced_discrimination.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -9742,16 +9485,11 @@
 	  "class":"Social",
     "type":"Crime and safety",
     "indicator_name":"Experienced discrimination",
-    "description":"Discrimination",
-    "keyword":"Experienced discrimination in last 12 months",
-    "skip":5,
-    "n_rows":1,
     "parameter_col":1,
-    "value_col":[2,5,8,11,14],
-    "lower_bound_col":[
-      3,6,9,12,15],
-    "upper_bound_col":[4,7,10,13,16],
-    "sheet_number":5,
+    "value_col":[5,8,11,14,17],
+    "lower_bound_col":[6,9,12,15,18],
+    "upper_bound_col":[7,10,13,16,19],
+    "sheet_number":"By_parent_status",
     "value_names":[
       "Sole Parent",
       "Mother in two-parent family",
@@ -9762,9 +9500,9 @@
     "group_names":[
       "By parent status"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx", "SeptQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Experienced_discrimination.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null
@@ -9773,16 +9511,11 @@
     "class":"Social",
     "type":"Crime and safety",
     "indicator_name":"Experienced discrimination",
-    "description":"Discrimination",
-    "keyword":"Experienced discrimination in last 12 months",
-    "skip":5,
-    "n_rows":1,
     "parameter_col":1,
-    "value_col":[2,5,8,11],
-    "lower_bound_col":[
-      3,6,9,12],
-    "upper_bound_col":[4,7,10,13],
-    "sheet_number": 6,
+    "value_col":[5,8,11,14],
+    "lower_bound_col":[6,9,12,15],
+    "upper_bound_col":[7,10,13,16],
+    "sheet_number": "By_disability",
     "value_names":[
       "Disabled aged 18 years and over",
       "Non–disabled aged 18 years and over",
@@ -9792,9 +9525,9 @@
     "group_names":[
       "By disability status"
     ],
-    "filename":["JuneQtr_WSTabs_DP.xlsx","DecQtr_WSTabs_DP.xlsx"],
+    "filename":"COVID 19 - HLFS - Experienced_discrimination.xlsx",
     "parameter_transform":"function(x) ymd(x)",
-    "load_function":"read_hlfs_data",
+    "load_function":"read_from_excel_error",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
     "date_dropped":null

@@ -15,7 +15,7 @@
 
 
 library(tidyverse)
-library(xlsx)
+library(openxlsx)
 library(haven)
 library(sjlabelled)
 
@@ -224,6 +224,8 @@ for (i in 1:length(data)) {
 }
 
 if (file.exists("example_data/CFFC_output.xlsx")) file.remove("example_data/CFFC_output.xlsx")
+OUT <- createWorkbook()
+
 for (i in 1:length(output_list)) {
   for (j in 1:length(output_list[[i]])) {
     if (i <= length(output_list)-1) {
@@ -241,11 +243,17 @@ for (i in 1:length(output_list)) {
         df <- merge(df_i, df_ii, by.x = 1, by.y = 1, all.x = T, all.y = F, sort = FALSE)
         names(df) <- c(df_order[j], "wave1", "wave2")
       }
-      write.xlsx(df,
-                 file = "example_data/CFFC_output.xlsx",
-                 sheetName = df_order[j],
-                 append = T,
-                 showNA = F)
+
+      addWorksheet(OUT, df_order[j])
+      writeData(OUT, sheet = df_order[j], x = df)
+
+      # this function is no longer behaving... :(
+      # write.xlsx(df,
+      #            file = "example_data/CFFC_output.xlsx",
+      #            sheetName = df_order[j],
+      #            append = T,
+      #            showNA = F)
     }
+    saveWorkbook(OUT, "example_data/CFFC_output.xlsx")
   }
 }

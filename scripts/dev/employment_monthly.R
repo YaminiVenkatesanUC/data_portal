@@ -1,5 +1,7 @@
 # Monthly filled jobs +++ Monthly earnings +++ Monthly filled jobs (by industry) +++ Monthly filled jobs (by region) +++ Monthly filled jobs (by gender) +++ Monthly filled jobs (by age)
 
+library(openxlsx)
+
 load_parameters <- list(
   Monthly_earnings = list(
     Group = "High level industry by variable",
@@ -98,6 +100,7 @@ for (ind in 1:length(load_parameters)) {
     ) %>%
     select(Parameter, Value, Series_title_2, Series_title_3)
 
+  OUT <- createWorkbook()
   if (ind %in% c(1, 2, 3, 4)) {
     for (group in unique(df$Series_title_2)) {
       output <- df %>%
@@ -106,11 +109,15 @@ for (ind in 1:length(load_parameters)) {
         pivot_wider(names_from = Series_title_3, values_from = Value) %>%
         as.data.frame()
 
-      write.xlsx(x = output, paste0(config$data_directory, "COVID-19 ", names(load_parameters)[ind], ".xlsx"),
-                 sheetName = group,
-                 append = TRUE,
-                 row.names = FALSE)
+      addWorksheet(OUT, group)
+      writeData(OUT, sheet = group, x = output)
+      # #append in this function is no longer behaving properly...
+      # write.xlsx(x = output, paste0(config$data_directory, "COVID-19 ", names(load_parameters)[ind], ".xlsx"),
+      #            sheetName = group,
+      #            append = TRUE,
+      #            row.names = FALSE)
     }
+
 
   } else {
     for (group in unique(df$Series_title_3)) {
@@ -120,150 +127,14 @@ for (ind in 1:length(load_parameters)) {
         pivot_wider(names_from = Series_title_2, values_from = Value) %>%
         as.data.frame()
 
-      write.xlsx(x = output, paste0(config$data_directory, "COVID-19 ", names(load_parameters)[ind], ".xlsx"),
-                 sheetName = group,
-                 append = TRUE,
-                 row.names = FALSE)
+      addWorksheet(OUT, group)
+      writeData(OUT, sheet = group, x = output)
+      # #append in this function is no longer behaving properly...
+      # write.xlsx(x = output, paste0(config$data_directory, "COVID-19 ", names(load_parameters)[ind], ".xlsx"),
+      #            sheetName = group,
+      #            append = TRUE,
+      #            row.names = FALSE)
     }
+    saveWorkbook(OUT, paste0(config$data_directory, "COVID-19 ", names(load_parameters)[ind], ".xlsx"))
   }
-}
-
-
-read_employment_data <- function(config, directory) {
-  # load_parameters <- config$load_parameters
-  # data <- read.csv(
-  #   paste0(directory, config$filename),
-  #   stringsAsFactors = FALSE
-  # ) %>%
-  #   filter(Group == load_parameters$keyword) %>%
-    filter(
-      Series_title_1 %in% load_parameters$Series_title_1 &
-        substr(Series_reference, 4, 4) == "M"
-    ) %>%
-    mutate(
-      Parameter = ymd(paste0(str_pad(as.character(Period), 7, side = "right", pad = "0"), ".01")),
-      Data_value = Data_value * (10 ** Magnitude)
-    ) %>%
-    select("Parameter", "Series_title_2", "Series_title_3", "Data_value")
-
-  output_group <- list()
-  update_date <- as.Date(file.info(paste0(directory, config$filename))$mtime, tz = "NZ")
-
-  for (series_title_2 in unique(data$Series_title_2)) {
-    for (series_title_3 in unique(data$Series_title_3)) {
-      data_group <- data %>%
-        filter(
-          Series_title_2 == series_title_2 &
-            Series_title_3 == series_title_3
-        ) %>%
-        select(c("Parameter", "Data_value")) %>%
-        arrange(Parameter)
-
-      group_name <- paste0(series_title_2, " (", tolower(series_title_3), ")")
-      output_group[[group_name]] <- TimeSeries$new(data_group, group_name, update_date)
-    }
-  }
-
-  return(output_group)
-}
-
-read_filled_jobs_by_industry_or_region <- function(config, directory) {
-  load_parameters <- config$load_parameters
-  data <- read.csv(
-    paste0(directory, config$filename),
-    stringsAsFactors = FALSE
-  ) %>%
-    mutate(
-      Parameter = ymd(paste0(str_pad(as.character(Period), 7, side = "right", pad = "0"), ".01")),
-      Value = Data_value * (10 ** Magnitude)
-    ) %>%
-    filter(Group == load_parameters$keyword) %>%
-    select("Parameter", load_parameters$group_type, "Value")
-
-  names(data)[[2]] <- "group_column"
-  output_group <- list()
-  update_date <- as.Date(file.info(paste0(directory, config$filename))$mtime, tz = "NZ")
-
-
-  for (industry_group in unique(data$group_column)) {
-    data_group <- data %>%
-      filter(
-        group_column == industry_group
-      ) %>%
-      select(c("Parameter", "Value"))
-    group_name <- industry_group
-    output_group[[group_name]] <- TimeSeries$new(data_group, group_name, update_date)
-  }
-
-  return(output_group)
-}
-
-read_filled_jobs_by_gender <- function(config, directory) {
-  print(paste0(directory, config$filename))
-  load_parameters <- config$load_parameters
-  data <- read.csv(
-    paste0(directory, config$filename),
-    stringsAsFactors = FALSE
-  ) %>%
-    mutate(
-      Parameter = ymd(paste0(str_pad(as.character(Period), 7, side = "right", pad = "0"), ".01")),
-      Value = as.numeric(Data_value)
-    ) %>%
-    filter(Group == load_parameters$keyword) %>%
-    select("Parameter", load_parameters$group_type, "Value", "Series_title_2")
-  names(data)[[2]] <- "group_column"
-  names(data)[[4]] <- "Sex"
-  output_group <- list()
-  update_date <- as.Date(file.info(paste0(directory, config$filename))$mtime, tz = "NZ")
-
-  for (industry_group in unique(data$group_column)) {
-    data_group <- data %>%
-      filter(
-        group_column == industry_group
-      ) %>%
-      select(c("Parameter", "Value", "Sex")) %>%
-      pivot_wider(names_from = Sex, values_from = c("Value"))
-
-    group_name <- industry_group
-    output_group[[group_name]] <- TimeSeries$new(data_group, names(data_group)[2:3], update_date)
-  }
-
-  return(output_group)
-}
-
-read_filled_jobs_by_age <- function(config, directory) {
-  print(paste0(directory, config$filename))
-  load_parameters <- config$load_parameters
-  data <- read.csv(
-    paste0(directory, config$filename),
-    stringsAsFactors = FALSE
-  ) %>%
-    mutate(
-      Parameter = ymd(paste0(str_pad(as.character(Period), 7, side = "right", pad = "0"), ".01")),
-      Value = as.numeric(Data_value)
-    ) %>%
-    filter(Group == load_parameters$keyword) %>%
-    select("Parameter", load_parameters$group_type, "Value", "Series_title_2")
-  names(data)[[2]] <- "group_column"
-  names(data)[[4]] <- "Age_group"
-  output_group <- list()
-  update_date <- as.Date(file.info(paste0(directory, config$filename))$mtime, tz = "NZ")
-
-  for (industry_group in unique(data$group_column)) {
-    data_group <- data %>%
-      filter(
-        group_column == industry_group
-      ) %>%
-      select(c("Parameter", "Value", "Age_group")) %>%
-      pivot_wider(names_from = Age_group, values_from = c("Value"))
-
-    group_name <- industry_group
-    output_group[[group_name]] <- TimeSeries$new(
-      data_group,
-      names(data_group)[2:ncol(data_group)],
-      update_date
-    )
-  }
-
-  return(output_group)
 }

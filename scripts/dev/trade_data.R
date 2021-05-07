@@ -1,7 +1,7 @@
 # Exports by country (values) +++ Imports by country (values) +++ Imports by commodity (values) +++ Exports by commodity (values)
 
 
-library(xlsx)
+library(openxlsx)
 
 config <- read_config_file()
 path <- paste0(config$data_directory, "Trade Data")
@@ -70,7 +70,7 @@ for (ind in 1:length(names(load_parameters))) {
 
   if (length(setdiff(unique(data[[3]]), parameter[[tolower(parameter$group_col)]])) > 0)
     stop ("New categories added: ", setdiff(unique(data[[3]]), parameter[[tolower(group_col)]]))
-
+  OUT <- createWorkbook()
   for (group in unique(data[[3]])) {
     data_group <- data %>% filter(data[[3]] == group) %>%
     select(-3)
@@ -82,11 +82,15 @@ for (ind in 1:length(names(load_parameters))) {
       pivot_wider(names_from = Year, values_from = c("Cumulative")) %>%
       as.data.frame()
 
+    addWorksheet(OUT, group)
+    writeData(OUT, sheet = group, x = output)
 
-    write.xlsx(x = output, paste0(path, "/COVID 19 - Trade Data - ", names(load_parameters)[[ind]], ".xlsx"),
-               sheetName = group,
-               append = TRUE,
-               row.names = FALSE)
+    # #append in this funciton is no longer behaving properly....
+    # write.xlsx(x = output, paste0(path, "/COVID 19 - Trade Data - ", names(load_parameters)[[ind]], ".xlsx"),
+    #            sheetName = group,
+    #            append = TRUE,
+    #            row.names = FALSE)
   }
+  saveWorkbook(OUT, paste0(path, "/COVID 19 - Trade Data - ", names(load_parameters)[[ind]], ".xlsx")
 
 }
