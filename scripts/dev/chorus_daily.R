@@ -3,8 +3,8 @@
 library(readxl)
 library(dplyr)
 
-config <- read_config_file()
-path <- paste0(config$data_directory, "Chorus data/")
+directory <- "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/_TEST/"
+path <- paste0(directory, "Chorus data/")
 files <- file.info(list.files(path, full.names = T))
 
 data <- data.frame(Cal.Dt = Date(), total = numeric())
@@ -29,6 +29,6 @@ data <- data %>%
 
 names(data) <- c("Date", "Total GB")
 
-file.rename(from = paste0(config$data_directory, "COVID 19 - Chorus daily broadband.csv"),
-            to = paste0(config$data_directory, "Previous/COVID 19 - Chorus daily broadband.csv"))
-write.csv(x = data, row.names = FALSE, file = paste0(config$data_directory, "COVID 19 - Chorus daily broadband.csv"))
+file.rename(from = paste0(directory, "COVID 19 - Chorus daily broadband.csv"),
+            to = paste0(directory, "Previous/COVID 19 - Chorus daily broadband.csv"))
+write.csv(x = data, row.names = FALSE, file = paste0(directory, "COVID 19 - Chorus daily broadband.csv"))

@@ -1,3 +1,5 @@
+# Staying connected with others +++ Safety travelling to and from essential services +++ COVID-19 related scams
+
 library(tidyverse)
 library(openxlsx)
 

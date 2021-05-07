@@ -1,11 +1,16 @@
+# Rental bonds by region - active
+# Rental bonds by region - closed
+# Rental bonds by region - lodged
+
 library(tidyr)
 library(dplyr)
 library(stringr)
 library(writexl)
 
-filename <- "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/MBIE/rentalbond-data-regional.csv"
+directory <- "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/"
+path <- paste0(directory, "MBIE/")
+filename <- paste0(path, "rentalbond-data-regional.csv")
 
-#filename <- "example_data/rentalbond-data-regional.csv"
 sub_series <- c("Active Bonds", "Closed Bonds", "Lodged Bonds", "Average Weekly Rent")
 
   data <- as.data.frame(read.csv(file = filename, check.names = FALSE)) %>%

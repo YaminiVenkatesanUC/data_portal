@@ -1,29 +1,17 @@
-### This code processes the CFFC first-wave unit record data
-
-
-### NOTE!!!!!
-### This will need reformatting when the second wave comes
-### to be a time series, i.e., one column per series
-### and one column for the date
-
-### this will also require adjustment in the config
-### and possibly some date presentation options
-### so that we can show e.g., "April 2020"
-
-
-
-
+# Ability to meet bills +++ Change in income +++ Confidence in household's financial situation +++ Money owed on credit agreements
+# Use of money in savings +++ Effects of COVID-19 on work and income +++ Financial anxiety
 
 library(tidyverse)
 library(openxlsx)
 library(haven)
 library(sjlabelled)
 
-data <-  c("~/Network-Shares/J-Drive-WLG-Shared/Indicators_aotearoa/Covid-19/Portal Data Supply/CFFC/Wave 1/NZ_Covid 19 Wellbeing 2 with components with serials.sav",
-           "~/Network-Shares/J-Drive-WLG-Shared/Indicators_aotearoa/Covid-19/Portal Data Supply/CFFC/Wave 1/ORD-551132-J1V4_Covid19 Wellbeing W2_MAIN_Final Data_SPSS_v1.sav")
 
-# data <- c("example_data/NZ_Covid 19 Wellbeing 2 with components with serials.sav",
-#           "example_data/ORD-551132-J1V4_Covid19 Wellbeing W2_MAIN_Final Data_SPSS_v1.sav")
+directory <- "~/Network-Shares/J-Drive-WLG-Shared/Indicators_aotearoa/Covid-19/Portal Data Supply/"
+
+data <-  c(paste0(directory, "CFFC/Wave 1/NZ_Covid 19 Wellbeing 2 with components with serials.sav"),
+           paste0(directory, "CFFC/Wave 1/ORD-551132-J1V4_Covid19 Wellbeing W2_MAIN_Final Data_SPSS_v1.sav"))
+
 
 output_list <- list()
 

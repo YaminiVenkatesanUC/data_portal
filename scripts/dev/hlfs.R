@@ -3,10 +3,9 @@
 # Trust in other people +++ Trust for health system +++ Loneliness – past 4 weeks +++ Experienced discrimination
 
 library(openxlsx)
+library(dplyr)
 
-#config <- read_config_file()
-#path <- paste0(config$data_directory, "HLFS/")
-directory <- "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/_TEST/"
+directory <- "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/"
 path <- paste0(directory, "HLFS/")
 files <- file.info(list.files(path, full.names = T))
 

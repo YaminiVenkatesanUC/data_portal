@@ -1,6 +1,8 @@
-# Monthly filled jobs +++ Monthly earnings +++ Monthly filled jobs (by industry) +++ Monthly filled jobs (by region) +++ Monthly filled jobs (by gender) +++ Monthly filled jobs (by age)
+# Monthly filled jobs +++ Monthly earnings +++ Monthly filled jobs (by industry) +++
+# Monthly filled jobs (by region) +++ Monthly filled jobs (by gender) +++ Monthly filled jobs (by age)
 
 library(openxlsx)
+library(dplyr)
 
 load_parameters <- list(
   Monthly_earnings = list(
@@ -59,8 +61,8 @@ load_parameters <- list(
   )
   )
 
-config <- read_config_file()
-update <- paste0(config$data_directory, "employment-indicators-monthly.csv")
+directory <- "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/"
+update <- paste0(directory, "employment-indicators-monthly.csv")
 
 data <- read.csv(update, stringsAsFactors = FALSE) %>%
   filter(Subject == "Employment indicators - MEI") %>%
@@ -72,8 +74,8 @@ if (length(setdiff(names(data), col_names)) > 0) stop ("New column added: ", set
 
 
 for (ind in 1:length(names(load_parameters))) {
-  file.rename(from = paste0(paste0(config$data_directory, "COVID-19 ", names(load_parameters)[ind], ".xlsx")),
-              to = paste0(paste0(config$data_directory, "Previous/COVID-19 ", names(load_parameters)[ind], ".xlsx")))
+  file.rename(from = paste0(paste0(directory, "COVID-19 ", names(load_parameters)[ind], ".xlsx")),
+              to = paste0(paste0(directory, "Previous/COVID-19 ", names(load_parameters)[ind], ".xlsx")))
 }
 
 
@@ -112,7 +114,7 @@ for (ind in 1:length(load_parameters)) {
       addWorksheet(OUT, group)
       writeData(OUT, sheet = group, x = output)
       # #append in this function is no longer behaving properly...
-      # write.xlsx(x = output, paste0(config$data_directory, "COVID-19 ", names(load_parameters)[ind], ".xlsx"),
+      # write.xlsx(x = output, paste0(directory, "COVID-19 ", names(load_parameters)[ind], ".xlsx"),
       #            sheetName = group,
       #            append = TRUE,
       #            row.names = FALSE)
@@ -130,11 +132,11 @@ for (ind in 1:length(load_parameters)) {
       addWorksheet(OUT, group)
       writeData(OUT, sheet = group, x = output)
       # #append in this function is no longer behaving properly...
-      # write.xlsx(x = output, paste0(config$data_directory, "COVID-19 ", names(load_parameters)[ind], ".xlsx"),
+      # write.xlsx(x = output, paste0(directory, "COVID-19 ", names(load_parameters)[ind], ".xlsx"),
       #            sheetName = group,
       #            append = TRUE,
       #            row.names = FALSE)
     }
-    saveWorkbook(OUT, paste0(config$data_directory, "COVID-19 ", names(load_parameters)[ind], ".xlsx"))
+    saveWorkbook(OUT, paste0(directory, "COVID-19 ", names(load_parameters)[ind], ".xlsx"))
   }
 }
