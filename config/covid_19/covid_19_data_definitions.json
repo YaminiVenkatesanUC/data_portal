@@ -35,7 +35,8 @@
   "load_function": "read_from_excel",
   "data_type":"TimeSeries",
   "date_added":"22/04/2020",
-  "date_dropped":null
+  "date_dropped":null,
+  "sourcing":"manual entry from website"
 },
    {
   "class": "Economic",
@@ -70,7 +71,8 @@
       "Total"
       ],
   "date_added":"14/07/2020",
-  "date_dropped":null
+  "date_dropped":null,
+  "sourcing":"website download"
 },
   {
   "class": "Economic",
@@ -107,7 +109,8 @@
     "Total"
     ],
   "date_added":"14/07/2020",
-  "date_dropped":null
+  "date_dropped":null,
+  "sourcing":"website download"
  },
     {
         "class": "Economic",
@@ -130,7 +133,8 @@
             "group_col": "Country"
         },
          "date_added":"03/06/2020",
-            "date_dropped":null
+            "date_dropped":null,
+            "sourcing":"customized supply to folder"
     },
     {
         "class": "Economic",
@@ -153,7 +157,8 @@
             "group_col": "Country"
         },
         "date_added":"03/06/2020",
-            "date_dropped":null
+            "date_dropped":null,
+            "sourcing":"customized supply to folder"
     },
     {
         "class": "Economic",
@@ -176,7 +181,8 @@
             "group_col": "Commodity"
         },
         "date_added":"03/06/2020",
-            "date_dropped":null
+            "date_dropped":null,
+            "sourcing":"customized supply to folder"
     },
     {
         "class": "Economic",
@@ -199,7 +205,8 @@
             "group_col": "Commodity"
         },
         "date_added":"03/06/2020",
-            "date_dropped":null
+            "date_dropped":null,
+            "sourcing":"customized supply to folder"
     },
     {
         "class": "Economic",
@@ -273,7 +280,8 @@
         "Marlborough"
         ],
         "date_added":"18/06/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
 {
         "class": "Economic",
@@ -347,7 +355,8 @@
         "Marlborough"
         ],
         "date_added":"18/06/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
 {
         "class": "Economic",
@@ -421,7 +430,8 @@
         "Marlborough"
         ],
         "date_added":"18/06/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
 {
         "class": "Economic",
@@ -494,7 +504,8 @@
         "Marlborough"
         ],
         "date_added":"18/06/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
     {
       "class": "Economic",
@@ -510,7 +521,8 @@
         "keyword": "Industry by variable"
       },
       "date_added":"21/06/2020",
-      "date_dropped":null
+      "date_dropped":null,
+      "sourcing":"website download"
     },
     {
       "class": "Economic",
@@ -526,7 +538,8 @@
         "keyword": "Region by variable"
       },
       "date_added":"21/06/2020",
-      "date_dropped":null
+      "date_dropped":null,
+      "sourcing":"website download"
     },
     {
       "class": "Economic",
@@ -542,7 +555,8 @@
         "keyword": "Sex and Region by variable"
       },
       "date_added":"21/06/2020",
-      "date_dropped":null
+      "date_dropped":null,
+      "sourcing":"website download"
     },
         {
       "class": "Economic",
@@ -558,7 +572,8 @@
         "keyword": "Age and Region by variable"
       },
       "date_added":"21/06/2020",
-      "date_dropped":null
+      "date_dropped":null,
+      "sourcing":"website download"
     },
     {
       "class": "Economic",
@@ -574,7 +589,8 @@
         "keyword": "High level industry by variable"
       },
       "date_added":"21/06/2020",
-      "date_dropped":null
+      "date_dropped":null,
+      "sourcing":"website download"
     },
         {
       "class": "Economic",
@@ -590,7 +606,8 @@
         "keyword": "High level industry by variable"
       },
       "date_added":"21/06/2020",
-      "date_dropped":null
+      "date_dropped":null,
+      "sourcing":"website download"
     },
 
     {
@@ -607,7 +624,8 @@
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "date_added":"20/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"customized supply via email"
       },
       {
         "class": "Health",
@@ -625,7 +643,8 @@
         "drop_na": false,
         "data_type": "BarChart",
         "date_added":"12/05/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"manual entry from website"
       },
 
       {
@@ -644,7 +663,8 @@
         "drop_na": false,
         "data_type": "BarChart",
         "date_added":"12/05/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"manual entry from website"
       },
     {
         "class": "Health",
@@ -666,7 +686,8 @@
         "Cases by gender"
         ],
         "date_added":"20/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"manual entry from website"
     },
     {
         "class": "Health",
@@ -725,7 +746,8 @@
         "data_type": "TimeSeries",
         "group_names": "undefined_name",
         "date_added":"20/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
     {
         "class": "Economic",
@@ -762,7 +784,8 @@
         "Deliveries"
         ],
         "date_added":"20/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
     {
         "class": "Economic",
@@ -781,7 +804,8 @@
         "data_type": "TimeSeries",
         "group_names": "undefined_name",
         "date_added":"20/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
     {
         "class": "Economic",
@@ -797,7 +821,8 @@
         "data_type": "TimeSeries",
         "group_names": "undefined_name",
         "date_added":"20/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"customized supply via email"
     },
     {
         "class": "Economic",
@@ -823,7 +848,8 @@
         "undefined_name"
         ],
         "date_added":"20/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"customized supply via email"
     },
     {
         "class": "Economic",
@@ -856,7 +882,8 @@
         "Transactions (count)"
         ],
         "date_added":"20/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
     {
         "class": "Economic",
@@ -887,7 +914,8 @@
         "Other passports"
         ],
         "date_added":"20/07/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"customized supply to folder"
     },
     {
         "class": "Economic",
@@ -918,7 +946,8 @@
         "Other passports"
         ],
         "date_added":"20/07/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"customized supply to folder"
     },
     {
         "class": "Economic",
@@ -958,7 +987,8 @@
         "Non-retail (seasonally adjusted)"
         ],
         "date_added":"20/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
     {
         "class": "Economic",
@@ -973,7 +1003,8 @@
         "parameter_transform": ["function (x) ymd(x)"],
         "load_function": "chorus_load_function",
         "date_added":"26/08/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"customized supply via email"
       },
     {
         "class": "Economic",
@@ -1040,7 +1071,8 @@
         ],
         "drop_na":false,
         "date_added":"26/08/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"customized supply via email"
    },
     {
         "class": "Economic",
@@ -1066,7 +1098,8 @@
         "data_type": "TimeSeries",
         "group_names": "undefined_name",
         "date_added":"20/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"customized supply via email"
         },
     {
         "class": "Economic",
@@ -1082,7 +1115,8 @@
         "data_type": "TimeSeries",
         "group_names": "undefined_name",
         "date_added":"20/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"manual entry from website"
     },
     {
         "class": "Economic",
@@ -1103,7 +1137,8 @@
         "data_type": "TimeSeries",
         "group_names": ["undefined_name"],
         "date_added":"20/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"customized supply via email"
     },
     {
         "class": "Economic",
@@ -1123,7 +1158,8 @@
         "data_type": "TimeSeries",
         "group_names": ["undefined_name"],
         "date_added":"20/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"manual entry from website"
     },
     {
         "class": "Economic",
@@ -1142,7 +1178,8 @@
         "data_type": "TimeSeries",
         "group_names": ["undefined_name"],
         "date_added":"20/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"manual entry from website"
     },
     {
         "class": "Economic",
@@ -1178,7 +1215,8 @@
             "Lower South Island"
             ],
         "date_added":"20/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
     {
         "class": "Economic",
@@ -1200,7 +1238,8 @@
         "data_type": "TimeSeries",
         "group_names": "undefined_name",
         "date_added":"20/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"customized supply via email"
     },
     {
         "class": "Economic",
@@ -1219,7 +1258,8 @@
         "data_type": "TimeSeries",
         "group_names": ["undefined_name"],
         "date_added":"20/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"manual entry from website"
     },
     {
         "class": "Economic",
@@ -1236,7 +1276,8 @@
         "data_type": "TimeSeries",
         "group_names": "undefined_name",
         "date_added":"20/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"manual entry from website"
     },
     {
         "class": "Economic",
@@ -1252,7 +1293,8 @@
         "data_type": "TimeSeries",
         "group_names": "undefined_name",
         "date_added":"20/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"customized supply via email"
     },
     {
         "class": "Economic",
@@ -1281,7 +1323,8 @@
         "Copper"
         ],
         "date_added":"20/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"customized supply via email"
     },
     {
         "class": "Economic",
@@ -1310,7 +1353,8 @@
         "S&P Global 1200 Index"
         ],
         "date_added":"20/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"customized supply via email"
     },
     {
         "class": "Economic",
@@ -1327,7 +1371,8 @@
         "data_type": "TimeSeries",
         "group_names": "undefined_name",
         "date_added":"20/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"customized supply via email"
     },
     {
         "class": "Economic",
@@ -1344,7 +1389,8 @@
         "data_type": "TimeSeries",
         "group_names": "undefined_name",
         "date_added":"20/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"customized supply via email"
     },
     {
         "class": "Economic",
@@ -1361,7 +1407,8 @@
         "data_type": "TimeSeries",
         "group_names": "undefined_name",
         "date_added":"20/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"customized supply via email"
     },
     {
         "class": "Economic",
@@ -1389,7 +1436,8 @@
         "data_type": "TimeSeries",
         "group_names": "undefined_name",
         "date_added":"20/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"customized supply via email"
     },
     {
         "class": "Economic",
@@ -1419,7 +1467,8 @@
         "data_type": "TimeSeries",
         "group_names": "undefined_name",
         "date_added":"20/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"customized supply via email"
     },
     {
         "class": "Income support",
@@ -1439,7 +1488,8 @@
         "data_type": "TimeSeries",
         "group_names": "undefined_name",
         "date_added":"26/05/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
     {
         "class": "Income support",
@@ -1459,7 +1509,8 @@
         "data_type": "TimeSeries",
         "group_names": "undefined_name",
         "date_added":"26/05/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
     {
         "class": "Income support",
@@ -1479,7 +1530,8 @@
         "data_type": "TimeSeries",
         "group_names": "undefined_name",
         "date_added":"26/05/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
     {
         "class": "Income support",
@@ -1504,7 +1556,8 @@
         "data_type": "TimeSeries",
         "group_names": "undefined_name",
         "date_added":"26/05/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
 
     {
@@ -1525,7 +1578,8 @@
         "data_type": "TimeSeries",
         "group_names": "undefined_name",
         "date_added":"26/05/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
     {
         "class": "Income support",
@@ -1587,7 +1641,8 @@
         "Total"
         ],
         "date_added":"26/05/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
     {
         "class": "Health",
@@ -1614,7 +1669,8 @@
         "data_type": "TimeSeries",
         "group_names": "undefined_name",
         "date_added":"20/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"manual entry from website"
         },
     {
         "class": "Health",
@@ -1642,7 +1698,8 @@
         "data_type": "TimeSeries",
         "group_names": "China",
         "date_added":"22/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"web scraped"
     },
     {
         "class": "Health",
@@ -1670,7 +1727,8 @@
         "data_type": "TimeSeries",
         "group_names": "Australia",
         "date_added":"22/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"web scraped"
     },
     {
         "class": "Health",
@@ -1698,7 +1756,8 @@
         "data_type": "TimeSeries",
         "group_names": "Canada",
         "date_added":"22/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"web scraped"
     },
     {
         "class": "Health",
@@ -1726,7 +1785,8 @@
         "data_type": "TimeSeries",
         "group_names": "Singapore",
         "date_added":"22/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"web scraped"
     },
     {
         "class": "Health",
@@ -1754,7 +1814,8 @@
         "data_type": "TimeSeries",
         "group_names": "Italy",
         "date_added":"22/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"web scraped"
     },
     {
         "class": "Health",
@@ -1782,7 +1843,8 @@
         "data_type": "TimeSeries",
         "group_names": "Spain",
         "date_added":"22/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"web scraped"
     },
     {
         "class": "Health",
@@ -1810,7 +1872,8 @@
         "data_type": "TimeSeries",
         "group_names": "United Kingdom",
         "date_added":"22/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"web scraped"
     },
     {
         "class": "Health",
@@ -1838,7 +1901,8 @@
         "data_type": "TimeSeries",
         "group_names": "United States",
         "date_added":"22/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"web scraped"
     },
     {
         "class": "Health",
@@ -1866,7 +1930,8 @@
         "data_type": "TimeSeries",
         "group_names": "Rest of world",
         "date_added":"22/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"web scraped"
     },
     {
         "class": "Economic",
@@ -1891,7 +1956,8 @@
         "Light traffic index"
         ],
         "date_added":"20/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"customized supply via email"
     },
     {
         "class": "Economic",
@@ -1909,7 +1975,8 @@
         "data_type": "TimeSeries",
         "group_names": ["Auckland"],
         "date_added":"05/06/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"customized supply via email"
         },
     {
         "class": "Economic",
@@ -1927,7 +1994,8 @@
         "data_type": "TimeSeries",
         "group_names": ["Christchurch"],
         "date_added":"05/06/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"customized supply via email"
     },
     {
         "class": "Economic",
@@ -1945,7 +2013,8 @@
         "data_type": "TimeSeries",
         "group_names": ["Dunedin"],
         "date_added":"05/06/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"customized supply via email"
     },
     {
         "class": "Economic",
@@ -1963,7 +2032,8 @@
         "data_type": "TimeSeries",
         "group_names": ["Hamilton"],
         "date_added":"05/06/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"customized supply via email"
     },
     {
         "class": "Economic",
@@ -1981,7 +2051,8 @@
         "data_type": "TimeSeries",
         "group_names": ["Wellington"],
         "date_added":"05/06/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"customized supply via email"
     },
     {
         "class": "Economic",
@@ -2009,7 +2080,8 @@
         "Domestic aircraft - Auckland"
         ],
         "date_added":"23/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
     {
         "class": "Economic",
@@ -2037,7 +2109,8 @@
         "Domestic MCTOW"
         ],
         "date_added":"23/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
     {
         "class": "Economic",
@@ -2065,7 +2138,8 @@
             "Import gross weight - Auckland"
         ],
         "date_added":"23/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
     {
         "class": "Economic",
@@ -2093,7 +2167,8 @@
             "Import gross weight - Christchurch"
         ],
         "date_added":"23/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
     {
         "class": "Economic",
@@ -2122,7 +2197,8 @@
             "Import CIF - Auckland"
         ],
         "date_added":"23/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
     {
         "class": "Economic",
@@ -2151,7 +2227,8 @@
         "Import CIF - Christchurch"
         ],
         "date_added":"23/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
     {
         "class": "Economic",
@@ -2181,7 +2258,8 @@
         "data_type": "TimeSeries",
         "group_names": "undefined_name",
         "date_added":"20/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"customized supply via email"
     },
     {
         "class": "Economic",
@@ -2204,7 +2282,8 @@
         "data_type": "TimeSeries",
         "group_names": "undefined_name",
         "date_added":"22/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"manual entry from website"
     },
     {
         "class": "Economic",
@@ -2233,7 +2312,8 @@
         "International aircraft - Queenstown"
         ],
         "date_added":"23/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
     {
         "class": "Income support",
@@ -2314,7 +2394,8 @@
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "date_added":"26/05/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
     {
         "class": "Economic",
@@ -2331,7 +2412,8 @@
         "data_type": "TimeSeries",
         "group_names": "undefined_name",
         "date_added":"12/05/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"manual entry from website"
     },
     {
         "class": "Health",
@@ -2365,7 +2447,8 @@
             "Other South Island regions"
           ],
           "date_added":"30/03/2020",
-          "date_dropped":null
+          "date_dropped":null,
+          "sourcing":"customized supply via email"
       },
       {
         "class": "Health",
@@ -2414,7 +2497,8 @@
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "date_added":"30/03/2020",
-          "date_dropped":null
+          "date_dropped":null,
+          "sourcing":"customized supply via email"
       },
       {
         "class": "Health",
@@ -2448,7 +2532,8 @@
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "date_added":"30/03/2020",
-          "date_dropped":null
+          "date_dropped":null,
+          "sourcing":"customized supply via email"
       },
       {
         "class": "Economic",
@@ -2483,7 +2568,8 @@
           "Dunedin Airport"
         ],
         "date_added":"18/05/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"manual entry from website"
       },
     {
         "class": "Economic",
@@ -2509,7 +2595,8 @@
             "Import CIF (Auckland)"
         ],
         "date_added":"20/05/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
      {
         "class": "Economic",
@@ -2534,7 +2621,8 @@
         "Import gross weight - Auckland"
         ],
         "date_added":"20/05/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
     {
         "class": "Economic",
@@ -2560,7 +2648,8 @@
           "Import CIF (Napier)"
         ],
         "date_added":"20/05/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
     {
         "class": "Economic",
@@ -2588,7 +2677,8 @@
         "Import gross weight - Napier"
         ],
         "date_added":"20/05/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     }
     ,
     {
@@ -2615,7 +2705,8 @@
           "Import CIF (Lyttelton)"
         ],
         "date_added":"20/05/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
     {
         "class": "Economic",
@@ -2640,7 +2731,8 @@
         "Import gross weight - Lyttelton"
         ],
         "date_added":"20/05/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
     {
         "class": "Economic",
@@ -2666,7 +2758,8 @@
           "Import CIF (Port Chalmers)"
         ],
         "date_added":"20/05/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
     {
         "class": "Economic",
@@ -2691,7 +2784,8 @@
         "Import gross weight - Port Chalmers"
         ],
         "date_added":"20/05/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
     {
         "class": "Economic",
@@ -2717,7 +2811,8 @@
           "Import CIF (Wellington)"
         ],
         "date_added":"20/05/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
     {
         "class": "Economic",
@@ -2742,7 +2837,8 @@
         "Import gross weight - Wellington"
         ],
         "date_added":"20/05/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
     {
         "class": "Economic",
@@ -2768,7 +2864,8 @@
           "Import CIF (Tauranga)"
         ],
         "date_added":"20/05/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
     {
         "class": "Economic",
@@ -2793,7 +2890,8 @@
         "Import gross weight - Tauranga"
         ],
         "date_added":"20/05/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
     {
         "class": "Economic",
@@ -2812,7 +2910,8 @@
           "Trend"
           ],
         "date_added":"14/07/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"customized supply via email"
     },
     {
         "class": "Income support",
@@ -2833,7 +2932,8 @@
         "data_type": "TimeSeries",
         "group_names": ["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"],
         "date_added":"26/05/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
     {
         "class": "Income support",
@@ -2854,7 +2954,8 @@
         "data_type": "TimeSeries",
         "group_names": ["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"],
         "date_added":"26/05/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
     {
         "class": "Income support",
@@ -2875,7 +2976,8 @@
         "data_type": "TimeSeries",
         "group_names": ["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"],
         "date_added":"26/05/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
     {
         "class": "Income support",
@@ -2896,7 +2998,8 @@
         "data_type": "TimeSeries",
         "group_names": ["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"],
         "date_added":"26/05/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
     {
         "class": "Income support",
@@ -2916,7 +3019,8 @@
         "data_type": "TimeSeries",
         "group_names": ["Total - work ready","Māori", "NZ European", "Pacific peoples", "All other ethnicities"],
         "date_added":"26/05/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
     {
         "class": "Income support",
@@ -2936,7 +3040,8 @@
         "data_type": "TimeSeries",
         "group_names": ["Auckland Metro",	"Bay of Plenty", "Canterbury","Central", "East Coast", "Nelson",	"Northland",	"Southern", "Taranaki",	"Waikato",	"Wellington",	"Other region"],
         "date_added":"26/05/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
     {
         "class": "Health",
@@ -2956,7 +3061,8 @@
         "drop_na": false,
         "data_type": "TimeSeries",
         "date_added":"20/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"manual entry from website"
       },
       {
         "class": "Health",
@@ -2996,7 +3102,8 @@
         "drop_na": false,
         "data_type": "TimeSeries",
         "date_added":"26/05/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
       },
 {
   "class": "Economic",
@@ -3016,7 +3123,8 @@
   "data_type": "TimeSeries",
   "group_names": [ "Total loan applications received (cumulative)", "Total loan amount disbursed"],
   "date_added":"03/06/2020",
-  "date_dropped":null
+  "date_dropped":null,
+  "sourcing":"customized supply via email"
 },
 {
         "class": "Economic",
@@ -3047,7 +3155,8 @@
         "data_type": "TimeSeries",
         "group_names": "undefined_name",
         "date_added":"10/06/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
 {
         "class": "Economic",
@@ -3078,7 +3187,8 @@
         "data_type": "TimeSeries",
         "group_names": "undefined_name",
         "date_added":"10/06/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
 {
         "class": "Economic",
@@ -3109,7 +3219,8 @@
         "data_type": "TimeSeries",
         "group_names": "undefined_name",
         "date_added":"10/06/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
 {
         "class": "Economic",
@@ -3136,7 +3247,8 @@
         "data_type": "TimeSeries",
         "group_names": "undefined_name",
         "date_added":"10/06/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
 {
         "class": "Economic",
@@ -3166,7 +3278,8 @@
         "data_type": "TimeSeries",
         "group_names": "undefined_name",
         "date_added":"10/06/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
 {
         "class": "Economic",
@@ -3196,7 +3309,8 @@
         "data_type": "TimeSeries",
         "group_names": "undefined_name",
         "date_added":"10/06/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
 {
         "class": "Economic",
@@ -3226,7 +3340,8 @@
         "data_type": "TimeSeries",
         "group_names": "undefined_name",
         "date_added":"10/06/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
 {
         "class": "Economic",
@@ -3252,7 +3367,8 @@
         "data_type": "TimeSeries",
         "group_names": "undefined_name",
         "date_added":"10/06/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
 {
         "class": "Economic",
@@ -3293,7 +3409,8 @@
         "Methanex Motunui"
         ],
         "date_added":"11/09/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
 {
         "class": "Economic",
@@ -3333,7 +3450,8 @@
         "Marsden Point oil refinery"
         ],
         "date_added":"11/09/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
 {
         "class": "Economic",
@@ -3367,7 +3485,8 @@
         "Services"
         ],
         "date_added":"21/06/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"customized supply via email"
     },
 {
         "class": "Health",
@@ -3384,7 +3503,8 @@
         "drop_na": false,
         "data_type": "BarChart",
         "date_added":"23/06/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"manual entry from website"
       },
 {
         "class": "Health",
@@ -3460,7 +3580,9 @@
         "drop_na": false,
         "data_type": "TimeSeries",
         "date_added":"29/06/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "script":"nzac_data.R",
+        "sourcing":"customized supply via email"
       },
 {
         "class": "Health",
@@ -3488,7 +3610,8 @@
         "data_type": "TimeSeries",
         "group_names": "Australia - ACT",
         "date_added":"22/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"web scraped"
     },
 {
         "class": "Health",
@@ -3516,7 +3639,8 @@
         "data_type": "TimeSeries",
         "group_names": "Australia - New South Wales",
         "date_added":"22/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"web scraped"
     },
 {
         "class": "Health",
@@ -3544,7 +3668,8 @@
         "data_type": "TimeSeries",
         "group_names": "Australia - Northern Territory",
         "date_added":"22/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"web scraped"
     },
 {
         "class": "Health",
@@ -3572,7 +3697,8 @@
         "data_type": "TimeSeries",
         "group_names": "Australia - Queensland",
         "date_added":"22/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"web scraped"
     },
 {
         "class": "Health",
@@ -3600,7 +3726,8 @@
         "data_type": "TimeSeries",
         "group_names": "Australia - South Australia",
         "date_added":"22/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"web scraped"
     },
 {
         "class": "Health",
@@ -3628,7 +3755,8 @@
         "data_type": "TimeSeries",
         "group_names": "Australia - Tasmania",
         "date_added":"22/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"web scraped"
     },
 {
         "class": "Health",
@@ -3656,7 +3784,8 @@
         "data_type": "TimeSeries",
         "group_names": "Australia - Victoria",
         "date_added":"22/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"web scraped"
     },
 {
         "class": "Health",
@@ -3684,7 +3813,8 @@
         "data_type": "TimeSeries",
         "group_names": "Australia - Western Australia",
         "date_added":"22/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"web scraped"
     },
 {
         "class": "Income support",
@@ -3763,7 +3893,9 @@
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "date_added":"08/05/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
+
     },
 {
         "class": "Income support",
@@ -3840,7 +3972,8 @@
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "date_added":"08/05/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
 {
         "class": "Income support",
@@ -3918,7 +4051,8 @@
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "date_added":"08/05/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
 {
         "class": "Income support",
@@ -3996,7 +4130,8 @@
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "date_added":"08/05/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
 {
         "class": "Income support",
@@ -4074,7 +4209,8 @@
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "date_added":"08/05/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
 {
         "class": "Income support",
@@ -4152,7 +4288,8 @@
         "load_function": "read_from_excel",
         "data_type": "TimeSeries",
         "date_added":"08/05/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
 {
     "class": "Economic",
@@ -4189,7 +4326,8 @@
       "Other"
       ],
     "date_added":"20/07/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"customized supply to folder"
     },
 {
     "class": "Economic",
@@ -4226,7 +4364,8 @@
     "Other"
     ],
     "date_added":"20/07/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"customized supply to folder"
     },
 {
     "class": "Economic",
@@ -4293,7 +4432,8 @@
        "West Coast"
       ],
       "date_added":"12/08/2020",
-      "date_dropped":null
+      "date_dropped":null,
+      "sourcing":"website download"
     },
 {
       "class": "Social",
@@ -4310,7 +4450,8 @@
       "load_function": "read_from_excel",
       "data_type": "BarChart",
       "date_added":"24/08/2020",
-      "date_dropped":null
+      "date_dropped":null,
+      "sourcing":"customized supply via email"
     },
 {
       "class": "Social",
@@ -4328,7 +4469,8 @@
       "data_type": "BarChart",
       "drop_na": false,
       "date_added":"24/08/2020",
-      "date_dropped":null
+      "date_dropped":null,
+      "sourcing":"customized supply via email"
     },
 {
       "class": "Social",
@@ -4345,7 +4487,8 @@
       "load_function": "read_from_excel",
       "data_type": "BarChart",
       "date_added":"24/08/2020",
-      "date_dropped":null
+      "date_dropped":null,
+      "sourcing":"customized supply via email"
     },
 {
       "class": "Economic",
@@ -4364,7 +4507,8 @@
       "load_function": "read_from_csv",
       "data_type": "TimeSeries",
       "date_added":"02/09/2020",
-      "date_dropped":null
+      "date_dropped":null,
+      "sourcing":"website download"
      },
 {
       "class": "Economic",
@@ -4401,7 +4545,8 @@
       "load_function": "read_from_csv",
       "data_type": "TimeSeries",
       "date_added":"02/09/2020",
-      "date_dropped":null
+      "date_dropped":null,
+      "sourcing":"website download"
     },
 {
      "class": "Economic",
@@ -4453,7 +4598,8 @@
       "load_function": "read_from_csv",
       "data_type": "TimeSeries",
       "date_added":"02/09/2020",
-      "date_dropped":null
+      "date_dropped":null,
+      "sourcing":"website download"
     },
 {
   	"class": "Income support",
@@ -4487,7 +4633,8 @@
   	"data_type": "TimeSeries",
   	"group_names": "undefined_name",
   	"date_added":"26/05/2020",
-  	"date_dropped":null
+  	"date_dropped":null,
+  	"sourcing":"website download"
     },
 {
     "class": "Income support",
@@ -4561,7 +4708,9 @@
       "Other/Unknown"
       ],
       "date_added":"24/08/2020",
-  	"date_dropped":null
+  	"date_dropped":null,
+  	"sourcing":"website download"
+
     },
 {
     "class": "Income support",
@@ -4581,7 +4730,8 @@
     "data_type": "TimeSeries",
     "group_names": "undefined_name",
     "date_added":"26/05/2020",
-  	"date_dropped":null
+  	"date_dropped":null,
+  	"sourcing":"website download"
     },
 {
     "class": "Income support",
@@ -4601,7 +4751,8 @@
     "data_type": "TimeSeries",
     "group_names": "undefined_name",
     "date_added":"24/08/2020",
-  	"date_dropped":null
+  	"date_dropped":null,
+  	"sourcing":"website download"
     },
 {
     "class": "Income support",
@@ -4621,7 +4772,8 @@
     "data_type": "TimeSeries",
     "group_names": "undefined_name",
     "date_added":"26/05/2020",
-  	"date_dropped":null
+  	"date_dropped":null,
+  	"sourcing":"website download"
     },
 {
     "class": "Income support",
@@ -4641,7 +4793,8 @@
     "data_type": "TimeSeries",
     "group_names": "undefined_name",
     "date_added":"24/08/2020",
-  	"date_dropped":null
+  	"date_dropped":null,
+  	"sourcing":"website download"
     },
 {
     "class": "Income support",
@@ -4661,7 +4814,8 @@
     "data_type": "TimeSeries",
     "group_names": "undefined_name",
     "date_added":"24/08/2020",
-  	"date_dropped":null
+  	"date_dropped":null,
+  	"sourcing":"website download"
     },
 {
     "class": "Income support",
@@ -4689,7 +4843,8 @@
     "data_type": "TimeSeries",
     "group_names": "undefined_name",
     "date_added":"26/05/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
 },
 {
     "class": "Income support",
@@ -4713,7 +4868,8 @@
     "undefined_name"
     ],
     "date_added":"26/05/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
     },
 {
     "class": "Income support",
@@ -4741,7 +4897,8 @@
     "data_type": "TimeSeries",
     "group_names": "undefined_name",
     "date_added":"26/05/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
     },
 {
     "class": "Income support",
@@ -4769,7 +4926,8 @@
     "data_type": "TimeSeries",
     "group_names": "undefined_name",
     "date_added":"24/08/2020",
-  	"date_dropped":null
+  	"date_dropped":null,
+  	"sourcing":"website download"
     },
 {
     "class": "Income support",
@@ -4789,7 +4947,8 @@
     "data_type": "TimeSeries",
     "group_names": "undefined_name",
     "date_added":"24/08/2020",
-  	"date_dropped":null
+  	"date_dropped":null,
+  	"sourcing":"website download"
     },
 {
     "class": "Income support",
@@ -4844,7 +5003,9 @@
        "65+ years"
       ],
       "date_added":"24/08/2020",
-  	"date_dropped":null
+  	"date_dropped":null,
+  	"sourcing":"website download"
+
     },
 {
     "class": "Income support",
@@ -4878,7 +5039,9 @@
       "Total"
       ],
       "date_added":"24/08/2020",
-  	"date_dropped":null
+  	"date_dropped":null,
+  	"sourcing":"website download"
+
     },
 {
     "class": "Income support",
@@ -4915,7 +5078,9 @@
       "Total"
       ],
       "date_added":"24/08/2020",
-  	"date_dropped":null
+  	"date_dropped":null,
+  	"sourcing":"website download"
+
     },
 {
     "class": "Income support",
@@ -4929,9 +5094,7 @@
     "value_col": [
          2,
          3,
-         4
-
-         ],
+         4],
     "value_names": [
       "Single",
       "Couple",
@@ -4947,7 +5110,8 @@
       "Total"
       ],
       "date_added":"24/08/2020",
-  	"date_dropped":null
+  	"date_dropped":null,
+  	"sourcing":"website download"
     },
 {
     "class": "Income support",
@@ -4979,7 +5143,8 @@
       "Number of jobs supported by the wage subsidy extension"
       ],
       "date_added":"24/08/2020",
-  	"date_dropped":null
+  	"date_dropped":null,
+  	"sourcing":"website download"
     },
 {
     "class": "Income support",
@@ -5003,7 +5168,8 @@
       "Amount of applications paid"
       ],
       "date_added":"24/08/2020",
-  	"date_dropped":null
+  	"date_dropped":null,
+  	"sourcing":"website download"
     },
 {
     "class": "Income support",
@@ -5253,7 +5419,8 @@
 		 "Total"
 		 ],
 		 "date_added":"24/08/2020",
-  	"date_dropped":null
+  	"date_dropped":null,
+  	"sourcing":"website download"
 		},
 {
       "class": "Social",
@@ -5270,7 +5437,8 @@
       "load_function": "read_from_excel",
       "data_type": "BarChart",
       "date_added":"25/08/2020",
-      "date_dropped":null
+      "date_dropped":null,
+      "sourcing":"customized supply via email"
      },
 {
       "class": "Social",
@@ -5287,7 +5455,8 @@
       "load_function": "read_from_excel",
       "data_type": "BarChart",
       "date_added":"25/08/2020",
-      "date_dropped":null
+      "date_dropped":null,
+      "sourcing":"customized supply via email"
      },
 {
       "class": "Social",
@@ -5304,7 +5473,8 @@
       "load_function": "read_from_excel",
       "data_type": "BarChart",
       "date_added":"25/08/2020",
-      "date_dropped":null
+      "date_dropped":null,
+      "sourcing":"customized supply via email"
    },
 {
     "class": "Social",
@@ -5321,7 +5491,8 @@
     "load_function": "read_from_excel",
     "data_type": "BarChart",
     "date_added":"25/08/2020",
-      "date_dropped":null
+      "date_dropped":null,
+      "sourcing":"customized supply via email"
    },
 {
     "class": "Social",
@@ -5338,7 +5509,8 @@
     "load_function": "read_from_excel",
     "data_type": "BarChart",
     "date_added":"25/08/2020",
-      "date_dropped":null
+      "date_dropped":null,
+      "sourcing":"customized supply via email"
    },
 {
     "class": "Social",
@@ -5355,7 +5527,8 @@
     "load_function": "read_from_excel",
     "data_type": "BarChart",
     "date_added":"25/08/2020",
-      "date_dropped":null
+      "date_dropped":null,
+      "sourcing":"customized supply via email"
    },
 {
     "class": "Social",
@@ -5372,7 +5545,8 @@
     "load_function": "read_from_excel",
     "data_type": "BarChart",
     "date_added":"25/08/2020",
-      "date_dropped":null
+      "date_dropped":null,
+      "sourcing":"customized supply via email"
    },
 
    {
@@ -5444,7 +5618,8 @@
     "load_function": "read_from_excel",
     "data_type": "BarChart",
     "date_added":"04/09/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
 
   {
@@ -5516,7 +5691,8 @@
     "load_function": "read_from_excel",
     "data_type": "BarChart",
     "date_added":"04/09/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
 {
    "class": "Health",
@@ -5535,7 +5711,8 @@
       "load_function": "read_from_excel_error",
       "data_type": "TimeSeriesError",
       "date_added":"22/09/2020",
-      "date_dropped":null
+      "date_dropped":null,
+      "sourcing":"website download"
     },
 {
       "class": "Health",
@@ -5553,7 +5730,8 @@
       "load_function": "read_from_excel_error",
       "data_type": "TimeSeriesError",
       "date_added":"22/09/2020",
-      "date_dropped":null
+      "date_dropped":null,
+      "sourcing":"website download"
     },
      {
       "class": "Social",
@@ -5571,7 +5749,8 @@
       "load_function": "read_from_excel_error",
       "data_type": "TimeSeriesError",
       "date_added":"22/09/2020",
-      "date_dropped":null
+      "date_dropped":null,
+      "sourcing":"website download"
     },
     {
       "class": "Social",
@@ -5589,7 +5768,8 @@
       "load_function": "read_from_excel_error",
       "data_type": "TimeSeriesError",
       "date_added":"22/09/2020",
-      "date_dropped":null
+      "date_dropped":null,
+      "sourcing":"website download"
     },
     {
       "class": "Social",
@@ -5607,7 +5787,8 @@
       "load_function": "read_from_excel_error",
       "data_type": "TimeSeriesError",
       "date_added":"22/09/2020",
-      "date_dropped":null
+      "date_dropped":null,
+      "sourcing":"website download"
     },
     {
       "class": "Health",
@@ -5625,7 +5806,8 @@
       "load_function": "read_from_excel_error",
       "data_type": "TimeSeriesError",
       "date_added":"22/09/2020",
-      "date_dropped":null
+      "date_dropped":null,
+      "sourcing":"website download"
     },
     {
       "class": "Health",
@@ -5643,8 +5825,8 @@
       "load_function": "read_from_excel_error",
       "data_type": "TimeSeriesError",
       "date_added":"22/09/2020",
-      "date_dropped":null
-
+      "date_dropped":null,
+      "sourcing":"website download"
     },
     {
       "class": "Health",
@@ -5662,8 +5844,8 @@
       "load_function": "read_from_excel_error",
       "data_type": "TimeSeriesError",
       "date_added":"22/09/2020",
-      "date_dropped":null
-
+      "date_dropped":null,
+      "sourcing":"website download"
     },
     {
       "class": "Health",
@@ -5681,7 +5863,8 @@
       "load_function": "read_from_excel_error",
       "data_type": "TimeSeriesError",
       "date_added":"22/09/2020",
-      "date_dropped":null
+      "date_dropped":null,
+      "sourcing":"website download"
     },
     {
       "class": "Health",
@@ -5699,7 +5882,8 @@
       "load_function": "read_from_excel_error",
       "data_type": "TimeSeriesError",
       "date_added":"22/09/2020",
-      "date_dropped":null
+      "date_dropped":null,
+      "sourcing":"website download"
     },
 
 {
@@ -5734,7 +5918,8 @@
       "Services"
       ],
     "date_added":"21/06/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"customized supply via email"
 },
 {
     "class":"Social",
@@ -5761,7 +5946,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
 {
     "class":"Social",
@@ -5789,7 +5975,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -5822,7 +6009,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -5852,7 +6040,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -5876,7 +6065,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
 	  "class":"Social",
@@ -5907,7 +6097,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -5937,7 +6128,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -5964,7 +6156,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -5992,7 +6185,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -6025,7 +6219,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -6055,7 +6250,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -6079,7 +6275,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
 
@@ -6111,7 +6308,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -6141,7 +6339,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
  {
     "class":"Social",
@@ -6168,7 +6367,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -6196,7 +6396,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -6229,7 +6430,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -6259,7 +6461,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -6283,7 +6486,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
 	  "class":"Social",
@@ -6314,7 +6518,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -6344,7 +6549,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -6371,7 +6577,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -6399,7 +6606,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -6432,7 +6640,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -6462,7 +6671,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -6486,7 +6696,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
 
@@ -6518,7 +6729,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -6548,7 +6760,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -6575,7 +6788,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -6603,7 +6817,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -6636,7 +6851,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -6666,7 +6882,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -6690,7 +6907,9 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null},
+    "date_dropped":null,
+    "sourcing":"website download"
+  },
   {
 	 "class":"Social",
     "type":"Life satisfaction",
@@ -6720,7 +6939,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
      "class":"Social",
@@ -6750,7 +6970,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -6777,7 +6998,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -6805,7 +7027,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -6838,7 +7061,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -6868,7 +7092,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -6892,7 +7117,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
 
@@ -6924,7 +7150,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -6954,7 +7181,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -6981,7 +7209,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -7009,7 +7238,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -7042,7 +7272,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -7072,7 +7303,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -7096,7 +7328,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
 	  "class":"Social",
@@ -7127,7 +7360,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -7157,7 +7391,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -7184,7 +7419,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -7212,7 +7448,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -7245,7 +7482,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -7275,7 +7513,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -7299,7 +7538,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
 	  "class":"Social",
@@ -7330,7 +7570,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -7360,7 +7601,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -7387,7 +7629,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -7415,7 +7658,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -7448,7 +7692,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -7478,7 +7723,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -7502,7 +7748,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
 	  "class":"Social",
@@ -7533,7 +7780,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -7563,7 +7811,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -7590,7 +7839,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -7618,7 +7868,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -7651,7 +7902,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -7681,7 +7933,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -7705,7 +7958,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
 	"class":"Social",
@@ -7736,7 +7990,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -7766,7 +8021,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -7793,7 +8049,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -7821,7 +8078,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -7854,7 +8112,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -7884,7 +8143,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -7908,7 +8168,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
 
@@ -7940,7 +8201,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -7970,7 +8232,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -7997,7 +8260,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -8025,7 +8289,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -8058,7 +8323,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -8088,7 +8354,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -8112,7 +8379,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
 	  "class":"Social",
@@ -8143,7 +8411,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
   {
     "class":"Social",
@@ -8173,7 +8442,8 @@
     "load_function":"read_hlfs_data",
     "data_type":"TimeSeriesError",
     "date_added":"29/10/2020",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"website download"
   },
 
    {
@@ -8314,7 +8584,8 @@
         "drop_na": false,
         "data_type": "TimeSeries",
         "date_added":"25/02/2021",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"customized supply via email"
       },
   {
         "class": "Economic",
@@ -8759,7 +9030,8 @@
       "group_names": "undefined_name",
       "date_added":"08/03/2021",
       "date_dropped":null,
-      "script":"salvation_army.R"
+      "script":"salvation_army.R",
+      "sourcing":"customized supply via email"
     },
      {
       "class":"Economic",
@@ -8786,7 +9058,8 @@
       ],
       "load_function":"read_from_excel",
       "date_added":"08/03/2021",
-      "date_dropped":null
+      "date_dropped":null,
+      "sourcing":"website download"
     },
       {
       "class": "Health",
@@ -8949,7 +9222,8 @@
     "data_type":"BarChart",
     "date_added":"16/04/2020",
     "date_dropped":null,
-    "script":"vaccination.R"
+    "script":"vaccination.R",
+    "sourcing":"website download"
   },
   {
     "class":"Health",
@@ -8966,7 +9240,8 @@
     "data_type":"BarChart",
     "date_added":"16/04/2020",
     "date_dropped":null,
-    "script":"vaccination.R"
+    "script":"vaccination.R",
+    "sourcing":"website download"
   },
   {
     "class":"Health",
@@ -8983,7 +9258,8 @@
     "data_type":"BarChart",
     "date_added":"16/04/2020",
     "date_dropped":null,
-    "script":"vaccination.R"
+    "script":"vaccination.R",
+    "sourcing":"website download"
   },
   {
     "class":"Health",
@@ -9000,7 +9276,8 @@
     "data_type":"BarChart",
     "date_added":"16/04/2020",
     "date_dropped":null,
-    "script":"vaccination.R"
+    "script":"vaccination.R",
+    "sourcing":"website download"
   },
   {
     "class":"Health",
@@ -9016,7 +9293,8 @@
     "data_type":"TimeSeries",
     "date_added":"16/04/2020",
     "date_dropped":null,
-    "script":"vaccination.R"
+    "script":"vaccination.R",
+    "sourcing":"website download"
   },
   {
     "class":"Health",
@@ -9033,7 +9311,8 @@
     "data_type":"BarChart",
     "date_added":"16/04/2020",
     "date_dropped":null,
-    "script":"vaccination.R"
+    "script":"vaccination.R",
+    "sourcing":"website download"
   }
 
 
