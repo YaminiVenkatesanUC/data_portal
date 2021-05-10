@@ -3319,7 +3319,7 @@
         "First home buyer",
         "Other owner occupier",
         "Investor",
-        "Business purposes"
+        "Business purpose"
         ],
         "filename": "COVID 19 - RBNZ lending data.xlsx",
         "load_function": "read_from_excel",
