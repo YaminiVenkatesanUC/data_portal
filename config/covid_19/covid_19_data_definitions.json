@@ -62,6 +62,7 @@
   "filename": "COVID-19 MBIE Student visa.csv",
   "load_function": "read_from_csv",
   "data_type": "TimeSeries",
+  "drop_na":false,
   "group_names":
     [
       "Dependant",
@@ -99,6 +100,7 @@
   "filename": "COVID-19 MBIE Work visa.csv",
   "load_function": "read_from_csv",
   "data_type": "TimeSeries",
+  "drop_na":false,
   "group_names":
     [
      "Essential skills",
@@ -2483,13 +2485,13 @@
         ],
         "group_names": [
            "Female under 64",
-          "Female 65 and 79",
+          "Female 65 to 79",
           "Female 80 and over",
           "Male under 64",
           "Male 65 to 79",
           "Male 80 and over",
-          "Total under 65",
-          "Total 65 and 79",
+          "Total under 64",
+          "Total 65 to 79",
           "Total 80 and over",
           "Total"
           ],
