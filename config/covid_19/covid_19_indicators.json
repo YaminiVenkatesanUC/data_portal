@@ -782,7 +782,7 @@
     "international": false,
     "include_date_slider": true,
     "default_lower_range": "2017-01-01",
-    "source_url": "https://www.stats.govt.nz/news/march-card-spending-rebounds-despite-covid",
+    "source_url": "https://www.stats.govt.nz/news/retail-spending-for-2021-peaks-in-april",
     "download": true,
     "frequency":"Monthly",
     "groups": [
@@ -872,7 +872,7 @@
     "default_lower_range": "2017-01-01",
     "international": false,
     "include_date_slider": true,
-    "source_url": "https://www.stats.govt.nz/news/march-card-spending-rebounds-despite-covid",
+    "source_url": "https://www.stats.govt.nz/news/retail-spending-for-2021-peaks-in-april",
     "download": true,
     "frequency":"Monthly",
     "groups": [
