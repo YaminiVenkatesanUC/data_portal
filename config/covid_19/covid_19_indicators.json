@@ -2186,7 +2186,7 @@
         "units": "Number"
       },
       {
-        "name": "Total under 64",
+        "name": "Total under 65",
         "title": "Deaths by age and sex (week ended) - Total under 64",
         "units": "Number"
       },
@@ -2202,7 +2202,7 @@
         "units": "Number"
       },
       {
-        "name": "Female under 64",
+        "name": "Female under 65",
         "title": "Deaths by age and sex (week ended) - Female under 64",
         "units": "Number"
       }
@@ -2219,7 +2219,7 @@
         "units": "Number"
       },
       {
-        "name": "Male under 64",
+        "name": "Male under 65",
         "title": "Deaths by age and sex (week ended) - Male under 64",
         "units": "Number"
       }
