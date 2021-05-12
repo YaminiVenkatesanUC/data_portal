@@ -23,6 +23,10 @@ sub_series <- c("Active Bonds", "Closed Bonds", "Lodged Bonds", "Average Weekly 
       select(`Time Frame`, Location, series) %>%
       pivot_wider(names_from = Location, values_from = series) %>%
       select(`Time Frame`, `ALL`, everything())
+
+    for (col in 2:ncol(df)) {
+      df[[col]] <- as.numeric(df[[col]])
+    }
     #write_csv(x = df, file = paste0("example_data/COVID-19 MBIE Rental ", series, ".csv"))
     file.rename(from = paste0("~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/COVID-19 MBIE Rental ", series, ".csv"),
                 to = paste0("~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/Previous/COVID-19 MBIE Rental ", series, ".csv"))
