@@ -10,7 +10,75 @@ master_path <- file.info(list.files(path, full.names = T, pattern = "master.*"))
 load_parameters <- list(
   by_selected_major_users = list(
     sheet = "Ex Vector pipe by key user gate",
-    gas_source = "Vector"
+    gas_source = "Vector",
+    categories = list(
+       Fonterra = list(
+          points = list(
+             edgecumbe_df = list(
+                id = "EGC30701",
+                meters = c("30701", "30703")
+             ),
+             kauri_df = list(
+                id = "KUR33601",
+                meters = c("33601")
+             ),
+             lichfield_df = list(
+                id = "LCF20010",
+                meters = c("20001")
+             ),
+             lichfield_2 = list(
+                id = "LCF20011",
+                meters = c("20021", "20022")
+             ),
+             morrinsville_df = list(
+                id = "MRV16301",
+                meters = c("16301")
+             ),
+             maungaturoto_df = list(
+                id = "MUT19001",
+                meters = c("19001")
+             ),
+             pahiatua_df = list(
+                id = "PHT04902",
+                meters = c("4921")
+             ),
+             te_awamutu_df = list(
+                id = "TAC31001",
+                meters = c("9931001")
+             ),
+             tirau_df = list(
+                id = "TIR33501",
+                meters = c("33501")
+             )
+         )
+       ),
+       Ballance = list(
+          points = list(
+             ballance_8201 = list(
+                id = "BAL08201",
+                meters = c("8201")
+             ),
+             ballance_9626 = list(
+                id = "BAL09626",
+                meters = c("9626"))
+       )),
+       Glenbrook = list(
+          points = list(
+             glebrook = list(
+                id = "GLB03401",
+                meters = c("3401", "3402"))
+       ),
+       Kinleith = list(
+          points = list(
+             kinleith_chh = list(
+                id = "KIN04310",
+                meters = c("4301", "4302"))
+       ),
+       Marsden = list(
+          points = list(
+             "MSD01801")
+       )
+    )
   ),
   by_largest_users = list(
     sheet = "Maui pipeline key user gates",
