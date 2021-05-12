@@ -653,7 +653,7 @@
     "source_url": "https://www.anz.co.nz/about-us/economic-markets-research/business-outlook/",
     "download": false,
     "frequency":"Fortnightly",
-    "caveats":"Note: Data for April is preliminary.",
+    "caveats":"Note: May 2021 is a preliminary read.",
     "groups": [
       {
         "name": "undefined_name",
@@ -719,7 +719,7 @@
     "source_url": "https://www.anz.co.nz/about-us/economic-markets-research/business-outlook/",
     "download": false,
     "frequency":"Fortnightly",
-    "caveats":"Note: Data for April is preliminary.",
+    "caveats":"Note: May 2021 is a preliminary read.",
     "groups": [
       {
         "name": "undefined_name",
@@ -6711,7 +6711,7 @@
         "units":"%",
         "title":"Percentage of people who rated the things they do in their life as worthwhile, by disability status",
         "x_axis_label":"Quarter",
-        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for the September quarter.<p>Those aged 18+ who rated the things they do in their life at 7 or higher, where 0 is not at all worthwhile and 10 is completely worthwhile.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
+        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for September and March quarters.<p>Those aged 18+ who rated the things they do in their life at 7 or higher, where 0 is not at all worthwhile and 10 is completely worthwhile.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
 	   }
     ]
 },
@@ -6773,7 +6773,7 @@
         "units":"%",
         "title":"Percentage of people who rated their family wellbeing highly, by disability status",
         "x_axis_label":"Quarter",
-        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for the September quarter.<p>Those aged 18+ who rated how their family was generally doing at 7 or higher, where 0 is doing extremely badly and 10 is doing extremely well.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
+        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for September and March quarters.<p>Those aged 18+ who rated how their family was generally doing at 7 or higher, where 0 is doing extremely badly and 10 is doing extremely well.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
 	   }
     ]
 },
@@ -6835,7 +6835,7 @@
         "units":"%",
         "title":"Percentage of people who reported enough money for everyday needs, by disability status",
         "x_axis_label":"Quarter",
-        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for the September quarter.<p>Those aged 18+ who reported enough money / more than enough money to meet everyday needs. Includes partner's income where applicable.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
+        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for September and March quarters.<p>Those aged 18+ who reported enough money / more than enough money to meet everyday needs. Includes partner's income where applicable.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
 	   }
     ]
 },
@@ -6897,7 +6897,7 @@
         "units":"%",
         "title":"Percentage of people who received help from a welfare organisation in the last 12 months, by disability status",
         "x_axis_label":"Quarter",
-        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for the September quarter.<p>Those aged 18+ who reported they received help in the form of food, clothes, or money from a welfare / community organisation such as a church or foodbank in the previous 12 months.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
+        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for September and March quarters.<p>Those aged 18+ who reported they received help in the form of food, clothes, or money from a welfare / community organisation such as a church or foodbank in the previous 12 months.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
 	   }
     ]
 },
@@ -6959,7 +6959,7 @@
         "units":"%",
         "title":"Percentage of people who rated their life satisfaction highly, by disability status",
         "x_axis_label":"Quarter",
-        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for the September quarter.<p>Those aged 18+ who rated satisfaction with their lives as a whole these days at 7 or higher, where 0 is completely dissatisfied and 10 is completely satisfied.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
+        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for September and March quarters.<p>Those aged 18+ who rated satisfaction with their lives as a whole these days at 7 or higher, where 0 is completely dissatisfied and 10 is completely satisfied.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
 	   }
 
 	  ]
@@ -7022,7 +7022,7 @@
         "units":"%",
         "title":"Percentage who rated their trust held for parliament highly, by disability status",
         "x_axis_label":"Quarter",
-        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for the September quarter.<p>Those aged 18+ who rated their trust held for parliament at 7 or higher, where 0 is not trusted at all and 10 is trusted completely.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
+        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for September and March quarters.<p>Those aged 18+ who rated their trust held for parliament at 7 or higher, where 0 is not trusted at all and 10 is trusted completely.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
 	   }
 	  ]
 },
@@ -7084,7 +7084,7 @@
         "units":"%",
         "title":"Percentage who rated their trust held for police highly, by disability status",
         "x_axis_label":"Quarter",
-        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for the September quarter.<p>Those aged 18+ who rated their trust held for police at 7 or higher, where 0 is not trusted at all and 10 is trusted completely.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
+        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for September and March quarters.<p>Those aged 18+ who rated their trust held for police at 7 or higher, where 0 is not trusted at all and 10 is trusted completely.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
 	   }
 	  ]
 },
@@ -7146,7 +7146,7 @@
         "units":"%",
         "title":"Percentage who rated their trust held for the media highly, by disability status",
         "x_axis_label":"Quarter",
-        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for the September quarter.<p>Those aged 18+ who rated their trust held for the media at 7 or higher, where 0 is not trusted at all and 10 is trusted completely.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
+        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for September and March quarters.<p>Those aged 18+ who rated their trust held for the media at 7 or higher, where 0 is not trusted at all and 10 is trusted completely.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
 	   }
 
 	  ]
@@ -7210,7 +7210,7 @@
         "units":"%",
         "title":"Percentage who rated their trust held for the health system highly, by disability status",
         "x_axis_label":"Quarter",
-        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for the September quarter.<p>Those aged 18+ who rated their trust held for the health system at 7 or higher, where 0 is not trusted at all and 10 is trusted completely.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
+        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for September and March quarters.<p>Those aged 18+ who rated their trust held for the health system at 7 or higher, where 0 is not trusted at all and 10 is trusted completely.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
 	   }
 	  ]
 },
@@ -7273,7 +7273,7 @@
         "units":"%",
         "title":"Percentage who rated their trust held for people in New Zealand highly, by disability status",
         "x_axis_label":"Quarter",
-        "caveats":"<p>Disability status is based on the Washington Group Short Set of questions. Disability status is not available for the September quarter.</p><p>Those aged 18+ who rated their trust held for people in New Zealand at 7 or higher, where 0 is not trusted at all and 10 is trusted completely.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
+        "caveats":"<p>Disability status is based on the Washington Group Short Set of questions. Disability status is not available for September and March quarters.</p><p>Those aged 18+ who rated their trust held for people in New Zealand at 7 or higher, where 0 is not trusted at all and 10 is trusted completely.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
 	   }
 	  ]
 },
@@ -7336,7 +7336,7 @@
         "units":"%",
         "title":"Percentage of people who had experienced discrimination in the last 12 months, by disability status",
         "x_axis_label":"Quarter",
-        "caveats":"<p>Disability status is based on the Washington Group Short Set of questions. Disability status is not available for the September quarter.</p><p>Those aged 18+ who reported they had experienced discrimination in the previous 12 months.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
+        "caveats":"<p>Disability status is based on the Washington Group Short Set of questions. Disability status is not available for September and March quarters.</p><p>Those aged 18+ who reported they had experienced discrimination in the previous 12 months.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
 	   }
 	  ]
 },
@@ -7399,7 +7399,7 @@
         "units":"%",
         "title":"Percentage of people who felt lonely at least some of the time in the past four weeks, by disability status",
         "x_axis_label":"Quarter",
-        "caveats":"<p>Disability status is based on the Washington Group Short Set of questions. Disability status is not available for the September quarter.</p><p>Those aged 18+ who reported they felt lonely some of the time, most of the time or all of the time in the past four weeks.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
+        "caveats":"<p>Disability status is based on the Washington Group Short Set of questions. Disability status is not available for September and March quarters.</p><p>Those aged 18+ who reported they felt lonely some of the time, most of the time or all of the time in the past four weeks.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
 	   }
 	  ]
 
