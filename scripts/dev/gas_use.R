@@ -6,21 +6,12 @@ library(dplyr)
 library(stringr)
 library(lubridate)
 
-#COVID-19 First Gas by_selected_major_users.xlsx
-
 directory <- "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/_TEST/"
 path <- paste0(directory, "First Gas/")
 files <- file.info(list.files(path, full.names = T, pattern = "DDR[0-9].*"))
 
-
-#master_path <- rownames(file.info(list.files(path, full.names = T, pattern = "master.*")))
-
-
-
 load_parameters <- list(
   by_selected_major_users = list(
-    #sheet = "Ex Vector pipe by key user gate",
-    #gas_source = "Vector",
     categories = list(
        Fonterra = list(
           source = "First Gas",
@@ -96,15 +87,13 @@ load_parameters <- list(
     )
   )),
   by_largest_users = list(
-    sheet = "Maui pipeline key user gates",
-    gas_source = "Maui",
     categories = list(
        Methanex_Waitara = list(
           source = "Maui",
           points = list(
              bertrand = list(
                 id = "4000564",
-                meters = c()
+                cols = c(1, 12)
              ))
        ),
        Methanex_Motunui = list(
@@ -112,11 +101,11 @@ load_parameters <- list(
           points = list(
              faull = list(
                 id = "4000653",
-                meters = c()
+                cols = c(1, 14)
              ),
              ngatimaru = list(
                 id = "4000669",
-                meters = c())
+                cols = c(1, 22))
           )
        ),
        Huntly = list(
@@ -124,7 +113,7 @@ load_parameters <- list(
           points = list(
              huntly = list(
                 id = "4002993",
-                meters = c()
+                cols = c(1, 40)
              )
           )
        ),
@@ -155,29 +144,38 @@ load_parameters <- list(
 )
 
 
+filepath_maui <- rownames(file.info(list.files(path, full.names = T, pattern = "Maui.*")))
+header <- read.xlsx(xlsxFile = filepath_maui,
+                    rows = c(7),
+                    skipEmptyCols = TRUE,
+                    skipEmptyRows = TRUE,
+                    fillMergedCells = TRUE)
+header_check <- c("Oaonui.4000000", "Frankley.Road.4000439", "Mangorei.4000485", "New.Plymouth.Power.Station.4000530", "Bertrand.Road.(Waitara.Valley).4000564",
+                  "Faull.Road.4000653", "Kowhai.Mixing.Station.4000666", "Tikorangi.#2.4000667", "Tikorangi.4000668", "Ngatimaru.Rd.(Delivery).4000669",
+                  "Ngatimaru.Rd.(Receipt).4000670", "Tikorangi.#3.(Receipt).4000702", "Tikorangi.#3.(Delivery).4000703", "Turangi.Mixing.Station.4000710",
+                  "Mokau.Compressor.Station.4001143", "Pokuru.4002308", "Pirongia.4002374", "Rotowaro.4002906", "Huntly.Power.Station.4002993",
+                  "NZX.(Delivery).THD", "NZX.(Receipt).THR", "TRS.(Delivery).TRSD", "TRS.(Receipt).TRSR", "Balancing.Gas.(Receipt).BGR")
 
+if (!identical(names(header), header_check)) stop ("Columns in Maui spreadsheet changed.")
 
 for (ind in 1:length(load_parameters)) {
-#ind <- 1
 indicator <- load_parameters[[ind]]
 OUT <- createWorkbook()
 for (cat in 1:length(indicator$categories)) {
-#for (cat in 1) {
    category <- indicator$categories[[cat]]
    master_path <- paste0(directory, "COVID-19 First Gas ", names(load_parameters)[[ind]], ".xlsx")
    master <- read_excel(master_path, sheet = names(indicator$categories)[[cat]])
    master$Energy <- round(master$Energy, 2)
 
    for (p in 1:length(category$points)) {
-   #for (p in 1) {
       point <- category$points[[p]]
 
-      if (length(point$meters) > 0) {
+      if (category$source == "First Gas") {
          df_total <- data.frame(matrix(nrow = 0, ncol = 2))
          names(df_total) <- c("Date", "Energy")
          for (m in 1:length(point$meters)) {
             meter <- point$meters[[m]]
-            filepath <- rownames(files)[str_detect(rownames(files), meter)]
+            filepath <- rownames(files)[str_detect(rownames(files), paste0("DDR", meter))]
             df <- read.csv(filepath, skip = 9, header = FALSE)
             df <- df %>% select(1, ncol(df))
             names(df) <- c("Date", "Energy")
@@ -188,17 +186,27 @@ for (cat in 1:length(indicator$categories)) {
 
             df_total <- rbind(df_total, df)
          }
-         df_total <- df_total %>%
-            group_by(Date) %>%
-            summarise(Energy = sum(Energy))
-         master <- rbind(master, df_total)
+
       } else {
-         filepath_maui <- rownames(file.info(list.files(path, full.names = T, pattern = "Maui.*")))
-         df <- read.xlsx(xlsxFile = filepath_maui, startRow = 7, fillMergedCells = TRUE)
+         df_total <- read.xlsx(xlsxFile = filepath_maui,
+                         startRow = 10,
+                         skipEmptyRows = TRUE,
+                         skipEmptyCols = TRUE,
+                         fillMergedCells = TRUE)
+         df_total <- df_total %>% select(point$cols)
+         names(df_total) <- c("Date", "Energy")
+         df_total$Date <- dmy(df_total$Date)
+         df_total$Energy <- round(as.numeric(df_total$Energy), 2)
+         df_total <- drop_na(df_total)
       }
 
+      master <- rbind(master, df_total) %>%
+         group_by(Date) %>%
+         summarise(Energy = sum(Energy))
    }
-   master <- master %>% unique()
+   master <- master %>%
+      arrange(Date) %>%
+      unique()
    addWorksheet(wb = OUT, sheetName = names(indicator$categories)[[cat]])
    writeData(OUT, sheet = names(indicator$categories)[[cat]], x = master)
 }
@@ -206,60 +214,4 @@ for (cat in 1:length(indicator$categories)) {
 file.rename(from = paste0(directory, "COVID-19 First Gas ", names(load_parameters)[[ind]], ".xlsx"),
             to = paste0(directory, "Previous/COVID-19 First Gas ", names(load_parameters)[[ind]], ".xlsx"))
 saveWorkbook(wb = OUT, file = paste0(directory, "COVID-19 First Gas ", names(load_parameters)[[ind]], ".xlsx"))
-
-
-
 }
-
-
-
-
-
- gas_use_data <- function(config, directory) {
-   data <- as.data.frame(read_excel(
-     paste0(directory, config$filename),
-     sheet = config$sheet_number,
-     skip = config$skip
-   )) %>%
-     select(-`Source: First Gas`)
-
-   if (config$gas_source == "Vector") {
-     data <- data %>%
-       select(Date = `...1`,  everything()) %>%
-       mutate(
-         Date = dmy(Date),
-         `Ballance Agri- Nutrients` = `Ballance Agri-Nutrients...2` +
-           `Ballance Agri-Nutrients...3`,
-         Fonterra = `Subtotal Fonterra...6` +
-           `Subtotal Fonterra...7` +
-           `Subtotal Fonterra...8` +
-           `Subtotal Fonterra...9` +
-           `Subtotal Fonterra...10` +
-           `Subtotal Fonterra...11` +
-           `Subtotal Fonterra...12` +
-           `Subtotal Fonterra...13` +
-           `Subtotal Fonterra...14`
-       ) %>%
-       select(
-         Date,
-         Fonterra,
-         `Ballance Agri- Nutrients`,
-         `Glenbrook steel mill`,
-         `Kinleith pulp and paper mill`,
-         `Marsden Point oil refinery`
-       )
-   }
-
-   if (config$gas_source == "Maui") {
-     data <- data %>%
-       mutate(Date = dmy(`...1`), Methanex = `...4` + `Methanex Motunui`) %>%
-       select(Date, everything(), -`...1`, -`...4`, -`Methanex Motunui`)
-   }
-
-   colnames(data) <- c("indicatoreter", paste0("col_", 2:ncol(data)))
-   return(data_frame_to_data_object_helper(
-     directory,
-     config,
-     data
-   ))
- }

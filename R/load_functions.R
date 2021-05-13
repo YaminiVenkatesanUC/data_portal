@@ -292,55 +292,6 @@ read_from_excel_error <- function(config, directory) {
   ))
 }
 
-gas_use_data <- function(config, directory) {
-  data <- as.data.frame(read_excel(
-    paste0(directory, config$filename),
-    sheet = config$sheet_number,
-    skip = config$skip
-  )) %>%
-    select(-`Source: First Gas`)
-
- if (config$gas_source == "Vector") {
-    data <- data %>%
-      select(Date = `...1`,  everything()) %>%
-      mutate(
-        Date = dmy(Date),
-        `Ballance Agri- Nutrients` = `Ballance Agri-Nutrients...2` +
-          `Ballance Agri-Nutrients...3`,
-        Fonterra = `Subtotal Fonterra...6` +
-          `Subtotal Fonterra...7` +
-          `Subtotal Fonterra...8` +
-          `Subtotal Fonterra...9` +
-          `Subtotal Fonterra...10` +
-          `Subtotal Fonterra...11` +
-          `Subtotal Fonterra...12` +
-          `Subtotal Fonterra...13` +
-          `Subtotal Fonterra...14`
-      ) %>%
-      select(
-        Date,
-        Fonterra,
-        `Ballance Agri- Nutrients`,
-        `Glenbrook steel mill`,
-        `Kinleith pulp and paper mill`,
-        `Marsden Point oil refinery`
-      )
-  }
-
-  if (config$gas_source == "Maui") {
-    data <- data %>%
-      mutate(Date = dmy(`...1`), Methanex = `...4` + `Methanex Motunui`) %>%
-      select(Date, everything(), -`...1`, -`...4`, -`Methanex Motunui`)
-  }
-
-  colnames(data) <- c("Parameter", paste0("col_", 2:ncol(data)))
-  return(data_frame_to_data_object_helper(
-    directory,
-    config,
-    data
-  ))
-}
-
 read_managed_isolotion_data <- function(config, directory) {
   data_object <- read_from_excel(config, directory)
 
@@ -424,7 +375,6 @@ load_functions <- list(
   read_employment_paid_jobs_data = read_employment_paid_jobs_data,
   read_from_csv_error = read_from_csv_error,
   read_from_excel_error = read_from_excel_error,
-  gas_use_data = gas_use_data,
   read_managed_isolotion_data = read_managed_isolotion_data,
   read_hpa_drinking_data = read_hpa_drinking_data,
   read_vaccination = read_vaccination

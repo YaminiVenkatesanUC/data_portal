@@ -148,13 +148,13 @@ files <- list.files(
         mutate(Date = as.Date(ymd(Date))) %>%
         select(-Country)
 
-      addWorksheet(OUT, country)
-      writeData(OUT, sheet = country, x = df)
+      addWorksheet(OUT, str_trunc(country, 30, "right", ellipsis = ""))
+      writeData(OUT, sheet = str_trunc(country, 30, "right", ellipsis = ""), x = df)
 
       # #append in this function is no longer behaving...
-      # write.xlsx(x = df, file = paste0(file_path, "COVID 19 - Global cases.xlsx"), sheetName = country,
+      # write.xlsx(x = df, file = paste0(file_path, "COVID 19 - Global cases.xlsx"), sheetName = str_trunc(country, 31),
       #            append = TRUE,
       #            row.names = FALSE)
     }
-    saveWorkbook(OUT, paste0(file_path, "COVID 19 - Global cases.xlsx"))
+   saveWorkbook(OUT, paste0(file_path, "COVID 19 - Global cases.xlsx"))
 
