@@ -2580,7 +2580,8 @@
         "data_type": "BarChart",
         "group_names": ["Cases by age", "Cases by age", "Cases by age"],
         "date_added":"20/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"manual entry from website"
     },
     {
         "class": "Health",
@@ -2602,7 +2603,8 @@
         "Cases by ethnicity"
         ],
         "date_added":"20/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"manual entry from website"
     },
     {
         "class": "Economic",
@@ -4936,7 +4938,8 @@
         "drop_na": false,
         "data_type": "TimeSeries",
         "date_added":"20/04/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"manual entry from website"
       },
     {
         "class": "Income support",
@@ -5221,7 +5224,8 @@
         "data_type": "TimeSeries",
         "group_names": "undefined_name",
         "date_added":"10/06/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"website download"
     },
 {
         "class": "Economic",
@@ -5490,7 +5494,8 @@
         "drop_na": false,
         "data_type": "BarChart",
         "date_added":"23/06/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"manual entry from website"
       },
 {
         "class": "Health",
@@ -5507,7 +5512,8 @@
         "drop_na": false,
         "data_type": "TimeSeries",
         "date_added":"23/06/2020",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"manual entry from website"
       },
 {
         "class": "Economic",
@@ -7128,7 +7134,8 @@
       "Number of jobs supported"
       ],
       "date_added":"24/08/2020",
-  	"date_dropped":null
+  	"date_dropped":null,
+  	"sourcing":"website download"
     },
 {
     "class": "Income support",
@@ -10234,7 +10241,8 @@
     "load_function":"read_from_csv",
     "data_type":"TimeSeries",
     "date_added":"26/02/2021",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"customized supply via email"
   },
   {
 
@@ -10270,7 +10278,8 @@
     "load_function":"read_from_csv",
     "data_type":"TimeSeries",
     "date_added":"26/02/2021",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"customized supply via email"
   },
   {
 
@@ -10292,7 +10301,8 @@
     "load_function":"read_from_csv",
     "data_type":"TimeSeries",
     "date_added":"26/02/2021",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"customized supply via email"
   },
 
     {
@@ -10319,7 +10329,8 @@
     "load_function":"read_from_csv",
     "data_type":"TimeSeries",
     "date_added":"26/02/2021",
-    "date_dropped":null
+    "date_dropped":null,
+    "sourcing":"customized supply via email"
   },
   {
         "class": "Economic",
@@ -10353,7 +10364,7 @@
         "data_type": "TimeSeries",
         "date_added":"25/02/2021",
         "date_dropped":null,
-        "sourcing":"customized supply via email"
+        "sourcing":"customized supply to folder"
       },
   {
         "class": "Economic",
@@ -10386,7 +10397,8 @@
         "drop_na": false,
         "data_type": "TimeSeries",
         "date_added":"25/02/2021",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"customized supply to folder"
       },
   {
         "class": "Economic",
@@ -10419,7 +10431,8 @@
         "drop_na": false,
         "data_type": "TimeSeries",
         "date_added":"25/02/2021",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"customized supply to folder"
       },
   {
         "class": "Economic",
@@ -10452,7 +10465,8 @@
         "drop_na": false,
         "data_type": "TimeSeries",
         "date_added":"25/02/2021",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"customized supply to folder"
       },
   {
         "class": "Economic",
@@ -10485,7 +10499,8 @@
         "drop_na": false,
         "data_type": "TimeSeries",
         "date_added":"25/02/2021",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"customized supply to folder"
       },
   {
         "class": "Economic",
@@ -10518,7 +10533,8 @@
         "drop_na": false,
         "data_type": "TimeSeries",
         "date_added":"25/02/2021",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"customized supply to folder"
       },
   {
         "class": "Economic",
@@ -10551,7 +10567,8 @@
         "drop_na": false,
         "data_type": "TimeSeries",
         "date_added":"25/02/2021",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"customized supply to folder"
       },
   {
         "class": "Economic",
@@ -10584,7 +10601,8 @@
         "drop_na": false,
         "data_type": "TimeSeries",
         "date_added":"25/02/2021",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"customized supply to folder"
       },
   {
         "class": "Economic",
@@ -10617,7 +10635,8 @@
         "drop_na": false,
         "data_type": "TimeSeries",
         "date_added":"25/02/2021",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"customized supply to folder"
       },
   {
         "class": "Economic",
@@ -10650,7 +10669,8 @@
         "drop_na": false,
         "data_type": "TimeSeries",
         "date_added":"25/02/2021",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"customized supply to folder"
       },
   {
         "class": "Economic",
@@ -10683,7 +10703,8 @@
         "drop_na": false,
         "data_type": "TimeSeries",
         "date_added":"25/02/2021",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"customized supply to folder"
       },
   {
         "class": "Economic",
@@ -10716,7 +10737,8 @@
         "drop_na": false,
         "data_type": "TimeSeries",
         "date_added":"25/02/2021",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"customized supply to folder"
       },
   {
         "class": "Economic",
@@ -10749,7 +10771,8 @@
         "drop_na": false,
         "data_type": "TimeSeries",
         "date_added":"25/02/2021",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"customized supply to folder"
       },
   {
         "class": "Economic",
@@ -10782,7 +10805,8 @@
         "drop_na": false,
         "data_type": "TimeSeries",
         "date_added":"25/02/2021",
-        "date_dropped":null
+        "date_dropped":null,
+        "sourcing":"customized supply to folder"
       },
       {
       "class":"Social",
@@ -10845,7 +10869,8 @@
       "load_function": "read_from_excel",
       "data_type": "BarChart",
       "date_added":"19/04/2021",
-      "date_dropped":null
+      "date_dropped":null,
+      "sourcing":"customized supply via email"
      },
      {
       "class": "Health",
@@ -10863,7 +10888,8 @@
       "load_function": "read_from_excel",
       "data_type": "BarChart",
       "date_added":"19/04/2021",
-      "date_dropped":null
+      "date_dropped":null,
+      "sourcing":"customized supply via email"
      },
      {
       "class": "Health",
@@ -10881,7 +10907,8 @@
       "load_function": "read_from_excel",
       "data_type": "BarChart",
       "date_added":"19/04/2021",
-      "date_dropped":null
+      "date_dropped":null,
+      "sourcing":"customized supply via email"
      },
      {
       "class": "Health",
@@ -10899,7 +10926,8 @@
       "load_function": "read_from_excel",
       "data_type": "BarChart",
       "date_added":"19/04/2021",
-      "date_dropped":null
+      "date_dropped":null,
+      "sourcing":"customized supply via email"
      },
      {
       "class": "Health",
@@ -10917,7 +10945,8 @@
       "load_function": "read_from_excel",
       "data_type": "BarChart",
       "date_added":"19/04/2021",
-      "date_dropped":null
+      "date_dropped":null,
+      "sourcing":"customized supply via email"
      },
      {
       "class": "Health",
@@ -10935,7 +10964,8 @@
       "load_function": "read_from_excel",
       "data_type": "BarChart",
       "date_added":"19/04/2021",
-      "date_dropped":null
+      "date_dropped":null,
+      "sourcing":"customized supply via email"
      },
       {
       "class": "Health",
@@ -10954,7 +10984,8 @@
       "load_function": "read_from_excel",
       "data_type": "BarChart",
       "date_added":"19/04/2021",
-      "date_dropped":null
+      "date_dropped":null,
+      "sourcing":"customized supply via email"
      },
       {
       "class": "Health",
@@ -10973,7 +11004,8 @@
       "load_function": "read_hpa_drinking_data",
       "data_type": "BarChart",
       "date_added":"19/04/2021",
-      "date_dropped":null
+      "date_dropped":null,
+      "sourcing":"customized supply via email"
      },
      {
     "class":"Health",
