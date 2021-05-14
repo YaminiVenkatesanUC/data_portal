@@ -46,51 +46,48 @@ load_parameters <- list(
   )
 )
 
-for (ind in 1:length(names(load_parameters))) {
-  parameter <- load_parameters[[ind]]
-  data <- update %>%
-    filter(
-      Country %in% parameter$country &
-        Commodity %in% parameter$commodity &
-        Measure %in% parameter$measure &
-        Direction %in% parameter$direction &
-        Transport_Mode %in% parameter$transport_mode
-    )
-  data$Date <- dmy(data$Date)
-  data <- data %>% arrange(Date)
-  data <- data %>%
-    mutate(
-      Parameter = format(data$Date, "%d-%b")
-    ) %>%
-    select("Parameter", "Year", parameter$group_col, "Cumulative")
-  View(data)
+for (ind in 1:length(names(load_parameters))) {parameter <- load_parameters[[ind]]
+data <- update %>%
+  filter(
+    Country %in% parameter$country &
+      Commodity %in% parameter$commodity &
+      Measure %in% parameter$measure &
+      Direction %in% parameter$direction &
+      Transport_Mode %in% parameter$transport_mode
+  )
+data$Date <- dmy(data$Date)
+data <- data %>% arrange(Date)
+data <- data %>%
+  mutate(
+    Parameter = format(data$Date, "%d-%b")
+  ) %>%
+  select("Parameter", "Year", parameter$group_col, "Cumulative")
 
-  file.rename(from = paste0(path, "/COVID 19 - Trade Data - ", names(load_parameters)[[ind]], ".xlsx"),
-              to = paste0(path, "/Previous/COVID 19 - Trade Data - ", names(load_parameters)[[ind]], ".xlsx"))
+file.rename(from = paste0(path, "/COVID 19 - Trade Data - ", names(load_parameters)[[ind]], ".xlsx"),
+            to = paste0(path, "/Previous/COVID 19 - Trade Data - ", names(load_parameters)[[ind]], ".xlsx"))
 
-  if (length(setdiff(unique(data[[3]]), parameter[[tolower(parameter$group_col)]])) > 0)
-    stop ("New categories added: ", setdiff(unique(data[[3]]), parameter[[tolower(group_col)]]))
-  OUT <- createWorkbook()
-  for (group in unique(data[[3]])) {
-    data_group <- data %>% filter(data[[3]] == group) %>%
+if (length(setdiff(unique(data[[3]]), parameter[[tolower(parameter$group_col)]])) > 0)
+  stop ("New categories added: ", setdiff(unique(data[[3]]), parameter[[tolower(group_col)]]))
+OUT <- createWorkbook()
+for (group in unique(data[[3]])) {
+  data_group <- data %>% filter(data[[3]] == group) %>%
     select(-3)
 
-    data_group <- data_group %>%
-      tibble::add_row(Parameter = "29-Feb", Year = 2015, Cumulative = NA, .before = 60)
+  data_group <- data_group %>%
+    tibble::add_row(Parameter = "29-Feb", Year = 2015, Cumulative = NA, .before = 60)
 
-    output <- data_group %>%
-      pivot_wider(names_from = Year, values_from = c("Cumulative")) %>%
-      as.data.frame()
+  output <- data_group %>%
+    pivot_wider(names_from = Year, values_from = c("Cumulative")) %>%
+    as.data.frame()
 
-    addWorksheet(OUT, group)
-    writeData(OUT, sheet = group, x = output)
+  addWorksheet(OUT, group)
+  writeData(OUT, sheet = group, x = output)
 
-    # #append in this funciton is no longer behaving properly....
-    # write.xlsx(x = output, paste0(path, "/COVID 19 - Trade Data - ", names(load_parameters)[[ind]], ".xlsx"),
-    #            sheetName = group,
-    #            append = TRUE,
-    #            row.names = FALSE)
-  }
-  saveWorkbook(OUT, paste0(path, "/COVID 19 - Trade Data - ", names(load_parameters)[[ind]], ".xlsx")
-
+  # #append in this funciton is no longer behaving properly....
+  # write.xlsx(x = output, paste0(path, "/COVID 19 - Trade Data - ", names(load_parameters)[[ind]], ".xlsx"),
+  #            sheetName = group,
+  #            append = TRUE,
+  #            row.names = FALSE)
 }
+saveWorkbook(OUT, paste0(path, "/COVID 19 - Trade Data - ", names(load_parameters)[[ind]], ".xlsx"))}
+

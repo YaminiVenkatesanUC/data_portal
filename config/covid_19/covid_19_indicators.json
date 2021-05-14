@@ -435,11 +435,7 @@
       },
       {
         "name": "Service industries (actual)",
-<<<<<<< HEAD
         "title": "Monthly employment indicators - total cash earnings (actual)",
-=======
-        "title": "Monthly employment indicators - total earnings (actual)",
->>>>>>> migration
         "units": "$"
       }
     ]

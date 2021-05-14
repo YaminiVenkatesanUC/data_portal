@@ -6,7 +6,7 @@ library(dplyr)
 library(stringr)
 library(lubridate)
 
-directory <- "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/_TEST/"
+directory <- "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/"
 path <- paste0(directory, "First Gas/")
 files <- file.info(list.files(path, full.names = T, pattern = "DDR[0-9].*"))
 

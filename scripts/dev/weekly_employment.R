@@ -39,6 +39,6 @@ if (!is.null(filter_median_earnings)) {
 file.rename(from = paste0(directory, "/COVID - 19 Weekly_paid_jobs_34_days.csv"), to = paste0(directory, "/Previous/COVID - 19 Weekly_paid_jobs_34_days.csv"))
 file.rename(from = paste0(directory, "/COVID - 19 Weekly_median_earnings_34_days.csv"), to = paste0(directory, "/Previous/COVID - 19 Weekly_median_earnings_34_days.csv"))
 
-write_csv(paid_jobs,file = paste0(config$data_directory,"COVID - 19 Weekly_paid_jobs_34_days.csv"))
-write_csv(median_earnings,file = paste0(config$data_directory,"COVID - 19 Weekly_median_earnings_34_days.csv"))
+write_csv(paid_jobs,file = paste0(path,"/COVID - 19 Weekly_paid_jobs_34_days.csv"))
+write_csv(median_earnings,file = paste0(path,"/COVID - 19 Weekly_median_earnings_34_days.csv"))
 

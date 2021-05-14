@@ -22,7 +22,6 @@ sub_series <- c("Active Bonds", "Closed Bonds", "Lodged Bonds", "Average Weekly 
   data <- arrange(.data = data, `Time Frame`)
 
   for (series in sub_series) {
-    print(series)
     df <- data %>%
       filter(`Time Frame` > "2015-01-01") %>%
       select(`Time Frame`, Location, series) %>%

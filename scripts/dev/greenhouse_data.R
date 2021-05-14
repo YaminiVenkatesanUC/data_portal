@@ -19,9 +19,10 @@ data <- data %>%
 
 data$date <- as.Date(data$date)
 
-str(data)
-
 data <- data %>% pivot_wider(names_from = Series, values_from = data_value)
+
+file.rename(from = "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/COVID-19 Greenhouse Emissions.csv",
+            to = "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/Previous/COVID-19 Greenhouse Emissions.csv")
 
 write_csv(x = data, file = "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/COVID-19 Greenhouse Emissions.csv")
 

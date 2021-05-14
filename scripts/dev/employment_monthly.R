@@ -7,7 +7,7 @@ library(dplyr)
 load_parameters <- list(
   Monthly_earnings = list(
     Group = "High level industry by variable",
-    Series_title_1 = "Total earnings",
+    Series_title_1 = "Earnings - cash",
     Series_title_2 = c("Primary industries", "Goods-producing industries", "Service industries", "All industries"),
     Series_title_3 = "Actual",
     Series_title_4 = ""
@@ -82,6 +82,7 @@ for (ind in 1:length(names(load_parameters))) {
 
 for (ind in 1:length(load_parameters)) {
   param <- load_parameters[[ind]]
+  print(names(load_parameters)[[ind]])
 
   df <- data %>%
     filter(Group == param$Group) %>%
@@ -111,8 +112,8 @@ for (ind in 1:length(load_parameters)) {
         pivot_wider(names_from = Series_title_3, values_from = Value) %>%
         as.data.frame()
 
-      addWorksheet(OUT, group)
-      writeData(OUT, sheet = group, x = output)
+      addWorksheet(OUT, str_trunc(group, 30, "right", ""))
+      writeData(OUT, sheet = str_trunc(group, 30, "right", ""), x = output)
       # #append in this function is no longer behaving properly...
       # write.xlsx(x = output, paste0(directory, "COVID-19 ", names(load_parameters)[ind], ".xlsx"),
       #            sheetName = group,
@@ -129,14 +130,15 @@ for (ind in 1:length(load_parameters)) {
         pivot_wider(names_from = Series_title_2, values_from = Value) %>%
         as.data.frame()
 
-      addWorksheet(OUT, group)
-      writeData(OUT, sheet = group, x = output)
+      addWorksheet(OUT, str_trunc(group, 30, "right", ""))
+      writeData(OUT, sheet = str_trunc(group, 30, "right", ""), x = output)
       # #append in this function is no longer behaving properly...
       # write.xlsx(x = output, paste0(directory, "COVID-19 ", names(load_parameters)[ind], ".xlsx"),
       #            sheetName = group,
       #            append = TRUE,
       #            row.names = FALSE)
     }
-    saveWorkbook(OUT, paste0(directory, "COVID-19 ", names(load_parameters)[ind], ".xlsx"))
+
   }
+  saveWorkbook(OUT, paste0(directory, "COVID-19 ", names(load_parameters)[ind], ".xlsx"))
 }
