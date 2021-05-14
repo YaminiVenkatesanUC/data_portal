@@ -1,8 +1,14 @@
+# Amount of wage subsidy refunds received +++ Jobseeker support +++ Number of applications +++ Number of recipients of CIRP
+# Number of wage subsidy refunds received +++ Recentage of population +++ Accommodation supplement +++ All special needs grants
+# Special needs grants for food (weekly) +++ Temporary additional support and special benefit +++ Jobseeker support by region - weekly +++ Special needs grants for food by region
+
 library(readxl)
 library(writexl)
 library(dplyr)
 library(tidyr)
 library(stringr)
+
+# this script needs tidy up!!! the structure of raw files changes often
 
 raw_prev <- "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/MSD/weekly/data-file-income-support-and-wage-subsidy-weekly-update-11-december-2020.xlsx"
 raw_update <- "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/MSD/weekly/data-file-income-support-and-wage-subsidy-weekly-update-5-february-2021.xlsx"
@@ -51,21 +57,21 @@ numAppls <- read_msd(raw_prev = raw_prev, raw_update = raw_update, sheet = 4,
 numAppls_series <- c("Applications received", "Applications approved", "Applications closed", "Applications declined")
 numAppls_rows <- c(1:4)
 
-#STOPPED ---- NUMBER_OF_CIRP_RECIPIENTS-------------------------
-numCIRP_1<- read_msd(raw_prev = raw_prev, raw_update = raw_update, sheet = 2,
-                     range_start = c(60, 4), range_end = c(64, NA), col_types = "numeric", col_names = TRUE)
-
-numCIRP_2<- read_msd(raw_prev = raw_prev, raw_update = raw_update, sheet = 5,
-                     range_start = c(76, 4), range_end = c(78, NA), col_names = TRUE, col_types = "numeric")
-names(numCIRP_1) <- names(numCIRP_2)
-numCIRP <- rbind(numCIRP_1, numCIRP_2)
-numCIRP_series <- c("Total number of recipients of CIRP",
-                    "Full-time recipients of CIRP",
-                    "Part-time recipients of CIRP",
-                    "CIRP recipients transferred from Jobseeker",
-                    "CIRP grants",
-                    "Total transfers from Jobseeker Support")
-numCIRP_rows <- c(1:6)
+# #STOPPED ---- NUMBER_OF_CIRP_RECIPIENTS-------------------------
+# numCIRP_1<- read_msd(raw_prev = raw_prev, raw_update = raw_update, sheet = 2,
+#                      range_start = c(60, 4), range_end = c(64, NA), col_types = "numeric", col_names = TRUE)
+#
+# numCIRP_2<- read_msd(raw_prev = raw_prev, raw_update = raw_update, sheet = 5,
+#                      range_start = c(76, 4), range_end = c(78, NA), col_names = TRUE, col_types = "numeric")
+# names(numCIRP_1) <- names(numCIRP_2)
+# numCIRP <- rbind(numCIRP_1, numCIRP_2)
+# numCIRP_series <- c("Total number of recipients of CIRP",
+#                     "Full-time recipients of CIRP",
+#                     "Part-time recipients of CIRP",
+#                     "CIRP recipients transferred from Jobseeker",
+#                     "CIRP grants",
+#                     "Total transfers from Jobseeker Support")
+# numCIRP_rows <- c(1:6)
 
 #NUMBER_OF_WAGE_SUBSIDY_REFUNDS+++AMOUNT--------------------
 wageSubsRefunds <- read_msd(raw_prev = raw_prev, raw_update = raw_update, sheet = 4,
@@ -149,8 +155,8 @@ write_msd(df = jobseeker_percent, series = percentPop_series, rows = percentPop_
           filename_to_write = "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/MSD/weekly/output/COVID-19 MSD Percentage of Population.xlsx")
 write_msd(df = numAppls, series = numAppls_series, rows = numAppls_rows,
           filename_to_write = "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/MSD/weekly/output/COVID-19 MSD Number of Applications.xlsx")
-write_msd(df = numCIRP, series = numCIRP_series, rows = numCIRP_rows,
-          filename_to_write = "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/MSD/weekly/output/COVID-19 MSD Number of CIRP Recipients.xlsx")
+# write_msd(df = numCIRP, series = numCIRP_series, rows = numCIRP_rows,
+#           filename_to_write = "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/MSD/weekly/output/COVID-19 MSD Number of CIRP Recipients.xlsx")
 write_msd(df = wageSubsRefunds, series = num_wageSubsRefunds_series, rows = num_wageSubsRefunds_rows,
           filename_to_write = "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/MSD/weekly/output/COVID-19 MSD Number of Wage Subsidy Refunds.xlsx")
 write_msd(df = wageSubsRefunds, series = am_wageSubsRefunds_series, rows = am_wageSubsRefunds_rows,

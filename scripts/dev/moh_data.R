@@ -1,12 +1,14 @@
-library(tidyverse)
-library(xlsx)
+# Health status +++ Sleep quantity +++ Life satisfaction - MOH +++ Loneliness - past 7 days
+# Overall wellbeing +++ Calmness +++ Nervousness +++ Worrry about family health
+# Depression / anxiety +++ Stress about leaving home
 
-# read the data
+library(tidyverse)
+library(openxlsx)
+
 
 directory <- "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/"
 
-moh_data <- # read.xlsx("example_data/Results to week 18.xlsx", sheetIndex = 1, stringsAsFactors = F)
-            read.xlsx("~/Network-Shares/J-Drive-WLG-Shared/Indicators_aotearoa/Covid-19/Portal Data Supply/MoH/Results to week 23.xlsx", sheetIndex = 1, stringsAsFactors = F)
+moh_data <- read.xlsx("~/Network-Shares/J-Drive-WLG-Shared/Indicators_aotearoa/Covid-19/Portal Data Supply/MoH/Results to week 23.xlsx", sheetIndex = 1, stringsAsFactors = F)
 
 # reformat date
 # reformat as percentage
