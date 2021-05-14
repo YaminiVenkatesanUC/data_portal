@@ -435,7 +435,11 @@
       },
       {
         "name": "Service industries (actual)",
+<<<<<<< HEAD
         "title": "Monthly employment indicators - total cash earnings (actual)",
+=======
+        "title": "Monthly employment indicators - total earnings (actual)",
+>>>>>>> migration
         "units": "$"
       }
     ]
@@ -454,44 +458,24 @@
     "frequency":"Monthly",
     "groups": [
         {
-            "name": "All industries (actual)",
+            "name": "All industries",
             "units": "Number",
-            "title": "Monthly employment indicator - filled jobs (actual)"
+            "title": "Monthly employment indicator - filled jobs"
         },
         {
-            "name": "Primary industries (actual)",
+            "name": "Primary industries",
             "units": "Number",
-            "title": "Monthly employment indicator - filled jobs (actual)"
+            "title": "Monthly employment indicator - filled jobs"
         },
         {
-            "name": "Goods-producing industries (actual)",
+            "name": "Goods-producing industries",
             "units": "Number",
-            "title": "Monthly employment indicator - filled jobs (actual)"
+            "title": "Monthly employment indicator - filled jobs"
         },
         {
-            "name": "Service industries (actual)",
+            "name": "Service industries",
             "units": "Number",
-            "title": "Monthly employment indicator - filled jobs (actual)"
-        },
-        {
-            "name": "All industries (seasonally adjusted)",
-            "units": "Number",
-            "title": "Monthly employment indicator - filled jobs (seasonally adjusted)"
-        },
-        {
-            "name": "Primary industries (seasonally adjusted)",
-            "units": "Number",
-            "title": "Monthly employment indicator - filled jobs (seasonally adjusted)"
-        },
-        {
-            "name": "Goods-producing industries (seasonally adjusted)",
-            "units": "Number",
-            "title": "Monthly employment indicator - filled jobs (seasonally adjusted)"
-        },
-        {
-            "name": "Service industries (seasonally adjusted)",
-            "units": "Number",
-            "title": "Monthly employment indicator - filled jobs (seasonally adjusted)"
+            "title": "Monthly employment indicator - filled jobs"
         }
     ]
   },
@@ -6696,8 +6680,7 @@
         "name":"By region",
         "units":"%",
         "title":"Percentage of people who rated the things they do in their life as worthwhile, by regional council area, quarterly",
-        "x_axis_label":"Regions",
-        "plot_function":"get_unstacked_vertical_bar_with_errors"
+        "x_axis_label":"Regions"
       },
       {
 	       "name":"By parent status",
