@@ -1,3 +1,7 @@
+# Broadband usage by region
+
+library(dplyr)
+
 directory <- "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/"
 path <- paste0(directory, "chorus regional/")
 master <- read_excel(paste0(path, "COVID 19 - Chorus regional broadband master.xlsx"))

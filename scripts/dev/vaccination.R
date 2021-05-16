@@ -6,7 +6,7 @@ library(stringr)
 
 directory <- "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/"
 path <- paste0(directory, "MoH/Vaccination")
-files <- file.info(list.files(path, full.names = T))
+files <- file.info(list.files(path, full.names = T, pattern = ".*\\.xlsx"))
 
 filename <- rownames(files)[which.max(files$ctime)]
 date <- str_extract(string = filename, pattern = "\\d\\d_\\d\\d_\\d\\d\\d\\d") %>%

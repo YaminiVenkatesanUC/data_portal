@@ -1,7 +1,11 @@
-directory_load <- "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/"
-directory_raw <- "~/Network-Shares/J-Drive-WLG-Shared/Indicators_aotearoa/Covid-19/Portal Data Supply/Salvation Army"
+# Food parcel distribution (Salvation Army)
 
-files <- file.info(list.files(directory_raw, full.names = T))
+library(dplyr)
+
+directory <- "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/"
+raw <- "~/Network-Shares/J-Drive-WLG-Shared/Indicators_aotearoa/Covid-19/Portal Data Supply/Salvation Army"
+
+files <- file.info(list.files(raw, full.names = T))
 update <- read_excel(path = rownames(files)[which.max(files$mtime)], col_names = TRUE, skip = 2) %>%
   filter(update[[1]] == "Total Food Parcels") %>%
   select(-1) %>%
@@ -10,5 +14,5 @@ update <- read_excel(path = rownames(files)[which.max(files$mtime)], col_names =
 
 update$`Week Ending` <- as.Date(as.numeric(update$`Week Ending`), origin = "1899-12-30")
 
-file.rename(from = paste0(directory_load, "/COVID 19 - Food parcel distribution.xlsx"), to = paste0(directory_load, "/Previous/COVID 19 - Food parcel distribution.xlsx"))
-writexl::write_xlsx(x = update, path = paste0(directory_load, "COVID 19 - Food parcel distribution.xlsx"))
+file.rename(from = paste0(directory, "/COVID 19 - Food parcel distribution.xlsx"), to = paste0(directory, "/Previous/COVID 19 - Food parcel distribution.xlsx"))
+writexl::write_xlsx(x = update, path = paste0(directory, "COVID 19 - Food parcel distribution.xlsx"))

@@ -1,3 +1,7 @@
+# Weekly deaths: By region, By age and sex, By age
+
+library(dplyr)
+
 directory <- "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/"
 path <- paste0(directory, "Weekly deaths data DIA")
 files <- file.info(list.files(path, full.names = T))

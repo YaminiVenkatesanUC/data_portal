@@ -454,44 +454,24 @@
     "frequency":"Monthly",
     "groups": [
         {
-            "name": "All industries (actual)",
+            "name": "All industries",
             "units": "Number",
-            "title": "Monthly employment indicator - filled jobs (actual)"
+            "title": "Monthly employment indicator - filled jobs"
         },
         {
-            "name": "Primary industries (actual)",
+            "name": "Primary industries",
             "units": "Number",
-            "title": "Monthly employment indicator - filled jobs (actual)"
+            "title": "Monthly employment indicator - filled jobs"
         },
         {
-            "name": "Goods-producing industries (actual)",
+            "name": "Goods-producing industries",
             "units": "Number",
-            "title": "Monthly employment indicator - filled jobs (actual)"
+            "title": "Monthly employment indicator - filled jobs"
         },
         {
-            "name": "Service industries (actual)",
+            "name": "Service industries",
             "units": "Number",
-            "title": "Monthly employment indicator - filled jobs (actual)"
-        },
-        {
-            "name": "All industries (seasonally adjusted)",
-            "units": "Number",
-            "title": "Monthly employment indicator - filled jobs (seasonally adjusted)"
-        },
-        {
-            "name": "Primary industries (seasonally adjusted)",
-            "units": "Number",
-            "title": "Monthly employment indicator - filled jobs (seasonally adjusted)"
-        },
-        {
-            "name": "Goods-producing industries (seasonally adjusted)",
-            "units": "Number",
-            "title": "Monthly employment indicator - filled jobs (seasonally adjusted)"
-        },
-        {
-            "name": "Service industries (seasonally adjusted)",
-            "units": "Number",
-            "title": "Monthly employment indicator - filled jobs (seasonally adjusted)"
+            "title": "Monthly employment indicator - filled jobs"
         }
     ]
   },
@@ -655,7 +635,7 @@
     "source_url": "https://www.anz.co.nz/about-us/economic-markets-research/business-outlook/",
     "download": false,
     "frequency":"Fortnightly",
-    "caveats":"Note: Data for April is preliminary.",
+    "caveats":"Note: May 2021 is a preliminary read.",
     "groups": [
       {
         "name": "undefined_name",
@@ -721,7 +701,7 @@
     "source_url": "https://www.anz.co.nz/about-us/economic-markets-research/business-outlook/",
     "download": false,
     "frequency":"Fortnightly",
-    "caveats":"Note: Data for April is preliminary.",
+    "caveats":"Note: May 2021 is a preliminary read.",
     "groups": [
       {
         "name": "undefined_name",
@@ -1950,7 +1930,7 @@
     "download": true,
     "frequency":"Weekly",
     "description": "For metadata and details on methodology used to produce these statistics see <a href=\"http://datainfoplus.stats.govt.nz/Item/nz.govt.stats/6ed114da-3571-40d4-a89f-932068a4c753?_ga=2.27617916.1122878806.1587330040-1991109144.1583875067#/nz.govt.stats/6c3485b0-4330-4bd7-b10f-7e9f4580797c/7\" target=\"_blank\">DataInfo+</a>.",
-    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-at-28-april-2021-provisional",
+    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-at-5-may-2021-provisional",
     "groups": [
         {
             "name": "All",
@@ -2005,7 +1985,7 @@
     "international": false,
     "download": true,
     "frequency":"Weekly",
-    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-at-28-april-2021-provisional",
+    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-at-5-may-2021-provisional",
     "description": "For metadata and details on methodology used to produce these statistics see <a href=\"http://datainfoplus.stats.govt.nz/Item/nz.govt.stats/6ed114da-3571-40d4-a89f-932068a4c753?_ga=2.27617916.1122878806.1587330040-1991109144.1583875067#/nz.govt.stats/6c3485b0-4330-4bd7-b10f-7e9f4580797c/7\" target=\"_blank\">DataInfo+</a>.",
     "groups": [
         {
@@ -2043,7 +2023,7 @@
     "international": false,
     "download": true,
     "frequency":"Weekly",
-    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-at-28-april-2021-provisional",
+    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-at-5-may-2021-provisional",
     "description": "For metadata and details on methodology used to produce these statistics see <a href=\"http://datainfoplus.stats.govt.nz/Item/nz.govt.stats/6ed114da-3571-40d4-a89f-932068a4c753?_ga=2.27617916.1122878806.1587330040-1991109144.1583875067#/nz.govt.stats/6c3485b0-4330-4bd7-b10f-7e9f4580797c/7\" target=\"_blank\">DataInfo+</a>.",
     "groups": [
         {
@@ -2095,7 +2075,7 @@
     "download": true,
     "frequency":"Weekly",
     "description": "For metadata and details on methodology used to produce these statistics see <a href=\"http://datainfoplus.stats.govt.nz/Item/nz.govt.stats/6ed114da-3571-40d4-a89f-932068a4c753?_ga=2.27617916.1122878806.1587330040-1991109144.1583875067#/nz.govt.stats/6c3485b0-4330-4bd7-b10f-7e9f4580797c/7\" target=\"_blank\">DataInfo+</a>.",
-    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-at-28-april-2021-provisional",
+    "source_url": "https://www.stats.govt.nz/information-releases/effects-of-covid-19-on-trade-at-5-may-2021-provisional",
     "groups": [
         {
             "name": "Non-food manufactured goods",
@@ -6710,8 +6690,7 @@
         "name":"By region",
         "units":"%",
         "title":"Percentage of people who rated the things they do in their life as worthwhile, by regional council area, quarterly",
-        "x_axis_label":"Regions",
-        "plot_function":"get_unstacked_vertical_bar_with_errors"
+        "x_axis_label":"Regions"
       },
       {
 	       "name":"By parent status",
@@ -6725,7 +6704,7 @@
         "units":"%",
         "title":"Percentage of people who rated the things they do in their life as worthwhile, by disability status",
         "x_axis_label":"Quarter",
-        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for the September quarter.<p>Those aged 18+ who rated the things they do in their life at 7 or higher, where 0 is not at all worthwhile and 10 is completely worthwhile.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
+        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for September and March quarters.<p>Those aged 18+ who rated the things they do in their life at 7 or higher, where 0 is not at all worthwhile and 10 is completely worthwhile.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
 	   }
     ]
 },
@@ -6787,7 +6766,7 @@
         "units":"%",
         "title":"Percentage of people who rated their family wellbeing highly, by disability status",
         "x_axis_label":"Quarter",
-        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for the September quarter.<p>Those aged 18+ who rated how their family was generally doing at 7 or higher, where 0 is doing extremely badly and 10 is doing extremely well.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
+        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for September and March quarters.<p>Those aged 18+ who rated how their family was generally doing at 7 or higher, where 0 is doing extremely badly and 10 is doing extremely well.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
 	   }
     ]
 },
@@ -6849,7 +6828,7 @@
         "units":"%",
         "title":"Percentage of people who reported enough money for everyday needs, by disability status",
         "x_axis_label":"Quarter",
-        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for the September quarter.<p>Those aged 18+ who reported enough money / more than enough money to meet everyday needs. Includes partner's income where applicable.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
+        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for September and March quarters.<p>Those aged 18+ who reported enough money / more than enough money to meet everyday needs. Includes partner's income where applicable.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
 	   }
     ]
 },
@@ -6911,7 +6890,7 @@
         "units":"%",
         "title":"Percentage of people who received help from a welfare organisation in the last 12 months, by disability status",
         "x_axis_label":"Quarter",
-        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for the September quarter.<p>Those aged 18+ who reported they received help in the form of food, clothes, or money from a welfare / community organisation such as a church or foodbank in the previous 12 months.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
+        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for September and March quarters.<p>Those aged 18+ who reported they received help in the form of food, clothes, or money from a welfare / community organisation such as a church or foodbank in the previous 12 months.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
 	   }
     ]
 },
@@ -6973,7 +6952,7 @@
         "units":"%",
         "title":"Percentage of people who rated their life satisfaction highly, by disability status",
         "x_axis_label":"Quarter",
-        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for the September quarter.<p>Those aged 18+ who rated satisfaction with their lives as a whole these days at 7 or higher, where 0 is completely dissatisfied and 10 is completely satisfied.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
+        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for September and March quarters.<p>Those aged 18+ who rated satisfaction with their lives as a whole these days at 7 or higher, where 0 is completely dissatisfied and 10 is completely satisfied.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
 	   }
 
 	  ]
@@ -7036,7 +7015,7 @@
         "units":"%",
         "title":"Percentage who rated their trust held for parliament highly, by disability status",
         "x_axis_label":"Quarter",
-        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for the September quarter.<p>Those aged 18+ who rated their trust held for parliament at 7 or higher, where 0 is not trusted at all and 10 is trusted completely.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
+        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for September and March quarters.<p>Those aged 18+ who rated their trust held for parliament at 7 or higher, where 0 is not trusted at all and 10 is trusted completely.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
 	   }
 	  ]
 },
@@ -7098,7 +7077,7 @@
         "units":"%",
         "title":"Percentage who rated their trust held for police highly, by disability status",
         "x_axis_label":"Quarter",
-        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for the September quarter.<p>Those aged 18+ who rated their trust held for police at 7 or higher, where 0 is not trusted at all and 10 is trusted completely.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
+        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for September and March quarters.<p>Those aged 18+ who rated their trust held for police at 7 or higher, where 0 is not trusted at all and 10 is trusted completely.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
 	   }
 	  ]
 },
@@ -7160,7 +7139,7 @@
         "units":"%",
         "title":"Percentage who rated their trust held for the media highly, by disability status",
         "x_axis_label":"Quarter",
-        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for the September quarter.<p>Those aged 18+ who rated their trust held for the media at 7 or higher, where 0 is not trusted at all and 10 is trusted completely.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
+        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for September and March quarters.<p>Those aged 18+ who rated their trust held for the media at 7 or higher, where 0 is not trusted at all and 10 is trusted completely.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
 	   }
 
 	  ]
@@ -7224,7 +7203,7 @@
         "units":"%",
         "title":"Percentage who rated their trust held for the health system highly, by disability status",
         "x_axis_label":"Quarter",
-        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for the September quarter.<p>Those aged 18+ who rated their trust held for the health system at 7 or higher, where 0 is not trusted at all and 10 is trusted completely.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
+        "caveats":"Disability status is based on the Washington Group Short Set of questions. Disability status is not available for September and March quarters.<p>Those aged 18+ who rated their trust held for the health system at 7 or higher, where 0 is not trusted at all and 10 is trusted completely.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
 	   }
 	  ]
 },
@@ -7287,7 +7266,7 @@
         "units":"%",
         "title":"Percentage who rated their trust held for people in New Zealand highly, by disability status",
         "x_axis_label":"Quarter",
-        "caveats":"<p>Disability status is based on the Washington Group Short Set of questions. Disability status is not available for the September quarter.</p><p>Those aged 18+ who rated their trust held for people in New Zealand at 7 or higher, where 0 is not trusted at all and 10 is trusted completely.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
+        "caveats":"<p>Disability status is based on the Washington Group Short Set of questions. Disability status is not available for September and March quarters.</p><p>Those aged 18+ who rated their trust held for people in New Zealand at 7 or higher, where 0 is not trusted at all and 10 is trusted completely.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
 	   }
 	  ]
 },
@@ -7350,7 +7329,7 @@
         "units":"%",
         "title":"Percentage of people who had experienced discrimination in the last 12 months, by disability status",
         "x_axis_label":"Quarter",
-        "caveats":"<p>Disability status is based on the Washington Group Short Set of questions. Disability status is not available for the September quarter.</p><p>Those aged 18+ who reported they had experienced discrimination in the previous 12 months.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
+        "caveats":"<p>Disability status is based on the Washington Group Short Set of questions. Disability status is not available for September and March quarters.</p><p>Those aged 18+ who reported they had experienced discrimination in the previous 12 months.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
 	   }
 	  ]
 },
@@ -7413,7 +7392,7 @@
         "units":"%",
         "title":"Percentage of people who felt lonely at least some of the time in the past four weeks, by disability status",
         "x_axis_label":"Quarter",
-        "caveats":"<p>Disability status is based on the Washington Group Short Set of questions. Disability status is not available for the September quarter.</p><p>Those aged 18+ who reported they felt lonely some of the time, most of the time or all of the time in the past four weeks.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
+        "caveats":"<p>Disability status is based on the Washington Group Short Set of questions. Disability status is not available for September and March quarters.</p><p>Those aged 18+ who reported they felt lonely some of the time, most of the time or all of the time in the past four weeks.</p><p>The error bars shown have been calculated at the 95% confidence level using rounded estimates.</p>"
 	   }
 	  ]
 
@@ -7728,6 +7707,7 @@
     "source": "Te Hiringa Hauora/Health Promotion Agency",
     "plot_function": "get_unstacked_horizontal_bar",
     "international": false,
+    "frequency":"Ad-hoc",
     "source_url":"https://www.hpa.org.nz/research-library/research-publications/the-impact-of-lockdown-on-health-risk-behaviours",
     "download": true,
     "caveats": "<p>*Data refers to respondents who said they had drunk alcohol in the last 4 weeks. Wave 1 respondents were asked about drinking changes since being in lockdown, while wave 2 respondents were asked to compare drinking levels since before lockdown with the last 2 weeks.</p><p>Data collected for wave 1 between 7-13 April 2020 (which corresponded with Alert Level 4 lockdown days 13 – 19). Data collected for wave 2 between 10-19 June 2020 (which corresponded with Alert Level 1 days 2 – 11). Wave 2 includes people who completed the Wave 1 survey as well as new respondents. </p><p>Results from the wave 2 study can be found here: <a href = \"https://www.hpa.org.nz/research-library/research-publications/post-lockdown-survey-the-impact-on-health-risk-behaviours\"> Post lockdown survey - the impact on health risk behaviours</a>.</p><p>This survey uses an opt-in online panel sample, which is a type of non-probability sampling. As a result, there is some bias associated with the respondents of the survey. The findings reported cannot be applied to the overall NZ population. </p>",
@@ -7766,6 +7746,7 @@
     "source": "Te Hiringa Hauora/Health Promotion Agency",
     "plot_function": "get_unstacked_horizontal_bar",
     "international": false,
+    "frequency":"Ad-hoc",
     "source_url":"https://www.hpa.org.nz/research-library/research-publications/the-impact-of-lockdown-on-health-risk-behaviours",
     "download": true,
     "groups": [
@@ -7791,6 +7772,7 @@
     "source": "Te Hiringa Hauora/Health Promotion Agency",
     "plot_function": "get_unstacked_horizontal_bar",
     "international": false,
+    "frequency":"Ad-hoc",
     "source_url":"https://www.hpa.org.nz/research-library/research-publications/the-impact-of-lockdown-on-health-risk-behaviours",
     "download": true,
     "groups": [
@@ -7815,6 +7797,7 @@
     "indicator_name": "Smoking behaviours",
     "source": "Te Hiringa Hauora/Health Promotion Agency",
     "plot_function": "get_unstacked_horizontal_bar",
+    "frequency":"Ad-hoc",
     "international": false,
     "source_url":"https://www.hpa.org.nz/research-library/research-publications/the-impact-of-lockdown-on-health-risk-behaviours",
     "download": true,
@@ -7834,6 +7817,7 @@
     "source": "Te Hiringa Hauora/Health Promotion Agency",
     "plot_function": "get_unstacked_horizontal_bar",
     "international": false,
+    "frequency":"Ad-hoc",
     "source_url":"https://www.hpa.org.nz/research-library/research-publications/the-impact-of-lockdown-on-health-risk-behaviours",
     "download": true,
     "groups": [
