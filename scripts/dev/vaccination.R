@@ -1,3 +1,5 @@
+# COVID-19 vaccines administered – cumulative +++ daily total
+
 library(readxl)
 library(xlsx)
 library(writexl)

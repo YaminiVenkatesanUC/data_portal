@@ -1,5 +1,3 @@
-##ead_employment_paid_jobs_data
-
 ## Weekly filled jobs (34 days) & Weekly median earnings (34 days)
 
 library(readr)

@@ -1,3 +1,7 @@
+# All industries & households (total) - quarterly +++ Broad industry group - quarterly +++
+# Industry - quarterly +++ Total households - quarterly
+
+
 library(readr)
 
 data <- read.csv("~/Network-Shares/J-Drive-WLG-Shared/Indicators_aotearoa/Covid-19/Portal Data Supply/SEEA GHG Emissions/Dec-2020-data-for-portal.csv")
