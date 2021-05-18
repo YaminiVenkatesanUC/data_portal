@@ -3,8 +3,9 @@
 
 library(openxlsx)
 
-config <- read_config_file()
-path <- paste0(config$data_directory, "Trade Data")
+#config <- read_config_file()
+directory <- "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/"
+path <- paste0(directory, "Trade Data")
 files <- file.info(list.files(path, full.names = T, pattern = ".*\\.csv"))
 update <- read.csv(rownames(files)[which.max(files$ctime)])
 
