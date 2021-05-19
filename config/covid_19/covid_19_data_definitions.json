@@ -5445,7 +5445,7 @@
         "Goods Producing",
         "Services"
         ],
-        "filename": "COVID - 19 Weekly_paid_jobs_34_days.csv",
+        "filename": "COVID-19 - Weekly_paid_jobs_34_days.csv",
         "load_function": "read_from_csv",
         "data_type": "TimeSeries",
         "group_names":
@@ -7861,7 +7861,7 @@
     "Goods Producing",
     "Services"
     ],
-  "filename": "COVID - 19 Weekly_median_earnings_34_days.csv",
+  "filename": "COVID-19 - Weekly_median_earnings_34_days.csv",
   "load_function": "read_from_csv",
   "data_type": "TimeSeries",
   "group_names":
