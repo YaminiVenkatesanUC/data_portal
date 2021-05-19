@@ -140,22 +140,22 @@ file_path <- "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19
 
     data <- check_for_negative(df_cases_all)
 
-    # file.rename(from = paste0(file_path, "COVID 19 - Global cases.xlsx"),
-    #             to = paste0(file_path, "/Previous/COVID 19 - Global cases.xlsx"))
-    #OUT <- createWorkbook()
+    file.rename(from = paste0(file_path, "COVID 19 - Global cases.xlsx"),
+                to = paste0(file_path, "/Previous/COVID 19 - Global cases.xlsx"))
+    OUT <- createWorkbook()
     for (country in countries) {
       df <- data %>%
         filter(Country == country) %>%
         mutate(Date = as.Date(ymd(Date))) %>%
         select(-Country)
 
-      #addWorksheet(wb = OUT, str_trunc(country, 30, "right", ellipsis = ""))
-      #writeData(OUT, sheet = str_trunc(country, 30, "right", ellipsis = ""), x = df)
+      addWorksheet(wb = OUT, str_trunc(country, 30, "right", ellipsis = ""))
+      writeData(OUT, sheet = str_trunc(country, 30, "right", ellipsis = ""), x = df)
 
       #append in this function is no longer behaving...
-      write.xlsx(x = df, file = paste0(file_path, "COVID 19 - Global cases.xlsx"), sheetName = str_trunc(country, 30, "right", ellipsis = ""),
-                 append = TRUE,
-                 row.names = FALSE)
+      # write.xlsx(x = df, file = paste0(file_path, "COVID 19 - Global cases.xlsx"), sheetName = str_trunc(country, 30, "right", ellipsis = ""),
+      #            append = TRUE,
+      #            row.names = FALSE)
     }
-   #saveWorkbook(OUT, "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/COVID 19 - Global cases.xlsx")
+   saveWorkbook(OUT, "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/COVID 19 - Global cases.xlsx")
 
