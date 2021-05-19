@@ -7837,35 +7837,30 @@
     [
       {
         "name":"Total",
-        "units":"",
+        "units":"Number",
         "title":"Cumulative number of vaccines administered",
         "rotation":0
       },
       {
         "name":"By DHB of residence",
-        "units":"",
+        "units":"Number",
         "title":"Cumulative number of vaccines administered, by DHB of residence",
         "caveats":"<p>1) The DHB of residence is where the vaccinated person resides, which may differ from the DHB where they received their vaccination. The DHB of service is available in the spreadsheet at the bottom of the page.</p><p>2) In the Auckland region, most vaccinations to date are given in vaccination sites located in Counties Manukau DHB.</p><p>3) Cumulative total: All vaccinations that have been administered and entered into the COVID-19 Immunisation Register up until midnight of the night before the data is published.</p>"
       },
       {
         "name":"By ethnicity",
-        "units":"",
+        "units":"Number",
         "title":"Cumulative number of vaccines administered, by ethnicity"
       },
       {
         "name":"By age group",
-        "units":"",
+        "units":"Number",
         "title":"Cumulative number of vaccines administered, by age group"
       },
       {
-        "name":"By sex",
-        "units":"",
-        "title":"Cumulative number of vaccines administered, by sex"
-      },
-      {
-        "name":"Plan",
-        "units":"",
-        "title":"Cumulative number of vaccines  - plan"
+        "name":"By gender",
+        "units":"Number",
+        "title":"Cumulative number of vaccines administered, by gender"
       }
 
     ]
@@ -7886,7 +7881,7 @@
     [
       {
         "name":"undefined_name",
-        "units":"",
+        "units":"Number",
         "title":"Number of daily vaccines administered"
       }
     ]
@@ -7894,7 +7889,7 @@
   {
     "class":"Health",
     "type":"COVID-19 vaccinations",
-    "indicator_name":"Covid-19 vaccines administered – Workforce",
+    "indicator_name":"COVID-19 vaccines administered – Workforce",
     "source":"Ministry of Health, COVID-19: Vaccine data",
     "plot_function":"get_time_series_plot",
     "international":false,
@@ -7906,8 +7901,28 @@
     [
       {
         "name":"undefined_name",
-        "units":"",
+        "units":"Number",
         "title":"Number of vaccinators"
+      }
+    ]
+  },
+  {
+    "class":"Health",
+    "type":"COVID-19 vaccinations",
+    "indicator_name":"COVID-19 vaccination plan - Progress",
+    "source":"Ministry of Health, COVID-19: Vaccine data",
+    "plot_function":"get_unstacked_vertical_bar",
+    "international":false,
+    "include_date_slider":false,
+    "source_url":"https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-data-and-statistics/covid-19-vaccine-data",
+    "download":true,
+    "frequency":"Weekly",
+    "groups":
+    [
+      {
+        "name":"undefined_name",
+        "units":"Number",
+        "title":"COVID-19 vaccination plan - cumulative progress"
       }
     ]
   }
