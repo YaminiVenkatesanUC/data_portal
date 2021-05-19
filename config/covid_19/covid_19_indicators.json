@@ -7850,17 +7850,20 @@
       {
         "name":"By ethnicity",
         "units":"Number",
-        "title":"Cumulative number of vaccines administered, by ethnicity"
+        "title":"Cumulative number of vaccines administered, by ethnicity",
+        "rotation":0
       },
       {
         "name":"By age group",
         "units":"Number",
-        "title":"Cumulative number of vaccines administered, by age group"
+        "title":"Cumulative number of vaccines administered, by age group",
+        "rotation":0
       },
       {
         "name":"By gender",
         "units":"Number",
-        "title":"Cumulative number of vaccines administered, by gender"
+        "title":"Cumulative number of vaccines administered, by gender",
+        "rotation":0
       }
 
     ]
