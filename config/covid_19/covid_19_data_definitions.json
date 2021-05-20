@@ -2985,80 +2985,75 @@
         "indicator_name": "Trade weighted index",
         "type": "Financial",
         "parameter_col": 1,
-        "parameter_transform": "function(x) ymd(x)",
-        "sheet_number": 1,
+        "parameter_transform": "function(x) as.Date(x, format = \"%d/%b/%y\")",
         "value_col": 2,
-        "value_names": "New Zealand trade weighted index ",
-        "filename": "COVID 19 - RBNZ Financial indicators.xlsx",
-        "load_function": "read_from_excel",
+        "value_names": "New Zealand trade weighted index",
+        "filename": "COVID-19 - Treasury - Trade weighted index.csv",
+        "load_function": "read_from_csv",
         "data_type": "TimeSeries",
         "group_names": "undefined_name",
         "date_added":"20/04/2020",
         "date_dropped":null,
-        "sourcing":"manual entry from website"
+        "sourcing":["customized supply via email"],
+        "script":["treasury.R"]
     },
     {
         "class": "Economic",
         "indicator_name": "New Zealand stock exchange",
         "type": "Financial",
         "parameter_col": 1,
-        "parameter_transform": "function(x) dmy(x)",
-        "sheet_number": 1,
-        "value_col": [
-        4
-        ],
+        "parameter_transform": "function(x) as.Date(x, format = \"%d/%b/%y\")",
+        "value_col": 2,
         "value_names": [
         "NZX - all index"
         ],
-        "filename": "COVID 19 - Daily financial data.xlsx",
-        "load_function": "read_from_excel",
-        "skip": 2,
+        "filename": "COVID-19 - Treasury - NZ stock exchange.csv",
+        "load_function": "read_from_csv",
         "data_type": "TimeSeries",
         "group_names": ["undefined_name"],
         "date_added":"20/04/2020",
         "date_dropped":null,
-        "sourcing":"customized supply via email"
+        "sourcing":"customized supply via email",
+        "script":"treasury.R"
     },
     {
         "class": "Economic",
         "indicator_name": "Bank bill yields",
         "type": "Financial",
         "parameter_col": 1,
-        "parameter_transform": "function(x) dmy(x)",
-        "sheet_number": 1,
-        "value_col": 3,
+        "parameter_transform": "function(x) as.Date(x, format = \"%d/%b/%y\")",
+        "value_col": 2,
         "input_units": 100,
         "value_names": [
         "New Zealand bank bill yields - 90-days"
         ],
-        "filename": "COVID 19 - Daily financial data.xlsx",
-        "load_function": "read_from_excel",
-        "skip": 2,
+        "filename": "COVID-19 - Treasury - Bank bill yields.csv",
+        "load_function": "read_from_csv",
         "data_type": "TimeSeries",
         "group_names": ["undefined_name"],
         "date_added":"20/04/2020",
         "date_dropped":null,
-        "sourcing":"manual entry from website"
+        "sourcing":["customized supply via email"],
+        "script":["treasury.R"]
     },
     {
         "class": "Economic",
         "indicator_name": "Foreign exchange",
         "type": "Financial",
         "parameter_col": 1,
-        "parameter_transform": "function(x) dmy(x)",
-        "sheet_number": 1,
+        "parameter_transform": "function(x) as.Date(x, format = \"%d/%b/%y\")",
         "value_col": 2,
         "value_names": [
         "NZD/USD"
         ],
-        "filename": "COVID 19 - Daily financial data.xlsx",
-        "load_function": "read_from_excel",
-        "skip": 2,
+        "filename": "COVID-19 - Treasury - Foreign exchange.csv",
+        "load_function": "read_from_csv",
         "data_type": "TimeSeries",
         "group_names": ["undefined_name"],
         "date_added":"20/04/2020",
         "date_dropped":null,
-        "sourcing":"manual entry from website"
+        "sourcing":["customized supply via email"],
+        "script":["treasury.R"]
     },
     {
         "class": "Economic",
@@ -3100,8 +3095,7 @@
         "indicator_name": "China purchasing managers index",
         "type": "Confidence",
         "parameter_col": 1,
-        "parameter_transform": "function(x) ymd(x)",
-        "sheet_number": 1,
+        "parameter_transform": "function(x) as.Date(paste0(\"01-\", x), format = \"%d-%b-%y\")",
         "value_col": [
         2,
         3
@@ -3110,13 +3104,14 @@
         "Manufacturing",
         "Non-manufacturing"
         ],
-        "filename": "COVID 19 - Haver sourced indicators.xlsx",
-        "load_function": "read_from_excel",
+        "filename": "COVID-19 - Treasury - China purchasing managers index.csv",
+        "load_function": "read_from_csv",
         "data_type": "TimeSeries",
         "group_names": "undefined_name",
         "date_added":"20/04/2020",
         "date_dropped":null,
-        "sourcing":"customized supply via email"
+        "sourcing":"customized supply via email",
+        "script":"treasury.R"
     },
     {
         "class": "Economic",
@@ -3161,38 +3156,33 @@
         "indicator_name": "Investor sentiment",
         "type": "Financial",
         "parameter_col": 1,
-        "parameter_transform": "function(x) ymd(x)",
-        "sheet_number": 2,
+        "parameter_transform": "function(x) as.Date(paste0(\"01-\", x), format = \"%d-%b-%y\")",
         "value_col": 2,
         "value_names": "Sentiment index",
-        "filename": "COVID 19 - Haver sourced indicators.xlsx",
-        "load_function": "read_from_excel",
+        "filename": "COVID-19 - Treasury - Investor sentiment.csv",
+        "load_function": "read_from_csv",
         "data_type": "TimeSeries",
         "group_names": "undefined_name",
         "date_added":"20/04/2020",
         "date_dropped":null,
-        "sourcing":"customized supply via email"
+        "sourcing":"customized supply via email",
+        "script":"treasury.R"
     },
     {
         "class": "Economic",
         "indicator_name": "Commodity prices",
         "type": "Financial",
         "parameter_col": 1,
-        "parameter_transform": "function(x) dmy(x)",
+        "parameter_transform": "function(x) as.Date(x, \"%d/%b/%y\")",
         "sheet_number": 1,
-        "value_col": [
-        9,
-        10,
-        11
-        ],
+        "value_col": [2, 3, 4],
         "value_names": [
         "Crude oil",
         "Coal",
         "Copper"
         ],
-        "filename": "COVID 19 - Daily financial data.xlsx",
-        "load_function": "read_from_excel",
-        "skip": 2,
+        "filename": "COVID-19 - Treasury - Commodity prices.csv",
+        "load_function": "read_from_csv",
         "data_type": "TimeSeries",
         "group_names": [
         "Crude oil",
@@ -3201,28 +3191,24 @@
         ],
         "date_added":"20/04/2020",
         "date_dropped":null,
-        "sourcing":"customized supply via email"
+        "sourcing":"customized supply via email",
+        "script":"treasury.R"
     },
     {
         "class": "Economic",
         "indicator_name": "Global stock markets",
         "type": "Financial",
         "parameter_col": 1,
-        "parameter_transform": "function(x) dmy(x)",
+        "parameter_transform": "function(x) as.Date(x, format = \"%d/%b/%y\")",
         "sheet_number": 1,
-        "value_col": [
-        5,
-        6,
-        7
-        ],
+        "value_col": [2, 3, 4],
         "value_names": [
         "Australia All Ordinaries",
         "China Securities Index 300",
         "S&P Global 1200 Index"
         ],
-        "filename": "COVID 19 - Daily financial data.xlsx",
-        "load_function": "read_from_excel",
-        "skip": 2,
+        "filename": "COVID-19 - Treasury - Global stock markets.csv",
+        "load_function": "read_from_csv",
         "data_type": "TimeSeries",
         "group_names": [
         "Australia All Ordinaries",
@@ -3231,61 +3217,60 @@
         ],
         "date_added":"20/04/2020",
         "date_dropped":null,
-        "sourcing":"customized supply via email"
+        "sourcing":"customized supply via email",
+        "script":"treasury.R"
     },
     {
         "class": "Economic",
         "indicator_name": "Market volatility index",
         "type": "Financial",
         "parameter_col": 1,
-        "parameter_transform": "function(x) dmy(x)",
+        "parameter_transform": "function(x) as.Date(x, format = \"%d/%b/%y\")",
         "sheet_number": 1,
-        "value_col": 8,
+        "value_col": 2,
         "value_names": "Market volatility index",
-        "filename": "COVID 19 - Daily financial data.xlsx",
-        "load_function": "read_from_excel",
-        "skip": 2,
+        "filename": "COVID-19 - Treasury - Market volatility index.csv",
+        "load_function": "read_from_csv",
         "data_type": "TimeSeries",
         "group_names": "undefined_name",
         "date_added":"20/04/2020",
         "date_dropped":null,
-        "sourcing":"customized supply via email"
+        "sourcing":"customized supply via email",
+        "script":"treasury.R"
     },
     {
         "class": "Economic",
         "indicator_name": "Baltic dry index",
         "type": "Financial",
         "parameter_col": 1,
-        "parameter_transform": "function(x) dmy(x)",
-        "sheet_number": 1,
-        "value_col": 13,
+        "parameter_transform": "function(x) as.Date(x, format = \"%d/%b/%y\")",
+        "value_col":2,
         "value_names": "Baltic dry index",
-        "filename": "COVID 19 - Daily financial data.xlsx",
-        "load_function": "read_from_excel",
-        "skip": 2,
+        "filename": "COVID-19 - Treasury - Baltic dry index.csv",
+        "load_function": "read_from_csv",
         "data_type": "TimeSeries",
         "group_names": "undefined_name",
         "date_added":"20/04/2020",
         "date_dropped":null,
-        "sourcing":"customized supply via email"
+        "sourcing":"customized supply via email",
+        "script":"treasury.R"
     },
     {
         "class": "Economic",
         "indicator_name": "Global dairy trade",
         "type": "Trade",
         "parameter_col": 1,
-        "parameter_transform": "function(x) dmy(x)",
-        "sheet_number": 1,
-        "value_col": 12,
+        "parameter_transform": "function(x) as.Date(x, format = \"%d/%b/%y\")",
+        "value_col": 2,
         "value_names": "Global dairy trade price index",
-        "filename": "COVID 19 - Daily financial data.xlsx",
-        "load_function": "read_from_excel",
-        "skip": 2,
+        "filename": "COVID-19 - Treasury - GLobal dairy trade.csv",
+        "load_function": "read_from_csv",
         "data_type": "TimeSeries",
         "group_names": "undefined_name",
         "date_added":"20/04/2020",
         "date_dropped":null,
-        "sourcing":"customized supply via email"
+        "sourcing":"customized supply via email",
+        "script":"treasury.R"
     },
     {
         "class": "Economic",
@@ -3322,7 +3307,6 @@
         "type": "Financial",
         "parameter_col": 1,
         "parameter_transform": "function(x) x + as_date(ymd(\"2021-02-12\")) - 1",
-        "sheet_number": 3,
         "value_col": [
         2,
         3,
@@ -3337,15 +3321,15 @@
         "2020",
         "2021"
         ],
-        "filename": "COVID 19 - UBS indicators.xlsx",
-        "load_function": "read_from_excel",
-        "skip": 1,
+        "filename": "COVID-19 - Treasury - Property sales - China.csv",
+        "load_function": "read_from_csv",
         "drop_na": false,
         "data_type": "TimeSeries",
         "group_names": "undefined_name",
         "date_added":"20/04/2020",
         "date_dropped":null,
-        "sourcing":"customized supply via email"
+        "sourcing":"customized supply via email",
+        "script":"treasury.R"
     },
     {
         "class": "Income support",
@@ -4088,7 +4072,6 @@
         "type": "Transport",
         "parameter_col": 1,
         "parameter_transform": "function(x) x + as_date(ymd(\"2021-02-12\")) - 1",
-        "sheet_number": 1,
         "value_col": [
         2,
         3,
@@ -4103,15 +4086,15 @@
         "2020",
         "2021"
         ],
-        "filename": "COVID 19 - UBS indicators.xlsx",
-        "load_function": "read_from_excel",
-        "skip": 1,
+        "filename": "COVID-19 - Treasury - Transport congestion - China.csv",
+        "load_function": "read_from_csv",
         "drop_na": false,
         "data_type": "TimeSeries",
         "group_names": "undefined_name",
         "date_added":"20/04/2020",
         "date_dropped":null,
-        "sourcing":"customized supply via email"
+        "sourcing":"customized supply via email",
+        "script":"treasury.R"
     },
     {
         "class": "Economic",

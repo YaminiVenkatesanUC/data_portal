@@ -93,7 +93,7 @@ indicators <- list(
     name = "Property sales - China",
     file = "COVID-19 - Treasury - Property sales - China.csv",
     sheet = "China daily_UBS",
-    skip = 1,
+    skip = 2,
     header = 1,
     cols = c(1, 8:12),
     col_names = c("Date", "2017", "2018", "2019", "2020", "2021")
@@ -102,9 +102,10 @@ indicators <- list(
     name = "Transport congestion - China",
     file = "COVID-19 - Treasury - Transport congestion - China.csv",
     sheet = "China daily_UBS",
-    skip = 1,
+    skip = 2,
     header = 1,
-    cols = c(1, 15:19)
+    cols = c(1, 15:19),
+    col_names = c("Date", "2017", "2018", "2019", "2020", "2021")
   ),
   china_purchasing = list(
     name = "China purchasing managers index",
@@ -112,7 +113,8 @@ indicators <- list(
     sheet = "Monthly",
     skip = 10,
     header = 2,
-    cols = c(2, 7, 8)
+    cols = c(2, 7, 8),
+    col_names = c("Date", "Manufacturing", "Non-manufacturing")
   ),
   investor_sentiment = list(
     name = "Investor sentiment",
@@ -120,11 +122,13 @@ indicators <- list(
     sheet = "Monthly",
     skip = 10,
     header = 2,
-    cols = c(2, 9)
+    cols = c(2, 9),
+    col_names = c("Date", "Investor.Sentiment")
   )
 )
 
-header_daily <- c(".DESC",
+headers <- list(
+  `Daily`= c(".DESC",
                   "New Zealand: Spot Exchange Rate: United States (US$/NZ$)",
                   "New Zealand: Trade-Weighted Exchange Rate Index 17(Oct-31-14=76.44)",
                   "New Zealand: Bank Bill Yields: 90-Days (%)...4",
@@ -143,27 +147,53 @@ header_daily <- c(".DESC",
                   "New Zealand: GDT Auction: Global Dairy Trade Price Index (Mar-2-10=1000)",
                   "China: Daily Air Quality Index [Unweighted Average] (0=No Pollution)",
                   "China: RMB Exchange Rate: United States (Yuan/100 US$)",
-                  "Baltic Exchange Dry Index (Jan-04-85=1000)"
-                  )
+                  "Baltic Exchange Dry Index (Jan-04-85=1000)"),
+  `China daily_UBS` = c("6 IPPs' coal consumption (10th ton, 7-day ma)",
+                  "...2", "...3", "...4", "...5", "...6",
+                  "30-city property sales (10 th sqm, 7-day ma)",
+                  "...8", "...9", "...10", "...11", "...12", "...13",
+                  "100-city avg transport congestion index (7-day ma)",
+                  "...15", "...16", "...17", "...18", "...19", "...20", "...21", "...22",
+                  "100-city transport congestion index (7-day ma)",
+                  "...24","...25","...26","...27","...28","...29","...30","...31","...32","...33","...34","...35","...36","...37","...38","...39","...40","...41","...42","...43","RAW==>",
+                  "6 IPPs' coal consumption (10th ton)",
+                  "...46","...47","...48","...49","...50",
+                  "30-city property sales (10 th sqm)",
+                  "...52","...53","...54","...55","...56","...57",
+                  "100-city avg transport congestion index",
+                  "...59","...60","...61","...62","...63","...64","...65","...66",
+                  "100-city transport congestion index"),
+  `Monthly` = c(".DESC",
+                "New Zealand: PMI (SA, 50+=Expansion)",
+                "New Zealand: PMI: Production (SA, 50+=Expansion)",
+                "New Zealand: PMI: New Orders (SA, 50+=Expansion)",
+                "New Zealand: PMI: Finished Stocks (SA, 50+=Expansion)",
+                "China: PMI: Manufacturing (SA, 50+=Expansion)",
+                "China: PMI: Nonmanufacturing Business Activity (SA, 50+=Expansion)",
+                "Global: Sentix Overall Economic Index (NSA, %Bal)"))
+
 
 directory <- "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/"
 update_filepath <- paste0(directory, "Treasury/", "COVID 19-files requiring Treasury update.xlsx")
 
-#for (ind in indicators) {
-ind <- indicators[[1]]
+for (ind in indicators) {
   header <- read_excel(
     path = update_filepath,
     sheet = ind$sheet,
     range = cell_rows(ind$header)
   )
-  if(!identical(names(header), header_daily)) stop ("Column order changed in sheet: ", ind$sheet)
+  if(!identical(names(header), headers[[ind$sheet]])) stop ("Column order changed in sheet: ", ind$sheet)
   update <- read_excel(
     path = update_filepath,
     sheet = ind$sheet,
     skip = ind$skip,
     col_names = FALSE) %>%
     select(ind$cols)
-  df <- read.csv(paste0(directory, ind$file), stringsAsFactors = FALSE)
-  df_join <- df %>%
-    right_join(update)
-#}
+  names(update) <- ind$col_names
+  update <- update[!is.na(update$Date),]
+
+  file.rename(from = paste0(directory, ind$file),
+              to = paste0(directory, "Previous/", ind$file))
+  write.csv(update, paste0(directory, ind$file), row.names = FALSE)
+
+}
