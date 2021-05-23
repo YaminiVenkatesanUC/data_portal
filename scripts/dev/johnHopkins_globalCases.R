@@ -21,17 +21,18 @@ countries <- c("Australia",
                "US",
                "Rest of the world")
 
-config <- read_config_file()
-file_path <- config$data_directory
-files <- list.files(
-    path = file_path,
-    pattern = "COVID 19 - Global cases.xlsx",
-    full.names = TRUE,
-    recursive = TRUE
-  )
-
-  details <- (file.info(files)$ctime)
-  current_date <- as.POSIXct(Sys.Date())
+#config <- read_config_file()
+#file_path <- config$data_directory
+file_path <- "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/"
+# files <- list.files(
+#     path = file_path,
+#     pattern = "COVID 19 - Global cases.xlsx",
+#     full.names = TRUE,
+#     recursive = TRUE
+#   )
+#
+#   details <- (file.info(files)$ctime)
+#   current_date <- as.POSIXct(Sys.Date())
   github_url <- paste0(
     "https://raw.githubusercontent.com/CSSEGISandData/",
     "COVID-19/master/csse_covid_19_data/"
@@ -148,13 +149,13 @@ files <- list.files(
         mutate(Date = as.Date(ymd(Date))) %>%
         select(-Country)
 
-      addWorksheet(OUT, str_trunc(country, 30, "right", ellipsis = ""))
+      addWorksheet(wb = OUT, str_trunc(country, 30, "right", ellipsis = ""))
       writeData(OUT, sheet = str_trunc(country, 30, "right", ellipsis = ""), x = df)
 
-      # #append in this function is no longer behaving...
-      # write.xlsx(x = df, file = paste0(file_path, "COVID 19 - Global cases.xlsx"), sheetName = str_trunc(country, 31),
+      #append in this function is no longer behaving...
+      # write.xlsx(x = df, file = paste0(file_path, "COVID 19 - Global cases.xlsx"), sheetName = str_trunc(country, 30, "right", ellipsis = ""),
       #            append = TRUE,
       #            row.names = FALSE)
     }
-   saveWorkbook(OUT, paste0(file_path, "COVID 19 - Global cases.xlsx"))
+   saveWorkbook(OUT, "~/Network-Shares/U-Drive-SAS-03BAU/MEES/National Accounts/COVID-19 data_Secure/COVID-19_dashboard/COVID 19 - Global cases.xlsx")
 

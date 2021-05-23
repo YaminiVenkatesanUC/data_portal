@@ -9,6 +9,7 @@ latest_report_date <- floor_date(rollback(current_date), unit = "month")
 
 indicators <- read_json(path = "config/covid_19/covid_19_indicators.json", simplifyVector = TRUE)
 definitions <- read_json(path = "config/covid_19/covid_19_data_definitions.json", simplifyVector = TRUE)
+odata <- read_json(path = "config/covid_19/covid_19_odata_definitions_v2.json", simplifyVector = TRUE)
 
 #download Unique page views over time 01-03-2020 to 31-03-2021 // Google analytics
 views_total <- read.csv("~/Network-Shares/J-Drive-WLG-Shared/Indicators_aotearoa/Maya/reports/total_views.csv")
@@ -19,7 +20,20 @@ downloads_monthly_folder <- "~/Network-Shares/J-Drive-WLG-Shared/Indicators_aote
 
 df_indicators <- definitions %>%
   left_join(indicators, by = c("class", "indicator_name", "type")) %>%
-  select(indicator_name, group_names, filename, date_added, date_dropped, source, download, frequency, disabled) %>%
+  left_join(odata, by = c("type" = "Subject", "indicator_name" = "Title")) %>%
+  select(
+    indicator_name,
+    group_names,
+    filename,
+    date_added,
+    date_dropped,
+    source,
+    download,
+    frequency,
+    disabled,
+    script,
+    sourcing,
+    ResourceID) %>%
   filter(disabled == FALSE | is.na(disabled)) %>%
   select(-disabled) %>%
   mutate(date_added = dmy(date_added)) %>%
@@ -36,7 +50,6 @@ df_indicators$other <- df_indicators$group_names != "undefined_name" & !(df_indi
 df_indicators$no_subseries <- !(df_indicators$region | df_indicators$gender | df_indicators$age | df_indicators$ethnic | df_indicators$industry | df_indicators$other)
 
 df_indicators$source_internal <- str_detect(pattern = "Stats", string = df_indicators$source)
-
 
 #Monthly cumulative count of indicators number------------------------------------------
 #add dots for indicators added that particular month!!!
