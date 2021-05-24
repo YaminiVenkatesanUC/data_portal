@@ -833,6 +833,7 @@
         "class": "Economic",
         "indicator_name": "Weekly mean rent by region",
         "type": "Activity",
+        "ResourceID":"CPACT11",
         "parameter_col": 1,
         "drop_na":false,
         "value_col": [
