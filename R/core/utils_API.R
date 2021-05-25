@@ -2,14 +2,14 @@
 data_frame_to_api_helper <- function(directory, config, metadata, data){
   #error when there is not a match or indicator removed
   resource <- to_resource(config, metadata, directory)
-  write.table(resource, "dump.txt", append = TRUE)
+  #write.table(resource, "dump.txt", append = TRUE)
   version_res <- getLatestVersion(location= list(collection = "PDS", instance = "Covid-19", table = "Resource_Metadata"), server = "prd")
   writeDatastore(resource,location = list(collection = "PDS", instance = "Covid-19", table = "Resource_Metadata"), version = version_res, server = "prd")
 
 
   observations <- to_observations(config, metadata, directory, data)
   observations <- observations[!is.na(observations$Value),]
-  write.table(observations, "dump.txt", append = TRUE)
+  #write.table(observations, "dump.txt", append = TRUE)
   version_obs <- getLatestVersion(location= list(collection = "PDS", instance = "Covid-19", table = "Observation"), server = "prd")
   writeDatastore(observations,location = list(collection = "PDS", instance = "Covid-19", table = "Observation"), version = version_obs, server = "prd")
 
