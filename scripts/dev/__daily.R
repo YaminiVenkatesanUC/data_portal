@@ -7,6 +7,9 @@ source("scripts/dev/EMA_grid.R")
 # Broadband usage
 source("scripts/dev/chorus_daily.R")
 
+# Daily financial: Trade weighted index +++ Bank bill yields +++ Foreign exchange
+source('scripts/dev/daily_financial.R')
+
 
 
 # LOAD -----------------------------------------------------
