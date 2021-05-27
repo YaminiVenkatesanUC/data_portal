@@ -3941,7 +3941,7 @@
 },
   {
     "class": "Health",
-    "indicator_name": "Quarantine and managed isolation figures",
+    "indicator_name": "Quarantine and managed isolation occupancy",
     "type": "Managed Isolation",
     "source": "Ministry of Business, Innovation and Employment",
     "plot_function": "get_horizontal_bar",
@@ -3953,23 +3953,53 @@
     "frequency":"Daily",
     "groups": [
         {
-            "name": "Occupancy",
+            "name": "undefined_name",
             "title": "Number of people in quarantine and managed isolation by location",
             "units": ["Number"]
-        },
+        }
+      ]
+  },
+    {
+    "class": "Health",
+    "indicator_name": "Quarantine and managed isolation occupancy rate",
+    "type": "Managed Isolation",
+    "source": "Ministry of Business, Innovation and Employment",
+    "plot_function": "get_horizontal_bar",
+    "international": false,
+    "disabled": false,
+    "include_date_slider": false,
+    "source_url":"https://www.mbie.govt.nz/business-and-employment/economic-development/covid-19-data-resources/managed-isolation-and-quarantine-data/",
+    "download": true,
+    "frequency":"Daily",
+    "groups": [
           {
-            "name": "Occupancy rate",
+            "name": "undefined_name",
             "title": "Occupancy rate in quarantine and managed isolation facilities",
             "units": ["%"]
-        },
+        }
+      ]
+  },
+    {
+    "class": "Health",
+    "indicator_name": "Quarantine and managed isolation projected occupacy rate",
+    "type": "Managed Isolation",
+    "source": "Ministry of Business, Innovation and Employment",
+    "plot_function": "get_horizontal_bar",
+    "international": false,
+    "disabled": false,
+    "include_date_slider": false,
+    "source_url":"https://www.mbie.govt.nz/business-and-employment/economic-development/covid-19-data-resources/managed-isolation-and-quarantine-data/",
+    "download": true,
+    "frequency":"Daily",
+    "groups": [
          {
-            "name": "Projected occupacy rate",
+            "name": "undefined_name",
             "title": "Projected occupacy rate in quarantine and managed isolation facilities",
             "units": ["%"],
             "plot_function": "get_stacked_bar_chart",
             "caveats":"<p>Projected occupancy is based on current ticketing sales provided by airlines. The use of the Managed Isolation Allocation System will be mandatory from 3 November 2020.</p>"
         }
-    ]
+      ]
   },
   {
     "class": "Economic",
