@@ -10,6 +10,7 @@ files <- file.info(list.files(path, full.names = T))
 data <- data.frame(Cal.Dt = Date(), total = numeric())
 
 for (file in rownames(files)) {
+  print(file)
   df <- read_excel(file,
                    skip = 3,
                    .name_repair = "universal",

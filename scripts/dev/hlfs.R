@@ -16,7 +16,8 @@ series_list <- list(
     col_names = c("Quarter",
                   "Total", "Total_lower", "Total_upper",
                   "Male", "Male_lower", "Male_upper",
-                  "Female", "Female_lower", "Female_upper")
+                  "Female", "Female_lower", "Female_upper"),
+    selection = c("Date", "X3", "X3_lower", "X3_upper", "X5", "X5_lower", "X5_upper", "X7", "X7_lower", "X7_upper")
   ),
   By_age = list(
     sheet = "Age",
@@ -29,29 +30,33 @@ series_list <- list(
                   "45–54", "45–54_lower", "45–54_upper",
                   "55–64", "55–64_lower", "55–64_upper",
                   "65–74", "65–74_lower", "65–74_upper",
-                  "75+", "75+_lower", "75+_upper")
+                  "75+", "75+_lower", "75+_upper"),
+    selection = c("Date", "X3", "X3_lower", "X3_upper", "X5", "X5_lower", "X5_upper", "X7","X7_lower","X7_upper",
+                  "X9", "X9_lower", "X9_upper", "X11", "X11_lower", "X11_upper", "X13", "X13_lower", "X13_upper",
+                  "X15", "X15_lower", "X15_upper", "X17", "X17_lower", "X17_upper")
     ),
   By_ethnicity = list(
     sheet = "Ethnic",
-    header = c("European", "Māori", "Pacific peoples", "Asian"),
+    header = c("European", "Māori", "Pacific.peoples", "Asian"),
     col_names = c("Quarter",
                   "Total", "Total_lower", "Total_upper",
                   "European", "European_lower", "European_upper",
                   "Māori", "Māori_lower", "Māori_upper",
                   "Pacific peoples", "Pacific peoples_lower", "Pacific peoples_upper",
-                  "Asian", "Asian_lower", "Asian_upper")
+                  "Asian", "Asian_lower", "Asian_upper"),
+    selection = c("Date", "X3", "X3_lower", "X3_upper","X5","X5_lower","X5_upper","X7","X7_lower","X7_upper","X9","X9_lower","X9_upper","X11","X11_lower", "X11_upper")
 ),
   By_region = list(
     sheet = "Region",
     header = c("Northland",
                "Auckland",
                "Waikato",
-               "Bay of Plenty",
-               "Gisborne/Hawke's Bay",
+               "Bay.of.Plenty",
+               "Gisborne/Hawke's.Bay",
                "Taranaki",
                "Manawatu-Whanganui",
                "Wellington",
-               "Nelson/Tasman/Marlborough/West Coast",
+               "Nelson/Tasman/Marlborough/West.Coast",
                "Canterbury",
                "Otago",
                "Southland"),
@@ -68,22 +73,37 @@ series_list <- list(
                   "Nelson/Tasman/Marlborough/West Coast", "Nelson/Tasman/Marlborough/West Coast_lower", "Nelson/Tasman/Marlborough/West Coast_upper",
                   "Canterbury", "Canterbury_lower", "Canterbury_upper",
                   "Otago", "Otago_lower", "Otago_upper",
-                  "Southland", "Southland_lower", "Southland_upper")
+                  "Southland", "Southland_lower", "Southland_upper"),
+    selection = c("Date","X3","X3_lower","X3_upper",
+                  "X5","X5_lower","X5_upper",
+                  "X7","X7_lower","X7_upper",
+                  "X9","X9_lower","X9_upper",
+                  "X11","X11_lower", "X11_upper",
+                  "X13","X13_lower","X13_upper",
+                  "X15",  "X15_lower", "X15_upper",
+                  "X17", "X17_lower", "X17_upper",
+                  "X19", "X19_lower", "X19_upper",
+                  "X21", "X21_lower", "X21_upper",
+                  "X23", "X23_lower", "X23_upper",
+                  "X25",  "X25_lower", "X25_upper",
+                  "X27",  "X27_lower", "X27_upper" )
     ),
   By_parent_status = list(
     sheet = "Parent status",
-    header = c("Sole parent",
-               "Mother in two-parent family",
-               "Father in two-parent family",
-               "Not parent of dependent child, female",
-               "Not parent of dependent child, male"),
+    header = c("Sole.parent",
+               "Mother.in.two-parent.family",
+               "Father.in.two-parent.family",
+               "Not.parent.of.dependent.child,.female",
+               "Not.parent.of.dependent.child,.male"),
     col_names = c("Quarter",
                   "Total", "Total_lower", "Total_upper",
                   "Sole parent", "Sole parent_lower", "Sole parent_upper",
                   "Mother in two-parent family", "Mother in two-parent family_lower", "Mother in two-parent family_upper",
                   "Father in two-parent family", "Father in two-parent family_lower", "Father in two-parent family_upper",
                   "Not parent of dependent child, female", "Not parent of dependent child, female_lower", "Not parent of dependent child, female_upper",
-                  "Not parent of dependent child, male", "Not parent of dependent child, male_lower", "Not parent of dependent child, male_upper")
+                  "Not parent of dependent child, male", "Not parent of dependent child, male_lower", "Not parent of dependent child, male_upper"),
+    selection = c("Date", "X3", "X3_lower", "X3_upper", "X5", "X5_lower", "X5_upper", "X7", "X7_lower", "X7_upper", "X9", "X9_lower", "X9_upper", "X11",
+                  "X11_lower", "X11_upper", "X13", "X13_lower", "X13_upper")
   ),
   By_disability = list(
     sheet = "Disability",
@@ -96,8 +116,9 @@ series_list <- list(
                   "Disabled_18_over", "Disabled_18_over_lower", "Disabled_18_over_upper",
                   "Non–disabled_18_over", "Non–disabled_18_over_lower", "Non–disabled_18_over_upper",
                   "Disabled_18-64", "Disabled_18-64_lower", "Disabled_18-64_upper",
-                  "Non–disabled_18-64", "Non–disabled_18-64_lower", "Non–disabled_18-64_upper")
-  )
+                  "Non–disabled_18-64", "Non–disabled_18-64_lower", "Non–disabled_18-64_upper"),
+    selection = c("Date", "X3", "X3_lower", "X3_upper", "X5", "X5_lower", "X5_upper", "X7", "X7_lower", "X7_upper", "X9", "X9_lower", "X9_upper", "X11", "X11_lower", "X11_upper")
+    )
 )
 
 load_parameters <- list(
@@ -198,8 +219,7 @@ for (ind in 1:length(names(load_parameters))) {
                             skipEmptyRows = TRUE,
                             skipEmptyCols = TRUE,
                             check.names = FALSE,
-                            fillMergedCells = TRUE,
-                            sep.names = " ")
+                            fillMergedCells = TRUE)
 
         if (!str_detect(df$X1[1], param$description)) stop ("Row structure have changed in sheet: ", series$sheet)
 
@@ -228,7 +248,9 @@ for (ind in 1:length(names(load_parameters))) {
           select(-error_cols)
 
         df <- df %>%
-          select(order(colnames(df)))
+          #select(order(colnames(df)))
+          #select(Date, contains("_"))
+          select(series$selection)
 
         colnames(df) <- series$col_names
         data_all <- rbind(data_all, df)
