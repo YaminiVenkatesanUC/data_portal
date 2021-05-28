@@ -3242,6 +3242,7 @@
   "type": "Financial",
   "source": "Inland Revenue",
   "plot_function": "get_time_series_plot",
+  "include_date_slider": true,
   "international": false,
   "caveats": "Note: Data specific to the 'Total loan amount disbursed' chart differs from that featured prior to July 9.",
   "download": true,
@@ -3256,10 +3257,11 @@
 },
 {
   "class": "Economic",
-  "indicator_name": "Small business cashflow scheme by loan applications received (cumulative)",
+  "indicator_name": "Small business cashflow scheme by loan applications received",
   "type": "Financial",
   "source": "Inland Revenue",
   "plot_function": "get_time_series_plot",
+  "include_date_slider": true,
   "international": false,
   "download": true,
   "frequency":"Fortnightly",
@@ -3951,9 +3953,9 @@
 
     ]
 },
-  {
+   {
     "class": "Health",
-    "indicator_name": "Quarantine and managed isolation occupancy",
+    "indicator_name": "Quarantine and managed isolation figures",
     "type": "Managed Isolation",
     "source": "Ministry of Business, Innovation and Employment",
     "plot_function": "get_horizontal_bar",
@@ -3965,53 +3967,23 @@
     "frequency":"Daily",
     "groups": [
         {
-            "name": "undefined_name",
+            "name": "Occupancy",
             "title": "Number of people in quarantine and managed isolation by location",
             "units": ["Number"]
-        }
-      ]
-  },
-    {
-    "class": "Health",
-    "indicator_name": "Quarantine and managed isolation occupancy rate",
-    "type": "Managed Isolation",
-    "source": "Ministry of Business, Innovation and Employment",
-    "plot_function": "get_horizontal_bar",
-    "international": false,
-    "disabled": false,
-    "include_date_slider": false,
-    "source_url":"https://www.mbie.govt.nz/business-and-employment/economic-development/covid-19-data-resources/managed-isolation-and-quarantine-data/",
-    "download": true,
-    "frequency":"Daily",
-    "groups": [
+        },
           {
-            "name": "undefined_name",
+            "name": "Occupancy rate",
             "title": "Occupancy rate in quarantine and managed isolation facilities",
             "units": ["%"]
-        }
-      ]
-  },
-    {
-    "class": "Health",
-    "indicator_name": "Quarantine and managed isolation projected occupacy rate",
-    "type": "Managed Isolation",
-    "source": "Ministry of Business, Innovation and Employment",
-    "plot_function": "get_horizontal_bar",
-    "international": false,
-    "disabled": false,
-    "include_date_slider": false,
-    "source_url":"https://www.mbie.govt.nz/business-and-employment/economic-development/covid-19-data-resources/managed-isolation-and-quarantine-data/",
-    "download": true,
-    "frequency":"Daily",
-    "groups": [
+        },
          {
-            "name": "undefined_name",
+            "name": "Projected occupacy rate",
             "title": "Projected occupacy rate in quarantine and managed isolation facilities",
             "units": ["%"],
             "plot_function": "get_stacked_bar_chart",
             "caveats":"<p>Projected occupancy is based on current ticketing sales provided by airlines. The use of the Managed Isolation Allocation System will be mandatory from 3 November 2020.</p>"
         }
-      ]
+    ]
   },
   {
     "class": "Economic",
