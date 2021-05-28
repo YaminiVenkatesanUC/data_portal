@@ -4990,7 +4990,7 @@
       },
 {
   "class": "Economic",
-  "indicator_name": "Small business cashflow (loan) scheme",
+  "indicator_name": "Small business cashflow scheme by loan amount disbursed",
   "type": "Financial",
   "parameter_col": 1,
   "skip":1,
@@ -4999,12 +4999,33 @@
     "as.Date(x, format = \"%d/%m/%Y\")"
     ],
   "sheet_number": 1,
-  "value_col": [ 2, 4],
-  "value_names":["Total loan applications received (cumulative)", "Total loan amount disbursed"],
+  "value_col": [4],
+  "value_names":["Total loan amount disbursed (cumulative)"],
   "filename": "COVID 19 - IRD lending data.xlsx",
   "load_function": "read_from_excel",
   "data_type": "TimeSeries",
-  "group_names": [ "Total loan applications received (cumulative)", "Total loan amount disbursed"],
+  "group_names": ["undefined_name"],
+  "date_added":"03/06/2020",
+  "date_dropped":null,
+  "sourcing":"customized supply via email"
+},
+{
+  "class": "Economic",
+  "indicator_name": "Small business cashflow scheme by loan applications received",
+  "type": "Financial",
+  "parameter_col": 1,
+  "skip":1,
+  "parameter_transform": [
+    "function (x) ",
+    "as.Date(x, format = \"%d/%m/%Y\")"
+    ],
+  "sheet_number": 1,
+  "value_col": [2],
+  "value_names":["Total loan applications received (cumulative)"],
+  "filename": "COVID 19 - IRD lending data.xlsx",
+  "load_function": "read_from_excel",
+  "data_type": "TimeSeries",
+  "group_names": ["undefined_name"],
   "date_added":"03/06/2020",
   "date_dropped":null,
   "sourcing":"customized supply via email"
@@ -7146,7 +7167,7 @@
     },
 {
     "class": "Income support",
-    "indicator_name": "Resurgence wage subsidy",
+    "indicator_name": "Resurgence wage subsidy by amount of applications paid",
     "type": "Resurgence wage subsidy",
     "parameter_col": 1,
     "parameter_transform": [
@@ -7156,22 +7177,19 @@
     "value_col": [2],
     "value_names": [
       "Amount of applications paid"
-
         ],
     "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
     "drop_na": false,
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
-    "group_names": [
-      "Amount of applications paid"
-      ],
-      "date_added":"24/08/2020",
+  	"group_names": "undefined_name",
+    "date_added":"24/08/2020",
   	"date_dropped":null,
   	"sourcing":"website download"
     },
 {
     "class": "Income support",
-    "indicator_name": "Resurgence wage subsidy",
+    "indicator_name": "Resurgence wage subsidy by number of jobs supported",
     "type": "Resurgence wage subsidy",
     "parameter_col": 1,
     "parameter_transform": [
@@ -7182,16 +7200,13 @@
     "value_names": [
       "Number of jobs supported by the resurgence wage subsidy",
       "Number of jobs associated with a paid applicaton"
-
         ],
     "filename": "COVID 19 - MSD Jobseeker and Wage subsidy paid.xlsx",
     "drop_na": false,
     "load_function": "read_from_excel",
     "data_type": "TimeSeries",
-    "group_names": [
-      "Number of jobs supported"
-      ],
-      "date_added":"24/08/2020",
+    "group_names": "undefined_name",
+    "date_added":"24/08/2020",
   	"date_dropped":null,
   	"sourcing":"website download"
     },

@@ -3246,26 +3246,40 @@
   },
 {
   "class": "Economic",
-  "indicator_name": "Small business cashflow (loan) scheme",
+  "indicator_name": "Small business cashflow scheme by loan amount disbursed",
   "type": "Financial",
   "source": "Inland Revenue",
   "plot_function": "get_time_series_plot",
+  "include_date_slider": true,
   "international": false,
   "caveats": "Note: Data specific to the 'Total loan amount disbursed' chart differs from that featured prior to July 9.",
   "download": true,
   "frequency":"Fortnightly",
   "groups":[
       {
-      "name": "Total loan amount disbursed",
+      "name": "undefined_name",
       "title": "Total loan amount disbursed (cumulative)",
       "units": "$"
-    },
+    }
+  ]
+},
+{
+  "class": "Economic",
+  "indicator_name": "Small business cashflow scheme by loan applications received",
+  "type": "Financial",
+  "source": "Inland Revenue",
+  "plot_function": "get_time_series_plot",
+  "include_date_slider": true,
+  "international": false,
+  "download": true,
+  "frequency":"Fortnightly",
+  "groups":[
     {
-      "name": "Total loan applications received (cumulative)",
+      "name": "undefined_name",
       "title": "Total loan applications received (cumulative)",
       "units": "Number"
     }
-    ]
+  ]
 },
 {
     "class": "Economic",
@@ -3947,7 +3961,7 @@
 
     ]
 },
-  {
+   {
     "class": "Health",
     "indicator_name": "Quarantine and managed isolation figures",
     "type": "Managed Isolation",
@@ -5513,7 +5527,7 @@
   },
   {
     "class": "Income support",
-    "indicator_name": "Resurgence wage subsidy",
+    "indicator_name": "Resurgence wage subsidy by amount of applications paid",
     "type": "Resurgence wage subsidy",
     "source": "Ministry of Social Development",
     "plot_function": "get_stacked_bar_chart",
@@ -5523,12 +5537,25 @@
     "frequency":"Weekly",
     "groups": [
       {
-        "name": "Amount of applications paid",
+        "name": "undefined_name",
         "title": "Total amount of applications paid - resurgence wage subsidy",
         "units": "$"
-      },
+      }
+    ]
+  },
+  {
+    "class": "Income support",
+    "indicator_name": "Resurgence wage subsidy by number of jobs supported",
+    "type": "Resurgence wage subsidy",
+    "source": "Ministry of Social Development",
+    "plot_function": "get_stacked_bar_chart",
+    "international": false,
+    "source_url": "https://www.msd.govt.nz/about-msd-and-our-work/publications-resources/statistics/covid-19/index.html",
+    "download": true,
+    "frequency":"Weekly",
+    "groups": [
 	  {
-        "name":  "Number of jobs supported",
+        "name":  "undefined_name",
         "title": "Number of jobs supported by the resurgence wage subsidy",
          "plot_function": "get_stacked_bar_chart",
         "units": "Number"
