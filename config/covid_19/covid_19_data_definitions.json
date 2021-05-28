@@ -5462,7 +5462,7 @@
         "date_added":"21/06/2020",
         "date_dropped":null,
         "sourcing":"customized supply via email",
-        "script":"weekly_employment.R"
+        "script":"employment_weekly.R"
     },
 {
         "class": "Health",
@@ -7872,7 +7872,7 @@
     "date_added":"21/06/2020",
     "date_dropped":null,
     "sourcing":"customized supply via email",
-    "script":"weekly_employment.R"
+    "script":"employment_weekly.R"
 },
 {
     "class":"Social",
