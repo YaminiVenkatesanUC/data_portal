@@ -530,7 +530,7 @@
       "Duration":"P1D",
       "Label1":"variable",
       "Unit":"Number",
-      "Measure":"Border crossings - arrivals",
+      "Measure":"Border crossings - departures",
       "Multiplier":0
    },
    {
