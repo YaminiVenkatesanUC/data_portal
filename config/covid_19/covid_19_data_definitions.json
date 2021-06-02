@@ -2995,7 +2995,7 @@
         "date_added":"20/04/2020",
         "date_dropped":null,
         "sourcing":["customized supply via email"],
-        "script":["treasury.R"]
+        "script":"treasury.R"
     },
     {
         "class": "Economic",
@@ -3034,7 +3034,7 @@
         "date_added":"20/04/2020",
         "date_dropped":null,
         "sourcing":["customized supply via email"],
-        "script":["treasury.R"]
+        "script":"treasury.R"
     },
     {
         "class": "Economic",
@@ -3053,7 +3053,7 @@
         "date_added":"20/04/2020",
         "date_dropped":null,
         "sourcing":["customized supply via email"],
-        "script":["treasury.R"]
+        "script":"treasury.R"
     },
     {
         "class": "Economic",
