@@ -1,5 +1,397 @@
 [
   {
+        "class":"Economic",
+        "type":"Tourism",
+        "indicator_name":"Monthly filled jobs - tourism (by RTO)",
+        "source_url":"https://www.stats.govt.nz/information-releases/employment-indicators-may-2020",
+        "frequency":"Monthly",
+        "source":"Stats NZ",
+        "download":true,
+        "international":false,
+        "include_date_slider":true,
+        "plot_function":"get_time_series_plot",
+        "format_dates": "function (x) format(x, \"%b-%y\")",
+        "caveats":"<p>1) Data is provisional and subject to monthly revisions.</p><p>2) Data is sourced from Inland Revenue’s Employer Monthly Schedule (EMS) and payday filing. Earnings is on a gross basis and reflects the month in which these were paid.</p><p>3) In limited instances, monthly data for some smaller Regional Tourism Organisations (RTO's) is not featured due to confidentiality requirements. Filled job counts are on a graduated random rounding basis.</p><p>4) Data reflects employment in select tourism industries <u>not</u> tourism employment which is a derived proportion of an industries overall employment.</p><p>5) The select tourism industries are sourced from the Tourism Satellite Account (TSA), and are not a comprehensive representation of, or exact match with, the tourism industry groupings presented in the TSA.</p><p>6) The TSA provides definitive annual tourism employment earnings and employee counts on a number of people employed basis – this RTO data is on a filled jobs basis. The TSA data is sourced from annual Linked Employer Employee Data (LEED).</p><p>7) Coverage of filled jobs and gross earnings differs from that of Stats NZ’s official labour market measures produced from the Quarterly Employment Survey (QES), LEED, and the Household Labour Force Survey (HLFS).</p><p>8) Only geographic areas that have current RTO’s are presented, and the total for New Zealand reflects the sum of the featured RTO’s.</p><p>9) Reporting challenges limit the ability to split out the RTO’s within the Queenstown-Lakes and Southland districts. Each of the RTOs within these areas is therefore presented jointly.</p>",
+        "groups":[
+          {
+            "name":"Total",
+            "units":"Number",
+            "x_axis_label":"Month",
+            "title":"Monthly filled jobs in select tourism industries by RTO – Total"
+          },
+          {
+            "name":"Northland Incorporated",
+            "units":"Number",
+            "x_axis_label":"Month",
+            "title":"Monthly filled jobs in select tourism industries by RTO – Northland Incorporated"
+          },
+          {
+            "name":"Auckland Unlimited",
+            "units":"Number",
+            "x_axis_label":"Month",
+            "title":"Monthly filled jobs in select tourism industries by RTO – Auckland Unlimited"
+          },
+          {
+            "name":"Destination Coromandel",
+            "units":"Number",
+            "x_axis_label":"Month",
+            "title":"Monthly filled jobs in select tourism industries by RTO – Destination Coromandel"
+          },
+          {
+            "name":"Hamilton & Waikato Tourism",
+            "units":"Number",
+            "x_axis_label":"Month",
+            "title":"Monthly filled jobs in select tourism industries by RTO – Hamilton & Waikato Tourism"
+          },
+          {
+            "name":"Destination Great Lake Taupō",
+            "units":"Number",
+            "x_axis_label":"Month",
+            "title":"Monthly filled jobs in select tourism industries by RTO – Destination Great Lake Taupō"
+          },
+          {
+            "name":"Tourism Bay of Plenty",
+            "units":"Number",
+            "x_axis_label":"Month",
+            "title":"Monthly filled jobs in select tourism industries by RTO – Tourism Bay of Plenty"
+          },
+          {
+            "name":"Destination Rotorua",
+            "units":"Number",
+            "x_axis_label":"Month",
+            "title":"Monthly filled jobs in select tourism industries by RTO – Destination Rotorua"
+          },
+          {
+            "name":"Activate Tairāwhiti",
+            "units":"Number",
+            "x_axis_label":"Month",
+            "title":"Monthly filled jobs in select tourism industries by RTO – Activate Tairāwhiti"
+          },
+          {
+            "name":"Hawke's Bay Tourism",
+            "units":"Number",
+            "x_axis_label":"Month",
+            "title":"Monthly filled jobs in select tourism industries by RTO – Hawke's Bay Tourism"
+          },
+          {
+            "name":"Venture Taranaki",
+            "units":"Number",
+            "x_axis_label":"Month",
+            "title":"Monthly filled jobs in select tourism industries by RTO – Venture Taranaki"
+          },
+          {
+            "name":"Visit Ruapehu",
+            "units":"Number",
+            "x_axis_label":"Month",
+            "title":"Monthly filled jobs in select tourism industries by RTO – Visit Ruapehu"
+          },
+          {
+            "name":"Visit Whanganui",
+            "units":"Number",
+            "x_axis_label":"Month",
+            "title":"Monthly filled jobs in select tourism industries by RTO – Visit Whanganui"
+          },
+          {
+            "name":"Central Economic Development Agency",
+            "units":"Number",
+            "x_axis_label":"Month",
+            "title":"Monthly filled jobs in select tourism industries by RTO – Central Economic Development Agency"
+          },
+          {
+            "name":"Wellington Regional Economic Development Agency",
+            "units":"Number",
+            "x_axis_label":"Month",
+            "title":"Monthly filled jobs in select tourism industries by RTO – Wellington Regional Economic Development Agency"
+          },
+          {
+            "name":"Destination Wairarapa",
+            "units":"Number",
+            "x_axis_label":"Month",
+            "title":"Monthly filled jobs in select tourism industries by RTO – Destination Wairarapa"
+          },
+          {
+            "name":"Nelson Regional Development Agency",
+            "units":"Number",
+            "x_axis_label":"Month",
+            "title":"Monthly filled jobs in select tourism industries by RTO – Nelson Regional Development Agency"
+          },
+          {
+            "name":"Destination Marlborough",
+            "units":"Number",
+            "x_axis_label":"Month",
+            "title":"Monthly filled jobs in select tourism industries by RTO – Destination Marlborough"
+          },
+          {
+            "name":"Destination Kaikoura",
+            "units":"Number",
+            "x_axis_label":"Month",
+            "title":"Monthly filled jobs in select tourism industries by RTO – Destination Kaikoura"
+          },
+          {
+            "name":"Tourism West Coast",
+            "units":"Number",
+            "x_axis_label":"Month",
+            "title":"Monthly filled jobs in select tourism industries by RTO – Tourism West Coast"
+          },
+          {
+            "name":"Hurunui Tourism",
+            "units":"Number",
+            "x_axis_label":"Month",
+            "title":"Monthly filled jobs in select tourism industries by RTO – Hurunui Tourism"
+          },
+          {
+            "name":"ChristchurchNZ",
+            "units":"Number",
+            "x_axis_label":"Month",
+            "title":"Monthly filled jobs in select tourism industries by RTO – ChristchurchNZ"
+          },
+          {
+            "name":"Venture Timaru",
+            "units":"Number",
+            "x_axis_label":"Month",
+            "title":"Monthly filled jobs in select tourism industries by RTO – Venture Timaru"
+          },
+          {
+            "name":"Mackenzie Region",
+            "units":"Number",
+            "x_axis_label":"Month",
+            "title":"Monthly filled jobs in select tourism industries by RTO – Mackenzie Region"
+          },
+          {
+            "name":"Tourism Waitaki",
+            "units":"Number",
+            "x_axis_label":"Month",
+            "title":"Monthly filled jobs in select tourism industries by RTO – Tourism Waitaki"
+          },
+          {
+            "name":"Tourism Central Otago",
+            "units":"Number",
+            "x_axis_label":"Month",
+            "title":"Monthly filled jobs in select tourism industries by RTO – Tourism Central Otago"
+          },
+          {
+            "name":"Lake Wānaka Tourism / Destination Queenstown",
+            "units":"Number",
+            "x_axis_label":"Month",
+            "title":"Monthly filled jobs in select tourism industries by RTO – Lake Wānaka Tourism / Destination Queenstown"
+          },
+          {
+            "name":"Enterprise Dunedin",
+            "units":"Number",
+            "x_axis_label":"Month",
+            "title":"Monthly filled jobs in select tourism industries by RTO – Enterprise Dunedin"
+          },
+          {
+            "name":"Destination Clutha",
+            "units":"Number",
+            "x_axis_label":"Month",
+            "title":"Monthly filled jobs in select tourism industries by RTO – Destination Clutha"
+          },
+          {
+            "name":"Visit Southland / Visit Fiordland",
+            "units":"Number",
+            "x_axis_label":"Month",
+            "title":"Monthly filled jobs in select tourism industries by RTO – Visit Southland / Visit Fiordland"
+          }
+        ]
+      },
+  {
+        "class":"Economic",
+        "type":"Tourism",
+        "indicator_name":"Monthly employment earnings - tourism (by RTO)",
+        "source_url":"https://www.stats.govt.nz/information-releases/employment-indicators-may-2020",
+        "frequency":"Monthly",
+        "source":"Stats NZ",
+        "download":true,
+        "international":false,
+        "include_date_slider":true,
+        "plot_function":"get_time_series_plot",
+        "format_dates": "function (x) format(x, \"%b-%y\")",
+        "caveats":"<p>1) Data is provisional and subject to monthly revisions.</p><p>2) Data is sourced from Inland Revenue’s Employer Monthly Schedule (EMS) and payday filing. Earnings is on a gross basis and reflects the month in which these were paid.</p><p>3) In limited instances, monthly data for some smaller Regional Tourism Organisations (RTO's) is not featured due to confidentiality requirements. Filled job counts are on a graduated random rounding basis.</p><p>4) Data reflects employment in select tourism industries <u>not</u> tourism employment which is a derived proportion of an industries overall employment.</p><p>5) The select tourism industries are sourced from the Tourism Satellite Account (TSA), and are not a comprehensive representation of, or exact match with, the tourism industry groupings presented in the TSA.</p><p>6) The TSA provides definitive annual tourism employment earnings and employee counts on a number of people employed basis – this RTO data is on a filled jobs basis. The TSA data is sourced from annual Linked Employer Employee Data (LEED).</p><p>7) Coverage of filled jobs and gross earnings differs from that of Stats NZ’s official labour market measures produced from the Quarterly Employment Survey (QES), LEED, and the Household Labour Force Survey (HLFS).</p><p>8) Only geographic areas that have current RTO’s are presented, and the total for New Zealand reflects the sum of the featured RTO’s.</p><p>9) Reporting challenges limit the ability to split out the RTO’s within the Queenstown-Lakes and Southland districts. Each of the RTOs within these areas is therefore presented jointly.</p>",
+        "groups":[
+          {
+            "name":"Total",
+            "units":"$",
+            "x_axis_label":"Month",
+            "title":"Monthly employment earnings in select tourism industries by RTO – Total"
+          },
+          {
+            "name":"Northland Incorporated",
+            "units":"$",
+            "x_axis_label":"Month",
+            "title":"Monthly employment earnings in select tourism industries by RTO – Northland Incorporated"
+          },
+          {
+            "name":"Auckland Unlimited",
+            "units":"$",
+            "x_axis_label":"Month",
+            "title":"Monthly employment earnings in select tourism industries by RTO – Auckland Unlimited"
+          },
+          {
+            "name":"Destination Coromandel",
+            "units":"$",
+            "x_axis_label":"Month",
+            "title":"Monthly employment earnings in select tourism industries by RTO – Destination Coromandel"
+          },
+          {
+            "name":"Hamilton & Waikato Tourism",
+            "units":"$",
+            "x_axis_label":"Month",
+            "title":"Monthly employment earnings in select tourism industries by RTO – Hamilton & Waikato Tourism"
+          },
+          {
+            "name":"Destination Great Lake Taupō",
+            "units":"$",
+            "x_axis_label":"Month",
+            "title":"Monthly employment earnings in select tourism industries by RTO – Destination Great Lake Taupō"
+          },
+          {
+            "name":"Tourism Bay of Plenty",
+            "units":"$",
+            "x_axis_label":"Month",
+            "title":"Monthly employment earnings in select tourism industries by RTO – Tourism Bay of Plenty"
+          },
+          {
+            "name":"Destination Rotorua",
+            "units":"$",
+            "x_axis_label":"Month",
+            "title":"Monthly employment earnings in select tourism industries by RTO – Destination Rotorua"
+          },
+          {
+            "name":"Activate Tairāwhiti",
+            "units":"$",
+            "x_axis_label":"Month",
+            "title":"Monthly employment earnings in select tourism industries by RTO – Activate Tairāwhiti"
+          },
+          {
+            "name":"Hawke's Bay Tourism",
+            "units":"$",
+            "x_axis_label":"Month",
+            "title":"Monthly employment earnings in select tourism industries by RTO – Hawke's Bay Tourism"
+          },
+          {
+            "name":"Venture Taranaki",
+            "units":"$",
+            "x_axis_label":"Month",
+            "title":"Monthly employment earnings in select tourism industries by RTO – Venture Taranaki"
+          },
+          {
+            "name":"Visit Ruapehu",
+            "units":"$",
+            "x_axis_label":"Month",
+            "title":"Monthly employment earnings in select tourism industries by RTO – Visit Ruapehu"
+          },
+          {
+            "name":"Visit Whanganui",
+            "units":"$",
+            "x_axis_label":"Month",
+            "title":"Monthly employment earnings in select tourism industries by RTO – Visit Whanganui"
+          },
+          {
+            "name":"Central Economic Development Agency",
+            "units":"$",
+            "x_axis_label":"Month",
+            "title":"Monthly employment earnings in select tourism industries by RTO – Central Economic Development Agency"
+          },
+          {
+            "name":"Wellington Regional Economic Development Agency",
+            "units":"$",
+            "x_axis_label":"Month",
+            "title":"Monthly employment earnings in select tourism industries by RTO – Wellington Regional Economic Development Agency"
+          },
+          {
+            "name":"Destination Wairarapa",
+            "units":"$",
+            "x_axis_label":"Month",
+            "title":"Monthly employment earnings in select tourism industries by RTO – Destination Wairarapa"
+          },
+          {
+            "name":"Nelson Regional Development Agency",
+            "units":"$",
+            "x_axis_label":"Month",
+            "title":"Monthly employment earnings in select tourism industries by RTO – Nelson Regional Development Agency"
+          },
+          {
+            "name":"Destination Marlborough",
+            "units":"$",
+            "x_axis_label":"Month",
+            "title":"Monthly employment earnings in select tourism industries by RTO – Destination Marlborough"
+          },
+          {
+            "name":"Destination Kaikoura",
+            "units":"$",
+            "x_axis_label":"Month",
+            "title":"Monthly employment earnings in select tourism industries by RTO – Destination Kaikoura"
+          },
+          {
+            "name":"Tourism West Coast",
+            "units":"$",
+            "x_axis_label":"Month",
+            "title":"Monthly employment earnings in select tourism industries by RTO – Tourism West Coast"
+          },
+          {
+            "name":"Hurunui Tourism",
+            "units":"$",
+            "x_axis_label":"Month",
+            "title":"Monthly employment earnings in select tourism industries by RTO – Hurunui Tourism"
+          },
+          {
+            "name":"ChristchurchNZ",
+            "units":"$",
+            "x_axis_label":"Month",
+            "title":"Monthly employment earnings in select tourism industries by RTO – ChristchurchNZ"
+          },
+          {
+            "name":"Venture Timaru",
+            "units":"$",
+            "x_axis_label":"Month",
+            "title":"Monthly employment earnings in select tourism industries by RTO – Venture Timaru"
+          },
+          {
+            "name":"Mackenzie Region",
+            "units":"$",
+            "x_axis_label":"Month",
+            "title":"Monthly employment earnings in select tourism industries by RTO – Mackenzie Region"
+          },
+          {
+            "name":"Tourism Waitaki",
+            "units":"$",
+            "x_axis_label":"Month",
+            "title":"Monthly employment earnings in select tourism industries by RTO – Tourism Waitaki"
+          },
+          {
+            "name":"Tourism Central Otago",
+            "units":"$",
+            "x_axis_label":"Month",
+            "title":"Monthly employment earnings in select tourism industries by RTO – Tourism Central Otago"
+          },
+          {
+            "name":"Lake Wānaka Tourism / Destination Queenstown",
+            "units":"$",
+            "x_axis_label":"Month",
+            "title":"Monthly employment earnings in select tourism industries by RTO – Lake Wānaka Tourism / Destination Queenstown"
+          },
+          {
+            "name":"Enterprise Dunedin",
+            "units":"$",
+            "x_axis_label":"Month",
+            "title":"Monthly employment earnings in select tourism industries by RTO – Enterprise Dunedin"
+          },
+          {
+            "name":"Destination Clutha",
+            "units":"$",
+            "x_axis_label":"Month",
+            "title":"Monthly employment earnings in select tourism industries by RTO – Destination Clutha"
+          },
+          {
+            "name":"Visit Southland / Visit Fiordland",
+            "units":"$",
+            "x_axis_label":"Month",
+            "title":"Monthly employment earnings in select tourism industries by RTO – Visit Southland / Visit Fiordland"
+          }
+        ]
+      },
+  {
     "class": "Economic",
     "indicator_name": "Monthly filled jobs (by age)",
     "type": "Employment",

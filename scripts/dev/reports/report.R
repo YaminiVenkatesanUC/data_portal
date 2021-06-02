@@ -12,8 +12,9 @@ definitions <- read_json(path = "config/covid_19/covid_19_data_definitions.json"
 odata <- read_json(path = "config/covid_19/covid_19_odata_definitions_v2.json", simplifyVector = TRUE)
 
 #download Unique page views over time 01-03-2020 to 31-03-2021 // Google analytics
-views_total <- read.csv("~/Network-Shares/J-Drive-WLG-Shared/Indicators_aotearoa/Maya/reports/total_views.csv")
-views_total$Date <- as.Date(views_total$Date, format = "%b %d, %Y")
+views_total <- read.csv("~/Network-Shares/J-Drive-WLG-Shared/Indicators_aotearoa/Maya/reports/total_views.csv", stringsAsFactors = FALSE)
+if (length(views_total$Date[is.na(as.Date(views_total$Date, format = "%d %b %Y"))]) > 0) stop ("Inconsistent date formats in total_views.csv!")
+views_total$Date <- as.Date(views_total$Date, format = "%d %b %Y")
 
 views_monthly_folder <- "~/Network-Shares/J-Drive-WLG-Shared/Indicators_aotearoa/Maya/reports/ind_views"
 downloads_monthly_folder <- "~/Network-Shares/J-Drive-WLG-Shared/Indicators_aotearoa/Maya/reports/downloads"
@@ -52,7 +53,6 @@ df_indicators$no_subseries <- !(df_indicators$region | df_indicators$gender | df
 df_indicators$source_internal <- str_detect(pattern = "Stats", string = df_indicators$source)
 
 #Monthly cumulative count of indicators number------------------------------------------
-#add dots for indicators added that particular month!!!
 ind_count <- df_indicators %>%
   select(month, indicator_name) %>%
   unique() %>%
