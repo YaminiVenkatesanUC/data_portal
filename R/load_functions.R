@@ -1,4 +1,4 @@
-read_from_csv <- function(config, directory) {
+read_from_csv <- function(config, directory, odata_definitions=NULL) {
 
   if (!is.null(config$parameter_transform)) {
     parameter_transform <- eval(parse(text = config$parameter_transform))
@@ -38,6 +38,11 @@ read_from_csv <- function(config, directory) {
     data <- data %>% arrange(Parameter)
   }
 
+  if(any(config$ResourceID %in% odata_definitions$ResourceID)){
+    metadata <- odata_definitions[which(odata_definitions$ResourceID == config$ResourceID),]
+    data_frame_to_api_helper(directory, config, metadata, data)
+    return(NULL)
+  }
   return(data_frame_to_data_object_helper(
     directory,
     config,
@@ -45,7 +50,8 @@ read_from_csv <- function(config, directory) {
   ))
 }
 
-read_from_excel <- function(config, directory) {
+read_from_excel <- function(config, directory, odata_definitions=NULL) {
+
   if (!is.null(config$parameter_transform)) {
     parameter_transform <- eval(parse(text = config$parameter_transform))
   }
@@ -83,6 +89,12 @@ read_from_excel <- function(config, directory) {
     data <- data %>% arrange(Parameter)
   }
 
+  if(any(config$ResourceID %in% odata_definitions$ResourceID)){
+    metadata <- odata_definitions[which(odata_definitions$ResourceID == config$ResourceID),]
+    data_frame_to_api_helper(directory, config, metadata, data)
+    return(NULL)
+  }
+
   return(data_frame_to_data_object_helper(
     directory,
     config,
@@ -90,7 +102,7 @@ read_from_excel <- function(config, directory) {
   ))
 }
 
-read_employment_paid_jobs_data <- function(config, directory) {
+read_employment_paid_jobs_data <- function(config, directory, odata_definitions=NULL) {
   cols_to_read <- 1:4
   data <- as.data.frame(read.csv(
     paste0(directory, config$filename),
@@ -126,7 +138,7 @@ read_employment_paid_jobs_data <- function(config, directory) {
 }
 
 
-read_from_csv_error <- function(config, directory) {
+read_from_csv_error <- function(config, directory, odata_definitions=NULL) {
   if (!is.null(config$parameter_transform)) {
     parameter_transform <- eval(parse(text = config$parameter_transform))
   }
@@ -204,7 +216,7 @@ read_from_csv_error <- function(config, directory) {
 
 
 
-read_from_excel_error <- function(config, directory) {
+read_from_excel_error <- function(config, directory, odata_definitions=NULL) {
   if (!is.null(config$parameter_transform)) {
     parameter_transform <- eval(parse(text = config$parameter_transform))
   }
@@ -292,7 +304,7 @@ read_from_excel_error <- function(config, directory) {
   ))
 }
 
-read_managed_isolotion_data <- function(config, directory) {
+read_managed_isolotion_data <- function(config, directory, odata_definitions=NULL) {
   data_object <- read_from_excel(config, directory)
 
   data <- as.data.frame(read_excel(
@@ -318,8 +330,7 @@ read_managed_isolotion_data <- function(config, directory) {
   return(data_object)
 }
 
-
-read_hpa_drinking_data <- function(config,directory) {
+read_hpa_drinking_data <- function(config,directory,odata_definitions=NULL) {
 
   if (!is.null(config$parameter_transform)) {
     parameter_transform <- eval(parse(text = config$parameter_transform))
@@ -353,7 +364,7 @@ read_hpa_drinking_data <- function(config,directory) {
   return(output_group)
 }
 
-read_vaccination <- function(config, directory) {
+read_vaccination <- function(config, directory,odata_definitions=NULL) {
   data_object <- read_from_excel(config, directory)
   group_name <- config$group_names[[1]]
   data <- as.data.frame(read_excel(

@@ -227,6 +227,41 @@ Data definition example below.  This block of JSON tells the application how to 
         "data_type": "TimeSeries"
       }
 ```
+### Open Data API 
+
+In addition the the DATA_STORE object, the portal is designined to ingest and load data from other services. The Open Data service, in particlaur, will be used to supply data from our portal directly to customers, as opposed to supplying data in a downloaded csv from the site. 
+
+In order to integrate the Open Data service with the API there are a few modifcations that will need to be made to the portal's configuration files, load process, and data serivce functions. 
+
+#### Open Data API Configuration 
+
+This configuration file is set up to allow changes made in the portal to not affect the configuration of the API (and vice versa). The *ResourceID* for each indicator has been tagged in all configurations: data_definitions, odata_definitions, and indicator_definitions. To link an indicator from the API to the portal simply match the *ResourceID* in the configuration files. 
+
+The overall configuration file can be found in the `data_definitions.json` file. As stated above, this file is indepenent in order to control the data and metadata that is loaded to the API. Below is an example indicator with metadata.
+
+```
+   {
+      "ResourceID":"CPACT2",
+      "Subject":"Activity",
+      "Title":"Milk production",
+      "Description":"Monthly milk production - milksolids",
+      "Source":"Dairy Companies Association of New Zealand",
+      "SourceURL":"https://www.dcanz.com/about-the-nz-dairy-industry/",
+      "Modified":"2021-01-21T11:00:00Z",
+      "Frequency":"Monthly",
+      "Duration":"P1M",
+      "Unit":"Kg",
+      "Measure":"Milksolids collected for processing",
+      "Multiplier":0
+   },
+```
+
+#### Open Data API Load 
+
+
+#### Open Data API Data Service Function 
+The 
+
 
 ## Custom functions
 

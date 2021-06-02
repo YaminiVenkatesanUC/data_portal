@@ -1,3 +1,3 @@
-source("scripts/load_to_data_store.R")
+source("scripts/load_data.R")
 CONFIG <- read_config_file()
-load_to_data_store(CONFIG)
+load_data(CONFIG, odata_load_flag=TRUE)

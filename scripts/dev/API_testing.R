@@ -5,7 +5,7 @@ Resource <- GET(
   URLencode(paste0(CONFIG$odata_url,
                    "Covid-19Indicators/Resources",
                    "?$filter=(ResourceID eq '",
-                   indicator$api_resource_id,
+                   "CPEMP2",
                    "')")),
   add_headers("Ocp-Apim-Subscription-Key" = CONFIG$odata_token))  %>%
   content("text", encoding = "UTF-8") %>%
@@ -15,7 +15,7 @@ Observation <- GET(
   URLencode(paste0(CONFIG$odata_url,
                    "Covid-19Indicators/Observations",
                    "?$filter=(ResourceID eq '",
-                   indicator$api_resource_id,
+                   "CPWAG1",
                    "')")),
   add_headers("Ocp-Apim-Subscription-Key" = CONFIG$odata_token))  %>%
   content("text", encoding = "UTF-8") %>%

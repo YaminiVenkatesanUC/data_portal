@@ -13,22 +13,24 @@ library(foreach)
 library(data.table)
 library(tibble)
 library(gtools)
+library(httr)
 
 source("R/data_types.R")
 source("R/core/type_checks.R")
 source("R/core/utils.R")
+source("R/core/utils_API.R")
 source("R/core/consts.R")
 source("R/load_functions.R")
 
-add_to_data_store <- function(data_definition, data_store, config) {
+add_to_data_service <- function(data_definition, odata_definitions, data_store, config) {
   check_data_definition(data_definition)
   data_definition <- expand_data_definition_group_names(data_definition)
-  data <- load_functions[[data_definition$load_function]](data_definition, config$data_directory)
+  print(data_definition$indicator_name)
+  data <- load_functions[[data_definition$load_function]](data_definition, config$data_directory, odata_definitions)
   update_date <- as.Date(file.info(paste0(config$data_directory, data_definition$filename))$mtime)
-
   #for (group_name in unique(data_definition$group_names)) {
   for (group_name in names(data)) {
-    print(paste(data_definition$class, data_definition$indicator_name, group_name))
+    #print(paste(data_definition$class, data_definition$indicator_name, group_name))
 
     key <- paste(
       data_definition$class,
@@ -42,19 +44,30 @@ add_to_data_store <- function(data_definition, data_store, config) {
       data_store[[key]] <- data_store[[key]] + data[[group_name]]
     } else {
       data_store[[key]] <- data[[group_name]]
+
     }
   }
 
   return(data_store)
 }
 
-load_to_data_store <- function(config) {
+load_data <- function(config, odata_load_flag) {
+  config <- CONFIG
   data_store <- list()
   data_definitions <- read_json(config$data_definitions)
 
-  for (data_definition in data_definitions) {
-    data_store <- add_to_data_store(data_definition, data_store, config)
+  if(odata_load_flag == TRUE){
+    odata_definitions <- jsonlite::fromJSON(config$odata_definitions)
+    create_odata_obs_version()
+    create_odata_res_version()
+  } else {
+    odata_definitions <- NULL
   }
-  saveRDS(data_store, config$data_store_filename)
-  return(data_store)
+
+  for (data_definition in data_definitions) {
+    data_store <- add_to_data_service(data_definition, odata_definitions, data_store, config)
+    #break
+  }
+  #saveRDS(data_store, config$data_store_filename)
+  #return(data_store)
 }

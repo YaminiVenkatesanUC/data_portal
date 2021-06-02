@@ -66,7 +66,7 @@ DOWNLOADABLE_INDICATORS <- names(indicator_definitions)[
 
 if (!is.null(CONFIG$production) & !CONFIG$production) {
   warnings(DEV_MODE_WARNING)
-  DATA_STORE <- load_to_data_store(CONFIG)
+  DATA_STORE <- load_data(CONFIG)
 } else if (!is.null(CONFIG$data_store_filename)) {
   DATA_STORE <- readRDS(CONFIG$data_store_filename)
 } else {
